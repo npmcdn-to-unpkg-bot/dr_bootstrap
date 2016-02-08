@@ -1,0 +1,99 @@
+
+
+
+/* 
+**
+**	Template A Styles
+**	( Solutions Page )
+**
+*/
+
+
+#template_a h2 {
+    font-size: 3em;
+    line-height: 1;
+    color: #009AD7;
+    margin-bottom: 16px;
+    font-weight: normal;
+}
+
+#template_a .container .row .col{
+    margin-bottom: 50px;
+}
+
+
+#template_a .widget.featured_content .content .body {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 10px 0px;
+    color: #343438;
+    font-family: inherit;
+    min-height: 81px;
+}
+
+#template_a .widget.featured_content .content h3{
+    font-size: 2em;
+    font-weight: normal;
+        color: #009AD7;
+}
+
+#template_a .widget.featured_content .image{
+    margin-bottom: 12px;
+}
+
+#template_a .widget.featured_content .image img {
+    display: block;
+    margin: 0px 14%;
+    width: 60%;
+    max-width: 225px;
+}
+
+#template_a .widget.featured_content .content .body strong {
+	display: inline-block;
+}
+
+#template_a .widget.featured_content .content .link {
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+
+#template_a .widget.featured_content .content .header {
+    font-size: 2.15em;
+    line-height: 1;
+    color: #007eb5;
+    font-weight: inherit;
+}
+
+#template_a .widget.featured_content .container {
+    height: inherit;
+}
+
+
+#template_a .widget.featured_content a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#template_a .widget_container {
+    margin: 35px 0px 35px;
+    padding: 35px 0px 32px;
+    border-style: solid;
+    border-color: #A8C628;
+    border-width: 2px 0px;
+}
+
+
+
+
+@media handheld, only screen and (max-width: 1000px) {
+
+    #template_a .widget.featured_content .image img {
+        margin: 0 auto;
+    }
+
+}

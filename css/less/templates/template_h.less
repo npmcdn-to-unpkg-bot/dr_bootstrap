@@ -1,0 +1,113 @@
+#template_h {
+    padding-bottom: 40px;
+
+    .background {
+        background: url('../img/template_a_bg.png') repeat-x;
+        background-position: 0% 400px;
+    }
+
+    p {
+        color: @paragraph_color;
+        font-family: @paragraph_font;
+    }
+
+    h1 {
+        margin-bottom: 17px;
+        font-size: 48px;
+        line-height: 48px;
+        color: @primary_color;
+        font-family: @primary_font;
+    }
+
+    .container.top {
+        margin-top: 60px;
+
+        .content {
+            margin: 60px 0 40px 0;
+
+            p {
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .container.flex_area {
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 18px;
+            line-height: 19px;
+            .header_title();
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .dotted_splitter {
+            margin: 20px 0 40px 0;
+        }
+
+        .header {
+            font-size: 18px;
+            line-height: 19px;
+            .header_title();
+        }
+    }
+
+    .featured_content {
+        margin-top: 40px;
+
+        .title {
+            font-size: 48px;
+            line-height: 48px;
+            color: @primary_color;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .body {
+            font-size: 15px;
+            line-height: 24px;
+            margin-top: 30px;
+            color: @paragraph_color;
+            font-family: @paragraph_font;
+        }
+
+        .cta_box {
+            margin-top: 35px;
+            padding: 30px 0px;
+            background: #efeeec;
+            padding-left: 40px;
+
+            strong {
+                font-size: 13px;
+                line-height: 19px;
+                color: @paragraph_color;
+            }
+
+            a {
+                display: inline-block;
+                font-size: 13px;
+                font-weight: bold;
+                font-style: italic;
+                color: @widget_link;
+                text-decoration: none;
+                font-family: @link_font;
+
+                &:after {
+                    content: ' »';
+                }
+
+//                &:hover {
+//                    color: @primary_color;
+//                }
+            }
+        }
+    }
+}

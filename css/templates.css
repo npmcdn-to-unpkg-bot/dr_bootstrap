@@ -1,0 +1,164 @@
+/* -----------------------------------------------------------------------------
+  Testing
+----------------------------------------------------------------------------- */
+
+.main_container {
+  background: #ababab;
+}
+
+.content_container {
+  background: #FFCCCC;
+}
+
+.rail {
+  background: #99FFCC;
+}
+
+header {
+  background: #FFFF66;
+}
+
+.breadcrumbs {
+  background: #666666;
+}
+
+.main_content {
+  background: #999966;
+}
+
+.top_content {
+  background: #6699FF;
+}
+
+.content {
+  background: #6699FF;
+}
+
+.half_widget {
+  background: #f9f9f9;
+}
+
+.flex {
+  background: #FF0033;
+}
+
+.third_widget {
+  background: #f9f9f9;
+}
+
+.widget_container {
+  background: #6699FF;
+}
+
+h1, h2 {
+  padding: 5px;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 25px;
+}
+
+#accordion {
+  margin-top: 50px;
+}
+
+#accordion h3 {
+  background: #afafaf;
+}
+
+#accordion div {
+  background: #999966;
+}
+
+iframe {
+  border: 1px solid #000;
+}
+
+/* -----------------------------------------------------------------------------
+  Somewhat Actual CSS
+----------------------------------------------------------------------------- */
+
+body {
+  background: #FFF;
+}
+
+footer {
+  height: 110px;
+  background: #141414;
+}
+
+footer .navigation {
+  color: #b3d334;
+  font-size: 12px;
+}
+
+footer .copyright {
+  color: #FFF;
+  font-size: 12px;
+}
+
+#menu-footer li {
+  float: left;
+}
+
+#menu-footer li:after {
+  color: #FFF;
+  content: '|';
+  padding: 0 5px;
+}
+
+#menu-footer li:last-child:after {
+  content: '';
+}
+
+#menu-footer a {
+  color: #b3d334;
+}
+
+/* -----------------------------------------------------------------------------
+  Actual CSS
+----------------------------------------------------------------------------- */
+
+.main_container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+/* -----------------------------------------------------------------------------
+  Clearfix
+----------------------------------------------------------------------------- */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ 
+.clearfix {
+  display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+  display: block;
+}
+ 
+* html .clearfix {
+  height: 1%;
+}
+
+/* -----------------------------------------------------------------------------
+  Floats
+----------------------------------------------------------------------------- */
+
+.pull_left {
+  float: left;
+}
+
+.pull_right {
+  float: right;
+}

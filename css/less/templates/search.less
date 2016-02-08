@@ -1,0 +1,260 @@
+#search_results {
+    margin-top: 80px;
+    padding-top: 60px;
+
+    .splitter {
+        margin: 40px 0 20px 0;
+
+        &:first-child {
+            margin-top: 0px;
+        }
+
+        &.last {
+            margin-top: 40px;
+        }
+    }
+
+    h1 {
+        font-size: 18px;
+        line-height: 19px;
+        .header_title();
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+
+    .no_results {
+        padding: 0 20px;
+        margin-top: 140px;
+        text-align: center;
+
+        header {
+            color: #111;
+            font-size: 48px;
+            line-height: 48px;
+            text-transform: uppercase;
+            font-family: @primary_font;
+        }
+
+        p {
+            color: @paragraph_color;
+            font-family: @paragraph_font;
+
+            &.text {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .solution_results {
+
+        .top {
+            display: none;
+        }
+
+        .row:first-of-type .top {
+            display: block;
+        }
+
+        .solution {
+            .box-sizing();
+            width: 100%;
+            // height: 250px;
+            position: relative;
+            margin: 20px 0 5px 0;
+            background: url('../img/template_f_fc_bg.png') no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .text_container {
+            height: 129px;
+            max-height: 129px;
+            padding: 40px 30px 10px 30px;
+        }
+
+        .button_container {
+            border-top: 1px solid #E5E5E5;
+            padding: 0 30px 33px;
+        }
+
+        .title {
+            font-size: 26px;
+            line-height: 24px;
+            color: @primary_color;
+            font-family: @primary_font;
+            text-transform: uppercase;
+        }
+
+        .intro {
+            max-width: 480px;
+            font-size: 14px;
+            margin-top: 21px;
+            line-height: 17px;
+            max-height: 130px;
+            color: @paragraph_color;
+            font-family: @paragraph_font;
+        }
+
+        .button {
+            .box-sizing();
+            margin-top: 18px;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            .text {
+                float: left;
+                color: #FFF;
+                height: 18px;
+                font-size: 18px;
+                line-height: 17px;
+                padding: 10px 14px 8px 19px;
+                font-family: @primary_font;
+                background: url('../img/cta_button_bg.png') no-repeat;
+                background-size: 100% 36px;
+                border-right: 1px solid #181818;
+            }
+
+            .arrow {
+                float: left;
+                width: 31px;
+                height: 36px;
+                border-left: 1px solid #707071;
+                background: url('../img/cta_arrow.png') no-repeat;
+            }
+        }
+    }
+
+    .our_expertise_results {
+
+        .container {
+            height: 160px;
+            margin: 30px 0 27px 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .title {
+            font-size: 12px;
+            line-height: 17px;
+            font-weight: bold;
+            color: @primary_color;
+            text-transform: uppercase;
+            font-family: @paragraph_font;
+        }
+
+        .body {
+            font-size: 14px;
+            line-height: 21px;
+            color: @paragraph_color;
+            font-family: @paragraph_font;
+        }
+
+        .link {
+            display: inline-block;
+            font-size: 12px;
+            margin-top: 17px;
+            line-height: 17px;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none;
+            font-family: @paragraph_font;
+            color: @nav_link_hover_color;
+
+//            &:hover {
+//                color: @primary_color;
+//            }
+
+            &:after {
+                content: ' »';
+            }
+        }
+    }
+
+    .page_results {
+
+        .other_result {
+            padding-top: 27px;
+            padding-bottom: 27px;
+            font-size: 13px;
+            line-height: 19px;
+            color: @paragraph_color;
+            font-family: @paragraph_font;
+
+            a {
+                font-weight: bold;
+                font-style: italic;
+                text-decoration: none;
+                color: @nav_link_hover_color;
+
+//                &:hover {
+//                    color: @primary_color;
+//                }
+
+                &:after {
+                    content: ' »';
+                }
+            }
+        }
+    }
+
+    .cta_box {
+        text-align: left;
+        padding: 30px 40px;
+        background: #efeeec;
+        margin: 14px 0 30px 0;
+        display: inline-block;
+
+        strong {
+            font-size: 13px;
+            line-height: 19px;
+            font-style: italic;
+            color: @paragraph_color;
+            font-family: @paragraph_font;
+        }
+
+        a {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: bold;
+            font-style: italic;
+            color: @widget_link;
+            text-decoration: none;
+            font-family: @link_font;
+
+//            &:hover {
+//                color: @primary_color;
+//            }
+        }
+    }
+
+    .button {
+        .box-sizing();
+        margin-top: 17px;
+        display: inline-block;
+        text-decoration: none;
+
+        .text {
+            float: left;
+            color: #FFF;
+            height: 18px;
+            font-size: 18px;
+            line-height: 17px;
+            font-style: normal;
+            padding: 10px 14px 8px 19px;
+            font-family: @secondary_font;
+            background: url('../img/cta_button_bg.png') no-repeat;
+            background-size: 100% 36px;
+            border-right: 1px solid #181818;
+        }
+
+        .arrow {
+            float: left;
+            width: 31px;
+            height: 36px;
+            border-left: 1px solid #707071;
+            background: url('../img/cta_arrow.png') no-repeat;
+        }
+    }
+}

@@ -1,0 +1,646 @@
+ID,ACQUIRER,CARD TYPE
+13,American Express,3
+13,NAB,1
+13,NAB,2
+13,UnionPay,4
+14,American Express,3
+14,Barclaycard,1
+14,Barclaycard,2
+14,Barclaycard,5
+14,Diners,1
+14,Diners,2
+14,Elavon,1
+14,Elavon,2
+14,Handelsbanken,1
+14,Handelsbanken,2
+14,Nets,1
+14,Nets,2
+14,Nordea,1
+14,Nordea,2
+14,SwedBank,1
+14,SwedBank,2
+14,Teller,1
+14,Teller,2
+14,UnionPay,4
+14,Worldline,1
+14,Worldline,2
+21,American Express,3
+21,Barclaycard,1
+21,Barclaycard,2
+21,Barclaycard,5
+21,Diners,1
+21,Diners,2
+21,Elavon,1
+21,Elavon,2
+21,Bambora,1
+21,Bambora,2
+21,Handelsbanken,1
+21,Handelsbanken,2
+21,Nets,1
+21,Nets,2
+21,Nordea,1
+21,Nordea,2
+21,SwedBank,1
+21,SwedBank,2
+21,Teller,1
+21,Teller,2
+21,UnionPay,4
+21,UnionPay,2
+21,Worldline,1
+21,Worldline,2
+30,Bradesco,3
+30,Ci9,1
+30,Ci9,2
+30,Ci9,6
+30,Ci9,9
+30,Rede,1
+30,Rede,2
+30,Rede,6
+30,Rede,7
+30,Rede,8
+30,Ebnax,10
+33,American Express,3
+33,Barclaycard,1
+33,Barclaycard,2
+33,Barclaycard,5
+33,Diners,1
+33,Diners,2
+33,Elavon,1
+33,Elavon,2
+33,Bambora,1
+33,Bambora,2
+33,Handelsbanken,1
+33,Handelsbanken,2
+33,Nets,1
+33,Nets,2
+33,Nordea,1
+33,Nordea,2
+33,SwedBank,1
+33,SwedBank,2
+33,Teller,1
+33,Teller,2
+33,UnionPay,4
+33,Worldline,1
+33,Worldline,2
+38,First Data,1
+38,First Data,2
+38,First Data,11
+38,First Data,6
+38,Wells Fargo,1
+38,Wells Fargo,2
+38,Wells Fargo,11
+38,Wells Fargo,6
+38,UnionPay,4
+56,American Express,3
+56,Barclaycard,1
+56,Barclaycard,2
+56,Barclaycard,5
+56,Diners,1
+56,Diners,2
+56,Elavon,1
+56,Elavon,2
+56,Bambora,1
+56,Bambora,2
+56,Handelsbanken,1
+56,Handelsbanken,2
+56,Nets,1
+56,Nets,2
+56,Nordea,1
+56,Nordea,2
+56,SwedBank,1
+56,SwedBank,2
+56,Teller,1
+56,Teller,2
+56,UnionPay,4
+56,Worldline,1
+56,Worldline,2
+57,American Express,3
+57,Barclaycard,1
+57,Barclaycard,2
+57,Barclaycard,5
+57,Diners,1
+57,Diners,2
+57,Elavon,1
+57,Elavon,2
+57,Bambora,1
+57,Bambora,2
+57,Handelsbanken,1
+57,Handelsbanken,2
+57,Nets,1
+57,Nets,2
+57,Nordea,1
+57,Nordea,2
+57,SwedBank,1
+57,SwedBank,2
+57,Teller,1
+57,Teller,2
+57,UnionPay,4
+57,Worldline,1
+57,Worldline,2
+58,American Express,3
+58,Barclaycard,1
+58,Barclaycard,2
+58,Barclaycard,5
+58,Bambora,1
+58,Bambora,2
+58,Nets,12
+58,UnionPay,4
+67,American Express,3
+67,Barclaycard,1
+67,Barclaycard,2
+67,Barclaycard,5
+67,Diners,1
+67,Diners,2
+67,Elavon,1
+67,Elavon,2
+67,Bambora,1
+67,Bambora,2
+67,Handelsbanken,1
+67,Handelsbanken,2
+67,Nets,1
+67,Nets,2
+67,Nordea,1
+67,Nordea,2
+67,SwedBank,1
+67,SwedBank,2
+67,Teller,1
+67,Teller,2
+67,UnionPay,4
+67,Worldline,1
+67,Worldline,2
+72,American Express,3
+72,Barclaycard,1
+72,Barclaycard,2
+72,Barclaycard,5
+72,Diners,1
+72,Diners,2
+72,Elavon,1
+72,Elavon,2
+72,Bambora,1
+72,Bambora,2
+72,Handelsbanken,1
+72,Handelsbanken,2
+72,Nets,1
+72,Nets,2
+72,Nordea,1
+72,Nordea,2
+72,SwedBank,1
+72,SwedBank,2
+72,Teller,1
+72,Teller,2
+72,UnionPay,4
+72,Worldline,1
+72,Worldline,2
+73,American Express,3
+73,Barclaycard,1
+73,Barclaycard,2
+73,Barclaycard,5
+73,BNP Paribas,1
+73,BNP Paribas,2
+73,BNP Paribas,5
+73,BNP Paribas,13
+73,BNP Paribas,14
+73,Bambora,1
+73,Bambora,2
+73,UnionPay,4
+73,Worldline,1
+73,Worldline,2
+73,Worldline,5
+73,Worldline,13
+73,Worldline,14
+73,Worldline,3
+80,American Express,3
+80,Barclaycard,1
+80,Barclaycard,2
+80,Barclaycard,5
+80,Diners,1
+80,Diners,2
+80,Elavon,1
+80,Elavon,2
+80,Bambora,1
+80,Bambora,2
+80,Handelsbanken,1
+80,Handelsbanken,2
+80,Nets,1
+80,Nets,2
+80,Nordea,1
+80,Nordea,2
+80,SwedBank,1
+80,SwedBank,2
+80,Teller,1
+80,Teller,2
+80,UnionPay,4
+80,Worldline,1
+80,Worldline,2
+83,American Express,3
+83,Barclaycard,1
+83,Barclaycard,2
+83,Barclaycard,5
+83,Diners,1
+83,Diners,2
+83,Elavon,1
+83,Elavon,2
+83,Bambora,1
+83,Bambora,2
+83,Handelsbanken,1
+83,Handelsbanken,2
+83,Nets,1
+83,Nets,2
+83,Nordea,1
+83,Nordea,2
+83,SwedBank,1
+83,SwedBank,2
+83,Teller,1
+83,Teller,2
+83,UnionPay,4
+83,Worldline,1
+83,Worldline,2
+98,American Express,3
+98,Barclaycard,1
+98,Barclaycard,2
+98,Barclaycard,5
+98,Diners,1
+98,Diners,2
+98,Elavon,1
+98,Elavon,2
+98,Bambora,1
+98,Bambora,2
+98,Handelsbanken,1
+98,Handelsbanken,2
+98,Nets,1
+98,Nets,2
+98,Nordea,1
+98,Nordea,2
+98,SwedBank,1
+98,SwedBank,2
+98,Teller,1
+98,Teller,2
+98,UnionPay,4
+98,Worldline,1
+98,Worldline,2
+100,CC Avenue,15
+100,CC Avenue,16
+100,CC Avenue,17
+100,CC Avenue,18
+100,CC Avenue,19
+100,CC Avenue,20
+100,CC Avenue,21
+104,American Express,3
+104,Barclaycard,1
+104,Barclaycard,2
+104,Barclaycard,5
+104,Diners,1
+104,Diners,2
+104,Elavon,1
+104,Elavon,2
+104,Bambora,1
+104,Bambora,2
+104,Handelsbanken,1
+104,Handelsbanken,2
+104,Nets,1
+104,Nets,2
+104,Nordea,1
+104,Nordea,2
+104,SwedBank,1
+104,SwedBank,2
+104,Teller,1
+104,Teller,2
+104,UnionPay,4
+104,Worldline,1
+104,Worldline,2
+106,American Express,3
+106,"Banco AntonVeneta, Triveneto",1
+106,"Banco AntonVeneta, Triveneto",2
+106,"Banco AntonVeneta, Triveneto",22
+106,Barclaycard,1
+106,Barclaycard,2
+106,Barclaycard,5
+106,Bambora,1
+106,Bambora,2
+106,UnionPay,4
+119,American Express,3
+119,Barclaycard,1
+119,Barclaycard,2
+119,Barclaycard,5
+119,Diners,1
+119,Diners,2
+119,Elavon,1
+119,Elavon,2
+119,Bambora,1
+119,Bambora,2
+119,Handelsbanken,1
+119,Handelsbanken,2
+119,Nets,1
+119,Nets,2
+119,Nordea,1
+119,Nordea,2
+119,SwedBank,1
+119,SwedBank,2
+119,Teller,1
+119,Teller,2
+119,UnionPay,4
+119,Worldline,1
+119,Worldline,2
+124,American Express,3
+124,Barclaycard,1
+124,Barclaycard,2
+124,Barclaycard,5
+124,Diners,1
+124,Diners,2
+124,Elavon,1
+124,Elavon,2
+124,Bambora,1
+124,Bambora,2
+124,Handelsbanken,1
+124,Handelsbanken,2
+124,Nets,1
+124,Nets,2
+124,Nordea,1
+124,Nordea,2
+124,SwedBank,1
+124,SwedBank,2
+124,Teller,1
+124,Teller,2
+124,UnionPay,4
+124,Worldline,1
+124,Worldline,2
+125,American Express,3
+125,Barclaycard,1
+125,Barclaycard,2
+125,Barclaycard,5
+125,Diners,1
+125,Diners,2
+125,Elavon,1
+125,Elavon,2
+125,Bambora,1
+125,Bambora,2
+125,Handelsbanken,1
+125,Handelsbanken,2
+125,Nets,1
+125,Nets,2
+125,Nordea,1
+125,Nordea,2
+125,SwedBank,1
+125,SwedBank,2
+125,Teller,1
+125,Teller,2
+125,UnionPay,4
+125,Worldline,1
+125,Worldline,2
+126,American Express,3
+126,Barclaycard,1
+126,Barclaycard,2
+126,Barclaycard,5
+126,Diners,1
+126,Diners,2
+126,Elavon,1
+126,Elavon,2
+126,Bambora,1
+126,Bambora,2
+126,Handelsbanken,1
+126,Handelsbanken,2
+126,Nets,1
+126,Nets,2
+126,Nordea,1
+126,Nordea,2
+126,SwedBank,1
+126,SwedBank,2
+126,Teller,1
+126,Teller,2
+126,UnionPay,4
+126,Worldline,1
+126,Worldline,2
+134,American Express,3
+134,Barclaycard,1
+134,Barclaycard,2
+134,Barclaycard,5
+134,Diners,1
+134,Diners,2
+134,Elavon,1
+134,Elavon,2
+134,Bambora,1
+134,Bambora,2
+134,Handelsbanken,1
+134,Handelsbanken,2
+134,Nets,1
+134,Nets,2
+134,Nordea,1
+134,Nordea,2
+134,SwedBank,1
+134,SwedBank,2
+134,Teller,1
+134,Teller,2
+134,UnionPay,4
+134,Worldline,1
+134,Worldline,2
+140,American Express,3
+140,Banorte,1
+140,Banorte,2
+140,Bancomer,1
+140,Bancomer,2
+152,American Express,3
+152,Barclaycard,1
+152,Barclaycard,2
+152,Barclaycard,5
+152,Diners,1
+152,Diners,2
+152,Elavon,1
+152,Elavon,2
+152,Bambora,1
+152,Bambora,2
+152,Handelsbanken,1
+152,Handelsbanken,2
+152,Nets,1
+152,Nets,2
+152,Nordea,1
+152,Nordea,2
+152,SwedBank,1
+152,SwedBank,2
+152,Teller,1
+152,Teller,2
+152,UnionPay,4
+152,Worldline,1
+152,Worldline,2
+162,American Express,3
+162,Barclaycard,1
+162,Barclaycard,2
+162,Barclaycard,5
+162,Elavon,1
+162,Elavon,2
+162,Bambora,1
+162,Bambora,2
+162,Teller,1
+162,Teller,2
+162,UnionPay,4
+172,American Express,3
+172,Barclaycard,1
+172,Barclaycard,2
+172,Barclaycard,5
+172,Diners,1
+172,Diners,2
+172,Elavon,1
+172,Elavon,2
+172,Bambora,1
+172,Bambora,2
+172,Handelsbanken,1
+172,Handelsbanken,2
+172,Nets,1
+172,Nets,2
+172,Nordea,1
+172,Nordea,2
+172,SwedBank,1
+172,SwedBank,2
+172,Teller,1
+172,Teller,2
+172,UnionPay,4
+172,Worldline,1
+172,Worldline,2
+173,American Express,3
+173,Barclaycard,1
+173,Barclaycard,2
+173,Barclaycard,5
+173,Diners,1
+173,Diners,2
+173,Elavon,1
+173,Elavon,2
+173,Bambora,1
+173,Bambora,2
+173,Handelsbanken,1
+173,Handelsbanken,2
+173,Nets,1
+173,Nets,2
+173,Nordea,1
+173,Nordea,2
+173,SwedBank,1
+173,SwedBank,2
+173,Teller,1
+173,Teller,2
+173,UnionPay,4
+173,Worldline,1
+173,Worldline,2
+177,American Express,3
+177,Barclaycard,1
+177,Barclaycard,2
+177,Barclaycard,5
+177,Diners,1
+177,Diners,2
+177,Elavon,1
+177,Elavon,2
+177,Bambora,1
+177,Bambora,2
+177,Handelsbanken,1
+177,Handelsbanken,2
+177,Nets,1
+177,Nets,2
+177,Nordea,1
+177,Nordea,2
+177,SwedBank,1
+177,SwedBank,2
+177,Teller,1
+177,Teller,2
+177,UnionPay,4
+177,Worldline,1
+177,Worldline,2
+196,American Express,3
+196,Barclaycard,1
+196,Barclaycard,2
+196,Barclaycard,5
+196,Diners,1
+196,Diners,2
+196,Elavon,1
+196,Elavon,2
+196,Bambora,1
+196,Bambora,2
+196,Handelsbanken,1
+196,Handelsbanken,2
+196,Nets,1
+196,Nets,2
+196,Nordea,1
+196,Nordea,2
+196,SwedBank,1
+196,SwedBank,2
+196,Teller,1
+196,Teller,2
+196,UnionPay,4
+196,Worldline,1
+196,Worldline,2
+197,American Express,3
+197,Barclaycard,1
+197,Barclaycard,2
+197,Barclaycard,5
+197,Diners,1
+197,Diners,2
+197,Elavon,1
+197,Elavon,2
+197,Bambora,1
+197,Bambora,2
+197,Handelsbanken,1
+197,Handelsbanken,2
+197,Nets,1
+197,Nets,2
+197,Nordea,1
+197,Nordea,2
+197,SwedBank,1
+197,SwedBank,2
+197,Teller,1
+197,Teller,2
+197,UnionPay,4
+197,Worldline,1
+197,Worldline,2
+201,American Express,3
+201,Barclaycard,1
+201,Barclaycard,2
+201,Barclaycard,5
+201,Diners,1
+201,Diners,2
+201,Elavon,1
+201,Elavon,2
+201,Bambora,1
+201,Bambora,2
+201,Handelsbanken,1
+201,Handelsbanken,2
+201,Nets,1
+201,Nets,2
+201,Nordea,1
+201,Nordea,2
+201,SwedBank,1
+201,SwedBank,2
+201,Teller,1
+201,Teller,2
+201,UnionPay,4
+201,Worldline,1
+201,Worldline,2
+207,American Express,3
+207,Barclaycard,1
+207,Barclaycard,2
+207,Barclaycard,5
+207,Bambora,1
+207,Bambora,2
+207,UnionPay,4
+227,American Express,3
+227,Barclaycard,1
+227,Barclaycard,2
+227,Barclaycard,5
+227,Bambora,1
+227,Bambora,2
+227,RBS,1
+227,RBS,2
+227,RBS,5
+227,RBS,11
+227,RBS,6
+227,UnionPay,4
+228,American Express,3
+228,Chase Paymentech,1
+228,Chase Paymentech,2
+228,Chase Paymentech,23
+228,FirstData,1
+228,FirstData,2
+228,FirstData,23
+228,FirstData,11
+228,FirstData,6
+228,UnionPay,4
+228,Wells Fargo,1
+228,Wells Fargo,2
+228,Wells Fargo,23
+228,Wells Fargo,11
+228,Wells Fargo,6

@@ -1,0 +1,100 @@
+.span_1 {
+width: 4.7%;
+}
+
+.span_2 {
+width: 13.2%;
+}
+
+.span_3 {
+width: 22.05%;
+}
+
+.span_4 {
+width: 30.6%;
+}
+
+.span_5 {
+width: 39%;
+}
+
+.span_6 {
+width: 48%;
+}
+
+.span_7 {
+width: 56.75%;
+}
+
+.span_8 {
+width: 61.6%;
+}
+
+.span_9 {
+width: 74.05%;
+}
+
+.span_10 {
+width: 82%;
+}
+
+.span_11 {
+width: 91.35%;
+}
+
+#template_j #call_to_action,
+#template_f .widgetized.right_side .featured_content .content,
+#search_results .solution_results .solution,
+#template_f .widgetized.flex .featured_content .content {
+  /*background: none !important;*/
+  background: #EEE !important;
+}
+
+#home #main_content #flip_cards .cards .face.back {
+  padding: 10px 55px 0 55px;
+}
+
+#template_f .widgetized.right_side .featured_content .button_container {
+  border-top: 0 none;
+}
+
+.row {
+  width: 100% !important;
+}
+
+#global_footer .left .footer_menu li {
+	*zoom: expression( this.runtimeStyle.zoom="1", this.insertBefore( document.createElement("i"), this.firstChild).className="ie-before" );
+}
+
+#global_footer .left .footer_menu li .ie-before {
+	padding: 0 5px;
+	*zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '|');
+}
+
+#global_footer .left .footer_menu li:first-child .ie-before {
+	display: none;
+};
+
+.lt-ie8 #template_b {
+	padding-top: 140px;
+}
+
+.ie7 body{*height:auto !important;}
+
+.ie7 .last.col-3 {
+    *padding-right: 0px;
+    *float: right;
+	*clear:both !important;
+
+}
+
+.ie7 .contact-box {
+
+    float: right;
+	*clear:none !important;
+}
+
+.why-work-background {
+
+    left: -105px ;
+}

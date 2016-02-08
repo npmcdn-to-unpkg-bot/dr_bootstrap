@@ -1,0 +1,179 @@
+/* -----------------------------------------------------------------------------
+  Imports
+----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+  Colors
+----------------------------------------------------------------------------- */
+/* Global */
+/* Widgets */
+/* -----------------------------------------------------------------------------
+  Fonts
+----------------------------------------------------------------------------- */
+/* Global */
+/* Widgets */
+/* -----------------------------------------------------------------------------
+  Widget Mixins
+----------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+  Featured Content - Main Content
+----------------------------------------------------------------------------- */
+.main_content .featured_content {
+  margin: 0 20px 0 0;
+}
+.main_content .featured_content .fc_header {
+  margin: 40px 0 10px 0;
+  color: #FFF;
+  padding: 8px;
+  font-family: 'DIN1451W01-Mittelschrif';
+  display: inline-block;
+  background: #b3d334;
+  text-transform: uppercase;
+}
+.main_content .featured_content img {
+  width: 215px;
+  height: 215px;
+  padding: 2px;
+  border: 1px solid #CCC;
+}
+.main_content .featured_content .container {
+  padding: 20px 0 20px 0;
+  border-top: 1px dotted #999999;
+}
+.main_content .featured_content .container:last-child {
+  border-bottom: 1px dotted #999999;
+}
+.main_content .featured_content .container .image {
+  float: left;
+}
+.main_content .featured_content .container .fc_content {
+  width: 70%;
+  float: left;
+  margin: 0 0 0 20px;
+}
+.main_content .featured_content .container .fc_content .header {
+  font-size: 24px;
+  color: #00aeef;
+  text-decoration: none;
+  font-family: 'DIN 1451 W01 Engschrift';
+}
+.main_content .featured_content .container .fc_content .intro {
+  font-size: 13px;
+  margin: 20px 0 22px 0;
+  color: #333333;
+  font-family: Verdana, sans-serif;
+}
+.main_content .featured_content .container .fc_content .read_more {
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+  color: #00aeef;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+}
+.main_content .featured_content .container .fc_content .read_more:after {
+  content: ' »';
+}
+/* -----------------------------------------------------------------------------
+  Posts - Main Content
+----------------------------------------------------------------------------- */
+.main_content .posts {
+  margin: 0 20px 0 0;
+}
+.main_content .posts .posts_header {
+  margin: 40px 0 10px 0;
+  color: #FFF;
+  padding: 8px;
+  font-family: 'DIN1451W01-Mittelschrif';
+  display: inline-block;
+  background: #b3d334;
+  text-transform: uppercase;
+}
+.main_content .posts .container {
+  padding: 20px 0 0 0;
+  border-top: 1px dotted #999999;
+}
+.main_content .posts .container:last-child {
+  border-bottom: 1px dotted #999999;
+}
+.main_content .posts .container .date {
+  width: 20%;
+  float: left;
+  font-size: 13px;
+  font-family: Verdana, sans-serif;
+}
+.main_content .posts .container .link {
+  width: 80%;
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+  color: #00aeef;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+  line-height: 15px;
+}
+/* -----------------------------------------------------------------------------
+  Latest Post - Main Content
+----------------------------------------------------------------------------- */
+.main_content .latest_post {
+  margin-right: 20px;
+}
+.main_content .latest_post .header {
+  margin: 40px 0 10px 0;
+  color: #FFF;
+  padding: 8px;
+  font-family: 'DIN1451W01-Mittelschrif';
+  display: inline-block;
+  background: #b3d334;
+  text-transform: uppercase;
+}
+.main_content .latest_post .title {
+  font-size: 48px;
+  color: #00aeef;
+  font-family: 'DIN 1451 W01 Engschrift';
+}
+.main_content .latest_post .intro {
+  font-size: 13px;
+  margin: 20px 0 22px 0;
+  color: #333333;
+  font-family: Verdana, sans-serif;
+}
+.main_content .latest_post .read_more {
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+  color: #00aeef;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+}
+.main_content .latest_post .read_more:after {
+  content: ' »';
+}
+/* -----------------------------------------------------------------------------
+  Enhanced Text - Generic
+----------------------------------------------------------------------------- */
+.enhanced_text h2 {
+  color: #111111;
+  font-size: 36px;
+  margin: 60px 0 7px 0;
+  font-family: 'DIN 1451 W01 Engschrift';
+}
+.enhanced_text p {
+  margin: 0 0 3px 0;
+  font-size: 13px;
+  color: #333333;
+  font-family: Verdana, sans-serif;
+}
+.enhanced_text a {
+  display: inline-block;
+  margin: 2px 0;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+  color: #00aeef;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+}
+.enhanced_text a:after {
+  content: ' »';
+}

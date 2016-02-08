@@ -1,0 +1,568 @@
+.grid_wrapper *, .grid_wrapper *:after, .grid_wrapper *:before {
+    box-sizing: border-box;
+}
+
+.grid {
+	position: relative;
+	margin: 0 auto;
+	max-width: 100%;
+	list-style: none;
+	text-align: center;
+	z-index:1;
+}
+
+.grid .col1 {
+    position: relative;
+    width: 25%;
+    float: left;
+	overflow: hidden;
+}
+
+.grid .col2 {
+    position: relative;
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.grid .col3{
+	position:relative;
+	width:75%;
+	float:left;
+	overflow:hidden;
+}
+
+.grid .col1, .grid .col2, .grid .col3{height:500px;}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	width:inherit;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding: 1.5em 1em;
+	color: #fff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+}
+
+.grid figure h2 span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1em;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	font-size: 68.5%;
+	color: #FFF;
+}
+
+/*---------------*/
+/***** zoom *****/
+/*---------------*/
+
+figure.effect-zoom{
+	background-color: #0099DA;
+	border: 6px solid rgb(255, 255, 255);
+}
+
+figure.effect-zoom.green {
+	background-color: #BACB3F;
+}
+
+figure.effect-zoom.half {
+	height: 50%;
+}
+
+figure.effect-zoom.half h2 {
+  margin-top: 40px;
+}
+
+figure.effect-zoom.third {
+  height: 33.333%;
+}
+
+figure.effect-zoom.third h2 {
+  margin-top: 0px;
+}
+
+
+
+
+figure.effect-zoom img {
+	opacity: 1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-zoom:hover img {
+	opacity: 0.75;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+figure.effect-zoom h2 {
+    margin-top: 165px;
+    transition: transform 0.35s ease 0s;
+    transform: translate3d(0px, 20px, 0px);
+    text-transform: none;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+figure.effect-zoom p {
+	margin: 0;
+  padding: .5em 1em ;
+/*	border: 1px solid #fff;*/
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0) scale(1.1);
+	transform: translate3d(0,20px,0) scale(1.1);
+}
+
+figure.effect-zoom:hover h2 {
+	-webkit-transform: translate3d(0,-10,0);
+	transform: translate3d(0,0,0);
+
+}
+
+figure.effect-zoom:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0) scale(1);
+	transform: translate3d(0,0,0) scale(1);
+	
+	
+}
+figure.effect-zoom.third:hover h2 {
+    margin-top: -5px;
+}
+
+figure.effect-zoom.third:hover p{
+margin-top:-2px;
+}
+
+.grid_wrapper {
+    width: 100%;
+    margin: 0px auto;
+box-sizing: border-box;
+border: 6px solid rgb(255, 255, 255);
+}
+
+.resource-wrapper{width:100%;  background-color: #FFF; border: solid 1px #BBB; border-left:none; border-right:none; border-top: none; padding: 0 0 1%;}
+.resource-links{max-width:1180px; padding:0 20px;  margin:0 auto;}
+.resource-links .left-side,.resource-links .right-side{width:auto; height:auto; overflow:hidden;  padding: 60px 0;}
+.resource-links .left-side{float:left; border-right: solid 1px #BBB;    width: 60%; }
+.resource-links .right-side {
+  float: right;
+  margin-left: 3%;
+  width: 36%;
+}
+
+.resource-links .header {
+  font-family: "DIN 1451 W01 Engschrift";
+  margin-top: 20px;
+  color: #A6C739;
+  font-size: 47px;
+  float: left;
+  clear: left;
+  line-height: 1 !important;
+}
+.resource-links .left-side .header{width: 24%;}
+.resource-links .right-side .header {
+  width: 41%;
+}
+.resource-links ul {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-left: 11%;
+  line-height: 1 !important;
+}
+.resource-links .left-side ul:first-child{margin-left:0px;}
+.resource-links .left-side ul:last-child{margin-right:0px;}
+.resource-links .right-side  ul:first-child{margin-right:0px; margin-left:0px;}
+.resource-links ul.three-links{margin-top:29px;}
+.resource-links li{padding:5px; width:auto; height:auto;}
+.resource-links li a {
+    color: #00A7E1;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+
+figure.effect-zoom img {
+  max-width:none;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    width: auto;
+    opacity: 0.8;
+    min-width: 100%;
+}
+
+@media screen and (max-width: 1180px) {
+
+  .resource-links {
+    padding: 0px 20px;
+    max-width:1140px;
+  }
+
+  .resource-links .right-side {
+    float: right;
+    margin-left: 1.5%;
+    width: 37.5%;
+  }
+
+  .grid figure figcaption {
+    padding: .6em;
+  }
+
+  figure.effect-zoom h2 {
+      font-size: 1.2em;
+      transform: translate3d(0px, 20px, 0px);
+  }
+
+  figure.effect-zoom.third h2 {
+    margin-top: 5px;
+}
+
+figure.effect-zoom p {
+    padding: .5em 0px;
+}
+
+  figure.effect-zoom p {
+    padding: .3em 0px;
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+
+  .grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    width:inherit;
+    opacity: 0.8;
+	max-width: 100%;
+	max-height:inherit;
+  }
+  
+  .grid figure.third img,  .grid figure.half img{
+	  max-width: inherit;
+	}
+  
+
+  .grid figure img {
+      min-height: 100%;
+      min-width: 100%;
+      height: auto;
+      width: auto;
+  }
+
+	figure.effect-zoom h2 {
+    margin-top: 140px;
+    height: 75px;
+	}
+
+	.grid .col1, .grid .col2, .grid .col3{height:400px;}
+
+
+  .resource-links {
+    width: 100%;
+  }
+
+  .resource-links .left-side {
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .resource-links .header {
+    margin-top: 15px;
+  }
+
+  .resource-links ul.three-links {
+    margin-top: 0px;
+}
+
+  .resource-links ul {
+    height: auto;
+    width: 30%;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .resource-links {
+    height: auto;
+    overflow: hidden;
+  }
+  .resource-links .header{font-size: 48px;}
+  .resource-links .left-side .header, .resource-links .right-side .header {
+      width: 100%;
+      margin: 21px 0px 0px;
+  }
+  .resource-links .right-side, .resource-links .left-side {
+    float: left;
+    margin-left: 5%;
+    width: 95%;
+  }
+
+  .resource-links .left-side{border-right:none;}
+
+  .resource-links .right-side,
+  .resource-links .left-side{
+    padding:30px 0;
+  }
+
+
+  figure.effect-zoom p {
+    padding: .5em 0 ;
+  }
+}
+@media screen and (max-width: 1000px) {
+
+
+ .grid .col2{
+    	width: 100%;
+	}
+
+  .grid .col1{
+        width:50%;
+  }
+
+
+  figure.effect-zoom.third h2 {
+      margin-top: 0px;
+  }
+
+  figure.effect-zoom.half h2{
+      margin-top: 40px;
+  }
+
+	figure.effect-zoom h2 {
+    	margin-top: 90px;
+	}
+
+  figure.effect-zoom h2 {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  figure.effect-zoom h2 {
+    margin-top: 155px;
+    height: auto;
+  }
+
+
+
+
+  figure.effect-zoom p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0) scale(1);
+    transform: translate3d(0,0,0) scale(1);
+  }
+
+  figure.effect-zoom img {
+    opacity: 0.75;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+
+  .grid figure figcaption {
+    padding: 1em 0.5em;
+}
+
+
+
+
+
+}
+
+
+
+
+
+@media only screen
+and (max-width : 624px){
+
+  .grid figure h2 {
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+}
+
+  .resource-links .left-side .header, .resource-links .right-side .header {
+      text-align: center;
+      margin-bottom:20px;
+  }
+
+
+  .grid .col1, .grid .col2{
+      width: 100%;
+  }
+
+  figure.effect-zoom.third{
+    width:33.333%;
+    height:100%;
+  }
+
+  figure.effect-zoom.half{
+    width:50%;
+    height:100%;
+  }
+
+  .grid .third, .grid .half{height:240px;}
+
+  figure.effect-zoom.third h2{
+    margin-top: 15px;
+  }
+
+  figure.effect-zoom.half h2{
+      margin-top: 40px;
+  }
+
+  .resource-links {
+    width: 100%;
+  }
+
+  .resource-links .left-side {
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .resource-links .header {
+    margin-top: 15px;
+  }
+
+  .resource-links ul {
+    height: auto;
+    width: 100%;
+    float: left;
+    clear: left;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .resource-links {
+    height: auto;
+    overflow: hidden;
+    padding:0;
+  }
+
+  .resource-links .right-side, .resource-links .left-side {
+    width: 59%;
+    margin: 30px auto;
+    float: none;
+  }
+
+
+
+
+}
+
+
+
+@media only screen
+and (max-width : 500px){
+
+  .grid figure h2 {
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+
+  figure.effect-zoom.third{
+    height:33.333%;
+    width:100%;
+  }
+
+  figure.effect-zoom.half{
+    width:100%;
+    height:50%;
+  }
+
+  figure.effect-zoom p {
+    padding: 0.4em 0px;
+}
+
+figure.effect-zoom.third h2, figure.effect-zoom.half h2{
+    margin-top: 5px;
+}
+
+.grid .third{height:450px;}
+.grid .half{height:300px;}
+
+
+
+
+}

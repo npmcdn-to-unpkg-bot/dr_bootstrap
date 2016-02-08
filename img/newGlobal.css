@@ -1,0 +1,119 @@
+/* 
+**
+**	GENERAL
+**
+*/
+
+p {
+    font-size: 1em;
+    line-height: 1;
+    color: #000;
+    font-family: Arial,sans-serif;
+	color: #343438;
+	line-height: 1.25;
+}
+
+a {
+	color: #007eb5 !important;
+}
+
+.blue{
+	color: #009AD7 !important;
+}
+
+
+/* 
+**
+**	HEADER NAV
+**
+*/
+
+#global_header a {
+	color: #FFF !important;
+}
+
+#main_navigation [id|="menu-main"] > li > a {
+    display: inline-block;
+    padding: 27px 16px 10px;
+    text-decoration: none;
+    font-size: 1.9em;
+    line-height: 0.95em;
+    color: #807E82 !important;
+}
+
+ #main_navigation #menu-main > li.current-page-ancestor a {
+	color: #343438 !important;
+}
+
+/* 
+**
+**	MASTHEAD
+**
+*/
+
+.masthead .subtitle {
+    margin: 10px auto 33px;
+    line-height: 25px;
+    font-family: Arial,sans-serif;
+    padding-left: 0px;
+    color: #FFF;
+    max-width: 980px;
+    width: 67%;
+    font-size: 1.1em;
+}
+
+.masthead .breadcrumbs a {
+    font-size: .9em;
+    color: #FFF !important;
+    text-decoration: none;
+}
+
+
+
+/* 
+**
+**	Template A Styles
+**	( Solutions Page )
+**
+*/
+
+#template_a h2 {
+    font-size: 3em;
+    line-height: 1;
+    color: #009AD7;
+    margin-bottom: 16px;
+    font-weight: 300;
+}
+
+#template_a .widget.featured_content .content .body {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 12px 0px 20px;
+    color: #343438;
+    font-family: inherit;
+}
+
+#template_a .widget.featured_content .content .body strong {
+	display: inline-block;
+}
+
+#template_a .widget.featured_content .content .link {
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+
+#template_a .widget.featured_content .content .header {
+    font-size: 2.15em;
+    line-height: 1;
+    color: #007eb5;
+    font-weight: inherit;
+}
+
+#template_a .widget.featured_content .container {
+    height: inherit;
+}

@@ -1,0 +1,223 @@
+/*!
+ * Gridpak Beta CSS
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+ 
+ 
+
+/* Reusable column setup */
+.col {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+
+.row {
+  clear: both;
+}
+
+
+
+    /* 1. 2 Column Grid 0px - 639px 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    49.0%
+    Span 2:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 0px) and (max-width: 639px) {
+
+        .col {
+            margin-left:2%;
+        }
+
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        .span_1 {
+            width:49.0%;
+        }
+        .span_2,
+        .span_3,
+        .span_4,
+        .span_5,
+        .span_6,
+        .span_7,
+        .span_8,
+        .span_9,
+        .span_10,
+        .span_11,
+        .span_12,
+        footer,
+        .content_container,
+        .rail,
+        .main_container,
+        .main_content,
+        .widget_container,
+        .content,
+        .half_widget,
+        .flex,
+        .third_widget {
+            margin-left:0;
+            width:100%;
+        }
+
+        .hide_on_mobile {
+            display: none !important;
+        }
+    }
+
+    /* 2. 4 Column Grid 640px - 1039px */
+    /*----------------------------------------------------------------------------- */
+    /**/
+    /*Span 1:    23.5%*/
+    /*Span 2:    49.0%*/
+    /*Span 3:    74.5%*/
+    /*Span 4:    100%*/
+    /**/
+    /*----------------------------------------------------------------------------- */
+
+    /*@media screen and (min-width: 640px) and (max-width: 1139px) {*/
+        /**/
+        /*.col {*/
+            /*margin-left:2%;*/
+        /*}*/
+        /**/
+        /*.row .col:first-child {*/
+            /*margin-left:0;*/
+        /*}*/
+        /**/
+        /*.span_4,*/
+        /*.main_container {*/
+            /*max-width: 1140px;*/
+        /*}*/
+        /**/
+        /*.span_1,*/
+        /*.rail,*/
+        /*.third_widget {*/
+            /*width:23.5%;*/
+        /*}*/
+        /*.span_2,*/
+        /*.half_widget {*/
+            /*width:49.0%;*/
+        /*}*/
+        /*.span_3,*/
+        /*.main_content {*/
+            /*width:74.5%;*/
+        /*}*/
+        /*.span_4,*/
+        /*.span_5,*/
+        /*.span_6,*/
+        /*.span_7,*/
+        /*.span_8,*/
+        /*.span_9,*/
+        /*.span_10,*/
+        /*.span_11,*/
+        /*.span_12,*/
+        /*header,*/
+        /*footer,*/
+        /*.main_container,*/
+        /*.content_container,*/
+        /*.widget_container,*/
+        /*.flex {*/
+            /*margin-left:0;*/
+            /*width:100%;*/
+        /*}*/
+
+        /*.hide_on_tablet {*/
+            /*display: none;*/
+        /*}*/
+    /*}*/
+
+    /* 3. 12 Column Grid 640px - Infinity
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    6.5%
+    Span 2:    15.0%
+    Span 3:    23.5%
+    Span 4:    32.0%
+    Span 5:    40.5%
+    Span 6:    49.0%
+    Span 7:    57.5%
+    Span 8:    66.0%
+    Span 9:    74.5%
+    Span 10:    83.0%
+    Span 11:    91.5%
+    Span 12:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 640px) {
+
+        .col {
+            margin-left:2%;
+        }
+
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        .span_1 {
+            width:6.5%;
+        }
+        .span_2 {
+            width:15.0%;
+        }
+        .span_3,
+        header .top .logo {
+            width:23.5%;
+        }
+        .span_4,
+        .third_widget,
+        .card_container,
+        header .top .header_navigation {
+            width:32.0%;
+        }
+        .span_5,
+        header .top .search {
+            width:40.5%;
+        }
+        .span_6,
+        .half_widget {
+            width:49.0%;
+        }
+        .span_7 {
+            width:57.5%;
+        }
+        .span_8 {
+            width:66.0%;
+        }
+        .span_9 {
+            width:74.5%;
+        }
+        .span_10 {
+            width:83.0%;
+        }
+        .span_11 {
+            width:91.5%;
+        }
+        .span_12,
+        .tab_row,
+        footer,
+        .main_container,
+        .content_container,
+        .widget_container,
+        #flip_cards,
+        .flex {
+            margin-left:0;
+            width:100%;
+        }
+
+        .hide_on_desktop {
+            display: none !important;
+        }
+    }

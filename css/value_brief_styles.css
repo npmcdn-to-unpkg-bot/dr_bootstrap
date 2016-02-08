@@ -1,0 +1,307 @@
+﻿/* BEGIN: Value Brief template CSS */
+body {
+	background: #ffffff;
+	color: #404851;
+	font-size: 1.2em;
+	font-weight: normal;
+	height: auto;
+	margin:0;
+	font-size: 16px;
+}
+p { margin-top: 0px;	}
+h1.heading-xl {
+	color: #31b1e4;
+	font-family: "DIN 1451 W01 Engschrift";
+	font-size: 5em;
+	font-weight: 400;
+	line-height: 1em;
+  margin: 0 0 15px;
+	width: 100%;
+  float: left;
+}
+h3.heading-m {
+  color: #646469;
+  font-family: "DIN Next W01 Light";
+  font-size: 2em;
+  font-weight: 400;
+  padding: 10px 0px;
+  margin: 0;
+}
+ h4.heading-s {
+  color: #31b1e4;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0;
+}
+h4.heading-m {
+  color: #404851;
+  font-family: "DIN 1451 W01 Engschrift";
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 0;
+}
+.title {
+	font-size: 1.1em;
+	margin: 0px;
+	color: #343438;
+	font-family: "DIN Next W01 Medium" !important;
+	padding-top: 0px !important;
+	font-weight: normal;
+}
+h4.title {
+	font-size: 1.1em;
+	margin: 0px;
+	color: #007eb5;
+	font-family: "DIN Next W01 Medium" !important;
+	padding-top: 0px !important;
+	font-weight: normal;
+}
+.dr-heading .eyebrow{margin-bottom: 10px;}
+
+.copy-wrapper{padding-bottom: 20px;}
+
+.visible-mobile{
+	display:none;
+}
+.hidden-mobile{
+	display:block;
+}
+.value-brief {
+  padding: 0;
+}
+.page-header {
+  margin-bottom: 18px;
+}
+.full-width {
+  max-height: 195px;
+  overflow: hidden;
+}
+.section {
+  margin-bottom: 50px;
+}
+.full-width img {
+  margin-top: -75px;
+  width: 100%;
+}
+p.para-text {
+  line-height: 1.35em;
+	text-align: left;
+}
+.customer-profile {
+	padding: 0 0 50px 40px;
+}
+.customer-profile.cbi-img > img {
+  max-width: 305px;
+}
+.right-panel {
+	padding: 0 40px 0 40px;
+}
+.page-header .heading {
+  background-color: #90cc57;
+	color: #404851;
+	font-size: 1em;
+	font-weight: 700;
+	padding: 8px 15px 3px 20px;
+	width: auto;
+	float: left;
+	clear: both;
+}
+.v-heading {
+  background-color: #93959d;
+  color: #ffffff;
+  margin: 0;
+  padding: 5px 20px;
+	text-align: center;
+	width: 49%;
+}
+.v-fees {
+  border: 2px solid #93959d;
+	border-bottom:none;
+  font-family: "DIN Next W01 Light";
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+.v-fees strong, .c-fees strong {
+	font-family: "DIN Next W01 Regular";
+	font-size: 1.6em;
+}
+.v-fees span {
+	float: left;
+  font-size: 0.7em;
+	font-family: "DIN Next W01 Light";
+	padding: 0 2px;
+  width: 100%;
+}	
+.v-list {
+	background-color: #E6E6E9;
+	border: 2px solid #93959d;
+	border-bottom:none;
+  font-family: "DIN Next W01 Light";
+  font-size: 18px;
+  margin: 0;
+	padding:0;
+	vertical-align: top;
+}
+.c-list {
+	background-color: #DAF1FA;
+	border: 2px solid #00B5E0;
+	border-bottom:none;
+  font-family: "DIN Next W01 Light";
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+	vertical-align: top;
+}
+.v-list  ul, .c-list  ul {
+  padding: 5px 6px 5px 30px;
+	margin: 0px;
+}
+.v-list ul li, .c-list ul li{
+	margin: 10px 0;
+}
+.c-heading {
+  background-color: #00b5e0;
+  margin: 0;
+  padding: 5px 15px;
+  text-align: center;
+	width: 49%;
+}
+.c-fees {
+	border: 2px solid #00B5E0;
+	border-bottom:none;
+	margin: 0;
+	padding: 18px 0;
+  text-align: center;
+  width: 100%;
+}
+.economics {
+  background-color: #00b5e0;
+}
+.economics  p.economics-text {
+	font-size: 18px;
+	line-height: 20px;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+}
+p.revenue-text {
+	float: left;
+  font-size: 1em;
+  line-height: 24px;
+  margin: 10px 0 100px;
+  width: 100%;
+}
+p.revenue-text span.left {
+	float: left;
+}
+p.revenue-text span.right {
+	float: left;
+  width: 90%;
+  margin-left: 6px;
+}
+#dr_aboutDR , #dr_contactUs {
+	float: left;
+	width: 100%;
+	text-align: left;
+}
+#dr_aboutDR  h4.heading-s {
+	color: #404851;
+}
+#dr_contactUs p {
+  color: #404851;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+	word-break: break-all;
+}
+#dr_contactUs {
+	background-color: #D2D4DC;
+	margin-top: 30px;
+	padding: 15px;
+}
+#dr_contactUs span {
+  display: inline-block;
+  font-family: "DIN Next W01 Light";
+  font-size: 1em;
+  line-height: 28px;
+}
+#dr_footer .footer-logo p {
+  font-family: "DIN Next W01 Light";
+  font-size: 0.765em;
+  text-align: left;
+}
+#dr_footer {
+  margin-top: 20px;
+  padding: 20px 0 0px;
+}
+#dr_footer #dr_digiCom {
+  color: #31b1e4;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+	text-align: right;
+}
+.page-width{
+	max-width:1272px;
+	position:relative;
+	margin:0 auto;
+}
+@media only screen and (min-device-width : 600px) and (max-width:1000px) {
+	h3.heading-m {
+		font-size: 1.17em;
+		line-height: 1.2em;
+		padding: 0;
+	}
+	h1.heading-xl {
+		font-size: 2em;
+		line-height: 1.2em;
+	}
+	.full-width img {
+    margin-top: -60px;
+	}	
+	.customer-profile {
+		text-align: center;
+	}
+	p.revenue-text {
+		margin-bottom: 30px !important;
+	}
+	.customer-profile, .right-panel {
+		padding: 0;
+		left: -30px;
+		position: relative;
+	}
+	.customer-profile.cbi-img > img {
+	 	max-width: 255px;
+	}
+
+}
+@media (max-width : 600px){
+	.hidden-mobile{
+		display:none;
+	}
+	.visible-mobile{
+		display:block;
+	}
+	.dr-heading{
+		width:100%!important;
+		float:none;
+	}
+	h1.heading-xl {
+		font-size: 1.7em;
+	}
+	.footer-logo, #dr_digiComFooter{
+		width:50%!important;
+	}
+	#dr_footer #dr_digiCom{
+		margin-top:0;
+		text-align: left;	
+	}
+	#dr_footer #dr_digiComFooter {
+    font-family: "DIN Next W01 Light";
+    font-size: 0.765em;
+    text-align: right;
+	}
+}
+/* END: Value Brief template CSS */

@@ -1,0 +1,191 @@
+#corporate_policies {
+    color: #606060;
+    margin-top: 140px;
+    line-height: 18px;
+    font-family: @corporate_font;
+
+    .main_content {
+        padding: 0 10px 40px 0;
+        margin-bottom: 0;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    b {
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 12px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    header.intro {
+        margin-top: 51px;
+        margin-bottom: -25px;
+
+        h1 {
+            color: #000;
+            font-size: 11pt;
+            line-height: 30px;
+            font-weight: bold;
+        }
+    }
+
+    .row {
+        .span_8 {
+            width: 63.6%;
+            // margin-right: 2.9%;
+        }
+    }
+
+    .important_containers {
+
+        &.hide_on_mobile {
+            .important_container {
+                float: left;
+                height: 100%;
+                margin-top: 25px;
+                padding-bottom: 10025px;
+                margin-bottom: -10000px;
+                border: 1px solid #CCC;
+                border-bottom: 1px solid #CCC;
+            }
+        }
+
+        .row {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+
+            .span_6 {
+                margin-right: 3%;
+
+                &.last {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .column_bottom_left {
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            background: #CCC;
+            position: absolute;
+        }
+
+        .column_bottom_right {
+            bottom: 0;
+            height: 1px;
+            background: #CCC;
+            position: absolute;
+        }
+
+        &.show_on_mobile {
+            &.important_containers {
+                padding-left: 20px;
+                padding-right: 20px;
+                width: auto !important;
+            }
+
+            .important_container {
+                float: left;
+                height: 100%;
+                min-width: 99.8%;
+                margin-top: 25px;
+                border: 1px solid #CCC;
+                padding: 0px !important;
+                border-bottom: 1px solid #CCC;
+                padding-bottom: 10px !important;
+            }
+        }
+
+        header {
+            width: 94%;
+            height: 48px;
+            padding: 1% 1% 1% 5%;
+            border-bottom: 1px solid #CCC;
+            background: url('../img/corporate_header_bg.png') repeat-x;
+
+            h2 {
+                margin-top: 1%;
+                font-size: 10pt;
+                font-weight: bold;
+            }
+
+            a {
+                color: #0072BC;
+                font-size: 9pt;
+                margin-top: 5px;
+                font-weight: bold;
+                display: inline-block;
+                text-decoration: none;
+            }
+        }
+
+        article {
+            font-size: 10pt;
+            line-height: 18px;
+
+            ul {
+                margin: 15px 0 0 36px;
+            }
+
+            li {
+                list-style: none;
+                padding: 0px 25px 0 25px;
+                background-image: url('../img/corporate_dash.png');
+                background-repeat: no-repeat;
+                background-position: 15px 7px;
+            }
+        }
+    }
+
+    .content {
+        margin-top: 64px;
+
+        a {
+            color: #0072bc;
+            text-decoration: none;
+        }
+        
+        h2 {
+            width: 90%;
+            display: block;
+            font-size: 10pt;
+            margin-top: 30px;
+            font-weight: bold;
+            border-top: solid 1px #AAA;
+        }
+
+        h3 {
+            color: #005BA8;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0 0 5px 0;
+        }
+
+        ul {
+            margin: 15px 0 0 36px;
+        }
+
+        li {
+            font-size: 12px;
+            line-height: 18px;
+            list-style: none;
+            padding: 0px 25px 0 25px;
+            background-image: url('../img/corporate_dash.png');
+            background-repeat: no-repeat;
+            background-position: 15px 9px;
+        }
+
+        #back_to_top {
+            font-size: 12px;
+            text-align: right;
+            line-height: 18px;
+        }
+    }
+}

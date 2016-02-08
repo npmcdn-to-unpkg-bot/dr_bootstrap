@@ -1,0 +1,24 @@
+ID,CARD TYPE,CARD CLASS
+1,Visa,Visa
+2,MasterCard,MasterCard
+3,American Express,AmExpress
+4,UnionPay,UnionPay
+5,Maestro (International),MaestroInternational
+6,Diners Club International,DCI
+7,Hiper,Hiper
+8,Hipercard,Hipercard
+9,Elo,Elo
+10,Aura,Aura
+11,JCB,JCB
+12,Dankort,Dankort
+13,Carte Bleue,CarteBleue
+14,Carte Bancaires,CarteBancaires
+15,Andhra Bank Debit Card,AndhraBankDebitCard
+16,Canara Bank Card,CanaraBankCard
+17,Citibank Debit Card,CitibankDebitCard
+18,Indian Overseas Bank Debit Card,IndianOverseasBankDebitCard
+19,Punjab National Bank Debit Card,PunjabNationalBankDebitCard
+20,State Bank of India Debit Card,StateBankofIndiaDebitCard
+21,Union Bank of India Debit Card,UnionBankofIndiaDebitCard
+22,CaraSi,CaraSi
+23,Discover,Discover

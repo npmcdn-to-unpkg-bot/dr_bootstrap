@@ -1,0 +1,76 @@
+/* リーダーシップ */
+.page-id-10106 .header_text{font-size: 1.5em;}
+.page-id-10106 .body_title{display: none;}
+.page-id-10106 #template_b h2{font-size: 1.5em;}
+
+
+/* digitalriverを選ぶ理由 */
+.section .commerce-service .experience-expanded .service-content .sub-service .header {
+    font-size: 22px !important;
+}
+.section .right-side .five-columns .columns-number {
+    bottom: 10px !important;
+    position: absolute;
+}
+.section .right-side .snapshot-wrapper .header {
+    margin-bottom: 10px !important;
+}
+.ja .section .right-side .five-columns .columns .header {
+    height: 20px　!important;
+}
+.section .right-side .five-columns .columns .copy {
+    margin-top: 30px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+#currencies .copy {
+    margin-top: 30px !important;
+}
+#subscriptions .copy {
+    margin-top: 30px !important;
+}
+
+
+/* ソリューション/コマース */
+/* ソリューション/マーケティング-2 */
+.ja .med {
+    font-family: "Meiryo" !important;
+    -webkit-text-stroke-width: 0.6px;
+}
+
+/* ソリューション/マーケティング-2/検索エンジンマーケティング */
+/* ソリューション/マーケティング-2/メールプログラム */
+/* ソリューション/コマース/チャネルリード管理 */
+/* ソリューション/コマース/物品およびデジタル製品の発送 */
+#template_j h3.section_heading {
+    font-family: "Meiryo" !important;
+    -webkit-text-stroke-width: 0.6px;
+}
+
+/* トップページ */
+#why-work .left_col h1 {
+    font-size: 6em;
+    line-height: 1em;
+    font-family: "Meiryo" !important;
+}
+
+.ja .eng {
+    font-family: "Meiryo" !important;
+}
+
+/* ソリューション/コマース/コンテクスチュアルコマース */
+.ja .light {
+    font-family: "Meiryo" !important;
+}
+
+.call-to-action-tab{
+    display: none;
+}
+
+/* パートナー */
+.partner-icon{
+height: 200px;
+display: block;
+margin: 25px auto;
+position: relative;
+}

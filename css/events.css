@@ -1,0 +1,167 @@
+
+.clear{clear:both;}
+.row2{width: 1170px; padding: 0 15px; margin: 0 auto;}
+
+
+
+.webinars{font-family: "Arial";}
+.webinars .sidebar-items{
+margin-right: 4%;
+
+}
+
+.first{border:none !important;}
+
+
+.sidebar-item{border-top: solid 1px #8f9094; padding: 20px 0; margin: 0px; }
+.sidebar-item:first-child {border: none; padding-top: 0;}
+
+.sidebar-item .title{font-size: 1.4em; margin: 0; color: #343438; font-family: "DIN Next W01 Medium";}
+.sidebar-item p.description{font-size: 1em; color: #343438; margin: 7px 0 15px; line-height: 1.25;}
+.sidebar-item .date{font-size: 1em; width: 100%; color: #81b315; margin: 0 0 7px;  font-family: "DIN Next W01 Medium";}
+.sidebar-item span a{width:100%; margin: 5px 0 0;}
+
+.sidebar-item a.button{ padding: 10px 12px 6px; margin: 0 0 0px; display: inline-block; color: #00a7e1; text-decoration: none;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition:all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    font-family: "DIN Next W01 Medium";
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #00A7E1;
+    border: 2px solid #007EB5;
+    line-height: 1;
+    cursor: pointer;
+    float: left;
+    color: rgb(255, 255, 255) !important;
+
+}
+
+.sidebar-item a.button:hover{background: #007EB5; color: #FFF;}
+
+
+.featured_wrapper{margin-top: 30px;}
+
+a.brackets{ 
+    text-transform: inherit;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 45px 16px 0;
+    display: block;
+    float: left;
+     color: #007EB5;
+    font-family: "DIN 1451 W01 Engschrift",sans-serif;
+    text-transform: uppercase;
+}
+a.brackets:hover{text-decoration: none; color: #00a7e1;}
+a.brackets::before{
+    content:"[ ";
+}
+a.brackets::after{
+    content: " ]";
+}
+
+.sidebar{
+    background: #f4f4f4;
+    margin: 42px 0px 40px;
+    padding: 25px;
+    border: solid 1px #bcbcbc;
+    box-sizing:border-box;
+
+}
+
+.sidebar .sidebar-items{margin-top: 20px;}
+.sidebar .sidebar-items .sidebar-item{ margin: 0px; }
+.sidebar .eyebrow{margin: 0 20px 0 0; }
+.sidebar a.brackets {margin: 5px 1% 0px;}
+
+.row2 .span_4 {
+    width: 32.75%;
+}
+
+
+.row2 .span_8 {
+    width: 66.4%;
+}
+
+.rail, .content_container {
+    background: #FFF;
+}
+
+
+.featured_area .copy_wrapper {
+    margin: 100px auto 0px;
+}
+
+
+.sidebar-items .sidebar-item a {
+    margin: 0px 0px 10px;
+    color: #007eb5;
+    text-decoration: none;
+    display: block;
+    font-family: "DIN Next W01 Medium";
+    font-size: 1.1em;
+}
+
+/*
+ *  
+ *   Accordion Sidebar Styles
+ *
+ */
+
+  .accordion{
+    margin: 10px 0 0;
+  }
+
+  .rail_tabbed_content .tab{
+    font-size: 1em;
+  }
+
+  .rail_tabbed_content .tab .header{
+    padding: 15px 0 0;
+    /*background: #DDD;*/
+    cursor: pointer;
+    font-size: 1.05em;
+    font-family: "DIN Next W01 Medium";
+    color: #343438;
+  }
+
+  .rail_tabbed_content .tab .header .arrow{
+        float: right;
+        width: 0; 
+        height: 0; 
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 5px solid #999;
+        margin: 5px 10px 5px 0;
+        -webkit-transition: all 200ms;
+        -moz-transition: all 200ms;
+        -o-transition: all 200ms;
+        transition: all 200ms;
+  }
+
+  .rail_tabbed_content .tab .header .arrow.selected{
+      -ms-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+  }
+
+  .rail_tabbed_content .tab .content{
+    padding: 10px 0;
+  }
+
+
+
+
+
+@media handheld, only screen and (max-width: 1000px) {
+    .webinars .sidebar-items{
+    margin-right: 0%;
+    }
+
+    .sidebar-items .sidebar-item {
+        margin: 0px 0px 0px 0px;
+    }
+}

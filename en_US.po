@@ -1,0 +1,1469 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-05-19 14:33-0000\n"
+"PO-Revision-Date: 2015-05-19 14:33-0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.7\n"
+"X-Poedit-Basepath: t:\\Temp\\dirk\\digital_river\\wordpress\\wp-content"
+"\\themes\\digital-river-translated\\\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: templates\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: acf-template-widget-relationship/template_widget_relationship-v4.php:24
+msgid "Template Widget Relationship"
+msgstr ""
+
+#: acf-template-widget-relationship/template_widget_relationship-v4.php:25
+msgid "Widget"
+msgstr ""
+
+#: acf-template-widget-relationship/template_widget_relationship-v4.php:74
+#: fields/template.php:67 fields/widget_template_relationship.php:64
+msgid "Instructions"
+msgstr ""
+
+#: acf-template-widget-relationship/template_widget_relationship-v4.php:77
+#: fields/widget_template_relationship.php:67
+msgid "Templates and Widgets will be dislayed in a drag and drop field."
+msgstr ""
+
+#: blog.php:94
+msgid "«"
+msgstr ""
+
+#: blog.php:95
+msgid "»"
+msgstr ""
+
+#: blog.php:119
+msgid "By "
+msgstr ""
+
+#: blog.php:140
+msgid "Filed under:"
+msgstr ""
+
+#: blog.php:160
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: fields/categories.php:33 php/custom_post_types.php:41
+#: php/custom_post_types.php:79
+msgid "Categories"
+msgstr ""
+
+#: fields/categories.php:73
+msgid "Type"
+msgstr ""
+
+#: fields/categories.php:109
+msgid "Child Of"
+msgstr ""
+
+#: fields/categories.php:129
+msgid "Parent"
+msgstr ""
+
+#: fields/categories.php:149
+msgid "Order By"
+msgstr ""
+
+#: fields/categories.php:175
+msgid "Order"
+msgstr ""
+
+#: fields/categories.php:200
+msgid "Hide Empty"
+msgstr ""
+
+#: fields/categories.php:225
+msgid "Hierarchical"
+msgstr ""
+
+#: fields/categories.php:250
+msgid "Taxonomy"
+msgstr ""
+
+#: fields/categories.php:285
+msgid "Include Categories"
+msgstr ""
+
+#: fields/categories.php:305
+msgid "Exclude Categories"
+msgstr ""
+
+#: fields/categories.php:325
+msgid "Display Type"
+msgstr ""
+
+#: fields/categories.php:345
+msgid "Show All"
+msgstr ""
+
+#: fields/categories.php:368
+msgid "Show None"
+msgstr ""
+
+#: fields/categories.php:391
+msgid "Show Parent"
+msgstr ""
+
+#: fields/categories.php:414
+msgid "Return Value"
+msgstr ""
+
+#: fields/custom_post_types.php:20
+msgid "Custom Post Types"
+msgstr ""
+
+#: fields/custom_post_types.php:62 fields/template.php:40
+msgid "No choices to choose from"
+msgstr ""
+
+#: fields/custom_post_types.php:127
+msgid "Allow Null?"
+msgstr ""
+
+#: fields/custom_post_types.php:136 fields/custom_post_types.php:155
+msgid "Yes"
+msgstr ""
+
+#: fields/custom_post_types.php:137 fields/custom_post_types.php:156
+msgid "No"
+msgstr ""
+
+#: fields/custom_post_types.php:146
+msgid "Select multiple values?"
+msgstr ""
+
+#: fields/template.php:12
+msgid "Templates"
+msgstr ""
+
+#: fields/template.php:70
+msgid ""
+"Template will be autoloaded from the template directory and will be "
+"displayed as radio buttons."
+msgstr ""
+
+#: fields/widget_template_relationship.php:15
+msgid "Widget Template Relationship"
+msgstr ""
+
+#: footer.php:9
+msgid "Who We Are"
+msgstr ""
+
+#: footer.php:16
+msgid "What We Do"
+msgstr ""
+
+#: footer.php:26
+msgid "How We're Different"
+msgstr ""
+
+#: footer.php:33 templates/template-clients2.php:233
+msgid "Resources"
+msgstr ""
+
+#: footer.php:42
+msgid "Our Sites"
+msgstr ""
+
+#: footer.php:62
+msgid "How To Reach Us"
+msgstr ""
+
+#: footer.php:65 templates/template-CBI.php:321
+#: templates/template-why-dr.php:909
+msgid "Customer Service"
+msgstr ""
+
+#: footer.php:66 templates/template-CBI.php:202
+#: templates/template-clients2.php:273 templates/template-why-dr.php:1032
+msgid "Contact Us"
+msgstr ""
+
+#: footer.php:75 footer.php:78 footer.php:81
+msgid "Follow Digital River on Twitter"
+msgstr ""
+
+#: footer.php:88 footer.php:91 footer.php:94
+msgid "Connect with Digital River on LinkedIn"
+msgstr ""
+
+#: footer.php:100 footer.php:102 footer.php:104
+msgid "Get Updates on Digital River via RSS"
+msgstr ""
+
+#: footer.php:109
+msgid "Corporate Headquarters"
+msgstr ""
+
+#: footer.php:128
+msgid ""
+" Digital River, Inc., Digital River® is a registered trademark of Digital "
+"River, Inc."
+msgstr ""
+
+#: functions.php:525
+msgid "Call Us"
+msgstr ""
+
+#: header.php:64
+msgid "Search"
+msgstr ""
+
+#: home.php:88
+msgid "Clients"
+msgstr ""
+
+#: home.php:89
+msgid "More Clients"
+msgstr ""
+
+#: library/admin.php:7
+msgid ""
+"<span id=\"footer-thankyou\">Developed by <a href=\"http://www.olson.com/\" "
+"target=\"_blank\">Olson</a></span>."
+msgstr ""
+
+#: masthead.php:35 php/custom_post_types.php:105 php/custom_post_types.php:106
+msgid "Media Coverage"
+msgstr ""
+
+#: masthead.php:37
+msgid "Digital River Blog"
+msgstr ""
+
+#: masthead.php:39
+msgid "Newsroom"
+msgstr ""
+
+#: masthead.php:41 php/custom_post_types.php:67
+msgid "Events"
+msgstr ""
+
+#: masthead.php:67
+msgid ""
+"Keep current with commerce, payments and marketing news, education and best "
+"practices."
+msgstr ""
+
+#: masthead.php:69
+msgid ""
+"See what’s happening with Digital River. Read our company news, global "
+"editorial pieces and industry recognitions."
+msgstr ""
+
+#: masthead.php:71
+msgid "Join Digital River at one of our many industry events."
+msgstr ""
+
+#: partials/blog/sidebar-left.php:28
+msgid "Select Category"
+msgstr ""
+
+#: partials/blog/sidebar-left.php:64
+msgid "Select Month"
+msgstr ""
+
+#: php/custom_post_types.php:10
+msgid "Custom Widgets"
+msgstr ""
+
+#: php/custom_post_types.php:11
+msgid "Custom Widget"
+msgstr ""
+
+#: php/custom_post_types.php:30
+msgid "Press Releases"
+msgstr ""
+
+#: php/custom_post_types.php:31
+msgid "Press Release"
+msgstr ""
+
+#: php/custom_post_types.php:42 php/custom_post_types.php:80
+msgid "Category"
+msgstr ""
+
+#: php/custom_post_types.php:50 php/custom_post_types.php:88
+msgid "Tags"
+msgstr ""
+
+#: php/custom_post_types.php:51 php/custom_post_types.php:89
+msgid "Tag"
+msgstr ""
+
+#: php/custom_post_types.php:68
+msgid "Event"
+msgstr ""
+
+#: php/menus.php:10
+msgid "Main Menu"
+msgstr ""
+
+#: php/menus.php:11
+msgid "Header Menu"
+msgstr ""
+
+#: php/menus.php:12
+msgid "Footer: Who We Are"
+msgstr ""
+
+#: php/menus.php:13
+msgid "Footer: What We Do"
+msgstr ""
+
+#: php/menus.php:14
+msgid "Footer: How We're Different"
+msgstr ""
+
+#: php/menus.php:15
+msgid "Footer: Resources"
+msgstr ""
+
+#: php/menus.php:16
+msgid "Footer: Our Sites"
+msgstr ""
+
+#: search.php:51
+msgid "Solution Results"
+msgstr ""
+
+#: search.php:69 templates/widgets/template_f/flex/featured_content.php:22
+#: templates/widgets/template_f/right_column/featured_content.php:23
+msgid "Details"
+msgstr ""
+
+#: search.php:97
+msgid "Our Expertise Results"
+msgstr ""
+
+#: search.php:134 search.php:172
+#: templates/widgets/home/featured_content.php:19
+#: templates/widgets/posts/content/tabs.php:18
+#: templates/widgets/posts/home_content/box.php:7
+#: templates/widgets/posts/template_b_content/box.php:34
+msgid "Read More"
+msgstr ""
+
+#: search.php:162
+msgid "Page Results"
+msgstr ""
+
+#: templates/template-CBI.php:194
+msgid ""
+"Our commerce business infrastructure empowers you to sell your products in "
+"countries around the world. This robust yet flexible offering helps remove "
+"barriers of entry into challenging global markets and protects you from risk."
+msgstr ""
+
+#: templates/template-CBI.php:197
+msgid ""
+"Backed by 20 years of commerce experience and powered by our proprietary "
+"software, technology and intellectual property, Digital River’s commerce "
+"business infrastructure is a core differentiator in the marketplace. We’ll "
+"help you get there – virtually anywhere you want to do business."
+msgstr ""
+
+#: templates/template-CBI.php:200 templates/template-clients2.php:269
+msgid "Ready to go global?"
+msgstr ""
+
+#: templates/template-CBI.php:201 templates/template-clients2.php:271
+msgid "Call us at +1-800-598-7450"
+msgstr ""
+
+#: templates/template-CBI.php:210
+msgid "Merchant and Seller of Record Icon"
+msgstr ""
+
+#: templates/template-CBI.php:212
+msgid "Merchant &amp; Seller of Record"
+msgstr ""
+
+#: templates/template-CBI.php:215
+msgid "MOR &amp; SOR solutions available"
+msgstr ""
+
+#: templates/template-CBI.php:216 templates/template-why-dr.php:834
+msgid "Digital River assumes risk"
+msgstr ""
+
+#: templates/template-CBI.php:222
+msgid "Local Legal Entities Icon"
+msgstr ""
+
+#: templates/template-CBI.php:224 templates/template-why-dr.php:840
+msgid "Local Legal Entities"
+msgstr ""
+
+#: templates/template-CBI.php:227 templates/template-why-dr.php:843
+msgid "In complex countries"
+msgstr ""
+
+#: templates/template-CBI.php:228
+msgid "Local expertise and payment mets"
+msgstr ""
+
+#: templates/template-CBI.php:234
+msgid "Fraud Management Icon"
+msgstr ""
+
+#: templates/template-CBI.php:236 templates/template-why-dr.php:849
+msgid "Proactive Fraud Management"
+msgstr ""
+
+#: templates/template-CBI.php:239 templates/template-why-dr.php:852
+msgid "In-house fraud system learns over time"
+msgstr ""
+
+#: templates/template-CBI.php:248
+msgid "Tax Solutions Icon"
+msgstr ""
+
+#: templates/template-CBI.php:250 templates/template-why-dr.php:858
+msgid "Full-Service Tax Solution"
+msgstr ""
+
+#: templates/template-CBI.php:253 templates/template-why-dr.php:861
+msgid "Manage audit risk"
+msgstr ""
+
+#: templates/template-CBI.php:254 templates/template-why-dr.php:862
+msgid "Day-to-day compliance"
+msgstr ""
+
+#: templates/template-CBI.php:255 templates/template-why-dr.php:863
+msgid "Offshore tax structure"
+msgstr ""
+
+#: templates/template-CBI.php:261
+msgid "Order Management Icon"
+msgstr ""
+
+#: templates/template-CBI.php:263 templates/template-why-dr.php:868
+msgid "Order Management"
+msgstr ""
+
+#: templates/template-CBI.php:266
+msgid "Order and financial data management"
+msgstr ""
+
+#: templates/template-CBI.php:267 templates/template-why-dr.php:872
+msgid "Fulfillment and logistics"
+msgstr ""
+
+#: templates/template-CBI.php:273
+msgid "Cloud Enablement Icon"
+msgstr ""
+
+#: templates/template-CBI.php:275 templates/template-why-dr.php:877
+msgid "Cloud Enablement"
+msgstr ""
+
+#: templates/template-CBI.php:278 templates/template-why-dr.php:619
+#: templates/template-why-dr.php:880
+msgid "Subscriptions"
+msgstr ""
+
+#: templates/template-CBI.php:279 templates/template-why-dr.php:881
+msgid "Usage-based billing"
+msgstr ""
+
+#: templates/template-CBI.php:280 templates/template-why-dr.php:882
+msgid "Inter-term billing"
+msgstr ""
+
+#: templates/template-CBI.php:281 templates/template-why-dr.php:883
+msgid "Cloud billing"
+msgstr ""
+
+#: templates/template-CBI.php:292
+msgid "Analytics and Reporting Icon"
+msgstr ""
+
+#: templates/template-CBI.php:294 templates/template-why-dr.php:888
+msgid "Business Intelligence"
+msgstr ""
+
+#: templates/template-CBI.php:297 templates/template-why-dr.php:891
+msgid "Analytics"
+msgstr ""
+
+#: templates/template-CBI.php:298 templates/template-why-dr.php:892
+msgid "Reporting"
+msgstr ""
+
+#: templates/template-CBI.php:299 templates/template-why-dr.php:893
+msgid "Predictive modeling"
+msgstr ""
+
+#: templates/template-CBI.php:305
+msgid "Security and Compliance Icon"
+msgstr ""
+
+#: templates/template-CBI.php:307
+msgid "Security &amp; Compliance"
+msgstr ""
+
+#: templates/template-CBI.php:310 templates/template-why-dr.php:901
+msgid "PCI"
+msgstr ""
+
+#: templates/template-CBI.php:311 templates/template-why-dr.php:902
+msgid "SOX"
+msgstr ""
+
+#: templates/template-CBI.php:312 templates/template-why-dr.php:903
+msgid "SSAE16"
+msgstr ""
+
+#: templates/template-CBI.php:313 templates/template-why-dr.php:904
+msgid "WEEE"
+msgstr ""
+
+#: templates/template-CBI.php:319
+msgid "Customer Service Icon"
+msgstr ""
+
+#: templates/template-CBI.php:324 templates/template-why-dr.php:912
+msgid "Call center support"
+msgstr ""
+
+#: templates/template-CBI.php:325
+msgid "Escalation Management"
+msgstr ""
+
+#: templates/template-CBI.php:335
+msgid "Integrated Services Icon"
+msgstr ""
+
+#: templates/template-CBI.php:337 templates/template-why-dr.php:920
+msgid "Integrated Services"
+msgstr ""
+
+#: templates/template-CBI.php:340 templates/template-why-dr.php:923
+msgid "Consultative client service through site launch"
+msgstr ""
+
+#: templates/template-CBI.php:353
+msgid "What does that mean?"
+msgstr ""
+
+#: templates/template-CBI.php:356
+msgid "Merchant of Record"
+msgstr ""
+
+#: templates/template-CBI.php:357 templates/template-CBI.php:375
+msgid ""
+"We assume the financial liability for all customer transactions, including "
+"tax and compliance risk, to ensure your administrative responsibilities are "
+"handled with precision and full compliance with local laws to protect you "
+"from risk."
+msgstr ""
+
+#: templates/template-CBI.php:358
+msgid "Increase Speed to Market"
+msgstr ""
+
+#: templates/template-CBI.php:359
+msgid ""
+"Digital River’s CBI provides a complete solution to all global ecommerce "
+"needs. Our local expertise enables you to go to market faster, and easier."
+msgstr ""
+
+#: templates/template-CBI.php:360
+msgid ""
+"We provide the infrastructure to allow your business to be effective in each "
+"region across the globe."
+msgstr ""
+
+#: templates/template-CBI.php:362
+msgid ""
+"Expertise in local laws, regional languages and payment methods to guarantee "
+"success in complex countries"
+msgstr ""
+
+#: templates/template-CBI.php:365
+msgid "Seller of Record"
+msgstr ""
+
+#: templates/template-CBI.php:366
+msgid ""
+"As the Seller of Record, Digital River assumes responsibility for "
+"maintaining and establishing returns policy and terms of conditions of sale "
+"to smoothly handle all title of product transactions."
+msgstr ""
+
+#: templates/template-CBI.php:368
+msgid ""
+"Local entities enable localized collection methods, fulfillment and customer "
+"service"
+msgstr ""
+
+#: templates/template-CBI.php:369
+msgid "Standardized financial set-up processes"
+msgstr ""
+
+#: templates/template-CBI.php:374
+msgid "Global Tax Complexities"
+msgstr ""
+
+#: templates/template-CBI.php:376 templates/template-why-dr.php:898
+msgid "Security and Compliance"
+msgstr ""
+
+#: templates/template-CBI.php:378
+msgid ""
+"Digital River complies with all PCI standards to protect your customers—and "
+"your business reputation— to ensure a secure shopper experience."
+msgstr ""
+
+#: templates/template-CBI.php:380
+msgid ""
+"Proactive fraud management using our in-house fraud system to identify "
+"potential fraud activity by leveraging a community database of past fraud "
+"experiences"
+msgstr ""
+
+#: templates/template-clients2.php:12 templates/template-clients2.php:48
+msgid "Logitech Logo"
+msgstr ""
+
+#: templates/template-clients2.php:17 templates/template-clients2.php:56
+#: templates/template-clients2.php:223
+msgid "WildTangent Logo"
+msgstr ""
+
+#: templates/template-clients2.php:22
+msgid "Kaspersky Logo"
+msgstr ""
+
+#: templates/template-clients2.php:25
+msgid "View Tesimonial"
+msgstr ""
+
+#: templates/template-clients2.php:30
+msgid "Microsoft Logo"
+msgstr ""
+
+#: templates/template-clients2.php:40
+msgid "HTC Logo"
+msgstr ""
+
+#: templates/template-clients2.php:44
+msgid "Nuance Logo"
+msgstr ""
+
+#: templates/template-clients2.php:52
+msgid "Bosch Logo"
+msgstr ""
+
+#: templates/template-clients2.php:60
+msgid "D-link Logo"
+msgstr ""
+
+#: templates/template-clients2.php:64
+msgid "Klarna Logo"
+msgstr ""
+
+#: templates/template-clients2.php:70
+msgid "Spotify Logo"
+msgstr ""
+
+#: templates/template-clients2.php:75
+msgid "Lenovo Logo"
+msgstr ""
+
+#: templates/template-clients2.php:83
+msgid "Pacsun Logo"
+msgstr ""
+
+#: templates/template-clients2.php:88
+msgid "Citrix Logo"
+msgstr ""
+
+#: templates/template-clients2.php:93
+msgid "Adobe Logo"
+msgstr ""
+
+#: templates/template-clients2.php:98
+msgid "Ubisoft Logo"
+msgstr ""
+
+#: templates/template-clients2.php:106
+msgid "VMware Logo"
+msgstr ""
+
+#: templates/template-clients2.php:111
+msgid "Autodesk Logo"
+msgstr ""
+
+#: templates/template-clients2.php:116
+msgid "Trend Micro Logo"
+msgstr ""
+
+#: templates/template-clients2.php:121
+msgid "CNET Logo"
+msgstr ""
+
+#: templates/template-clients2.php:155
+msgid "Managing Member, Enigma Software"
+msgstr ""
+
+#: templates/template-clients2.php:169
+msgid "Director of Marketing, Her Interactive"
+msgstr ""
+
+#: templates/template-clients2.php:183
+msgid "Treasurer, WildTangent"
+msgstr ""
+
+#: templates/template-clients2.php:197
+msgid "VP, Co-founder TopTen Reviews"
+msgstr ""
+
+#: templates/template-clients2.php:214
+msgid "Vistaprint Logo"
+msgstr ""
+
+#: templates/template-clients2.php:217
+msgid "Enigma Logo"
+msgstr ""
+
+#: templates/template-clients2.php:220
+msgid "Her Interactive Logo"
+msgstr ""
+
+#: templates/template-clients2.php:226
+msgid "Top Ten Reviews Logo"
+msgstr ""
+
+#: templates/template-clients2.php:238
+msgid "Client"
+msgstr ""
+
+#: templates/template-clients2.php:239
+msgid "Success Stories"
+msgstr ""
+
+#: templates/template-clients2.php:244
+msgid "Digital River"
+msgstr ""
+
+#: templates/template-clients2.php:251
+msgid "Digital River World Payments"
+msgstr ""
+
+#: templates/template-clients2.php:253
+msgid "Digital Music Service"
+msgstr ""
+
+#: templates/template-clients2.php:272
+msgid "OR"
+msgstr ""
+
+#: templates/template-industries.php:136
+msgid "Branded Manufacturing Industry Icon"
+msgstr ""
+
+#: templates/template-industries.php:139
+msgid "Branded Manufacturers"
+msgstr ""
+
+#: templates/template-industries.php:141
+msgid ""
+"Drive direct-to-consumer sales and complement existing channel relationships "
+"with our multichannel strategies."
+msgstr ""
+
+#: templates/template-industries.php:144 templates/template-industries.php:167
+#: templates/template-industries.php:184 templates/template-industries.php:198
+#: templates/template-industries.php:226
+msgid " Learn More "
+msgstr ""
+
+#: templates/template-industries.php:149
+msgid "Entertainment Industry Icon"
+msgstr ""
+
+#: templates/template-industries.php:151
+msgid "Entertainment"
+msgstr ""
+
+#: templates/template-industries.php:153
+msgid ""
+"Stay well ahead of industry trends to generate more revenue from your music, "
+"movies, games and toys."
+msgstr ""
+
+#: templates/template-industries.php:159
+msgid "Gaming Industry Icon"
+msgstr ""
+
+#: templates/template-industries.php:162
+msgid "Gaming"
+msgstr ""
+
+#: templates/template-industries.php:164
+msgid ""
+"Get your games in front of new players, strengthen loyalty with current "
+"gamers and expand into new global markets."
+msgstr ""
+
+#: templates/template-industries.php:176
+msgid "Retail Industry Icon"
+msgstr ""
+
+#: templates/template-industries.php:179
+msgid "Retail"
+msgstr ""
+
+#: templates/template-industries.php:181
+msgid ""
+"Drive retail sales and enhance your existing relationships with our "
+"multichannel strategies."
+msgstr ""
+
+#: templates/template-industries.php:190
+msgid "Software Industry Icon"
+msgstr ""
+
+#: templates/template-industries.php:193
+msgid "Software &amp; Services"
+msgstr ""
+
+#: templates/template-industries.php:195
+msgid ""
+"We understand the nuances of today’s on-demand software marketplace to drive "
+"greater global sales for clients."
+msgstr ""
+
+#: templates/template-industries.php:203
+msgid "Travel and Leisure Industry Icon"
+msgstr ""
+
+#: templates/template-industries.php:205
+msgid "Travel &amp; Leisure"
+msgstr ""
+
+#: templates/template-industries.php:207
+msgid ""
+"Global reach and payment options to effectively manage end-to-end traveler "
+"experience."
+msgstr ""
+
+#: templates/template-industries.php:218
+msgid "Direct Selling Industry Icon"
+msgstr ""
+
+#: templates/template-industries.php:221
+msgid "Direct Selling"
+msgstr ""
+
+#: templates/template-industries.php:223
+msgid ""
+"Tailored solutions that increase speed to market, enable localization, and "
+"optimize revenue for businesses who sell direct."
+msgstr ""
+
+#: templates/template-resources.php:64
+msgid "Thought Leadership"
+msgstr ""
+
+#: templates/template-resources.php:66
+msgid "Commerce"
+msgstr ""
+
+#: templates/template-resources.php:67 templates/template-why-dr.php:655
+#: templates/template-why-dr.php:936
+msgid "Payments"
+msgstr ""
+
+#: templates/template-resources.php:68
+msgid "Marketing"
+msgstr ""
+
+#: templates/template-resources.php:69
+msgid "Global Markets"
+msgstr ""
+
+#: templates/template-resources.php:72
+msgid "Client Stories"
+msgstr ""
+
+#: templates/template-resources.php:73
+msgid "Events &amp; Webinars"
+msgstr ""
+
+#: templates/template-resources.php:74
+msgid "Blog"
+msgstr ""
+
+#: templates/template-resources.php:78
+msgid "Developers Resources"
+msgstr ""
+
+#: templates/template-resources.php:80
+msgid "Developers Portal"
+msgstr ""
+
+#: templates/template-resources.php:81
+msgid "Demos"
+msgstr ""
+
+#: templates/template-resources.php:82
+msgid "Developers Toolkits"
+msgstr ""
+
+#: templates/template-why-dr.php:562
+msgid "Our Story"
+msgstr ""
+
+#: templates/template-why-dr.php:566
+msgid ""
+"We offer commerce, payments and marketing services to companies of all "
+"sizes, in nearly every corner of the world. Digital River is the leading "
+"global provider of Commerce-as-a-Service solutions. And our scalable multi-"
+"tenant SaaS is backed by 20 years of ecommerce experience and has a low up-"
+"front investment as well as a fast time to market."
+msgstr ""
+
+#: templates/template-why-dr.php:570
+msgid ""
+"This expertise enables our clients to maximize revenue as well as reduce the "
+"costs and risks of running an online business. Our digital agency drives "
+"additional growth through direct response and email marketing services, as "
+"well as our newly implemented modular pricing model and growing partner "
+"network."
+msgstr ""
+
+#: templates/template-why-dr.php:573
+msgid "Learn More About Us"
+msgstr ""
+
+#: templates/template-why-dr.php:578
+msgid "An Average Day"
+msgstr ""
+
+#: templates/template-why-dr.php:579
+msgid "Here’s a snapshot of an average Digital River day:"
+msgstr ""
+
+#: templates/template-why-dr.php:582
+msgid "Support 1.5 billion API calls"
+msgstr ""
+
+#: templates/template-why-dr.php:583
+msgid "Send over 3 million emails"
+msgstr ""
+
+#: templates/template-why-dr.php:584
+msgid "Create 5 transaction authorizations per second"
+msgstr ""
+
+#: templates/template-why-dr.php:589
+msgid "Serve 60 million pages"
+msgstr ""
+
+#: templates/template-why-dr.php:590
+msgid "Process 300,000 orders"
+msgstr ""
+
+#: templates/template-why-dr.php:591
+msgid "Host more than 6 TB of digital content"
+msgstr ""
+
+#: templates/template-why-dr.php:592
+msgid "Ship products into 170+ countries"
+msgstr ""
+
+#: templates/template-why-dr.php:599
+msgid "Online Transactions"
+msgstr ""
+
+#: templates/template-why-dr.php:600
+msgid ""
+"Our commerce, payments and marketing platforms will handle an estimated $30 "
+"billion in online transactions this year."
+msgstr ""
+
+#: templates/template-why-dr.php:604
+msgid "Site Display Languages"
+msgstr ""
+
+#: templates/template-why-dr.php:605
+msgid ""
+"We’re not just multilingual - we speak global. Our commerce platform hosts "
+"client web sites in 30 different languages. Yes, 30."
+msgstr ""
+
+#: templates/template-why-dr.php:609
+msgid "Currencies and Payment Methods"
+msgstr ""
+
+#: templates/template-why-dr.php:610
+msgid ""
+"We transact in 40 different currencies and support nearly 200 payment "
+"methods and integrate with third-party fulfillment agencies across regions "
+"of the world."
+msgstr ""
+
+#: templates/template-why-dr.php:614
+msgid "Commerce Experts"
+msgstr ""
+
+#: templates/template-why-dr.php:615
+msgid ""
+"We have 1,300 commerce experts in 23 offices around the world ready to help "
+"you operate in 243 countries."
+msgstr ""
+
+#: templates/template-why-dr.php:620
+msgid ""
+"Digital River manages 11M+ active subscriptions and 8M active subscribers."
+msgstr ""
+
+#: templates/template-why-dr.php:632
+msgid "Commerce as a Service"
+msgstr ""
+
+#: templates/template-why-dr.php:639
+msgid "Marketing <br /> Services"
+msgstr ""
+
+#: templates/template-why-dr.php:640 templates/template-why-dr.php:645
+#: templates/template-why-dr.php:651 templates/template-why-dr.php:656
+msgid "Learn More"
+msgstr ""
+
+#: templates/template-why-dr.php:644 templates/template-why-dr.php:703
+msgid "Commerce <br /> Experience"
+msgstr ""
+
+#: templates/template-why-dr.php:650
+msgid "Commerce <br />Business<br /> Infrastructure"
+msgstr ""
+
+#: templates/template-why-dr.php:665
+msgid "All Marketing Solutions "
+msgstr ""
+
+#: templates/template-why-dr.php:666 templates/template-why-dr.php:706
+#: templates/template-why-dr.php:939
+msgid "Request A Demo "
+msgstr ""
+
+#: templates/template-why-dr.php:667 templates/template-why-dr.php:707
+#: templates/template-why-dr.php:823 templates/template-why-dr.php:940
+msgid "Contact Us "
+msgstr ""
+
+#: templates/template-why-dr.php:673
+msgid "Site Search"
+msgstr ""
+
+#: templates/template-why-dr.php:674
+msgid ""
+"Manage your pay-per-click ads to get the most out of your marketing budget."
+msgstr ""
+
+#: templates/template-why-dr.php:677
+msgid "Email"
+msgstr ""
+
+#: templates/template-why-dr.php:678
+msgid ""
+"Create highly targeted and relevant messages that connect with your "
+"customers."
+msgstr ""
+
+#: templates/template-why-dr.php:681
+msgid "Affiliate"
+msgstr ""
+
+#: templates/template-why-dr.php:682
+msgid ""
+"Leverage a marketplace of pay-for-performance publishers to drive revenue."
+msgstr ""
+
+#: templates/template-why-dr.php:686
+msgid "Display"
+msgstr ""
+
+#: templates/template-why-dr.php:687
+msgid ""
+"Drive brand awareness and incremental conversions through targeted ad "
+"campaigns."
+msgstr ""
+
+#: templates/template-why-dr.php:690
+msgid "Analysis"
+msgstr ""
+
+#: templates/template-why-dr.php:691
+msgid ""
+"Monitor key performance indicators to identify optimization opportunities."
+msgstr ""
+
+#: templates/template-why-dr.php:694
+msgid "Site Optimization"
+msgstr ""
+
+#: templates/template-why-dr.php:695
+msgid ""
+"Use statistically-valid testing to form a foundation for continuous "
+"improvement."
+msgstr ""
+
+#: templates/template-why-dr.php:705
+msgid "All Commerce Solutions "
+msgstr ""
+
+#: templates/template-why-dr.php:715
+msgid "Shopping Cart"
+msgstr ""
+
+#: templates/template-why-dr.php:718
+msgid "Optimized for conversion"
+msgstr ""
+
+#: templates/template-why-dr.php:719
+msgid "Supports digital and physical"
+msgstr ""
+
+#: templates/template-why-dr.php:725
+msgid "WCMS"
+msgstr ""
+
+#: templates/template-why-dr.php:728
+msgid "Flexible framework"
+msgstr ""
+
+#: templates/template-why-dr.php:729
+msgid "Device detection"
+msgstr ""
+
+#: templates/template-why-dr.php:730
+msgid "Responsive design"
+msgstr ""
+
+#: templates/template-why-dr.php:731
+msgid "Catalog"
+msgstr ""
+
+#: templates/template-why-dr.php:736
+msgid "Virtual products"
+msgstr ""
+
+#: templates/template-why-dr.php:739
+msgid "Compare pages"
+msgstr ""
+
+#: templates/template-why-dr.php:740
+msgid "Configure-to-order"
+msgstr ""
+
+#: templates/template-why-dr.php:746
+msgid "Searchandising"
+msgstr ""
+
+#: templates/template-why-dr.php:749
+msgid "Sponsored products"
+msgstr ""
+
+#: templates/template-why-dr.php:750
+msgid "Faceted navigation"
+msgstr ""
+
+#: templates/template-why-dr.php:755
+msgid "Merchant and Promotions"
+msgstr ""
+
+#: templates/template-why-dr.php:758
+msgid "Supports most promotion types"
+msgstr ""
+
+#: templates/template-why-dr.php:759
+msgid "Social integration"
+msgstr ""
+
+#: templates/template-why-dr.php:764
+msgid "Localization"
+msgstr ""
+
+#: templates/template-why-dr.php:767
+msgid "GEO/IP detection"
+msgstr ""
+
+#: templates/template-why-dr.php:768
+msgid "Support for any language"
+msgstr ""
+
+#: templates/template-why-dr.php:769
+msgid "Optimized for local consumer"
+msgstr ""
+
+#: templates/template-why-dr.php:774
+msgid "Recommendation and Personalization"
+msgstr ""
+
+#: templates/template-why-dr.php:777
+msgid "Related items"
+msgstr ""
+
+#: templates/template-why-dr.php:778
+msgid "Private stores"
+msgstr ""
+
+#: templates/template-why-dr.php:783
+msgid "A/B Testing"
+msgstr ""
+
+#: templates/template-why-dr.php:786
+msgid "Merchandising, pricing, design, user experience,  effectiveness testing"
+msgstr ""
+
+#: templates/template-why-dr.php:791
+msgid "Pricing"
+msgstr ""
+
+#: templates/template-why-dr.php:794
+msgid "Volume discounts"
+msgstr ""
+
+#: templates/template-why-dr.php:795
+msgid "Tiered pricing"
+msgstr ""
+
+#: templates/template-why-dr.php:796
+msgid "Purchase plans"
+msgstr ""
+
+#: templates/template-why-dr.php:803
+msgid "Admin Tools"
+msgstr ""
+
+#: templates/template-why-dr.php:806
+msgid "Intuitive web-based toolset manages commerce experience"
+msgstr ""
+
+#: templates/template-why-dr.php:820
+msgid "Commerce <br />Business<br />Infrastructure"
+msgstr ""
+
+#: templates/template-why-dr.php:822
+msgid "Find Out More "
+msgstr ""
+
+#: templates/template-why-dr.php:830
+msgid "Merchant and Seller of Record"
+msgstr ""
+
+#: templates/template-why-dr.php:833
+msgid "MOR and SOR solutions available"
+msgstr ""
+
+#: templates/template-why-dr.php:844
+msgid "Local expertise and payment methods"
+msgstr ""
+
+#: templates/template-why-dr.php:871
+msgid "Order and financial data managements"
+msgstr ""
+
+#: templates/template-why-dr.php:913
+msgid "Escalation management"
+msgstr ""
+
+#: templates/template-why-dr.php:938
+msgid "All Payment Solutions"
+msgstr ""
+
+#: templates/template-why-dr.php:946
+msgid "Gateway Services"
+msgstr ""
+
+#: templates/template-why-dr.php:949
+msgid "Facilitate global transactions"
+msgstr ""
+
+#: templates/template-why-dr.php:950
+msgid "Settlement and reconciliation"
+msgstr ""
+
+#: templates/template-why-dr.php:956
+msgid "Full-Service Acquiring"
+msgstr ""
+
+#: templates/template-why-dr.php:959 templates/template-why-dr.php:980
+msgid "Transaction management"
+msgstr ""
+
+#: templates/template-why-dr.php:960
+msgid "Merchant solutions"
+msgstr ""
+
+#: templates/template-why-dr.php:961 templates/template-why-dr.php:970
+msgid "Shared risk"
+msgstr ""
+
+#: templates/template-why-dr.php:966
+msgid "PSP Services"
+msgstr ""
+
+#: templates/template-why-dr.php:969
+msgid "Sub-merchant relationships through world payments"
+msgstr ""
+
+#: templates/template-why-dr.php:976
+msgid "IN-COUNTRY MERCHANT"
+msgstr ""
+
+#: templates/template-why-dr.php:979
+msgid "Merchant of record"
+msgstr ""
+
+#: templates/template-why-dr.php:981
+msgid "Assumed risk"
+msgstr ""
+
+#: templates/template-why-dr.php:996
+msgid "Total Cost of Ownership"
+msgstr ""
+
+#: templates/template-why-dr.php:1000
+msgid ""
+"Maintaining an agile ecommerce system that is easy to implement, run, and "
+"support, while meeting customer, regulatory, and fiduciary requirements "
+"involves highly complex expertise and significant operational costs. This "
+"type of integrated Commerce-as-a-Service operation requires management of a "
+"broad range of day-to-day functions for the technology platform, website "
+"integration, marketing solutions, payment processing, and related complex "
+"business infrastructure needs—operations that increase your total cost of "
+"business."
+msgstr ""
+
+#: templates/template-why-dr.php:1004
+msgid ""
+"Digital River’s multitenant SaaS-based global ecommerce platform, combined "
+"with our end-to-end solution offerings, enables customers to easily manage "
+"all maintenance, support and execution capabilities for a successful "
+"ecommerce business. Enjoy the privilege and flexibility of outsourcing your "
+"ecommerce operations so you can focus on other areas of your business. With "
+"Digital River’s flexible business model, and expertise in global commerce, "
+"your entry into new markets will increase your annual revenue and lower your "
+"costs."
+msgstr ""
+
+#: templates/template-why-dr.php:1010
+msgid "A Mobile Approach"
+msgstr ""
+
+#: templates/template-why-dr.php:1014
+msgid ""
+"Across our commerce, payments and marketing offerings there is a cohesive "
+"strategy around mobile technology. We offer responsive, adaptive, device-"
+"specific web design solutions based on client need—all new websites we "
+"create are responsive out of the box. Digital River continues to invest in "
+"mobile-specific APIs to integrate with customer apps and partner "
+"applications. We’ve expanded our partner relationships in the app "
+"development and design community to facilitate comprehensive services to our "
+"clients."
+msgstr ""
+
+#: templates/template-why-dr.php:1018
+msgid ""
+"Our portfolio of leading mobile payments offerings continues to expand, "
+"providing our clients with a variety of payment options to choose from. As "
+"the mobile app landscape continues to evolve, you can rely on Digital River "
+"to stay ahead of the curve and provide all the right solutions to keep you "
+"competitive in the market."
+msgstr ""
+
+#: templates/template-why-dr.php:1024
+msgid "Client Success"
+msgstr ""
+
+#: templates/template-why-dr.php:1028
+msgid ""
+"Client satisfaction and success is paramount to our business model. Digital "
+"River’s client-centric approach focuses on maintaining long-term client "
+"relationships through dedicated and experienced account managers to help "
+"your ecommerce business reach its full potential. Digital River’s Client "
+"Service Team—comprised of dedicated client marketing and account managers—"
+"offers you ecommerce expertise to optimize your marketing and promotions, "
+"and manage product information and store operations. We focus on enhancing "
+"your customers’ shopping experience to build and maintain a strong customer "
+"base. Your account team will ensure your unique business needs are being met "
+"and managed to the highest standard."
+msgstr ""
+
+#: templates/template-why-dr.php:1028
+msgid "Read more."
+msgstr ""
+
+#: templates/template-why-dr.php:1032
+msgid "today to start your relationship with Digital River."
+msgstr ""
+
+#: templates/widgets/featured_content.php:39
+#: templates/widgets/right_sidebar/featured_content.php:40
+msgid "View Video"
+msgstr ""
+
+#: templates/widgets/featured_content.php:41
+#: templates/widgets/template_a/flex/featured_content.php:27
+#: templates/widgets/widget/featured_content.php:24
+msgid "Read full article"
+msgstr ""
+
+#: templates/widgets/posts/content/box.php:11
+msgid "View"
+msgstr ""
+
+#: templates/widgets/posts/content/tabs.php:21
+msgid "Publication:"
+msgstr ""
+
+#: templates/widgets/posts/content/tabs.php:24
+msgid "Author:"
+msgstr ""
+
+#: templates/widgets/posts/content/tabs.php:27
+msgid "Date published:"
+msgstr ""
+
+#: templates/widgets/posts/list.php:5
+#: templates/widgets/posts/template_b_content/box.php:8
+#: templates/widgets/upw/press_releases.php:30
+msgid "View by year"
+msgstr ""
+
+#: templates/widgets/posts/template_b_content/box.php:8
+msgid "View by category"
+msgstr ""
+
+#: templates/widgets/right_sidebar/carousel.php:27
+msgid "of"
+msgstr ""
+
+#: templates/widgets/upw/media_coverage.php:36
+msgid "Read the article"
+msgstr ""

@@ -1,0 +1,52 @@
+/* -----------------------------------------------------------------------------
+  Widget Mixins
+----------------------------------------------------------------------------- */
+
+.header_title(@bg_color: @widget_header_bg, @font_color: #000, @font: @widget_header_font) {
+  color: @font_color;
+  padding: 8px;
+  font-family: @font;
+  display: inline-block;
+  background: @bg_color;
+  text-transform: uppercase;
+}
+
+.border-image(@img, @number, @repeat: stretch) {
+    @val: @img @number @repeat;
+    -moz-border-image: @val;
+    -webkit-border-image: @val;
+    -ms-border-image: @val;
+    -o-border-image: @val;
+    border-image: @val;
+}
+
+.shadow-with-spread(@x-axis: 0, @y-axis: 1px, @blur: 2px, @spread: 0, @alpha: 0.1, @inset) {
+    -webkit-box-shadow: @x-axis @y-axis @blur @spread rgba(0, 0, 0, @alpha) @inset;
+    -moz-box-shadow: @x-axis @y-axis @blur @spread rgba(0, 0, 0, @alpha) @inset;
+    -o-box-shadow: @x-axis @y-axis @blur @spread rgba(0, 0, 0, @alpha) @inset;
+    box-shadow: @x-axis @y-axis @blur @spread rgba(0, 0, 0, @alpha) @inset;
+}
+ 
+.photoshop-shadow(@alpha: 10, @angle: 0, @distance: 0, @spread: 0, @size: 0, @inset) {
+    @css_alpha: @alpha / 100;
+    @radians: ~`(180 - @{angle}) * Math.PI / 180`;
+    @h-shadow: ~`Math.round( Math.cos( @{radians} ) * @{distance} ) + 'px'`;
+    @v-shadow: ~`Math.round( Math.sin( @{radians} ) * @{distance} ) + 'px'`;
+    @spread_tmp: @size * @spread / 100;
+    @css-spread: ~`Math.round( @{spread_tmp} ) + 'px'`;
+    @blur: ~`Math.round( (@{size} - @{spread_tmp}) ) + 'px'`;
+ 
+    .shadow-with-spread(@h-shadow, @v-shadow, @blur, @css-spread, @css_alpha, @inset);
+}
+ 
+.photoshop-drop-shadow(@alpha: 10, @angle: 0, @distance: 0, @spread: 0, @size: 0) {
+    @inset: ~'';
+ 
+    .photoshop-shadow(@alpha, @angle, @distance, @spread, @size, @inset);
+}
+ 
+.photoshop-inner-shadow(@alpha: 10, @angle: 0, @distance: 0, @spread: 0, @size: 0) {
+    @inset: ~'inset';
+ 
+    .photoshop-shadow(@alpha, @angle, @distance, @spread, @size, @inset);
+}

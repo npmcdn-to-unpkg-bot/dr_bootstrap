@@ -1,0 +1,169 @@
+#drwp {
+	padding:0;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+.overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:111px;
+	opacity:0;
+	background:#f5f5f5;
+	z-index:-1;
+	padding:77px 55px 20px 65px;
+}
+.overlay.active {
+	height:100%;
+	opacity:1;
+	overflow:auto;
+	z-index:2;
+}
+.overlay section {
+	padding:15px 20px;
+	margin:0 15px 20px 0;
+	background-color:#fff;
+	border-top:4px solid #00a7e1;
+	box-shadow:0 1px 2px rgba(0,0,0,.21);
+}
+.overlay .grid1,
+.overlay .grid2,
+.overlay .grid3,
+.overlay .grid4,
+.overlay .grid5,
+.overlay .grid6,
+.overlay .grid7,
+.overlay .grid8,
+.overlay .grid9,
+.overlay .grid0 {
+	float:left;
+}
+.overlay .grid1 {
+	width:10%;
+}
+.overlay .grid2 {
+	width:20%;
+}
+.overlay .grid3 {
+	width:30%;
+}
+.overlay .grid4 {
+	width:40%;
+}
+.overlay .grid5 {
+	width:50%;
+}
+.overlay .grid6 {
+	width:60%;
+}
+.overlay .grid7 {
+	width:70%;
+}
+.overlay .grid8 {
+	width:80%;
+}
+.overlay .grid9 {
+	width:90%;
+}
+.overlay .grid0 {
+	width:100%;
+}
+
+.paymentContent {
+	padding: 10px 0 0 0;
+	font-family:arial, helvetica, sans-serif;
+	font-size:16px;
+	color:#343438;
+}
+.bank {
+	padding:20px 20px 20px 40px;
+	position:relative;
+	height:60px;
+}
+
+.bank:before {
+	content: "\f19c";
+	font-family: FontAwesome;
+	position:absolute;
+	top:18px;
+	left:10px;
+	line-height:1.2;
+}
+table#acquirerList {
+	width:90%;
+}
+table#acquirerList tr {
+	border-bottom:1px solid #ccc;
+}
+table#acquirerList tr:last-of-type {
+	border-bottom:none;
+}
+table#acquirerList td {
+	padding:7px 0;
+	vertical-align:middle;
+}
+table#acquirerList tr td:first-child {
+	width:250px;
+}
+.ltGrey {
+	color:#cccccc;
+}
+
+span.Visa, span.MasterCard, span.AmExpress,
+span.UnionPay, span.MaestroInternational, span.DCI,
+span.Hiper, span.Hipercard, span.Elo, span.Aura,
+span.JCB, span.Dankort, span.CarteBleue, span.CarteBancaires,
+span.AndhraBankDebitCard, span.CanaraBankCard,
+span.CitibankDebitCard, span.IndianOverseasBankDebitCard,
+span.PunjabNationalBankDebitCard, span.StateBankofIndiaDebitCard,
+span.UnionBankofIndiaDebitCard, span.CaraSi, span.Discover {
+	width:48px;
+	height:30px;
+	margin-right:10px;
+	display:inline-block;
+	-webkit-border-radius:2px;
+	   -moz-border-radius:2px;
+			border-radius:2px;
+	background-repeat:no-repeat;
+	background-image:url('../img/interactive/creditCards-sprite.png');
+	box-shadow:1px 1px 1px rgba(0,0,0,0.2);
+}
+
+span.Visa 						 {background-position:0px -60px;}
+span.MasterCard 				 {background-position:0px -90px;}
+span.AmExpress 					 {background-position:0px -240px;}
+span.UnionPay 					 {background-position:-96px -120px;}
+span.MaestroInternational 		 {background-position:0px -30px;}
+span.DCI 						 {background-position:0px -210px;}
+span.Hiper,
+span.Hipercard 					 {background-position:-96px -270px;}
+span.Elo 						 {background-position:-96px -150px;} 
+span.Aura 						 {background-position:-96px -180px;} 
+span.JCB 						 {background-position:0px -150px;}
+span.Dankort 					 {background-position:-96px -210px;}
+span.CarteBleue,
+span.CarteBancaires				 {background-position:-96px -240px;}  
+span.AndhraBankDebitCard 		 {background-position:-144px 0px;}
+span.CanaraBankCard 			 {background-position:-144px -30px;}
+span.CitibankDebitCard 			 {background-position:-144px -60px;}
+span.IndianOverseasBankDebitCard {background-position:-144px -90px;}
+span.PunjabNationalBankDebitCard {background-position:-144px -120px;}
+span.StateBankofIndiaDebitCard   {background-position:-144px -150px;}
+span.UnionBankofIndiaDebitCard   {background-position:-144px -180px;}
+span.CaraSi 					 {background-position:-144px -210px;} /*No Card in Sprite*/
+span.Discover 					 {background-position:0px -120px;}
+
+span.Dankort,
+span.StateBankofIndiaDebitCard,
+span.UnionBankofIndiaDebitCard,
+span.CaraSi  { /*cards with a white background*/
+	box-shadow: 0px 0px 1px rgba(0,0,0,0.2),1px 1px 1px rgba(0,0,0,0.2);
+}

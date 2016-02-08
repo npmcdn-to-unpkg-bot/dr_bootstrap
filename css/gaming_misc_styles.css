@@ -1,0 +1,195 @@
+.gaming-outer-wrapper .row {
+  max-width: none;
+  width: auto; }
+.gaming-outer-wrapper .nowrap {
+  white-space: nowrap; }
+.gaming-outer-wrapper h2 {
+  font-size: 46px;
+  font-family: "DIN 1451 W01 Engschrift", sans-serif;
+  margin-top: 0; }
+.gaming-outer-wrapper p {
+  color: inherit;
+  font-family: inherit; }
+.gaming-outer-wrapper .cta {
+  text-transform: uppercase;
+  padding: 10px 75px;
+  display: inline-block;
+  border: 2px solid;
+  font-family: "DIN 1451 W01 Engschrift", sans-serif;
+  background-color: transparent;
+  transition: all 200ms; }
+  .gaming-outer-wrapper .cta:hover, .gaming-outer-wrapper .cta:focus {
+    text-decoration: none; }
+.gaming-outer-wrapper .lt {
+  font-size: 0.65em;
+  font-family: "DIN Next W01 Light", sans-serif;
+  position: relative;
+  line-height: 0;
+  vertical-align: baseline;
+  top: -0.25em; }
+  @media screen and (max-width: 768px) {
+    .gaming-outer-wrapper .lt {
+      display: block;
+      padding: 10px; } }
+.gaming-outer-wrapper #getInTouch, .gaming-outer-wrapper #aboutDRgames,
+.gaming-outer-wrapper #testimonials, .gaming-outer-wrapper #partners, .gaming-outer-wrapper #customize {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+.gaming-outer-wrapper #aboutDRgames {
+  width: 100%;
+  color: #fff;
+  padding: 0;
+  background-color: #00a7e1;
+  padding-top: 35px; }
+  @media screen and (max-width: 768px) {
+    .gaming-outer-wrapper #aboutDRgames {
+      display: block; } }
+  .gaming-outer-wrapper #aboutDRgames .cell-6 {
+    width: 50%;
+    height: 100%;
+    padding: 3.25em 30px 4em; }
+    @media screen and (max-width: 768px) {
+      .gaming-outer-wrapper #aboutDRgames .cell-6 {
+        display: block;
+        width: 100%;
+        height: auto; } }
+  .gaming-outer-wrapper #aboutDRgames .blurb {
+    padding: 3%; }
+    .gaming-outer-wrapper #aboutDRgames .blurb p {
+      font-size: 20px;
+      margin: 0 0 20px 0; }
+    .gaming-outer-wrapper #aboutDRgames .blurb .info {
+      max-width: 95%;
+      margin: 0 auto;
+      text-align: left; }
+      @media screen and (max-width: 768px) {
+        .gaming-outer-wrapper #aboutDRgames .blurb .info {
+          float: none;
+          max-width: 100%; } }
+  .gaming-outer-wrapper #aboutDRgames .gamer-img {
+    padding: 3%; }
+    @media (max-width: 1100px) {
+      .gaming-outer-wrapper #aboutDRgames .gamer-img {
+        max-width: 500px; } }
+    @media screen and (max-width: 768px) {
+      .gaming-outer-wrapper #aboutDRgames .gamer-img {
+        height: 300px; } }
+.gaming-outer-wrapper #getInTouch {
+  background-color: #a8c628;
+  color: #fff;
+  font-family: "DIN Next W01 Medium", sans-serif;
+  font-size: 32px; }
+  .gaming-outer-wrapper #getInTouch .cta {
+    border-color: #fff;
+    color: #fff; }
+    .gaming-outer-wrapper #getInTouch .cta:hover, .gaming-outer-wrapper #getInTouch .cta:focus {
+      color: #a8c628;
+      background-color: #fff; }
+.gaming-outer-wrapper #partners h2 {
+  margin: 0 0 30px; }
+.gaming-outer-wrapper #partners .item {
+  position: relative;
+  height: 150px;
+  width: 50%;
+  float: left; }
+  .gaming-outer-wrapper #partners .item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 178px;
+    max-height: 100px;
+    width: auto;
+    height: auto; }
+.gaming-outer-wrapper #partners .featured-quote .quote {
+  position: relative; }
+  .gaming-outer-wrapper #partners .featured-quote .quote blockquote {
+    max-width: 1140px;
+    margin: auto;
+    border: none;
+    color: #343434;
+    font-family: "DIN Next W01 Light", sans-serif;
+    font-size: 24px;
+    background: #E0E0E0;
+    padding: 20px; }
+    .gaming-outer-wrapper #partners .featured-quote .quote blockquote p {
+      font-family: "DIN Next W01 Light", sans-serif !important; }
+  .gaming-outer-wrapper #partners .featured-quote .quote:after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #E0E0E0;
+    top: 39%; }
+    @media (max-width: 765px) {
+      .gaming-outer-wrapper #partners .featured-quote .quote:after {
+        right: 47%;
+        top: auto;
+        bottom: -40px;
+        border-top: 20px solid #E0E0E0;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent; } }
+.gaming-outer-wrapper #partners .featured-quote .item {
+  margin: 10px auto 20px;
+  width: 100%;
+  float: right; }
+  @media (max-width: 1000px) {
+    .gaming-outer-wrapper #partners .featured-quote .item {
+      height: 260px; } }
+  @media (max-width: 1000px) {
+    .gaming-outer-wrapper #partners .featured-quote .item {
+      height: auto;
+      margin-top: 35px; } }
+  .gaming-outer-wrapper #partners .featured-quote .item img {
+    right: 0;
+    left: auto;
+    transform: translate(0%, -50%); }
+    @media (max-width: 1000px) {
+      .gaming-outer-wrapper #partners .featured-quote .item img {
+        right: auto;
+        position: static;
+        top: auto;
+        left: auto;
+        transform: none; } }
+.gaming-outer-wrapper #partners .client-logos {
+  margin: 30px 0; }
+  .gaming-outer-wrapper #partners .client-logos:first-child .item:first-child img {
+    float: left;
+    left: 0;
+    transform: translate(0%, -50%); }
+    @media (max-width: 1100px) {
+      .gaming-outer-wrapper #partners .client-logos:first-child .item:first-child img {
+        left: 50%;
+        transform: translate(-50%, -50%); } }
+  .gaming-outer-wrapper #partners .client-logos:last-child .item:last-child img {
+    float: right;
+    right: 0;
+    left: auto;
+    transform: translate(0%, -50%); }
+    @media (max-width: 1100px) {
+      .gaming-outer-wrapper #partners .client-logos:last-child .item:last-child img {
+        left: 50%;
+        float: none;
+        right: auto;
+        transform: translate(-50%, -50%); } }
+.gaming-outer-wrapper #customize {
+  background-color: #a8c628;
+  color: #fff;
+  font-size: 30px;
+  font-family: "DIN Next W01 Medium", sans-serif; }
+  .gaming-outer-wrapper #customize .cta {
+    border-color: #fff;
+    color: #fff; }
+    .gaming-outer-wrapper #customize .cta:hover, .gaming-outer-wrapper #customize .cta:focus {
+      color: #00a7e1;
+      background-color: #fff; }
+  .gaming-outer-wrapper #customize p {
+    font-size: 24px;
+    margin-bottom: 30px; }
+
+/*# sourceMappingURL=styles.css.map */

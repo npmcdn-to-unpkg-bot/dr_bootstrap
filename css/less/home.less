@@ -1,0 +1,703 @@
+#home {
+
+    .flexslider .slides img {
+        min-width: 1300px;
+        min-height: 460px !important;
+        max-width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+
+//        &:hover, &:hover .link:hover {
+//            color: @primary_color !important;
+//        }
+    }
+    
+    #main_carousel {
+        color: #000;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 2px solid @accent_color;
+        background: url('../img/home/carousel_background.png');
+        margin-top: 140px;     
+
+        .left_background {
+            background: url('../img/home/left_shadow_background.png') no-repeat;
+        }
+
+        .slide_link {
+            z-index: 110;
+            max-width: 1140px;
+            height: 460px;
+            display: block;
+            position: relative;
+        }
+
+        .container {
+            z-index: 200;
+            position: relative;
+        }
+
+        #main_carousel_container {
+            height: 460px;
+
+            .slides {
+                height: 100%;
+            }
+
+            .flex-control-nav {
+                z-index: 125;
+                bottom: 75px;
+                .rounded(15px);
+                text-align: left;
+                position: absolute;
+                background: #373536;
+                padding: 9px 11px 7px 12px;
+
+                li{
+                    margin: 0 4px;
+                    a {
+                        width: 14px;
+                        height: 14px;
+                        background: #efeeec;
+
+                        &.flex-active {
+                            background: @accent_color;
+                        }
+                    }
+                }
+            }
+
+            // .mobile_slide_image {
+            //     display: none;
+            // }
+
+            // .flex-active-slide .mobile_slide_image {
+            //     display: block;
+            // }
+        }
+
+        .content {
+            z-index: 1;
+            height: 100%;
+            position: relative;
+
+            .slide {
+                z-index: 150;
+                position: absolute;
+            }
+
+            .header {
+                .header_title();
+                font-size: 18px;
+                line-height: 19px;
+                color: @eyebrow_color;
+                margin: 50px 0 0 0;
+            }
+
+            .title {
+                font-size: 90px;
+                line-height: 78px;
+                margin-top: 14px;
+                color: @primary_color;
+                text-transform: uppercase;
+            }
+
+            .text {
+                margin-top: 10px;
+                font-size: 16px;
+                line-height: 24px;
+                color: @paragraph_color;
+                font-family: @paragraph_font;
+            }
+
+            .link {
+                font-size: 16px;
+                margin-top: 30px;
+                line-height: 15px;
+                font-weight: bold;
+                font-style: italic;
+                color: @widget_link;
+                display: inline-block;
+                text-decoration: none;
+                font-family: @link_font;
+
+                &:after {
+                    content: ' »';    
+                }
+            }
+
+            .slide_image {
+                top: 0;
+                z-index: 50;
+                min-height: 100%;
+                margin-left: 0%;
+                position: absolute;
+            }
+        }
+    }
+
+    #main_content {
+
+        #mobile_flip_cards {
+
+            .accordion {
+
+                header {
+                    cursor: pointer;
+                    color: #FEFEFE;
+                    padding: 0px 0 10px 0;
+                    text-align: center;
+                    text-transform: uppercase;
+                    background: url('../img/nav/nav_parent_hover.png') no-repeat;
+                    background-size: 100% 100%;
+
+                    .top {
+                        font-size: 18px;
+                        padding-top: 9px;
+                        line-height: 18px;
+                        font-family: @secondary_font;
+                    }
+
+                    .bottom {
+                        font-size: 36px;
+                        line-height: 30px;
+                        font-family: @primary_font;
+                    }
+                }
+
+                .content {
+                    display: none;
+                    text-align: center;
+                    padding: 38px 20px 38px 20px;
+                }
+
+                &.selected {
+
+                    header {
+                        position: relative;
+                        background: @primary_color;
+
+                        .arrow {
+                            left: 50%;
+                            width: 80px;
+                            height: 10px;
+                            bottom: -10px;
+                            position: absolute;
+                            margin-left: -40px;
+                            background: url('../img/mobile/mobile_flip_card_arrow.png');
+                        }
+                    }
+
+                    .content {
+                        // display: block;
+
+                        .intro {
+                            color: @paragraph_color;
+                            font-family: @paragraph_font;
+                            padding-bottom: 17px;
+                        }
+
+                        .link {
+                            font-size: 14px;
+                            font-weight: bold;
+                            font-style: italic;
+                            color: @widget_link;
+                            font-family: @paragraph_font;
+
+                            &:after {
+                                content: ' »';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .dotted_splitter {
+            margin-top: 60px;    
+        }
+
+        #flip_cards_area {
+            background: url('../img/home/container_background.png') repeat-x;
+        }
+
+        /* MOVED THIS TO BOTTOM */
+        // #flip_cards {}
+        
+        .wide_widget_area {
+            padding-top: 83px;
+            background: url('../img/home/container_background.png') repeat-x;
+
+            .content {
+                float: left;    
+            }
+
+            .image {
+                float: left;    
+                text-align: center;
+            }
+        }
+    }
+
+    #mobile_case_studies {
+
+        .accordion {
+
+            header {
+                cursor: pointer;
+                position: relative;
+                text-align: center;
+                padding: 25px 0 20px 0;
+                background: url('../img/nav/nav_parent_hover.png') no-repeat;
+                background-size: 100% 100%;
+            }
+
+            .content {
+                display: none;
+                padding: 10px 20px 45px 20px;
+
+                .header {
+                    margin: 30px 0 18px 0;
+                    .header_title(#000);
+                    color: @accent_color;
+                }
+
+                .title {
+                    font-size: 40px;
+                    margin: 22px 0 10px 0;
+                    line-height: 38px;
+                    color: @primary_color;
+                    font-family: @primary_font;
+                    text-transform: uppercase;
+                }
+
+                .intro {
+                    margin-bottom: 20px;
+                }
+
+                .link {
+                    font-size: 14px;
+                    font-weight: bold;
+                    font-style: italic;
+                    color: @widget_link;
+                    font-family: @paragraph_font;
+
+                    &:after {
+                        content: ' »';
+                    }
+                }
+            }
+
+            &.selected {
+
+                header {
+                    margin-bottom: 30px;
+                    background: @primary_color;
+
+                    .arrow {
+                        left: 50%;
+                        width: 80px;
+                        height: 10px;
+                        bottom: -10px;
+                        position: absolute;
+                        margin-left: -40px;
+                        background: url('../img/mobile/mobile_flip_card_arrow.png');
+                    }
+                }
+
+                .content {
+                    // display: block;
+                }
+            }
+        }
+    }
+
+    #case_studies {
+        height: 550px;
+        margin: 0 0 90px 0;
+        background: url('../img/home/case_studies_background.png') no-repeat;
+        
+        .case_studies {
+            margin-top: 100px;
+
+            .study_image {
+                text-align: center;
+
+                img {
+                    display: none;
+
+                    &.selected {
+                        display: block;
+                        padding-left: 20px;
+                    }
+                }
+            }
+
+            .tabs {
+            
+                .tabs_nav {
+                    border-bottom: 1px solid @accent_color;
+
+                    .tab {
+
+                       .active {
+                           display: none;
+                       }
+
+                        .inactive {
+                            display: inline;
+                        }
+
+                        &.selected {
+                            .active {
+                                display: inline;
+                            }
+
+                            .inactive {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .logo_container {
+                        width: 100%;
+                        height: 60px;
+                        overflow: hidden;
+                        display: table-cell;
+                        vertical-align: middle;
+
+                        * {
+                            vertical-align: middle;
+                        }
+
+                        span {
+                            display: inline-block;
+                            height: 100%;
+                            width: 1px;
+                        }
+
+                        display: block;
+
+                        img {
+                            max-width: 160px;
+                        }
+                    }
+
+                    a {
+                        height: 60px;
+                        max-height: 60px;
+                        position: relative;
+                        text-align: center;
+
+                        .triangle {
+                            display: none;
+                        }
+
+                        &.selected {
+                            background: @accent_color;
+
+                            .triangle {
+                                left: 50%;
+                                width: 60px;
+                                height: 14px;
+                                bottom: -3px;
+                                display: block;
+                                position: absolute;
+                                margin: 0 0 0 -30px;
+                            }
+                        }
+                    }
+                }
+
+                .content {
+                    display: none;
+
+                    &.selected {
+                        display: block;
+
+                        .header {
+                            margin: 30px 0 18px 0;
+                            .header_title(#000);
+                            color: @accent_color;
+                        }
+
+                        .title {
+                            font-size: 54px;
+                            line-height: 48px;
+                            color: @primary_color;
+                            text-transform: uppercase;
+                        }
+
+                        article {
+                            font-size: 14px;
+                            line-height: 21px;
+                            margin: 10px 0 25px 0;
+                            color: @paragraph_color;
+                            font-family: @paragraph_font;
+                        }
+
+                        .link {
+                            font-size: 13px;
+                            font-weight: bold;
+                            font-style: italic;
+                            text-decoration: none;
+                            line-height: 15px;
+                            color: @widget_link;
+                            font-family: @link_font;
+
+                            &:after {
+                                content: ' »';    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+/* -----------------------------------------------------------------------------
+  Widgets
+----------------------------------------------------------------------------- */
+
+  /* -----------------------------------------------------------------------------
+  Posts - Home - Wide Widget Area
+  ----------------------------------------------------------------------------- */
+  .wide_widget_area .posts {
+
+    .header {
+      .header_title();
+      font-size: 18px;
+      color: @eyebrow_color;
+      margin: 0 0 20px 0;
+    }
+
+    .widget_content {
+
+      .title {
+        font-size: 60px;
+        line-height: 60px;
+        margin: 0 0 20px 0;
+        color: @primary_color;
+        text-transform: uppercase;
+      }
+
+      .intro {
+        margin: 0 0 27px 0;
+      }
+
+      .link {
+        font-size: 13px;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+        line-height: 15px;
+        color: @widget_link;
+        font-family: @link_font;
+
+        &:after {
+          content: ' »';
+        }
+      }
+    }
+  }
+
+  /* -----------------------------------------------------------------------------
+    Thirds Widget
+  ----------------------------------------------------------------------------- */
+
+  #thirds_widget_area {
+    margin-top: 0px;
+
+      .dotted_splitter.show_on_mobile {
+          margin: 30px 0;
+      }
+
+    .header {
+      .header_title(#222021, @accent_color);
+      margin: 0 0 20px 0;
+      font-size: 14px;
+    }
+
+    .widget_area {
+      margin: 40px 0 0 0;
+    }
+
+    .widget_content {
+
+      .title {
+        line-height: 26px;
+        font-size: 24px;
+        margin: 0 0 12px 0;
+        color: @primary_color;
+      }
+
+      .intro {
+        font-size: 12px;
+        line-height: 17px;
+        margin: 0 0 20px 0;
+        color: @paragraph_color;
+        font-family: @paragraph_font;
+      }
+
+      .link {
+        font-size: 13px;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+        line-height: 15px;
+        color: @widget_link;
+        font-family: @link_font;
+        &:after { content: ' »'; }
+      }
+    }
+  }
+}
+
+#home {
+    #main_content {
+        #flip_cards {
+            width:100%;
+            margin-top: -28px;
+            .clearfix();
+
+            .card-wrapper {
+                float: left;
+                position: relative;
+                height:350px; padding-bottom:90px;
+                z-index: 1;
+                cursor: pointer;
+                * { text-align:center; }
+            }
+            .shadow {
+                position:absolute; bottom:0;
+                width: 100%;
+                height: auto;
+            }
+            .card {
+                color: #FFF; background:#FFF;
+                width: 100%; height:350px;
+            }
+
+            // .card.flipped {
+            //     .face.front { display:none; }
+            //     .face.back { display:block; }
+            // }
+
+            .face {
+                position:absolute; left:0; top:0;
+                display:table;
+                width: 100%; height: 350px;
+                background: no-repeat 100% 0;
+                background-size: 100%;
+                .face-inner {
+                    position:relative;
+                    width:80%; padding:50px 10% 0;
+                }
+                .headlines {
+                    text-transform: uppercase;
+                    width:100%;
+                    .top, .bottom { 
+                        width:100%; text-align:center;
+                    }
+                    .top {
+                        height:24px; line-height:24px;
+                        font-size: 24px; font-family: @secondary_font;
+                    }
+                    .bottom {
+                        font-size: 48px; line-height:38px; height:48px;
+                    }
+                }
+            }
+
+            .face.front {
+                background-image: url('../img/home/flip_card_front.png');
+                .icon_container {
+                    width:100%; height:160px; 
+                    position:relative; z-index:1; display:table;
+                    img { 
+                        margin:0 auto; 
+                    }
+                }
+            }
+
+            .face.back {
+                background-image: url('../img/home/flip_card_back.png');
+                .headlines {
+                    color: @primary_color;
+                }
+                p {
+                    color: @paragraph_color;
+                    margin: 16px 0 30px 0;
+                    font-size: 14px; font-family: @paragraph_font;
+                }
+                .link {
+                    display:block;
+                    font-family: @link_font; font-size: 13px; font-weight: bold; font-style: italic; text-decoration: none;
+                    line-height: 15px;
+                    color: @widget_link;
+                    /* doesn't work in IE7 - adding to home.php */
+                    // &:after { content: ' »'; }
+                }
+            }
+        }
+    }
+}
+
+// Use CSS for Flip Card Transformation
+.csstransforms3d {
+
+    // #home #main_content #flip_cards {
+
+    //     // Flip Speed
+    //     @duration: 0.15s;
+
+    //     .card-wrapper {
+    //         .perspective(1000px);
+    //     }
+
+    //     .card {
+    //         .transform-style( preserve-3d );
+    //         .transition( all, @duration );
+    //     }
+
+    //     .flip_card {
+    //         .transform( rotateY(-180deg) );
+    //     }
+
+    //     .face {
+    //         .backface-visibility( hidden );
+    //         .box-sizing( border-box );
+    //     }
+
+    //     .back {
+    //         .transform( rotateY(-180deg) );
+    //     }
+    // }
+}
+
+
+// Use JS/Canvas for Flip Card Transformation
+// @see js/jquery.flippy.min.js
+.no-csstransforms3d {
+    
+    // #home #main_content #flip_cards {
+
+    //     .card.flipped {
+
+    //         .back {
+    //             .backface-visibility( visible );
+    //         }
+    //     }
+    // }
+}
+
+
+.ie10 #home #main_content #flip_cards .cards .card.flip_card .back {
+    //.backface-visibility( visibile );
+}
+// .ie7 #home #main_content #flip_cards .cards .card .back {
+//     padding: 10px 0 0;
+//     & > * { padding-left:48px; padding-right:48px; }
+// }

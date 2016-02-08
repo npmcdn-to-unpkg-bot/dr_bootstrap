@@ -1,0 +1,513 @@
+*, *:before, *:after {
+  box-sizing:border-box;
+}
+body {
+	margin:0;
+	height:100%;
+}
+html {
+  height:100%;
+  background:#00a7e1;
+}
+
+.clear{clear:both;}
+
+#Overview{z-index:4; position:absolute;}
+
+.map-wrapper{
+	width:100%;
+	margin:115px auto 0;
+	display:block;
+	position:relative;
+	overflow:hidden;
+	height:100%;
+}
+
+.countryView .map-wrapper{
+	-webkit-transition:all 100ms ease-out;
+   	   -moz-transition:all 100ms ease-out;
+		 -o-transition:all 100ms ease-out;
+			transition:all 100ms ease-out;
+}
+.map-wrapper #worldMap{
+	width:100%;
+	position:relative;
+	top:0;
+	left:0;
+	-webkit-transition:all 300ms ease-out;
+   	   -moz-transition:all 300ms ease-out;
+		 -o-transition:all 300ms ease-out;
+			transition:all 300ms ease-out;
+
+}
+
+#acquirerList tr td:first-child {
+width:250px;
+}
+
+.map-wrapper #worldMap g {
+	-webkit-transition:all 200ms ease-out;
+       -moz-transition:all 200ms ease-out;
+   		 -o-transition:all 200ms ease-out;
+   			transition:all 200ms ease-out;
+   	stroke:#fff;
+	stroke-width:3px;
+}
+.region .map-wrapper #worldMap g,
+.region .map-wrapper #worldMap path,
+.region .map-wrapper #worldMap polygon {
+	stroke-width:1px;
+	stroke:#91DFF9;
+}
+
+/*	.region .map-wrapper #worldMap g:hover,
+.region .map-wrapper #worldMap path:hover,
+.region .map-wrapper #worldMap polygon:hover {
+	opacity:0.8;
+}*/
+
+.drwp-wrapper{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.drwp-wrapper #worldMap{
+	width:100%;
+	position:relative;
+	top:2%;
+	left:-2%;
+}
+
+
+.drwp-wrapper #asia,
+.drwp-wrapper #northAmerica,
+.drwp-wrapper #southAmerica,
+.drwp-wrapper #africa,
+.drwp-wrapper #europe,
+.drwp-wrapper #apac, 
+.drwp-wrapper #russia{
+	opacity:1;
+}
+
+.drwp-wrapper.region #asia,
+.drwp-wrapper.region #northAmerica,
+.drwp-wrapper.region #southAmerica,
+.drwp-wrapper.region #africa,
+.drwp-wrapper.region #europe,
+.drwp-wrapper.region #apac,
+.drwp-wrapper.region #russia{
+	opacity:0;
+}
+
+
+.drwp-wrapper.asia #asia,
+.drwp-wrapper.northAmerica #northAmerica,
+.drwp-wrapper.southAmerica #southAmerica,
+.drwp-wrapper.africa #africa,
+.drwp-wrapper.europe #europe,
+.drwp-wrapper.apac #apac,
+.drwp-wrapper.russia #russia{
+	opacity:1;
+}
+
+
+.drwp-wrapper.overview #asia:hover,
+.drwp-wrapper.overview #northAmerica:hover,
+.drwp-wrapper.overview #southAmerica:hover,
+.drwp-wrapper.overview #africa:hover,
+.drwp-wrapper.overview #europe:hover,
+.drwp-wrapper.overview #apac:hover,
+.drwp-wrapper.overview #russia:hover {
+	opacity:0.8;
+}
+
+
+
+
+.drwp-wrapper.northAmerica #worldMap {
+	top:0;
+	left:0;
+	width:175%;
+}
+.drwp-wrapper.asia #worldMap {
+    top:-50%;
+    left:-126%;
+    width:230%;
+}
+.drwp-wrapper.southAmerica #worldMap {
+    top:-110%;
+    left:-45%;
+    width:250%;
+}
+.drwp-wrapper.europe #worldMap {
+    top:-16%;
+    left:-108%;
+    width:275%;
+}
+/*	.drwp-wrapper.russia #worldMap {
+    top:0;
+    left:-107%;
+    width:200%;
+}*/
+.drwp-wrapper.africa #worldMap {
+    top:-65%;
+    left:-62%;
+    width:200%;
+}
+.drwp-wrapper.apac #worldMap {
+    top:-105%;
+    left:-160%;
+    width:250%;
+}
+
+
+.drwp-wrapper.northAmerica #worldMap g#northAmerica g:hover .st0,
+.drwp-wrapper.region g:hover,
+.drwp-wrapper.region path:hover,
+.drwp-wrapper.region polygon:hover {
+	fill:#A1DAED !important;
+}
+
+#worldMap{stoke:#00a7e1;}
+
+.drwp-wrapper.northamerica #asia,
+.drwp-wrapper.northamerica #southAmerica,
+.drwp-wrapper.northamerica #africa,
+.drwp-wrapper.northamerica #europe,
+.drwp-wrapper.northamerica #apac, 
+.drwp-wrapper.northamerica #russia{
+	opacity:0.1;
+	fill:#CCC;
+}
+
+#worldMap path,
+#worldMap polygon {
+	cursor:pointer;
+}
+
+
+.northamerica .united-states:hover, .northamerica .mexico:hover, .northamerica .canada:hover{
+	fill:#333 !important;
+}
+
+
+.overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:111px; /*height of nav*/
+	opacity:0;
+	background:#f5f5f5; 
+	z-index:-1;
+	padding:77px 65px 20px 65px;
+	-webkit-transition:all 200ms linear;
+       -moz-transition:all 200ms linear;
+    	 -o-transition:all 200ms linear;
+    		transition:all 200ms linear;
+
+}
+
+.overlay.active {
+	height:100%;
+	opacity:1;
+	overflow:auto;
+	z-index:2;
+}
+
+
+.overlay section {
+	padding:15px 20px 0;
+	margin:0 15px 20px 0;
+	background-color:#fff;
+	border-top:4px solid #00a7e1;
+	box-shadow:0 1px 2px rgba(0,0,0,0.21);
+}
+
+.overlay .grid1,
+.overlay .grid2,
+.overlay .grid3,
+.overlay .grid4,
+.overlay .grid5,
+.overlay .grid6,
+.overlay .grid7,
+.overlay .grid8,
+.overlay .grid9,
+.overlay .grid0 {
+	float:left;		
+}
+.overlay .grid0 {
+	width:100%;
+}
+
+.overlay .grid2 {
+	width:20%;
+}
+
+.overlay .grid3 {
+	width:33.32%;
+}
+
+.overlay .grid4 {
+	width:40%;
+}
+
+.overlay .grid5 {
+	width:50%;
+}
+.overlay .grid6 {
+	width:60%;
+}
+
+.country-list-wrapper{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	background:#FFF;
+	box-shadow:0px 1px 2px rgba(0,0,0,0.15);
+	z-index:3;
+	font-family:"DIN Next W01 Medium";
+	overflow:hidden;
+	-webkit-transition:width 200ms ease-out 200ms;
+   	   -moz-transition:width 200ms ease-out 200ms;
+		 -o-transition:width 200ms ease-out 200ms;
+			transition:width 200ms ease-out 200ms;
+
+	-webkit-transition:height 200ms ease-out;
+   	   -moz-transition:height 200ms ease-out;
+		 -o-transition:height 200ms ease-out;
+			transition:height 200ms ease-out;
+}
+
+h2.eyebrow {
+    margin:0px 0px 10px 0;
+    font-family:"DIN Next W01 Medium";
+    color:#343438;
+    text-transform:uppercase;
+    font-size:1.2em;
+    border-bottom:4px solid #B3D334;
+    padding:0px 2px;
+    background:inherit;
+    display:inline-block;
+    line-height:1;
+    font-weight:normal;
+}
+
+
+
+.country-list-wrapper .country-wrapper{
+	overflow:auto;
+	padding:12px 20px;
+}
+
+.top-wrapper{
+	background:#EEE;
+	border-bottom:solid 1px #CCC;
+}
+
+
+.country-list-wrapper .heading{
+	font-size:1.25em;
+	color:#343436;
+	padding:13px 15px 9px;
+	line-height:1;
+}
+
+.country-wrapper .country:before, .country-wrapper .region:before {
+	content:'\f0da';
+	font-family:FontAwesome;
+	padding-right:5px;
+}
+.country-list-wrapper .country, .country-list-wrapper .region{
+	width:16.66%;
+	float:left;
+	padding:6px 0;
+	color:#343438;
+	line-height:1;
+	cursor:pointer;
+}
+
+.country-list-wrapper .heading {
+    float:left;
+    width:33.33%;
+    text-align:center;
+    font-size:2em;
+}
+.resetContainer {
+	width:33.33%;
+	float:left;
+	text-align:right;
+	padding:10px 20px;
+	visibility:hidden;
+}
+.resetCTA {
+	background-color:#99d301;
+	padding:8px 21px;
+	color:#fff;
+	border:none;
+	cursor:pointer;
+	font-size:100%;
+	vertical-align:baseline;
+	margin:0;
+	font-family:"DIN Next W01 Medium";
+}
+.resetCTA:hover {
+	background-color:#92c901;
+}
+.resetCTA:focus {
+	background-color:#92c901;
+	color:#E3EAD1;
+	outline:none;
+}
+
+.country-img {
+	position:relative;
+}
+.country-img svg {
+	position:absolute;
+	top:50%;
+	left:-50%;
+	padding:160px;
+	height:90%;
+	max-width:90%;
+	-webkit-transition:all 1000ms;
+   	   -moz-transition:all 1000ms;
+		 -o-transition:all 1000ms;
+			transition:all 1000ms;
+}
+.country-img svg.zoom {
+	top:0;
+	left:5%;
+	padding:0;
+}
+.country-img svg .st0 {
+	fill:#fff;
+	-webkit-transition:all 1000ms;
+   	   -moz-transition:all 1000ms;
+		 -o-transition:all 1000ms;
+			transition:all 1000ms;
+}
+.country-img svg.zoom .st0 {
+	fill:#00A7E1;
+}
+
+
+
+
+.country-list-wrapper .country:first-child{
+	border-top:none;
+}
+
+.breadcrumb{
+	width:33.33%;
+	float:left;
+	padding:15px 20px;
+	visibility:hidden;
+}
+
+.breadcrumb .main-crumb, .breadcrumb .crumb, .breadcrumb .seperator {
+	float:left;
+	padding:5px 5px 5px 0;
+	line-height:1;
+	width:auto;
+	cursor:pointer;
+}
+
+.breadcrumb .crumb.country, .breadcrumb .seperator.country {
+	width:auto;
+}
+
+.country-list-wrapper .breadcrumb .seperator {
+	font-size:1.5em;
+	float:left;
+	color:#646469;
+	padding:0px 5px 0px 0px;
+}
+
+
+.region-wrapper {
+	display:none;
+}
+
+.selected {
+	fill:#FFF;
+}
+
+
+.copy-wrapper{
+	margin-bottom:0;
+	max-height:0;
+	overflow:hidden;
+	-webkit-transition:all 300ms ease-out;
+   	   -moz-transition:all 300ms ease-out;
+		 -o-transition:all 300ms ease-out;
+			transition:all 300ms ease-out;
+}
+.copy-wrapper.active{
+	max-height:750px;
+	margin-bottom:0;
+	overflow-y:auto;
+}
+
+.copy-wrapper .copy{
+	padding:15px;
+}
+
+.featured-country{
+	position:absolute;
+	z-index:5;
+	left:-500px;
+}
+.featured-country svg{}
+
+#pathIdD{
+	fill:#FFF;
+	opacity:0.7;
+}
+
+
+
+.left{clear:left;}
+.right{float:right !important;}
+
+
+.st0{fill:#B8EBFC;stroke:#B8EBFC;stroke-miterlimit:0;}
+.st1{fill:#B8EBFC;stroke:#B8EBFC;}
+.st2{display:none;}
+.st3{display:inline;}
+.st4{fill:#666666;}
+
+.region .st0{fill:#B8EBFC;stroke:#B8EBFC;stroke-miterlimit:0;}
+.region .st1{fill:#B8EBFC;stroke:#B8EBFC;}
+.region .st2{display:none;}
+.region .st3{display:inline;}
+.region .st4{fill:#666666;}
+
+
+.drwp-wrapper.northAmerica #worldMap #northAmerica g {
+	stroke-width:1;
+}
+
+.drwp-wrapper.northAmerica,
+.map-wrapper {
+	-webkit-transition:all 200ms ease-out;
+       -moz-transition:all 200ms ease-out;
+    	 -o-transition:all 200ms ease-out;
+    		transition:all 200ms ease-out;
+}
+
+.country-wrapper.hide {
+	height:0;
+	padding:0;
+	overflow:hidden;
+}
+
+.top-wrapper.bgChange {
+	background-color:#fff;
+}
+
+.bank span{margin:0px 0 0 5px;}

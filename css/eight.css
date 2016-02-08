@@ -1,0 +1,31 @@
+ .left_col h1{color:#343436;}
+ .left_col p{color:#343436;}
+
+#clients .title {
+	color: #343436;
+    background: #FFF;
+}
+
+ .clients-wrapper{
+    padding: 30px 0 20px;
+}
+
+ #resources .item {
+    width: 50%;
+    float: left;
+}
+
+
+ .hero .content .header {
+    margin-top: 25%;
+    margin-bottom: 5%;
+}
+
+
+@media (max-width: 1000px) {
+	 #resources .item {
+	    width: 100%;
+	    float: left;
+	}
+}
+/*media query*/

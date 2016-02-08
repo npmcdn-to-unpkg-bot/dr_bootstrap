@@ -1,0 +1,155 @@
+/* ==================================================================================================================== */
+/* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
+/* ==================================================================================================================== */
+
+
+
+
+.container{max-width: 1200px;}
+.row2, .row{width: 100%; margin: 0 auto; max-width: 1200px;}
+
+
+.row2 .span_1 {
+    width: 4.85%;
+}
+
+.row2 .span_2 {
+    width: 13.45%;
+}
+
+.row2 .span_3 {
+    width: 22.05%;
+}
+
+.row2 .span_4 {
+    width: 30.75%;
+}
+
+.row2 .span_5 {
+    width: 39.45%;
+}
+
+.row2 .span_6 {
+    width: 48%;
+}
+
+.row2 .span_7 {
+    width: 56.75%;
+}
+
+.row2 .span_8 {
+    width: 65.4%;
+}
+
+.row2 .span_9 {
+    width: 74.05%;
+}
+
+.row2 .span_10 {
+    width: 82.7%;
+}
+
+.row2 .span_11 {
+    width: 91.35%;
+}
+
+.row2 .span_12 {
+    width: 100%;
+}
+
+.span_1, .span_2, .span_3, .span_4, .span_5, .span_6, .span_7, .span_8, .span_9, .span_10, .span_11 {
+    margin-right: 3.8%;
+    float: left;
+    min-height: 1px;
+}
+
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.last {
+    margin-right: 0px;
+}
+
+img, object, embed {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+.show_on_mobile {
+    display: none !important;
+}
+
+.flex-active-slide .mobile_slide_image {
+    display: none !important;
+}
+
+
+
+/* Mobile */
+
+/*@media handheld, only screen and (max-width: 767px) {*/
+@media handheld, only screen and (max-width: 1000px) {
+/*@media handheld, only screen and (max-width: 1px) {*/
+
+    .hide_on_mobile {
+        display: none !important;
+    }
+
+    .show_on_mobile {
+        display: block !important;
+    }
+
+    body, .container {
+        width: 100%;
+        min-width: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .row .span_1, .row .span_2, .row .span_3, .row .span_4, .row .span_5, .row .span_6, .row .span_7, .row .span_8, .row .span_9, .row .span_10, .row .span_11, .row .span_12, .row2 .span_4, .row2 .span_7, .row2 .span_8 {
+        width: auto !important;
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+  
+}
+
+
+.clearfix:before, .clearfix:after,
+.row:before, .row2:before, .row:after,
+.container12:before, .container12:after, .container16:before, .container16:after {
+    content:'.';
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+    width:0;
+}
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+    width:0;
+}
+.row:after, .clearfix:after, .container12:after, .container16:after {clear:both;}
+/* For IE7. Move this to separate file when you notice some problems */
+.row, .clearfix {zoom: 1;}
+img, object, embed {max-width:100%;}
+img {height:auto;}

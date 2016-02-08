@@ -1,0 +1,279 @@
+/* BEGIN: Success Story template CSS */
+
+h1, h2, h3, h4{
+font-weight:normal;
+}
+
+.vmware-success-story.success-story *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p { margin-top: 0px;	}
+
+h1.heading-xl {
+	color: #00A7E1;
+	font-family: "DIN 1451 W01 Engschrift";
+	font-size: 4em;
+	font-weight: 400;
+	line-height: 1em;
+	margin: 0px 0px 35px;
+}
+h3.heading-m {
+  color: #646469;
+  font-family: "DIN Next W01 Light";
+  font-size: 2em;
+  font-weight: 400;
+  padding: 10px 0px;
+  margin: 0;
+}
+ h4.heading-s {
+	font-family: "DIN 1451 W01 Engschrift";
+  color: #00A7E1;
+  font-size: 1.45em;
+  font-weight: 400;
+  margin: 0;
+}
+a .work-cta {
+  background: #BACB3F none repeat scroll 0 0;
+  color: #000;
+  float: left;
+  font-family: "DIN 1451 W01 Engschrift";
+  font-size: 1.2em;
+  height: auto;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+.visible-mobile {
+	display:none;
+}
+.hidden-mobile {
+	display:block;
+}
+.success-story {
+  padding: 10px 0;
+  max-width: 1750px;
+  margin: 0 auto;
+}
+.page-header {
+  margin-bottom: 18px;
+}
+.page-header .dr_logo {
+  margin-top: 20px;
+}
+.head-logo{
+	float:right!important;
+}
+.full-width {
+  max-height: 528px;
+  overflow: hidden;
+}
+.section {
+ margin-bottom: 30px;`
+}
+.full-width img {
+  margin-top: -40px;
+  width: 100%;
+}
+p.para-text {
+  line-height: 1.35em;
+  font-size: .9em;
+	margin-bottom: 10px;
+}
+
+
+.overview-wrapper .eyebrow {margin-top: 0;}
+.customer-profile-wrapper {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	max-width: 340px;
+}
+.customer-profile {
+  border: 2px solid #646469;
+  border-radius: 15px;
+  padding: 2px 30px 10px;
+}
+.company-logo {
+  margin-bottom: 25px;
+  max-width: 142px;
+}
+.iStock-double {
+	margin: 0 auto;
+	overflow: hidden;
+}
+.vp-thoughts {
+	background-color: #09BFE4;
+	color: #FFFFFF;
+	font-family: DIN Next W01 Light;
+	margin: -7px auto 0;
+	padding: 25px;
+}
+.vp-thoughts p {
+  font-size: 1.479em;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+.vp-thoughts strong, .vp-thoughts span {
+	font-size: 18px;
+	width: 100%;
+	display: block;
+	line-height: 1.2;
+}
+
+#dr_contactUs span {
+  display: inline-block;
+  font-family: "DIN Next W01 Light";
+  font-size: 1.2em;
+  line-height: 20px;
+}
+#dr_footer #dr_digiComFooter {
+  font-family: "DIN Next W01 Light";
+  font-size: 0.765em;
+  text-align: right;
+      padding-right: 0;
+}
+#dr_footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#dr_digiComFooter{margin-bottom: 10px;}
+
+#dr_footer #dr_digiCom {
+  color: #00A7E1;
+  font-family: "DIN Next W01 Regular";
+font-size: 1.6em;
+    margin-bottom: 5px;
+   margin-top: 0px;
+   font-weight: bold;
+}
+
+#dr_digiComFooter p{margin-bottom: 2px; font-size: 1.1em;}
+
+
+.page-width {
+	max-width:1272px;
+	position:relative;
+	margin:0 auto;
+}
+
+
+#dr_contactUs{margin-left: 20px;}
+
+.title {
+    font-size: 1.2em;
+    margin: 0px;
+    color: #343438;
+    font-family: "DIN Next W01 Medium" !important;
+    padding-top: 0px !important;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width : 1000px) and (min-width : 810px){
+	
+	.row2 .copy-wrapper.overview{
+		width: 53% !important;
+		float: left;
+		margin-bottom: 15px;
+	}
+
+	.row2 .customer-profile {
+	    margin-top: 31px;
+	}
+
+	.row2 .customer-profile-wrapper{float: right; margin-right: 20px; width: 340px !important;}
+
+}
+
+
+@media (max-width : 810px){
+	.row2 .customer-profile-wrapper{
+	    margin: 30px 20px;
+	}
+
+	.row2 .customer-profile-wrapper .customer-profile{
+		margin:0;
+	}
+
+
+}
+
+
+@media only screen and (min-device-width : 600px) and (max-width:1001px) {
+	h3.heading-m {
+		font-size: 1.17em;
+		line-height: 1.2em;
+		padding: 0;
+	}
+	h1.heading-xl {
+		font-size: 2em;
+		line-height: 1.2em;
+	}
+
+	.customer-profile {
+	    margin-left: 33px;
+	}
+}
+@media (min-width : 1001px){
+	.iStock-double-vp {
+		margin-right: 0 !important;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.iStock-double {
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.iStock-double img {
+		margin-left: -50px;
+		max-width: 540px;
+	}
+	.vp-thoughts {
+		background-color: #09BFE4;
+		color: #FFFFFF;
+		font-family: DIN Next W01 Light;
+		margin: -7px auto 0;
+		padding: 25px;
+	}
+
+
+}
+
+@media (max-width : 600px){
+	h3.heading-m {
+	  font-size: 1.25em;
+	}
+
+	.row2 .button {
+	    margin: 15px 0px !important;
+	}
+
+	.hidden-mobile {
+		display:none;
+	}
+	.visible-mobile {
+		display:block;
+	}
+	.head-logo {
+		width:100%!important;
+		float:none;
+		margin-bottom:20px;
+	}
+	.dr-heading {
+		width:100%!important;
+		float:none;
+	}
+	h1.heading-xl {
+		font-size: 1.7em;
+		margin-bottom: 0;
+	}
+	.footer-logo, #dr_digiComFooter {
+		width:50%!important;
+	}
+	#dr_footer #dr_digiCom {
+		margin-top:0;
+	}
+}

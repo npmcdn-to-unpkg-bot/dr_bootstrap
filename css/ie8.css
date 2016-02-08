@@ -1,0 +1,31 @@
+.ie8 .left_col h1{color:#343436 !important;}
+.ie8 .left_col p{color:#343436 !important;}
+
+.ie8 #clients .title {
+	color: #343436 !important;
+    background: #FFF !important;
+}
+
+.ie8 .clients-wrapper{
+    padding: 30px 0 20px !important;
+}
+
+.ie8 #resources .item {
+    width: 50% !important;
+    float: left !important;
+}
+
+
+.ie8 .hero .content .header {
+    margin-top: 25% !important;
+    margin-bottom: 5% !important;
+}
+
+
+@media (max-width: 1000px) {
+	.ie8 #resources .item {
+	    width: 100% !important;
+	    float: left !important;
+	}
+}
+/*media query*/

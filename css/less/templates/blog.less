@@ -1,0 +1,346 @@
+#template_k,
+#template_b.blog {
+
+    /* --------------------------------------------------------------------
+        Type Styles
+    -------------------------------------------------------------------- */
+
+
+    h2 {
+        .heading_style();
+    }
+
+
+    /* --------------------------------------------------------------------
+        Layout
+    -------------------------------------------------------------------- */
+
+    .left_column {
+        background: @left_half_bg;
+    }
+
+    .middle_column {
+        //padding-bottom: 2000px;
+        //margin-bottom: -2000px;
+        background: @left_half_bg;
+    }
+
+    .right_column {
+        background: @content_container_bg;
+    }
+
+    .left_column,
+    .right_column {
+        padding-top: 60px;
+    }
+
+    .sidebar_container {
+        padding-bottom: 60px;
+
+        .categories li,
+        .archives li,
+        .about li {
+            .sidebar_li_style(); // The mixin for this is at the bottom of this style sheet
+        }
+    }
+
+    .no_results_found {
+        margin-top: 60px;
+    }
+
+    .tag_cat_split {
+        margin-top: 30px;
+    }
+
+    .category_tag_box {
+        margin-top: 40px;
+        background: @content_container_bg;
+
+        .top_container {
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 19px;
+            padding: 30px 40px;
+            font-family: @paragraph_font;
+        }
+
+        .bottom_container {
+            padding: 5px 40px 18px 40px;
+        }
+    }
+
+    .comment_template {
+        margin-top: 40px;
+    }
+
+    .addthis_toolbox {
+        margin-top: 12px;
+    }
+
+    .rss_subscribe_link {
+        position: relative;
+        text-decoration: underline;
+        font-weight: normal;
+        color: @paragraph_color;
+        font-size: 12px;
+        line-height: 19px;
+        font-style: normal;
+        font-family: @paragraph_font;
+        top: -5px;
+    }
+
+    .rss_link_container {
+        &:after {
+            content: '';
+        }
+    }
+
+
+    /* --------------------------------------------------------------------
+        Twitter
+    -------------------------------------------------------------------- */
+
+
+    .PI_SimpleTwitterTweets {
+        margin-top: 43px;
+
+        h3 {
+            font-size: 30px;
+            line-height: 32px;
+            margin-bottom: 13px;
+            text-transform: uppercase;
+            font-family: @primary_font;
+        }
+
+        li {
+            font-size: 12px;
+            line-height: 17px;
+            padding: 0 0 20px;
+            font-family: @paragraph_font;
+
+            a {
+                font-size: 12px;
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            &:before {
+                content: '';
+                width: 100%;
+                height: 1px;
+                display: block;
+                margin-bottom: 20px;
+                background: url('../img/dotted_splitter.png');
+            };
+        }
+    }
+
+
+    /* --------------------------------------------------------------------
+        Subscribe
+    -------------------------------------------------------------------- */
+
+
+    .jetpack_subscription_widget {
+
+        h3 {
+            .heading_style();
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 17px;
+            font-family: @paragraph_font;
+        }
+
+        #subscribe-field {
+            width: 96%;
+            height: 35px;
+            font-size: 16px;
+            margin-top: 1px;
+            padding-left: 2%;
+            padding-right: 2%;
+            border: 1px solid #999;
+            font-family: @paragraph_font;
+
+            .rounded(10px);
+            .photoshop-inner-shadow(35, 120, 2, 0, 3);
+        }
+
+        input[type=submit] {
+            text-indent: 16px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #FFF;
+            font-family: @primary_font;
+            border: 0px;
+            width: 137px;
+            height: 36px;
+            margin-top: 10px;
+            background: url('../img/blog_search_button.png') no-repeat;
+            background-size: 100% 36px;
+        }
+    }
+
+
+    /* --------------------------------------------------------------------
+        Posts
+    -------------------------------------------------------------------- */
+
+
+    .posts_container {
+        padding-right: 20px;
+        margin-bottom: 45px;
+    }
+
+    .post {
+        margin-top: 40px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid @accent_color;
+
+        .media_container {
+            margin-top: 40px;
+            margin-bottom: 34px;
+
+            img, iframe {
+                width: 100%;
+                min-height: 300px;
+            }
+        }
+
+        .title a {
+            font-size: 36px;
+            // margin-top: 34px;
+            line-height: 36px;
+            font-style: normal;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-family: @primary_font;
+            color: @primary_color !important;
+        }
+
+        .author {
+            font-size: 12px;
+            line-height: 21px;
+            margin: 10px 0 16px;
+            text-transform: uppercase;
+            font-family: @paragraph_font;
+        }
+
+        .content {
+            margin-top: 9px;
+            font-size: 13px;
+            line-height: 19px;
+
+            p {
+                margin-top: 5px;
+            }
+
+            .link:after {
+                content: ' »';
+            }
+        }
+
+        &:first-child {
+            border-top: 2px solid @accent_color;
+        };
+    }
+
+
+    /* --------------------------------------------------------------------
+        Search
+    -------------------------------------------------------------------- */
+
+
+    #blog_search_container {
+        margin-bottom: 57px;
+        
+
+        .blog_search_box {
+            width: 96%;
+            height: 35px;
+            font-size: 16px;
+            margin-top: 1px;
+            padding-left: 2%;
+            padding-right: 2%;
+            border: 1px solid #999;
+            font-family: @paragraph_font;
+
+            .rounded(10px);
+            .photoshop-inner-shadow(35, 120, 2, 0, 3);
+        }
+
+        .blog_search_button {
+            text-indent: 16px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #FFF;
+            font-family: @primary_font;
+            border: 0px;
+            width: 117px;
+            height: 36px;
+            margin-top: 10px;
+            background: url('../img/blog_search_button.png') no-repeat;
+        }
+    }
+
+
+    .pagination_links {
+        padding-bottom: 20px;
+        border-bottom: 2px solid @accent_color;
+
+        .page-numbers {
+            width: 24px;
+            float: left;
+            height: 24px;
+            display: block;
+            font-size: 12px;
+            margin: 20px 0 0 6px;
+            line-height: 24px;
+            font-weight: bold;
+            font-style: normal;
+            text-align: center;
+            color: @accent_color !important;
+            font-family: @paragraph_font;
+            border: 1px solid @accent_color;
+
+            &.dots {
+                border: 0 none;
+                color: #231f20 !important;
+            }
+
+            &.current {
+                background: #d9e999;
+                color: #231f20 !important;
+            }
+
+            &:first-child {
+                margin-left: 0px;
+            };
+        }
+    }
+
+
+    /* --------------------------------------------------------------------
+        Mixins
+    -------------------------------------------------------------------- */
+
+    .sidebar_li_style {
+        font-style: italic;
+        margin-bottom: 5px;
+        font-size: 12px !important;
+        font-family: @paragraph_font;
+    }
+
+    .heading_style {
+        font-size: 30px;
+        line-height: 32px;
+        margin-bottom: 13px;
+        text-transform: uppercase;
+        font-family: @primary_font;
+    }
+}
