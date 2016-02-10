@@ -15,16 +15,15 @@ $blog_id = $blog_data->cat_ID;
 
 <section class="masthead">
 
+<div class="masthead_background"></div>
 
-        <div class="masthead_background"></div>
+    		<div class="container">
+
         
-		<div class="content-wrapper">
-        	<div class="row">
-            
+
+            <div class="col-md-10 col-md-offset-1">
 	<nav class="breadcrumbs col">
-		<div class="container">
 		<?php if (function_exists('bcn_display')) bcn_display(); ?>
-		</div>
 	</nav>
 		
 
@@ -88,13 +87,11 @@ $blog_id = $blog_data->cat_ID;
 				</div>
 		
         </div>
-        </div>
 			
 
 		
 
-		
-	<div class='clear'></div>	
+    </div>
 	
 </section>
 

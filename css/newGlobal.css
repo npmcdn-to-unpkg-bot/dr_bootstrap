@@ -164,7 +164,7 @@ h2.eyebrow, .eyebrow {
   margin: 0px auto 21px;
   padding-top: 20px;
   color: #FFF; }
-
+/*
 @media only screen and (max-width: 1550px) {
   .masthead .breadcrumbs {
     width: 84%; }
@@ -1332,7 +1332,7 @@ a.button:hover {
 #template_j a.button.opposite:hover {
   background: #FFF;
   color: #00A7E1; }
-
+/*
 @media handheld, only screen and (max-width: 1000px) {
   .row .span_1, .row .span_2, .row .span_3, .row .span_4, .row .span_5, .row .span_6, .row .span_7, .row .span_8, .row .span_9, .row .span_10, .row .span_11, .row .span_12 {
     width: auto;
@@ -1375,10 +1375,10 @@ a.button:hover {
 
   .contact-middle .head, .contact-left .head, .footer-column .head {
     cursor: pointer; } }
-@media handheld, only screen and (max-width: 525px) {
+/*@media handheld, only screen and (max-width: 525px) {
   #footer-left, #footer-middle, #footer-right {
     width: 95%;
-    padding: 0%; } }
+    padding: 0%; } } */
 /****************************
  *   Detailed Link Styles   *
  ****************************/
@@ -1416,15 +1416,15 @@ a.button:hover {
       color: #81b315;
       margin: 0 0 7px;
       font-family: "DIN Next W01 Medium", sans-serif; }
-    @media (max-width: 1000px) {
+/*  @media (max-width: 1000px) {
       .detailed-link-wrapper .detailed-link {
         margin: 0px; } }
 
-/*******************************
+*******************************
     Grid Styles to be deleted
     when bootstrap is implemented
 *******************************/
-.row2 {
+/* .row2 {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto; }
@@ -1451,7 +1451,7 @@ a.button:hover {
         width: 100%;
         float: none; } }
 
-/*
+
 
 .sidebar-item a.button{ padding: 10px 12px 6px; margin: 0 0 0px; display: inline-block; color: #00a7e1; text-decoration: none;
     -webkit-transition: all 200ms ease-out;
