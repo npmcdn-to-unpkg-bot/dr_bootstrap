@@ -661,10 +661,6 @@
        		<?php icl_link_to_element(27,'page',__('Contact Us', 'digital-river' )); ?> <?php _e( 'today to start your relationship with Digital River.', 'digital-river' ); ?> 
        		</p>
        </div>
- 		</p>
-    </div>
-
-
 
         </div>
     
