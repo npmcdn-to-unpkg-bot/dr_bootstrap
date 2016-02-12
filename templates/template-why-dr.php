@@ -76,8 +76,8 @@
 					jQuery("#"+clickedService +" .button-wrapper").appendTo(".expansion");*/
 
 
-					jQuery("."+clickedService+"-expanded").delay(1000).animate({height:"545px",top:"105px", opacity:1},1000, function(){
-						jQuery("."+clickedService+"-expanded").animate({width:"1135px", left:"0px"},1000);
+					jQuery("."+clickedService+"-expanded").delay(1000).toggleClass("expandedgeneral").animate({height:"auto", opacity:1},1000, function(){
+						jQuery("."+clickedService+"-expanded").animate({width:"auto", left:"0px"},1000);
 						jQuery("."+clickedService+"-expanded .service-content").delay(1000).animate({opacity:1},500);
 
 						jQuery("#third .service").css({cursor:"pointer"});
@@ -164,7 +164,7 @@
 
 
     <div class="col-md-4">
-<h3><?php _e('Our Story','digital-river');?></h3>
+<h3 class="eyebrow"><?php _e('Our Story','digital-river');?></h3>
 		<p>
         	<?php _e( 'We offer ecommerce, payments and top online marketing services to companies of all sizes, in nearly every corner of the world. Digital River is the leading global provider of Commerce-as-a-Service solutions, supporting a best-in-class shopper experience across all devises and complete order management. Our scalable cloud-based multi-tenant SaaS ecommerce platform is backed by more than 20 years of ecommerce experience with a low up-front investment and enables speed to market.', 'digital-river' ); ?>
         </p>
@@ -178,17 +178,21 @@
           </div>
         <div class="col-md-8">
 
-            <div class="snapshot-wrapper col-md-12">
+            <div class="snapshot-wrapper ">
+                <div class="row">
+                <div class="col-md-12">
             	<div class="header"> <?php _e( 'An Average Day', 'digital-river' ); ?></div>
                 <div class="tag"> <?php _e( 'Here’s a snapshot of an average day supported by Digital River teams and systems:', 'digital-river' ); ?></div>
-                <div class="left-list">
+                    </div></div>
+                <div class="row">
+                <div class="col-md-6">
                 	<ul>
                     	<li> <?php _e( 'Support 1.5 billion API calls', 'digital-river' ); ?></li>
                         <li> <?php _e( 'Send over 3 million emails', 'digital-river' ); ?></li>
                         <li> <?php _e( 'Create 5 transaction authorizations per second', 'digital-river' ); ?></li>
                     </ul>
                 </div>
-                <div class="right-list">
+                <div class="col-md-6">
                 	<ul>
                     	<li> <?php _e( 'Serve 60 million pages', 'digital-river' ); ?></li>
                         <li> <?php _e( 'Process 300,000 orders', 'digital-river' ); ?></li>
@@ -196,31 +200,31 @@
                         <li> <?php _e( 'Ship products into 170+ countries', 'digital-river' ); ?></li>
                     </ul>
                 </div>
+                    </div>
             </div>
-<div class="row">
-                <div class="col-md-8">
+<div class="row five-columns">
+                <div class="col-md-2">
                     <div class="header"> <?php _e( 'Online Transactions', 'digital-river' ); ?></div>
                     <div class="copy"><p><?php _e( 'Our world-class ecommerce and payments platforms process $34 billion in online transactions each year.', 'digital-river' ); ?></p></div>
                     <div class="columns-number"><span style='font-size: 22px; display: block; width: 14px; float: left; margin-left: 38px; margin-top: 10px;'>$</span><span style='font-size: 53px; display: block; width: 72px; float: left; letter-spacing:-3px;'>34</span><span style='font-size: 22px; float: left; display: block;margin-top: 10px;'>B</span></div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
+    
+                <div class="col-md-2">
                     <div class="header"> <?php _e( 'Site Display Languages', 'digital-river' ); ?></div>
                     <div class="copy"> <p><?php _e( 'We’re not just multilingual - we speak global. Our enterprise global commerce platform hosts client websites in 30 different languages.', 'digital-river' ); ?></p></div>
                     <div class="columns-number"><span style='font-size: 53px; margin-left: 45px; display: block; width: 100px; float: left; letter-spacing:-3px;'>30</span></div>
                 </div>
-                <div class="col-md-3" id="currencies">
+                <div class="col-md-2" id="currencies">
                     <div class="header" > <?php _e( 'Top Payments', 'digital-river' ); ?></div>
                     <div class="copy"><p> <?php _e( 'We can support 175 global currencies and over 200 global payment methods.', 'digital-river' ); ?></p></div>
                     <div class="columns-number"><span style='font-size: 53px; margin-left: 25px; display: block; width: 100px; float: left; letter-spacing:-3px;'>200</span></div>
                 </div>
-                <div class="col-md-3" >
+                <div class="col-md-2" >
                     <div class="header"> <?php _e( 'Ecommerce Experts', 'digital-river' ); ?></div>
                     <div class="copy"><p> <?php _e( 'We have 1,300+ ecommerce experts in 27 offices around the world to enable you operate in 243 countries and territories.', 'digital-river' ); ?></p></div>
                     <div class="columns-number"><span style='font-size: 53px; margin-left: 8px; display: block; width: 100px; float: left; letter-spacing:-3px;'>1300</span></div>
                 </div>
-                <div class="col-md-3"  id="subscriptions">
+                <div class="col-md-2"  id="subscriptions">
                     <div class="header"> <?php _e( 'Subscriptions', 'digital-river' ); ?></div>
                     <div class="copy"> <p><?php _e( 'Digital River manages 11M+ active online product subscriptions with 8M active subscribers.', 'digital-river' ); ?></p></div>
                     <div class="columns-number"><span style='font-size: 53px; display: block; width: 58px; float: left; letter-spacing:-3px; margin-left:56px;'>11</span><span style='font-size: 22px; float: left; display: block;margin-top: 10px;'>M</span></div>
@@ -231,7 +235,7 @@
 
 </div>
     </div>
-<div class="row">=
+<div class="row">
     <div class="eyebrow col-md-4"> <?php _e( 'Commerce as a Service', 'digital-river' ); ?></div>
 </div>
     <div class="row four-up-sliders" id="third">

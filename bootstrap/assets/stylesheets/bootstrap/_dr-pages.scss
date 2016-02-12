@@ -1318,6 +1318,131 @@ a.button:hover {
         z-index: 999;
     }
 }
+// General Masthead
+.ja .masthead .title {
+ font-size: 39px;
+}
+
+.de .masthead .title {
+  font-size: 53px;
+}
+.masthead {
+   position: relative;
+	height:217px;
+ margin-top: 0px;
+   
+    .container {
+        z-index: 999;
+    }
+
+.masthead_background {
+ position: absolute;
+ 	height:100%;
+    z-index: 50;
+    width: 100%;
+    background-image: url("../../../img/mast-head-image-v6.png");
+    opacity: 1;
+	background-attachment: fixed;
+	    background-repeat: no-repeat;
+  background-position: 0px -54px;
+	background-size: 100% auto;
+}
+
+
+.masthead_background img{
+	min-width: 100%;
+}
+
+.masthead_background .secondary_bg {
+  margin-top: -40px;
+}
+ .content {
+  z-index: 100;
+  position: relative;
+}
+ .container {
+  padding-left: 0px;
+}
+ .breadcrumbs {
+
+  z-index: 75;
+  font-size: 13px;
+  line-height: 20px;
+  position: relative;
+  font-family:'HelveticaNeueW01-55Roma';
+  margin: 0 auto 21px;
+padding-top: 20px;
+color:#FFFFFF;
+width:100%;
+
+}
+ .breadcrumbs a {
+	font-weight:400;
+  font-size: 13px;
+	color:#FFFFFF;
+  text-decoration: none;
+}
+
+ .breadcrumbs a:hover{
+	text-decoration:underline;
+}
+    .title-cont {
+            z-index: 999;
+     position: absolute;
+    }
+.title,
+ .tagline, .subtitle {
+  color:#FFF;
+
+}
+ .title {
+	font-size: 60px;
+	line-height: 50px;
+    margin: 10px auto 0px;
+    max-width: 980px;
+    font-weight: 300;
+    letter-spacing: .5px;
+}
+
+
+ .tagline {
+
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -10%;
+  margin: 15px 0 17px 0;
+  font-family: 'DIN1451W01-Mittelschrif';
+  padding-right: 30px;
+}
+ .subtitle {
+font-size: 18px;
+margin: 10px auto 33px;
+line-height: 25px;
+font-family: "HelveticaNeueW01-55Roma";
+padding-left: 0px;
+color: #FFF;
+max-width: 980px;
+	 
+    }
+}
+
+.masthead.secondary {
+  background: url('../../../img/gray_masthead.png');
+  background-position: 100% 100%;
+
+ .tagline, .subtitle {
+  color: #636466;
+}
+ .breadcrumbs {
+  height: 60px;
+  margin: 0;
+  line-height: 60px;
+  margin-bottom: 50px;
+  background: url('../../../img/masthead_bg.png');
+  background-size: 100% auto;
+}
+    }
+
 
 
 .four-up-sliders {
@@ -1330,14 +1455,12 @@ a.button:hover {
      .service-content {
          width:847px; float:right; height:395px;  padding-top:35px; opacity:0;
  }
-     .sub-service{width:250px; height:115px; float:left; text-align:left; margin-left:24px; margin-top:70px;
      .copy{margin-top:10px;  font-family:Arial, sans-serif; text-transform:none;}
      
      .header{ text-transform:uppercase; color:#807e82; font-size:28px;}
  }
  }
-    
-}
+
 
 
 	.commerce-service-expanded{
@@ -1379,4 +1502,79 @@ a.button:hover {
 }
 .featured_wrapper {
 padding-bottom: 25%;
+}
+
+//An Average Day
+.snapshot-wrapper {
+    background-color: #F4F4F4;
+    .header {
+        font-family: 'DIN 1451 W01 Engschrift';
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #009ad7;
+    }
+}
+    .five-columns {
+    .col-md-2 {
+           padding: 5px;
+            background-color: #009ad7;
+
+        .header {
+                color: #FFF;
+    font-size: 18px;
+    font-family: 'DIN1451W01-Mittelschrif';
+    text-transform: uppercase;
+            line-height: 1em;
+}
+        .columns-number {
+            color: white;
+        }
+        }
+        
+        }
+.four-up-sliders {
+      position: relative;
+    .service {
+        background-color: #f4f4f4;
+      
+    }
+    img {
+            width: 50%;
+    margin: 0 auto 0 auto;
+    display: block;
+    margin-top: 1em;
+
+    }
+  .header {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1em;
+    font-family: 'DIN 1451 W01 Engschrift';
+    text-transform: uppercase;
+    color: #807e82;
+}
+    .service2 {
+      float: left;
+       width: 15%;
+    }
+   .sub-service {
+    width: 30%;
+    height: 115px;
+    float: left;
+    text-align: left;
+    margin-left: 3%;
+    margin-top: 0;
+       
+
+
+}
+    .expandedgeneral {
+        display: inline;
+    height: auto;
+    top: 0;
+    opacity: 1;
+    width: 100%;
+    left: 0px;
+    padding-bottom: 8%;
+}
 }

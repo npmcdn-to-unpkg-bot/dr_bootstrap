@@ -22,11 +22,11 @@ $blog_id = $blog_data->cat_ID;
         
 
             <div class="col-md-10 col-md-offset-1">
-	<nav class="breadcrumbs col">
+	<nav class="breadcrumbs">
 		<?php if (function_exists('bcn_display')) bcn_display(); ?>
 	</nav>
 		
-
+                <div class="title-cont">
 				<?php if ($post_type == 'post' || is_page('our-authors') || (isset($is_blog) && $is_blog)): ?>
 					<div class="title">
 				<?php else: ?>
