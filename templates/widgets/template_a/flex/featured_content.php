@@ -13,7 +13,7 @@
     $row_count = count($content);
     $i = 1;
     foreach ($content as $row) : ?>
-    <div class="clearfix col span_6 <?php echo ($row_count === $i) ? 'last':''; ?>">
+    <div class="clearfix col col-md-6 <?php echo ($row_count === $i) ? 'last':''; ?>">
       <?php if ($row['feature_page_image']) : ?>
           <a href="<?php echo $row['custom_url']; ?>" class="image hide_on_mobile">
             <img src="<?php echo $row['feature_page_image']; ?>" alt="">

@@ -25,7 +25,7 @@
         <div class="row">
         <?php foreach(get_field('column') as $key=>$column) : ?>
 
-            <div class='span_4 col <?php if( count(get_field('column')) == ($key+1) ){ echo " last"; } ?>'>
+            <div class='col-md-4 col <?php if( count(get_field('column')) == ($key+1) ){ echo " last"; } ?>'>
                 <div class="widget featured_content">
                     <?php if ($column['image']) : ?>
                         <a href="<?php echo $column['link']; ?>" class="image">

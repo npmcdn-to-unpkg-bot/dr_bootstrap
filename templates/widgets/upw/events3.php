@@ -128,9 +128,9 @@ krsort($posts_array);
                     if(count($upcomingEvents) <= 0):
                         $class = "span_12 last webinars";
                         $pastStyles = "margin-right: 3.8%; width: 30.75%; border:none; padding:0;";
-                        $pastClass = "span_4";
+                        $pastClass = "col-md-4";
                     else: 
-                        $class = "sidebar span_4 last";
+                        $class = "sidebar col-md-4 last";
                         $pastStyles = "";
                         $pastClass = "";
                     endif;
@@ -175,7 +175,7 @@ krsort($posts_array);
                         <!-- Event Location -->
                 <!--
                         <?php if ($event->event_location) : ?>
-                            <div class="location span_4 col"><?php echo $event->event_location; ?></div>
+                            <div class="location col-md-4 col"><?php echo $event->event_location; ?></div>
                         <?php endif; ?>
                         <div class="clearfix"></div>
                 -->

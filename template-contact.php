@@ -409,7 +409,7 @@ margin-left: 20px !important;
 		margin-top: 20px !important;
 	}
 
-	.row2 .span_1, .row2 .span_2, .row2 .span_3, .row2 .span_4, .row2 .span_5, .sidebar-item .span_6, .row2 .span_7, .row2 .span_8, .row2 .span_9, .row2 .span_10, .row2 .span_11, .row2 .span_12 {
+	.row2 .span_1, .row2 .span_2, .row2 .span_3, .row2 .col-md-4, .row2 .span_5, .sidebar-item .col-md-6, .row2 .span_7, .row2 .span_8, .row2 .span_9, .row2 .span_10, .row2 .span_11, .row2 .span_12 {
 	    padding-left: 0;
 	    padding-right: 0;
 	}
@@ -704,7 +704,7 @@ $(".mktoLogicalField").parent(".mktoFieldWrap").parent(".mktoFieldDescriptor").p
       $firstSidebarItem = true; 
     ?>
     <?php if( $displaySidebar[0] == 1): ?>
-        <div class='sidebar span_4 last'>
+        <div class='sidebar col-md-4 last'>
             <?php foreach ($sidebarSections as $sidebarSection) : ?>
 
                   <?php if($sidebarSection['acf_fc_layout'] == "eyebrow") : ?>

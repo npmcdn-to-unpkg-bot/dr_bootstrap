@@ -42,7 +42,7 @@ a.button.opposite.btn-blue:hover{
     position: relative;
 }
 
-.row2 .span_4.country{
+.row2 .col-md-4.country{
     width: 24.75%;
     margin-right: 12.8%;
     margin-bottom: 20px;
@@ -536,7 +536,7 @@ div[data-barid="united-states-bar"] .bar{
     }
 
     @media only screen and (max-width: 1050px) {
-        .row2 .span_6 {
+        .row2 .col-md-6 {
             width: 100%;
         }
 
@@ -571,7 +571,7 @@ div[data-barid="united-states-bar"] .bar{
             top: 5px;
         }
 
-        .row2 .span_4.country {
+        .row2 .col-md-4.country {
             width: 33.3% !important;
             margin: 50px 0px 0px !important;
             float: left;
@@ -645,7 +645,7 @@ div[data-barid="united-states-bar"] .bar{
             max-height: inherit !important;
         }
 
-        .row2 .span_4.country {
+        .row2 .col-md-4.country {
             width: 50% !important;
             margin: 50px 0px 0px !important;
             float: left;
@@ -787,7 +787,7 @@ div[data-barid="united-states-bar"] .bar{
 
     @media only screen and (max-width: 385px) {
 
-        .row2 .span_4.country {
+        .row2 .col-md-4.country {
             width: 100% !important;
             margin: 10px 0px 10px !important;
             float: left;

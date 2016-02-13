@@ -60,7 +60,7 @@ foreach ($posts_array as $timestamp => $post) {
                         
                         <!-- Event Location -->
                         <?php if ($post->event_location) : ?>
-                            <div class="location span_4 col"><?php echo $post->event_location; ?></div>
+                            <div class="location col-md-4 col"><?php echo $post->event_location; ?></div>
                         <?php endif; ?>
                         <div class="clearfix"></div>
 

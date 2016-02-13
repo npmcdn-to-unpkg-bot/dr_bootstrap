@@ -583,10 +583,10 @@ h2.eyebrow {
   overflow: hidden;
   position: relative;
 }
-#corporate_policies .important_containers .row .span_6 {
+#corporate_policies .important_containers .row .col-md-6 {
   margin-right: 3%;
 }
-#corporate_policies .important_containers .row .span_6.last {
+#corporate_policies .important_containers .row .col-md-6.last {
   margin-right: 0;
 }
 #corporate_policies .important_containers .column_bottom_left {
@@ -1138,10 +1138,10 @@ Widgets
 #template_b  .content .widget:first-child {
   margin-top: 0px;
 }
-#template_b .tabbed_content .row .span_6 {
+#template_b .tabbed_content .row .col-md-6 {
   width: 44%;
 }
-#template_b .tabbed_content .row .span_6.last {
+#template_b .tabbed_content .row .col-md-6.last {
   margin-left: 5%;
 }
 #template_b .tabbed_content .tab_header {
@@ -2352,10 +2352,10 @@ Widgets
 #template_k .tabbed_content {
   margin-top: 60px;
 }
-#template_k .tabbed_content .row .span_6 {
+#template_k .tabbed_content .row .col-md-6 {
   width: 44%;
 }
-#template_k .tabbed_content .row .span_6.last {
+#template_k .tabbed_content .row .col-md-6.last {
   margin-left: 5%;
 }
 #template_k .tabbed_content .tab_header {
@@ -2657,10 +2657,10 @@ Widgets
 #template_l .content .widget:first-child {
   margin-top: 0px;
 }
-#template_l .tabbed_content .row .span_6 {
+#template_l .tabbed_content .row .col-md-6 {
   width: 44%;
 }
-#template_l .tabbed_content .row .span_6.last {
+#template_l .tabbed_content .row .col-md-6.last {
   margin-left: 5%;
 }
 #template_l .tabbed_content .tab_header {

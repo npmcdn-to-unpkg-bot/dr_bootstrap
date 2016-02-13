@@ -18,7 +18,7 @@
                 </div>
 
                 <!-- Middle Column -->
-                <div class="span_6 col middle_column">
+                <div class="col-md-6 col middle_column">
                     <div class="posts_container">
                         <?php
                         // Save the original query

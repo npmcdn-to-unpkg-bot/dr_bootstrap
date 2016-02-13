@@ -28,7 +28,7 @@
     width: 22.05%;
 }
 
-.row2 .span_4 {
+.row2 .col-md-4 {
     width: 30.75%;
 }
 
@@ -36,7 +36,7 @@
     width: 39.45%;
 }
 
-.row2 .span_6 {
+.row2 .col-md-6 {
     width: 48%;
 }
 
@@ -65,7 +65,7 @@
 }
 
 
-.span_1, .span_2, .span_3, .span_4, .span_5, .span_6, .span_7, .span_8, .span_9, .span_10, .span_11 {
+.span_1, .span_2, .span_3, .col-md-4, .span_5, .col-md-6, .span_7, .span_8, .span_9, .span_10, .span_11 {
     margin-right: 3.8%;
     float: left;
     min-height: 1px;
@@ -156,7 +156,7 @@ ul.bullet-list li{
     margin: 0 auto;
 }
 
-.span_6 .client-outer:first-child{
+.col-md-6 .client-outer:first-child{
     padding-top: 0;
 }
 
@@ -182,7 +182,7 @@ ul.bullet-list li{
     }
 
     @media (max-width: 700px) {
-        .cbi-wrapper .span_6{
+        .cbi-wrapper .col-md-6{
             width:100%;
         }
         .client-inner{height: inherit;}
@@ -363,7 +363,7 @@ $leftBoxes[] = array(
 <div class='row2'>
             <div class='eyebrow'>Overview</div>
         <div class='clear'></div>
-    <div class='span_6'>
+    <div class='col-md-6'>
 
         <div class='section'>
             <p>
@@ -372,7 +372,7 @@ $leftBoxes[] = array(
             </p>
         </div>
     </div>
-    <div class='span_6 last'>
+    <div class='col-md-6 last'>
         <div class='section'>
             <p>
 
@@ -403,7 +403,7 @@ Leverage Digital River’s global expertise and infrastructure to effectively su
 <div class='row2 cbi-wrapper' >
             <div class='eyebrow'>Capabilities</div>
         <div class='clear'></div>
-    <div class="span_6">
+    <div class="col-md-6">
 
 
 
@@ -432,7 +432,7 @@ Leverage Digital River’s global expertise and infrastructure to effectively su
     <div class='clear'></div>
 </div>
 
-<div class='span_6 last'>
+<div class='col-md-6 last'>
 
     <?php
 

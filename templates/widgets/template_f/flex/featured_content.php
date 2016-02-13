@@ -12,7 +12,7 @@
         </div>
         <div class="row solution-content-wrapper">
         <?php $i = 1; foreach ($content as $row) : ?>
-            <section class="content span_6 <?php if($i == (count($content))){ echo " end ";  } ?><?php echo (($i%2) === 0) ? 'last':''; ?>">
+            <section class="content col-md-6 <?php if($i == (count($content))){ echo " end ";  } ?><?php echo (($i%2) === 0) ? 'last':''; ?>">
                 <a class="title" href="<?php if($row['custom_url'] != ''){echo $row['custom_url']; } else {echo $row['page']; }?>"><h4 class='med black'><?php echo $row['page_title']; ?></h4></a>
                 <article class="body"><?php echo $row['page_intro']; ?></article>
                 <a class="button" href="<?php if($row['custom_url'] != ''){echo $row['custom_url']; } else {echo $row['page']; }?>">

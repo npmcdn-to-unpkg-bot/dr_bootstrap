@@ -127,7 +127,7 @@
 			<div class="span_12" style="padding:30px;">
 				<h2 class="med gray heading">Payment Processing Models</h2>
 			</div>
-			<div class="span_4">
+			<div class="col-md-4">
 				<div class="image-wrapper">
 					<img style="margin-left:-90px; min-height:113%;" src="/wp-content/themes/digital-river-translated/img/payments/gateway_services.jpg" alt="Gateway services image" />
 				</div>
@@ -138,7 +138,7 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			<div class="span_4">
+			<div class="col-md-4">
 				<div class="image-wrapper">
 					<img src="/wp-content/themes/digital-river-translated/img/payments/fullcard_services.jpg" alt="Full-Card acquiring image" />
 				</div>
@@ -150,7 +150,7 @@
 				<div class="clear"></div>
 
 			</div>
-			<div class="span_4 last">
+			<div class="col-md-4 last">
 				<div class="image-wrapper">
 					<img style="position: relative; top: 0px;" src="/wp-content/themes/digital-river-translated/img/payments/incountry_services.jpg" alt="In-country merchant Image" />
 				</div>

@@ -9,7 +9,7 @@
 <div id="template_f" class="container">
     <section class="featured_content content_row">
           <div class="row">
-        <section class="featured_image span_4 col">
+        <section class="featured_image col-md-4 col">
           <?php if (get_field('featured_image')) : ?>
             <img src="<?php echo get_field('featured_image'); ?>" alt="">
             <img src="<?php echo get_image_path('icon_shadow.png'); ?>" alt="">
@@ -41,8 +41,8 @@
     <section class="widget_area content_row">
       <div class="container">
           <div class="row">
-            <section class="widgetized left_side span_6 col" style="padding-top:20px; padding-bottom:20px;"><?php dynamic_sidebar_cache('template_f_widget_1'); ?></section>
-            <section class="widgetized right_side span_6 col last" style="padding-top:20px; padding-bottom:20px;"><?php dynamic_sidebar_cache('template_f_widget_2'); ?></section>
+            <section class="widgetized left_side col-md-6 col" style="padding-top:20px; padding-bottom:20px;"><?php dynamic_sidebar_cache('template_f_widget_1'); ?></section>
+            <section class="widgetized right_side col-md-6 col last" style="padding-top:20px; padding-bottom:20px;"><?php dynamic_sidebar_cache('template_f_widget_2'); ?></section>
             <div class="clear"></div>
           </div>
       </div>
@@ -51,7 +51,7 @@
   -->
 
     <!-- Flex -->
-    <section class="widgetized flex content_row">
+    <section class="widgetized flex content_row container">
         <?php dynamic_sidebar_cache('template_f_flex'); ?>
     </section>
   </div>

@@ -23,13 +23,13 @@
                     <section class="important_containers container hide_on_mobile">
                         <div class="row">
                         <?php $i = 0; foreach (get_field('featured_content') as $content) : ?>    
-                            <section class="important_container span_6 col <?php echo (($i % 2) === 1) ? 'last': ''; ?>">
+                            <section class="important_container col-md-6 col <?php echo (($i % 2) === 1) ? 'last': ''; ?>">
                                 <header>
                                     <h2><?php _e($content['title'],'digital-river'); ?></h2>
                                     <a href="<?php echo $content['link']; ?>"><?php echo $content['link_title']; ?></a>
                                 </header>
                                 <article><?php echo $content['content']; ?></article>
-                                <div class="<?php echo (($i % 2) === 0) ? 'column_bottom_left': 'column_bottom_right'; ?> span_6"></div>
+                                <div class="<?php echo (($i % 2) === 0) ? 'column_bottom_left': 'column_bottom_right'; ?> col-md-6"></div>
                             </section>
 
                             <?php if (($i % 2) === 1) : ?>

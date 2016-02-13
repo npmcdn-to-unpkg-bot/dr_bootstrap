@@ -337,11 +337,11 @@ a.button.opposite.btn-blue:hover{
 
     .seperator{display: none;}
 
-    #processingModels .span_4:first-child{
+    #processingModels .col-md-4:first-child{
         margin-top: 0px    
     }
 
-    #processingModels .span_4{
+    #processingModels .col-md-4{
         margin-top: 30px;
     }
 

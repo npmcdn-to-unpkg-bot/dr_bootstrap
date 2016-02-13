@@ -26,7 +26,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
     /*overflow: hidden;*/
 }
 
-.span_1, .span_2, .span_3, .span_4, .span_5, .span_6, .span_7, .span_8, .span_9, .span_10, .span_11 {
+.span_1, .span_2, .span_3, .col-md-4, .span_5, .col-md-6, .span_7, .span_8, .span_9, .span_10, .span_11 {
     margin-right: 3.8%;
     float: left;
     min-height: 1px;
@@ -44,7 +44,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
     width: 22.05%;
 }
 
-.row .span_4 {
+.row .col-md-4 {
     width: 30.75%;
 }
 
@@ -52,7 +52,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
     width: 39.45%;
 }
 
-.row .span_6 {
+.row .col-md-6 {
     width: 48%;
 }
 
@@ -201,7 +201,7 @@ img {
         padding: 0 0 !important;
     }
 
-    #template_a .flex .featured_content .row .span_6 {
+    #template_a .flex .featured_content .row .col-md-6 {
         padding: 0 !important;
     }
 
@@ -211,11 +211,11 @@ img {
 
     /* Template B Specific Styles */
 
-    #template_b .tabbed_content .row .span_6 {
+    #template_b .tabbed_content .row .col-md-6 {
         width: auto !important;
     }
 
-    #template_b .tabbed_content .row .span_6.last {
+    #template_b .tabbed_content .row .col-md-6.last {
         margin-left: 0% !important;
     }
 
@@ -299,7 +299,7 @@ img {
         margin-top: 0px !important;
     }
 
-    #corporate_policies .important_containers .row .span_6 {
+    #corporate_policies .important_containers .row .col-md-6 {
         padding-left: 0 !important;
         padding-right: 0 !important;
         margin-right: 0% !important;
@@ -376,7 +376,7 @@ img {
         padding-right: 0px;
     }
 
-    .row .span_1, .row .span_2, .row .span_3, .row .span_4, .row .span_5, .row .span_6, .row .span_7, .row .span_8, .row .span_9, .row .span_10, .row .span_11, .row .span_12 {
+    .row .span_1, .row .span_2, .row .span_3, .row .col-md-4, .row .span_5, .row .col-md-6, .row .span_7, .row .span_8, .row .span_9, .row .span_10, .row .span_11, .row .span_12 {
         width: auto;
         float: none;
         margin-left: 0px;
@@ -410,11 +410,11 @@ img {
         width: auto !important;
     }
 
-    #template_k .tabbed_content .row .span_6 {
+    #template_k .tabbed_content .row .col-md-6 {
        width: auto !important; 
     }
 
-    #template_k .tabbed_content .row .span_6.last {
+    #template_k .tabbed_content .row .col-md-6.last {
         margin-left: 0px !important;
     }
 

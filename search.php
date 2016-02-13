@@ -59,7 +59,7 @@ while ( have_posts() ) {
                     $solution_count = count($posts_array['solutions']);
                     $i = 1;
                     foreach ($posts_array['solutions'] as $result) : ?>
-                        <section class="col span_6 <?php echo ($i === 2) ? 'last':''; ?>">
+                        <section class="col col-md-6 <?php echo ($i === 2) ? 'last':''; ?>">
                             <div class="top dotted_splitter"></div>
                             <section class="solution">
                                 <div class="text_container">
@@ -137,7 +137,7 @@ while ( have_posts() ) {
                                     break;
                             endswitch;
                         ?>
-                            <div class="result_listing col span_6 <?php echo ($i === 2) ? 'last':''; ?>">
+                            <div class="result_listing col col-md-6 <?php echo ($i === 2) ? 'last':''; ?>">
                                 <div class="dotted_splitter top <?php echo (!$first)? 'hidden':''; ?>"></div>
                                 <section class="container row">
                                     <div class="image col span_2 hide_on_mobile"><img src="<?php echo get_image_path('search_icons/' . $result->post_type . '.png'); ?>"></div>

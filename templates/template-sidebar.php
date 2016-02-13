@@ -19,7 +19,7 @@
       $firstSidebarItem = true; 
     ?>
     <?php if( $displaySidebar[0] == 1): ?>
-        <div class='sidebar span_4 last'>
+        <div class='sidebar col-md-4 last'>
             <div class="detailed-link">
               <?php foreach ($sidebarSections as $sidebarSection) : ?>
                     <?php if($sidebarSection['acf_fc_layout'] == "eyebrow") : ?>

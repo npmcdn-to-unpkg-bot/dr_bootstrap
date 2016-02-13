@@ -26,9 +26,9 @@
 
         <!-- Widgets -->
         <div class="row">
-          <section class="span_4 col"><?php dynamic_sidebar_cache('template_a_widget_1'); ?></section>
-          <section class="span_4 col"><?php dynamic_sidebar_cache('template_a_widget_2'); ?></section>
-          <section class="span_4 col last"><?php dynamic_sidebar_cache('template_a_widget_3'); ?></section>
+          <section class="col-md-4 col"><?php dynamic_sidebar_cache('template_a_widget_1'); ?></section>
+          <section class="col-md-4 col"><?php dynamic_sidebar_cache('template_a_widget_2'); ?></section>
+          <section class="col-md-4 col last"><?php dynamic_sidebar_cache('template_a_widget_3'); ?></section>
         </div>
 
         <!-- Flex -->

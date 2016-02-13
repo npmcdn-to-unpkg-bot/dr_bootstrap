@@ -28,7 +28,7 @@
     width: 22.05%;
 }
 
-.row2 .span_4 {
+.row2 .col-md-4 {
     width: 30.75%;
 }
 
@@ -36,7 +36,7 @@
     width: 39.45%;
 }
 
-.row2 .span_6 {
+.row2 .col-md-6 {
     width: 48%;
 }
 
@@ -107,7 +107,7 @@ ul.bullet-list li{
 
 @media handheld, only screen and (max-width: 1000px) {
 
-    .row2 .span_1, .row2 .span_2, .row2 .span_3, .row2 .span_4, .row2 .span_5, .row2 .span_6, .row2 .span_7, .row2 .span_8, .row2 .span_9, .row2 .span_10, .row2 .span_11, .row2 .span_12{
+    .row2 .span_1, .row2 .span_2, .row2 .span_3, .row2 .col-md-4, .row2 .span_5, .row2 .col-md-6, .row2 .span_7, .row2 .span_8, .row2 .span_9, .row2 .span_10, .row2 .span_11, .row2 .span_12{
         width: auto !important;
         float: none;
         margin-left: 0px;
@@ -138,11 +138,11 @@ ul.bullet-list li{
 <h2 class='eyebrow'>Overview</h2>
 <div class='clear'></div>
 
-<div class='span_6'>
+<div class='col-md-6'>
 Digital River’s Channel Lead Management solution is a global, where-to-buy solution that puts all the data you need right at your fingertips. Through tracking and analytics, you can capture insight into your customer’s behavior, manage your channel <a href="http://digitalriver.staging.wpengine.com/partners/">partners</a> and increase online revenue . . . all at the same time.
 </div>
 
-<div class='span_6 last'>
+<div class='col-md-6 last'>
 Digital River’s Channel Lead Management solution is a global, where-to-buy solution that puts all the data you need right at your fingertips. Through tracking and analytics, you can capture insight into your customer’s behavior, manage your channel <a href="http://digitalriver.staging.wpengine.com/partners/">partners</a> and increase online revenue . . . all at the same time.
 </div>
 
@@ -150,7 +150,7 @@ Digital River’s Channel Lead Management solution is a global, where-to-buy sol
 </div>
 <h2 class='eyebrow'>Solutions</h2>
 <div class='clear'></div>
-<div class='span_6'>
+<div class='col-md-6'>
 <div class='section'>
 <h3 class='section_heading'>Real-Time Inventory</h3>
 Access online inventory information and automatically replace “out of stock” messages with preferred reseller links.</div>
@@ -171,7 +171,7 @@ Track shoppers after they have left your site and collect data about purchasing 
 <h3 class='section_heading'>Geographical Heat Maps</h3>
 View breakdown of purchasing information and trends by geographical region.</div>
 </div>
-<div class='span_6 last'>
+<div class='col-md-6 last'>
 <div class='section'>
 <h3 class='section_heading'>Mobile</h3>
 Mobile optimization ensures that customers can find where to buy your product while on the move.</div>

@@ -19,7 +19,7 @@
                             <img class="play_button" src="<?php echo get_image_path('play_button.png'); ?>" alt=""/>
                         </a>
                     <?php else: ?>
-                        <a href="<?php echo $row['page']; ?>" class="image col span_4"><img src="<?php echo $row['feature_page_image']; ?>" alt=""></a>
+                        <a href="<?php echo $row['page']; ?>" class="image col col-md-4"><img src="<?php echo $row['feature_page_image']; ?>" alt=""></a>
                     <?php endif; ?>
                 <?php endif; ?>
 

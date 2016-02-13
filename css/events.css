@@ -77,7 +77,7 @@ a.brackets::after{
 .sidebar .eyebrow{margin: 0 20px 0 0; }
 .sidebar a.brackets {margin: 5px 1% 0px;}
 
-.row2 .span_4 {
+.row2 .col-md-4 {
     width: 32.75%;
 }
 

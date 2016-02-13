@@ -1,4 +1,5 @@
 
+
 a {
   color: blue;
 }
@@ -924,6 +925,23 @@ h3.eyebrow {
   min-height:110px;
   background:#f0f0f0;
   border:solid 1px #b1b1b1;
+    .col-md-8 {
+    background: #fff;
+    }
+    
+    ul {
+       list-style: none;
+        padding-left: 0;
+    }
+    .head {
+        font-size: 24px;
+    width: 100%;
+    color: #343438;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+
+    }
+        
   .copyright, .trademark {
     font-size:10px;
     line-height:14px;
@@ -1315,7 +1333,7 @@ a.button:hover {
             position: absolute;
     }
     .container {
-        z-index: 999;
+        z-index: 99;
     }
 }
 // General Masthead
@@ -1538,6 +1556,19 @@ padding-bottom: 25%;
         background-color: #f4f4f4;
       
     }
+    input {
+    padding: .5em;
+    font-size: 14px;
+    text-align: center;
+    background: #585656;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 0 auto 0 auto;
+    display: block;
+}
+    
     img {
             width: 50%;
     margin: 0 auto 0 auto;

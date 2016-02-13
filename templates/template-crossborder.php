@@ -220,19 +220,19 @@ class Industries{
 			<h2 class="med gray heading">Overview</h2>
 		</div>
 		<div class="clear"></div>
-		<div class="span_4">
+		<div class="col-md-4">
 			<div class="section">
 				<div class=" med gray subheading">Conducting business across borders is complex</div>
 				<p class="gray">It is critical to understand the local cultures and preferences of the customer — as well as the regulatory and business requirements within those countries to do business and stay compliant. The more you know about cross-border payments, the better your chances for global ecommerce success.</p>
 			</div>
 		</div>
-		<div class="span_4">
+		<div class="col-md-4">
 			<div class="section">
 				<div class="gray med subheading">What was measured?</div>
 				<p class="gray">X-Border Payments Optimization Index quantifies the degree to which ecommerce companies are prepared to do business with a global customer base. This index will provide important insight into the things that merchants must do in order to be successful on a global commerce stage.</p>
 			</div>
 		</div>
-		<div class="span_4 last">
+		<div class="col-md-4 last">
 			<div class="section">
 				<div class=" med gray subheading">Methodology</div>
 				<p class="gray">This index includes in-depth research on more than 160 such players based in 10 countries. including those developed to emerging economies and spanning multiple continents. Over 60 attributes were evaluated for each and every site, covering details related to shopping, payment, shipping, information access, pricing, product and level of effort required to checkout.</p>
@@ -252,7 +252,7 @@ class Industries{
 		<div class="span_12" style="margin-top:50px;">
  			<?php foreach ($fields['key_points'] as $key => $key_point): ?>
  				<?php if($key % 2 == 0): ?>
-					<div class="span_6 thing animate beforeAnimate" style=" background: <?php echo $color[$key]; ?>; margin-bottom:50px;">
+					<div class="col-md-6 thing animate beforeAnimate" style=" background: <?php echo $color[$key]; ?>; margin-bottom:50px;">
 						<div class="number med white"><?php echo $key+1; ?></div>
 						<div class="description-wrapper">
 							<h3 class="white med"><?php echo $key_point['heading']; ?></h3>
@@ -262,7 +262,7 @@ class Industries{
 					</div>
  				<?php endif; ?>
 				<?php if($key % 2 != 0): ?> 				
-					<div class="span_6 thing animate beforeAnimate last" style="margin-bottom:50px; background: <?php echo $color[$key]; ?>;">
+					<div class="col-md-6 thing animate beforeAnimate last" style="margin-bottom:50px; background: <?php echo $color[$key]; ?>;">
 						<div class="number med white"><?php echo $key+1; ?></div>
 						<div class="description-wrapper">
 							<h3 class="white med"><?php echo $key_point['heading']; ?></h3>
@@ -311,7 +311,7 @@ class Industries{
  	<div class="country-wrapper" >
  	<?php foreach ($orderedCoutries as $key => $country): ?>
 
-		<div class="span_4 country animate beforeAnimate" style="<?php if($key % 3 == 2){ echo "margin-right:0px;";} ?>">
+		<div class="col-md-4 country animate beforeAnimate" style="<?php if($key % 3 == 2){ echo "margin-right:0px;";} ?>">
 			<div class='country-img-wrapper'>
 				<img src="/wp-content/themes/digital-river-translated/img/crossborder/<?php echo $country['country']; ?>.png" />
 			</div>

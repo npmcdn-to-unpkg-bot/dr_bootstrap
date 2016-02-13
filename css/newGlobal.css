@@ -1334,7 +1334,7 @@ a.button:hover {
   color: #00A7E1; }
 /*
 @media handheld, only screen and (max-width: 1000px) {
-  .row .span_1, .row .span_2, .row .span_3, .row .span_4, .row .span_5, .row .span_6, .row .span_7, .row .span_8, .row .span_9, .row .span_10, .row .span_11, .row .span_12 {
+  .row .span_1, .row .span_2, .row .span_3, .row .col-md-4, .row .span_5, .row .col-md-6, .row .span_7, .row .span_8, .row .span_9, .row .span_10, .row .span_11, .row .span_12 {
     width: auto;
     float: none;
     margin-left: 0px;
@@ -1342,7 +1342,7 @@ a.button:hover {
     padding-left: 30px;
     padding-right: 30px; }
 
-  .row2 .span_1, .row2 .span_2, .row2 .span_3, .row2 .span_4, .row2 .span_5, .row2 .span_6, .row2 .span_7, .row2 .span_8, .row2 .span_9, .row2 .span_10, .row2 .span_11, .row2 .span_12 {
+  .row2 .span_1, .row2 .span_2, .row2 .span_3, .row2 .col-md-4, .row2 .span_5, .row2 .col-md-6, .row2 .span_7, .row2 .span_8, .row2 .span_9, .row2 .span_10, .row2 .span_11, .row2 .span_12 {
     width: auto;
     float: none;
     margin-left: 0px;
@@ -1428,15 +1428,15 @@ a.button:hover {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto; }
-  .row2 .span_4 {
+  .row2 .col-md-4 {
     width: 32.75%; }
     @media (max-width: 1000px) {
-      .row2 .span_4 {
+      .row2 .col-md-4 {
         box-sizing: border-box;
         width: 45%;
         float: left; } }
     @media (max-width: 750px) {
-      .row2 .span_4 {
+      .row2 .col-md-4 {
         width: 100%;
         float: none; } }
   .row2 .span_8 {

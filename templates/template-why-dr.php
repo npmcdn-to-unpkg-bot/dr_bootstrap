@@ -76,7 +76,7 @@
 					jQuery("#"+clickedService +" .button-wrapper").appendTo(".expansion");*/
 
 
-					jQuery("."+clickedService+"-expanded").delay(1000).toggleClass("expandedgeneral").animate({height:"auto", opacity:1},1000, function(){
+									jQuery("."+clickedService+"-expanded").delay(1000).animate({height:"445px",top:"0px",width:"100%", opacity:1},1000, function(){
 						jQuery("."+clickedService+"-expanded").animate({width:"auto", left:"0px"},1000);
 						jQuery("."+clickedService+"-expanded .service-content").delay(1000).animate({opacity:1},500);
 
@@ -136,7 +136,7 @@
 										jQuery("."+nextId+"-expanded").css({display:"inline"});
 
 									jQuery("#"+nextId).animate({borderTopWidth:"15px",top:"-=10px"},500)
-								jQuery("."+nextId+"-expanded").animate({height:"545px",top:"105px", opacity:1},1000, function(){
+								jQuery("."+nextId+"-expanded").animate({height:"445px",top:"0px",width:"100%", opacity:1},1000, function(){
 									jQuery("."+nextId+"-expanded .service-content").delay(1000).animate({opacity:1},500);
 									jQuery("."+nextId+"-expanded").animate({width:"1135px", left:"0px"},1000, function(){
 										animationReady = true;
@@ -202,7 +202,7 @@
                 </div>
                     </div>
             </div>
-<div class="row five-columns">
+<div class="row row-eq-height five-columns">
                 <div class="col-md-2">
                     <div class="header"> <?php _e( 'Online Transactions', 'digital-river' ); ?></div>
                     <div class="copy"><p><?php _e( 'Our world-class ecommerce and payments platforms process $34 billion in online transactions each year.', 'digital-river' ); ?></p></div>
@@ -238,7 +238,7 @@
 <div class="row">
     <div class="eyebrow col-md-4"> <?php _e( 'Commerce as a Service', 'digital-river' ); ?></div>
 </div>
-    <div class="row four-up-sliders" id="third">
+    <div class="row row-eq-height four-up-sliders" id="third">
 
 <div class="service col-md-3" id="marketing">
             	<div class="icon"><img src="<?php echo get_image_path('marketing.png'); ?>" /></div>

@@ -17,7 +17,7 @@
                     <?php get_template_part('partials/blog/sidebar', 'left'); ?>
                 </div>
                 <!-- Middle Column -->
-                <div class="span_6 col middle_column">
+                <div class="col-md-6 col middle_column">
                     <?php dynamic_sidebar_cache('template_k_content'); ?>
                 </div>
                 <div class="span_3 col last right_column">

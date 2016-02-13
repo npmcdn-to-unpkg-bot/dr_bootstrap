@@ -12,10 +12,10 @@
     <div class="left_border"></div>
     <div class="container">
         <div class="row">
-            <section class="main_content span_8" style="padding-right:10px;">
+            <section class="main_content col-md-8">
                 <?php if (get_field('add_call_to_action')) : ?>
-                    <section id="call_to_action" class="span_12">
-                        <h2 class="title col span_11"><?php the_field('call_to_action_text'); ?></h2>
+                    <section id="call_to_action" class="col-md-12">
+                        <h2 class="title col col-md-11"><?php the_field('call_to_action_text'); ?></h2>
                         <div class="clear"></div>
                         <?php foreach (get_field('call_to_actions') as $cta) : ?>
                             <div class="cta_splitter"></div>
@@ -45,7 +45,7 @@
                 <div class="clear"></div>
             </section>
             <?php if( check_for_sidebar('template_j_right_sidebar') ): ?>
-                <section class="rail span_3 col last"><?php dynamic_sidebar_cache('template_j_right_sidebar'); ?></section>
+                <section class="rail col-md-3 col last"><?php dynamic_sidebar_cache('template_j_right_sidebar'); ?></section>
             <?php endif; ?>
         </div>
     </div>

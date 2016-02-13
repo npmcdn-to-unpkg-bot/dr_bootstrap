@@ -48,9 +48,9 @@
         }
         .span_2,
         .span_3,
-        .span_4,
+        .col-md-4,
         .span_5,
-        .span_6,
+        .col-md-6,
         .span_7,
         .span_8,
         .span_9,
@@ -96,7 +96,7 @@
             /*margin-left:0;*/
         /*}*/
         /**/
-        /*.span_4,*/
+        /*.col-md-4,*/
         /*.main_container {*/
             /*max-width: 1140px;*/
         /*}*/
@@ -114,9 +114,9 @@
         /*.main_content {*/
             /*width:74.5%;*/
         /*}*/
-        /*.span_4,*/
+        /*.col-md-4,*/
         /*.span_5,*/
-        /*.span_6,*/
+        /*.col-md-6,*/
         /*.span_7,*/
         /*.span_8,*/
         /*.span_9,*/
@@ -176,7 +176,7 @@
         header .top .logo {
             width:23.5%;
         }
-        .span_4,
+        .col-md-4,
         .third_widget,
         .card_container,
         header .top .header_navigation {
@@ -186,7 +186,7 @@
         header .top .search {
             width:40.5%;
         }
-        .span_6,
+        .col-md-6,
         .half_widget {
             width:49.0%;
         }

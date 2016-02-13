@@ -68,7 +68,7 @@
                 <div class="border_left"></div>
 
                 <!-- Sidebar -->
-                <section class="rail span_4 last col">
+                <section class="rail col-md-4 last col">
                     <?php
                     change_sidebar_context();
                     dynamic_sidebar_cache('template_b_right_sidebar');

@@ -225,7 +225,7 @@
 
     		<section id="news">
             	<div class="row" style='max-width:1180px; padding:40px 0 20px; margin-bottom:20px; border-bottom:solid 1px #CCC;'>
-                        <div class="span_6">
+                        <div class="col-md-6">
                             <div class="title">
                                 <h2 class='eyebrow eng'>News</h2>
                                 <a href="<?php echo get_permalink(459); ?>">[ More News ]</a>
@@ -235,7 +235,7 @@
                             $resourcesSection->displayPressReleases();
                             ?>
                         </div> <!-- End of col-3 -->
-                        <div class="span_6 last">
+                        <div class="col-md-6 last">
                             <div class="title">
                                 <h2 class='eyebrow eng'>Join Us</h2>
                                 <a href="<?php echo get_permalink(535); ?>">[ More Events ]</a>
