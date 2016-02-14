@@ -6413,7 +6413,8 @@ h3.eyebrow {
         line-height: 0.95em;
         height: 27px;
         font-size: 1.4em;
-        font-weight: bold; }
+        font-weight: bold;
+        color: #007eb5; }
       #main_navigation [id|="menu-main"] > li ul li.menu-item a {
         border-bottom: none;
         text-decoration: none; }
@@ -6855,7 +6856,8 @@ h3.eyebrow {
   width: 78%; }
 
 .main_nav_container {
-  border-bottom: 1px solid #b1b1b1; }
+  border-bottom: 1px solid #007eb5;
+  color: #00a7e1; }
 
 .menu-header-menu-container {
   overflow: hidden; }
@@ -7013,7 +7015,8 @@ h3.eyebrow {
   padding-top: 21px;
   min-height: 110px;
   background: #f0f0f0;
-  border: solid 1px #b1b1b1; }
+  border: solid 1px #b1b1b1;
+  font-family: "Arial", sans-serif; }
   #global_footer .col-md-8 {
     background: #fff; }
   #global_footer ul {
@@ -7024,7 +7027,8 @@ h3.eyebrow {
     width: 100%;
     color: #343438;
     margin-bottom: 5px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "DIN 1451 W01 Engschrift", sans-serif; }
   #global_footer .copyright, #global_footer .trademark {
     font-size: .71em;
     line-height: 1em;

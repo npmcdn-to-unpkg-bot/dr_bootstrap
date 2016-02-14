@@ -55,7 +55,7 @@
                  
                             <div class="col-md-8 offset-md-4">
                                 <div class="row">
-                                    <div class="col-md-5">
+                                    <div class="col-md-4">
                                     <div class="drlogo ">
                                     
                                 <!--[if gte IE 9]>
@@ -99,7 +99,7 @@
                                 	</ul>      
                                 </div>
 
-                                <div class="col-md-5">
+                                <div class="col-md-4">
                                 	<div class="social-shares">
                                     	<!--<div class="social-icon-wrapper" id="facebook" ><a target="_blank" href="http://www.digitalriver.com/feed/"><img src="<?php // echo get_image_path('social_shares/facebook.png'); ?>" /></a></div>-->
                                        <div class="social-icon-wrapper" id="twitter" ><a target="_blank" href="https://twitter.com/DigitalRiverInc">
@@ -141,6 +141,7 @@
                                         
                                         </div>
                                         <p>
+                                            <br/>
                                         <div class="head"><?php _e('Corporate Headquarters','digital-river'); ?></div>
                                     <div class="address-wrapper">
                                         
@@ -152,7 +153,7 @@
 
 
                                 </div>
-                                       <div class="col-md-2">
+                                       <div class="col-md-4">
 
                                 <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?&sensor=false'></script>
 								<div id='map_canvas' style='height:265px; width:200px;'></div>
