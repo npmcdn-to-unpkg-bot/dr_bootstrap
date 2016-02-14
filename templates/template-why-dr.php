@@ -5,9 +5,7 @@
 ?>
 <?php get_header(); ?>
 <?php get_template_part('masthead'); ?>
- <style type="text/css">
 
-    </style> 
 
    
 
@@ -206,28 +204,28 @@
                 <div class="col-md-2">
                     <div class="header"> <?php _e( 'Online Transactions', 'digital-river' ); ?></div>
                     <div class="copy"><p><?php _e( 'Our world-class ecommerce and payments platforms process $34 billion in online transactions each year.', 'digital-river' ); ?></p></div>
-                    <div class="columns-number"><span style='font-size: 22px; display: block; width: 14px; float: left; margin-left: 38px; margin-top: 10px;'>$</span><span style='font-size: 53px; display: block; width: 72px; float: left; letter-spacing:-3px;'>34</span><span style='font-size: 22px; float: left; display: block;margin-top: 10px;'>B</span></div>
+                    <div class="columns-number"><span>$</span><span>34</span><span>B</span></div>
                 </div>
     
                 <div class="col-md-2">
                     <div class="header"> <?php _e( 'Site Display Languages', 'digital-river' ); ?></div>
                     <div class="copy"> <p><?php _e( 'We’re not just multilingual - we speak global. Our enterprise global commerce platform hosts client websites in 30 different languages.', 'digital-river' ); ?></p></div>
-                    <div class="columns-number"><span style='font-size: 53px; margin-left: 45px; display: block; width: 100px; float: left; letter-spacing:-3px;'>30</span></div>
+                    <div class="columns-number"><span>30</span></div>
                 </div>
                 <div class="col-md-2" id="currencies">
                     <div class="header" > <?php _e( 'Top Payments', 'digital-river' ); ?></div>
                     <div class="copy"><p> <?php _e( 'We can support 175 global currencies and over 200 global payment methods.', 'digital-river' ); ?></p></div>
-                    <div class="columns-number"><span style='font-size: 53px; margin-left: 25px; display: block; width: 100px; float: left; letter-spacing:-3px;'>200</span></div>
+                    <div class="columns-number"><span >200</span></div>
                 </div>
                 <div class="col-md-2" >
                     <div class="header"> <?php _e( 'Ecommerce Experts', 'digital-river' ); ?></div>
                     <div class="copy"><p> <?php _e( 'We have 1,300+ ecommerce experts in 27 offices around the world to enable you operate in 243 countries and territories.', 'digital-river' ); ?></p></div>
-                    <div class="columns-number"><span style='font-size: 53px; margin-left: 8px; display: block; width: 100px; float: left; letter-spacing:-3px;'>1300</span></div>
+                    <div class="columns-number"><span >1300</span></div>
                 </div>
                 <div class="col-md-2"  id="subscriptions">
                     <div class="header"> <?php _e( 'Subscriptions', 'digital-river' ); ?></div>
                     <div class="copy"> <p><?php _e( 'Digital River manages 11M+ active online product subscriptions with 8M active subscribers.', 'digital-river' ); ?></p></div>
-                    <div class="columns-number"><span style='font-size: 53px; display: block; width: 58px; float: left; letter-spacing:-3px; margin-left:56px;'>11</span><span style='font-size: 22px; float: left; display: block;margin-top: 10px;'>M</span></div>
+                    <div class="columns-number"><span>11</span><span>M</span></div>
                 </div>
         
 
@@ -693,7 +691,7 @@
 						<iframe id="video_1" src="https://player.vimeo.com/video/<?php echo $videoId; ?>?api=1&amp;player_id=video_1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
 					</div>
 				</div>
-				<div class='copy_wrapper' style='margin-top: 150px;'>
+				<div class='copy_wrapper'>
 					<div class='quote'>As the leading global provider of Commerce-as-a-Service solutions, our scalable solutions are backed by 20+ years of ecommerce experience and offer low up-front investment and quick time to market.</div>
 				</div>
 				<div class='clear'></div>

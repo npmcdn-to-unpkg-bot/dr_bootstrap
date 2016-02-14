@@ -1575,7 +1575,7 @@ if(!in_array($post->ID , $dontLoadPages)){
   color:#222021 !important;
   width:100% !important;
   height: 50px;
-  font-size: 14px;
+  font-size: 1em;
   -webkit-border-radius:0 !important;
      -moz-border-radius:0 !important;
           border-radius:0 !important;
@@ -1586,7 +1586,7 @@ if(!in_array($post->ID , $dontLoadPages)){
 #marketoFormContainer .mktoForm select.mktoField:focus,
 #marketoFormContainer .mktoForm textarea.mktoField:focus {
   border:1px solid #009ad7 !important;
-  font-size: 14px;
+  font-size: 1em;
   color:#009ad7 !important;
 }
 

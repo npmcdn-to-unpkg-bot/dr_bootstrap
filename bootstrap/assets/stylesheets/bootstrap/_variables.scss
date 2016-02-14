@@ -14,12 +14,25 @@ $gray-dark:              lighten($gray-base, 20%) !default;   // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+$green: #a8c628;
+$darkGreen: #81b315;
+$blue: #00a7e1;
+$darkBlue: #007eb5;
+$black: #343438;
+$white: #FFF;
+$lightGray: #f0f0f0;
+$medLightGray: #f1f2f4;
+$medGray: #646464;
+$darkGray: #343434;
+$purple: #6f29d3;
+$darkPurple: #6810ba;
 
 $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
+
 
 
 //== Scaffolding
@@ -47,7 +60,12 @@ $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !defaul
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:        $font-family-sans-serif !default;
+$eng: 'DIN 1451 W01 Engschrift', sans-serif;
+$med: 'DIN Next W01 Medium', sans-serif;
+$light: 'DIN Next W01 Light', sans-serif;
+$arial: 'Arial', sans-serif;
+$font-family-base:        $eng !default;
+
 
 $font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
