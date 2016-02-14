@@ -65,7 +65,7 @@ $med: 'DIN Next W01 Medium', sans-serif;
 $light: 'DIN Next W01 Light', sans-serif;
 $arial: 'Arial', sans-serif;
 $font-family-base:        $eng !default;
-
+$defaultFontSize: 1;
 
 $font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px

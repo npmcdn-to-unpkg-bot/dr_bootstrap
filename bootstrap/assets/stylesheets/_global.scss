@@ -1,33 +1,14 @@
-
-html, body{
-    font-size: ($defaultFontSize)+px;
-}
-
-//bootstrap overrides
-body{}
-
 p{
     font-size: 1em;
     line-height: 1.25;
     color: $black;
-    @include font_family($arial);
 }
 
-.clearfix {
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
-}
 
 // links and buttons
 a{
     color: $darkBlue;
     text-decoration: none;
-    @include font_family($arial);
 
     &:hover {
         color: $blue;
@@ -72,7 +53,7 @@ a.btn, button, input[type="button"]{
     display: inline-block;
     text-decoration: none;
     transition: all 200ms ease-out 0s;
-    @include font_family($med);
+    font-family: $med;
     text-transform: uppercase;
     color: $white;
     background-color: $blue;
@@ -115,7 +96,7 @@ a.btn, button, input[type="button"]{
 .eyebrow{
     margin: 30px 0px 20px;
     padding: 0px 2px;
-    @include font_family($med);
+    font-family: $med;
     color: $black;
     text-transform: uppercase;
     font-size: 1.2em;
@@ -128,9 +109,7 @@ a.btn, button, input[type="button"]{
 // sections - Swapout all .section with either section or p tags (p with margin-bottom)
 .section, section{
     margin-bottom: 15px;
-    display: inline-block;
-    line-height: 1.15;
-    width: 100%;
+    line-height: 1.15;    
 }
 
 
@@ -140,10 +119,8 @@ a.btn, button, input[type="button"]{
 .masthead{
     
     //remove this when you add the new grid
-    max-width: 1180px;
 
     .breadcrumbs{
-        font-size: ($defaultFontSize)+em;
         margin: 0 auto ($defaultFontSize)+em;
         padding: ($defaultFontSize * 1.5)+em;
         color: $white;
@@ -151,31 +128,19 @@ a.btn, button, input[type="button"]{
         a{
             color: $white;
         }
-    }
+    } 
 
     .title{
         font-size: (60 / $defaultFontSize)+em;
         line-height: (50 / $defaultFontSize)+em;
         margin: (($defaultFontSize)+em) auto 0px;
-        width: 100%;
         
-        @include customMediaQuery(1350px){
-            font-size: ($defaultFontSize*3.125)+em; 
-        }
 
-        @include tablet{
-            font-size: ($defaultFontSize*2)+em;
-        }
-        
-        @include customMediaQuery(700px){
-            font-size: ($defaultFontSize*1.875)+em;
-        }
     }
     
     .subtitle{
         margin: ($defaultFontSize)em auto ($defaultFontSize * 3)+em;
         line-height: ($defaultFontSize*2)+em; 
-        width: 100%;
         font-size: ($defaultFontSize)+em;
 
         @include customMediaQuery(1350px){
@@ -185,25 +150,7 @@ a.btn, button, input[type="button"]{
 
     }
 
-    @include customMediaQuery(1350px){
-        width: 78%;
-    }
-
-    @include customMediaQuery(1250px){
-        width: 75%;
-    }
-
-    @include tablet{
-        width: 77%;
-    }
     
-    @include customMediaQuery(700px){
-        width: 90%;
-    }
-
-    @include customMediaQuery(500px){
-
-    }
 
 }
 
@@ -219,13 +166,7 @@ nav{
     }
 }
 
-.header_container{
-    background: $blue;
-    border-bottom: 1px solid $darkBlue;
 
-    @include customMediaQuery(768px){
-        display:none;
-    }
 
     nav.top-nav{
 
@@ -236,7 +177,7 @@ nav{
             cursor:pointer;
 
             #search-label{
-                @include font_family($eng);
+          
                 color: $white;
                 display:block;
                 font-size:1.2em;
@@ -272,8 +213,8 @@ nav{
 
         #search_form.active{
 
-            width: 24%;
 
+            
             #search-label{
                 padding: (4 / $defaultFontSize)+em 0;
                 position:absolute;
@@ -290,7 +231,6 @@ nav{
             .search_box{
                 display:block;
                 border:none;
-                width:100%;
                 font-size: (14 / $defaultFontSize)+em;
                 padding: (1 / $defaultFontSize)+em 0 (1 / $defaultFontSize)+em 1.75em;
             }
@@ -298,77 +238,15 @@ nav{
         }
 
 
-        .menu-header-container{
-
-            .menu{
-                @include font_family($eng);
-                float:right;
-            
-                li{
-                    float:left;
-                    padding: (5 / $defaultFontSize)+em (10 / $defaultFontSize)+em; 
-                    line-height: 1;
-
-                    a, .phone_number{
-                        @include font_family($eng);
-                        color: $white;
-                        display:block;
-                        font-size:1.2em;
-                        text-align:center;
-                        padding: (3 / $defaultFontSize)+em (10 / $defaultFontSize)+em;
-                        
-                        .fa{
-                            padding: (4 / $defaultFontSize)+em;
-                            line-height: .5;
-                        }
-
-                        @include customMediaQuery(991px){
-                            font-size: 1em;
-                            padding: 0 inherit;
-                        }
-
-                        &:hover {
-                            text-decoration:none;
-                            background:$darkBlue;
-                        }
-                        
-                    }
-
-                }
-
-
-                .sub-menu{
-                    width: (200 / $defaultFontSize);
-                    position:relative;
-                    display:none;
-
-                    li{
-                        width:33.33%;
-                        float: left;
-                    }
-                }
-
-                .sub-menu.active{
-
-                }
-            }
-        }
+        
 
         @include customMediaQuery(991px){
             margin: 0px auto;
         }
     }
-}
 
-.main_nav_container{
 
-    border-bottom: 1px solid $medGray;
 
-    .container{
-        @include customMediaQuery(768px){
-            padding:0;
-        }
-    }
 
     #logo{
         margin: .8em 0 0;
@@ -380,16 +258,13 @@ nav{
         a{
             display: block;
             margin: 0 auto;
-            max-width: 250px;
 
             @include customMediaQuery(768px){
                 margin:0;
-                width: 65%;
 
             }
 
             svg{
-                width: 90%;
                 max-height:45px;
 
                 margin: 0 auto;
@@ -429,14 +304,12 @@ nav{
 
                 position:relative;
                 height: (27 / $defaultFontSize)+em;
-                width: (27 / $defaultFontSize)+em;
                 cursor:pointer;
 
                 span{
                     display: block;
                     position: absolute;
                     height: (3 / $defaultFontSize)+em;
-                    width: 100%;
                     background:$blue;
                     border-radius: (2 / $defaultFontSize)+em;
                     opacity: 1;
@@ -513,7 +386,6 @@ nav{
             @include customMediaQuery(768px){
                 border-top: solid (1 / $defaultFontSize)+em $medGray;
                 padding: 0 (8 / $defaultFontSize)+em;
-                width: 100%;
             }    
 
             ul{
@@ -528,10 +400,7 @@ nav{
                     padding: 0px;
                     position: relative;
 
-                    @include customMediaQuery(768px){
-                        width:100%;
-                      /* display:none; */
-                    }
+        
 
                     .menu-expand{
                         position:absolute;
@@ -562,7 +431,6 @@ nav{
                         padding: 0.6em 0.5em 0;
                         text-decoration: none;
                         font-size: 1.8em;
-                        @include font_family($eng);
                         display: block;
 
                         @include customMediaQuery(1200px){
@@ -577,7 +445,6 @@ nav{
                             font-size: 1.45em;
                             padding: 0.3em 0.5em .6em;
                             line-height: 1;
-                            width: auto;
                             display: inline-block;
                         }
                     }
@@ -606,14 +473,12 @@ nav{
                         display:none;
                         position: absolute;
                         padding: .5em (20 / $defaultFontSize)+em;
-                        width:auto;
                         border:solid 1px $medLightGray;
                         background: $lightGray;
 
                         @include customMediaQuery(768px){
                             position: relative;
                             left: -2%;
-                            width: 104%;
                             top: -1.25em;
                         }
 
@@ -623,7 +488,6 @@ nav{
                             line-height: 1;
 
                             a{
-                                @include font_family($arial);
                                 font-size:.8em;
                                 border:none;
                                 padding: 0.65em 0.5em;
@@ -651,10 +515,8 @@ nav{
                         display:none;
                         ul{
                             display:block;
-                            width:650px;
 
                             li{
-                                width:33.33%;
                                 float: left;
                                 font-size:2em;
     
@@ -666,7 +528,6 @@ nav{
 
 
                                 ul{
-                                    width:100%;
                                     position: relative;
                                     border:none;
                                     background: transparent;
@@ -674,7 +535,6 @@ nav{
                                     border-left:solid 1px $darkGray;
 
                                     li{
-                                        width:100%;
                                         font-size:1rem;
                                         float:inherit;
 
@@ -692,7 +552,6 @@ nav{
             }
         }
     }
-}
 
 
 
@@ -705,7 +564,6 @@ nav{
     border: solid 1px $medGray;
 
     .head{
-        @include font_family($eng);
         font-size: (32 / $defaultFontSize)+em;
 
         @include customMediaQuery(500px){
@@ -714,9 +572,7 @@ nav{
     }
 
     .links-wrapper{
-        @include customMediaQuery(425px){
-            width: 100%;
-        }
+
 
         .link-section{
 
@@ -776,38 +632,24 @@ nav{
         float:right;
         clear:right; 
         background-color: $white;
-        width: 100%;
         margin:1em 0 0;
-        max-width: (790 / $defaultFontSize)+em;       
 
-        @include customMediaQuery(1200px){
-            max-width:none;    
-        }
+   
 
         .contact-left{
             padding: 0; 
-            width:75%;
             margin:1em 0 0;
             float:left;
 
-            .contact-section{
-                @include customMediaQuery(550px){
-                    width:100%;
-                }
-            }
-
+         
             .social-shares{
-                width:100%;
                 height: (55 / $defaultFontSize)+em;
             }
 
             .address-wrapper{
-                width:100%;
             }
 
             .logo{
-                width: 100%;
-                max-width: 14em;
 
                 svg{
                     height:100%;
@@ -815,7 +657,6 @@ nav{
             }
 
             .social-icon-wrapper{
-                width:(40 / $defaultFontSize)+em;
                 margin: 0 (12 / $defaultFontSize)+em;
                 float:left;
                 &:first-child{
@@ -837,27 +678,9 @@ nav{
                 display: inline-block;
             }
 
-            @include customMediaQuery(775px){
-                width:100%;
-            }
-        }
 
-        .contact-right{
-            width:25%;
-            float:left;
-            max-height: (250 / $defaultFontSize)+em;
-            overflow:hidden;
-            height:250px;
 
-            img{
-                max-height:100%;
-                max-width:100%;
-                float:right;
-            }
-
-            @include customMediaQuery(775px){
-                display:none;
-            }
+      
 
         }
     }
