@@ -365,7 +365,7 @@
                 }
 
                 #search-label{
-                    @include font_family($eng);
+                    font_family: $eng;
                     color: $black;
                     display:block;
                     font-size: 1em;
@@ -464,7 +464,7 @@
             
 
                 .menu{
-                    @include font_family($eng);
+                    font-family: $eng;
                     float:right;
                 
                     li{
@@ -501,7 +501,7 @@
 
 
                         a{
-                            @include font_family($eng);
+                           font-family: $eng;
                             color: $black;
                             display:block;
                             font-size: 1em;
@@ -565,7 +565,7 @@
                             width:100%;
 
                             a{
-                                @include font_family($arial);
+                               font-family: $arial;
                                 font-size:.8em;
                                 color:$white;
                                 border:none;
@@ -701,7 +701,7 @@
                         a{
                             color: $white;
                             text-decoration: none;
-                            @include font_family($eng);
+                            font-family:$eng;
                             padding: 0.5em 0.5em .4em;
                             font-size: 1.45em;
                             line-height: 1;
@@ -787,7 +787,7 @@
                                 line-height: 1;
 
                                 a{
-                                    @include font_family($arial);
+                                    font-family:$arial;
                                     font-size:.8em;
                                     color:$white;
                                     border:none;

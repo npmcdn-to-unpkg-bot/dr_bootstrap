@@ -47,7 +47,7 @@
 
 // Components w/ JavaScript  
 @import "bootstrap/modals";
-@import "bootstrap/tooltip";
+@import "bootstrap/tooltip"; 
 @import "bootstrap/popovers";
 @import "bootstrap/carousel";
 
@@ -58,4 +58,6 @@
 // Styles
 @import "global"; 
 @import "bootstrap/dr-pages";
-
+@import "header";
+@import "hp";
+@import "industries_template"
