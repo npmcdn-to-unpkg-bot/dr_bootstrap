@@ -50,6 +50,41 @@ a.arrow{
     }
 }
 
+/* Bracket Links - will work with any font size
+***********************************************/
+.brackets {
+    position:relative;
+    &:before,
+    &:after {
+        transition:all 100ms ease-in-out;
+        position:absolute;
+        font-size:130%;
+        transform:scale(0.8333);
+        top:-7.5%;
+    }
+    &:before {
+        content:'[ ';
+        left:-10%;
+    }
+    &:after {
+        content:' ]';
+        right:-10%;
+    }
+    &:hover {
+        text-decoration:none;
+    }
+    &:hover:before,
+    &:hover:after {
+        transform:scale(1);
+    }
+    &:hover:before {
+        left:-13%;
+    }
+    &:hover:after {
+        right:-13%;
+    }
+}
+
 a.btn, button, input[type="button"]{
     padding: 10px 12px 6px;
     margin: 15px 0 0;
