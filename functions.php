@@ -80,32 +80,21 @@ function theme_styles() {
     $gamingTemplate = is_page_template("templates/template-gaming.php");
 
 
-/**
- * Bootstrap Files
- */
-wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/assets/javascripts/bootstrap.min.js', array( 'jquery' ), '3.0.1', true );
-
-wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap/assets/stylesheets/_bootstrap.css', array(), '3.0.1', 'all' );
-
-wp_enqueue_script( 'bootstrap-js' );
-
-wp_enqueue_style( 'bootstrap-css' );
-
-    //wp_register_style('reset', get_stylesheet_directory_uri() . '/css/reset.css', array(), 1, $media = 'all');
-    //wp_register_style('1140', get_stylesheet_directory_uri() . '/css/1140.css', array(), 1, $media = 'all');
+    wp_register_style('reset', get_stylesheet_directory_uri() . '/css/reset.css', array(), 1, $media = 'all');
+    wp_register_style('1140', get_stylesheet_directory_uri() . '/css/1140.css', array(), 1, $media = 'all');
     // wp_register_style('flexslider', get_stylesheet_directory_uri() . '/css/flexslider.css', array(), '1', $media = 'all');
     wp_register_style('fonts', "http://fast.fonts.net/cssapi/e751fdd6-8b91-4eb8-bf68-ce897a01e3b8.css", array(), '1', $media = 'all');
     wp_register_style('icons', "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", array(), '1', $media = 'all');
-    // wp_register_style('global', get_stylesheet_directory_uri() . '/css/global.css', array(), '1', $media = 'all');
+    wp_register_style('global', get_stylesheet_directory_uri() . '/css/global.css?ver=34', array(), '1', $media = 'all');
     wp_register_style('owl_carousel', get_stylesheet_directory_uri() . '/css/owl.carousel.css', array(), '1', $media = 'all');
     wp_register_style('owl_theme', get_stylesheet_directory_uri() . '/css/owl.theme.css', array(), '1', $media = 'all');
     wp_register_style('modular-interactions', get_stylesheet_directory_uri() . '/css/modular_interactions.css', array(), '1', $media = 'all');
-    // wp_register_style('clients_style', get_stylesheet_directory_uri() . '/css/clients_style.css', array('owl_carousel','owl_theme'), '1', $media = 'all');
-    // wp_register_style('events_style', get_stylesheet_directory_uri() . '/css/events.css', array(), '1', $media = 'all');
-   // wp_register_style('new_global', get_stylesheet_directory_uri() . '/css/newGlobal.css', array(), '1', $media = 'all');
-//    wp_register_style('grid', get_stylesheet_directory_uri() . '/css/grid.css', array(), '1', $media = 'all');
-  //  wp_register_style('selectBox', get_stylesheet_directory_uri() . '/css/cs-select.css', array(), '1', $media = 'all');
-    //wp_register_style('selectBox_styling', get_stylesheet_directory_uri() . '/css/cs-skin-elastic.css', array('selectBox'), '1', $media = 'all');
+    wp_register_style('clients_style', get_stylesheet_directory_uri() . '/css/clients_style.css', array('owl_carousel','owl_theme'), '1', $media = 'all');
+    wp_register_style('events_style', get_stylesheet_directory_uri() . '/css/events.css', array(), '1', $media = 'all');
+    wp_register_style('new_global', get_stylesheet_directory_uri() . '/css/newGlobal.css?ver=34', array(), '1', $media = 'all');
+    wp_register_style('grid', get_stylesheet_directory_uri() . '/css/grid.css', array(), '1', $media = 'all');
+    wp_register_style('selectBox', get_stylesheet_directory_uri() . '/css/cs-select.css', array(), '1', $media = 'all');
+    wp_register_style('selectBox_styling', get_stylesheet_directory_uri() . '/css/cs-skin-elastic.css', array('selectBox'), '1', $media = 'all');
     wp_register_style('crossborder_style', get_stylesheet_directory_uri() . '/css/crossborder-styles.css', array('new_global', 'grid', 'selectBox_styling'), '1', $media = 'all');
     wp_register_style('interactive_style_1', get_stylesheet_directory_uri() . '/css/interactive/drwpStyles.css', array('fonts','new_global','icons'), '1', $media = 'all');
     wp_register_style('interactive_style_2', get_stylesheet_directory_uri() . '/css/interactive/interactiveMap.css', array('fonts','new_global','icons','interactive_style_1'), '1', $media = 'all');
@@ -117,9 +106,13 @@ wp_enqueue_style( 'bootstrap-css' );
     wp_register_style('value-brief-styles', get_stylesheet_directory_uri() . '/css/value_brief_styles.css', array('grid', "new_global"), '1', $media = 'all');
     wp_register_style('japanese_styles', get_stylesheet_directory_uri() . '/css/japanese.css', array("new_global"), '143', $media = 'all');
     wp_register_style('caas_styles', get_stylesheet_directory_uri() . '/css/caas_styles.css', array(), '1', $media = 'all');
-    wp_register_style('gaming_styles', get_stylesheet_directory_uri() . '/css/gaming.css', array(), '1', $media = 'all');
-    wp_register_style('gaming_grid_styles', get_stylesheet_directory_uri() . '/css/gaming-grid.css', array(), '1', $media = 'all');
-    wp_register_style('gaming_misc_styles', get_stylesheet_directory_uri() . '/css/gaming_misc_styles.css', array(), '1', $media = 'all');
+    wp_register_style('gaming_styles', get_stylesheet_directory_uri() . '/css/gaming_styles.css', array(), '1', $media = 'all');
+
+    //remove when integrated into global stylesheet
+    wp_register_style('header_styles', get_stylesheet_directory_uri() . '/css/header_styles.css?ver=1', array(), '1', $media = 'all');
+
+
+    wp_register_style('font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), '1', $media = 'all');
 
 
 
@@ -127,6 +120,14 @@ wp_enqueue_style( 'bootstrap-css' );
     wp_enqueue_style('1140');
     wp_enqueue_style('reset');
     wp_enqueue_style('global');
+
+    //remove when integrated into global stylesheet
+    wp_enqueue_style('header_styles');
+
+
+    wp_enqueue_style('font_awesome');
+    
+
 
 
 	if($resourcesTemplate){
@@ -139,8 +140,6 @@ wp_enqueue_style( 'bootstrap-css' );
         wp_enqueue_style('template_a');
     }else if($homePage){
         wp_enqueue_style('new-home');
-    }else if($mainTemplate || $contactTemplate || $cbiTemplate){
-
     }else if($templatePayments){
         wp_enqueue_style('payments_style');
     }else if($templateCrossborder){
@@ -164,10 +163,7 @@ wp_enqueue_style( 'bootstrap-css' );
     }
 
     if($gamingTemplate){
-        wp_enqueue_style('gaming_grid_styles');  
-        wp_enqueue_style('gaming_misc_styles');  
         wp_enqueue_style('gaming_styles');  
-
     }
 
 }
@@ -632,6 +628,7 @@ if (isset($_GET['w3tc_note']) && $_GET['w3tc_note'] == 'flush_all') {
 class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
  function start_el(&$output, $item, $depth, $args) {
         global $wp_query;
+
         $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
  
         $class_names = $value = '';
@@ -652,55 +649,29 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
         if($depth != 0) {
             $description = $append = $prepend = "";
         }
-
-        $languagePrepend = "";
- 		
 	
-			$item_output = $args->before;
-			$item_output .= '<a'. $attributes .'>';
-			$item_output .= $args->link_before .__(apply_filters( 'the_title', $item->title, $item->ID ));
-			$item_output .= $description.$args->link_after;
-			$item_output .= '</a>';
-			$item_output .= $args->after;
-		if($item->ID == 9094){
-			   while(have_rows('menu_callout', 'option') ) : the_row(); 
-					$after_output .= '<div class="menu-callout"><img src="';
-					$after_output .= get_sub_field('cta_image', 'option');
-					$after_output .= '" /><p>';
-					$after_output .= get_sub_field('cta_header', 'option');
-					$after_output .= '</p>';
-                    $ad_link = (get_sub_field('external_link', 'option'))?: get_sub_field('cta_link', 'option'); 					
-                    $after_output .= "<a class='cta' target='_blank' href=' ".$ad_link."'>";
-					$after_output .= get_sub_field('cta_link_text', 'option');
-					$after_output .= "</a><div class='clear'></div></div>";
-           		endwhile;
-		}
+		$item_output = $args->before;
 
-        $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args ).$after_output;
+
+		$item_output .= '<a'. $attributes .'>';
+		$item_output .= $args->link_before .__(apply_filters( 'the_title', $item->title, $item->ID ));
+		$item_output .= $description.$args->link_after;
+		$item_output .= '</a>';
+		$item_output .= $args->after;
+
+        // echo "<pre>";
+        // print_r($args);
+        // echo "</pre>";
+
+
+        if($depth == 0 && $args->theme_location == "main-menu"):
+            $arrows = '<div class="menu-expand"><i class=" fa fa-caret-right"></i><i class=" fa fa-caret-down"></i></div>';
+        else:
+            $arrows = "";
+        endif;
+
+        $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args ).$arrows.$after_output;
     }
-}
-
-add_filter('wp_nav_menu_items','add_phonenumber', 10, 2);
-function add_phonenumber( $items, $args ) {
-    if( $args->theme_location == 'header-menu')  {
-
-        $phoneNumber =  '<li>'."<div class='phone_number'>".__("Call Us",'digital-river');
-            if(ICL_LANGUAGE_CODE == "zh-hans"): 
-                 $phoneNumber .= " +86 21 61248050";
-            elseif(ICL_LANGUAGE_CODE == "ja"):
-                $phoneNumber .= " +81(3)5325.6224";
-            elseif(ICL_LANGUAGE_CODE == "de"):
-                 $phoneNumber .= " +49(0)221.31088.0";
-            else:
-                $phoneNumber .= " +1-800-598-7450";
-            endif;
-
-        
-        $phoneNumber .= '</div></li>';
-        $items = $phoneNumber . $items; 
-
-    }
-    return $items;
 }
 
 
@@ -1575,7 +1546,7 @@ if(!in_array($post->ID , $dontLoadPages)){
   color:#222021 !important;
   width:100% !important;
   height: 50px;
-  font-size: 1em;
+  font-size: 14px;
   -webkit-border-radius:0 !important;
      -moz-border-radius:0 !important;
           border-radius:0 !important;
@@ -1586,7 +1557,7 @@ if(!in_array($post->ID , $dontLoadPages)){
 #marketoFormContainer .mktoForm select.mktoField:focus,
 #marketoFormContainer .mktoForm textarea.mktoField:focus {
   border:1px solid #009ad7 !important;
-  font-size: 1em;
+  font-size: 14px;
   color:#009ad7 !important;
 }
 

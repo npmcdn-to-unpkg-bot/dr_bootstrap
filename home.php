@@ -173,35 +173,83 @@
 
     <div id="main_content">
 
-    	<section id="why-work">
-            <div class="blue-bg"></div>
-        	<div class="wrapper">
-                <div class="left_col">
-					<?php while(have_rows('why_work_section') ) : the_row(); ?>
-                        <h1 class='white eng'><?php the_sub_field('header'); ?></h1>
-                        <p class='white'><?php the_sub_field('description'); ?></p>
-                        <a class="button opposite" href="<?php the_sub_field('cta_link'); ?>"><?php the_sub_field('cta_label'); ?></a>
-                    <?php endwhile; ?>
-                </div>
+        <?php if(ICL_LANGUAGE_CODE == "en"): ?>
 
-                <div class="right_col">
-                   	<?php while(have_rows('capabilities') ) : the_row(); ?>
-            				<div class="icon <?php the_sub_field('custom_css_classes'); ?> ">
-                        	<div class="icon-wrapper">
-                                <?php $icon = get_sub_field('icon'); ?>
-                    			<img alt='<?php echo $icon['alt']; ?>' src=" <?php echo $icon['url']; ?> " />
-                        	</div>
-                            <div class="title">
-                                <h2 class='eng'><?php the_sub_field('title'); ?></h2>
-                                <a href=" <?php the_sub_field('link'); ?>">[ <?php the_sub_field('link_title'); ?> ]</a>
-                            </div>
-                            <p> <?php _e(get_sub_field('description'),'digital-river'); ?> </p>
+            <section id="core-bkgd" >
+                <div class="container" >
+                    <div class="row centering">
+                        <div class="col-md-3 col-sm-12 solution-copy">
+                            <?php while(have_rows('why_work_section') ) : the_row(); ?>
+                                <h1>We&nbsp;drive&nbsp;growth.<br>It’s&nbsp;that&nbsp;simple.</h1>
+                                <p><?php the_sub_field('description'); ?></p>
+                                <a class="button" href="<?php the_sub_field('cta_link'); ?>"><?php the_sub_field('cta_label'); ?></a>
+                            <?php endwhile; ?>
                         </div>
-                 	<?php endwhile; ?>
-                </div> <!-- End of right_col -->
-                <div class="clear"></div>
-            </div> <!-- End of wrapper -->
-        </section> <!-- End of why work section -->
+                        <?php while(have_rows('capabilities') ) : the_row(); ?>
+                            <div class="col-md-3 col-sm-4 solution">
+
+                                <div class="box clearfix <?php the_sub_field('custom_css_classes'); ?>">
+                                    <a href="<?php the_sub_field('link'); ?>">
+                                    <h2>
+                                        <?php the_sub_field('title'); ?>
+                                        <svg class="arrow" viewBox="0 0 151 137.4">
+                                            <use class=" icon" x="0" y="0" xlink:href="<?php bloginfo('template_directory'); ?>/img/svgs.svg#arrow" />
+                                        </svg>
+                                    </h2>
+                                    <a class="learn-more" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('link_title'); ?>  ›</a>
+                                    <div class="minp">
+                                        <p><?php echo get_sub_field('description'); ?></p>
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <svg viewBox="0 0 151 137.4">
+                                            <use class="<?php the_sub_field('custom_css_classes'); ?> icon" x="0" y="0" xlink:href="<?php bloginfo('template_directory'); ?>/img/svgs.svg#<?php the_sub_field('custom_css_classes'); ?>" />
+                                        </svg>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <?php endwhile; ?>
+                        <div class="clear"></div>
+                    </div> <!-- End of wrapper -->
+                </div> <!-- End of wrapper -->
+            </section> <!-- End of why work section -->
+
+        <?php else: ?>
+
+            <section id="why-work">
+                <div class="blue-bg"></div>
+                <div class="wrapper">
+                    <div class="left_col">
+                        <?php while(have_rows('why_work_section') ) : the_row(); ?>
+                            <h1 class='white eng'><?php the_sub_field('header'); ?></h1>
+                            <p class='white'><?php the_sub_field('description'); ?></p>
+                            <a class="button opposite" href="<?php the_sub_field('cta_link'); ?>"><?php the_sub_field('cta_label'); ?></a>
+                        <?php endwhile; ?>
+                    </div>
+
+                    <div class="right_col">
+                        <?php while(have_rows('capabilities') ) : the_row(); ?>
+                                <div class="icon <?php the_sub_field('custom_css_classes'); ?> ">
+                                <div class="icon-wrapper">
+                                    <?php $icon = get_sub_field('icon'); ?>
+                                    <img alt='<?php echo $icon['alt']; ?>' src=" <?php echo $icon['url']; ?> " />
+                                </div>
+                                <div class="title">
+                                    <h2 class='eng'><?php the_sub_field('title'); ?></h2>
+                                    <a href=" <?php the_sub_field('link'); ?>">[ <?php the_sub_field('link_title'); ?> ]</a>
+                                </div>
+                                <p> <?php _e(get_sub_field('description'),'digital-river'); ?> </p>
+                            </div>
+                        <?php endwhile; ?>
+                    </div> <!-- End of right_col -->
+                    <div class="clear"></div>
+                </div> <!-- End of wrapper -->
+            </section> <!-- End of why work section -->
+
+        <?php endif; ?>
+
+    
         <section id="clients">
         	<div class="wrapper">
             	<div class="title">
