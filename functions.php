@@ -66,7 +66,7 @@ function theme_styles() {
     $resourcesTemplate = is_page_template("templates/template-resources.php");
     $clientsTemplate = is_page_template("templates/template-clients2.php");
     $templateA = is_page_template("templates/template-a-new.php");
-    $homePage = is_front_page();
+    $homePage = is_page_template("home.php");
     $templatePayments = is_page_template("templates/template-payments.php");
     $templateCrossborder = is_page_template("templates/template-crossborder.php");
     $templateInteractive = is_page_template("templates/template-interactive.php");
@@ -100,7 +100,7 @@ wp_enqueue_style( 'bootstrap-css' );
     wp_register_style('owl_carousel', get_stylesheet_directory_uri() . '/css/owl.carousel.css', array(), '1', $media = 'all');
     wp_register_style('owl_theme', get_stylesheet_directory_uri() . '/css/owl.theme.css', array(), '1', $media = 'all');
     wp_register_style('modular-interactions', get_stylesheet_directory_uri() . '/css/modular_interactions.css', array(), '1', $media = 'all');
-    // wp_register_style('clients_style', get_stylesheet_directory_uri() . '/css/clients_style.css', array('owl_carousel','owl_theme'), '1', $media = 'all');
+    wp_register_style('clients_style', get_stylesheet_directory_uri() . '/css/clients_style.css', array('owl_carousel','owl_theme'), '1', $media = 'all');
     // wp_register_style('events_style', get_stylesheet_directory_uri() . '/css/events.css', array(), '1', $media = 'all');
    // wp_register_style('new_global', get_stylesheet_directory_uri() . '/css/newGlobal.css', array(), '1', $media = 'all');
 //    wp_register_style('grid', get_stylesheet_directory_uri() . '/css/grid.css', array(), '1', $media = 'all');
@@ -120,13 +120,6 @@ wp_enqueue_style( 'bootstrap-css' );
     wp_register_style('gaming_styles', get_stylesheet_directory_uri() . '/css/gaming.css', array(), '1', $media = 'all');
     wp_register_style('gaming_grid_styles', get_stylesheet_directory_uri() . '/css/gaming-grid.css', array(), '1', $media = 'all');
     wp_register_style('gaming_misc_styles', get_stylesheet_directory_uri() . '/css/gaming_misc_styles.css', array(), '1', $media = 'all');
-
-
-
-    wp_enqueue_style('fonts');
-    wp_enqueue_style('1140');
-    wp_enqueue_style('reset');
-    wp_enqueue_style('global');
 
 
 	if($resourcesTemplate){
@@ -200,15 +193,12 @@ function theme_scripts() {
     wp_enqueue_script('plugins', get_stylesheet_directory_uri() . '/js/plugins.js', array('jquery'), 1, true);
     wp_enqueue_script('global', get_stylesheet_directory_uri() . '/js/global.js', array('jquery'), 1, true);
     wp_enqueue_script('owl', get_stylesheet_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), 1, true);
-
+ wp_enqueue_script('home_script', get_stylesheet_directory_uri() . '/js/home_script.js?233233', array('jquery'), 1, true);
     if(is_page_template("templates/template-crossborder.php")){
         wp_enqueue_script('classie', get_stylesheet_directory_uri() . '/js/classie.js', array('jquery'), 1, true);
         wp_enqueue_script('selectFx', get_stylesheet_directory_uri() . '/js/selectFx.js', array('jquery'), 1, true);
         wp_enqueue_script('crossborder', get_stylesheet_directory_uri() . '/js/crossborder.js', array('jquery'), 1, true);
-    }else if(is_front_page()){
-		 wp_enqueue_script('owl', get_stylesheet_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), 1, true);
-		 wp_enqueue_script('home_script', get_stylesheet_directory_uri() . '/js/home_script.js?233233', array('jquery'), 1, true);
-	}else if(is_page_template("templates/template-clients2.php")){
+	   }else if(is_page_template("templates/template-clients2.php")){
         wp_enqueue_script('clients', get_stylesheet_directory_uri() . '/js/clients_script.js', array('jquery','owl','flexslider','vimeo'), 1, true);
     }else if(is_page_template("templates/template-gaming.php")){
         wp_enqueue_script('gaming', get_stylesheet_directory_uri() . '/js/gaming-script.js', array('jquery'), 1, true);
