@@ -65,6 +65,7 @@
     //header
     nav{
         ul{
+            padding:0;
             margin:0;
             li{
                 list-style-type: none;
@@ -365,7 +366,7 @@
                 }
 
                 #search-label{
-                    font_family: $eng;
+                    font-family: $eng;
                     color: $black;
                     display:block;
                     font-size: 1em;
@@ -725,7 +726,7 @@
                             }
 
                             @include customMinMediaQuery(1200px){
-                                font-size: 1.8em;
+                                font-size: 2.08em;
                                 padding-right: 1.3em;
                                 padding-left: 1.3em;
                             }

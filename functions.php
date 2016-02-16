@@ -84,11 +84,8 @@ function theme_styles() {
  * Bootstrap Files
  */
 wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/assets/javascripts/bootstrap.min.js', array( 'jquery' ), '3.0.1', true );
-
 wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap/assets/stylesheets/_bootstrap.css', array(), '3.0.1', 'all' );
-
 wp_enqueue_script( 'bootstrap-js' );
-
 wp_enqueue_style( 'bootstrap-css' );
 
     //wp_register_style('reset', get_stylesheet_directory_uri() . '/css/reset.css', array(), 1, $media = 'all');
@@ -120,13 +117,16 @@ wp_enqueue_style( 'bootstrap-css' );
     wp_register_style('gaming_styles', get_stylesheet_directory_uri() . '/css/gaming.css', array(), '1', $media = 'all');
     wp_register_style('gaming_grid_styles', get_stylesheet_directory_uri() . '/css/gaming-grid.css', array(), '1', $media = 'all');
     wp_register_style('gaming_misc_styles', get_stylesheet_directory_uri() . '/css/gaming_misc_styles.css', array(), '1', $media = 'all');
+    wp_register_style('gaming_misc_styles', get_stylesheet_directory_uri() . '/css/gaming_misc_styles.css', array(), '1', $media = 'all');
+    wp_register_style('font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), '1', $media = 'all');
 
 
+
+
+    wp_enqueue_style('reset');
 
     wp_enqueue_style('fonts');
-    wp_enqueue_style('1140');
-    wp_enqueue_style('reset');
-    wp_enqueue_style('global');
+    wp_enqueue_style('font_awesome');
 
 
 	if($resourcesTemplate){
@@ -678,29 +678,6 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
 
         $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args ).$after_output;
     }
-}
-
-add_filter('wp_nav_menu_items','add_phonenumber', 10, 2);
-function add_phonenumber( $items, $args ) {
-    if( $args->theme_location == 'header-menu')  {
-
-        $phoneNumber =  '<li>'."<div class='phone_number'>".__("Call Us",'digital-river');
-            if(ICL_LANGUAGE_CODE == "zh-hans"): 
-                 $phoneNumber .= " +86 21 61248050";
-            elseif(ICL_LANGUAGE_CODE == "ja"):
-                $phoneNumber .= " +81(3)5325.6224";
-            elseif(ICL_LANGUAGE_CODE == "de"):
-                 $phoneNumber .= " +49(0)221.31088.0";
-            else:
-                $phoneNumber .= " +1-800-598-7450";
-            endif;
-
-        
-        $phoneNumber .= '</div></li>';
-        $items = $phoneNumber . $items; 
-
-    }
-    return $items;
 }
 
 
