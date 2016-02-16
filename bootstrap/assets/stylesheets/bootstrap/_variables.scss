@@ -9,6 +9,7 @@ $defaultFontSize: 16;
 //
 //## Gray and brand colors for use across Bootstrap.
 
+
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%) !default;   // #333
@@ -27,6 +28,11 @@ $medLightGray: #f1f2f4;
 $medGray: #646464;
 $darkGray: #343434;
 $purple: #6f29d3;
+$purple-light: lighten($purple, 46.7%) !default;
+$green: #a8c628;
+$green-light: lighten($green, 46.7%) !default;
+$blue: #00a7e1;
+$blue-light: lighten($blue, 46.7%) !default;
 $darkPurple: #6810ba;
 
 $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7

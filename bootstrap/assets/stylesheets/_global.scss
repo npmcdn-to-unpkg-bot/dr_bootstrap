@@ -18,7 +18,41 @@ a{
         text-decoration: underline;
     }
 }
+.green-button {
+    line-height: 1em;
+    color: #FFF;
+    background: none repeat scroll 0% 0% #B3D334;
+    display: inline-block;
+    text-decoration: none;
+    font-family: $eng;
+    float: left;
+    clear: left;
+    padding: 0.5em 0.6em;
+    
+}
+.blue-box {
+    color: $white;
+    background: $blue;
+    border: 1em $blue-light solid;
+}
+.green-box {
+    color: $white;
+    background: $green;
+    border: 1em $green-light solid;
 
+}
+.purple-box {
+    color: $white;
+    background: $purple;
+    border: 1em $purple-light solid;
+
+}
+.green-bg {
+background: $green;
+}
+.gray-bg {
+background: $medGray;    
+}
 a.arrow{
     @extend a;
     position: relative;
