@@ -15,7 +15,7 @@
             <img src="<?php echo get_image_path('icon_shadow.png'); ?>" alt="">
           <?php endif; ?>
         </section>
-        
+    
         <?php /*?><?php if (get_the_content()) : ?>
           <div class="splitter top"></div>
           <section class="content the_content span_12 col">
@@ -35,7 +35,7 @@
         <div class="clear"></div>
           </div>
     </section>
-
+    </div>
     <!-- Widgetized Area 
 
     <section class="widget_area content_row">
@@ -54,7 +54,6 @@
     <section class="widgetized flex content_row container">
         <?php dynamic_sidebar_cache('template_f_flex'); ?>
     </section>
-  </div>
   <div class="container">
       <?php initResourcesSection(); ?>
   </div>

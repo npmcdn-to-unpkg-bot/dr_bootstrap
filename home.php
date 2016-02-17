@@ -218,9 +218,45 @@
 
             </div>
      </div><!-- End of wrapper -->
-       
+</div> <!-- End of Main Contain -->
    
-       
+      <section id="news" class="container">
+            	<div class="row" style='max-width:1180px; padding:40px 0 20px; margin-bottom:20px; border-bottom:solid 1px #CCC;'>
+                        <div class="col-md-6">
+                            <div class="title">
+                                <h2 class='eyebrow eng'>News</h2>
+                                <a href="<?php echo get_permalink(459); ?>">[ More News ]</a>
+                            </div>
+                            <?php
+                            $resourcesSection = new ResourcesSection($posts);
+                            $resourcesSection->displayPressReleases();
+                            ?>
+                        </div> <!-- End of col-3 -->
+                        <div class="col-md-6 last">
+                            <div class="title">
+                                <h2 class='eyebrow eng'>Join Us</h2>
+                                <a href="<?php echo get_permalink(535); ?>">[ More Events ]</a>
+                            </div>
+                             <?php $resourcesSection->displayEvents(); ?>
+                        </div> <!-- End of col-3 -->
+                        <div class='clear'></div>
+                </div> <!-- End of wrapper -->
+
+                            <?php
+                            $args = array( 
+                                'post_type' => 'marketing_material',
+                                'showposts' => 6                                
+                            );  
+                            $posts = get_posts($args);
+                            $resourcesSection = new ResourcesSection($posts);
+                            $resourcesSection->display(true);
+                            ?>
+                            
+                   
+                         <div class='clear'></div>
+                </div>
+
+            </section> <!-- End of news section --> 
         
         </div>
    <!-- End of main-content -->

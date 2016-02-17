@@ -15,8 +15,33 @@ a{
 
     &:hover {
         color: $blue;
-        text-decoration: underline;
+        text-decoration: none;
     }
+}
+h2 {
+  font-weight:normal;
+  float:none;
+  font-family: $med;
+  text-transform:uppercase;
+  font-size:1.2em;
+  padding:0px 2px;
+  display:inline-block;
+  line-height:normal;
+}
+h3 {
+  font-weight:normal;
+  font-weight:inherit;
+  line-height:1;
+  font-family: $med;
+  font-size:1.2em;
+  text-transform:inherit;
+  text-transform:uppercase;
+  margin-bottom:inherit;
+    display: inline-block;
+  background:none;
+}
+h4 {
+    font-family: $med;
 }
 .green-button {
     line-height: 1em;
@@ -47,11 +72,27 @@ a{
     border: 1em $purple-light solid;
 
 }
+.green-under-line {
+  margin:2em 0px 1.5em;
+  font-family: $eng;
+  color: $darkGray;
+  border-bottom:.4em solid $green;
+}
+.blue-bg {
+    background: $blue;
+    color: $white;
+}
 .green-bg {
 background: $green;
 }
 .gray-bg {
 background: $medGray;    
+}
+.lgray-bg {
+    background: $lightGray;
+}
+.black {
+    color: $black;
 }
 a.arrow{
     @extend a;
@@ -194,7 +235,7 @@ a.btn, button, input[type="button"]{
 
     .breadcrumbs{
         margin: 0 auto ($defaultFontSize)+em;
-        padding: ($defaultFontSize * 1.5)+em;
+        padding: .4em;
         color: $white;
 
         a{

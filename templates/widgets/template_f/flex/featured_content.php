@@ -1,6 +1,6 @@
 <div class="widget featured_content ww_page row <?php echo ($hide_on_responsive)? 'hide_on_mobile': ''; ?>">
     <?php if ($header_text) : ?>
-        <h3 class="header"><?php _e($header_text,'digital-river'); ?></h3>
+        <h3 class="header green-under-line"><?php _e($header_text,'digital-river'); ?></h3>
     <?php endif; ?>
 
     <?php if ($intro_text) : ?>
