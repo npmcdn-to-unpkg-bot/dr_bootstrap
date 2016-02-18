@@ -1,32 +1,4 @@
 
-a.arrow {
-  position:relative;
-  display:inline-block;
-  text-decoration:none;
-  font-family: $arial;
-}
-a.arrow:hover {
-  text-decoration:none !important;
-}
-a.arrow::after {
-  margin-top:1px;
-  margin-left:5px;
-  content:"\203A";
-  transform:translateX(-20px);
-  display:inline-block;
-  opacity:0;
-  transition:transform 0.3s ease 0s, opacity 0.2s ease 0s;
-}
-a.arrow::before {
-  display:inline-block;
-  opacity:0;
-  transition:transform 0.3s ease 0s, opacity 0.2s ease 0s;
-}
-a.arrow:hover::after, a.arrow:focus::after {
-  opacity:1;
-  transform:translateX(0px);
-}
-
 h1.eyebrow, h4.eyebrow {
   font-weight:normal;
 }

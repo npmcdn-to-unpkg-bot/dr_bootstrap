@@ -91,36 +91,39 @@ background: $medGray;
 .full-width-image img a {
 width: 100%;    
 }
-a.arrow{
-    @extend a;
-    position: relative;
-    display: inline-block;
 
-    &:before {
-        display: inline-block;
-        opacity: 0;
-        transition: transform 0.3s ease 0s, opacity 0.2s ease 0s;
+/* Arrow Links 
+***********************************************/
+.arrow {
+    position:relative;
+    display:inline-block;
+    text-decoration:none;
+    font-family: $arial;
+    &:hover {
+      text-decoration:none !important;
     }
-
     &:after {
-        display: inline-block;
-        opacity: 0;
-        transition: transform 0.3s ease 0s, opacity 0.2s ease 0s;
-        margin-top: 1px;
-        margin-left: 5px;
-        content: "›";
-        @include translate (-20px, 0);
+      margin-top:1px;
+      margin-left:5px;
+      content:"\203A";
+      transform:translateX(-20px);
+      display:inline-block;
+      opacity:0;
+      transition:transform 0.3s ease 0s, opacity 0.2s ease 0s;
     }
-
-    &:hover{
-        &:after,
-        &:before{
-            opacity: 1;
-            @include translate (-20px, 0);
-
+    &:before {
+      display:inline-block;
+      opacity:0;
+      transition:transform 0.3s ease 0s, opacity 0.2s ease 0s;
+    }
+    &:hover, &:focus {
+        &:after{
+            opacity:1;
+            transform:translateX(0px);
         }
     }
 }
+
 
 /* Bracket Links - will work with any font size
 ***********************************************/
@@ -130,64 +133,30 @@ a.arrow{
     &:after {
         transition:all 100ms ease-in-out;
         position:absolute;
-        font-size:130%;
-        transform:scale(0.8333);
-        top:-7.5%;
     }
     &:before {
         content:'[ ';
-        left:-10%;
+        left:10%;
+        opacity:0;
     }
     &:after {
         content:' ]';
-        right:-10%;
+        right:10%;
+        opacity:0;
     }
     &:hover {
         text-decoration:none;
     }
     &:hover:before,
     &:hover:after {
-        transform:scale(1);
     }
     &:hover:before {
-        left:-13%;
+        left:-7%;
+        opacity:1;
     }
     &:hover:after {
-        right:-13%;
-    }
-}
-
-a.btn, button, input[type="button"]{
-    padding: 10px 12px 6px;
-    margin: 15px 0 0;
-    display: inline-block;
-    text-decoration: none;
-    transition: all 200ms ease-out 0s;
-    font-family: $med;
-    text-transform: uppercase;
-    color: $white;
-    background-color: $blue;
-    border: 2px solid $darkBlue;
-    cursor: pointer;
-
-    &:hover{
-        color: $white;
-        background: $darkBlue;
-    }
-
-    &:focus{
-    
-    }
-}
-
-.btn-opposite{
-    background-color: transparent;
-    color: $white;
-    border-color: $white;
-    
-    &:hover{
-        background-color: $white;
-        color: $darkBlue;
+        right:-7%;
+        opacity:1;
     }
 }
 
