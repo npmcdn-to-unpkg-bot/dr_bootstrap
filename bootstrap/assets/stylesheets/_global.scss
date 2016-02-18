@@ -94,6 +94,13 @@ background: $medGray;
 .black {
     color: $black;
 }
+.section_heading {
+    font-family: $arial;
+}
+.full-width-image img,
+.full-width-image img a {
+width: 100%;    
+}
 a.arrow{
     @extend a;
     position: relative;

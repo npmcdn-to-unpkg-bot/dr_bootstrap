@@ -5903,6 +5903,13 @@ h4 {
 .black {
   color: #343438; }
 
+.section_heading {
+  font-family: "Arial", sans-serif; }
+
+.full-width-image img,
+.full-width-image img a {
+  width: 100%; }
+
 a.arrow {
   position: relative;
   display: inline-block; }
@@ -6135,6 +6142,8 @@ h1.eyebrow, h4.eyebrow {
   color: inherit;
   font-family: "DIN Next W01 Medium", sans-serif;
   margin-top: 1em; }
+#template_j .resources-wrapper {
+  overflow: hidden; }
 #template_j .splitter {
   border-bottom: none; }
 #template_j a:hover {
@@ -7823,7 +7832,7 @@ a.button:hover {
             @media (min-width: 1200px) {
               #global_header .main_nav_container .nav-wrapper nav ul li a {
                 font-size: 2.08em;
-                padding-right: 1.3em;
+                padding-right: 1.15em;
                 padding-left: 1.3em; } }
           #global_header .main_nav_container .nav-wrapper nav ul li:hover a {
             background: #007eb5; }
