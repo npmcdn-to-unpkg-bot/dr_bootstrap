@@ -8,16 +8,6 @@ p{
 }
 
 
-// links and buttons
-a{
-    color: $darkBlue;
-    text-decoration: none;
-
-    &:hover {
-        color: $blue;
-        text-decoration: none;
-    }
-}
 h2 {
   font-weight:normal;
   float:none;
