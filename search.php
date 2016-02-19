@@ -24,18 +24,28 @@ if(isset($_GET['type'])){
     }
 }
 
-
 global $wpdb;
 
 if($type == "resources"):
-
     $search = get_search_query();
     $search_array = explode(" ", $search);
-//fix
     $search_query_arg = "";
-    foreach($search_array as $search_arg):
-        $search_query_arg .= " OR LOWER(".$wpdb->postmeta.".meta_value) LIKE '%".strtolower($search_arg)."%' OR  ( LOWER(".$wpdb->posts.".post_title) LIKE '%".strtolower($search_arg)."%' AND ".$wpdb->posts."post_type = 'marketing_materials' ";
+    $post_type = "marketing_materials";
+    foreach($search_array as $key => $search_arg):
+
+        if($key == 0){
+            $search_query_arg .= "AND";
+        }else{
+            $search_query_arg .= "OR";
+        }
+
+        $search_query_arg .= " LOWER( $wpdb->postmeta.meta_value ) LIKE '%".strtolower($search_arg)."%' OR   LOWER( $wpdb->posts.post_title ) LIKE '%".strtolower($search_arg)."%' AND $wpdb->posts.post_type = '".$post_type."' ";
     endforeach;
+
+    $sql = "SELECT $wpdb->postmeta.meta_value, $wpdb->posts.ID, $wpdb->posts.post_title
+    FROM $wpdb->postmeta INNER JOIN $wpdb->posts
+    ON $wpdb->postmeta.post_id=$wpdb->posts.ID
+    WHERE meta_key = 'description' ".$search_query_arg;
 
     $sql = 'SELECT '.$wpdb->postmeta.'.meta_value, '.$wpdb->posts.'.ID, '.$wpdb->posts.'.post_title  FROM '.$wpdb->postmeta.' INNER JOIN '.$wpdb->posts.' ON '.$wpdb->postmeta.'.post_id='.$wpdb->posts.'.ID WHERE meta_key = "description"'.$search_query_arg;
     $results = $wpdb->get_results( $sql , OBJECT );
@@ -246,7 +256,7 @@ endif;
 
                                 <?php
                                     $results_count = count($posts_array);
-                                    $results_per_page = 5;
+                                    $results_per_page = 10;
                                     $page = isset($_GET['page'])?$_GET['page']:1;
                                     if($page == 1){
                                         $start = 0;
@@ -254,6 +264,9 @@ endif;
                                         $start = ($page-1) * $results_per_page;
                                     }
                                     $end = $page * $results_per_page;
+
+
+
                                     $num_of_pages = ceil($results_count / $results_per_page);
                                 ?>
 
@@ -322,8 +335,46 @@ endif;
                         </section>
                         <section class="col-md-5 ">
                             <div class="sidebar">
-                                <h2 class="eyebrow">Related Blog Posts</h2>
-                                <a href="#" class="brackets view-all">View All Blog Posts</a>
+
+                                <?php
+                                if(ICL_LANGUAGE_CODE == "en"):
+                                    $title = __("Related Blog Posts", "digital-river");
+                                    $blog_cta = __("View All Blog Posts", "digital-river");
+
+                                    if(count($blog_array) == 0):
+                                        $blog_array  = wp_get_recent_posts(
+                                                array(
+                                                    'post_type' => 'post',
+                                                    'post_status' => 'publish',
+                                                    'numberposts' => 3
+                                                ),
+                                                OBJECT
+                                        );
+                                        $title = __("Recent Blog Posts", "digital-river");
+                                    endif;
+                                else:
+
+                                endif;
+
+                                $blog_array1 = wp_get_recent_posts(
+                                        array(
+                                            'post_type' => 'post',
+                                            'post_status' => 'publish',
+                                            'numberposts' => 3
+                                        ),
+                                        ARRAY_A
+                                    );
+
+
+                                $Resources_Section = new ResourcesSection();
+
+                               echo $Resources_Section->resourcesJSON(array_column($blog_array1, "ID"));
+
+                                ?>
+
+
+                                <h2 class="eyebrow"><?php echo $title; ?></h2>
+                                <a class="brackets view-all"><?php echo $blog_cta; ?></a>
                                 <?php foreach ($blog_array as $result) : ?>
                                     <section class="solution">
                                         <div class="text_container">

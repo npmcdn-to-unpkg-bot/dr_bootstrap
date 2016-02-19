@@ -2,7 +2,6 @@
 /**
  * Options
  */
-
 // Debug Mode (Not really used)
 define('DEBUG', false);
 
@@ -52,8 +51,6 @@ require_once 'php/posts.php';
  * Initialize Widgets Class
  */
 Widgets::init(trailingslashit(get_template_directory()));
-
-
 
 
 
