@@ -1,0 +1,204 @@
+@page { size:8.5in 11in; margin: 2cm; }
+
+@media print{
+
+	body{
+		color: #343438;
+		background: #ffffff;
+	}
+
+    .container{
+		margin: 30px 45px 0;
+    	page-break-after: always;
+    	position: relative;
+    	height: 9.7in;
+
+	}
+	.container:last-of-type {
+    	page-break-after: avoid !important;
+    	background-color: #666666 !important;
+	}
+
+	img{
+		width: auto;
+	}
+
+	button.printButton{
+		display: none;
+	}
+	.containerPrintButton{
+		display: none;
+	}
+
+	/*For full URLs not to show up after links */
+	/* Fix print format bugs */
+	a[href]:after {
+    	content: "" !important;
+    }
+  	abbr[title]:after {
+    	content: "" !important;
+    }
+
+
+	/* ROWS */
+	.row-four{
+		height: 175px; 
+ 		margin: 0px;
+	}
+	.row-two{
+		height: 405px; 
+		margin: 0px;
+	}
+	.row-one{
+		height: 845px; 
+		margin: 0px;
+	}
+	.row-three{
+		height: 260px;  
+		margin: 0px;
+	}
+	.row-two-three{
+		height: 540px; 
+		margin: 0px;
+	}
+	.row-four-footer{
+		height: 175px;  
+		margin: 30px -5px 15px;
+	}
+	.divider{
+		border-top: 3px solid rgba(144,144,149,0.3);
+		margin: 10px 0 -15px;
+	}
+
+	/* BREAKOUTS */
+	.breakout{
+		padding: 5px 10px !important;
+		background: rgba(144,144,149,0.3) !important;
+		/*border: 3px solid rgba(144,144,149,0.3) !important;*/
+	}
+	.breakout-cell-img{
+		border: none !important;
+		padding: 0px 25px 0 0px;
+	}
+	.breakout h3{
+		color: #343438 !important;
+		margin-top: 10px;
+	}
+
+	/* TYPOGRAPHY */
+	h1.large-heading{
+		font-family: "DIN 1451 W01 Engschrift", sans-serif;
+		font-size: 3.5em !important;
+		color: #00a7e1 !important;
+		line-height: 1em !important;
+		margin-bottom: -20px !important;
+	}
+	
+	h1.small-heading{
+		font-family: "DIN 1451 W01 Engschrift", sans-serif;
+		font-size: 1.4em;
+		text-transform: uppercase;
+		color: #343438;
+		border-bottom: 3px solid #a8c628;
+		display: inline-block;
+
+	}
+	h1.medium-heading{
+		font-family: "DIN 1451 W01 Engschrift", sans-serif;
+		font-size: 1.5em !important;
+		color: #a8c628 !important;
+	}
+	p{
+		font-family: "DIN Next W01 Light", sans-serif;
+		font-size: 0.75em;
+		margin-bottom: 10px;
+	}
+	h1.large-cell{
+		font-family: "DIN 1451 W01 Engschrift", sans-serif;
+		font-size: 1.8em;
+		text-transform: uppercase;
+		color: #007eb5 !important;
+		margin: 0px 0 10px;
+	}
+	h3{
+		color: #25d4ff !important;
+		margin-bottom: -8px;
+		font-size: 1em;
+		margin-top: 10px;
+	}
+	h3.footerhd{
+		color: #646469 !important;
+		margin-bottom: 3px;
+	}
+	ul{
+		font-family: "DIN Next W01 Light", sans-serif;
+		padding-left: 20px;
+		font-size: 0.75em;
+	}
+	li{
+		font-family: "DIN Next W01 Light", sans-serif;
+		list-style: disc;
+	}
+	b, strong{
+		font-weight: normal !important;
+		font-family: "DIN Next W01 Medium", sans-serif;
+	}
+	blockquote {
+		padding: 0.2em 3px;
+		quotes: "\201C""\201D""\2018""\2019";
+	}
+	blockquote:before {
+		color: #8f9094 !important;
+		content: open-quote;
+		font-size: 4em;
+		line-height: 0.1em;
+		margin-right: 0.05em;
+		vertical-align: -0.4em;
+	}
+	
+	blockquote p {
+		display: inline;
+		color: #646469;;
+		font-weight: bolder;
+	}
+
+	.print-footer{
+		margin: 0;
+		padding: 0 10px !important;
+		display: block !important;
+  		position: absolute;
+  		bottom: 0px;
+  		width: 94%;
+  		height: 0.25in;
+	}
+
+	.print-footer h1{
+		text-align: right;
+		margin-bottom: 5px;
+		margin-top: 0;
+		font-size: 12px;
+		color: #00a7e1 !important;
+	}
+
+	.print-footer h2{
+		text-align: right;
+		font-size: 10px;
+		margin-top: 0;
+	}
+
+	.print-footer a, .printfooter a:visited{
+		text-decoration: none;
+		color: #00a7e1 !important;
+	}
+
+	.screen-footer{
+		display: none;
+	}
+
+	.dividerHTML{
+		display: none;
+	}
+
+
+
+}

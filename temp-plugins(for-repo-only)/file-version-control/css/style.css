@@ -1,0 +1,212 @@
+.home .row{max-width: 1180px; }
+
+  #resources .item{max-width: 450px;}
+
+.resources-wrapper {
+    font-family: "DIN 1451 W01 Engschrift",sans-serif;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    position: relative;
+    background: #FFF;
+
+}
+
+.resources-wrapper .heading{
+  color: #343438;
+  font-size: 3.85em;
+  float: left;
+  line-height: 1em;
+  letter-spacing: 0.5px;
+}
+
+.resources-wrapper .heading span{
+  float:left;
+  margin-right: 15px;
+}
+
+
+.resources-wrapper .link_wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home .resources-wrapper .link_wrapper .links {
+    margin-top: 10px;
+}
+
+.resources-wrapper .link_wrapper .links .header{
+  font-size: 1.4em;
+    color: #343438;
+}
+
+.resources-wrapper .link_wrapper .links li{
+  list-style: none;
+  margin: 15px 0;
+}
+
+.resources-wrapper .link_wrapper .links li a{
+  font-family: Arial,sans-serif;
+  font-size: 1em;
+  color:#00a7e1;
+  text-decoration: none;
+}
+
+.resources-wrapper .row2 .span_8{
+  margin-top: 30px;
+}
+
+
+.owl-next, .owl-prev{
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+    opacity: 0;
+}
+
+#resources{position: relative;}
+
+.resources-wrapper:hover .owl-next{
+  right:-45px;
+  opacity: .7;
+}
+
+.resources-wrapper:hover .owl-prev{
+  left: -25px;
+  opacity: .7;
+}
+
+.resources-wrapper .owl-next:hover, .resources-wrapper .owl-prev:hover{opacity: 1;}
+
+.owl-prev{
+  text-indent: -9999px;
+  background: url("../img/arrow-left.svg") no-repeat;
+  position: absolute;
+  top:40%;
+  left: 0;
+  width: 40px;
+  height: 30px;
+
+}
+
+
+.owl-next{
+  text-indent: 9999px;
+  background: url("../img/arrow-right.svg") no-repeat;
+  top:40%;
+  right: 0;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+}
+
+#template_j .resources-wrapper a{
+      position: relative;
+      display: inline-block;
+      color: #007EB5;
+      text-decoration: none;
+      font-family: "Arial";
+  }
+
+  .resources-wrapper a.hover:hover {
+      color: #00A7E1;
+      text-decoration: none;
+  }
+
+  .resources-wrapper a.hover::after {
+      margin-top: 1px;
+      margin-left: 5px;
+      content: "›";
+      transform: translateX(-20px);
+  }
+  .resources-wrapper a.hover::before, .resources-wrapper a.hover::after {
+      display: inline-block;
+      opacity: 0;
+      transition: transform 0.3s ease 0s, opacity 0.2s ease 0s;
+  }
+
+  .resources-wrapper a.hover:hover::after, .resources-wrapper a.hover:focus::after {
+      opacity: 1;
+      transform: translateX(0px);
+  }
+
+
+  .resources-wrapper .tag{font-size: 1em; color: #81b315; margin: 0 0 3px;  font-family: "DIN Next W01 Medium";}
+  .resources-wrapper .title{font-size: 1.4em; margin: 0; color: #343438; font-family: "DIN Next W01 Medium"; padding-top: 0 !important;}
+  .resources-wrapper p.description{margin: 7px 0 15px;}
+
+
+
+/*
+**
+**    Home Page Styling
+**
+*/
+
+
+/*
+.home .resources-wrapper .tag {
+    margin: 0px;
+}
+*/
+.home #news{padding: 0px 30px;}
+
+.home .resources-wrapper p.description {
+    margin: 0px 0px 7px;
+}
+
+.home #news .resources-wrapper .title {
+    padding-bottom: 2px;
+}
+
+.home .resources-wrapper .item:first-child{margin-top: 10px;}
+.home .resources-wrapper .item{margin-top: 25px;}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .resources-wrapper .heading{
+      margin-top: 10px;
+      float: none;
+      margin: 0 auto;
+      display:block;
+      width: 454px;
+    }
+
+    .resources-wrapper .link_wrapper {
+      margin-top: 20px;
+    }
+
+    .resources-wrapper .owl-next, .resources-wrapper .owl-prev{
+        display: block !important;
+    } 
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .resources-wrapper .heading {
+        font-size: 3em;
+        width: auto;
+        float: left;
+    }
+
+    .resources-wrapper .link_wrapper {
+        display: inline-block;
+        justify-content: inherit;
+    }
+
+    .resources-wrapper .link_wrapper .links:first-child {
+      margin-top: 0;
+    }
+
+    .resources-wrapper .link_wrapper .links {
+        float: left;
+        clear: left;
+        margin: 20px 0 0;
+    }
+
+
+
+}
