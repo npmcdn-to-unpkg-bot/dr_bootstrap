@@ -1429,3 +1429,37 @@ padding-bottom: 25%;
         }
     }
 }
+/* PDF Creator Pages */
+.value-brief {
+    
+    .small-heading {
+    font-size: 2em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 1.75em 0 0 0;
+    padding-bottom: 0.025em;
+    }  
+    .large-heading {
+    font-size: 6em;
+    color: $blue;
+    margin: .2em 0 .5em 0;
+    line-height: 1.1em;
+    font-family: $eng;
+    }
+    p, ul {
+        font-family: $light;
+        font-size: 1.2em;
+    }
+    h3 {
+        color: $neon-blue;
+        text-transform: none;
+    }
+
+
+    .medium-heading {
+        color: $green;
+    }
+    img {
+        max-width: 100%;
+    }
+}

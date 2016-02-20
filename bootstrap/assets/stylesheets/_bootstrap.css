@@ -5876,7 +5876,7 @@ h4 {
   margin: 2em 0px 1.5em;
   font-family: "DIN 1451 W01 Engschrift", sans-serif;
   color: #343434;
-  border-bottom: 0.4em solid #a8c628; }
+  border-bottom: 3px solid #a8c628; }
 
 .blue-bg {
   background: #00a7e1;
@@ -7282,6 +7282,30 @@ a.button:hover {
     position: absolute; }
     .owl-theme .col-md-10.slide .header {
       font-size: 3.5em; }
+
+/* PDF Creator Pages */
+.value-brief .small-heading {
+  font-size: 2em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 1.75em 0 0 0;
+  padding-bottom: 0.025em; }
+.value-brief .large-heading {
+  font-size: 6em;
+  color: #00a7e1;
+  margin: .2em 0 .5em 0;
+  line-height: 1.1em;
+  font-family: "DIN 1451 W01 Engschrift", sans-serif; }
+.value-brief p, .value-brief ul {
+  font-family: "DIN Next W01 Light", sans-serif;
+  font-size: 1.2em; }
+.value-brief h3 {
+  color: #25d4ff;
+  text-transform: none; }
+.value-brief .medium-heading {
+  color: #a8c628; }
+.value-brief img {
+  max-width: 100%; }
 
 .zh-hans #global_header #search_form {
   display: none; }
