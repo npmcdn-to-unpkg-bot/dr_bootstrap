@@ -351,39 +351,32 @@ endif;
                                                 OBJECT
                                         );
                                         $title = __("Recent Blog Posts", "digital-river");
+                                        $recent = true;
                                     endif;
                                 else:
 
+                                    $Resources_Section = new ResourcesSection();
+                                    $blog_results = $Resources_Section->resourcesJSON(array_column($blog_array1, "ID"));
+                                    $blog_array = json_decode($blog_results);
+
                                 endif;
-
-                                $blog_array1 = wp_get_recent_posts(
-                                        array(
-                                            'post_type' => 'post',
-                                            'post_status' => 'publish',
-                                            'numberposts' => 3
-                                        ),
-                                        ARRAY_A
-                                    );
-
-
-                                $Resources_Section = new ResourcesSection();
-
-                               echo $Resources_Section->resourcesJSON(array_column($blog_array1, "ID"));
 
                                 ?>
 
 
                                 <h2 class="eyebrow"><?php echo $title; ?></h2>
                                 <a class="brackets view-all"><?php echo $blog_cta; ?></a>
-                                <?php foreach ($blog_array as $result) : ?>
-                                    <section class="solution">
-                                        <div class="text_container">
-                                            <header class="title"><?php echo $result->post_title; ?></header>
-                                            <p class="intro"><?php echo $result->content; ?></p>
-                                        </div>
-                                        <a href="<?php echo get_permalink($result->ID); ?>" class="arrow"><?php _e('Details', 'search'); ?></a>
-                                    </section>
-                                <?php endforeach; ?>
+                                <?php
+                                foreach ($blog_array as $result):
+                                    if($recent != true):
+                                        $Detailed_List_Item = new DetailedListItem($result->post_title, $result->content, get_permalink($result->ID), array("link_label" =>__('Details', 'digital-river')));
+                                        $Detailed_List_Item->display();
+                                    else:
+                                        $Detailed_List_Item = new DetailedListItem($result->title, $result->description, $result->link);
+                                        $Detailed_List_Item->display();
+                                    endif;
+                                endforeach;
+                                ?>
                             </div>
                         </section>
                     <div class="clear"></div>
