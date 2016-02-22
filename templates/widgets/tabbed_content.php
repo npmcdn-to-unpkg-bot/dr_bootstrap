@@ -9,7 +9,7 @@
     <?php endif; ?>
 
     <?php foreach ($rows as $row) : ?>
-        <div class="tab_row container">
+        <div class="tab_row ">
             <div class="row">
                 <?php
                 $tab_count = count($row['tabs']);
@@ -43,7 +43,6 @@
                     </div>
                 <?php $i++; endforeach; ?>
             </div>
-            <div class="clear"></div>
             <div class="tab_content_container clearfix"></div>
         </div>
     <?php endforeach; ?>

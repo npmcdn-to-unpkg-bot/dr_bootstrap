@@ -7,13 +7,11 @@
 <?php get_template_part('masthead'); ?>
 
     <!-- Content Container -->
-    <section id="template_b" class="content_container">
+    <section id="template_b" class="content_container container">
         <div class="left_border"></div>
-        <div class="container">
             <div class="row">
-                <section class="main_content span_8 col">
-                    <div class="container">
-                        <div class="span_12">
+                <section class="main_content col-md-8">
+
                         <?php
                         $cat = get_the_category( $post->orig_id );
                         if ((!empty($cat) || $post->post_content) && !get_field('hide_title')) :
@@ -46,7 +44,6 @@
                                     <a href="<?php echo $latest_post_link; ?>" class="link"><?php the_field('latest_post_read_more_link'); ?></a>
                                     <div class="splitter"></div>
                                 </section>
-                                <div class="clear"></div>
                             </div>
                             <?php endif; ?>
 
@@ -61,9 +58,6 @@
                            <?php if(empty($cat)) { ?>
                             <?php dynamic_sidebar_cache('template_b_content'); ?>
                             <?php } ?>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
                 </section>
                 <div class="border_left"></div>
 
@@ -74,12 +68,11 @@
                     dynamic_sidebar_cache('template_b_right_sidebar');
                     revert_sidebar_context();
                     ?>
-                    <div class="clear"></div>
                 </section>
-            </div>
-            <div class="clear"></div>
         </div>
-    </section>
+
+                </section>
+        
 
 
 <script>

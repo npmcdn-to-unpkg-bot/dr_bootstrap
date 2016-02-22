@@ -23,8 +23,8 @@ foreach ($posts_array as $timestamp => $post) {
     $year_posts_array[$year][] = $post;
 }
 ?>
-
-<div class="posts posts_list">
+<div class="col-md-8">
+<div class="posts posts_list ">
 
     <section class="date_select">
         <?php _e('View by year'); ?>
@@ -52,12 +52,12 @@ foreach ($posts_array as $timestamp => $post) {
 			<?php if ($first_post) : ?>
 				<div class="dotted_splitter"></div>
 			<?php endif; ?>
-		    <li class="content container">
+		    <li class="content ">
 		    	<div class="row">
-					<div class="date col span_2"><?php echo $post->date_published; ?></div>
-					<a class="link" href="<?php echo get_permalink($post->id); ?>"><?php echo $post->post_title; ?></a>
-					<div class="clear"><div>
+					<div class="date col col-md-2"><?php echo $post->date_published; ?></div>
+					<a class="link col-md-9" href="<?php echo get_permalink($post->id); ?>"><?php echo $post->post_title; ?></a>
 		    	</div>
+              
 		    </li>
 		    <div class="dotted_splitter"></div>
 		<?php $first_post = false; endforeach; endforeach; ?>
@@ -65,7 +65,7 @@ foreach ($posts_array as $timestamp => $post) {
 
 	<?php $first_year = false; endforeach; ?>
 </div>
-
+</div>
 <script type="text/javascript">
     jQuery(function($) {
         $('.posts_list .view_year').change(function() {
