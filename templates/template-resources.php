@@ -8,11 +8,11 @@
 
 
 <section class="grid_wrapper">
-			<div class="grid">
+			<div class="grid container">
             
              <?php foreach(get_field('grid_box') as $grid_box) : ?>
 
-				<div class="<?php echo $grid_box['width']; ?>">
+				<div class="<?php echo $grid_box['width']; ?> col-md-4">
                 
                 <?php 
 					$num_of_boxes = count($grid_box['box']);

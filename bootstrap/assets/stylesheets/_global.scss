@@ -88,10 +88,12 @@ background: $medGray;
 .section_heading {
     font-family: $arial;
 }
-.full-width-image img,
-.full-width-image img a {
-width: 100%;    
+
+
+.image-wrapper, .media_container , .media_container img, .full-width-image img , .full-width-image img a  {
+    width: 100%;
 }
+    
 
 /* Arrow Links 
 ***********************************************/

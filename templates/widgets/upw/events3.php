@@ -105,13 +105,13 @@ krsort($posts_array);
 
           
                
-                    
-                    <div class='clear'></div>
+                    <div class="container">
                     <?php if(count($upcomingEvents) > 0): ?>
-                        <div class='span_8 webinars last'>
-                            <div class='eyebrow'>Upcoming Events &amp; Webinars</div>
-                            <div class='clear'></div>
-                            <div class='detailed-link-wrapper'>
+                        <div class='col-md-8 webinars last'>
+                            <div class="col-md-12">
+                            <div class='green-under-line'>Upcoming Events &amp; Webinars</div>
+                            </div>    
+                            <div class='detailed-link-wrapper col-md-12'>
                                 <?php foreach($upcomingEvents as $key=>$upcomingEvent): ?>
                                     <div class='detailed-link'>   
                                         <div class='short-detail'><?php echo $upcomingEvent['type']; ?> <span style='font-size:1.15em; color:#646469; margin:0 5px 0 2px;'>|</span><?php echo $upcomingEvent['date']; ?></div>
@@ -187,7 +187,7 @@ krsort($posts_array);
                         <?php endif; ?>
                     </div>
                 --> 
-      
+</div>
              
             
 
