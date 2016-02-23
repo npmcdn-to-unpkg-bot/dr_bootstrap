@@ -12,6 +12,11 @@ jQuery(document).ready(function ($) {
         $(this).siblings(".sub-menu").toggleClass("active");
     });
 
+
+
+    /*
+    **  Start Search Functionality
+    */
     $("#search_form").on("click", function(){
         $(this).toggleClass("active");
         $("#top-nav").toggleClass("search_active");
@@ -19,6 +24,12 @@ jQuery(document).ready(function ($) {
         $(this).find(".search_box").focus();
         $("#search_form").off();
     });
+
+    /*
+    **  End Search Functionality
+    */
+
+
 
 
 
@@ -41,11 +52,6 @@ jQuery(document).ready(function ($) {
     }
     google.maps.event.addDomListener(window, 'load', updateMap);
 
-
-	/*
-    **  Removed placeholder because they are not translated 
-    */
-    //$("#search").attr("placeholder","Search...");
 
     function getLocation(url) {
         a = document.createElement('a');

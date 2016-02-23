@@ -92,7 +92,7 @@ wp_enqueue_style( 'bootstrap-css' );
     //wp_register_style('reset', get_stylesheet_directory_uri() . '/css/reset.css', array(), 1, $media = 'all');
     //wp_register_style('1140', get_stylesheet_directory_uri() . '/css/1140.css', array(), 1, $media = 'all');
     // wp_register_style('flexslider', get_stylesheet_directory_uri() . '/css/flexslider.css', array(), '1', $media = 'all');
-    wp_register_style('fonts', "http://fast.fonts.net/cssapi/e751fdd6-8b91-4eb8-bf68-ce897a01e3b8.css", array(), '1', $media = 'all');
+    wp_register_style('fonts', get_stylesheet_directory_uri()."/fonts/font.css", array(), '1', $media = 'all');
     wp_register_style('icons', "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", array(), '1', $media = 'all');
     // wp_register_style('global', get_stylesheet_directory_uri() . '/css/global.css', array(), '1', $media = 'all');
     wp_register_style('owl_carousel', get_stylesheet_directory_uri() . '/css/owl.carousel.css', array(), '1', $media = 'all');

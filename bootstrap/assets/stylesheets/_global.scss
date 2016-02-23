@@ -241,13 +241,20 @@ background: $medGray;
 
 
 .detailed-list-item {
-    margin:0px;
-    margin:0px;
-    margin:10px 0;
+    margin-top:20px;
+    margin-bottom:25px;
     display:inline-block;
 
     &:first-child {
         border:none;
+    }
+
+    img{
+        width: 100%;
+
+        &.border{
+            border:solid 1px $medMedGray;
+        }
     }
 
     .tag {
@@ -263,15 +270,35 @@ background: $medGray;
     }
     .title {
       font-size:1.4em;
-      margin:0;
+      line-height: 1.15;
+      margin:0 0 5px;
       color:#343434;
       font-family:  $med;
     }
+
+    .sub_title{
+        font-size:1em;
+        font-family:$med;
+        color:$medGray;
+    }  
+
     p.description, .description {
       font-size:1em;
       color:#343434;
       line-height:1.25;
       margin:0 0 5px;
+    }
+
+    .meta-info-wrapper{
+        color:$darkGray;
+
+        span{
+            margin:0 10px 0 0;
+          
+            i{
+                margin:0 5px 0 0;
+            }
+        }
     }
 }
 
