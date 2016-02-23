@@ -129,9 +129,8 @@ endif;
 
 <style>
     h1{
-        font-size:1.4em;
+        font-size:1.6em;
         font-family: "DIN Next W01 Medium",sans-serif;
-        margin-bottom: 3px;
     }
 
     .type a{
@@ -182,7 +181,7 @@ endif;
     }
 
     .type{
-        margin: 25px 0px 35px;
+        margin: 25px 0px 15px;
     }
 
     .detailed-link-wrapper .detailed-link:first-child{
@@ -228,32 +227,31 @@ endif;
             <a href="/?s=<?php echo $_GET['s']; ?>&amp;lang=<?php echo ICL_LANGUAGE_CODE; ?>&amp;type=newsfeed" class="<?php echo ($type == 'newsfeed') ? "selected" : null; ?>">Newsfeed</a>
         </nav>
 
-        <h1>
-            <?php 
-            if($type == 'newsfeed'):
-                $searchResultCount = count($posts_array).__(" Newsfeed ", "digital-river").__(" results", "digital-river").__(" for the search, ", 'digital-river')."&#8220;".$_GET['s']."&#8221;";
-            elseif($type == 'press_releases'):
-                $searchResultCount = count($posts_array).__(" Press Releases ", "digital-river").__("found for the search, ", 'digital-river')."&#8220;".$_GET['s']."&#8221;";
-            elseif($type == 'resources'):
-                $searchResultCount = count($posts_array).__(" Resources ", "digital-river").__("found for the search, ", 'digital-river')."&#8220;".$_GET['s']."&#8221;";
-            else:
-                $searchResultCount = count($posts_array).__(" Pages ", "digital-river").__("found for the search, ", 'digital-river')."&#8220;".$_GET['s']."&#8221;";
-            endif;
-            echo $searchResultCount;
-            ?>
-        </h1>
+
         <?php
         if (function_exists('relevanssi_didyoumean')) {
             relevanssi_didyoumean(get_search_query(), "<p>Did you mean: ", "</p>", 5);
         }
         ?>
 
-            <?php if (have_posts()) : ?>
-                <?php if(isset($posts_array) && count($posts_array) > 0): ?>
+            <?php if (have_posts() && isset($posts_array) && count($posts_array) > 0) : ?>
                 <section class="solution_results">
                     <div class="row detailed-link-wrapper">
                         <section class="col-md-7">
-
+                                <h1>
+                                    <?php 
+                                    if($type == 'newsfeed'):
+                                        $searchResultCount = count($posts_array).__(" Newsfeed ", "digital-river").__(" results", "digital-river").__(" for the search, ", 'digital-river')."&#8220;".$_GET['s']."&#8221;";
+                                    elseif($type == 'press_releases'):
+                                        $searchResultCount = count($posts_array).__(" Press Releases ", "digital-river").__("found for the search, ", 'digital-river')."&#8220;".$_GET['s']."&#8221;";
+                                    elseif($type == 'resources'):
+                                        $searchResultCount = count($posts_array).__(" Resources ", "digital-river").__("found for the search, ", 'digital-river')."&#8220;".$_GET['s']."&#8221;";
+                                    else:
+                                        $searchResultCount = count($posts_array).__(" Pages ", "digital-river").__("found for the search, ", 'digital-river')."&#8220;".$_GET['s']."&#8221;";
+                                    endif;
+                                    echo $searchResultCount;
+                                    ?>
+                                </h1>
                                 <?php
                                     $results_count = count($posts_array);
                                     $results_per_page = 10;
@@ -276,28 +274,28 @@ endif;
                                         for($i = 0; $i < $results_count; $i++):
                                             if($i >= $start):
                                                 if($i >= $end) break;
-                                                ?>
-                                                    <section class="solution detailed-link">
-                                                        <div class="text_container">
-                                                            <header class="title"><?php echo $posts_array[$i]->post_title; ?></header>
-                                                            <p class="intro"><?php echo $posts_array[$i]->content; ?></p>
-                                                        </div>
-                                                        <a href="<?php echo get_permalink($posts_array[$i]->ID); ?>" class="arrow"><?php _e('Details', 'search'); ?></a>
-                                                    </section>
-                                                <?php
+                                                $Detailed_List_Item = new DetailedListItem(
+                                                    $posts_array[$i]->post_title,
+                                                    $posts_array[$i]->content,
+                                                    get_permalink($posts_array[$i]->ID),
+                                                    array(
+                                                        "link_label" =>__('Details', 'digital-river')
+                                                    )
+                                                );
+                                                $Detailed_List_Item->display();
                                             endif;
                                         endfor;
                                     else:
                                         for($i = 0; $i <= $end; $i++):
-                                            ?>
-                                                <section class="solution detailed-link">
-                                                    <div class="text_container">
-                                                        <header class="title"><?php echo $posts_array[$i]->post_title; ?></header>
-                                                        <p class="intro"><?php echo $posts_array[$i]->content; ?></p>
-                                                    </div>
-                                                    <a href="<?php echo get_permalink($posts_array[$i]->ID); ?>" class="arrow"><?php _e('Details', 'search'); ?></a>
-                                                </section>
-                                            <?php
+                                            $Detailed_List_Item = new DetailedListItem(
+                                                $posts_array[$i]->post_title,
+                                                $posts_array[$i]->content,
+                                                get_permalink($posts_array[$i]->ID),
+                                                array(
+                                                    "link_label" =>__('Details', 'digital-river')
+                                                )
+                                            );
+                                            $Detailed_List_Item->display();
                                         endfor;
                                     endif;
                              ?>
@@ -369,7 +367,15 @@ endif;
                                 <?php
                                 foreach ($blog_array as $result):
                                     if($recent != true):
-                                        $Detailed_List_Item = new DetailedListItem($result->post_title, $result->content, get_permalink($result->ID), array("link_label" =>__('Details', 'digital-river')));
+                                        $Detailed_List_Item = new DetailedListItem(
+                                            $result->post_title,
+                                            $result->content,
+                                            get_permalink($result->ID),
+                                            array(
+                                                "link_label" =>__('Details', 'digital-river')
+                                            )
+                                        );
+
                                         $Detailed_List_Item->display();
                                     else:
                                         $Detailed_List_Item = new DetailedListItem($result->title, $result->description, $result->link);
@@ -382,10 +388,6 @@ endif;
                     <div class="clear"></div>
                     </div>
                 </section>
-                <?php endif; ?>
-
-    
-
             <div class="clear"></div>
             </div>
         <?php else : ?>

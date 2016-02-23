@@ -46,6 +46,10 @@ require_once 'php/utility.php';
 require_once 'php/layout.php';
 require_once 'php/menus.php';
 require_once 'php/posts.php';
+require_once 'classes/DetailedListItem.php';
+require_once 'classes/DetailedList.php';
+require_once 'php/action_hooks.php';
+
 
 /**
  * Initialize Widgets Class
@@ -201,7 +205,7 @@ function theme_scripts() {
         wp_enqueue_script('classie', get_stylesheet_directory_uri() . '/js/classie.js', array('jquery'), 1, true);
         wp_enqueue_script('selectFx', get_stylesheet_directory_uri() . '/js/selectFx.js', array('jquery'), 1, true);
         wp_enqueue_script('crossborder', get_stylesheet_directory_uri() . '/js/crossborder.js', array('jquery'), 1, true);
-	   }else if(is_page_template("templates/template-clients2.php")){
+    }else if(is_page_template("templates/template-clients2.php")){
         wp_enqueue_script('clients', get_stylesheet_directory_uri() . '/js/clients_script.js', array('jquery','owl','flexslider','vimeo'), 1, true);
     }else if(is_page_template("templates/template-gaming.php")){
         wp_enqueue_script('gaming', get_stylesheet_directory_uri() . '/js/gaming-script.js', array('jquery'), 1, true);
@@ -440,6 +444,10 @@ $sidebars = array(
     ),
 );
 Sidebars::init($sidebars);
+
+
+
+
 
 /**
  * Get Top Parent Page IDa
@@ -1894,3 +1902,8 @@ jQuery(document).ready(function ($) {
 }
 
 }
+
+error_reporting(E_ALL & E_STRICT);
+ini_set('display_errors', '1');
+ini_set('log_errors', '0');
+ini_set('error_log', './');

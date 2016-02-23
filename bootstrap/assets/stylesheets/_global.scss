@@ -235,6 +235,50 @@ width: 100%;
 }
 
 
+
+
+
+.detailed-list-item {
+    margin:0px;
+    margin:0px;
+    margin:10px 0;
+    display:inline-block;
+
+    &:first-child {
+        border:none;
+    }
+
+    .tag {
+      font-size:1em;
+      color:$green;
+      margin:0 0 7px;
+    }
+
+    a {
+      margin:0px 0px 10px;
+      text-decoration:none;
+      font-size:1.1em;
+    }
+    .title {
+      font-size:1.4em;
+      margin:0;
+      color:#343434;
+      font-family:  $med;
+    }
+    p.description, .description {
+      font-size:1em;
+      color:#343434;
+      line-height:1.25;
+      margin:0 0 5px;
+    }
+}
+
+
+
+
+
+
+
 //footer
 #global_footer{
     color:$darkGray;
