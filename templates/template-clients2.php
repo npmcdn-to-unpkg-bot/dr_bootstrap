@@ -5,19 +5,20 @@
 ?>
 <?php get_header(); ?>
 <?php get_template_part('masthead'); ?>
-
-	<div class='client_wrapper'>
-		<div class='client'>
+<div class="container clients-page">
+	<div class='client_wrapper '>
+        <div class="row">
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Logitech Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/logitech.png'); ?>' />
 			</div>
 		</div>
-		<div class='client'>
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('WildTangent Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/WildTangent_logo.png'); ?>' />
 			</div>
 		</div>
-		<div class='client'>
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Kaspersky Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Kaspersky.png'); ?>' />
 			</div>
@@ -28,15 +29,16 @@
 				<?php endif; ?>
 			</div>
 		</div>
-		<div class='client'>
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Microsoft Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Microsoft_4.23.png'); ?>' />
 			</div>
 		</div>
-		<div class='clear'></div>
+        </div>
 	</div>
 	<div class='client_wrapper'>
-		<div class='client client_quote_box flexslider'>
+        <div class="row">
+		<div class='client client_quote_box flexslider col-md-6'>
 			 <ul class="slides">
 			 	 <li class="content">
 			 	 	<p>“Putting all of the accounting, tax, and fraud monitoring capabilities and infrastructure in place would have been a lot of incremental work—and costly. The fact that Digital River did all of that for us made it possible for me to get up and running quickly, and made it a lot easier for the rest of my organization.”</p>
@@ -68,43 +70,45 @@
 			 	 </li>
 			 </ul>
 		</div>
-		<div class='client'>
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('HTC Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/HTC_logo.png'); ?>' />
 			</div>
 		</div>
-		<div class='client'>
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Lenovo Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Lenovo_logo.png'); ?>' />
 			</div>
 		</div>
-		<div class='clear'></div>
 	</div>
+</div>
 	<div class='client_wrapper'>
-		<div class='client'>
+        <div class="row">
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Arena Net Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/arenanet_logo.png'); ?>' />
 			</div>
 		</div>
-		<div class='client'>
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Citrix Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Citrix_4.23.png'); ?>' />
 			</div>
 		</div>
-		<div class='client'>
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Adobe Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Adobe-.png'); ?>' />
 			</div>
 		</div>
-		<div class='client'>
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Ubisoft Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Ubisoft.png'); ?>' />
 			</div>
 		</div>
-		<div class='clear'></div>
 	</div>
-		<div class='client_wrapper'>
-		<div class='client'>
+</div>
+    <div class='client_wrapper'>
+        <div class="row">
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('VMware Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/vmware_resized.png'); ?>' />
 			</div>
@@ -115,33 +119,27 @@
 				<?php endif; ?>
 			</div>
 		</div>
-		<div class='client'>
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Autodesk Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Autodesk_4.23.png'); ?>' />
 			</div>
 		</div>
-		<div class='client'>
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Trend Micro Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/trend_micro_logo.png'); ?>' />
 			</div>
 		</div>
-		<div class='client'>
+		<div class='client col-md-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('LG Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/lg_logo.png'); ?>' />
 			</div>
 		</div>
-		<div class='clear'></div>
 	</div>
-
-	<style>
-	.featured_area .featured {
-		width: 100%;
-		position: absolute;
-		top: 0px;
-	}
-	</style>
+</div>
 
 	<div class='featured_wrapper'>
+        <div class="row">
+        <div class="col-md-12">
 		<div class='featured_area'>
 			<div class='featured' id='featured_1'>
 				<div class='video_wrapper'>
@@ -217,8 +215,11 @@
 			</div>
 
 			</div>
-			<div class='clear'></div>
 		</div>
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-md-12">
 		<div class='tab_wrapper'>
 			<div class='tab'>
 				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 36.8 18.4" fill='#009AD7' xml:space="preserve">
@@ -226,6 +227,7 @@
 				</svg>
 			</div>
 		</div>
+            
 		<div id="featured_logos">
 
           <div class='item gray' id='logo_1' data-index='5'>
@@ -245,20 +247,22 @@
           </div>
 		</div>
 	</div>
+        </div>
+    </div>    
+<div class="row">
 	<?php if(!$_GET['lang']): ?>
-		<section class="client_success">
-			<div class='blue_tag_wrapper'>
+		<section class="client_success ">
+			<div class='blue_tag_wrapper col-md-4'>
 				<div class='blue_tag'>
-					<span><?php _e('Resources','digital-river'); ?></span>
+					<span class="green-under-line"><?php _e('Resources','digital-river'); ?></span>
 				</div>
-				<div class='clear'></div>
-			</div>
-			<div class='heading'>
+		
+			<div class='heading '>
 				<span><?php _e('Client','digital-river'); ?></span>
 				<span><?php _e('Success Stories','digital-river'); ?></span>
-				<div class='clear'></div>
 			</div>	
-			<div class='link_wrapper'>
+            </div>
+			<div class='link_wrapper col-md-3'>
 				<div class='links'>
 					<div class='header'><?php _e('Digital River','digital-river'); ?></div>
 					<!-- Translated Content -->
@@ -270,18 +274,20 @@
 					<li><a href='/solutions/marketing/vmware-client-success-story/' ><?php _e('VMware','digital-river'); ?></a></li>
 
 				</div>
-				<div class='links'>
+    </div>
+				<div class='links col-md-3'>
 					<div class='header'><?php _e('Digital River World Payments','digital-river'); ?></div>
 					<li><a href='/marketing_material/wildtangent-case-study/'>WildTangent</a></li>
 					<li><a href='/marketing_material/drwp-digital-music-service-case-study/'><?php _e('Digital Music Service','digital-river'); ?></a></li>
 					<li><a href='/marketing_material/drwp-klarna-success-story/'>Klarna</a></li>
 				</div>
-				<div class='clear'></div>
-			</div>
-			<div class='clear'></div>
+	
 		</section>
+    		</div>
 	<?php endif; ?>
-	<section class='go_global'>
+    <div class="row">
+        
+	<section class='go_global col-md-12'>
 		<div class='heading'><?php _e('Ready to go global?','digital-river'); ?></div>
 		<div class='contact_wrapper'>
 			<span><?php _e('Call us at +1-800-598-7450','digital-river'); ?></span>
@@ -294,4 +300,6 @@
 		</div>
 		<div class='clear'></div>
 	</section>
+    </div>
+</div>
 <?php get_footer(); ?>

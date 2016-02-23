@@ -13,7 +13,7 @@
         <div class="container blog_content_container">
             <div class="row">
                 <!-- Left Column -->
-                <div class="span_3 col left_column">
+                <div class="col-md-3 col left_column">
                     <?php get_template_part('partials/blog/sidebar', 'left'); ?>
                 </div>
 
@@ -188,7 +188,7 @@
                 $wp_query = $original_query;
                 wp_reset_postdata();
                 ?>
-                <div class="span_3 col last right_column">
+                <div class="col-md-3 col last right_column">
                     <?php get_template_part('partials/blog/sidebar', 'right'); ?>
                 </div>
                 <div class="clear"></div>
