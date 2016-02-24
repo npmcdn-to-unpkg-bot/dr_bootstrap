@@ -76,7 +76,7 @@
                               <span></span>
                             </div>
                         </div>
-                        <a class="demo" href="<?php echo $mobileInfo['request_demo_link']; ?>"><?php echo $mobileInfo['request_demo_text']; ?></a>
+                        <a class="demo hidden-lg hidden-md" href="<?php echo $mobileInfo['request_demo_link']; ?>"><?php echo $mobileInfo['request_demo_text']; ?></a>
                         <a class="phone_number" href="tel:<?php echo $mobileInfo['phone_number']; ?>"><span><?php echo $mobileInfo['phone_number']; ?></span></a>
 
                     </div>

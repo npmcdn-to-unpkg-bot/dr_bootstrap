@@ -748,6 +748,7 @@
                         &:hover{
                             ul{
                                 display:block;
+                                    z-index: 999;
                               
                                 @include customMediaQuery(768px){
                                     display:none;
