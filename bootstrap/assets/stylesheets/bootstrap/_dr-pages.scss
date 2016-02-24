@@ -165,15 +165,6 @@ h1.eyebrow, h4.eyebrow {
   color:#343438;
   font-family:Arial, sans-serif;
 }
-#template_j .widget h2, #template_j .widget h4, #template_j .widget .widget_title, #template_b .widget .widget_title, #template_b .widget h3 {
-  color:#111111;
-  font-size:2.1em;
-  line-height:36px;
- font-family: $eng;
-  font-weight:inherit;
-  text-transform:inherit;
-  margin-bottom:10px;
-}
 .our-locations-wrapper {
   font-family:$arial;
 }
@@ -433,23 +424,6 @@ h1.eyebrow, h4.eyebrow {
   }
 
 }
-#template_k .sidebar_container .categories li, #template_b.blog .sidebar_container .categories li, #template_k .sidebar_container .archives li, #template_b.blog .sidebar_container .archives li, #template_k .sidebar_container .about li, #template_b.blog .sidebar_container .about li {
-  font-style:italic;
-  margin-bottom:5px;
-  font-size:.85em;
-  font-family:$arial;
-}
-#template_b a {
-  font-size:inherit;
-  font-weight:inherit;
-  font-style:normal;
-  color:#007eb5;
-  display:inline-block;
-  text-decoration:none;
-  font-family:$arial;
-  text-transform:none;
-  line-height:1.15;
-}
 .main_content .posts .container .date {
   float:left;
   font-size:.92em;
@@ -607,44 +581,7 @@ a.button:hover {
 #footer-left, #footer-middle {
   margin-left:0%;
 }
-.detailed-link-wrapper {
-  margin-top:20px;
-  margin-right:4%;
-  .detailed-link {
-    margin:0px;
-    margin:0px;
-    border-top:solid 1px #8f9094;
-    padding:20px 0;
-    a {
-      margin:0px 0px 10px;
-      text-decoration:none;
-      //font-family:  @font-family-din;
-      font-size:1.1em;
-    }
-    .title {
-      font-size:1.4em;
-      margin:0;
-      color:#343434;
-      //font-family:  @font-family-din;
-    }
-    p.description {
-      font-size:1em;
-      color:#343434;
-      margin:7px 0 15px;
-      line-height:1.25;
-    }
-    .short-detail {
-      font-size:1em;
-      width:100%;
-      color:#81b315;
-      margin:0 0 7px;
-      //font-family:  @font-family-din;
-    }
-  }
-  .detailed-link:first-child {
-    border:none;
-  }
-}
+
 .sidebar {
   background:#f0f0f0;
   margin:15px 0;
@@ -654,26 +591,7 @@ a.button:hover {
   .eyebrow {
     margin:0 20px 10px 0;
   }
-  .title {
-    font-size:1.4em;
-    margin:0;
-    color:#343434;
-    //font-family: @font-family-din;
-  }
-  .detailed-link-wrapper {
-    margin-top:20px;
-    margin-right:0;
-    .detailed-link {
-      margin:0px;
-      border-top:solid 1px #8f9094;
-    }
-    .detailed-link:first-child {
-      border:none;
-    }
-    a.brackets {
-      margin:5px 1% 0;
-    }
-  }
+
   .accordion {
     margin:10px 0 0;
     .rail_tabbed_content {

@@ -205,12 +205,13 @@
           s.onload = initMunchkin;
           document.getElementsByTagName('head')[0].appendChild(s);
         })();
-
+/*
         (function(a,b,c,d){
             a='//tags.tiqcdn.com/utag/driv/main/prod/utag.js';
             b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
             a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
         })();
+                */
         </script>
 
         <?php wp_footer(); ?>

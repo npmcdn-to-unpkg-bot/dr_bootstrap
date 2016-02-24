@@ -13,12 +13,9 @@
         <div class="container blog_content_container">
             <div class="row">
                 <!-- Left Column -->
-                <div class="col-md-3 col left_column">
-                    <?php get_template_part('partials/blog/sidebar', 'left'); ?>
-                </div>
 
                 <!-- Middle Column -->
-                <div class="col-md-6 col middle_column">
+                <div class="col-md-9">
                     <div class="posts_container">
                         <?php
                         // Save the original query
@@ -93,80 +90,89 @@
                                 'total' => $wp_query->max_num_pages,
                                 'prev_text' => __('«'),
                                 'next_text' => __('»'),
+                                'type' => 'array'
                             ));
                         }
+
 
                         // Loops through the pages
                   if ( have_posts() ) :
                             while ( have_posts() ) :
                                 the_post(); 
+
+                            $featured = get_field('post_call_to_action', get_the_ID());
                         ?>
-                        <div class="post">
-                            <!-- Video or Image -->
-                            <div class="media_container">
-                                <?php if (get_field('post_call_to_action', get_the_ID()) === 'Image') : ?>
-                                    <img src="<?php the_field('post_image', get_the_ID()); ?>" alt="">
-                                <?php elseif (get_field('post_call_to_action', get_the_ID()) === 'Video') : ?>
-                                    <iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_video_id', get_the_ID()); ?>" class="span_12" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                                <?php endif; ?>
-                                <div class="clear"></div>
-                            </div>
-                            
-                            <?php if(is_single()): ?>
-                                <h1 class="title">
-                            <?php else: ?>
-                                <div class="title">
-                            <?php endif; ?>
-                                
-                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                <div class="detailed-list-item <?php echo ($featured === 'Image' || $featured === 'Video')?"row":null; ?>">
 
-                            <?php if(is_single()): ?>
-                                 </h1>
-                            <?php else: ?>
-                                </div>
-                            <?php endif; ?>
-                           
+                                    <?php if ($featured === 'Image' || $featured === 'Video'): ?>
+                                        <div class="col-md-5">
+                                            <?php if (get_field('post_call_to_action', get_the_ID()) === 'Image') : ?>
+                                                <img class='border' src="<?php the_field('post_image', get_the_ID()); ?>" alt="">
+                                            <?php elseif (get_field('post_call_to_action', get_the_ID()) === 'Video') : ?>
+                                                <iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_video_id', get_the_ID()); ?>" class="span_12" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                            <?php endif; ?>
+                                        </div>
 
-                            <!-- Author/Date -->
-                            <div class="author"><?php _e('By ','digital-river'); ?><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author_meta( 'display_name' ); ?></a> / <?php echo get_the_date('F j, Y'); ?></div>
+                                        <div class="col-md-7">
+                                    <?php endif; ?>
 
-                            <div class="dotted_splitter"></div>
 
-                            <!-- Content -->
-                            <div class="content post_content">
-                                <?php
-                                if (is_single()) {
-                                    the_content();
-                                } else {
-                                     vsprintf("<p>%s <a class='link' href='%s'>Read More</a></p>", array(the_excerpt(), get_permalink()));
-                                }
-                                ?>
-                            </div>
 
-                            <!-- Tags and Categories -->
-                            <?php if(is_single()) : ?>
-                                <div class="dotted_splitter tag_cat_split"></div>
-                                <div class="category_tag_box">
-                                    <div class="top_container">
-                                        <?php if (get_the_category_list()) : ?>
-                                            <div class="tags"><?php _e('Filed under:'); ?><br>
-                                                <?php echo get_the_category_list(', '); ?>
-                                            </div>
-                                        <?php endif; ?>
-                                        <?php if (get_the_tag_list()) : ?>
-                                            <br>
-                                            <div class="categories">Tagged as:<br>
-                                                <?php echo get_the_tag_list('', ', '); ?>
-                                            </div>
-                                        <?php endif; ?>
+                                    <?php if(is_single()): ?>
+                                        <h1 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                                    <?php else: ?>
+                                        <div class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                                    <?php endif; ?>
+
+                                    <!-- <div class="sub_title"><?php _e('By ','digital-river'); ?><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author_meta( 'display_name' ); ?></a> / <?php echo get_the_date('F j, Y'); ?></div> -->
+
+
+                                    <!-- Content -->
+                                    <div class="content post_content">
+                                        <?php
+                                        if (is_single()) {
+                                            the_content();
+                                        } else {
+                                             vsprintf("<p>%s <a class='link' href='%s'>Read More</a></p>", array(the_excerpt(), get_permalink()));
+                                        }
+                                        ?>
                                     </div>
+
+                                    <div class="meta-info-wrapper">
+                                        <span><i class="fa fa-user"></i><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author_meta( 'display_name' ); ?></a></span>
+                                        <span><i class="fa fa-calendar-o"></i><?php echo get_the_date('F j, Y'); ?></span>
+                                    </div>
+
+
+                                    <!-- Tags and Categories -->
+                                    <?php if(is_single()) : ?>
+                                        <div class="dotted_splitter tag_cat_split"></div>
+                                        <div class="category_tag_box">
+                                            <div class="top_container">
+                                                <?php if (get_the_category_list()) : ?>
+                                                    <div class="tags"><?php _e('Filed under:'); ?><br>
+                                                        <?php echo get_the_category_list(', '); ?>
+                                                    </div>
+                                                <?php endif; ?>
+                                                <?php if (get_the_tag_list()) : ?>
+                                                    <br>
+                                                    <div class="categories">Tagged as:<br>
+                                                        <?php echo get_the_tag_list('', ', '); ?>
+                                                    </div>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment_template">
+                                        <?php comments_template(); ?>
+                                        </div>
+                                    <?php endif; ?>
+
+                                    <?php if ($featured === 'Image' || $featured === 'Video'): ?>
+                                        </div>
+                                    <?php endif; ?>
                                 </div>
 
-                                <div class="comment_template">
-                                <?php comments_template(); ?>
-                                </div>
-                            <?php endif; ?>
-                        </div>
                         <?php endwhile; else: ?>
                         <div class="no_results_found">
                             <h2><?php _e('Sorry, no posts matched your criteria.','digital-river'); ?></h2>
@@ -175,10 +181,13 @@
 
                         <!-- Pagination -->
                         <?php if (isset($pagination_links)) : ?>
-                        <div class="pagination_links">
-                            <?php echo $pagination_links; ?>
-                            <div class="clear"></div>
-                        </div>
+                        <nav>
+                            <ul class="pagination">
+                                <?php foreach ( $pagination_links as $key => $page_link ) : ?>
+                                    <li class="paginated_link<?php if ( strpos( $page_link, 'current' ) !== false ) { echo ' active'; } ?>"><?php echo $page_link ?></li>
+                                <?php endforeach ?>
+                            </ul>
+                        </nav>    
                         <?php endif; ?>
                     </div>
                 </div>
@@ -188,11 +197,17 @@
                 $wp_query = $original_query;
                 wp_reset_postdata();
                 ?>
-                <div class="col-md-3 col last right_column">
-                    <?php get_template_part('partials/blog/sidebar', 'right'); ?>
+                
+                <div class="col-md-3">
+                    <div class="sidebar">
+                        <?php get_template_part('partials/blog/sidebar', 'left'); ?>
+                    </div>
                 </div>
-                <div class="clear"></div>
+
+                
             </div>
+
+
         </div>
     </div>
 <?php get_footer(); ?>

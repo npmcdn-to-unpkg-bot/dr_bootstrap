@@ -16,7 +16,9 @@
 
         <?php renderVideoSectionOnPage(get_the_ID()); ?>
 
-        <?php initResourcesSection(); ?>
+        <?php //initResourcesSection(); ?>
+
+        <?php do_action("relevant_resources"); ?>
 </section>
 
 <?php get_footer(); ?>

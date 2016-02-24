@@ -239,6 +239,77 @@ font-size: 1.1em;
 }
 
 
+
+
+
+.detailed-list-item {
+    margin-top:20px;
+    margin-bottom:25px;
+    display:inline-block;
+
+    &:first-child {
+        border:none;
+    }
+
+    img{
+        width: 100%;
+
+        &.border{
+            border:solid 1px $medMedGray;
+        }
+    }
+
+    .tag {
+      font-size:1em;
+      color:$green;
+      margin:0 0 7px;
+    }
+
+    a {
+      margin:0px 0px 10px;
+      text-decoration:none;
+      font-size:1.1em;
+    }
+    .title {
+      font-size:1.4em;
+      line-height: 1.15;
+      margin:0 0 5px;
+      color:#343434;
+      font-family:  $med;
+    }
+
+    .sub_title{
+        font-size:1em;
+        font-family:$med;
+        color:$medGray;
+    }  
+
+    p.description, .description {
+      font-size:1em;
+      color:#343434;
+      line-height:1.25;
+      margin:0 0 5px;
+    }
+
+    .meta-info-wrapper{
+        color:$darkGray;
+
+        span{
+            margin:0 10px 0 0;
+          
+            i{
+                margin:0 5px 0 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
 //footer
 #global_footer{
     color:$darkGray;

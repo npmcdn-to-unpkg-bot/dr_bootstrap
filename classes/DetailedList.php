@@ -1,75 +1,85 @@
 <?php
 
-class DetailedListItem{
-	public $title;
-	public $description;
-	public $link;
-	public $optional = array(
-		"link_label" => "Read More",
-		"external_link" => "false",
-		"new_page" => false,
-		"tag" => null,
-		"button" => false
-	);
+class DetailedList{
+	public $area;
+	public $detailed_list_array;
 
-	function __construct($title, $description, $link, $optional) {
-		$this->title = $title;
-		$this->description = $description;
-		$this->link = $link;
-		$this->optional = array_merge($this->optional, $optional);
+	function __construct($detailed_list_array) {
+		$this->detailed_list_array = $detailed_list_array;
 	}
 
-	private function getTitle(){
-		return $this->title;
+	function getDetailedList(){
+		return $this->detailed_list_array;
 	}
 
-	private function setTitle($new_title){
-		$this->title = $new_title;
-		return true;
+	function setDetailedList($newDetailedList){
+		$this->detailed_list_array = $newDetailedList;
 	}
 
-
-	private function getDescription(){
-		return $this->title;
+	function getNumOfDetailedListItems(){
+		return count($this->getDetailedList());
 	}
 
-	private function setDescription($new_description){
-		$this->title = $new_title;
-		return true;
+	function display($area = null){
+
+		if($area == null):
+			$detailed_list_array = $this->getDetailedList();
+			foreach ($detailed_list_array as $key => $detailed_list):
+				echo $detailed_list->display();
+			endforeach;
+		else:
+			$this->slider();
+		endif;
 	}
 
-
-	private function getLink(){
-		return $this->link;
-	}
-
-	private function setLink($new_link){
-		$this->link = $new_link;
-		return true;
-	}
-
-
-	private function getOptional(){
-		return $this->optional;
-	}
-
-	private function setOptional($new_optional){
-		$this->optional = array_merge($this->optional, $new_optional);
-		return true;
-	}
-
-
-	public function display(){
-		$optional = $this->getOptional();
+	public function slider($hp = null){
 		?>
-		<div class='item'>
-			<?php if($optional['tag'] != null): ?>
-				<div class='tag'><?php echo $this->optional['tag']; ?></div>
-			<?php endif; ?>
-			<div class='title'><?php echo $this->getTitle(); ?></div>
-			<p class='description'><?php echo $this->getDescription(); ?></p>
-			<a <?php echo ($optional['external_link'] != false)?' rel="nofollow" ':null; ?> <?php echo ($optional['new_page'] != false)?' target="_blank" ':null; ?> class="<?php if($optional['button'] == false)? ' arrow ':' button ' ?> arial" href="<?php echo $this->getLink(); ?>"><?php echo $optional['link_label']; ?></a>
-		</div>
+			<section class="resources-wrapper">
+				<?php if($hp == null): ?>
+				<div class='row2'>
+					<div class="eyebrow">Resources</div>
+					<div class='clear'></div>	
+				<?php else: ?>
+					<div class='row'>
+					        <div class="span_6 title">
+                                <h2 class='eyebrow eng'>Resources</h2>
+                                <a href="<?php echo get_permalink(695); ?>">[ More Resources ]</a>
+                            </div>
+				<?php endif; ?>
+					<div class='span_12 last'>
+						<div class="link_wrapper">
+							<?php $numOfResources = $this->getNumOfDetailedListItems(); ?>
+							<?php if($numOfResources <= 3): ?>
+								<style>
+									.owl-next, .owl-prev{display: none !important;}
+								</style>
+							<?php endif; ?>
+
+							<?php if($numOfResources <= 2): ?>
+								<style>
+									@media only screen and (max-width: 1000px) {
+									    .resources-wrapper .owl-next, .resources-wrapper .owl-prev{
+									        display: none !important;
+									    } 
+									}
+								</style>
+							<?php endif; ?>
+							<div id='resources' class="links">
+								<?php
+								$detailed_list_items = $this->getDetailedList();
+								foreach($detailed_list_items as $detailed_list_item):
+									$detailed_list_item->display();
+								endforeach;
+								?>
+								</div>
+							<div class="clear"></div>
+						</div>
+						<div class='clear'></div>
+					</div>
+				<div class="clear"></div>
+				</div>
+			</section>
 		<?php
 	}
+
 }

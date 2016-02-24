@@ -304,6 +304,7 @@
                                 <a href="<?php echo get_permalink(459); ?>">[ More News ]</a>
                             </div>
                             <?php
+                        /*
                             $resourcesSection = new ResourcesSection($posts);
                             $resourcesSection->displayPressReleases();
                             ?>
@@ -326,6 +327,7 @@
                             $posts = get_posts($args);
                             $resourcesSection = new ResourcesSection($posts);
                             $resourcesSection->display(true);
+                         */
                             ?>
                             
                    

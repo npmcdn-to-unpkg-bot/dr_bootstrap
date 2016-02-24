@@ -12,6 +12,11 @@ jQuery(document).ready(function ($) {
         $(this).siblings(".sub-menu").toggleClass("active");
     });
 
+
+
+    /*
+    **  Start Search Functionality
+    */
     $("#search_form").on("click", function(){
         $(this).toggleClass("active");
         $("#top-nav").toggleClass("search_active");
@@ -19,6 +24,12 @@ jQuery(document).ready(function ($) {
         $(this).find(".search_box").focus();
         $("#search_form").off();
     });
+
+    /*
+    **  End Search Functionality
+    */
+
+
 
 
 
@@ -41,11 +52,6 @@ jQuery(document).ready(function ($) {
     }
     google.maps.event.addDomListener(window, 'load', updateMap);
 
-
-	/*
-    **  Removed placeholder because they are not translated 
-    */
-    //$("#search").attr("placeholder","Search...");
 
     function getLocation(url) {
         a = document.createElement('a');
@@ -181,61 +187,7 @@ $(".link-section").on("click", function(){
 		$('.rail_tabbed_content').sidebar_tabs();
 
 
-    $('#home .accordion').mobile_home_accordion();
-    $('.main_nav_button').mobile_menu({
-        menu : '#main_mobile_navigation',
-        hide_sub : true
-    });
-    $('.utility_nav_button').mobile_menu({
-        menu : '#utility_mobile_navigation',
-        hide_sub : false
-    });
-
-    // Social footer animations
-    $('a.twitter').parent().hover(function() {
-        $('a.twitter-on').stop().fadeIn(500);
-    }, function() {
-        $('a.twitter-on').fadeOut(500);
-    });
-
-    // Social footer animations
-    $('a.vimeo').parent().hover(function() {
-        $('a.vimeo-on').stop().fadeIn(500);
-    }, function() {
-        $('a.vimeo-on').fadeOut(500);
-    });
-
-    // Social footer animations
-    $('a.rss').parent().hover(function() {
-        $('a.rss-on').stop().fadeIn(200);
-    }, function() {
-        $('a.rss-on').fadeOut(200);
-    });
-
     var lastScrollTop = 0;
-
-    $('#global_submenu .body .industries .industry_link').hover(function() {
-
-
-        $(this).stop().animate({
-            'background-color': '#009ad7'
-        });
-
-        $(this).children('div.image').stop().animate({
-            'margin-top': '-5px'
-        });
-    }, function() {
-        $(this).stop().animate({
-            'background-color': '#21272e'
-        });
-        $(this).children('div.image').stop().animate({
-            'margin-top': '0px'
-        });
-    });
-
-    // Redraws the images in the case studies logo container - Safari 5.x
-    var safari_tab_fix = $('#case_studies .tab .logo_container img, #home #thirds_widget_area .header');
-    safari_tab_fix.offsetHeight;
 
 
 	$(".menu_title img").on("click",function(){
@@ -250,7 +202,6 @@ $(".link-section").on("click", function(){
 				// the map in the footer gets off center for some reason when changing the width of the page
 				// recenter the map
 			if(typeof map !== 'undefined' && typeof marker !== 'undefined'){
-				console.log(map);
 				if(map.getCenter() != marker.getPosition()){
 						var mapCenter = marker.getPosition();
 						map.setCenter(mapCenter);

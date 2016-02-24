@@ -46,6 +46,10 @@ require_once 'php/utility.php';
 require_once 'php/layout.php';
 require_once 'php/menus.php';
 require_once 'php/posts.php';
+require_once 'classes/DetailedListItem.php';
+require_once 'classes/DetailedList.php';
+require_once 'php/action_hooks.php';
+
 
 /**
  * Initialize Widgets Class
@@ -88,7 +92,7 @@ wp_enqueue_style( 'bootstrap-css' );
     //wp_register_style('reset', get_stylesheet_directory_uri() . '/css/reset.css', array(), 1, $media = 'all');
     //wp_register_style('1140', get_stylesheet_directory_uri() . '/css/1140.css', array(), 1, $media = 'all');
     // wp_register_style('flexslider', get_stylesheet_directory_uri() . '/css/flexslider.css', array(), '1', $media = 'all');
-    wp_register_style('fonts', "http://fast.fonts.net/cssapi/e751fdd6-8b91-4eb8-bf68-ce897a01e3b8.css", array(), '1', $media = 'all');
+    wp_register_style('fonts', get_stylesheet_directory_uri()."/fonts/font.css", array(), '1', $media = 'all');
     wp_register_style('icons', "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", array(), '1', $media = 'all');
     // wp_register_style('global', get_stylesheet_directory_uri() . '/css/global.css', array(), '1', $media = 'all');
 
@@ -200,7 +204,7 @@ function theme_scripts() {
         wp_enqueue_script('classie', get_stylesheet_directory_uri() . '/js/classie.js', array('jquery'), 1, true);
         wp_enqueue_script('selectFx', get_stylesheet_directory_uri() . '/js/selectFx.js', array('jquery'), 1, true);
         wp_enqueue_script('crossborder', get_stylesheet_directory_uri() . '/js/crossborder.js', array('jquery'), 1, true);
-	   }else if(is_page_template("templates/template-clients2.php")){
+    }else if(is_page_template("templates/template-clients2.php")){
         wp_enqueue_script('clients', get_stylesheet_directory_uri() . '/js/clients_script.js', array('jquery','owl','flexslider','vimeo'), 1, true);
     }else if(is_page_template("templates/template-gaming.php")){
         wp_enqueue_script('gaming', get_stylesheet_directory_uri() . '/js/gaming-script.js', array('jquery'), 1, true);
@@ -439,6 +443,10 @@ $sidebars = array(
     ),
 );
 Sidebars::init($sidebars);
+
+
+
+
 
 /**
  * Get Top Parent Page IDa
@@ -1893,3 +1901,8 @@ jQuery(document).ready(function ($) {
 }
 
 }
+
+error_reporting(E_ALL & E_STRICT);
+ini_set('display_errors', '1');
+ini_set('log_errors', '0');
+ini_set('error_log', './');

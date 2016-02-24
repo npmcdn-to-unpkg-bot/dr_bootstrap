@@ -5986,6 +5986,46 @@ h4 {
       font-size: 50em;
       line-height: 1.15; } }
 
+.detailed-list-item {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  display: inline-block; }
+  .detailed-list-item:first-child {
+    border: none; }
+  .detailed-list-item img {
+    width: 100%; }
+    .detailed-list-item img.border {
+      border: solid 1px #CCC; }
+  .detailed-list-item .tag {
+    font-size: 1em;
+    color: #a8c628;
+    margin: 0 0 7px; }
+  .detailed-list-item a {
+    margin: 0px 0px 10px;
+    text-decoration: none;
+    font-size: 1.1em; }
+  .detailed-list-item .title {
+    font-size: 1.4em;
+    line-height: 1.15;
+    margin: 0 0 5px;
+    color: #343434;
+    font-family: "DIN Next W01 Medium", sans-serif; }
+  .detailed-list-item .sub_title {
+    font-size: 1em;
+    font-family: "DIN Next W01 Medium", sans-serif;
+    color: #646464; }
+  .detailed-list-item p.description, .detailed-list-item .description {
+    font-size: 1em;
+    color: #343434;
+    line-height: 1.25;
+    margin: 0 0 5px; }
+  .detailed-list-item .meta-info-wrapper {
+    color: #343434; }
+    .detailed-list-item .meta-info-wrapper span {
+      margin: 0 10px 0 0; }
+      .detailed-list-item .meta-info-wrapper span i {
+        margin: 0 5px 0 0; }
+
 #global_footer {
   color: #343434;
   padding: 2.25em 0;
@@ -6173,15 +6213,6 @@ h1.eyebrow, h4.eyebrow {
   color: #000000;
   color: #343438;
   font-family: Arial, sans-serif; }
-
-#template_j .widget h2, #template_j .widget h4, #template_j .widget .widget_title, #template_b .widget .widget_title, #template_b .widget h3 {
-  color: #111111;
-  font-size: 2.1em;
-  line-height: 36px;
-  font-family: "DIN 1451 W01 Engschrift", sans-serif;
-  font-weight: inherit;
-  text-transform: inherit;
-  margin-bottom: 10px; }
 
 .our-locations-wrapper {
   font-family: "Arial", sans-serif; }
@@ -6409,23 +6440,6 @@ h1.eyebrow, h4.eyebrow {
     font-family: "Arial", sans-serif;
     margin-bottom: 0px;
     height: 60px; }
-
-#template_k .sidebar_container .categories li, #template_b.blog .sidebar_container .categories li, #template_k .sidebar_container .archives li, #template_b.blog .sidebar_container .archives li, #template_k .sidebar_container .about li, #template_b.blog .sidebar_container .about li {
-  font-style: italic;
-  margin-bottom: 5px;
-  font-size: .85em;
-  font-family: "Arial", sans-serif; }
-
-#template_b a {
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: normal;
-  color: #007eb5;
-  display: inline-block;
-  text-decoration: none;
-  font-family: "Arial", sans-serif;
-  text-transform: none;
-  line-height: 1.15; }
 
 .main_content .posts .container .date {
   float: left;
@@ -6700,35 +6714,6 @@ a.button:hover {
 #footer-left, #footer-middle {
   margin-left: 0%; }
 
-.detailed-link-wrapper {
-  margin-top: 20px;
-  margin-right: 4%; }
-  .detailed-link-wrapper .detailed-link {
-    margin: 0px;
-    margin: 0px;
-    border-top: solid 1px #8f9094;
-    padding: 20px 0; }
-    .detailed-link-wrapper .detailed-link a {
-      margin: 0px 0px 10px;
-      text-decoration: none;
-      font-size: 1.1em; }
-    .detailed-link-wrapper .detailed-link .title {
-      font-size: 1.4em;
-      margin: 0;
-      color: #343434; }
-    .detailed-link-wrapper .detailed-link p.description {
-      font-size: 1em;
-      color: #343434;
-      margin: 7px 0 15px;
-      line-height: 1.25; }
-    .detailed-link-wrapper .detailed-link .short-detail {
-      font-size: 1em;
-      width: 100%;
-      color: #81b315;
-      margin: 0 0 7px; }
-  .detailed-link-wrapper .detailed-link:first-child {
-    border: none; }
-
 .sidebar {
   background: #f0f0f0;
   margin: 15px 0;
@@ -6737,20 +6722,6 @@ a.button:hover {
   box-sizing: border-box; }
   .sidebar .eyebrow {
     margin: 0 20px 10px 0; }
-  .sidebar .title {
-    font-size: 1.4em;
-    margin: 0;
-    color: #343434; }
-  .sidebar .detailed-link-wrapper {
-    margin-top: 20px;
-    margin-right: 0; }
-    .sidebar .detailed-link-wrapper .detailed-link {
-      margin: 0px;
-      border-top: solid 1px #8f9094; }
-    .sidebar .detailed-link-wrapper .detailed-link:first-child {
-      border: none; }
-    .sidebar .detailed-link-wrapper a.brackets {
-      margin: 5px 1% 0; }
   .sidebar .accordion {
     margin: 10px 0 0; }
     .sidebar .accordion .rail_tabbed_content {
