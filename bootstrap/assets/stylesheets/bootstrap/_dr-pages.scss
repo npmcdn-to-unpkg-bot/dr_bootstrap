@@ -36,6 +36,26 @@ h1.eyebrow, h4.eyebrow {
         }
     }
 
+/*Green Clients Slider */
+#clients {
+    .title {
+    h2 {
+            font-family: $eng;
+    text-transform: uppercase;
+    font-size: 2.7em;
+    font-weight: inherit;
+        color: $white;
+    }
+}
+    a {
+        font-family: $eng;
+        text-transform: uppercase;
+        margin-left: 1em;
+        font-size: 1.2em;
+    }    
+}
+
+
 #template_j {
   a.button, .content .cta_box a.button {
     padding:12px 12px 7px;
@@ -334,10 +354,20 @@ h1.eyebrow, h4.eyebrow {
 }
 
        .solution-content-wrapper {
-    border-bottom:solid 1px #cccccc;
-  }
+    border-bottom:solid 1px $medMedGray;
+    padding: 1em;       
+           .content {
+               position: relative;
+               min-height: 180px;
+
+           }  
+           a.button {
+               position: absolute;
+               bottom: 5px;
+           }       
+    }
     .row .content:first-child {
-    border-right:solid 1px #cccccc;
+    border-right:solid 1px $medMedGray;
   }
 
 #template_f {
@@ -466,7 +496,7 @@ font-family: $eng;
   color:#343438;
   margin-bottom:5px;
   text-transform:uppercase;
-  cursor:pointer;
+  cursor:pointer;  
 }
 .contact-box {
   background-color:#ffffff;
@@ -699,12 +729,10 @@ a.button:hover {
   padding-left: 0px;
 }
  .breadcrumbs {
-
   z-index: 75;
   font-size: .92em;
   line-height: 20px;
   position: relative;
-  font-family:'HelveticaNeueW01-55Roma';
   margin: 0 auto 21px;
 padding-top: 20px;
 color:#FFFFFF;
@@ -737,23 +765,23 @@ width:100%;
     max-width: 980px;
     font-weight: 300;
     letter-spacing: .5px;
-}
+    font-family: $eng;
+    }
 
 
  .tagline {
-
   font-size: 1.7em;
   line-height: 24px;
   letter-spacing: -10%;
   margin: 15px 0 17px 0;
-  font-family: 'DIN1451W01-Mittelschrif';
+
   padding-right: 30px;
 }
  .subtitle {
 font-size: 1.28em;
 margin: 10px auto 33px;
 line-height: 25px;
-font-family: "HelveticaNeueW01-55Roma";
+font-family: $arial;
 padding-left: 0px;
 color: #FFF;
 max-width: 980px;
@@ -1042,10 +1070,14 @@ padding-bottom: 25%;
   -ms-user-select: none;
   user-select: none;
 }
+.owl-carousel .owl-item a {
+}
 .owl-carousel .owl-item img {
   display: block;
   width: 100%;
   -webkit-transform-style: preserve-3d;
+ margin-top: -20px;
+
 }
 .owl-carousel.owl-text-select-on .owl-item {
   -webkit-user-select: auto;
@@ -1160,7 +1192,6 @@ padding-bottom: 25%;
 .owl-theme
 {
 .owl-controls{
-	margin-top: 10px;
 	text-align: center;
 }
 

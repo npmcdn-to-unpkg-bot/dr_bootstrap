@@ -140,8 +140,8 @@
                                       </a>
                                         
                                         </div>
-                                        <p>
-                                            <br/>
+                                        
+                                    </div>
                                         <div class="head"><?php _e('Corporate Headquarters','digital-river'); ?></div>
                                     <div class="address-wrapper">
                                         
@@ -152,16 +152,14 @@
                                     </div>
 
 
-                                </div>
                                        <div class="col-md-4">
 
                                 <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?&sensor=false'></script>
-								<div id='map_canvas' style='height:265px; width:200px;'></div>
+								<div id='map_canvas'></div>
 
 
 
                                 </div>
-                                                            </div>
   
                          
                         <div class="row">

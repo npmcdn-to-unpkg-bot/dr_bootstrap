@@ -2,7 +2,7 @@ $bootstrap-sass-asset-helper: false !default;
 //
 // Variables
 // --------------------------------------------------
-$defaultFontSize: 16;
+
 
 
 //== Colors
@@ -85,6 +85,7 @@ $arial: 'Arial', sans-serif;
 $font-family-base:        $eng !default;
 
 $font-size-base:          14px !default;
+$defaultFontSize:         14;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
