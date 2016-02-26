@@ -1354,11 +1354,27 @@ padding-bottom: 25%;
 /* Tabbed Content */
 
 #template_b {
+    .widget {
+    h2 {
+    font-size: 3em;
+    color: $blue;
+    margin-bottom: .25em;
+    font-weight: 300;
+        text-transform: none;
+        font-family: $eng;
+}
+    }
     .tabbed_content {
-        
+        .tab_row:first-of-type {
+        margin-top: 2em;
+        border-top: 2px solid $green;
+        padding-top: 2em;
+        }    
+    
 .tab_header img {
   width: 100%;
   padding: 0 .1em .2em 0;
+cursor: pointer;
 }
 .image .overlay.selected {
   top: 0;
@@ -1368,46 +1384,67 @@ padding-bottom: 25%;
   background: url('../../../img/tc_selected_overlay.png');
   position: absolute;
 }
-        .tab_header img {
-  -webkit-filter: grayscale(50%);
-  -moz-filter: grayscale(50%);
-  filter: grayscale(50%);
+    .tab_header {
+    padding: .25em;
+    border: 1px solid #CCC;    
+   img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+-moz-transition: .5s -moz-filter linear;
+-moz-transition: .5s filter linear;
+-ms-transition: .5s -ms-filter linear;
+-o-transition: .5s -o-filter linear;
+transition: .5s filter linear;
 }
-       .tab_header img:hover {
+
+ img:hover {
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
   filter: grayscale(0);
+
 }
 
-.tab_header img.gray-disabled {
+ img.gray-disabled {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
 }
-.tab_header .title {
-  width: 100%;
-  height: 2.2em;
-  font-size: 1.5em;
-  line-height: 2.8em;
-  margin-top: -3em;
-  position: relative;
-  color: $blue;
-  background: url('../../../img/name_bg.png');
-}
-.tab_header .title .text {
+ .title {
+    width: 90%;
+    height: 2.2em;
+    font-size: 1.5em;
+    line-height: 2.8em;
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    color: #00a7e1;
+    background: url("../../../img/name_bg.png");
+    margin: 0 5% 0 5% 0;
+    margin-bottom: 1%;
+        
+.text {
   margin-left: .4em;
+    }
+.arrow {
+top: .4em;
+    right: 4%;
+    width: 1.8em;
+    height: 1.8em;
+    cursor: pointer;
+    position: absolute;
+    background: url("../../../img/tab_down_arrow.png") no-repeat;
+
 }
-.tab_header .title .arrow {
-  top: .4em;
-  right: .4em;
-  width: 1.8em;
-  height: 1.8em;
-  cursor: pointer;
-  position: absolute;
-  background: url('../../../img/tab_down_arrow.png');
+     .arrow:after {
+         display: none;
+     }     
+.arrow.selected {
+  background: url('../../../img/tab_up_arrow.png') no-repeat;
+        bottom: -.3em;
+    right: -1%;
 }
-.tab_header .title .arrow.selected {
-  background: url('../../../img/tab_up_arrow.png');
-}
+        }
+        }
  .tab {
   margin-bottom: 1.8em;
 }
@@ -1418,13 +1455,13 @@ padding-bottom: 25%;
   display: none;
   position: relative;
   margin: 0 2% 1.8em 0;
-  padding: 4em .8em  5em .8em;
+  padding: 3em .8em  5em .8em;
   border-top: 2px solid $green;
   border-bottom: 2px solid $green;
 }
  .tab_content_container h1 {
   font-size: 4em;
-  line-height: 6em;
+  line-height: 1em;
   color: $blue;
   font-weight: 300;
 }

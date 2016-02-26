@@ -10,7 +10,7 @@
     <section id="template_b" class="content_container container">
         <div class="left_border"></div>
             <div class="row">
-                <section class="main_content col-md-8">
+                <section class="main_content col-md-7">
 
                         <?php
                         $cat = get_the_category( $post->orig_id );
@@ -62,7 +62,7 @@
                 <div class="border_left"></div>
 
                 <!-- Sidebar -->
-                <section class="rail col-md-4 last col">
+                <section class="rail col-md-4 col-md-offset-1 last col">
                     <?php
                     change_sidebar_context();
                     dynamic_sidebar_cache('template_b_right_sidebar');
