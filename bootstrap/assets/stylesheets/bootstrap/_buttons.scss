@@ -94,6 +94,14 @@ a.btn {
     color:$white;
   }
 }
+.btn-secondary{
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+.btn-opposite{
+  @include button-variant($white, transparent, $white);
+}
+
+/*
 // Success appears as green
 .btn-success {
   @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
@@ -110,7 +118,7 @@ a.btn {
 .btn-danger {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
-
+*/
 
 // Link buttons
 // -------------------------

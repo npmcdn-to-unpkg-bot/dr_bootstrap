@@ -79,7 +79,7 @@
 
 			    	var $thisWidth = $(this).width();
 			    	$overlay.addClass("active");
-	    			var top = $(this).offset().top;
+	    			var top = $(this).offset().top+27;
 	     			var left = $(this).offset().left;
      				var color = $("div[data-barid='"+barId+"']").find(".bar").css("background-color");
 					$overlay.find(".tab").css("border-right", "8px solid "+color );
@@ -102,14 +102,16 @@
 		     	$(".icon").css({height:((100/numOfBars))+"%"});
 
 		     	for(var i = 0; i < numOfBars; i++){
+		     		console.log(i);
 		 			if(rankings[selectedId]['industries'][0]['percentage'] == false){
 
 			     		if(i == 0){
 			 				var winning = rankings[selectedId]["industries"][i]["value"];
-			 			}else if(winning < rankings[selectedId]["industries"][i]["value"]){
+			 			}else if(parseFloat(winning) < parseFloat(rankings[selectedId]["industries"][i]["value"])){
 			 				winning = rankings[selectedId]["industries"][i]["value"];
 			 			}
-			 			console.log(winning);
+		     			console.log(typeof winning);
+
 		 			}
 		 			var $thisBarWrapper = $(".bar-wrapper[data-barid='"+barArray[i]+"']");
 		 			$thisBarWrapper.css({height:(100/numOfBars)+"%", paddingTop: ".5%", paddingBottom: ".5%"});

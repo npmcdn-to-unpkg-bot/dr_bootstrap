@@ -20,6 +20,10 @@ define('CUSTOM_WIDGETS_FIELD_KEY', 'field_227');
 // Transient key store id
 define('TRANSIENT_KEY_STORE_ID', 'transient_key_store');
 
+
+// update_option( 'siteurl', 'http://localhost' );
+// update_option( 'home', 'http://localhost' );
+
 /* -----------------------------------------------------------------------------
   Don't Edit Below This Line
 ----------------------------------------------------------------------------- */
@@ -103,7 +107,7 @@ wp_enqueue_style( 'bootstrap-css' );
 //    wp_register_style('grid', get_stylesheet_directory_uri() . '/css/grid.css', array(), '1', $media = 'all');
   //  wp_register_style('selectBox', get_stylesheet_directory_uri() . '/css/cs-select.css', array(), '1', $media = 'all');
     //wp_register_style('selectBox_styling', get_stylesheet_directory_uri() . '/css/cs-skin-elastic.css', array('selectBox'), '1', $media = 'all');
-    wp_register_style('crossborder_style', get_stylesheet_directory_uri() . '/css/crossborder-styles.css', array('new_global', 'grid', 'selectBox_styling'), '1', $media = 'all');
+    wp_register_style('crossborder_style', get_stylesheet_directory_uri() . '/bootstrap/assets/stylesheets/crossborder-styles.css', array(), '1', $media = 'all');
     wp_register_style('interactive_style_1', get_stylesheet_directory_uri() . '/css/interactive/drwpStyles.css', array('fonts','new_global','icons'), '1', $media = 'all');
     wp_register_style('interactive_style_2', get_stylesheet_directory_uri() . '/css/interactive/interactiveMap.css', array('fonts','new_global','icons','interactive_style_1'), '1', $media = 'all');
     wp_register_style('payments_style', get_stylesheet_directory_uri() . '/css/payments.css?54', array('new_global','grid', 'owl_carousel','owl_theme'), '1', $media = 'all');
