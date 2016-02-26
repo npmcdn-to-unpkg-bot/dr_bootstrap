@@ -1,4 +1,6 @@
-<div class="widget featured_content ww_page row <?php echo ($hide_on_responsive)? 'hide_on_mobile': ''; ?>">
+<div class="row">
+<div class="col-md-12">       
+<div class="widget featured_content ww_page <?php echo ($hide_on_responsive)? 'hide_on_mobile': ''; ?>">
     <?php if ($header_text) : ?>
         <h3 class="header green-under-line"><?php _e($header_text,'digital-river'); ?></h3>
     <?php endif; ?>
@@ -6,8 +8,7 @@
     <?php if ($intro_text) : ?>
         <section class="intro"><?php _e($intro_text,'digital-river'); ?></section>
     <?php endif; ?>
-
-    <div class="container">
+    </div></div>
         <div class="row top">
         </div>
         <div class="row solution-content-wrapper">
@@ -26,8 +27,5 @@
             </div><div class="row <?php if($i != count($content)-2 && $i != count($content)-1  ){echo 'solution-content-wrapper';} ?>" >
         <?php endif; ?>
         <?php $i++; endforeach; ?>
-        <div class="clear"></div>
         </div>
     </div>
-    <div class="clear"></div>
-</div>

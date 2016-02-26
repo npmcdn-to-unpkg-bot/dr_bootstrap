@@ -6,192 +6,7 @@
 <?php get_header(); ?>
 <?php get_template_part('masthead'); ?>
 
-<style>
 
-.row2 {
-    margin: 0px auto;
-    max-width: 1240px;
-    padding: 0px 30px;
-    box-sizing: border-box;
-}
-
-
-.row2 .span_1 {
-    width: 4.85%;
-}
-
-.row2 .span_2 {
-    width: 13.45%;
-}
-
-.row2 .span_3 {
-    width: 22.05%;
-}
-
-.row2 .col-md-4 {
-    width: 30.75%;
-}
-
-.row2 .span_5 {
-    width: 39.45%;
-}
-
-.row2 .col-md-6 {
-    width: 48%;
-}
-
-.row2 .span_7 {
-    width: 56.75%;
-}
-
-.row2 .span_8 {
-    width: 65.4%;
-}
-
-.row2 .span_9 {
-    width: 74.05%;
-}
-
-.row2 .span_10 {
-    width: 82.7%;
-}
-
-.row2 .span_11 {
-    width: 91.35%;
-}
-
-.row2 .span_12 {
-    width: 100%;
-}
-
-
-.span_1, .span_2, .span_3, .col-md-4, .span_5, .col-md-6, .span_7, .span_8, .span_9, .span_10, .span_11 {
-    margin-right: 3.8%;
-    float: left;
-    min-height: 1px;
-}
-
-.last {
-    margin-right: 0px;
-}
-
-    .client-wrapper{
-        max-width: 1220px;
-        margin: 30px auto 50px;
-        width: 100%;
-        box-sizing: border-box; 
-    }
-
-    .left-box, .right-box{
-        width: 50%;
-        float: left;
-    }
-
-
-    .client-outer{
-        width: 100%;
-        padding: 20px 0 0 0;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        float: left;
-
-    }
-
-    .client-inner{
-        width: 100%;       
-        border: 1px solid #D2D3D6;
-        height: 14.68em;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        position: relative;
-    }
-
-    .client-logo-wrapper{
-        border-bottom: 1px solid #D2D3D6;
-        padding: 10px 0;
-       
-    }
-
-    .client-logo-wrapper img{
-        height: 40px;
-        float: right;
-        padding: 0 10px;
-        margin-right: 10px;
-    }
-
-    .client-logo-wrapper .header {
-        font-size: 1.5em;
-        color: #343438;
-        margin: 11px 25px 0px;
-        font-family: "DIN Next W01 Medium";
-        padding-top: 0px !important;
-        line-height: 1;
-    }
-
-    .copy{
-        padding: 15px;
-        font-family: "Arial"; color: #343438; padding-right: 15px;
-         }
-
-        .copy ul{
-
-        }
-
-    .copy ul li{margin:  0 0 10px;}
-
-
-
-ul.bullet-list li{
-    list-style-type: disc;
-    margin-left: 15px;
-    margin-bottom: 5px;
-    margin-top: 12px;
-}
-
-.cbiicon-wrapper img{
-    max-width: 110px;
-    display: block;
-    margin: 0 auto;
-}
-
-.col-md-6 .client-outer:first-child{
-    padding-top: 0;
-}
-
-
-    .clear{clear:both;}
-
-    @media (max-width: 1100px) {
-        .client-inner{
-            height: 15.625em;
-        }
-    }
-
-    @media (max-width: 1000px) {
-        .client-inner{
-            height: 17.18em;
-        }
-    }
-
-    @media (max-width: 1000px) {
-        .client-inner{
-            height: 22.43em;
-        }
-    }
-
-    @media (max-width: 700px) {
-        .cbi-wrapper .col-md-6{
-            width:100%;
-        }
-        .client-inner{height: inherit;}
-
-
-    }
-
-
-</style>
 
 	<div class='client-wrapper'>
 
@@ -360,9 +175,12 @@ $leftBoxes[] = array(
                 );
     
 ?>
-<div class='row2'>
+<div class="container">
+<div class='row2 row'>
+        <div class='col-md-12'>
             <div class='eyebrow'>Overview</div>
-        <div class='clear'></div>
+    </div>
+    <div class="row">
     <div class='col-md-6'>
 
         <div class='section'>
@@ -383,28 +201,31 @@ At Digital River, we use a Merchant and Seller of Record (MOR/SOR) business mode
     </div>
 </div>
 </div>
+</div>
 
 
-<div class='clear'></div>
-<div style='background:#ff5b00; margin:20px 0; padding:40px 0;'>
-<div class='row2'>
-    <div class='span_2 cbiicon-wrapper'>
+<div class=" orange-bg">
+<div class="container">  
+<div class='row2 row'>
+    <div class='col-md-2 cbiicon-wrapper'>
         <img src="<?php echo get_template_directory_uri().'/img/CBI-white.png' ?>"/>
     </div>
-    <div class='span_10 last'>
-    <p class='light white' style='font-size:1.5em;'>
+    <div class='col-md-10 last'>
+    <p class='light white'>
 Leverage Digital River’s global expertise and infrastructure to effectively support your expansion into new markets…and gain peace of mind that the complexities are being taken care of so that you can focus on what you do best.
 </p>
     </div>
     <div class='clear'></div>
 </div>
 </div>
-
-<div class='row2 cbi-wrapper' >
-            <div class='eyebrow'>Capabilities</div>
-        <div class='clear'></div>
+</div>
+<div class='container'>
+<div class='row2 cbi-wrapper row' >
+    <div class="col-md-12">
+            <h2 class='green-under-line'>Capabilities</h2>
+    </div>    
+ 
     <div class="col-md-6">
-
 
 
 <?php
@@ -462,10 +283,9 @@ Leverage Digital River’s global expertise and infrastructure to effectively su
 
 
 
-<div class="clear"></div>
 
 </div>
-
+        </div>
     <?php initResourcesSection(); ?>
 
 <?php get_footer(); ?>

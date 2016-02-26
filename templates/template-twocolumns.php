@@ -12,12 +12,6 @@
         <?php if ($post) : ?>
            <?php echo apply_filters('the_content', $post->post_content); ?></div>
         <?php endif; ?>
-
-
-        <?php renderVideoSectionOnPage(get_the_ID()); ?>
-
-        <?php //initResourcesSection(); ?>
-
         <?php do_action("relevant_resources"); ?>
 </section>
 

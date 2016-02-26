@@ -73,6 +73,10 @@ h4 {
     background: $blue;
     color: $white;
 }
+.orange-bg, .orange-bg p {
+    background: $orange;
+    color: $white;
+}
 .green-bg {
 background: $green;
 }
@@ -316,6 +320,7 @@ font-size: 1.1em;
     padding:(36 / $defaultFontSize) +em 0;
     background:$lightGray;
     border: solid 1px $medGray;
+        margin-top: 1em;
 
     .head{
         font-size: (32 / $defaultFontSize)+em;
