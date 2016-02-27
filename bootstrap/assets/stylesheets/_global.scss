@@ -44,6 +44,10 @@ S.green-button {
   font-family: $eng;
   color: $darkGray;
   border-bottom: 3px solid $green;
+  display: inline-block;
+}
+.cta_box {
+    padding: 2em;
 }
 .blue-bg {
     background: $blue;
@@ -71,7 +75,7 @@ color:$white;
 }
 
 
-.image-wrapper, .media_container , .media_container img, .full-width-image img , .full-width-image img a  {
+.image-wrapper, .media_container , .media_container img, .full-width-image img , .full-width-image img a, .full-width-image  {
     width: 100%;
 }
     

@@ -74,6 +74,9 @@ h1.eyebrow, h4.eyebrow {
     font-style:inherit;
     font-weight:normal !important;
   }
+    .blue-bg {
+        margin-top: 1em;
+    }
     .cta_box p{
     font-size: 1.25em;
     color: inherit;
@@ -125,11 +128,14 @@ h1.eyebrow, h4.eyebrow {
   a.button.opposite {
     background:transparent;
     border-color:white;
+    font-size: 1.5em;  
   }
   a.button.opposite:hover {
     background:#ffffff;
     color:#00a7e1;
   }
+   
+    
 }
 .section {
   margin-bottom:15px;
@@ -363,16 +369,23 @@ h1.eyebrow, h4.eyebrow {
                min-height: 180px;
 
            }  
+      
            a.button {
-               position: absolute;
-               bottom: 5px;
+    position: absolute;
+    bottom: 20px;
+    font-weight: bold;
            }       
     }
     .row .content:first-child {
     border-right:solid 1px $medMedGray;
   }
-     .row:last-of-type {
-    border-bottom: solid 1px $green;
+     > .row:last-of-type {
+    border-bottom: solid 2px $green;
+    padding: 2em;     
+    }
+    .row .row:last-of-type {
+    border-bottom:none;
+   
     }
 }
     
@@ -1422,7 +1435,8 @@ line-height: 1.1;
     margin: 0px auto;
     vertical-align: middle;
     max-width: 80%;
-
+    margin: 0 auto 0;
+    display: block;
     }
 }
 
@@ -1457,7 +1471,18 @@ line-height: 1.1;
 .client .cta a::before {
     content: "[ ";
 }
+.client.col-md-3 {
+    box-sizing: border-box;
+    border-left: 1px solid $medMedGray;
+    border-top: 1px solid $medMedGray;
+    float: left;
+        padding: 22px;
+    height: 161px;
+} 
+.col-md-12 > .row:last-of-type .client.col-md-3 {
+border-bottom: 1px solid $medMedGray;
 
+}
 .featured_logos{
   background: $green;
 }
