@@ -66,9 +66,9 @@ h1.eyebrow, h4.eyebrow {
     font-family: $eng;
     font-size:1.1em;
     text-transform:uppercase;
-    color:#ffffff;
-    background-color:#00a7e1;
-    border:2px solid #007eb5;
+    color:$white;
+    background-color:$blue;
+    border:2px solid $darkBlue;
     line-height:1;
     cursor:pointer;
     font-style:inherit;
@@ -83,7 +83,9 @@ h1.eyebrow, h4.eyebrow {
     font-family: $med;
     margin-top: 1em;
     }
-
+    .cta_box ul {
+    padding-left: 0;
+    }
   .splitter {
     border-bottom:none;
   }
@@ -108,18 +110,17 @@ h1.eyebrow, h4.eyebrow {
       }
     }
     .cta_box a.button:hover {
-      background:#007eb5 none repeat scroll 0% 0%;
-      color:#ffffff;
+      background:$darkBlue none repeat scroll 0% 0%;
+      color:$white;
     }
   }
   h3.section_heading {
-    padding:0px;
+    padding:0;
     display:inline-block;
-    background:transparent none repeat scroll 0% 0%;
     text-transform:none;
     line-height:1;
-    font-size:1.15em;
-    color:#343438;
+    font-size:1.25em;
+    color: $darkGray;
     font-weight:inherit;
     font-style:inherit;
     font-family:$arial;
@@ -131,8 +132,8 @@ h1.eyebrow, h4.eyebrow {
     font-size: 1.5em;  
   }
   a.button.opposite:hover {
-    background:#ffffff;
-    color:#00a7e1;
+    background:$white;
+    color:$blue;
   }
    
     
@@ -158,7 +159,7 @@ h1.eyebrow, h4.eyebrow {
     margin:10px auto 33px;
     line-height:25px;
     padding-left:0px;
-    color:#ffffff;
+    color:$white;
     max-width:1180px;
     width:100%;
     font-size:1.1em;
@@ -172,10 +173,10 @@ h1.eyebrow, h4.eyebrow {
     font-family:inherit;
     margin:0px auto 21px;
     padding-top:20px;
-    color:#ffffff;
+    color:$white;
     a {
       font-size:inherit;
-      color:#ffffff !important;
+      color:$white !important;
       text-decoration:none;
     }
   }
@@ -187,9 +188,8 @@ h1.eyebrow, h4.eyebrow {
   font-size:1em;
   line-height:1;
   line-height:1.25;
-  color:#000000;
-  color:#343438;
-  font-family:Arial, sans-serif;
+  color:$black;
+  font-family: $arial;
 }
 .our-locations-wrapper {
   font-family:$arial;
@@ -198,23 +198,23 @@ h1.eyebrow, h4.eyebrow {
   input[type="text"], input[type="url"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"], select.mktoField, textarea.mktoField {
     box-shadow:none !important;
     padding:16px 18px !important;
-    border:1px solid #ababab !important;
-    background-color:#ffffff !important;
+    border:1px solid $medLightGray !important;
+    background-color:$white !important;
     line-height:1.1em !important;
     font-size:1em;
-    color:#222021 !important;
+    color:$darkGray !important;
     width:100% !important;
     border-radius:0px !important;
     transition:all 0.3s ease 0s;
     box-sizing:border-box;
   }
   input:focus, select.mktoField:focus, textarea.mktoField:focus {
-    border:1px solid #00a7e1 !important;
+    border:1px solid $blue !important;
     font-size:1em;
-    color:#00a7e1 !important;
+    color:$blue !important;
   }
   label.mktoLabel {
-    color:#ababab !important;
+    color:$medMedGray !important;
     width:auto !important;
     font-family:$arial;
     font-size:1em;
@@ -231,15 +231,15 @@ h1.eyebrow, h4.eyebrow {
     display:none;
   }
   select#Country {
-    color:#ababab !important;
+    color:$medMedGray !important;
     font-size:1em !important;
   }
   select#Country:focus {
-    color:#222021 !important;
+    color:$darkGray !important;
     font-size:1em !important;
   }
   select#Country.selected {
-    color:#222021 !important;
+    color:$darkGray !important;
     font-size:1em !important;
   }
 }
@@ -250,14 +250,14 @@ h1.eyebrow, h4.eyebrow {
   padding:0;
   padding:5px 8px;
   margin:0;
-  border:1px solid #cccccc;
+  border:1px solid $lightGray;
   border:none;
   border-radius:3px;
   overflow:hidden;
-  background-color:#ffffff;
+  background-color:$white;
   width:130%;
   box-shadow:none;
-  background:#ffffff url("../../img/arrowdown.png") no-repeat 96% 50%;
+  background:$white url("../../img/arrowdown.png") no-repeat 96% 50%;
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
@@ -267,7 +267,7 @@ h1.eyebrow, h4.eyebrow {
   width:130%;
   border:none;
   box-shadow:none;
-  background:#ffffff url("../../img/arrowdown.png") no-repeat 96% 50%;
+  background:$white url("../../img/arrowdown.png") no-repeat 96% 50%;
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
@@ -284,15 +284,15 @@ h1.eyebrow, h4.eyebrow {
  font-family: $eng;
   font-size:1.1em;
   text-transform:uppercase;
-  color:#ffffff;
-  background-color:#00a7e1;
-  border:2px solid #007eb5;
+  color:$white;
+  background-color:$blue;
+  border:2px solid $darkBlue;
   line-height:1;
   cursor:pointer;
 }
 .row2 .button:hover {
-  background:#007eb5 none repeat scroll 0% 0%;
-  color:#ffffff;
+  background:$darkBlue none repeat scroll 0% 0%;
+  color:$white;
 }
 .window-overlay {
   position:fixed;
@@ -310,14 +310,14 @@ h1.eyebrow, h4.eyebrow {
 .call-to-action-tab {
   position:absolute;
   height:43px;
-  background:#6f29d3 none repeat scroll 0% 0%;
+  background:$purple none repeat scroll 0% 0%;
   transition:all 250ms ease-in-out 0s;
   padding:12px 15px 4px;
   cursor:pointer;
   top:352px;
   left:-90px;
   text-align:center;
-  color:#ffffff;
+  color:$white;
   width:135px;
   font-size:1.25em;
  font-family: $eng;
@@ -331,13 +331,13 @@ h1.eyebrow, h4.eyebrow {
 }
 .overlay-wrapper {
   z-index:100;
-  border-left:1px solid #bcbcbc;
+  border-left:1px solid $medMedGray;
   width:437px;
   position:fixed;
   top:0px;
   right:-438px;
   height:100%;
-  background:#ebebeb none repeat scroll 0% 0%;
+  background:$lightGray none repeat scroll 0% 0%;
   transition:all 500ms ease-in-out 0s;
   border-right:none;
 }
@@ -394,7 +394,7 @@ h1.eyebrow, h4.eyebrow {
     
   font-family:$arial;
   font-size:1.15em;
-  color:#343438;
+  color:$darkGray;
   
  
     
@@ -402,14 +402,14 @@ h1.eyebrow, h4.eyebrow {
     line-height:1;
     font-family: $eng;
     font-size:1.14em;
-    color:#343438;
+    color:$darkGray;
     text-transform:inherit;
     text-transform:uppercase;
     margin-bottom:inherit;
     font-weight:inherit;
     background:none;
     padding:0px 2px;
-    border-bottom:6px solid #b3d334;
+    border-bottom:6px solid $green;
   }
 
   .widgetized.flex .featured_content.ww_page .title h4, .widgetized.right_side .featured_content.ww_page .title h4 {
@@ -466,7 +466,7 @@ h1.eyebrow, h4.eyebrow {
       font-size:1.14em;
       line-height:17px;
       line-height:1.15;
-      color:#343438;
+      color:$darkGray;
       font-family:$arial;
       margin-bottom:0px;
       height:60px;
@@ -484,7 +484,7 @@ h1.eyebrow, h4.eyebrow {
   font-size:.92em;
   line-height:17px;
   margin:20px 0px;
-  color:#222021;
+  color:$black;
   font-family:$arial;
     }
 .header {
@@ -504,7 +504,7 @@ h1.eyebrow, h4.eyebrow {
   padding:0px;
   margin:0px;
   line-height:30px;
-  color:#007eb5;
+  color:$darkBlue;
   font-family:$arial;
   font-size:1em;
   margin-bottom:10px;
@@ -513,13 +513,13 @@ h1.eyebrow, h4.eyebrow {
 font-family: $eng;
     font-size:2.1em;
   width:100%;
-  color:#343438;
+  color:$darkGray;
   margin-bottom:5px;
   text-transform:uppercase;
   cursor:pointer;  
 }
 .contact-box {
-  background-color:#ffffff;
+  background-color:$white;
   width:790px;
   width:100%;
   height:auto;
@@ -547,21 +547,21 @@ font-family: $eng;
 .contact-right {
   height:265px;
   width:200px;
-  background-color:#555555;
+  background-color:$medGray;
   float:right;
 }
 .drlogo {
   width:100%;
   width:90%;
   height:55px;
-  background-color:#ffffff;
+  background-color:$white;
   margin-top:20px;
   margin-bottom:10px;
 }
 .social-shares {
   width:100%;
   height:55px;
-  background-color:#ffffff;
+  background-color:$white;
   margin-top:20px;
   margin-bottom:10px;
 }
@@ -571,7 +571,7 @@ font-family: $eng;
   font-family:$arial;
   font-size:1.21em;
   line-height:19px;
-  color:#343438;
+  color:$darkGray;
   margin-top:15px;
   margin:15px 0;
 }
@@ -601,7 +601,7 @@ font-family: $eng;
   margin-left:30px;
   font-family:Arial, sans-serif;
   font-size:.85em;
-  color:#343438;
+  color:$darkGray;
   float:left;
   margin-bottom:10px;
   white-space:normal;
@@ -618,25 +618,25 @@ a.button {
   //font-family: @font-family-din;
   font-size:1.1em;
   text-transform:uppercase;
-  color:#ffffff;
-  background-color:#00a7e1;
-  border:2px solid #007eb5;
+  color:$white;
+  background-color:$blue;
+  border:2px solid $darkBlue;
   line-height:1;
   cursor:pointer;
 }
 a.button:hover {
-  background:#007eb5 none repeat scroll 0% 0%;
-  color:#ffffff;
+  background:$darkBlue none repeat scroll 0% 0%;
+  color:$white;
 }
 #footer-left, #footer-middle {
   margin-left:0%;
 }
 
 .sidebar {
-  background:#f0f0f0;
+  background:$lightGray;
   margin:15px 0;
   padding:25px;
-  border:solid 1px #bcbcbc;
+  border:solid 1px $medMedGray;
   box-sizing:border-box;
   .eyebrow {
     margin:0 20px 10px 0;
@@ -651,14 +651,14 @@ a.button:hover {
         cursor:pointer;
         font-size:1.05em;
         //font-family: @font-family-din;
-        color:#343438;
+        color:$darkGray;
         .arrow {
           float:right;
           width:0;
           height:0;
           border-top:5px solid transparent;
           border-bottom:5px solid transparent;
-          border-right:5px solid #646464;
+          border-right:5px solid $darkGray;
           margin:5px 10px 5px 0;
           -webkit-transition:all 200ms;
           -moz-transition:all 200ms;
@@ -716,7 +716,7 @@ a.button:hover {
 .four-up-sliders {
  .marketing-expanded {
      .service {
-     border-top:solid 5px #FF245E
+     border-top:solid 5px $hotPink
      }
      //font-family:  @font-family-din;
      
@@ -725,7 +725,7 @@ a.button:hover {
  }
      .copy{margin-top:10px;  font-family:Arial, sans-serif; text-transform:none;}
      
-     .header{ text-transform:uppercase; color:#807e82; font-size:1.9em;}
+     .header{ text-transform:uppercase; color:$medGray; font-size:1.9em;}
  }
  }
     
@@ -741,25 +741,24 @@ a.button:hover {
 		display:none;
 		opacity:0;
 		filter:Alpha(opacity=00);
-		background-color:#f4f4f4;
+		background-color:$lightGray;
 		top:600px;
 		left:0px;
 		overflow:hidden;
 		z-index:0;
 	}
-	.marketing-expanded{border-top: solid 5px #FF245E;}
-	.experience-expanded{border-top: solid 5px  #A8CA1F; left:289px;}
-	.infrastructure-expanded{border-top: solid 5px #FF6600;left:573px;}
-	.payments-expanded{border-top: solid 5px #009AD7; left:857px; }
+	.marketing-expanded{border-top: solid 5px $hotPink;}
+	.experience-expanded{border-top: solid 5px  $green; left:289px;}
+	.infrastructure-expanded{border-top: solid 5px $orange;left:573px;}
+	.payments-expanded{border-top: solid 5px $blue; left:857px; }
     .section {
     h4 {
         margin: 30px 0px 20px;
     float: none;
-    //font-family: @font-family-din;
-    color: #343438;
+    color: $darkGray;
     text-transform: uppercase;
     font-size: 1.2em;
-    border-bottom: 6px solid #B3D334;
+    border-bottom: 6px solid $green;
     padding: 0px 2px;
     background: inherit;
     display: inline-block;
@@ -772,28 +771,28 @@ padding-bottom: 25%;
 
 //An Average Day
 .snapshot-wrapper {
-    background-color: #F4F4F4;
+    background-color: $whiteOff;
     .header {
         font-family: 'DIN 1451 W01 Engschrift';
     text-transform: uppercase;
     font-size: 1.9em;
-    color: #009ad7;
+    color: $blue;
     }
 }
     .five-columns {
     .col-md-2 {
            padding: 5px;
-            background-color: #009ad7;
+            background-color: $blue;
 
         .header {
-                color: #FFF;
+                color: $white;
     font-size: 1.28em;
     font-family: 'DIN1451W01-Mittelschrif';
     text-transform: uppercase;
             line-height: 1em;
 }
         .columns-number {
-            color: white;
+            color: $white;
         }
         }
         
@@ -801,15 +800,15 @@ padding-bottom: 25%;
 .four-up-sliders {
       position: relative;
     .service {
-        background-color: #f4f4f4;
+        background-color: $whiteOff;
       
     }
     input {
     padding: .5em;
     font-size: 1em;
     text-align: center;
-    background: #585656;
-    color: #fff;
+    background: $darkGray;
+    color: $white;
     border: 0;
     cursor: pointer;
     border-radius: 2px;
@@ -830,7 +829,7 @@ padding-bottom: 25%;
     margin-top: 1em;
     font-family: 'DIN 1451 W01 Engschrift';
     text-transform: uppercase;
-    color: #807e82;
+    color: $medGray;
 }
     .service2 {
       float: left;
@@ -1038,7 +1037,7 @@ padding-bottom: 25%;
 .owl-carousel .owl-video-wrapper {
   position: relative;
   height: 100%;
-  background: #000;
+  background: $black;
 }
 .owl-carousel .owl-video-play-icon {
   position: absolute;
@@ -1103,7 +1102,7 @@ padding-bottom: 25%;
 /* Styling Next and Prev buttons */
 
 .owl-controls .owl-buttons div{
-	color: #FFF;
+	color: $white;
 	display: inline-block;
 	zoom: 1;
 	*display: inline;/*IE7 life-saver */
@@ -1113,7 +1112,7 @@ padding-bottom: 25%;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
-	background: #869791;
+	background: $medMedGray;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
 }
@@ -1142,7 +1141,7 @@ padding-bottom: 25%;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	background: #869791;
+	background: $medMedGray;
 }
 
 .owl-controls .owl-page.active span,
@@ -1155,7 +1154,7 @@ padding-bottom: 25%;
 .owl-controls .owl-page span.owl-numbers{
 	height: auto;
 	width: auto;
-	color: #FFF;
+	color: $white;
 	padding: 2px 10px;
 	font-size: 12px;
 	-webkit-border-radius: 30px;
@@ -1279,7 +1278,7 @@ cursor: pointer;
 }
     .tab_header {
     padding: .25em;
-    border: 1px solid #CCC;    
+    border: 1px solid $medMedGray;    
    img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -1310,7 +1309,7 @@ transition: .5s filter linear;
     margin-top: 0;
     position: absolute;
     bottom: 0;
-    color: #00a7e1;
+    color: $blue;
     background: url("../../../img/name_bg.png");
     margin: 0 5% 0 5% 0;
     margin-bottom: 1%;
@@ -1389,7 +1388,7 @@ top: .4em;
 }
 
 
-.client.col-md-3:last-child{
+.col-md-12 .row > .client.col-md-3:last-child {
 	border-right:solid 1px $medMedGray;
 }
 
@@ -1410,7 +1409,7 @@ top: .4em;
 
 .client.client_quote_box p{
 font-size: 1.1em;
-color: white;
+color: $white;
 font-family: "DIN Next W01 Light";
 padding: 15px 30px 0;
 line-height: 1.1;
@@ -1475,12 +1474,14 @@ line-height: 1.1;
     box-sizing: border-box;
     border-left: 1px solid $medMedGray;
     border-top: 1px solid $medMedGray;
+    border-bottom: 1px solid $medMedGray;
+
     float: left;
         padding: 22px;
     height: 161px;
 } 
-.col-md-12 > .row:last-of-type .client.col-md-3 {
-border-bottom: 1px solid $medMedGray;
+.col-md-12 > .row:first-of-type .client.col-md-3 {
+border-bottom: none;
 
 }
 .featured_logos{
@@ -1493,7 +1494,7 @@ border-bottom: 1px solid $medMedGray;
 }
 
 #featured_logos{
-	background:#ebebeb;
+	background:$lightGray;
   padding: 15px 20px;
   box-sizing: border-box;
   height: 140px;
@@ -1510,11 +1511,11 @@ border-bottom: 1px solid $medMedGray;
   position: absolute;
   top:0;
   left:0;
-  background:#00a7e1;
+  background:$blue;
 }
 
 
-.tab svg{fill:#00a7e1;}
+.tab svg{fill:$blue;}
 
 .video_wrapper{width: 59%; float: left;}
 
@@ -1536,7 +1537,7 @@ border-bottom: 1px solid $medMedGray;
 .featured_area .copy_wrapper .quote{font-size: 38px; line-height: 1;}
 
 .featured_area .quote{
-  color:#FFF;
+  color:$white;
   margin: 0px 10px 25px;
   font-family:"DIN Next W01 Light";
   display: table;
@@ -1551,7 +1552,7 @@ height: 300px;
 }
 
 .featured_area .quoter p{
-    color:#FFF;
+    color:$white;
     margin: 0px 10px 5px;
     font-size: 28px;
     line-height: 1;
@@ -1635,7 +1636,7 @@ img{
 
 
 .client_success{
-  background:#FFF; 
+  background:$white; 
   font-family: "DIN 1451 W01 Engschrift",sans-serif; 
   padding-bottom: 50px;
   padding-top: 25px;
@@ -1645,10 +1646,10 @@ img{
     margin: 25px 0px 0px 40px;
     float: left;
     font-family: "DIN Next W01 Regular";
-    color: #343438;
+    color: $darkGray;
     text-transform: uppercase;
     font-size: 1.2em;
-    border-bottom: 6px solid #B3D334;
+    border-bottom: 6px solid $green;
     padding: 0 2px;
 }
 
@@ -1658,10 +1659,10 @@ img{
 
 .client_success .blue_tag span{}
 
-#triangle-bottomleft{float: left; width: 0; height: 0; border-bottom: 30px solid #009AD7; border-right: 15px solid #FFF;}
+#triangle-bottomleft{float: left; width: 0; height: 0; border-bottom: 30px solid $blue; border-right: 15px solid $white;}
 
 .client_success .heading{
-  color: #B3D334;
+  color: $green;
   font-size: 3.85em;
   float: left;
   margin-left: 40px;
@@ -1687,7 +1688,7 @@ img{
 
 .client_success .link_wrapper .links .header{
   font-size: 1.4em;
-    color: #343438;
+    color: $black;
 }
 
 .client_success .link_wrapper .links li{
@@ -1698,12 +1699,12 @@ img{
 .client_success .link_wrapper .links li a{
   font-family: $font-family-sans-serif;
   font-size: 1.1em;
-  color:#00a7e1;
+  color:$blue;
   text-decoration: none;
 }
 
 .go_global{
-  background:#00a7e1;
+  background:$blue;
   padding: 35px 0px 40px;
 }
 
@@ -1716,7 +1717,7 @@ img{
 }
 
 .go_global .contact_wrapper{
-  color: #FFF;
+  color: $white;
   margin-top: 23px;
   float: right;
   width: 62%;
@@ -1732,7 +1733,7 @@ img{
 
 .go_global .contact_wrapper .contact_button{
     padding: 9px 18px 8px;
-    background: none repeat scroll 0% 0% #FFF;
+    background: none repeat scroll 0% 0% $white;
     color: $eng;
     font-family: $eng;
     float: left;

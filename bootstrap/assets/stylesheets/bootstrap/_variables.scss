@@ -18,11 +18,11 @@ $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 $green: #a8c628;
 $darkGreen: #81b315;
-$blue: #00a7e1;
 $darkBlue: #007eb5;
 $black: #343438;
 $white: #FFF;
 $whiteLight: #FFF;
+$whiteOff: #F4F4F4;
 $lightGray: #f0f0f0;
 $medLightGray: #f1f2f4;
 $medMedGray: #CCC;
@@ -37,6 +37,7 @@ $blue: #00a7e1;
 $blue-light: lighten($blue, 46.7%) !default;
 $darkPurple: #6810ba;
 $orange: #ff5b00;
+$hotPink: #FF245E;
 $brand-primary:         $blue !default;
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
