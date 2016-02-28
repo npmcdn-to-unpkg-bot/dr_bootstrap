@@ -13,7 +13,7 @@ ul, li {
 .green-button {
     line-height: 1em;
     color: $white;
-    background: none repeat scroll 0% 0% #B3D334;
+    background: none repeat scroll 0% 0% $green;
     display: inline-block;
     text-decoration: none;
     font-family: $eng;
@@ -462,7 +462,7 @@ font-size: 1.1em;
   }
 
   a,.phone {
-    color:#007eb5;
+    color:$darkBlue;
     text-decoration:none;
   }
     
@@ -517,6 +517,7 @@ font-family: $eng;
     li:first-child {
       margin-left:0px;
     }
+      
     a {
       width:30px;
       height:30px;
