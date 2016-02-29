@@ -19,6 +19,7 @@ $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 $green: #a8c628;
 $darkGreen: #81b315;
 $darkBlue: #007eb5;
+$lightBlue: #25d4ff;
 $black: #343438;
 $white: #FFF;
 $whiteLight: #FFF;
@@ -28,6 +29,7 @@ $medLightGray: #f1f2f4;
 $medMedGray: #CCC;
 $medGray: #646464;
 $darkGray: #343434;
+$red: #ea0f43;
 $purple: #6f29d3;
 $purple-light: lighten($purple, 46.7%) !default;
 $green: #a8c628;
@@ -42,7 +44,7 @@ $brand-primary:         $blue !default;
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-danger:          $red !default;
 
 
 @mixin grayscale_element($value) {
@@ -88,7 +90,7 @@ $font-family-base:        $eng !default;
 $font-size-base:          14px !default;
 $defaultFontSize:         14;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
-$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-small:         12px !default;
 
 $font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
 $font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
@@ -145,8 +147,8 @@ $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Ch
 $line-height-small:         1.5 !default;
 
 $border-radius-base:        0px !default;
-$border-radius-large:       6px !default;
-$border-radius-small:       3px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
@@ -230,6 +232,10 @@ $btn-border-radius-large:        $border-radius-large !default;
 $btn-border-radius-small:        $border-radius-small !default;
 
 
+//small button
+$btn-small-font-size:13px;
+
+
 //== Forms
 //
 //##
@@ -240,9 +246,9 @@ $input-bg:                       #fff !default;
 $input-bg-disabled:              $gray-lighter !default;
 
 //** Text color for `<input>`s
-$input-color:                    $gray !default;
+$input-color:                    $darkGray !default;
 //** `<input>` border color
-$input-border:                   #ccc !default;
+$input-border:                   $blue !default;
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -254,7 +260,7 @@ $input-border-radius-large:      $border-radius-large !default;
 $input-border-radius-small:      $border-radius-small !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             #66afe9 !default;
+$input-border-focus:             $lightBlue !default;
 
 //** Placeholder text color
 $input-color-placeholder:        #999 !default;
@@ -273,7 +279,7 @@ $legend-color:                   $gray-dark !default;
 $legend-border-color:            #e5e5e5 !default;
 
 //** Background color for textual input addons
-$input-group-addon-bg:           $gray-lighter !default;
+$input-group-addon-bg:           $whiteOff !default;
 //** Border color for textual input addons
 $input-group-addon-border-color: $input-border !default;
 
@@ -524,7 +530,7 @@ $pagination-disabled-border:           $medLightGray !default;
 
 $pager-bg:                             $pagination-bg !default;
 $pager-border:                         $pagination-border !default;
-$pager-border-radius:                  15px !default;
+$pager-border-radius:                  0px !default;
 
 $pager-hover-bg:                       $pagination-hover-bg !default;
 
@@ -562,9 +568,9 @@ $state-warning-text:             #8a6d3b !default;
 $state-warning-bg:               #fcf8e3 !default;
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
 
-$state-danger-text:              #a94442 !default;
+$state-danger-text:              $red !default;
 $state-danger-bg:                #f2dede !default;
-$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+$state-danger-border:            $red !default;
 
 
 //== Tooltips
@@ -758,7 +764,7 @@ $list-group-link-heading-color: #333 !default;
 
 $panel-bg:                    #fff !default;
 $panel-body-padding:          15px !default;
-$panel-heading-padding:       10px 15px !default;
+$panel-heading-padding:       11px 15px 8px !default;
 $panel-footer-padding:        $panel-heading-padding !default;
 $panel-border-radius:         $border-radius-base !default;
 

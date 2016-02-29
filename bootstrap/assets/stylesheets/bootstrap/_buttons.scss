@@ -99,6 +99,10 @@ a.btn {
 }
 .btn-opposite{
   @include button-variant($white, transparent, $white);
+
+  &:hover{
+    background:rgba(255,255,255,.2);
+  }
 }
 
 /*
@@ -168,8 +172,9 @@ a.btn {
   @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
 }
 .btn-sm {
-  // line-height: ensure proper height of button next to small input
-  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+  padding: 7px 10px 4px;
+  font-size: $btn-small-font-size;
+  line-height:$line-height-small;
 }
 .btn-xs {
   @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
