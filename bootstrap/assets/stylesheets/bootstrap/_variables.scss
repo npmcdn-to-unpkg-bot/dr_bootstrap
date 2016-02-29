@@ -5,6 +5,12 @@ $bootstrap-sass-asset-helper: false !default;
 
 
 
+.clear{
+    clear: both;
+    display:none;
+}
+
+
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
@@ -544,7 +550,7 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 //
 //##
 
-$jumbotron-padding:              30px !default;
+$jumbotron-padding:              15px !default;
 $jumbotron-color:                $white !default;
 $jumbotron-bg:                   $gray-lighter !default;
 $jumbotron-heading-color:        $white !default;

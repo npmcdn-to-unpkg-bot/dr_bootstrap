@@ -11,6 +11,10 @@
   background-color: $jumbotron-bg;
   background-image: url("../../../img/mast-head-image-v6.png");
 
+  @media screen and (min-width: $screen-sm-min) {
+        //background-size:
+  }
+
 
   h1,
   .h1 {

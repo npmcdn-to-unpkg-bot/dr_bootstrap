@@ -15,25 +15,19 @@ $blog_id = $blog_data->cat_ID;
 
 <section class="masthead">
 
-<div class="masthead_background"></div>
 
     		<div class="container">
 
         
-            <div class="row">
             <div class="col-md-10 col-md-offset-1">
-	<nav class="breadcrumbs">
-		<?php if (function_exists('bcn_display')) bcn_display(); ?>
-	</nav>
-                </div>
-                </div>
-                <div class="row">
+				<nav class="breadcrumbs">
+					<?php if (function_exists('bcn_display')) bcn_display(); ?>
+				</nav>
                 
-                <div class="title-cont col-md-10 col-md-offset-1">
 				<?php if ($post_type == 'post' || is_page('our-authors') || (isset($is_blog) && $is_blog)): ?>
-					<div class="title">
+					<div>
 				<?php else: ?>
-					<h1 class="title">	
+					<h1>	
 				<?php endif; ?>
 
 
@@ -57,22 +51,7 @@ $blog_id = $blog_data->cat_ID;
 				<?php else: ?>
 					</h1>	
 				<?php endif; ?>
-
-				<!--<div class="tagline">
-				<?php /*
-				if ($post_type == 'media_coverage') {
-					echo 'Digital River is making waves.';
-				} else if ($post_type == 'post' || (isset($is_blog) && $is_blog)) {
-					echo 'Stay informed';
-				} else if($post_type == 'press_release') {
-					echo 'Staying Connected';
-				} else if ($post_type == 'events') {
-					echo 'We Want To Meet You.';
-				} else {
-					the_field('tagline');
-				}*/
-				?>
-				</div>--> 
+				
 				<div class="subtitle">
 				<?php
 				if ($post_type == 'media_coverage') {
@@ -92,10 +71,14 @@ $blog_id = $blog_data->cat_ID;
         </div>
 			
 
-		
+		    <div class="item">list element</div>
+    <div class="item">list element</div>
+    <div class="item">list element</div>
+    <div class="clear md"></div>
+    <div class="item">list element</div>
+    <div class="item">list element</div>
+    <div class="item">list element</div>
 
-    </div>
     </div>
 </section>
 
-<!--<div class="lined_border"></div>-->
