@@ -52,6 +52,8 @@ h1.eyebrow, h4.eyebrow {
         text-transform: uppercase;
         margin-left: 1em;
         font-size: 1.2em;
+        margin-top: 1.9em;
+        display: inline-block;
     }    
 }
 
@@ -77,15 +79,19 @@ h1.eyebrow, h4.eyebrow {
     .blue-bg {
         margin-top: 1em;
     }
-    .cta_box p{
-    font-size: 1.25em;
+    .cta_box {
+    padding: 1em;
+    
+    p{  
+    font-size: 1.75em;
     color: inherit;
-    font-family: $med;
+    font-family: $light;
     margin-top: 1em;
     }
-    .cta_box ul {
+     ul {
     padding-left: 0;
     }
+}
   .splitter {
     border-bottom:none;
   }
@@ -114,18 +120,7 @@ h1.eyebrow, h4.eyebrow {
       color:$white;
     }
   }
-  h3.section_heading {
-    padding:0;
-    display:inline-block;
-    text-transform:none;
-    line-height:1;
-    font-size:1.25em;
-    color: $darkGray;
-    font-weight:inherit;
-    font-style:inherit;
-    font-family:$arial;
-    margin:0px 0px 3px;
-  }
+
   a.button.opposite {
     background:transparent;
     border-color:white;
@@ -138,12 +133,7 @@ h1.eyebrow, h4.eyebrow {
    
     
 }
-.section {
-  margin-bottom:15px;
-  display:inline-block;
-  line-height:1.15;
-  width:100%;
-}
+
 .masthead {
   font-family:$arial;
   .title {
@@ -1177,8 +1167,15 @@ padding-bottom: 25%;
         z-index: 150;
     position: absolute;
         .header {
-        font-size: 3.5em;    
+          font-size: 4.5em;
+    line-height: 1.1em;
+        margin-top: 1em;
         }
+    }
+    .green-button {
+            font-size: 1.75em;
+        position: relative;
+        top: 1.8em;
     }
 }
 
@@ -1472,6 +1469,7 @@ line-height: 1.1;
 }
 a::before {
     content: "[ ";
+}
 }
 .client.col-md-3 {
     box-sizing: border-box;
@@ -1775,23 +1773,32 @@ img{
     
     }
         .col-md-10 {
-                display: table;
+    display: table;
     table-layout: fixed;
     min-height: 157px;
-            p {
-            display: table-cell;
+        }
+        p {
+    display: table-cell;
     vertical-align: middle;
     text-align: center;
+    font-size: 1.75em;
+    color: inherit;
+    font-family: $light;
+    margin-top: 1em;
+        
             }
         }
-}
+
+    
 .cbiicon-wrapper {
     img {
         width: 75%;
         padding: 1em 0 1em 0;
     }
     }
-}
+    
+    }
+
 
 .cbi-wrapper {
     .client-outer {
@@ -1839,5 +1846,5 @@ img {
 }  
         }
     }
-    }
+    
     }

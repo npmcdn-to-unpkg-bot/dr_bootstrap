@@ -272,14 +272,18 @@
         </div>
  <div class="green-bg">
             <div class="container ">
-                       <section id="clients">
+                <section id="clients">
         	<div class="wrapper">
-            	<div class="title">
-                  <h2 class='eng white'><?php _e('Clients', 'digital-river'); ?></h2>
+                <div class="row">
+            	<div class="title col-md-1">
+                    <h2><?php _e('Clients', 'digital-river'); ?></h2>    </div>
+                    <div class="col-md-2">
                   <a href="<?php echo site_url('/clients/' ,'http'); ?>">[ <?php _e('More Clients','digital-river'); ?> ]</a>
+            
+                    </div>
                 </div>
-
-
+                <div class="row">
+                <div class="col-md-12">
                     <div id="owl-demo" class="clients-wrapper" style="max-height:115px;">
 
                         <?php foreach(get_field('client_logos') as $client_logo) : ?>
@@ -289,6 +293,7 @@
                         <?php endforeach; ?>
 
                  </div> <!-- End of clients-wrapper -->
+                    </div></div>
                        </div>
         </section> <!-- End of clients section -->
 
