@@ -329,11 +329,11 @@
             }
 
             @include customMinMediaQuery(991px){
-                width: 286px;
+                    width: 365px;
             }
 
             @include customMinMediaQuery(1200px){
-                width: 378px;
+                  width: 480px;
             }
 
             &.search_active{
@@ -342,11 +342,11 @@
                 }
 
                 @include customMinMediaQuery(991px){
-                    width: 382px;
+                    width: 442px;
                 }
 
                 @include customMinMediaQuery(1200px){
-                    width: 450px;
+                       width: 560px;
                 }
             }
 
@@ -634,7 +634,9 @@
 
 
                 ul{
-
+                     li:nth-of-type(1),li:nth-of-type(2),li:nth-of-type(3) {    
+                        background: $darkBlue; 
+                        }
                     li {
                         display: inline-block;
                         margin: 0px;
@@ -643,9 +645,7 @@
                         margin-right: -5px;
                         width:100%;
                         border-bottom:solid 1px $darkBlue;
-
-
-
+                       
                         @include customMinMediaQuery(768px){
                             width:auto;
                             border:none;
