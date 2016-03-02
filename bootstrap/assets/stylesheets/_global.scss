@@ -82,7 +82,10 @@ color:$white;
     width: 100%;
 }
     
-
+.container {
+padding-top: 1em;
+padding-bottom: 3em;    
+}
 /* Arrow Links 
 ***********************************************/
 .arrow {
@@ -182,8 +185,7 @@ color:$white;
 }
 .section {
   display:inline-block;
-        padding: .5em 0 .5em 0;
-}
+ }
 p {
     font-size: 1.1em;
     font-family: $arial;

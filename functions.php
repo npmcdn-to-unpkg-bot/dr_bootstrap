@@ -100,7 +100,6 @@ wp_enqueue_style( 'bootstrap-css' );
     wp_register_style('icons', "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", array(), '1', $media = 'all');
     // wp_register_style('global', get_stylesheet_directory_uri() . '/css/global.css', array(), '1', $media = 'all');
 
-    wp_register_style('modular-interactions', get_stylesheet_directory_uri() . '/css/modular_interactions.css', array(), '1', $media = 'all');
     wp_register_style('clients_style', get_stylesheet_directory_uri() . '/css/clients_style.css');
     // wp_register_style('events_style', get_stylesheet_directory_uri() . '/css/events.css', array(), '1', $media = 'all');
    // wp_register_style('new_global', get_stylesheet_directory_uri() . '/css/newGlobal.css', array(), '1', $media = 'all');

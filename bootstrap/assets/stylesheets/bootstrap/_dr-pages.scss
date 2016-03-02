@@ -1848,3 +1848,261 @@ img {
     }
     
     }
+
+/*Modular Interaction */
+
+.grid_wrapper *, .grid_wrapper *:after, .grid_wrapper *:before {
+    box-sizing: border-box;
+}
+
+.grid_wrapper {
+    width: 100%;
+    margin: 0px auto;
+box-sizing: border-box;
+border: 6px solid rgb(255, 255, 255);
+
+.grid {
+    padding-top: 0;
+	position: relative;
+	margin: 0 auto;
+	max-width: 100%;
+	list-style: none;
+	text-align: center;
+	z-index:1;
+    width: 100%; 
+padding: 0 0 0 0;
+margin-top: -.6em;    
+.col-md-3,.col-md-6 {
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    min-height: 500px;  
+}
+
+
+   
+
+    
+/* Common style */
+ figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+     img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	width:inherit;
+	opacity: 0.8;
+         width: auto;
+}
+
+ figcaption {
+    padding: 1.5em 1em;
+	color: #fff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+ figcaption::before,
+ figcaption::after {
+	pointer-events: none;
+}
+
+ figcaption,
+figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+h2 {
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-family: $eng;
+}
+
+ h2 span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1em;
+}
+
+ h2,
+ p {
+	margin: 0;
+}
+
+ p {
+	font-size: 68.5%;
+	color: $white;
+}
+
+/*---------------*/
+/***** zoom *****/
+/*---------------*/
+
+&.effect-zoom{
+	background-color: $blue;
+	border: 6px solid $white;
+}
+
+&.effect-zoom.green {
+	background-color: $green;
+}
+
+&.effect-zoom.half {
+	height: 50%;
+}
+
+&.effect-zoom.half h2 {
+  margin-top: 40px;
+}
+
+&.effect-zoom.third {
+  height: 33.333%;
+}
+
+&.effect-zoom.third h2 {
+  margin-top: 0px;
+}
+
+
+
+
+&.effect-zoom img {
+	opacity: 1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+&.effect-zoom:hover img {
+	opacity: 0.75;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+&.effect-zoom h2 {
+    margin-top: 165px;
+    transition: transform 0.35s ease 0s;
+    transform: translate3d(0px, 20px, 0px);
+    text-transform: none;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+&.effect-zoom p {
+	margin: 0;
+  padding: .5em 1em ;
+/*	border: 1px solid #fff;*/
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0) scale(1.1);
+	transform: translate3d(0,20px,0) scale(1.1);
+}
+
+&.effect-zoom:hover h2 {
+	-webkit-transform: translate3d(0,-10,0);
+	transform: translate3d(0,0,0);
+
+}
+
+&.effect-zoom:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0) scale(1);
+	transform: translate3d(0,0,0) scale(1);
+	
+	
+}
+&.effect-zoom.third:hover h2 {
+    margin-top: -5px;
+}
+
+&.effect-zoom.third:hover p {
+margin-top:-2px;
+}
+    }
+
+    }
+}
+.resource-wrapper{width:100%;  background-color: #FFF; border: solid 1px #BBB; border-left:none; border-right:none; border-top: none; padding: 0 0 1%;
+.resource-links{  margin:0 auto;
+    
+.left-side, .right-side{ height:auto; overflow:hidden;  padding: 60px 0;}
+    
+ .left-side{float:left; border-right: solid 1px #BBB; }
+
+
+.header {
+  font-family: $eng;
+  margin-top: 20px;
+  color: $green;
+  font-size: 47px;
+line-height: 1em;
+margin-top: 0;    
+}
+    
+}
+}
+
+.resource-links ul {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-left: 11%;
+  line-height: 1 !important;
+
+.left-side ul:first-child{margin-left:0px;}
+.left-side ul:last-child{margin-right:0px;}
+ .right-side  ul:first-child{margin-right:0px; margin-left:0px;}
+ul.three-links{margin-top:29px;}
+li{padding:5px; width:auto; height:auto;}
+li a {
+    color: #00A7E1;
+    text-decoration: none;
+    font-family: $arial;
+    font-size: 1.1em;
+}
+}
+
+figure.effect-zoom img {
+  max-width:none;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    width: auto;
+    opacity: 0.8;
+    min-width: 100%;
+}
+
+
+
+.grid .third{height:450px;}
+.grid .half{height:300px;}
+
