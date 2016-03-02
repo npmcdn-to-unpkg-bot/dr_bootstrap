@@ -1628,36 +1628,41 @@ img{
     vertical-align: middle;
 }
 
-
 .client_success{
   background:$white; 
   font-family: $eng; 
   padding-bottom: 50px;
   padding-top: 25px;
-}
-
-.client_success .blue_tag{
-    margin: 25px 0px 0px 40px;
+   .header {
+        font-family: $eng;
+        font-size: 1.25em;
+    }
+  .links li a {
+        font-family: $arial;
+        color: $blue;
+      font-size: 1.15em;
+    line-height: 2em;
+      
+    }
+    .blue_tag{
+    margin: 0 0px 0px 40px;
     float: left;
     font-family: $med;
     color: $darkGray;
     text-transform: uppercase;
     font-size: 1.2em;
-    border-bottom: 6px solid $green;
     padding: 0 2px;
 }
-
-.client_success .blue_tag_wrapper{
-  width:100%;
 }
 
-.client_success .blue_tag span{}
-
+.clients-page .featured_wrapper {
+padding-bottom: 0;
+}
 #triangle-bottomleft{float: left; width: 0; height: 0; border-bottom: 30px solid $blue; border-right: 15px solid $white;}
 
 .client_success {
     .heading{
-  color: $green;
+  color: $black;
   font-size: 3.85em;
   float: left;
   margin-left: 40px;
@@ -2106,3 +2111,6 @@ figure.effect-zoom img {
 .grid .third{height:450px;}
 .grid .half{height:300px;}
 
+#featured_logos {
+    cursor: pointer;
+}

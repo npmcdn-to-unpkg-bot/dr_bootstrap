@@ -100,7 +100,6 @@ wp_enqueue_style( 'bootstrap-css' );
     wp_register_style('icons', "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", array(), '1', $media = 'all');
     // wp_register_style('global', get_stylesheet_directory_uri() . '/css/global.css', array(), '1', $media = 'all');
 
-    wp_register_style('clients_style', get_stylesheet_directory_uri() . '/css/clients_style.css');
     // wp_register_style('events_style', get_stylesheet_directory_uri() . '/css/events.css', array(), '1', $media = 'all');
    // wp_register_style('new_global', get_stylesheet_directory_uri() . '/css/newGlobal.css', array(), '1', $media = 'all');
 //    wp_register_style('grid', get_stylesheet_directory_uri() . '/css/grid.css', array(), '1', $media = 'all');
@@ -113,7 +112,7 @@ wp_enqueue_style( 'bootstrap-css' );
     wp_register_style('template_a', get_stylesheet_directory_uri() . '/css/template_a.css', array(), '1', $media = 'all');
     wp_register_style('home', get_stylesheet_directory_uri() . '/css/home.css', array('owl_carousel','owl_theme','global'), '1', $media = 'all');
     wp_register_style('new-home', get_stylesheet_directory_uri() . '/css/newHome.css?2433342', array('owl_carousel','owl_theme','new_global'), '1', $media = 'all');
-    wp_register_style('client-success-styles', get_stylesheet_directory_uri() . '/css/client_success_stories_styles.css', array('grid', "new_global"), '1', $media = 'all');
+  
     wp_register_style('value-brief-styles', get_stylesheet_directory_uri() . '/css/value_brief_styles.css', array('grid', "new_global"), '1', $media = 'all');
     wp_register_style('japanese_styles', get_stylesheet_directory_uri() . '/css/japanese.css', array("new_global"), '143', $media = 'all');
     wp_register_style('caas_styles', get_stylesheet_directory_uri() . '/css/caas_styles.css', array(), '1', $media = 'all');
