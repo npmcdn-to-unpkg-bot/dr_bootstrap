@@ -4,7 +4,6 @@ font-family: $arial;
 p{
     font-size: 1em;
     line-height: 1.25;
-    color: $black;
 }
 ul, li {
     list-style: none;
@@ -61,8 +60,18 @@ ul.bullet-list {
   text-transform: uppercase;
   font-size: $font-size-green-under-line;
 }
+.cta_box {
+    padding: 2em;
+}
 
+.slide{
+  padding:30px 0;
 
+  &.map-bg{
+      background-image:url("../../../payments/map.png");
+      background-size:cover;
+  }
+}
 .blue-bg {
     background: $blue;
     color: $white;
@@ -81,6 +90,15 @@ color:$white;
 .lgray-bg {
     background: $lightGray;
 }
+
+.white-bg{
+  background:$white;
+}
+
+.med-gray-color{
+  color:$nineGray;
+}
+
 .black {
     color: $black;
 }
@@ -195,6 +213,12 @@ padding-bottom: 3em;
     border-bottom: 6px solid $green;
     display: inline-block;
     line-height: 1;
+
+    &.option{
+        &.no-margin{
+           margin:0;
+        }
+    }
 }
 
 // sections - Swapout all .section with either section or p tags (p with margin-bottom)
@@ -209,45 +233,8 @@ p {
     font-family: $arial;
     margin-bottom: 1em;
 }
-//masthead
-//Get new styling for masthead
-.masthead{
-    
-    //remove this when you add the new grid
 
-    .breadcrumbs{
-        margin: 0 auto ($defaultFontSize)+em;
-        padding: .4em;
-        color: $white;
 
-        a{
-            color: $white;
-        }
-    } 
-
-    .title{
-        font-size: (60 / $defaultFontSize)+em;
-        line-height: (50 / $defaultFontSize)+em;
-        margin: (($defaultFontSize)+em) auto 0px;
-        
-
-    }
-    
-    .subtitle{
-        margin: ($defaultFontSize)em auto ($defaultFontSize * 3)+em;
-        line-height: ($defaultFontSize*2)+em; 
-        font-size: ($defaultFontSize)+em;
-
-        @include customMediaQuery(1350px){
-            font-size: ($defaultFontSize*3.125)+em;
-            line-height:1.15; 
-        }
-
-    }
-
-    
-
-}
 
 
 

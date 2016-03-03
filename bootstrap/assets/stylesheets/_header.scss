@@ -138,10 +138,13 @@
                     display: block;
                     margin: .7em (5 / $defaultFontSize)+em .4em;
                     max-width: 225px;
+                    height:30px;
                     
                     @include customMinMediaQuery(992px){
                         margin-top: 7px;
                         margin-bottom: .2em;
+                        height:40px;
+
                     }
 
                     @include customMinMediaQuery(1170px){

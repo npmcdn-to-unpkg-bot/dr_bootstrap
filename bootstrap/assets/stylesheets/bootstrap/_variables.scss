@@ -33,6 +33,7 @@ $whiteOff: #F4F4F4;
 $lightGray: #f0f0f0;
 $medLightGray: #f1f2f4;
 $medMedGray: #CCC;
+$nineGray: #999999;
 $medGray: #646464;
 $darkGray: #343434;
 $red: #ea0f43;
@@ -199,17 +200,6 @@ $btn-font-weight:                normal !default;
 $btn-default-color:              #333 !default;
 $btn-default-bg:                 $medLightGray !default;
 $btn-default-border:             #ccc !default;
-
-a.btn, button, input[type="button"]{
-    font-family: $med;
-    color: $white;
-    cursor: pointer;
-
-    &:hover{
-        color: $white;
-        background: $darkBlue;
-    }
-}
 
 
 $btn-primary-color:              $white !default;

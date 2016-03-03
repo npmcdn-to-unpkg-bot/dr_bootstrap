@@ -18,6 +18,17 @@
     }
 }
 
+a.btn, button, input[type="button"]{
+    font-family: $med;
+    color: $white;
+    cursor: pointer;
+
+    &:hover{
+        color: $white;
+        //background: $darkBlue;
+    }
+}
+
 .btn {
   font-family: $med;
   display: inline-block;
