@@ -39,11 +39,12 @@ ul, li {
 
 }
 .green-under-line {
-  margin:2em 0px 1.5em;
-  font-family: $eng;
+  font-family: $med;
   color: $darkGray;
   border-bottom: 5px solid $green;
   display: inline-block;
+  text-transform: uppercase;
+  font-size: $font-size-green-under-line;
 }
 .cta_box {
     padding: 2em;
@@ -57,7 +58,6 @@ ul, li {
       background-size:cover;
   }
 }
-
 .blue-bg {
     background: $blue;
     color: $white;
@@ -90,6 +90,9 @@ color:$white;
 }
 .section_heading {
     font-family: $arial;
+        font-size: 1.35em;
+    margin-bottom: 0.25em;
+    margin-top: 0;
 }
 
 
@@ -97,7 +100,10 @@ color:$white;
     width: 100%;
 }
     
-
+.content_container .container {
+padding-top: 1em;
+padding-bottom: 3em;    
+}
 /* Arrow Links 
 ***********************************************/
 .arrow {
@@ -196,16 +202,19 @@ color:$white;
     }
 }
 
-
 // sections - Swapout all .section with either section or p tags (p with margin-bottom)
 .section, p {
-    margin-bottom: 15px;
+    font-size: 1.05em;
     line-height: 1.15;    
 }
+.section {
+  display:inline-block;
+ }
 p {
-font-size: 1.1em;
+    font-size: 1.1em;
     font-family: $arial;
     line-height: 1.25;
+    margin-bottom: 1em;
 }
 
 
