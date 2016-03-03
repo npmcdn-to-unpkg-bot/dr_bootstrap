@@ -5,10 +5,10 @@
 ?>
 <?php get_header(); ?>
 <?php get_template_part('masthead'); ?>
+<div class="container">
+<section class="row row2">
 
-<section class="row2">
-
-	<div class='span_8 temp last'>
+	<div class='col-md-8 temp last'>
     <?php the_content(); ?>
 	</div>
 
@@ -60,5 +60,5 @@
     <?php endif; ?>
 <div class='clear'></div>
 </section>
-
+</div>
 <?php get_footer(); ?>

@@ -81,7 +81,10 @@ h1.eyebrow, h4.eyebrow {
     }
     .cta_box {
     padding: 1em;
-    
+        .ul, li {
+            list-style: none;
+            list-style-type: none !important;
+        }
     p{  
     font-size: 1.75em;
     color: inherit;
@@ -349,11 +352,24 @@ h1.eyebrow, h4.eyebrow {
   width:375px;
 }
 
-
+.solution-content-wrapper {
+    .row {
+    padding: 0 0 0 0;
+        
+    }
+    .solution-content-wrapper:first-child {
+    .content {
+        padding-left: 0;
+    }
+}
+}
 .content_row.container {
       .row {
     border-bottom:solid 1px $medMedGray;
-    padding: 0 1em 0 1em;       
+    padding: 0 1em 0 0;
+          .top{
+            border: none;  
+          }
            .content {
                position: relative;
                min-height: 180px;
@@ -366,16 +382,27 @@ h1.eyebrow, h4.eyebrow {
     font-weight: bold;
            }       
     }
+    .row.head {
+        border-bottom: none;
+    
+    .col-md-12 {
+        padding-left: 0;
+    }
+        }
     .row .content:first-child {
     border-right:solid 1px $medMedGray;
+    padding-left: 0;
   }
      > .row:last-of-type {
     border-bottom: solid 2px $green;
-    padding: 2em;     
+    padding: 0 1em 0 0;
     }
     .row .row:last-of-type {
     border-bottom:none;
    
+    }
+    .row.top {
+        border-bottom: none;
     }
 }
     

@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row head">
 <div class="col-md-12">       
 <div class="widget featured_content ww_page <?php echo ($hide_on_responsive)? 'hide_on_mobile': ''; ?>">
     <?php if ($header_text) : ?>
@@ -8,7 +8,7 @@
     <?php if ($intro_text) : ?>
         <section class="intro"><?php _e($intro_text,'digital-river'); ?></section>
     <?php endif; ?>
-    </div></div>
+    </div></div></div>
         <div class="row top">
         </div>
         <div class="row solution-content-wrapper">
@@ -19,13 +19,11 @@
                 <a class="button" href="<?php if($row['custom_url'] != ''){echo $row['custom_url']; } else {echo $row['page']; }?>">
                     <?php _e('Details', 'digital-river'); ?>
                 </a>
-                <div class="clear"></div>
             </section>
 
         <?php if( ($i%2) === 0 && $i != count($content) ) : ?>
             <div class='clear'></div>
-            </div><div class="row <?php if($i != count($content)-2 && $i != count($content)-1  ){echo 'solution-content-wrapper';} ?>" >
+            </div><div class="row solution-content-wrapper" >
         <?php endif; ?>
         <?php $i++; endforeach; ?>
         </div>
-    </div>
