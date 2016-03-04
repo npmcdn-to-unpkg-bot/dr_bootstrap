@@ -81,11 +81,8 @@ h1.eyebrow, h4.eyebrow {
     }
     .cta_box {
     padding: 1em;
-        .ul, li {
-            list-style: none;
-            list-style-type: none !important;
-        }
-    p{  
+    
+    p {  
     font-size: 1.75em;
     color: inherit;
     font-family: $light;
@@ -1196,7 +1193,6 @@ padding-bottom: 25%;
         .header {
           font-size: 4.5em;
     line-height: 1.1em;
-        margin-top: 1em;
         }
     }
     .green-button {
