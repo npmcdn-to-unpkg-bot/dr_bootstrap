@@ -64,7 +64,8 @@ jQuery(document).ready(function ($) {
     var path = window.location.pathname;
     $("a").mousedown(function() {
         var href = getLocation($(this).attr("href"));
-        ga('send', 'event', path, href);
+    // disable ga when GA not active
+    //    ga('send', 'event', path, href);
     }); 
 
     // Show login menu
