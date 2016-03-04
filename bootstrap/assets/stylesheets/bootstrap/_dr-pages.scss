@@ -247,7 +247,7 @@ h1.eyebrow, h4.eyebrow {
   background-color:$white;
   width:130%;
   box-shadow:none;
-  background:$white url("../../img/arrowdown.png") no-repeat 96% 50%;
+    background:$white url(#{$image-path}/arrowdown.png) no-repeat 96% 50%; 
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
@@ -257,7 +257,7 @@ h1.eyebrow, h4.eyebrow {
   width:130%;
   border:none;
   box-shadow:none;
-  background:$white url("../../img/arrowdown.png") no-repeat 96% 50%;
+    background:$white url(#{$image-path}/arrowdown.png) no-repeat 96% 50%; 
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
