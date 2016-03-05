@@ -460,13 +460,85 @@ p {
         line-height: 2em;
     }
     .head {
-        font-size: 1.7em;
+        font-size: 1.5em;
     width: 100%;
     color: $black;
     margin-bottom: 5px;
     text-transform: uppercase;
     font-family: $eng;
     }
+.drlogo {
+  width:100%;
+  width:90%;
+  height:55px;
+  background-color:$white;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+.social-shares {
+  width:100%;
+  height:55px;
+  background-color:$white;
+  margin-top:20px;
+  margin-bottom:10px;
+    float: left;
+}
+
+    
+.address-wrapper {
+  width:100%;
+  height:auto;
+  font-family:$arial;
+  font-size:1.21em;
+  line-height:19px;
+  color:$darkGray;
+  margin-top:15px;
+  margin:15px 0;
+  float: left;
+    }
+    p {
+        font-size: 1em;
+    }
+.social-icon-wrapper {
+  width:38px;
+  height:38px;
+  margin-left:11px;
+  margin-right:11px;
+  float:left;
+  margin-top:0px;
+
+&:hover {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter:alpha(opacity=80);
+  opacity:0.8;
+}
+&:last-child {
+  margin-right:0px;
+}
+&:first-child {
+  margin-left:0px;
+}
+}
+
+.disclaimer {
+
+  margin-left:30px;
+  font-family:$arial;
+  font-size:.85em;
+  color:$darkGray;
+  float:left;
+  margin-bottom:10px;
+  white-space:normal;
+  padding:0 10px 10px;
+  box-sizing:border-box;
+  margin:0;
+  POSITION: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 0;
+
+}
+
         
   .copyright, .trademark {
     font-size:.71em;
