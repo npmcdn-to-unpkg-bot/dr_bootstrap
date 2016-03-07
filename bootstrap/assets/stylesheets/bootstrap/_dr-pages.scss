@@ -381,15 +381,21 @@ h1.eyebrow, h4.eyebrow {
     }
     .row.head {
         border-bottom: none;
-    
+        
+        @media (min-width: $screen-lg-desktop) {
     .col-md-12 {
         padding-left: 0;
     }
+            
         }
+    }
+            @media (min-width: $screen-lg-desktop) {
+
     .row .content:first-child {
     border-right:solid 1px $medMedGray;
     padding-left: 0;
   }
+    }
      > .row:last-of-type {
     border-bottom: solid 2px $green;
     padding: 0 1em 0 0;
@@ -872,7 +878,7 @@ padding-bottom: 25%;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
   z-index: 1;
-
+    overflow: hidden;
 .owl-stage {
   position: relative;
   -ms-touch-action: pan-Y;
@@ -890,6 +896,7 @@ padding-bottom: 25%;
   overflow: hidden;
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
+    
 }
 .owl-controls .owl-nav .owl-prev,
 .owl-controls .owl-nav .owl-next,
@@ -903,7 +910,7 @@ padding-bottom: 25%;
   user-select: none;
 }
 &.owl-loaded {
-  display: block;
+  display: block;    
 }
 &.owl-loading {
   opacity: 0;
@@ -1241,6 +1248,7 @@ cursor: pointer;
     .tab_header {
     padding: .25em;
     border: 1px solid $medMedGray;    
+           @media (min-width: $screen-lg-desktop) {        
    img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -1251,7 +1259,7 @@ cursor: pointer;
 -o-transition: .5s -o-filter linear;
 transition: .5s filter linear;
 }
-
+        }
  img:hover {
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
@@ -2018,11 +2026,11 @@ margin-top:-2px;
 }
 .resource-wrapper{width:100%;  background-color: #FFF; border: solid 1px #BBB; border-left:none; border-right:none; border-top: none; padding: 0 0 1%;
 .resource-links{  margin:0 auto;
-    
+            @media (min-width: $screen-lg-desktop) {    
 .left-side, .right-side{ height:auto; overflow:hidden;  padding: 60px 0;}
     
  .left-side{float:left; border-right: solid 1px #BBB; }
-
+    }
 
 .header {
   font-family: $eng;

@@ -15,7 +15,7 @@
                 $tab_count = count($row['tabs']);
                 $i = 1;
                 foreach ($row['tabs'] as $tab) : ?>
-                    <div class="tab col col-md-6 <?php echo ($i === $tab_count && $tab_count != 1) ? 'last': ''; ?>">
+                    <div class="tab col col-md-6 col-xs-6 <?php echo ($i === $tab_count && $tab_count != 1) ? 'last': ''; ?>">
                         <div class="tab_header">
                             <div class="image">
                                 <img src="<?php echo $tab['tab_title_image']; ?>" alt="">

@@ -8,17 +8,17 @@
 <div class="clients-page">
 	<div class='client_wrapper '>
         <div class="row">
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Logitech Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/logitech.png'); ?>' />
 			</div>
 		</div>
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('WildTangent Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/WildTangent_logo.png'); ?>' />
 			</div>
 		</div>
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Kaspersky Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Kaspersky.png'); ?>' />
 			</div>
@@ -29,7 +29,7 @@
 				<?php endif; ?>
 			</div>
 		</div>
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Microsoft Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Microsoft_4.23.png'); ?>' />
 			</div>
@@ -84,22 +84,22 @@
 </div>
 	<div class='client_wrapper'>
         <div class="row">
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Arena Net Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/arenanet_logo.png'); ?>' />
 			</div>
 		</div>
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Citrix Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Citrix_4.23.png'); ?>' />
 			</div>
 		</div>
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Adobe Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Adobe-.png'); ?>' />
 			</div>
 		</div>
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Ubisoft Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Ubisoft.png'); ?>' />
 			</div>
@@ -108,7 +108,7 @@
 </div>
     <div class='client_wrapper'>
         <div class="row">
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('VMware Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/vmware_resized.png'); ?>' />
 			</div>
@@ -119,17 +119,17 @@
 				<?php endif; ?>
 			</div>
 		</div>
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Autodesk Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Autodesk_4.23.png'); ?>' />
 			</div>
 		</div>
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Trend Micro Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/trend_micro_logo.png'); ?>' />
 			</div>
 		</div>
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('LG Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/lg_logo.png'); ?>' />
 			</div>

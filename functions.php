@@ -90,8 +90,6 @@ function theme_styles() {
  */
 
 
-wp_register_style( 'dr_icons', get_template_directory_uri() . '/fonts/dr_icons/css/digitalriver-icons.css', array(), '3.0.1', 'all' );
-wp_enqueue_style( 'dr_icons' );
 
 
 wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/assets/javascripts/bootstrap.min.js', array( 'jquery' ), '3.0.1', true );
