@@ -53,6 +53,8 @@ require_once 'php/posts.php';
 require_once 'classes/DetailedListItem.php';
 require_once 'classes/DetailedList.php';
 require_once 'php/action_hooks.php';
+require_once 'inc/theme_functions.php';
+require_once 'inc/theme_hooks.php';
 
 
 /**
@@ -1907,8 +1909,3 @@ jQuery(document).ready(function ($) {
 }
 
 }
-
-error_reporting(E_ALL & E_STRICT);
-ini_set('display_errors', '1');
-ini_set('log_errors', '0');
-ini_set('error_log', './');
