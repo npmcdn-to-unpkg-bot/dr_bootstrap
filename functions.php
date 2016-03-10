@@ -203,7 +203,6 @@ function theme_scripts() {
     wp_enqueue_script('excanvas', get_stylesheet_directory_uri() . '/js/excanvas_src-min.js', array(), 1, false);
     wp_enqueue_script('flexslider', get_stylesheet_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), 1, true);
     wp_enqueue_script('flippy', get_stylesheet_directory_uri() . '/js/jquery.flippy-mod-min.js', array('jquery'), 1, true);
-    wp_enqueue_script('grayscale', get_stylesheet_directory_uri() . '/js/grayscale.js', array('jquery'), 1, true);
     wp_enqueue_script('plugins', get_stylesheet_directory_uri() . '/js/plugins.js', array('jquery'), 1, true);
     wp_enqueue_script('global', get_stylesheet_directory_uri() . '/js/global.js', array('jquery'), 1, true);
     wp_enqueue_script('owl', get_stylesheet_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), 1, true);
