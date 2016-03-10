@@ -1258,11 +1258,8 @@ cursor: pointer;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
--moz-transition: .5s -moz-filter linear;
--moz-transition: .5s filter linear;
--ms-transition: .5s -ms-filter linear;
--o-transition: .5s -o-filter linear;
-transition: .5s filter linear;
+  @include transition(filter .5s ease);
+-webkit-transition: -webkit-filter .5s, -webkit-backdrop-filter .5s, filter .5s, backdrop-filter .5s;
 }
         }
  img:hover {
@@ -1277,7 +1274,7 @@ transition: .5s filter linear;
   -webkit-filter: grayscale(0%);
 }
  .title {
-    width: 90%;
+    width: 89%;
     height: 2.2em;
     font-size: 1.5em;
     line-height: 2.8em;
@@ -1286,7 +1283,6 @@ transition: .5s filter linear;
     bottom: 0;
     color: $blue;
     background: url("../../../img/name_bg.png");
-    margin: 0 5% 0 5% 0;
     margin-bottom: 1%;
         
 .text {
