@@ -60,7 +60,7 @@
 <section class="resource-wrapper container">
 
 <div class="resource-links">
-	<div class="left-side col-md-8 col-sm-12">
+	<div class="left-side col-md-7 col-sm-12">
         <div class="row">
         <div class="col-md-2 col-md-offset-2">
 		<div class="header"><?php _e( 'Thought Leadership', 'digital-river' ); ?></div>
@@ -86,12 +86,12 @@
         </div>       
         </div>    
 
-	<div class="right-side col-md-4 col-sm-12">
+	<div class="right-side col-md-5 col-sm-12">
         <div class="row">
-        <div class="col-md-3 col-md-offset-2">
+        <div class="col-md-3 col-md-offset-1">
 		<div class="header"><?php _e( 'Developers Resources', 'digital-river' ); ?></div>
         </div>
-        <div class="col-md-5 col-md-offset-1">
+        <div class="col-md-6 col-md-offset-1">
 		<ul class="three-links">
 			<li><a href="https://developers.digitalriver.com/user"><?php _e( 'Developers Portal', 'digital-river' ); ?></a></li>
 			<li><?php icl_link_to_element(1043,'page',__('Demos', 'digital-river' )); ?></li>
