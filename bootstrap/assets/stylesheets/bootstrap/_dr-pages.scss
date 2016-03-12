@@ -232,7 +232,7 @@ h1.eyebrow, h4.eyebrow {
   background-color:$white;
   width:130%;
   box-shadow:none;
-    background:$white url(#{$image-path}/arrowdown.png) no-repeat 96% 50%; 
+    background:$white url('#{$image-path}arrowdown.png') no-repeat 96% 50%; 
     @include appearance(none);
 
 }
@@ -241,7 +241,7 @@ h1.eyebrow, h4.eyebrow {
   width:130%;
   border:none;
   box-shadow:none;
-    background:$white url(#{$image-path}/arrowdown.png) no-repeat 96% 50%; 
+    background:$white url('#{$image-path}arrowdown.png') no-repeat 96% 50%; 
     @include appearance(none);
 }
 #Country:focus, #State:focus {
@@ -1122,8 +1122,8 @@ padding-bottom: 25%;
     display: block !important;
     @include box-shadow (1px 1px 1px 0px rgba(55,55,55,0.4));
 }
-.hero .owl-nav .owl-prev { left: -80px; background:url(../../../img/arrow-left.svg) no-repeat center center; }
-.hero .owl-nav .owl-next { right: -80px; background:url(../../../img/arrow-right.svg) no-repeat center center; }
+.hero .owl-nav .owl-prev { left: -80px; background:url(#{$image-path}arrow-left.svg) no-repeat center center; }
+.hero .owl-nav .owl-next { right: -80px; background:url(#{$image-path}arrow-right.svg) no-repeat center center; }
 .hero.flexslider:hover .owl-prev { opacity: 0.7; left: 0px; }
 .hero.flexslider:hover .owl-next { opacity: 0.7; right: 0px; }
 .hero.flexslider:hover .owl-next:hover, .hero.flexslider:hover .owl-prev:hover { opacity: 1; }
@@ -1272,7 +1272,7 @@ cursor: pointer;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../../img/tc_selected_overlay.png');
+  background: url('#{$image-path}/tc_selected_overlay.png');
   position: absolute;
 }
     .tab_header {
@@ -1301,7 +1301,7 @@ cursor: pointer;
     position: absolute;
     bottom: 0;
     color: $blue;
-    background: url("../../../img/name_bg.png");
+    background: url("#{$image-path}/img/name_bg.png");
     margin-bottom: 1%;
         
 .text {
@@ -1314,13 +1314,13 @@ top: .4em;
     height: 1.8em;
     cursor: pointer;
     position: absolute;
-    background: url("../../../img/tab_down_arrow.png") no-repeat;
+    background: url('#{$image-path}tab_down_arrow.png') no-repeat;
 }
      .arrow:after {
          display: none;
      }     
 .arrow.selected {
-  background: url('../../../img/tab_up_arrow.png') no-repeat;
+  background: url('#{$image-path}tab_up_arrow.png') no-repeat;
         bottom: -.3em;
     right: -1%;
 }
@@ -1397,7 +1397,14 @@ top: .4em;
 	background: $blue;
 
 }
-
+.client_quote_box.flexslider, .owl-stage,.owl-stage-outer {
+    height: 222px !important;
+}
+.client_quote_box.flexslider {
+    .owl-item {    
+float: left; display: block;width: 100%;
+}
+}
 .client.client_quote_box p{
 font-size: 1.1em;
 color: $white;
@@ -1574,7 +1581,7 @@ height: 300px;
 }
     }
 .flex-prev{
-  background: url("../img/client_img/arrow-left.svg")  no-repeat !important;
+  background: url('#{$image-path}client_img/arrow-left.svg')  no-repeat !important;
   left: -80px;
 }
 .flexslider:hover .flex-prev {
@@ -1583,7 +1590,7 @@ height: 300px;
 }
 
 .flex-next{
-  background: url("../img/client_img/arrow-right.svg")  no-repeat !important;
+  background: url('#{$image-path}client_img/arrow-right.svg')  no-repeat !important;
   right: -80px;
 }
 .flexslider:hover .flex-next {
@@ -1651,7 +1658,9 @@ img{
     padding: 0 2px;
 }
 }
-
+.clients-page {
+overflow: hidden;    
+}
 .clients-page .featured_wrapper {
 padding-bottom: 0;
 }
