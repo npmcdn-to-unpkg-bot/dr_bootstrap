@@ -14,27 +14,6 @@ h1.eyebrow, h4.eyebrow {
       opacity: 1; }
 }
 
-    /* Resources Wraaper */
-    .resources-wrapper {
-
-    .tag {
-    font-size: 1em;
-    color: $green;
-    margin: 0 0 .1em;
-    font-family: $med;
-        }
-        .title {
-    font-size: 1.4em;
-    margin: 0;
-    color: $darkGray;
-    font-family: $med;
-    line-height: 1em;
-}
-        .description {
-            padding-bottom: .1em;
-            margin-bottom: 0;
-        }
-    }
 
 /*Green Clients Slider */
 #clients {
@@ -1149,10 +1128,14 @@ padding-bottom: 25%;
 .hero.flexslider:hover .owl-next { opacity: 0.7; right: 0px; }
 .hero.flexslider:hover .owl-next:hover, .hero.flexslider:hover .owl-prev:hover { opacity: 1; }
 
+
 .resources-wrapper {
     .owl-carousel {
         overflow: visible;
 
+    }
+    .eyebrow {
+        margin-bottom: 0;
     }
 .owl-next, .owl-prev{
     -webkit-transition: all 250ms ease-out;
@@ -1162,6 +1145,31 @@ padding-bottom: 25%;
     opacity: 0;
 }
 
+
+    .tag {
+    font-size: 1em;
+    color: $green;
+    margin: 0 0 .1em;
+    font-family: $med;
+        }
+        .title {
+    font-size: 1.4em;
+    margin: 0;
+    color: $darkGray;
+    font-family: $med;
+    line-height: 1em;
+    padding: 0 0 .5em 0;
+            
+}
+        .description {
+            padding-bottom: .1em;
+            margin-bottom: 0;
+            font-size: 1.2em;
+            padding-bottom: .4em;
+        }
+
+    
+    
 &:hover .owl-next{
   right:-45px;
   opacity: .7;
