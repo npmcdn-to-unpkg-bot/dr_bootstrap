@@ -16,7 +16,7 @@ h1.eyebrow, h4.eyebrow {
 
     /* Resources Wraaper */
     .resources-wrapper {
-        overflow: hidden;
+
     .tag {
     font-size: 1em;
     color: $green;
@@ -1148,6 +1148,55 @@ padding-bottom: 25%;
 .hero.flexslider:hover .owl-prev { opacity: 0.7; left: 0px; }
 .hero.flexslider:hover .owl-next { opacity: 0.7; right: 0px; }
 .hero.flexslider:hover .owl-next:hover, .hero.flexslider:hover .owl-prev:hover { opacity: 1; }
+
+.resources-wrapper {
+    .owl-carousel {
+        overflow: visible;
+
+    }
+.owl-next, .owl-prev{
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+    opacity: 0;
+}
+
+&:hover .owl-next{
+  right:-45px;
+  opacity: .7;
+}
+
+&:hover .owl-prev{
+  left: -25px;
+  opacity: .7;
+}
+
+.owl-next:hover, .owl-prev:hover{opacity: 1;}
+
+.owl-prev{
+  text-indent: -9999px;
+  background: url("/wp-content/plugins/file-version-control/img/arrow-left.svg") no-repeat;
+  position: absolute;
+  top:40%;
+  left: 0;
+  width: 40px;
+  height: 30px;
+
+}
+
+
+.owl-next{
+  text-indent: 9999px;
+  background: url("/wp-content/plugins/file-version-control/img/arrow-right.svg") no-repeat;
+  top:40%;
+  right: 0;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+}
+}
+
 
 /* PDF Creator Pages */
 .value-brief {
