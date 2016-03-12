@@ -141,6 +141,7 @@ h1.eyebrow, h4.eyebrow {
 
 .masthead {
   font-family:$arial;
+    padding-top: 0;
   .title {
     font-size:4em;
     line-height:50px;
@@ -658,7 +659,7 @@ a.button:hover {
 
 .masthead {
     .masthead_background    {
-            position: absolute;
+            position: relative;
     }
     .container {
         z-index: 99;
