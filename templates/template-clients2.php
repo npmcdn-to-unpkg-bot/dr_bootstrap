@@ -38,10 +38,10 @@
 	</div>
 	<div class='client_wrapper'>
         <div class="row">
-		<div class='client client_quote_box flexslider col-md-6'>
+		<div class='client client_quote_box flexslider col-md-6 col-xs-12 '>
 			 <ul class="slides">
 			 	 <li class="content">
-			 	 	<p>“Putting all of the accounting, tax, and fraud monitoring capabilities and infrastructure in place would have been a lot of incremental work—and costly. The fact that Digital River did all of that for us made it possible for me to get up and running quickly, and made it a lot easier for the rest of my organization.”</p>
+			 	 	<p>"Putting all of the accounting, tax, and fraud monitoring capabilities and infrastructure in place would have been a lot of incremental work—and costly. The fact that Digital River did all of that for us made it possible for me to get up and running quickly, and made it a lot easier for the rest of my organization.”</p>
 			 	 	<div class='logo'><img alt='<?php _e('HTC Logo','digital-river'); ?>' src='<?php echo get_image_path('client_img/HTC_logo_white.png'); ?>' /></div>
 			 	 </li>
 			 	 <li class="content">
@@ -70,12 +70,12 @@
 			 	 </li>
 			 </ul>
 		</div>
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('HTC Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/HTC_logo.png'); ?>' />
 			</div>
 		</div>
-		<div class='client col-md-3'>
+		<div class='client col-md-3 col-xs-3'>
 			<div class='client-logo'>
 				<img alt='<?php _e('Lenovo Logo','digital-river'); ?>' class='logo' src='<?php echo get_image_path('client_img/Lenovo_logo.png'); ?>' />
 			</div>
@@ -252,7 +252,7 @@
 <div class="row client_success">
 	<?php if(!$_GET['lang']): ?>
 		<section class="client_success ">
-			<div class='blue_tag_wrapper col-md-3'>
+			<div class='blue_tag_wrapper col-md-3 col-xs-3'>
 				<div class='blue_tag'>
 					<span class="green-under-line"><?php _e('Resources','digital-river'); ?></span>
 				</div>
@@ -301,5 +301,6 @@
 		</div>
 	</section>
     </div>
-    </div>        
+    </div>       
+</div>    
 <?php get_footer(); ?>

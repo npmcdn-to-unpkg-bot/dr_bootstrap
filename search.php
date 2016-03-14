@@ -214,17 +214,17 @@ endif;
 </style>
 
 
-
+    
     <section id="search_results">
         <div class="container">
 
         <?php get_search_form(true); ?>
 
         <nav class="type">
-            <a href="/?s=<?php echo $_GET['s']; ?>&amp;lang=<?php echo ICL_LANGUAGE_CODE; ?>&amp;type=pages" class="<?php echo ($type == 'pages' || $type == null) ? "selected" : null; ?>">Pages</a>
-            <a href="/?s=<?php echo $_GET['s']; ?>&amp;lang=<?php echo ICL_LANGUAGE_CODE; ?>&amp;type=resources" class="<?php echo ($type == 'resources') ? "selected" : null; ?>">Resources</a>
-            <a href="/?s=<?php echo $_GET['s']; ?>&amp;lang=<?php echo ICL_LANGUAGE_CODE; ?>&amp;type=press_releases" class="<?php echo ($type == 'press_releases') ? "selected" : null; ?>">Press Releases</a>
-            <a href="/?s=<?php echo $_GET['s']; ?>&amp;lang=<?php echo ICL_LANGUAGE_CODE; ?>&amp;type=newsfeed" class="<?php echo ($type == 'newsfeed') ? "selected" : null; ?>">Newsfeed</a>
+            <a href="<?php echo get_site_url(); ?>/?s=<?php echo $_GET['s']; ?>&amp;lang=<?php echo ICL_LANGUAGE_CODE; ?>&amp;type=pages" class="<?php echo ($type == 'pages' || $type == null) ? "selected" : null; ?>">Pages</a>
+            <a href="<?php echo get_site_url(); ?>/?s=<?php echo $_GET['s']; ?>&amp;lang=<?php echo ICL_LANGUAGE_CODE; ?>&amp;type=resources" class="<?php echo ($type == 'resources') ? "selected" : null; ?>">Resources</a>
+            <a href="<?php echo get_site_url(); ?>/?s=<?php echo $_GET['s']; ?>&amp;lang=<?php echo ICL_LANGUAGE_CODE; ?>&amp;type=press_releases" class="<?php echo ($type == 'press_releases') ? "selected" : null; ?>">Press Releases</a>
+            <a href="<?php echo get_site_url(); ?>/?s=<?php echo $_GET['s']; ?>&amp;lang=<?php echo ICL_LANGUAGE_CODE; ?>&amp;type=newsfeed" class="<?php echo ($type == 'newsfeed') ? "selected" : null; ?>">Newsfeed</a>
         </nav>
 
 

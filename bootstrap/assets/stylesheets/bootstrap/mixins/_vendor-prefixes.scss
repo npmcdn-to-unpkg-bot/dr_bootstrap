@@ -220,3 +220,25 @@
       -ms-user-select: $select; // IE10+
           user-select: $select;
 }
+
+//filter
+@mixin filter($filter...) {
+  -webkit-filter: $filter;
+     -moz-filter: $filter;
+       -o-filter: $filter;
+          filter: $filter;
+}
+//appearance
+//filter
+@mixin appearance($appearance...) {
+  -webkit-appearance: $appearance;
+     -moz-appearance: $appearance;
+       -o-appearance: $appearance;
+          appearance: $appearance;
+}
+@mixin border-radius($border-radius...) {
+  -webkit-border-radius: $border-radius;
+     -moz-border-radius: $border-radius;
+       -o-border-radius: $border-radius;
+          border-radius: $border-radius;
+}

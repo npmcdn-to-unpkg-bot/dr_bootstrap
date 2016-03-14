@@ -14,13 +14,9 @@ class DetailedListItem{
 		"chars" => 200
 	);
 
-	function __construct($title, $description, $link, $optional) {
+	function __construct($title, $description, $link, $optional = array()) {
 		$this->title = $title;
-		if($optional['limit_description'] == true):
-			$this->description = $this->truncate_description($optional["chars"], $description);
-		else:
-			$this->description = $description;
-		endif;
+		$this->description = $description;
 		$this->link = $link;
 		$this->optional = array_merge($this->optional, $optional);
 	}
@@ -34,9 +30,24 @@ class DetailedListItem{
 		return true;
 	}
 
+	private function truncate_description($description, $chars) {
+		$text = $description;
+		if(strlen($text) > $chars):
+		    $text = $text." ";
+		    $text = substr($text,0,$chars);
+		    $text = substr($text,0,strrpos($text,' '));
+		    $text = $text."...";
+	    endif;
+	    return $text;
+	}
 
 	private function getDescription(){
-		return $this->description;
+		$options = $this->getOptional();
+		if($options['limit_description'] == true):
+			return $this->truncate_description($this->description, $options["chars"]);
+		else:
+			return $this->description;
+		endif;
 	}
 
 	private function setDescription($new_description){
@@ -64,14 +75,7 @@ class DetailedListItem{
 		return true;
 	}
 
-	private function truncate_description($chars = 200, $description) {
-		$text = $description;
-	    $text = $text." ";
-	    $text = substr($text,0,$chars);
-	    $text = substr($text,0,strrpos($text,' '));
-	    $text = $text."...";
-	    return $text;
-	}
+
 
 	public function display(){
 		$optional = $this->getOptional();

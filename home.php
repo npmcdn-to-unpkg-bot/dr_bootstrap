@@ -81,166 +81,18 @@
 </g>
 </defs>
 </svg>
-<div class="hero-wrapper ">
-
- 
-</div>
-    </div>
 
 
-    <div id="main_content" class="gray-bg">
-        <div class="container">
-        <?php if(ICL_LANGUAGE_CODE == "en"): ?>
-
-            <section id="core-bkgd" >
-                <div class="container" >
-                    <div class="row centering">
-                        <div class="col-md-3 col-sm-12 solution-copy">
-                            <?php while(have_rows('why_work_section') ) : the_row(); ?>
-                                <h1>We&nbsp;drive&nbsp;growth.<br>It’s&nbsp;that&nbsp;simple.</h1>
-                                <p><?php the_sub_field('description'); ?></p>
-                                <a class="button" href="<?php the_sub_field('cta_link'); ?>"><?php the_sub_field('cta_label'); ?></a>
-                            <?php endwhile; ?>
-                        </div>
-                        <?php while(have_rows('capabilities') ) : the_row(); ?>
-                            <div class="col-md-3 col-sm-4 solution">
-
-                                <div class="box clearfix <?php the_sub_field('custom_css_classes'); ?>">
-                                    <a href="<?php the_sub_field('link'); ?>">
-                                    <h2>
-                                        <?php the_sub_field('title'); ?>
-                                     <svg class="arrow" viewBox="0 0 151 137.4">
-                                        <use class=" icon" x="0" y="0" xlink:href="#arrow" />
-                                    </svg>
-                                    </h2>
-                                    <a class="learn-more" href="<?php the_sub_field('link'); ?>"><?php the_sub_field('link_title'); ?>  ›</a>
-                                    <div class="minp">
-                                        <p><?php echo get_sub_field('description'); ?></p>
-                                    </div>
-                                    <div class="icon-wrapper">
-                                      <svg viewBox="0 0 151 137.4">
-                                        <use class="<?php the_sub_field('custom_css_classes'); ?> icon" x="0" y="0" xlink:href="#<?php the_sub_field('custom_css_classes'); ?>" />
-                                    </svg>
-                                    </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <?php endwhile; ?>
-                        <div class="clear"></div>
-                    </div> <!-- End of wrapper -->
-                </div> <!-- End of wrapper -->
-            </section> <!-- End of why work section -->
-
-        <?php else: ?>
-
-            <section id="why-work">
-                <div class="blue-bg"></div>
-                <div class="wrapper">
-                    <div class="left_col">
-                        <?php while(have_rows('why_work_section') ) : the_row(); ?>
-                            <h1 class='white eng'><?php the_sub_field('header'); ?></h1>
-                            <p class='white'><?php the_sub_field('description'); ?></p>
-                            <a class="button opposite" href="<?php the_sub_field('cta_link'); ?>"><?php the_sub_field('cta_label'); ?></a>
-                        <?php endwhile; ?>
-                    </div>
-
-                    <div class="right_col">
-                        <?php while(have_rows('capabilities') ) : the_row(); ?>
-                                <div class="icon <?php the_sub_field('custom_css_classes'); ?> ">
-                                <div class="icon-wrapper">
-                                    <?php $icon = get_sub_field('icon'); ?>
-                                    <img alt='<?php echo $icon['alt']; ?>' src=" <?php echo $icon['url']; ?> " />
-                                </div>
-                                <div class="title">
-                                    <h2 class='eng'><?php the_sub_field('title'); ?></h2>
-                                    <a href=" <?php the_sub_field('link'); ?>">[ <?php the_sub_field('link_title'); ?> ]</a>
-                                </div>
-                                <p> <?php _e(get_sub_field('description'),'digital-river'); ?> </p>
-                            </div>
-                        <?php endwhile; ?>
-                    </div> <!-- End of right_col -->
-                    <div class="clear"></div>
-                </div> <!-- End of wrapper -->
-            </section> <!-- End of why work section -->
-
-        <?php endif; ?>
-
-        </div>
- <div class="green-bg">
-            <div class="container ">
-                <section id="clients">
-        	<div class="wrapper">
-                <div class="row">
-            	<div class="title col-md-1">
-                    <h2><?php _e('Clients', 'digital-river'); ?></h2>    </div>
-                    <div class="col-md-2">
-                  <a href="<?php echo site_url('/clients/' ,'http'); ?>">[ <?php _e('More Clients','digital-river'); ?> ]</a>
-            
-                    </div>
-                </div>
-                <div class="row">
-                <div class="col-md-12">
-                    <div id="owl-demo" class="clients-wrapper" style="max-height:115px;">
-
-                        <?php foreach(get_field('client_logos') as $client_logo) : ?>
-                            <div class='item'>
-                                <img class="owl-lazy" data-src="<?php echo $client_logo['logo']; ?>" />
-                            </div>
-                        <?php endforeach; ?>
-
-                 </div> <!-- End of clients-wrapper -->
-                    </div></div>
-                       </div>
-        </section> <!-- End of clients section -->
-
-            </div>
-     </div><!-- End of wrapper -->
-</div> <!-- End of Main Contain -->
-   
-      <section id="news" class="container">
-            	<div class="row" style='max-width:1180px; padding:40px 0 20px; margin-bottom:20px; border-bottom:solid 1px #CCC;'>
-                        <div class="col-md-6">
-                            <div class="title">
-                                <h2 class='eyebrow eng'>News</h2>
-                                <a href="<?php echo get_permalink(459); ?>">[ More News ]</a>
-                            </div>
-                            <?php
-                        /*
-                            $resourcesSection = new ResourcesSection($posts);
-                            $resourcesSection->displayPressReleases();
-                            ?>
-                        </div> <!-- End of col-3 -->
-                        <div class="col-md-6 last">
-                            <div class="title">
-                                <h2 class='eyebrow eng'>Join Us</h2>
-                                <a href="<?php echo get_permalink(535); ?>">[ More Events ]</a>
-                            </div>
-                             <?php $resourcesSection->displayEvents(); ?>
-                        </div> <!-- End of col-3 -->
-                        <div class='clear'></div>
-                </div> <!-- End of wrapper -->
-
-                            <?php
-                            $args = array( 
-                                'post_type' => 'marketing_material',
-                                'showposts' => 6                                
-                            );  
-                            $posts = get_posts($args);
-                            $resourcesSection = new ResourcesSection($posts);
-                            $resourcesSection->display(true);
-                         */
-                            ?>
-                            
-                   
-                         <div class='clear'></div>
-                </div>
-
-            </section> <!-- End of news section --> 
-        
-        </div>
-   <!-- End of main-content -->
-
+<?php
+/**
+ * Functions hooked in to homepage action
+ *
+ * @hooked hero_banner_section   - 10
+ * @hooked why_work_section - 20
+ * @hooked clients_section    - 30
+ * @hooked news_and_events_section  - 40
+ */
+do_action( 'homepage' ); ?>
 
 
 <?php get_footer(); ?>

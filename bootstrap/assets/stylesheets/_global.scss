@@ -17,6 +17,12 @@ ul.bullet-list {
     padding-bottom: 0.4em;
     }    
 }
+ul.no-bullet {
+    list-style: none;
+    li {
+        list-style: none;
+    }
+}
 .sub-12-no-margin {
     .col-md-12 {
         padding-left: 0;
