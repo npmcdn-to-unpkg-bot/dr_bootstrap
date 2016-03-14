@@ -82,6 +82,7 @@
 </defs>
 </svg>
 
+
 <?php
 /**
  * Functions hooked in to homepage action
