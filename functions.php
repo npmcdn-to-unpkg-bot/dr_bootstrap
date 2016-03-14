@@ -91,9 +91,6 @@ function theme_styles() {
  * Bootstrap Files
  */
 
-
-
-
 wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/assets/javascripts/bootstrap.min.js', array( 'jquery' ), '3.0.1', true );
 wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap/assets/stylesheets/_bootstrap.css', array(), '3.0.1', 'all' );
 wp_enqueue_script( 'bootstrap-js' );
@@ -198,6 +195,9 @@ function theme_scripts() {
     wp_enqueue_script('jquery-ui-accordion');
     wp_enqueue_script('jquery-effects-core');
     wp_enqueue_script('jquery-effects-slide');
+    
+
+    wp_enqueue_script('packery', 'https://npmcdn.com/packery@2.0/dist/packery.pkgd.min.js', array(), 1, false);
     wp_enqueue_script('modernizer', get_stylesheet_directory_uri() . '/js/modernizer.js', array(), 1, false);
     wp_enqueue_script('console', get_stylesheet_directory_uri() . '/js/console-log.js', array(), 1, false);
     wp_enqueue_script('excanvas', get_stylesheet_directory_uri() . '/js/excanvas_src-min.js', array(), 1, false);
