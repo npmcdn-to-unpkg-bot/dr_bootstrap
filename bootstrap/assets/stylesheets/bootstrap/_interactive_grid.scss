@@ -1,0 +1,21 @@
+.container{
+	&.interactive-grid {
+		@include container-fixed($interactive-grid-gutter-width);
+
+		.row{
+			@include make-grid-columns($interactive-grid-gutter-width);
+
+			.grid-item{
+		        background: red;
+		        margin-bottom: 16px;
+		        height:192px;
+
+		        &.option{
+			        &.double-height{
+			        	height: 400px;
+			        }
+			    }
+			}
+		}
+	}
+}

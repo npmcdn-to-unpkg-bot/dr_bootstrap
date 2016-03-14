@@ -19,7 +19,17 @@
   @media (min-width: $screen-lg-min) {
     width: $container-lg;
   }
+
+  &.interactive-grid {
+    @include container-fixed($interactive-grid-gutter-width);
+
+    .row{
+      @include make-grid-columns($interactive-grid-gutter-width);
+    }
+  }
 }
+
+
 
 
 // Fluid container

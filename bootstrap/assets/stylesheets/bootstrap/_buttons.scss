@@ -20,12 +20,9 @@
 
 a.btn, button, input[type="button"]{
     font-family: $med;
-    color: $white;
     cursor: pointer;
 
     &:hover{
-        color: $white;
-        //background: $darkBlue;
     }
 }
 
@@ -46,6 +43,20 @@ a.btn, button, input[type="button"]{
   padding: 10px 0.9em 6px;
   font-size: 16px;
   @include user-select(none);
+
+  &.option{
+      &.display-block{
+        display:block;
+      }
+
+      &.thin-border{
+        border-width:1px;
+      }
+
+      &.margin-bottom{
+        margin-bottom:20px;
+      }
+  }
 
   &,
   &:active,
@@ -95,6 +106,8 @@ a.btn {
 .btn-default {
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
 }
+
+a.btn-primary,
 .btn-primary {
   background:$blue;
   border-color:$darkBlue;
@@ -108,6 +121,13 @@ a.btn {
 .btn-secondary{
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
 }
+
+.btn-tertiary{
+    color:$blue;
+    border-color:$medMedGray;
+    background:$white;
+}
+
 .btn-opposite{
   @include button-variant($white, transparent, $white);
 
