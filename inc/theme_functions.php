@@ -454,18 +454,51 @@ function create_grid($headline, $grid){
   ?>
 
 <script>
-
+  var $grid;
 jQuery(document).ready(function($){
-  var grid = $('.interactive-grid .row');
-  grid.packery({
-    // options
-    itemSelector: '.grid-item-wrapper',
+  $grid = $('.interactive-grid .row');
+  $grid.packery({
+    itemSelector: '.interact',
     gutter: 0
   });
 
-  $(document).on("click", function(){
-      console.log("fasd");
-      grid.packery();
+  $(document).on("click", ".interact", function(){
+      var $this = $(this);
+
+      
+      var $this_grid = $this.parents(".interactive-grid");
+      if($this_grid.find(".grid-item-wrapper.active").length > 0){
+          close_grid_item($this_grid.find(".grid-item-wrapper.active"));
+      }
+
+
+      $(".grid-item-wrapper").not(this).each(function(){
+          if($(this).hasClass("active")){
+              $(this).removeClass("active");
+          }
+      });
+      $this.clone().insertAfter($this).addClass("placeholder").find(".grid-item").empty();
+      
+      $this.addClass("active");
+      $this.toggleClass("interact");
+
+      $grid.packery('reloadItems');
+  });
+
+  var close_grid_item = function($this_grid_item){
+
+      var left = $(".interactive-grid").find(".placeholder").css("left");
+      var top = $(".interactive-grid").find(".placeholder").css("top");
+
+      $this_grid_item.css({left:left, top:top});
+      $this_grid_item.removeClass("active");
+      $this_grid_item.addClass("interact");
+
+      $(".interactive-grid").find(".placeholder").remove();
+      $grid.packery('reloadItems');
+  }
+  $(document).on("click",".interactive-grid .active .close", function(){
+      close_grid_item($(this).parents(".grid-item-wrapper"));
   });
 });
 </script>
@@ -473,8 +506,22 @@ jQuery(document).ready(function($){
     echo '<div class="container interactive-grid">';
         echo '<div class="row">';
         foreach ($grid as $key => $grid_item):
-            echo '<div class=" ' . $grid_item['width'] . ' grid-item-wrapper">';
-                echo '<div class="grid-item option ' . $grid_item['height'] . ' ">' . $grid_item['title'] . '</div>';
+            echo '<div class=" active-md ' . $grid_item['width'] . ' interact grid-item-wrapper" >';
+                echo '<div class="grid-item option ' . $grid_item['height'] . ' ">';
+                    if($grid_item['icon']):
+                        echo '<div class="expand hide-on-expand"><i class="'.$grid_item['icon'].'"></i></div>';
+                    endif;
+                    echo '<div class="background-image" style="background-image:url('.$grid_item['background_image'].');"></div>';
+                    echo "<div class='headline-wrapper'>";
+                        echo "<div class='headline'>";
+                            echo $grid_item['title'];
+                        echo "</div>";
+                    echo "</div>";
+                    echo "<div class='description'>";
+                        echo '<div class="close"><i class="fa fa-times"></i></div>';
+                        echo $grid_item['description'];
+                    echo "</div>";
+                echo '</div>';
             echo '</div>';
         endforeach;
         echo '</div>';

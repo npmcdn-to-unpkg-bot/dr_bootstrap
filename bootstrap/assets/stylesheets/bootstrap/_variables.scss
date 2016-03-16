@@ -347,7 +347,7 @@ $zindex-modal:             1050 !default;
 
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
-$screen-xs:                  480px !default;
+$screen-xs:                  600px !default;
 //** Deprecated `$screen-xs-min` as of v3.2.0
 $screen-xs-min:              $screen-xs !default;
 //** Deprecated `$screen-phone` as of v3.0.1
@@ -400,6 +400,10 @@ $interactive-grid-gutter-width: 16px;
 //== Container sizes
 //
 //## Define the maximum width of `.container` for different screen sizes.
+
+
+//** For `$screen-xs-min` and up.
+$container-xs:                 (540px + $grid-gutter-width) !default;
 
 // Small screen / tablet
 $container-tablet:             (720px + $grid-gutter-width) !default;
