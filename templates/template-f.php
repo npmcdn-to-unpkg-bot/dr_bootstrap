@@ -7,7 +7,7 @@
 <?php get_template_part('masthead'); ?>
 
 <div id="template_f" class="container">
-    <section class="featured_content content_row">
+    <section class="featured_content row">
           <div class="row">
         <section class="featured_image col-md-4 col">
           <?php if (get_field('featured_image')) : ?>

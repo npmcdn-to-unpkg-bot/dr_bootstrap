@@ -7,249 +7,195 @@
 
 
 <div class="payments-wrapper">
-	<div class="row2" id="intro" style="padding: 30px 0px;">
-		<div class="span_12" style="margin-bottom:30px;">
-			<h1 class="eyebrow"><?php echo get_the_title(); ?></h1>
-			<p class="gray"><?php echo get_field('subtitle'); ?></p>
-		</div>
-		<div class="clear"></div>
-
-		<div class="span_12 last" style="position:relative; ">
-			<div class="left img-wrapper">
-				<img src="/wp-content/themes/digital-river-translated/img/payments/laptop_left.png" alt="" />
-			</div>
-
-			<div class="middle img-wrapper">
-				<img src="/wp-content/themes/digital-river-translated/img/payments/laptop_main.png" alt="" />
-			</div>
-
-			<div class="right img-wrapper">
-				<img src="/wp-content/themes/digital-river-translated/img/payments/laptop_right.png" alt="" />
+	<div class="top custom custom-payments slide">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-5 col-sm-6">
+					<h1 class="eyebrow option no-margin"><?php echo get_the_title(); ?></h1>
+					<h2><?php _e("No limits. No boundaries.", "digital-river"); ?></h2>
+					<p><?php _e("Digital River World Payments has the deepest portfolio of local processing solutions around the world and the global expertise to help you expand into emerging markets.", "digital-river"); ?></p>
+				</div>
+				<div class="clear"></div>
 			</div>
 		</div>
-		<div class="clear"></div>
 	</div>
-	<div style="background:#F2F2F2;">
-		<div class="row2" id="why" style="padding: 30px 0px;">
+	<div class="white-bg  slide text-center">
+		<div class="container">
+			<h2><?php _e( 'Go Global With Digital River World Payments', 'digital-river' ); ?></h2>
+			<p><?php _e( 'As you look to expand into new markets, put your business in a position to maximize profitability with a world-class payments partner. Digital River World Payments (DRWP) will help you go to market fast, with the right local payment options to be successful wherever you sell. Partnering with DRWP for your global payment processing is a smart choice, enabling you to easily navigate the complexities and risks of doing business across borders. We are your one-stop shop for accepting payments in new markets around the world. With our reliable, secure, and flexible payments platform, there’s no limit to your success.', 'digital-river' ); ?></p>
+			
+			<p class="col-lg-offset-1 col-lg-10 ">
 
-			<div class="span_12 last" style="padding:30px;">
+				<img class="img-responsive visible-lg" src="<?php echo get_template_directory_uri()."/img/payments/grid-lines-lg.png"; ?>" />
+				<img class="img-responsive visible-md" src="<?php echo get_template_directory_uri()."/img/payments/grid-lines-md.png"; ?>" />
+			</p>
 
-				
-				<h2 class="med gray heading"><?php _e( 'Why Choose Digital River World Payments', 'digital-river' ); ?></h2>
+			<div class="row med-gray-color">
+				<div class="col-sm-4">
+					<div><i class="dr-cards x10"></i></div>
+					<h3 class="h4 option uppercase"><?php _e("Global Payment Methods","digital-river"); ?></h3>
+				</div>
+				<div class="col-sm-4">
+					<div><i class="dr-globe x10"></i></div>
+					<h3 class="h4 option uppercase"><?php _e("Global Gateway","digital-river"); ?></h3>
+				</div>
+				<div class="col-sm-4">
+					<div><i class="dr-payments x10"></i></div>
+					<h3 class="h4 option uppercase"><?php _e("Multi-National Card Acquiring", "digital-river"); ?></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lgray-bg slide ">
+		<div class="container">
+			<div class="row">
+				<h2 class="text-center option xtra-margin-btm"><?php _e("Featured Capabilities","digital-river"); ?></h2>
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col-md-3">
+							<img width="50px" class="img-responsive" src="<?php echo get_template_directory_uri()."/img/payments/brazil.png"; ?>" />
+						</div>
+						<div class="col-md-9 ">
+							<h3 class="h4 option no-top-margin"><?php _e("Don’t Miss Out On The Booming Business in Brazil", "digital-river"); ?></h3>
+						</div>
+					</div>
+					<p><?php _e("Whether you have a local entity in Brazil or not, we can increase your revenue potential substantially in the largest ecommerce market in Latin America. We’ll provide a turn-key solution that enables local card processing and popular local payment methods such as Boleto Bancario. Our team of local experts will help you understand the Brazilian payments landscape and maximize your profit potential.", "digital-river"); ?><a href="#"><?php _e("Read More","digital-river"); ?></a></p>
+				</div>
 
-				<div class="section">
-					<p class="gray"><?php _e( 'Digital River World Payments (DRWP) is our full-service enterprise payment processing solution. With DRWP you have the flexibility to choose a PSP, Gateway or IPO service model based on your business needs to integrate with your existing commerce operation. DRWP can support you through all stages of international payment optimization: cross-border, alternative payments and local entities. This robust, scalable payment engine offers everything you need to manage the entire payment lifecycle with clear business benefits.', 'digital-river' ); ?>
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col-md-3">
+							<img width="50px" class="img-responsive" src="<?php echo get_template_directory_uri()."/img/payments/union_pay.png"; ?>" />
+						</div>
+						<div class="col-md-9 ">
+							<h3 class="h4 option no-top-margin"><?php _e("Increase Global Profitability By Offering UnionPay", "digital-river"); ?></h3>
+						</div>
+					</div>
+					<p><?php _e("UnionPay is the largest card network in the world and is growing rapidly. UnionPay represents an enormous revenue opportunity for any global merchant seeking to maximize sales from the trillion dollar Asia ecommerce market. Digital River World Payments is a certified global acquirer capable of accepting UnionPay in any local currency where the card is issued. We also offer flexible options for settlement currency. As one of the first international acquirers of UnionPay cards globally, we give you a direct connection so you don’t have to go through third party networks.", "digital-river"); ?><a href="#"><?php _e("Read More","digital-river"); ?></a></p>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="row">
+						<div class="col-md-3 ">
+							<img width="95px" class="img-responsive" src="<?php echo get_template_directory_uri()."/img/payments/alipay_logo.png"; ?>" />
+						</div>
+						<div class="col-md-9 ">
+							<h3 class="h4 option no-top-margin"><?php _e("Connecting You to the Powerful Alipay Network", "digital-river"); ?></h3>
+						</div>
+					</div>
+					<p><?php _e("Nearly half of all online payments made in China are made through the ewallet service provider Alipay. Whether you have an Asian entity or not, we can give you a direct connection into the powerful Alipay network. We can provide a customized, cost-effective, and reliable solution without the overhead costs and risks of developing and maintaining your own local entity.", "digital-river"); ?></p>
+				</div>
+			</div>
+			
+							
+			<h3 class="option no-margin"><i class="fa fa-cogs x4 option margin-right"></i><?php _e("Flexible Integration Methods for Optimizing the Consumer Experience", "digital-river"); ?></h3>
+			<p><?php _e("To offer online and mobile shoppers a fast, secure, and seamless purchasing experience, we offer powerful integration methods and convenient features:", "digital-river"); ?></p>
+			<div class="row">
+				<div class="col-md-4">
+					<h4 class="inline no-margin option"><?php echo _e("Tokenization API", "digital-river"); ?></h4><?php _e(": An easy-to-integrate solution that will support alternative payment methods in future releases.", "digital-river"); ?>
+				</div>
+				<div class="col-md-4">
+					<h4 class="inline no-margin option"><?php echo _e("Account Updater", "digital-river"); ?></h4><?php _e(": A valuable feature for recurring and subscription billing, the Account Updater prevents payment disruptions when changes are made to card holder accounts. Account Updater is currently used in select markets—please contact us to inquire about availability in your part of the world.", "digital-river"); ?>
+				</div>
+				<div class="col-md-4">
+					<h4 class="inline no-margin option"><?php echo _e("Hosted Payment Page", "digital-river"); ?></h4><?php _e(": With our customizable, ready-made payment page templates, we completely manage sensitive card data for different countries. Our payment pages come ready with locally preferred alternative payment types.", "digital-river"); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gray-bg map-bg slide">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 text-center">
+					<h2><?php _e( 'Global Payment Processing', 'digital-river' ); ?></h2>
+					<p><?php _e( 'Providing local payment options is necessary to enter in global markets—and to create the right local shopping experience to be successful. Digital River can provide more payment options in more countries than any other company. We support 175+ currencies, 200+ payment methods, and have relationships with 35+ global card acquiring banks.', 'digital-river' ); ?></p>
+					<a href="/solutions/payments/drwp-global-payment-processing/" class="btn btn-opposite text-center"><?php _e( 'View our global payment methods', 'digital-river' ); ?></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="lgray-bg slide">
+		<div class="container">
+			<h2 class="text-center option xtra-margin-btm"><?php _e("Businesses We Support", "digital-river"); ?></h2>
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<p class="text-center">
+						<img width="200" height="200" class="img-circle" src="<?php echo get_template_directory_uri()."/img/payments/entertainment.jpg"; ?>" />
+					</p>
+					<h3 class="text-center"><?php _e("Digital Solutions","digital-river"); ?></h3>
+					<p><?php _e("Increase profitability by offering flexible billing options, a personalized shopping experience, advanced order management capabilities, and everything you need to sell your product around the world.", "digital-river"); ?></p>
+					<strong>Experience:</strong>
+					<p><?php _e("We support subscription and one-off billing models and work with many of the world’s leading providers of music, software, and digital goods.", "digital-river"); ?>
+						<a href="#"><?php _e("Read More", "digital-river"); ?></a>
+					</p>
+				</div>
+				<div class="col-md-3  col-sm-6">
+					<p class="text-center">
+						<img width="200" height="200" class="img-circle" src="<?php echo get_template_directory_uri()."/img/payments/travel_leisure.jpg"; ?>" />
+					</p>
+					<h3 class="text-center"><?php _e("Travel & Leisure","digital-river"); ?></h3>
+					<p><?php _e("Expand your customer base and accommodate travelers from around the world by simplifying the buying experience and offering the language, currency and payment methods they prefer.", "digital-river"); ?></p>
+					<strong>Experience:</strong>
+					<p><?php _e("We help airlines, hotels, travel agencies, cruise lines, car rentals, and other travel businesses manage their unique payment processing needs.", "digital-river"); ?>
+						<a href="#"><?php _e("Read More", "digital-river"); ?></a>
+					</p>
+				</div>
+				<div class="clear visible-sm"></div>
+				<div class="col-md-3 col-sm-6">
+					<p class="text-center">
+						<img width="200" height="200" class="img-circle" src="<?php echo get_template_directory_uri()."/img/payments/retail.jpg"; ?>" />
+					</p>
+					<h3 class="text-center"><?php _e("Retail","digital-river"); ?></h3>
+					<p><?php _e("Increase profitability by offering flexible billing options, a personalized shopping experience, advanced order management capabilities, and everything you need to sell your product around the world.", "digital-river"); ?></p>
+					<strong>Experience:</strong>
+					<p><?php _e("We’ll help retail businesses reduce cart abandonment and simplify the complexities of global expansion.", "digital-river"); ?>
+						<a href="#"><?php _e("Read More", "digital-river"); ?></a>
+					</p>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<p class="text-center">
+						<img width="200" height="200" class="img-circle" src="<?php echo get_template_directory_uri()."/img/payments/direct_selling.jpg"; ?>" />
+					</p>
+					<h3 class="text-center"><?php _e("Direct Selling","digital-river"); ?></h3>
+					<p><?php _e("Take your direct selling enterprise to the next level with seamless and rapid international expansion into dozens of emerging markets.", "digital-river"); ?></p>
+					<strong>Experience:</strong>
+					<p><?php _e("We are uniquely equipped to handle payment acceptance and commission payouts. We provide true local card processing to ensure that local distributor payment cards are processed without cross-border fees.", "digital-river"); ?>
+						<a href="#"><?php _e("Read More", "digital-river"); ?></a>
 					</p>
 				</div>
 			</div>
-			<div class="clear"></div>
-			<div class="span_12 last" style="position:relative;">
-	     			<div class="left-hitbox"></div>
-	            	<div class="right-hitbox"></div>
-
-	            	<div class="seperator left">+</div>
-	            	<div class="seperator right">+</div>
-
-        	     	<style>
-		            	#why-slider li{margin-top: 5px;}
-
-						.row2{
-						    margin: 0px auto;
-						    max-width: 1240px;
-						    padding: 0px 30px;
-						    box-sizing: border-box;
-						}
-	            	</style>
-
-	            <div id="why-slider">
-   	                <div class='item' data-index="1">
-	                	<img src="/wp-content/themes/digital-river-translated/img/payments/security_icon.png" alt="<?php _e( 'payments security icon', 'digital-river' ); ?>" />
-	                	<div class="label">
-	                		<h3 class="med gray"><?php _e( 'Security', 'digital-river' ); ?></h3>
-	                		<ul class="arial">
-	                			<li><?php _e( 'Secured payment credentials through tokenization', 'digital-river' ); ?></li>
-								<li><?php _e( 'PCI compliant', 'digital-river' ); ?></li>
-	                		</ul>
-	                	</div>
-	                </div>
-	                <div class='item' data-index="2">
-	                	<img src="/wp-content/themes/digital-river-translated/img/payments/flexibility_icon.png" alt="<?php _e( 'payments flexibility icon', 'digital-river' ); ?>" />
-	                	<div class="label">
-	                		<h3 class="med gray"><?php _e( 'Flexibility', 'digital-river' ); ?></h3>
-							<ul class="arial">
-	                			<li><?php _e( 'Flexible API integration options', 'digital-river' ); ?></li>
-								<li><?php _e( 'Mobile responsive', 'digital-river' ); ?></li>
-	                		</ul>
-	                	</div>
-	                </div>
-	                <div class='item' data-index="3">
-	                	<img src="/wp-content/themes/digital-river-translated/img/payments/profitability_icon.png" alt="<?php _e( 'payments profitability icon', 'digital-river' ); ?>" />
-	                	<div class="label">
-	                		<h3 class="med gray"><?php _e( 'Profitability', 'digital-river' ); ?></h3>
-	                		<ul class="arial">
-	                			<li><?php _e( 'Speed to revenue', 'digital-river' ); ?></li>
-								<li><?php _e( 'Higher authorization rates', 'digital-river' ); ?></li>
-	                		</ul>
-	                	</div>
-	                </div>
-	                <div class='item' data-index="4">
-	                	<img src="/wp-content/themes/digital-river-translated/img/payments/reliability_icon.png" alt="<?php _e( 'payments reliability icon', 'digital-river' ); ?>" />
-	                	<div class="label">
-	                		<h3 class="med gray"><?php _e( 'Reliability', 'digital-river' ); ?></h3>
-							<ul class="arial">
-	                			<li><?php _e( 'Industry-leading uptime and platform stability', 'digital-river' ); ?></li>
-								<li><?php _e( 'Multiple acquiring banks in each country', 'digital-river' ); ?></li>
-	                		</ul>
-	                	</div>
-	                </div>
-
-	             </div>
-
+		</div>
+	</div>
+	<div class="blue-bg slide text-center">
+		<div class="container">
+			<h2><?php _e( 'Our Value-Added Services', 'digital-river' ); ?></h2>
+			<p><?php _e( 'We measure success by more than just the number of credit card payment methods offered at checkout. DRWP combines proven, trusted payment systems with value-added tools and services to offer comprehensive payment solutions for your global business.', 'digital-river' ); ?></p>
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div><i class="fa fa-check-square-o x10"></i></div>
+					<h3 class="h4"><?php _e( 'Secured Payment Credentials Through Tokenization', 'digital-river' ); ?></h3>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div><i class="dr-money x10"></i></div>
+					<h3 class="h4"><?php _e( 'PCI Compliance', 'digital-river' ); ?></h3>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div><i class="dr-phone x10"></i></div>
+					<h3 class="h4"><?php _e( 'Payouts to Suppliers &amp; Partners', 'digital-river' ); ?></h3>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div><i class="dr-lock x10"></i></div>
+					<h3 class="h4"><?php _e( 'Flexible Solution for Mobile Experience', 'digital-river' ); ?></h3>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="gray-map-bg">
-		<div class="row2" style="text-align:center; padding: 30px 0px;">
 
+    <?php initResourcesSection(); ?>
 
-			<div class="span_12" style="padding:30px;">
-				<h2 class="med heading white"><?php _e( 'Global Payment Processing', 'digital-river' ); ?></h2>
-
-				<div class="section">
-					<p class="white"><?php _e( 'Providing local payment options is necessary to enter in global markets—and to create the right local shopping experience to be successful. Digital River can provide more payment options in more countries than any other company. We support 175+ currencies, 200+ payment methods, and have relationships with 35+ global card acquiring banks.', 'digital-river' ); ?></p>
-				</div>
-
-				<a href="/solutions/payments/drwp-global-payment-processing/" class="button opposite btn-white"><?php _e( 'View our global payment methods', 'digital-river' ); ?></a>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	<div id="processingModels" style="padding: 30px 0px 60px;">
-		<div class="row2" style="text-align:center; ">
-			<div class="span_12" style="padding:30px;">
-				<h2 class="med gray heading"><?php _e( 'Payment Processing Models', 'digital-river' ); ?></h2>
-			</div>
-			<div class="col-md-4">
-				<div class="image-wrapper">
-					<img style="margin-left:-90px; min-height:113%;" src="/wp-content/themes/digital-river-translated/img/payments/gateway_services.jpg" alt="<?php _e( 'Gateway services image', 'digital-river' ); ?>" />
-				</div>
-				<div class="copy-wrapper">
-					<h3 class="eyebrow"><?php _e( 'Gateway Services', 'digital-river' ); ?></h3>
-					<p><?php _e( 'Established relationships with financial institutions worldwide to ensure you gain the widest reach with more payment options in more local currencies.', 'digital-river' ); ?></p>
-					<div class="clear"></div>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="col-md-4">
-				<div class="image-wrapper">
-					<img src="/wp-content/themes/digital-river-translated/img/payments/fullcard_services.jpg" alt="<?php _e( 'Full-Card acquiring image', 'digital-river' ); ?>" />
-				</div>
-				<div class="copy-wrapper"> 
-					<h3 class="eyebrow"><?php _e( 'Full-Card Acquiring Services', 'digital-river' ); ?></h3>
-					<p><?php _e( 'Customized payment page templates and the latest fraud protection technologies and checkout page optimization. Let us take on the time and labor intensive responsibilities.', 'digital-river' ); ?></p>
-					<div class="clear"></div>
-				</div>
-				<div class="clear"></div>
-
-			</div>
-			<div class="col-md-4 last">
-				<div class="image-wrapper">
-					<img style="position: relative; top: 0px;" src="/wp-content/themes/digital-river-translated/img/payments/incountry_services.jpg" alt="<?php _e( 'In-country merchant Image', 'digital-river' ); ?>" />
-				</div>
-				<div class="copy-wrapper">
-					<h3 class="eyebrow"><?php _e( 'In-Country Merchant', 'digital-river' ); ?></h3>
-					<p><?php _e( 'Our in-country merchants help you establish your business in new markets by simplifying the process – with us assuming the tax, fraud and merchant of record (MOR) duties.', 'digital-river' ); ?></p>
-					<div class="clear"></div>
-				</div>
-				<div class="clear"></div>
-
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	<div style="background:#00a7e1; padding: 30px 0 60px;" id="value-added">
-		<div class="row2" style="text-align:center;">
-			<div class="span_12" style="padding:30px;">
-				<h2 class="med white heading"><?php _e( 'Our Value-Added Services', 'digital-river' ); ?></h2>
-
-				<div class="section">
-					<p class="white"><?php _e( 'We measure success by more than just the number of credit card payment methods offered at checkout. DRWP combines proven, trusted payment systems with value-added tools and services to offer comprehensive payment solutions for your global business.', 'digital-river' ); ?></p>
-				</div>
-			</div>
-			<div class="clear"></div>
-			<div class="span_3 last">
-				<div class="image-wrapper">
-					<img src="/wp-content/themes/digital-river-translated/img/payments/lock_icon.png" alt="<?php _e( 'Tokenization Icon', 'digital-river' ); ?>" />
-				</div>
-				<h3 class="white arial"><?php _e( 'Secured Payment Credentials Through Tokenization', 'digital-river' ); ?></h3>
-			</div>
-			<div class="span_3">
-				<div class="image-wrapper">
-					<img src="/wp-content/themes/digital-river-translated/img/payments/checkmark_icon.png" alt="<?php _e( 'PCI Compliance Icon', 'digital-river' ); ?>" />
-				</div>
-				<h3 class="white arial"><?php _e( 'PCI Compliance', 'digital-river' ); ?></h3>
-			</div>
-			<div class="span_3">
-				<div class="image-wrapper">
-					<img src="/wp-content/themes/digital-river-translated/img/payments/cash_icon.png" alt="<?php _e( 'Payouts to Suppliers and Partners Icon', 'digital-river' ); ?>" />
-				</div>
-				<h3 class="white arial"><?php _e( 'Payouts to Suppliers &amp; Partners', 'digital-river' ); ?></h3>
-			</div>
-			<div class="span_3">
-				<div class="image-wrapper">
-					<img src="/wp-content/themes/digital-river-translated/img/payments/mobile_icon.png" alt="<?php _e( 'Mobile Experience Icon', 'digital-river' ); ?>" />
-				</div>
-				<h3 class="white arial"><?php _e( 'Flexible Solution for Mobile Experience', 'digital-river' ); ?></h3>
-			</div>
-
-			<div class="clear"></div>
-		</div>
-	</div>
-
-	<div style="background:#EEE;  padding: 30px 0;">
-		<div class="row2" style="text-align:center;">
-
-
-			<div class="span_12" style="padding:30px;">
-				<h2 class="med heading gray"><?php _e( 'Cross-Border Payments', 'digital-river' ); ?></h2>
-
-				<div class="section">
-					<p class="gray"><?php _e( 'Being knowledgeable about what your industry does best and what it can improve on is essential to making your business the best of the best. The PYMNTS.com X-Border Payments Optimization Index, sponsored by Digital River, is a product of in-depth research to better understand how a variety of industries and countries are prepared to provide a seamless shopping experience for cross-border customers. Every quarter, the index goes into detail of the trends that are occurring, the rankings of merchant cross-border preparedness and more.', 'digital-river' ); ?></p>
-				</div>
-
-				<a href="/solutions/payments/x-border-payments/" class="button opposite btn-blue"><?php _e( 'Preview the Cross-Border Index Report', 'digital-river' ); ?></a>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	<?php /* if(count(get_field('client_logos')) > 1): ?>
-	 <section id="clients" style="text-align:center;">
-		<div class="row2">
-			<div class="span_12" style="padding:30px;">
-	    	<div class="wrapper">
-	        	
-	            <h2 class='med heading white'><?php _e('Clients', 'digital-river'); ?></h2>
-				<div class="section">
-					<p class="white">Big brands trust Digital River to manage their payment processing.</p>
-				</div>
-
-	            <div id="clientsSlider" class="clients-wrapper">
-	                <?php foreach(get_field('client_logos') as $client_logo) : ?>
-	                    <div class='item'>
-	                        <img src="<?php echo $client_logo['logo']['url']; ?>" alt="<?php echo $client_logo['logo']['alt']; ?>" />
-	                    </div>
-	                <?php endforeach; ?>
-	         	</div> <!-- End of clients-wrapper -->
-	        </div> <!-- End of wrapper -->
-	    	</div>
-		</div>
-	</section> <!-- End of clients section -->
-	<?php endif; */ ?>
-	<div class="row2">
-        <?php initResourcesSection(); ?>
-    </div>
-
-    <!-- ecommerce -->
+    <!-- ecommerce 
     <div style="background:#b3d334;  padding: 30px 0;">
 		<div class="row2">
 			<div class="span_12" style="text-align:center">
@@ -262,7 +208,7 @@
 		</div>
 	</div>
 
-
+-->
 </div>
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
  	<script type='text/javascript' src='http://digitalriver.staging.wpengine.com/wp-content/themes/digital-river-translated/js/owl.carousel.min.js?ver=1'></script>

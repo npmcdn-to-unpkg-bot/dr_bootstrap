@@ -7,7 +7,6 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-
 <style>
 .gaming-outer-wrapper .scrub-wrapper .heading {
     position: absolute;
@@ -85,13 +84,13 @@
 
 @media (max-width: 990px) and (min-width: 320px) {
   .gaming-outer-wrapper .module2 .panelDominate {
-      background-image: url("http://digitalriver.staging.wpengine.com/wp-content/themes/digital-river-translated/img/gaming/img/m-dominate.jpg");
+      background-image: url("/wp-content/themes/digital-river-translated/img/gaming/img/m-dominate.jpg");
   }
   .gaming-outer-wrapper .module2 .panelScale {
-      background-image: url("http://digitalriver.staging.wpengine.com/wp-content/themes/digital-river-translated/img/gaming/img/m-scale.jpg");
+      background-image: url("/wp-content/themes/digital-river-translated/img/gaming/img/m-scale.jpg");
   }
   .gaming-outer-wrapper .module2 .panelStart {
-      background-image: url("http://digitalriver.staging.wpengine.com/wp-content/themes/digital-river-translated/img/gaming/img/m-start.jpg");
+      background-image: url("/wp-content/themes/digital-river-translated/img/gaming/img/m-start.jpg");
   }
 
   .gaming-outer-wrapper .module2 .CTAPanel-Description.DominateDesc {
@@ -917,7 +916,7 @@ if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (str
     <div class="dot-wrapper overlay level1 top" style=" left: 44%; top: 72%;">
       <div class="dot" data-number="2">2</div>
       <div class="info level1">
-        You need to set up a storefront with full monetization capabilities. Our premium cloud-based SaaS platforms for web stores and and in-app commerce support for physical and digital goods. Whatever your revenue model—traditional, free-to-play, renewal-based—our platforms support revenue growth with dynamic capabilities.
+        You need to set up a storefront with full monetization capabilities. Our premium cloud-based SaaS platforms for web stores and in-app commerce support for physical and digital goods. Whatever your revenue model—traditional, free-to-play, renewal-based—our platforms support revenue growth with dynamic capabilities.
         <div class="bullet-heading">Monetization Tools</div>
         <ul class="bullets">
           <li>Merchandise &amp; Collectables</li>

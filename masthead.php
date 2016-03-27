@@ -15,7 +15,7 @@ $blog_id = $blog_data->cat_ID;
 
 <section class="masthead">
 
-
+<div class="masthead_background">
     		<div class="container">
 
         
@@ -67,7 +67,7 @@ $blog_id = $blog_data->cat_ID;
 				}
 				?>
 				</div>
-		
+		</div>
         </div>
     </div>
 </section>

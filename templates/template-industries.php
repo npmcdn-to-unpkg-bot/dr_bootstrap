@@ -1,4 +1,19 @@
+<?php
+/**
+ * Template Name: Template Industries
+ */
+?>
+<?php get_header(); ?>
+<?php get_template_part('masthead'); ?>
+
+
+
+
+
+
+<!-- Content Container -->
 <section id="industries" class="content_container">
+    <div class="left_border"></div>
     <div class="container">
         <div class="row clients-wrapper">
 
@@ -20,7 +35,7 @@
 					<div class="cta-wrapper">
 						<?php
 							if(!$_GET['lang']):
-								_e('<a href="'.echo get_permalink(icl_object_id(8881, 'page', true)).'" class="brackets">Learn More</a>');
+								_e('<a href="'. get_permalink(icl_object_id(8881, 'page', true)).'" class="brackets">Learn More</a>');
 							endif;
 						?>
 					</div>
@@ -44,7 +59,7 @@
                     <div class="cta-wrapper">
                     	<?php
 						if(!$_GET['lang']):
-                    		_e('<a href="'.echo get_permalink(icl_object_id(11257, 'page', true)).'" class="brackets">Learn More</a>');
+                    		_e('<a href="'. get_permalink(icl_object_id(11257, 'page', true)).'" class="brackets">Learn More</a>');
                     	endif;
                     	?>
 					</div>
@@ -68,7 +83,7 @@
                     <div class="cta-wrapper">
                     	<?php
 						if(!$_GET['lang']):
-                    		_e('<a href="'.echo get_permalink(icl_object_id(11911, 'page', true)).'" class="brackets">Learn More</a>');
+                    		_e('<a href="'. get_permalink(icl_object_id(11911, 'page', true)).'" class="brackets">Learn More</a>');
                     	endif;
                     	?>
 					</div>
@@ -92,7 +107,7 @@
                     <div class="cta-wrapper">
 						<?php
 						if(!$_GET['lang']):
-							_e('<a href="'.echo get_permalink(icl_object_id(9158, 'page', true)).'" class="brackets">Learn More</a>');
+							_e('<a href="'. get_permalink(icl_object_id(9158, 'page', true)).'" class="brackets">Learn More</a>');
 						endif;
 						?>
 					</div>
@@ -117,7 +132,7 @@
                     <div class="cta-wrapper">
 						<?php
 						if(!$_GET['lang']):
-							_e('<a href="'.echo get_permalink(icl_object_id(9109, 'page', true)).'" class="brackets">Learn More</a>');
+							_e('<a href="'. get_permalink(icl_object_id(9109, 'page', true)).'" class="brackets">Learn More</a>');
 						endif;
 						?>
 					</div>
@@ -141,8 +156,7 @@
                     <div class="cta-wrapper">
                     	<?php
 						if(!$_GET['lang']):
-                    		icl_link_to_element(11261,'page', __( 'Learn More', 'digital-river' ));
-                    		_e('<a href="'.echo get_permalink(icl_object_id(11261, 'page', true)).'" class="brackets">Learn More</a>');
+                    		_e('<a href="'. get_permalink(icl_object_id(11261, 'page', true)).'" class="brackets">Learn More</a>');
                     	endif;
                     	?>
 					</div>
@@ -166,7 +180,7 @@
                     <div class="cta-wrapper">
 						<?php
 						if(!$_GET['lang']):
-							_e('<a href="'.echo get_permalink(icl_object_id(8472, 'page', true)).'" class="brackets">Learn More</a>');
+							_e('<a href="'. get_permalink(icl_object_id(8472, 'page', true)).'" class="brackets">Learn More</a>');
 						endif;
 						?>
 					</div>
@@ -176,3 +190,4 @@
     </div>
 </section>
 
+<?php get_footer(); ?>

@@ -19,7 +19,7 @@ jQuery(document).ready(function( $ ) {
 	var timer;
 	$(window).bind('resize', function(){
 	   timer && clearTimeout(timer);
-	   timer = setTimeout(resizeHero, 500);
+	   // timer = setTimeout(resizeHero, 500);
 	});
 
 

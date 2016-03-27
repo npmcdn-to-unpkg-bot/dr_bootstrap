@@ -144,7 +144,7 @@
                                     </div>
                                         <div class="head"><?php _e('Corporate Headquarters','digital-river'); ?></div>
                                     <div class="address-wrapper">
-                                        
+                                        <p>
                                     	10380 Bren Road West<br/>
                                         Minnetonka, MN 55343<br/>
                                         +1 (952) 253-1234</p>
@@ -152,7 +152,7 @@
                                     </div>
 
 
-                                       <div class="col-md-4">
+                                       <div class="col-md-4 contact-right">
 
                                 <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?&sensor=false'></script>
 								<div id='map_canvas'></div>

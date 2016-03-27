@@ -53,6 +53,8 @@ require_once 'php/posts.php';
 require_once 'classes/DetailedListItem.php';
 require_once 'classes/DetailedList.php';
 require_once 'php/action_hooks.php';
+require_once 'inc/theme_functions.php';
+require_once 'inc/theme_hooks.php';
 
 
 /**
@@ -88,6 +90,7 @@ function theme_styles() {
 /**
  * Bootstrap Files
  */
+
 wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/assets/javascripts/bootstrap.min.js', array( 'jquery' ), '3.0.1', true );
 wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap/assets/stylesheets/_bootstrap.css', array(), '3.0.1', 'all' );
 wp_enqueue_script( 'bootstrap-js' );
@@ -100,8 +103,6 @@ wp_enqueue_style( 'bootstrap-css' );
     wp_register_style('icons', "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", array(), '1', $media = 'all');
     // wp_register_style('global', get_stylesheet_directory_uri() . '/css/global.css', array(), '1', $media = 'all');
 
-    wp_register_style('modular-interactions', get_stylesheet_directory_uri() . '/css/modular_interactions.css', array(), '1', $media = 'all');
-    wp_register_style('clients_style', get_stylesheet_directory_uri() . '/css/clients_style.css');
     // wp_register_style('events_style', get_stylesheet_directory_uri() . '/css/events.css', array(), '1', $media = 'all');
    // wp_register_style('new_global', get_stylesheet_directory_uri() . '/css/newGlobal.css', array(), '1', $media = 'all');
 //    wp_register_style('grid', get_stylesheet_directory_uri() . '/css/grid.css', array(), '1', $media = 'all');
@@ -114,7 +115,7 @@ wp_enqueue_style( 'bootstrap-css' );
     wp_register_style('template_a', get_stylesheet_directory_uri() . '/css/template_a.css', array(), '1', $media = 'all');
     wp_register_style('home', get_stylesheet_directory_uri() . '/css/home.css', array('owl_carousel','owl_theme','global'), '1', $media = 'all');
     wp_register_style('new-home', get_stylesheet_directory_uri() . '/css/newHome.css?2433342', array('owl_carousel','owl_theme','new_global'), '1', $media = 'all');
-    wp_register_style('client-success-styles', get_stylesheet_directory_uri() . '/css/client_success_stories_styles.css', array('grid', "new_global"), '1', $media = 'all');
+  
     wp_register_style('value-brief-styles', get_stylesheet_directory_uri() . '/css/value_brief_styles.css', array('grid', "new_global"), '1', $media = 'all');
     wp_register_style('japanese_styles', get_stylesheet_directory_uri() . '/css/japanese.css', array("new_global"), '143', $media = 'all');
     wp_register_style('caas_styles', get_stylesheet_directory_uri() . '/css/caas_styles.css', array(), '1', $media = 'all');
@@ -194,12 +195,14 @@ function theme_scripts() {
     wp_enqueue_script('jquery-ui-accordion');
     wp_enqueue_script('jquery-effects-core');
     wp_enqueue_script('jquery-effects-slide');
+    
+
+    wp_enqueue_script('packery', 'https://npmcdn.com/packery@2.0/dist/packery.pkgd.min.js', array(), 1, false);
     wp_enqueue_script('modernizer', get_stylesheet_directory_uri() . '/js/modernizer.js', array(), 1, false);
     wp_enqueue_script('console', get_stylesheet_directory_uri() . '/js/console-log.js', array(), 1, false);
     wp_enqueue_script('excanvas', get_stylesheet_directory_uri() . '/js/excanvas_src-min.js', array(), 1, false);
     wp_enqueue_script('flexslider', get_stylesheet_directory_uri() . '/js/jquery.flexslider-min.js', array('jquery'), 1, true);
     wp_enqueue_script('flippy', get_stylesheet_directory_uri() . '/js/jquery.flippy-mod-min.js', array('jquery'), 1, true);
-    wp_enqueue_script('grayscale', get_stylesheet_directory_uri() . '/js/grayscale.js', array('jquery'), 1, true);
     wp_enqueue_script('plugins', get_stylesheet_directory_uri() . '/js/plugins.js', array('jquery'), 1, true);
     wp_enqueue_script('global', get_stylesheet_directory_uri() . '/js/global.js', array('jquery'), 1, true);
     wp_enqueue_script('owl', get_stylesheet_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), 1, true);
@@ -1905,8 +1908,3 @@ jQuery(document).ready(function ($) {
 }
 
 }
-
-error_reporting(E_ALL & E_STRICT);
-ini_set('display_errors', '1');
-ini_set('log_errors', '0');
-ini_set('error_log', './');

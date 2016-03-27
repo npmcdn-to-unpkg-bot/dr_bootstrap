@@ -4,16 +4,7 @@
 
 
 .masthead {
-  padding-top:    $jumbotron-padding;
-  padding-bottom: $jumbotron-padding;
-  margin-bottom: $jumbotron-padding;
-  color: $jumbotron-color;
-  background-color: $jumbotron-bg;
-  background-image: url("../../../img/mast-head-image-v6.png");
 
-  @media screen and (min-width: $screen-sm-min) {
-        //background-size:
-  }
 
 
   h1,
@@ -45,7 +36,7 @@
   }
 
   @media screen and (min-width: $screen-sm-min) {
-    padding-top:    ($jumbotron-padding * 1.6);
+    padding-top:   0 ;
     padding-bottom: ($jumbotron-padding * 1.6);
 
     .container &,

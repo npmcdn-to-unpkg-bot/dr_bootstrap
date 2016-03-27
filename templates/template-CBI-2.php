@@ -177,8 +177,9 @@ $leftBoxes[] = array(
 ?>
 <div class="container">
 <div class='row2 row'>
-        <div class='col-md-12'>
-            <div class='eyebrow'>Overview</div>
+    <div class='col-md-12'>
+<div class='green-under-line'>Overview</div>
+    </div>
     </div>
     <div class="row">
     <div class='col-md-6'>
@@ -199,7 +200,6 @@ At Digital River, we use a Merchant and Seller of Record (MOR/SOR) business mode
             </p>
         </div>
     </div>
-</div>
 </div>
 </div>
 

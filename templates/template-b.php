@@ -104,8 +104,6 @@
             e.preventDefault();
             var container = $(this);
             
-            $('.gsCanvas').stop().animate({'opacity': 1}, 400);
-            $('.gsCanvas').data('is-gray', true);
 
             // Hide content container and change arrow status
             container.slideUp({
