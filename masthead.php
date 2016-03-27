@@ -69,16 +69,6 @@ $blog_id = $blog_data->cat_ID;
 				</div>
 		
         </div>
-			
-
-		    <div class="item">list element</div>
-    <div class="item">list element</div>
-    <div class="item">list element</div>
-    <div class="clear md"></div>
-    <div class="item">list element</div>
-    <div class="item">list element</div>
-    <div class="item">list element</div>
-
     </div>
 </section>
 
