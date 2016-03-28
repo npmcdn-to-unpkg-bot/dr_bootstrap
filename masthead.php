@@ -67,6 +67,10 @@ $blog_id = $blog_data->cat_ID;
 				}
 				?>
 				</div>
+<<<<<<< HEAD
+=======
+		</div>
+>>>>>>> eb7817f51b0252da16b8de26a5d4c712075b9c4d
         </div>
     </div>
 </section>
