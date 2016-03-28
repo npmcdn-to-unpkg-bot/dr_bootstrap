@@ -56,6 +56,10 @@ a.btn, button, input[type="button"]{
       &.margin-bottom{
         margin-bottom:20px;
       }
+
+      &.wrap{
+        white-space: normal;
+      }
   }
 
   &,

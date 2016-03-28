@@ -144,41 +144,99 @@ function news_and_events_section(){
 }
 
 
-function clients_section(){
-?>
-
+function home_clients_section(){
+ ?>
  <div class="green-bg">
             <div class="container ">
                 <section id="clients">
-        	<div class="wrapper">
+          <div class="wrapper">
                 <div class="row">
-            	<div class="title col-md-1">
-                    <h2><?php _e('Clients', 'digital-river'); ?></h2>    </div>
+                    <div class="title col-md-1">
+                      <h2><?php _e('Clients', 'digital-river'); ?></h2>
+                    </div>
                     <div class="col-md-2">
-                  <a href="<?php echo site_url('/clients/' ,'http'); ?>">[ <?php _e('More Clients','digital-river'); ?> ]</a>
-            
+                        <a href="<?php echo site_url('/clients/' ,'http'); ?>">[ <?php _e('More Clients','digital-river'); ?> ]</a>
                     </div>
                 </div>
                 <div class="row">
-                <div class="col-md-12">
-                    <div id="owl-demo" class="clients-wrapper" style="max-height:115px;">
-
-                        <?php foreach(get_field('client_logos') as $client_logo) : ?>
-                            <div class='item'>
-                                <img class="owl-lazy" data-src="<?php echo $client_logo['logo']; ?>" />
-                            </div>
-                        <?php endforeach; ?>
-
-                 </div> <!-- End of clients-wrapper -->
-                    </div></div>
-                       </div>
+                  <div class="col-md-12">
+                      <div id="owl-demo" class="clients-wrapper" style="max-height:115px;">
+                          <?php foreach(get_field('client_logos') as $client_logo) : ?>
+                              <div class='item'>
+                                  <img class="owl-lazy" data-src="<?php echo $client_logo['logo']; ?>" />
+                              </div>
+                          <?php endforeach; ?>
+                        </div> <!-- End of clients-wrapper -->
+                    </div>
+                </div>
+           </div>
         </section> <!-- End of clients section -->
 
             </div>
      </div><!-- End of wrapper -->
+     <?php
+}
 
+function clients_section($headline, $clients){
+
+
+?>
+<script>
+jQuery(document).ready(function($){
+
+    var owl = $("#clients_slider");
+    owl.owlCarousel({
+    autoplayTimeout:3000, //Set AutoPlay to 3 seconds
+    autoplay:true,
+    items : 5,
+    responsiveClass:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          400:{
+              items:2
+          },
+          550:{
+              items:3
+          },
+          800:{
+              items:4
+          },
+          1200:{
+              items:5
+          }
+      },
+    pagination:false,
+    loop:true,
+    lazyLoad: true,
+    callbacks: true,
+  });
+
+});
+
+</script>
+
+
+  <div class="green-bg white slide">
+      <?php slide_header('white', $headline); ?>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                <div id="clients_slider" class="clients-wrapper" style="max-height:115px;">
+                    <?php foreach($clients as $client) : ?>
+                        <div class='item'>
+                            <img class="owl-lazy" alt="<?php echo $client['alt']; ?>" data-src="<?php echo $client['src']; ?>" />
+                        </div>
+                    <?php endforeach; ?>
+                  </div> <!-- End of clients-wrapper -->
+              </div>
+          </div>
+      </div>
+   </div><!-- End of wrapper -->
 <?php
 }
+
 
 
 
@@ -355,9 +413,13 @@ function get_recent_resources(){
  *
  * @todo create acf
  */
-add_action('slide_heading','slide_header',10,1); 
-function slide_header($slide_id){
-
+// add_action('slide_heading','slide_header',10,1); 
+// function slide_header($slide_id){
+function slide_header($color, $headline, $supporting_copy_array = array()){
+    echo '<h2 class=" '.$color.' text-center">'.$headline.'</h2>';
+    foreach($supporting_copy_array as $supporting_copy):
+        echo '<p class=" '.$color. ' text-center">'.$supporting_copy.'</p>';
+    endforeach;
 }
 
 
@@ -370,10 +432,10 @@ function slide_header($slide_id){
  * @todo replace arguments with acf
  */
 function advanced_master_header($sub_heading, $supporting_copy){
-  echo '<div class="top custom custom-payments slide">';
+  echo '<div class="top custom man_on_tablet slide">';
     echo '<div class="container">';
       echo '<div class="row">';
-        echo '<div class="col-lg-4 col-md-5 col-sm-6">';
+        echo '<div class=" col-md-6 col-sm-8">';
           the_title('<h1 class="eyebrow option no-margin">','</h1>');
           // echo '<h2>'. get_field('subtitle') .'</h2>';
           echo '<h2>'. $sub_heading .'</h2>';
@@ -399,18 +461,43 @@ function boxes($headline, $boxes){
   echo '<div class="slide">';
       echo '<div class="container">';
           // do_action('slide_heading', $slide_id);
-          slide_header($headline);
+          slide_header('black',$headline);
+                echo '<div class="row">';
+
           foreach ($boxes as $key => $box):
               if($key % 2 == 0):
-                echo '<div class="row">';
               endif;
-                  echo '<div class="box col-sm-6" style="background-image:url("' . $box['background_image'] . '");">';
-                      echo '<h3>' . $box['title'] . '</h3>';
+                  echo '<div class="box col-xs-6">';
+                      echo '<div class="box-inner">';
+                          echo '<img class="img-responsive" src="'.$box['background_image'].'" alt="'.$box['alt'].'" />';
+                          echo '<div class="outer-description">';
+                              echo '<div class="description">'.$box['description'].'</div>';
+                          echo '</div>';
+                      echo '</div>';
                   echo '</div>';
               if($key % 2 != 0 || (count($boxes) == ($key+1))):
-                echo '</div>';
               endif;
           endforeach;
+                echo '</div>';
+
+      echo '</div>';
+  echo '</div>';
+}
+
+function three_column_boxes($headline, $descriptions, $boxes){
+  echo '<div class="slide blue-bg global">';
+      echo '<div class="container">';
+          slide_header('white', $headline, $descriptions);
+          echo '<div class="row">';
+          foreach($boxes as $key => $box):
+              echo '<div class="col-sm-6 col-md-4 box">';
+                  echo '<div class="inner-box">';
+                      echo '<h3 class="h4 eng">'.$box['heading'].'</h3>';
+                      echo $box['description'];
+                  echo '</div>';
+              echo '</div>';
+          endforeach;
+          echo '</div>';
       echo '</div>';
   echo '</div>';
 }
@@ -422,26 +509,19 @@ function boxes($headline, $boxes){
  * @todo create acf fields for this
  */
 function display_tags($headline, $copy, $tags){
-  echo '<div class="slide">';
+  echo '<div class="slide lgray-bg">';
       echo '<div class="container">';
          // do_action('slide_heading', $slide_id);
-          slide_header($headline, $copy);
+          slide_header('black', $headline, $copy);
           echo '<div class="row">';
               foreach($tags as $key => $tag):
-                  if($key % 2 == 0):
-                      echo "<div class='row'>";
-                  endif;
-
                   if(count($tags) == ($key+1)):
                       echo '<div class="col-md-offset-3 col-md-6">';        
                   else:
                       echo '<div class="col-md-6">';        
                   endif;
-                      echo '<a class="btn btn-tertiary option thin-border margin-bottom display-block tag" href="' . $tag['link'] . '" target="' .  '">' . $tag['title'] . '</a>';
+                      echo '<a target="_blank" class="btn btn-tertiary option thin-border wrap margin-bottom display-block tag" href="' . $tag['link'] . '" target="' .  '">' . $tag['title'] . '</a>';
                   echo '</div>';
-                  if($key % 2 != 0):
-                      echo "</div>";
-                  endif;
               endforeach;
           echo '</div>';
       echo '</div>';
@@ -500,30 +580,59 @@ jQuery(document).ready(function($){
   $(document).on("click",".interactive-grid .active .close", function(){
       close_grid_item($(this).parents(".grid-item-wrapper"));
   });
+
+  var resizeTimer;
+  $(window).on('resize', function(e) {
+
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      $grid.packery("layout");
+    }, 250);
+
+  });
+
 });
 </script>
   <?php
-    echo '<div class="container interactive-grid">';
-        echo '<div class="row">';
-        foreach ($grid as $key => $grid_item):
-            echo '<div class=" active-md ' . $grid_item['width'] . ' interact grid-item-wrapper" >';
-                echo '<div class="grid-item option ' . $grid_item['height'] . ' ">';
-                    if($grid_item['icon']):
-                        echo '<div class="expand hide-on-expand"><i class="'.$grid_item['icon'].'"></i></div>';
-                    endif;
-                    echo '<div class="background-image" style="background-image:url('.$grid_item['background_image'].');"></div>';
-                    echo "<div class='headline-wrapper'>";
-                        echo "<div class='headline'>";
-                            echo $grid_item['title'];
+    echo '<div class="slide">';
+        slide_header('black', $headline);
+        echo '<div class="container interactive-grid">';
+            echo '<div class="row">';
+            foreach ($grid as $key => $grid_item):
+                echo '<div class=" active-md ' . $grid_item['width'] . ' interact grid-item-wrapper" >';
+                    echo '<div class="grid-item option ' . $grid_item['height'] . ' ">';
+                        if($grid_item['icon']):
+                            echo '<div class="expand hide-on-expand"><i class="'.$grid_item['icon'].'"></i></div>';
+                        endif;
+                        echo '<div class="background-image" style="background-image:url('.$grid_item['background_image'].');"></div>';
+                        echo "<div class='headline-wrapper'>";
+                            echo "<div class='headline'>";
+                                echo $grid_item['title'];
+                            echo "</div>";
                         echo "</div>";
-                    echo "</div>";
-                    echo "<div class='description'>";
-                        echo '<div class="close"><i class="fa fa-times"></i></div>';
-                        echo $grid_item['description'];
-                    echo "</div>";
+                        echo "<div class='description'>";
+                            echo '<div class="close"><i class="fa fa-times"></i></div>';
+                            echo $grid_item['description'];
+                        echo "</div>";
+                    echo '</div>';
                 echo '</div>';
+            endforeach;
             echo '</div>';
-        endforeach;
         echo '</div>';
     echo '</div>';
+}
+
+function contact_us($headline, $copy){
+  ?>
+  <div class="blue-bg white slide contact-us">
+      <div class="container">
+        <?php slide_header('white', $headline, $copy); ?>
+        <div class="row">
+          <div class="col-xs-12">
+              <p class="text-center white">Get in touch with us <strong class="left-border nowrap">1-800-598-7450</strong> <span class="lt">or</span> <a class="btn btn-opposite" href="/contact-us/" class="nowrap cta">Click Here</a></p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <?php
 }

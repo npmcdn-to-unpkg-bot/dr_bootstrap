@@ -1,11 +1,6 @@
                 <!-- Footer -->
                <!-- <div class="lined_border"></div>-->
-                <footer id="global_footer">
-
-
-                    
-
-
+                <footer id="global_footer" class="clearfix">
 
                     <section class="container">
                        		<div class="col-md-4">

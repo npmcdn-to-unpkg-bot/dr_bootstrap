@@ -206,7 +206,7 @@ function theme_scripts() {
     wp_enqueue_script('plugins', get_stylesheet_directory_uri() . '/js/plugins.js', array('jquery'), 1, true);
     wp_enqueue_script('global', get_stylesheet_directory_uri() . '/js/global.js', array('jquery'), 1, true);
     wp_enqueue_script('owl', get_stylesheet_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), 1, true);
- wp_enqueue_script('home_script', get_stylesheet_directory_uri() . '/js/home_script.js?233233', array('jquery'), 1, true);
+    wp_enqueue_script('home_script', get_stylesheet_directory_uri() . '/js/home_script.js?233233', array('jquery'), 1, true);
     if(is_page_template("templates/template-crossborder.php")){
         wp_enqueue_script('classie', get_stylesheet_directory_uri() . '/js/classie.js', array('jquery'), 1, true);
         wp_enqueue_script('selectFx', get_stylesheet_directory_uri() . '/js/selectFx.js', array('jquery'), 1, true);

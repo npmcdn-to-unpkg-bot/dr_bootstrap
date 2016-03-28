@@ -301,12 +301,11 @@
             }
 
             @include customMinMediaQuery(765px){
-                margin-top: 11px;
                 margin-right:0;
             }
 
             @include customMinMediaQuery(995px){
-                margin-top: 14px;
+                margin-top: 8px;
                 font-size: 1em;
             }
 
