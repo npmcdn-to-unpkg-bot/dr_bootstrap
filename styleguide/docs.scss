@@ -21,11 +21,32 @@ $arial: 'Arial', sans-serif;
 
 body {
   position:relative;
+  background:$lightGray !important;
+
 }
 .dr-docs-container {
     margin-top:20px;
     margin-bottom:80px;
+
+    .dr-docs-section{
+        border:solid 1px $medLightGray;
+        background:$white;
+
+        .header{
+            padding:15px;
+        }
+
+        .section-body{
+            padding:15px;
+
+            h2.subhead{
+                margin:50px 0 10px;
+            }
+        }
+    }
+
 }
+
 #dr-docs-sidebar {
     &.affix {
         position:fixed;

@@ -19,10 +19,10 @@
 
 <div class="container dr-docs-container">
 	<div class="row">
-		<div class="col-md-9">
+		<div class="col-md-10">
 			<section>Miscellaneous things</section>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-2">
 			<?php include("sidenav.php"); ?>
 		</div>
 	</div>
