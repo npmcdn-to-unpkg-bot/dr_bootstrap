@@ -67,10 +67,7 @@ $blog_id = $blog_data->cat_ID;
 				}
 				?>
 				</div>
-		
         </div>
-
-    </div>
     </div>
 </section>
 

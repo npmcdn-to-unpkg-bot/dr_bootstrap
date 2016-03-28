@@ -236,7 +236,7 @@ $btn-border-radius-small:        $border-radius-small !default;
 
 
 //small button
-$btn-small-font-size:13px;
+$btn-small-font-size:11px;
 
 
 //== Forms
@@ -251,7 +251,7 @@ $input-bg-disabled:              $gray-lighter !default;
 //** Text color for `<input>`s
 $input-color:                    $darkGray !default;
 //** `<input>` border color
-$input-border:                   $blue !default;
+$input-border:                   $medMedGray !default;
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
