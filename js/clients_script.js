@@ -11,7 +11,6 @@
 		var tallest = 0;
 		$(".client").not(".client_quote_box").each(function(){
 			var $thisHeight = $(this).height();
-
 			if($thisHeight > tallest){
 				tallest = $thisHeight;
 			}

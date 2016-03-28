@@ -535,17 +535,16 @@ function create_grid($headline, $grid){
 
 <script>
   var $grid;
-jQuery(document).ready(function($){
-  $grid = $('.interactive-grid .row');
-  $grid.packery({
-    itemSelector: '.interact',
-    gutter: 0
+  jQuery(document).ready(function($){
+    $grid = $('.interactive-grid .row');
+    $grid.packery({
+      itemSelector: '.interact',
+      gutter: 0
   });
 
   $(document).on("click", ".interact", function(){
       var $this = $(this);
 
-      
       var $this_grid = $this.parents(".interactive-grid");
       if($this_grid.find(".grid-item-wrapper.active").length > 0){
           close_grid_item($this_grid.find(".grid-item-wrapper.active"));
@@ -574,8 +573,13 @@ jQuery(document).ready(function($){
       $this_grid_item.removeClass("active");
       $this_grid_item.addClass("interact");
 
+      $("iframe.video").each(function(){
+        $("#"+$(this).attr("id")).vimeo("pause");
+      });
+
       $(".interactive-grid").find(".placeholder").remove();
       $grid.packery('reloadItems');
+
   }
   $(document).on("click",".interactive-grid .active .close", function(){
       close_grid_item($(this).parents(".grid-item-wrapper"));
@@ -594,6 +598,7 @@ jQuery(document).ready(function($){
 });
 </script>
   <?php
+
     echo '<div class="slide">';
         slide_header('black', $headline);
         echo '<div class="container interactive-grid">';
@@ -604,16 +609,25 @@ jQuery(document).ready(function($){
                         if($grid_item['icon']):
                             echo '<div class="expand hide-on-expand"><i class="'.$grid_item['icon'].'"></i></div>';
                         endif;
+
                         echo '<div class="background-image" style="background-image:url('.$grid_item['background_image'].');"></div>';
-                        echo "<div class='headline-wrapper'>";
-                            echo "<div class='headline'>";
-                                echo $grid_item['title'];
-                            echo "</div>";
-                        echo "</div>";
-                        echo "<div class='description'>";
-                            echo '<div class="close"><i class="fa fa-times"></i></div>';
-                            echo $grid_item['description'];
-                        echo "</div>";
+                        echo '<div class="close"><i class="fa fa-times"></i></div>';
+
+
+                        if($grid_item['video']){
+                              echo '<i class="video-play dr-player x15"></i>';
+
+                              echo '<iframe class="video" style="width: 100%; height: 100%;" id="'.$grid_item['video_pretty_id'].'" src="https://player.vimeo.com/video/'.$grid_item['video_id'].'?api=1&amp;player_id='.$grid_item['video_pretty_id'].'" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'; 
+                        }else{
+                              echo "<div class='headline-wrapper'>";
+                                  echo "<div class='headline'>";
+                                      echo $grid_item['title'];
+                                  echo "</div>";
+                              echo "</div>";
+                              echo "<div class='description'>";
+                                  echo $grid_item['description'];
+                              echo "</div>";
+                        }
                     echo '</div>';
                 echo '</div>';
             endforeach;

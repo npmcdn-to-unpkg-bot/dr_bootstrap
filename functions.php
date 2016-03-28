@@ -171,7 +171,6 @@ wp_enqueue_style( 'bootstrap-css' );
         wp_enqueue_style('gaming_grid_styles');  
         wp_enqueue_style('gaming_misc_styles');  
         wp_enqueue_style('gaming_styles');  
-
     }
 
 }
@@ -218,8 +217,10 @@ function theme_scripts() {
     }
 
     if(is_page_template("templates/template-clients2.php") || is_page_template("templates/template-why-dr.php") ||  is_page_template("templates/template-CBI.php") ||  is_page_template("templates/template-test.php") ){
-        //wp_enqueue_script('vimeo', get_stylesheet_directory_uri() . '/js/jquery.vimeo.api.js', array('jquery'), 1, true);
     }
+
+    wp_enqueue_script('vimeo', get_stylesheet_directory_uri() . '/js/jquery.vimeo.api.js', array('jquery'), 1, true);
+
 
     if(is_page_template("templates/caas-template.php")){
         wp_enqueue_script('caas_script', get_stylesheet_directory_uri() . '/js/caas.js', array('jquery'), 1, true);

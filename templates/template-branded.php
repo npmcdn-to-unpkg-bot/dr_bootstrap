@@ -136,6 +136,17 @@ $headline = "Solutions Tailored to Your Business";
 // 				"background_image" => get_template_directory_uri()."/img/grid/working_on_a_laptop.jpg",
 // 			);
 
+
+$grid[] = array(
+				"width" => 'col-sm-6 col-xxs-12',
+				"icon" => 'fa fa-plus',
+				"height" => 'double-height',
+				"video" => true,
+				"video_id" => '160607511',
+				"video_pretty_id" => 'branded',
+				"background_image" => get_template_directory_uri()."/img/grid/branded_video.jpg",
+			);
+
 $grid[] = array(
 				"width" => 'col-sm-6 col-xxs-12',
 				"icon" => 'fa fa-plus',
