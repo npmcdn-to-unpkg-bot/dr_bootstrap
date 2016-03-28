@@ -19,7 +19,7 @@
 
 <div class="container dr-docs-container">
 	<div class="row">
-		<div class="col-md-9">
+		<div class="col-md-10">
 		    <div class="dr-docs-section">
 		        <h1 id="glyphicons" class="page-header"><a class="anchorjs-link " href="#glyphicons" aria-label="Anchor link for: glyphicons" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Glyphicons</h1>
 		        <h2 id="glyphicons-glyphs"><a class="anchorjs-link " href="#glyphicons-glyphs" aria-label="Anchor link for: glyphicons glyphs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Available glyphs</h2>
@@ -2976,7 +2976,7 @@
 		        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"well well-sm"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 		    </div>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-2">
 			<?php include("sidenav.php"); ?>
 		</div>
 	</div>

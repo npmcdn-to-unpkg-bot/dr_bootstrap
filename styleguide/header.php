@@ -1,3 +1,5 @@
+
+
 <header id="global_header">
   <div class="header_container">
     <div class="container">
@@ -23,22 +25,22 @@
           <div class="menu-main-container">
             <ul id="menu-main" class="menu">
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/dr_bootstrap/styleguide/">Style Giude</a>
+                <a href="/styleguide/">Style Guide</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/dr_bootstrap/styleguide/getting-started/">Getting Started</a>
+                <a href="/styleguide/getting-started/">Getting Started</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/dr_bootstrap/styleguide/css/">CSS</a>
+                <a href="/styleguide/css/">CSS</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/dr_bootstrap/styleguide/components/">Components</a>
+                <a href="/styleguide/components/">Components</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor">
-                <a href="/dr_bootstrap/styleguide/javascript/">JavaScript</a>
+                <a href="/styleguide/javascript/">JavaScript</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/dr_bootstrap/styleguide/miscellaneous/">Miscellaneous</a>
+                <a href="/styleguide/miscellaneous/">Miscellaneous</a>
               </li>
             </ul>
           </div>

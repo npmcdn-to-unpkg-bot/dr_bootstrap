@@ -3,11 +3,21 @@
 /* Fonts
 ********/
 body {
-  position: relative; }
+  position: relative;
+  background: #f0f0f0 !important; }
 
 .dr-docs-container {
   margin-top: 20px;
   margin-bottom: 80px; }
+  .dr-docs-container .dr-docs-section {
+    border: solid 1px #E0E0E0;
+    background: #fff; }
+    .dr-docs-container .dr-docs-section .header {
+      padding: 15px; }
+    .dr-docs-container .dr-docs-section .section-body {
+      padding: 15px; }
+      .dr-docs-container .dr-docs-section .section-body h2.subhead {
+        margin: 50px 0 10px; }
 
 #dr-docs-sidebar.affix {
   position: fixed;

@@ -19,7 +19,7 @@
 
 <div class="container dr-docs-container">
 	<div class="row">
-		<div class="col-md-9">
+		<div class="col-md-10">
 		    <div class="dr-docs-section">
 		        <h1 id="js-overview" class="page-header"><a class="anchorjs-link " href="#js-overview" aria-label="Anchor link for: js overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Overview</h1>
 		        <h2 id="js-individual-compiled"><a class="anchorjs-link " href="#js-individual-compiled" aria-label="Anchor link for: js individual compiled" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Individual or compiled</h2>
@@ -2203,7 +2203,7 @@
 		        </div>
 		    </div>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-2">
 			<?php include("sidenav.php"); ?>
 		</div>
 	</div>

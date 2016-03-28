@@ -110,14 +110,6 @@
 	            <li><a href="#responsive-utilities-tests">Test cases</a></li>
 	        </ul>
 	    </li>
-	    <li><a href="#less">Using Less</a>
-	        <ul class="nav">
-	            <li><a href="#less-bootstrap">Compiling Bootstrap</a></li>
-	            <li><a href="#less-variables">Variables</a></li>
-	            <li><a href="#less-mixins-vendor">Vendor mixins</a></li>
-	            <li><a href="#less-mixins-utility">Utility mixins</a></li>
-	        </ul>
-	    </li>
 	    <li><a href="#sass">Using Sass</a>
 	        <ul class="nav">
 	            <li><a href="#sass-contents">What's included</a></li>
