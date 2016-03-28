@@ -1,0 +1,97 @@
+
+/* Industries Template Styles
+********************/
+#industries{
+	.clients-wrapper {
+		margin-top:75px;
+		margin-bottom:75px;
+		text-align:center;
+	}
+   
+	.client {
+		height:318px;
+		padding-top:15px;
+		padding-bottom:15px;
+        border: 1px solid $medGray;
+    
+		@media (min-width: $screen-md) {
+               border-right:none;
+             &:nth-child(-n+3) {
+                border-bottom: none;
+            }
+             &:nth-child(3) {
+                border-right:1px solid $medGray;
+            }
+			&:nth-of-type(odd) {
+				background-color:$lightGray;
+			}
+           
+
+          &:nth-child(6),&:nth-child(7), {
+           border-right: 1px solid $medGray;
+                 
+        }
+           &:nth-child(7) {
+           border-top: none;
+                 
+        }
+		}
+        
+		@media (max-width: $screen-md) {
+            border-bottom: none;
+            background: none;
+			&:nth-of-type(odd) {
+                 border-right:none;
+                border-bottom: none;
+			}
+              &:nth-child(6),&:nth-child(7) {
+           border-bottom: 1px solid $medGray;
+                 
+        }
+            &:nth-child(7) {
+            border-right: 1px solid $medGray;
+            }
+		}
+		@media (min-width: $screen-sm) and (max-width: $screen-md) {
+			&:nth-of-type(4n-1), &:nth-of-type(4n-2) {
+				background-color:$lightGray;
+			}
+		}
+         @media (max-width: $screen-md) {
+        border: none !important;
+             
+        
+             &:nth-of-type(odd) {
+				background-color:$lightGray;
+			}
+        }
+         
+		.client-logo-wrapper {
+			margin:20px auto;
+		}
+		.header {
+			font-size:26px;
+			font-family:$eng;
+			text-transform:uppercase;
+		}
+		.copy {
+			max-width:306px;
+			margin:10px auto;
+			font-family:$arial;
+			font-size:14px;
+			line-height:1.2;
+		}
+		.client-logo {
+			margin:auto;
+		}
+		.cta-wrapper{
+			margin:15px auto 30px;
+			.brackets {
+				font-family:$eng;
+				text-transform: uppercase;
+				color:$blue;
+				font-size:1.2em;
+			}
+		}
+	}
+}

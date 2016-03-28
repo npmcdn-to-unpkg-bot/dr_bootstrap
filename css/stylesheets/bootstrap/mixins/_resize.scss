@@ -1,0 +1,35 @@
+// Resize anything
+
+@mixin resizable($direction) {
+  resize: $direction; // Options: horizontal, vertical, both
+  overflow: auto; // Per CSS3 UI, `resize` only applies when `overflow` isn't `visible`
+}
+
+// Media Query
+
+
+@mixin customMinMediaQuery($width){
+	@media (min-width: $width) {
+		@content;
+	}
+}
+
+@mixin customMediaQuery ($width) {
+	@media (max-width: $width) {
+		@content;
+	}
+}
+
+@mixin customMediaQueryMaxMin ($maxWidth, $minWidth) {
+	@media (min-width: $minWidth) and (max-width: $maxWidth) {
+		@content;
+	}
+}
+
+
+@mixin anythingAbove ($width) {
+	@media (min-width: $width) {
+		@content;
+	}
+}
+

@@ -92,7 +92,7 @@ function theme_styles() {
  */
 
 wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/assets/javascripts/bootstrap.min.js', array( 'jquery' ), '3.0.1', true );
-wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/bootstrap/assets/stylesheets/_bootstrap.css', array(), '3.0.1', 'all' );
+wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/css/stylesheets/_bootstrap.css', array(), '3.0.1', 'all' );
 wp_enqueue_script( 'bootstrap-js' );
 wp_enqueue_style( 'bootstrap-css' );
 
@@ -216,8 +216,6 @@ function theme_scripts() {
         wp_enqueue_script('gaming', get_stylesheet_directory_uri() . '/js/gaming-script.js', array('jquery'), 1, true);
     }
 
-    if(is_page_template("templates/template-clients2.php") || is_page_template("templates/template-why-dr.php") ||  is_page_template("templates/template-CBI.php") ||  is_page_template("templates/template-test.php") ){
-    }
 
     wp_enqueue_script('vimeo', get_stylesheet_directory_uri() . '/js/jquery.vimeo.api.js', array('jquery'), 1, true);
 
