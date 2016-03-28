@@ -14,13 +14,24 @@
 <link rel='stylesheet' id='dr-docs-css' href='../../bootstrap/assets/stylesheets/_bootstrap.css?ver=3.0.1' type='text/css' media='all' />
 </head>
 <body>
+<?php include("../classes/CssController.class.php"); ?>
 
 <?php include("../header.php"); ?>
 
 <div class="container dr-docs-container">
 	<div class="row">
 		<div class="col-md-10">
-			<section>Miscellaneous things</section>
+			<?php
+
+			$cssController = new CssController();
+
+
+			?>
+			<div class="dr-docs-section"><?php $cssController->displayTypography(); ?></div>
+			<div class="dr-docs-section"><?php $cssController->displayCode(); ?></div>
+			<div class="dr-docs-section"><?php $cssController->displayTables(); ?></div>
+			<div class="dr-docs-section"><?php $cssController->displayForms(); ?></div>
+			<div class="dr-docs-section"><?php $cssController->displayButtons(); ?></div>
 		</div>
 		<div class="col-md-2">
 			<?php include("sidenav.php"); ?>
