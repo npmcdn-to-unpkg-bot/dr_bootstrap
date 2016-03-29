@@ -57,6 +57,21 @@
 	            <li><a href="#buttons-disabled">Disabled state</a></li>
 	        </ul>
 	    </li>
+	    <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+	    <li><a href="#pagination">Pagination</a>
+	        <ul class="nav">
+	            <li><a href="#pagination-default">Default pagination</a></li>
+	            <li><a href="#pagination-pager">Pager</a></li>
+	        </ul>
+	    </li>
+	    <li><a href="#alerts">Alerts</a>
+	        <ul class="nav">
+	            <li><a href="#alerts-examples">Examples</a></li>
+	            <li><a href="#alerts-dismissible">Dismissible alerts</a></li>
+	            <li><a href="#alerts-links">Links in alerts</a></li>
+	            <li><a href="#alerts-callout">Callout alerts</a></li>
+	        </ul>
+	    </li>
 	</ul>
 	<a class="back-to-top" href="#global_header"> Back to top </a>
 </nav>

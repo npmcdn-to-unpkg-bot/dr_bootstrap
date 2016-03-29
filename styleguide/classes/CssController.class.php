@@ -3635,23 +3635,31 @@ $this->displayHeader(
 
 
 
-	        <h2 id="alerts-examples"><a class="anchorjs-link " href="#alerts-examples" aria-label="Anchor link for: alerts examples" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Callout Alerts</h2>
-	        <p>Callout alerts are for this...</p>
+	        <h2 id="alerts-callout"><a class="anchorjs-link " href="#alerts-callout" aria-label="Anchor link for: alerts callout" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Callout Alerts</h2>
+	        <p>Callout alerts are for this identifying important (and not so important) notes related to a given topic. Choose from success, info, warning, or danger.</p>
 
 	        <div class="dr-example" data-example-id="callout-alerts">
-    	        <div class="dr-callout dr-callout-info" id="callout-alerts-no-default">
-	            	<h4>No default class</h4>
-	            	<p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p>
+    	        <div class="dr-callout dr-callout-info">
+	            	<h4>Info class</h4>
+	            	<p>Use the info class when there is any information that might be helpfull to a developer. For example, embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a> for more information.</p>
 	        	</div>
+		        <div class="dr-callout dr-callout-warning">
+		            <h4>Warning Class</h4>
+		            <p>Use the warning class when there are known (possible) issues with a component. For example, invoking <code>$(...).popover('show')</code> when the target element is <code>display: none;</code> will cause the popover to be incorrectly positioned for this hypothetical component.</p>
+		        </div>
+		        <div class="dr-callout dr-callout-danger">
+		            <h4>Danger Class</h4>
+		            <p>Use the danger class when a component is in danger of failing if certain circumstances are not met. For example, a <code>&lt;a href="#home"&gt;home&lt;/a&gt;</code> must correspond to something in the DOM like <code>&lt;div id="home"&gt;&lt;/div&gt;</code> or this hypothetical component will fail.</p>
+		        </div>
 	        </div>
 
-	          <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dr-callout dr-callout-info"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;h4&gt;</span> ... <span class="nt">&lt;/h4&gt;</span>
-	<span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
+	          <figure class="highlight">
+	          	<pre>
+	          		<code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dr-callout dr-callout-info"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4&gt;</span> ... <span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 	        
-
-
 	</div>
 
 <?php
