@@ -14,6 +14,8 @@ body {
     background: #fff; }
     .dr-docs-container .dr-docs-section .header {
       padding: 15px; }
+    .dr-docs-container .dr-docs-section .highlight {
+      padding: 14px; }
     .dr-docs-container .dr-docs-section .section-body {
       padding: 15px; }
       .dr-docs-container .dr-docs-section .section-body h2.subhead {

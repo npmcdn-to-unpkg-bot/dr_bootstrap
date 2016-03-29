@@ -3439,6 +3439,226 @@ function displayResponsiveUtilities(){
 }
 
 
+function displayBreadcrumbs(){
+
+
+
+	$this->displayHeader(
+			'breadcrumbs',
+			'Breadcrumbs',
+			'Indicate the current page\'s location within a navigational hierarchy.'
+		);
+
+?>
+   <div class="section-body">
+		       
+		        <p>Separators are automatically added in CSS through <code>:before</code> and <code>content</code>.</p>
+		        <div class="dr-example" data-example-id="simple-breadcrumbs">
+		            <ol class="breadcrumb">
+		                <li class="active">Home</li>
+		            </ol>
+		            <ol class="breadcrumb">
+		                <li><a href="#">Home</a></li>
+		                <li class="active">Library</li>
+		            </ol>
+		            <ol class="breadcrumb">
+		                <li><a href="#">Home</a></li>
+		                <li><a href="#">Library</a></li>
+		                <li class="active">Data</li>
+		            </ol>
+		        </div>
+		        
+		        <figure class="highlight"><pre>
+<code class="language-html" data-lang="html"><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre></figure>
+
+	</div>
+<?php
+}
+
+
+function displayPagination(){
+
+$this->displayHeader(
+			'pagination',
+			'Pagination',
+			'Provide pagination links for your site or app with the multi-page pagination component, or the simpler <a href="#pagination-pager">pager alternative</a>.'
+		);
+
+	?>
+
+   <div class="section-body">
+
+		        <h2 id="pagination-default"><a class="anchorjs-link " href="#pagination-default" aria-label="Anchor link for: pagination default" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Default pagination</h2>
+		        <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+		        <div class="dr-example" data-example-id="simple-pagination">
+		            <nav>
+		                <ul class="pagination">
+		                    <li>
+		                        <a href="#" aria-label="Previous"> <span aria-hidden="true">«</span> </a>
+		                    </li>
+		                    <li><a href="#">1</a></li>
+		                    <li><a href="#">2</a></li>
+		                    <li><a href="#">3</a></li>
+		                    <li><a href="#">4</a></li>
+		                    <li><a href="#">5</a></li>
+		                    <li>
+		                        <a href="#" aria-label="Next"> <span aria-hidden="true">»</span> </a>
+		                    </li>
+		                </ul>
+		            </nav>
+		        </div>
+		        
+		        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
+		  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+		    <span class="nt">&lt;li&gt;</span>
+		      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"Previous"</span><span class="nt">&gt;</span>
+		        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;laquo;</span><span class="nt">&lt;/span&gt;</span>
+		      <span class="nt">&lt;/a&gt;</span>
+		    <span class="nt">&lt;/li&gt;</span>
+		    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+		    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+		    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+		    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+		    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+		    <span class="nt">&lt;li&gt;</span>
+		      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"Next"</span><span class="nt">&gt;</span>
+		        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;raquo;</span><span class="nt">&lt;/span&gt;</span>
+		      <span class="nt">&lt;/a&gt;</span>
+		    <span class="nt">&lt;/li&gt;</span>
+		  <span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+		        <h3 id="disabled-and-active-states"><a class="anchorjs-link " href="#disabled-and-active-states" aria-label="Anchor link for: disabled and active states" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Disabled and active states</h3>
+		        <p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</p>
+		        <div class="dr-example" data-example-id="disabled-active-pagination">
+		            <nav>
+		                <ul class="pagination">
+		                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+		                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+		                    <li><a href="#">2</a></li>
+		                    <li><a href="#">3</a></li>
+		                    <li><a href="#">4</a></li>
+		                    <li><a href="#">5</a></li>
+		                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+		                </ul>
+		            </nav>
+		        </div>
+    <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
+		  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+		    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"Previous"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;laquo;</span><span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+		    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>(current)<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+		    ...
+		  <span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+
+    </div>
+
+	<?php
+}
+
+
+function displayAlerts(){
+
+$this->displayHeader(
+			'alerts',
+			'Alerts',
+			'Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.'
+		);
+
+
+?>
+
+   <div class="section-body">
+
+
+		        <h2 id="alerts-examples"><a class="anchorjs-link " href="#alerts-examples" aria-label="Anchor link for: alerts examples" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Examples</h2>
+		        <p>Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual classes (e.g., <code>.alert-success</code>) for basic alert messages.</p>
+		        <div class="dr-callout dr-callout-info" id="callout-alerts-no-default">
+		            <h4>No default class</h4>
+		            <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p>
+		        </div>
+		        <div class="dr-example" data-example-id="simple-alerts">
+		            <div class="alert alert-success" role="alert"> <strong>Well done!</strong> You successfully read this important alert message. </div>
+		            <div class="alert alert-info" role="alert"> <strong>Heads up!</strong> This alert needs your attention, but it's not super important. </div>
+		            <div class="alert alert-warning" role="alert"> <strong>Warning!</strong> Better check yourself, you're not looking too good. </div>
+		            <div class="alert alert-danger" role="alert"> <strong>Oh snap!</strong> Change a few things up and try submitting again. </div>
+		        </div>
+		        
+		        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+		        <h2 id="alerts-dismissible"><a class="anchorjs-link " href="#alerts-dismissible" aria-label="Anchor link for: alerts dismissible" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Dismissible alerts</h2>
+		        <p>Build on any alert by adding an optional <code>.alert-dismissible</code> and close button.</p>
+		        <div class="dr-callout dr-callout-info" id="callout-alerts-dismiss-plugin">
+		            <h4>Requires JavaScript alert plugin</h4>
+		            <p>For fully functioning, dismissible alerts, you must use the <a href="../javascript/#alerts">alerts JavaScript plugin</a>.</p>
+		        </div>
+		        <div class="dr-example" data-example-id="dismissible-alert-css">
+		            <div class="alert alert-warning alert-dismissible" role="alert">
+		                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <strong>Warning!</strong> Better check yourself, you're not looking too good. </div>
+		        </div>
+		        
+		        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning alert-dismissible"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+		  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+		  <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span> Better check yourself, you're not looking too good.
+		<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+		        <div class="dr-callout dr-callout-warning" id="callout-alerts-dismiss-use-button">
+		            <h4>Ensure proper behavior across all devices</h4>
+		            <p>Be sure to use the <code>&lt;button&gt;</code> element with the <code>data-dismiss="alert"</code> data attribute.</p>
+		        </div>
+		        <h2 id="alerts-links"><a class="anchorjs-link " href="#alerts-links" aria-label="Anchor link for: alerts links" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Links in alerts</h2>
+		        <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
+		        <div class="dr-example" data-example-id="alerts-with-links">
+		            <div class="alert alert-success" role="alert"> <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>. </div>
+		            <div class="alert alert-info" role="alert"> <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important. </div>
+		            <div class="alert alert-warning" role="alert"> <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>. </div>
+		            <div class="alert alert-danger" role="alert"> <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again. </div>
+		        </div>
+		        
+		        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+		  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+		  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+		  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+		  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+
+
+	        <h2 id="alerts-examples"><a class="anchorjs-link " href="#alerts-examples" aria-label="Anchor link for: alerts examples" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Callout Alerts</h2>
+	        <p>Callout alerts are for this...</p>
+
+	        <div class="dr-example" data-example-id="callout-alerts">
+    	        <div class="dr-callout dr-callout-info" id="callout-alerts-no-default">
+	            	<h4>No default class</h4>
+	            	<p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p>
+	        	</div>
+	        </div>
+
+	          <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dr-callout dr-callout-info"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;h4&gt;</span> ... <span class="nt">&lt;/h4&gt;</span>
+	<span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+	        
+
+
+	</div>
+
+<?php
+
+}
+
+
 }
 
 
