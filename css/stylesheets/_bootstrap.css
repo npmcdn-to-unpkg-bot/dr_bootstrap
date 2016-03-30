@@ -4124,7 +4124,8 @@ tbody.collapse.in {
   border-bottom: 1px solid #ddd; }
   .nav-tabs > li {
     float: left;
-    margin-bottom: -1px; }
+    margin-bottom: -1px;
+    font-family: "DIN Next W01 Medium", sans-serif; }
     .nav-tabs > li > a {
       margin-right: 2px;
       line-height: 1.42857;
