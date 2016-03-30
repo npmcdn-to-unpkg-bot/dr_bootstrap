@@ -72,6 +72,16 @@
 	            <li><a href="#alerts-callout">Callout alerts</a></li>
 	        </ul>
 	    </li>
+	    <li> <a href="#panels">Panels</a>
+	        <ul class="nav">
+	            <li><a href="#panels-basic">Basic example</a></li>
+	            <li><a href="#panels-heading">Panel with heading</a></li>
+	            <li><a href="#panels-footer">Panel with footer</a></li>
+	            <li><a href="#panels-alternatives">Contextual alternatives</a></li>
+	            <li><a href="#panels-tables">With tables</a> </li>
+	            <li><a href="#panels-list-group">With list groups</a> </li>
+	        </ul>
+	    </li>
 	</ul>
 	<a class="back-to-top" href="#global_header"> Back to top </a>
 </nav>

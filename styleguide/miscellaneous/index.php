@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../bs-docs.min.css">
 <link rel='stylesheet' id='bootstrap-css-css' href='../docs.css' type='text/css' media='all' />
-<link rel='stylesheet' id='dr-docs-css' href='../../bootstrap/assets/stylesheets/_bootstrap.css?ver=3.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dr-docs-css' href='../../css/stylesheets/_bootstrap.css?ver=3.0.1' type='text/css' media='all' />
 </head>
 <body>
 <?php include("../classes/CssController.class.php"); ?>
@@ -30,6 +30,9 @@
 			<div class="dr-docs-section"><?php $cssController->displayBreadcrumbs(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayPagination(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayAlerts(); ?></div>
+			<div class="dr-docs-section"><?php $cssController->displayPanels(); ?></div>
+			<div class="dr-docs-section"><?php $cssController->displayTabs(); ?></div>
+			
 
 		</div>
 		<div class="col-md-2">

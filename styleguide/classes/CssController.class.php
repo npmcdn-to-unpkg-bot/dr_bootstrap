@@ -3666,6 +3666,288 @@ $this->displayHeader(
 
 }
 
+function displayPanels(){
+
+
+	$this->displayHeader(
+			'panels',
+			'Panels',
+			'While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.'
+		);
+
+?>
+   <div class="section-body">
+
+	
+		        <h2 id="panels-basic"><a class="anchorjs-link " href="#panels-basic" aria-label="Anchor link for: panels basic" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Basic example</h2>
+		        <p>By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
+		        <div class="dr-example" data-example-id="simple-panel">
+		            <div class="panel panel-default">
+		                <div class="panel-body"> Basic panel example </div>
+		            </div>
+		        </div>
+		        
+		        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+		  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+		    Basic panel example
+		  <span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+		        <h2 id="panels-heading"><a class="anchorjs-link " href="#panels-heading" aria-label="Anchor link for: panels heading" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Panel with heading</h2>
+		        <p>Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> with a <code>.panel-title</code> class to add a pre-styled heading. However, the font sizes of <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> are overridden by <code>.panel-heading</code>.</p>
+		        <p>For proper link coloring, be sure to place links in headings within <code>.panel-title</code>.</p>
+		        <div class="dr-example" data-example-id="panel-with-heading">
+		            <div class="panel panel-default">
+		                <div class="panel-heading">Panel heading without title</div>
+		                <div class="panel-body"> Panel content </div>
+		            </div>
+		            <div class="panel panel-default">
+		                <div class="panel-heading">
+		                    <h3 class="panel-title">Panel title</h3> </div>
+		                <div class="panel-body"> Panel content </div>
+		            </div>
+		        </div>
+		        
+		        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+		  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>Panel heading without title<span class="nt">&lt;/div&gt;</span>
+		  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+		    Panel content
+		  <span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+		  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>
+		    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>Panel title<span class="nt">&lt;/h3&gt;</span>
+		  <span class="nt">&lt;/div&gt;</span>
+		  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+		    Panel content
+		  <span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+		        <h2 id="panels-footer"><a class="anchorjs-link " href="#panels-footer" aria-label="Anchor link for: panels footer" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Panel with footer</h2>
+		        <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note that panel footers <strong>do not</strong> inherit colors and borders when using contextual variations as they are not meant to be in the foreground.</p>
+		        <div class="dr-example" data-example-id="panel-with-footer">
+		            <div class="panel panel-default">
+		                <div class="panel-body"> Panel content </div>
+		                <div class="panel-footer">Panel footer</div>
+		            </div>
+		        </div>
+		        
+		        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+		  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+		    Panel content
+		  <span class="nt">&lt;/div&gt;</span>
+		  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-footer"</span><span class="nt">&gt;</span>Panel footer<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+		        <h2 id="panels-alternatives"><a class="anchorjs-link " href="#panels-alternatives" aria-label="Anchor link for: panels alternatives" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Contextual alternatives</h2>
+		        <p>Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</p>
+		        <div class="dr-example" data-example-id="contextual-panels">
+		            <div class="panel panel-primary">
+		                <div class="panel-heading">
+		                    <h3 class="panel-title">Panel title</h3> </div>
+		                <div class="panel-body"> Panel content </div>
+		            </div>
+		            <div class="panel panel-success">
+		                <div class="panel-heading">
+		                    <h3 class="panel-title">Panel title</h3> </div>
+		                <div class="panel-body"> Panel content </div>
+		            </div>
+		            <div class="panel panel-info">
+		                <div class="panel-heading">
+		                    <h3 class="panel-title">Panel title</h3> </div>
+		                <div class="panel-body"> Panel content </div>
+		            </div>
+		            <div class="panel panel-warning">
+		                <div class="panel-heading">
+		                    <h3 class="panel-title">Panel title</h3> </div>
+		                <div class="panel-body"> Panel content </div>
+		            </div>
+		            <div class="panel panel-danger">
+		                <div class="panel-heading">
+		                    <h3 class="panel-title">Panel title</h3> </div>
+		                <div class="panel-body"> Panel content </div>
+		            </div>
+		        </div>
+		        
+		        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-primary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-success"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-info"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-warning"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-danger"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+		        <h2 id="panels-tables"><a class="anchorjs-link " href="#panels-tables" aria-label="Anchor link for: panels tables" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>With tables</h2>
+		        <p>Add any non-bordered <code>.table</code> within a panel for a seamless design. If there is a <code>.panel-body</code>, we add an extra border to the top of the table for separation.</p>
+		        <div class="dr-example" data-example-id="table-within-panel">
+		            <div class="panel panel-default">
+		                <div class="panel-heading">Panel heading</div>
+		                <div class="panel-body">
+		                    <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		                </div>
+		                <table class="table">
+		                    <thead>
+		                        <tr>
+		                            <th>#</th>
+		                            <th>First Name</th>
+		                            <th>Last Name</th>
+		                            <th>Username</th>
+		                        </tr>
+		                    </thead>
+		                    <tbody>
+		                        <tr>
+		                            <th scope="row">1</th>
+		                            <td>Mark</td>
+		                            <td>Otto</td>
+		                            <td>@mdo</td>
+		                        </tr>
+		                        <tr>
+		                            <th scope="row">2</th>
+		                            <td>Jacob</td>
+		                            <td>Thornton</td>
+		                            <td>@fat</td>
+		                        </tr>
+		                        <tr>
+		                            <th scope="row">3</th>
+		                            <td>Larry</td>
+		                            <td>the Bird</td>
+		                            <td>@twitter</td>
+		                        </tr>
+		                    </tbody>
+		                </table>
+		            </div>
+		        </div>
+		        
+		        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+		  <span class="c">&lt;!-- Default panel contents --&gt;</span>
+		  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>Panel heading<span class="nt">&lt;/div&gt;</span>
+		  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+		    <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+		  <span class="nt">&lt;/div&gt;</span>
+
+		  <span class="c">&lt;!-- Table --&gt;</span>
+		  <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+		    ...
+		  <span class="nt">&lt;/table&gt;</span>
+		<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+		        <p>If there is no panel body, the component moves from panel header to table without interruption.</p>
+		        <div class="dr-example" data-example-id="panel-without-body-with-table">
+		            <div class="panel panel-default">
+		                <div class="panel-heading">Panel heading</div>
+		                <table class="table">
+		                    <thead>
+		                        <tr>
+		                            <th>#</th>
+		                            <th>First Name</th>
+		                            <th>Last Name</th>
+		                            <th>Username</th>
+		                        </tr>
+		                    </thead>
+		                    <tbody>
+		                        <tr>
+		                            <th scope="row">1</th>
+		                            <td>Mark</td>
+		                            <td>Otto</td>
+		                            <td>@mdo</td>
+		                        </tr>
+		                        <tr>
+		                            <th scope="row">2</th>
+		                            <td>Jacob</td>
+		                            <td>Thornton</td>
+		                            <td>@fat</td>
+		                        </tr>
+		                        <tr>
+		                            <th scope="row">3</th>
+		                            <td>Larry</td>
+		                            <td>the Bird</td>
+		                            <td>@twitter</td>
+		                        </tr>
+		                    </tbody>
+		                </table>
+		            </div>
+		        </div>
+		        
+		        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+		  <span class="c">&lt;!-- Default panel contents --&gt;</span>
+		  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>Panel heading<span class="nt">&lt;/div&gt;</span>
+
+		  <span class="c">&lt;!-- Table --&gt;</span>
+		  <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+		    ...
+		  <span class="nt">&lt;/table&gt;</span>
+		<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+		        <h2 id="panels-list-group"><a class="anchorjs-link " href="#panels-list-group" aria-label="Anchor link for: panels list group" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>With list groups</h2>
+		        <p>Easily include full-width <a href="#list-group">list groups</a> within any panel.</p>
+		        <div class="dr-example" data-example-id="panel-with-list-group">
+		            <div class="panel panel-default">
+		                <div class="panel-heading">Panel heading</div>
+		                <div class="panel-body">
+		                    <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		                </div>
+		                <ul class="list-group">
+		                    <li class="list-group-item">Cras justo odio</li>
+		                    <li class="list-group-item">Dapibus ac facilisis in</li>
+		                    <li class="list-group-item">Morbi leo risus</li>
+		                    <li class="list-group-item">Porta ac consectetur ac</li>
+		                    <li class="list-group-item">Vestibulum at eros</li>
+		                </ul>
+		            </div>
+		        </div>
+		        
+		        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+		  <span class="c">&lt;!-- Default panel contents --&gt;</span>
+		  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>Panel heading<span class="nt">&lt;/div&gt;</span>
+		  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+		    <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+		  <span class="nt">&lt;/div&gt;</span>
+
+		  <span class="c">&lt;!-- List group --&gt;</span>
+		  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+		    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+		    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+		    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/li&gt;</span>
+		    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/li&gt;</span>
+		    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+		  <span class="nt">&lt;/ul&gt;</span>
+		<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+		    </div>
+
+<?php
+}
+
+
+function displayTabs(){
+
+	$this->displayHeader(
+		'tabs',
+		'Tabs'
+	);
+
+	?>
+ <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+
+	<?php
+}
+
 
 }
 
