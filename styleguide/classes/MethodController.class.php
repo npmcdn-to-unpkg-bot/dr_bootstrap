@@ -158,7 +158,7 @@ class MethodController{
 				<div class="dr-example dr-example-type" data-example-id="simple-headings">
 					<p><code>POST</code> <code>api.digitalriver.com/shoppers/me/addresses/delete/{id}.xml</code></p>
 				</div>
-				<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><?xml version="1.0" encoding="UTF-8" ?>
+				<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><xml version="1.0" encoding="UTF-8" >
 	<glossary>
 		<title>example glossary</title>
 		<GlossDiv>
