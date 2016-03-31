@@ -4,8 +4,14 @@
 ********/
 body {
   position: relative;
+<<<<<<< HEAD
   background: #EDEEF2 !important;
   /*light gray will a hint of blue*/ }
+=======
+  background: #f0f0f0 !important; }
+  body.white-bg {
+    background: #fff !important; }
+>>>>>>> 3ca1d72e0635285bf4b344cf86e2c97521ba42f5
 
 .dr-docs-container {
   margin-top: 20px;

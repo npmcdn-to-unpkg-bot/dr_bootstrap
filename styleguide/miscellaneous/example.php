@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Digital River Online Style Guide</title>
+<link rel="shortcut icon" href="../../favicon.png">
+<link rel='stylesheet' id='fonts-css' href='../../fonts/font.css?ver=1' type='text/css' media='all' />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../bs-docs.min.css">
+<link rel='stylesheet' id='bootstrap-css-css' href='../docs.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dr-docs-css' href='../../css/stylesheets/_bootstrap.css?ver=3.0.1' type='text/css' media='all' />
+<link rel='stylesheet' href='../resources_style.css' type='text/css' media='all' />
+
+</head>
+<body>
+<?php include("../classes/ExampleController.class.php"); ?>
+
+<?php //include("../header.php"); ?>
+<!-- style="padding:30px 0 0;" -->
+<div class="blue-bg slide" >
+	<div class="container">
+			<div class="row">
+			<?php
+				/**
+				 * @todo Colors, Fonts, Icons
+				 *
+				 */
+				$exampleController = new ExampleController();
+				$exampleController->displayMenu();
+				// $exampleController->displayTop();
+			?>
+		</div>
+	</div>
+</div>
+<div class="lgray-bg" style="position: relative; z-index: -2; overflow: hidden;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<?php
+					$exampleController->displaySidebarNav();
+				?>
+			</div>
+			<div class="col-md-9">
+				<div class="white-bg" style="z-index:-1; position: absolute; left: 0px; width: 125%; height: 100%; top: 0px;"></div>
+
+				<?php
+					$exampleController->displayOverview();
+					$exampleController->displayMethods();
+					$exampleController->displayFields();
+				?>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+			
+<?php include("../footer.php"); ?>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
+<script src="../docs.js"></script>
+</body>
+</html>

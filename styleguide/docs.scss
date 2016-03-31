@@ -28,6 +28,9 @@ body {
   position:relative;
   background:#EDEEF2 !important; /*light gray will a hint of blue*/
 
+  &.white-bg{
+    background:$white !important;
+  }
 }
 .dr-docs-container {
     margin-top:20px;

@@ -21,11 +21,17 @@
 <div class="container dr-docs-container">
 	<div class="row">
 		<div class="col-md-10">
+		<?php
+		/**
+		 * @todo Colors, Fonts, Icons
+		 *
+		 */
+		?>
 			<?php $cssController = new CssController(); ?>
 			<div class="dr-docs-section"><?php $cssController->displayTypography(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayCode(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayTables(); ?></div>
-			<div class="dr-docs-section"><?php $cssController->displayForms(); ?></div>
+			<!-- <div class="dr-docs-section"><?php $cssController->displayForms(); ?></div> -->
 			<div class="dr-docs-section"><?php $cssController->displayButtons(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayBreadcrumbs(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayPagination(); ?></div>
