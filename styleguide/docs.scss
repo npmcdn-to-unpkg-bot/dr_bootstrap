@@ -23,6 +23,9 @@ body {
   position:relative;
   background:$lightGray !important;
 
+  &.white-bg{
+    background:$white !important;
+  }
 }
 .dr-docs-container {
     margin-top:20px;

@@ -5,6 +5,8 @@
 body {
   position: relative;
   background: #f0f0f0 !important; }
+  body.white-bg {
+    background: #fff !important; }
 
 .dr-docs-container {
   margin-top: 20px;

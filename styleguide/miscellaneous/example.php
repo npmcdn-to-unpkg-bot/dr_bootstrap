@@ -12,27 +12,47 @@
 <link rel="stylesheet" href="../bs-docs.min.css">
 <link rel='stylesheet' id='bootstrap-css-css' href='../docs.css' type='text/css' media='all' />
 <link rel='stylesheet' id='dr-docs-css' href='../../css/stylesheets/_bootstrap.css?ver=3.0.1' type='text/css' media='all' />
+<link rel='stylesheet' href='../resources_style.css' type='text/css' media='all' />
+
 </head>
 <body>
 <?php include("../classes/ExampleController.class.php"); ?>
 
-<?php include("../header.php"); ?>
-
-<div class="container dr-docs-container">
-	<div class="row">
-		<div class="col-md-10">
-		<?php
-		/**
-		 * @todo Colors, Fonts, Icons
-		 *
-		 */
-		?>
-			<?php $exampleController = new ExampleController(); ?>
-			<div class="dr-docs-section"><?php $exampleController->displayOverview(); ?></div>
-			<div class="dr-docs-section"><?php $exampleController->displayMethods(); ?></div>
-			<div class="dr-docs-section"><?php $exampleController->displayFields(); ?></div>
+<?php //include("../header.php"); ?>
+<!-- style="padding:30px 0 0;" -->
+<div class="blue-bg slide" >
+	<div class="container">
+			<div class="row">
+			<?php
+				/**
+				 * @todo Colors, Fonts, Icons
+				 *
+				 */
+				$exampleController = new ExampleController();
+				$exampleController->displayMenu();
+				// $exampleController->displayTop();
+			?>
 		</div>
-		<div class="col-md-2">
+	</div>
+</div>
+<div class="lgray-bg" style="position: relative; z-index: -2; overflow: hidden;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<?php
+					$exampleController->displaySidebarNav();
+				?>
+			</div>
+			<div class="col-md-9">
+				<div class="white-bg" style="z-index:-1; position: absolute; left: 0px; width: 125%; height: 100%; top: 0px;"></div>
+
+				<?php
+					$exampleController->displayOverview();
+					$exampleController->displayMethods();
+					$exampleController->displayFields();
+				?>
+			</div>
+
 		</div>
 	</div>
 </div>
