@@ -3919,31 +3919,49 @@ function displayTabs(){
 	);
 
 	?>
- <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
-  </ul>
+<div class="section-body">
+	<div class="dr-example" data-example-id="panel-with-list-group">
+		<ul class="nav nav-tabs">
+		    <li class="active"><a data-toggle="tab" href="#tab1">Tab 1</a></li>
+		    <li class=""><a data-toggle="tab" href="#tab2">Tab 2</a></li>
+		    <li class=""><a data-toggle="tab" href="#tab3">Tab 3</a></li>
+	 	</ul>
+		<div class="tab-content">
+		    <div id="tab1" class="tab-pane active">
+		      <h3>Tab 1</h3>
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+		    <div id="tab2" class="tab-pane">
+		      <h3>Tab 2</h3>
+		      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    </div>
+		    <div id="tab3" class="tab-pane">
+		      <h3>Tab 3</h3>
+		      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		    </div>
+		</div>
 
-  <div class="tab-content">
-    <div id="home" class="tab-pane active">
-      <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div id="menu1" class="tab-pane">
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div id="menu2" class="tab-pane">
-      <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-    </div>
-    <div id="menu3" class="tab-pane">
-      <h3>Menu 3</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </div>
-  </div>
+	</div>
+	<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#tab1"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
+	<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#tab2"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
+	<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#tab3"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"tab1"</span> <span class="na">class=</span><span class="s">"tab-pane active"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3&gt;</span> ... <span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"tab2"</span> <span class="na">class=</span><span class="s">"tab-pane"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3&gt;</span> ... <span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"tab3"</span> <span class="na">class=</span><span class="s">"tab-pane"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3&gt;</span> ... <span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
 
 	<?php
 }

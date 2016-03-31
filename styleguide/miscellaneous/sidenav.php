@@ -33,7 +33,7 @@
 	            <li><a href="#tables-responsive">Responsive tables</a></li>
 	        </ul>
 	    </li>
-	    <li><a href="#forms">Forms</a>
+<!-- 	    <li><a href="#forms">Forms</a>
 	        <ul class="nav">
 	            <li><a href="#forms-example">Basic example</a></li>
 	            <li><a href="#forms-inline">Inline form</a></li>
@@ -47,7 +47,7 @@
 	            <li><a href="#forms-control-validation">Validation states</a></li>
 	            <li><a href="#forms-control-sizes">Control sizing</a></li>
 	        </ul>
-	    </li>
+	    </li> -->
 	    <li><a href="#buttons">Buttons</a>
 	        <ul class="nav">
 	            <li><a href="#buttons-tags">Button tags</a></li>

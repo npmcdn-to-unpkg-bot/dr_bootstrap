@@ -14,7 +14,7 @@
 <link rel='stylesheet' id='dr-docs-css' href='../../css/stylesheets/_bootstrap.css?ver=3.0.1' type='text/css' media='all' />
 </head>
 <body>
-<?php include("../classes/CssController.class.php"); ?>
+<?php include("../classes/ExampleController.class.php"); ?>
 
 <?php include("../header.php"); ?>
 
@@ -27,22 +27,12 @@
 		 *
 		 */
 		?>
-			<?php $cssController = new CssController(); ?>
-			<div class="dr-docs-section"><?php $cssController->displayTypography(); ?></div>
-			<div class="dr-docs-section"><?php $cssController->displayCode(); ?></div>
-			<div class="dr-docs-section"><?php $cssController->displayTables(); ?></div>
-			<!-- <div class="dr-docs-section"><?php $cssController->displayForms(); ?></div> -->
-			<div class="dr-docs-section"><?php $cssController->displayButtons(); ?></div>
-			<div class="dr-docs-section"><?php $cssController->displayBreadcrumbs(); ?></div>
-			<div class="dr-docs-section"><?php $cssController->displayPagination(); ?></div>
-			<div class="dr-docs-section"><?php $cssController->displayAlerts(); ?></div>
-			<div class="dr-docs-section"><?php $cssController->displayPanels(); ?></div>
-			<div class="dr-docs-section"><?php $cssController->displayTabs(); ?></div>
-			
-
+			<?php $exampleController = new ExampleController(); ?>
+			<div class="dr-docs-section"><?php $exampleController->displayOverview(); ?></div>
+			<div class="dr-docs-section"><?php $exampleController->displayMethods(); ?></div>
+			<div class="dr-docs-section"><?php $exampleController->displayFields(); ?></div>
 		</div>
 		<div class="col-md-2">
-			<?php include("sidenav.php"); ?>
 		</div>
 	</div>
 </div>
