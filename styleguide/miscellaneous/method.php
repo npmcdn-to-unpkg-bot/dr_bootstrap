@@ -52,7 +52,6 @@ include("../classes/MethodController.class.php");
 				<div class="col-md-9">
 				<?php
 					$methodController = new MethodController();
-
 					$methodController->displayOverview();
 					$methodController->displayParameters();
 					$methodController->displayExample();

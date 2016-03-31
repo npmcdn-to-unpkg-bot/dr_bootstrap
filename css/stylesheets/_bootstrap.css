@@ -1624,6 +1624,17 @@ pre {
     background-color: transparent;
     border-radius: 0; }
 
+.highlight {
+  background: #343438; }
+  .highlight pre code {
+    color: #FFF; }
+    .highlight pre code.language-html .nt {
+      color: #25d4ff; }
+    .highlight pre code.language-html .na {
+      color: #b2d23c; }
+    .highlight pre code.language-html .s {
+      color: #f07822; }
+
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
@@ -2781,6 +2792,10 @@ thead {
     line-height: 1.42857;
     vertical-align: top;
     border-top: 1px solid #DDD; }
+  .table > thead > tr:first-child td,
+  .table > tbody > tr:first-child td,
+  .table > tfoot > tr:first-child td {
+    border-top: none; }
   .table > thead > tr > th {
     vertical-align: bottom;
     border-bottom: 2px solid #DDD; }
@@ -5722,6 +5737,34 @@ button.close {
   border: 0;
   -webkit-appearance: none; }
 
+.example {
+  margin-right: 0;
+  margin-left: 0;
+  background-color: #FFF;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0; }
+  .example .top {
+    position: relative;
+    padding: 40px 10px 10px; }
+  .example figure {
+    position: relative;
+    border-radius: 0; }
+    .example figure label {
+      color: #FFF; }
+    .example figure pre {
+      padding-top: 40px;
+      top: 0px;
+      position: relative; }
+  .example .top {
+    border: solid 1px #cccccc;
+    border-bottom: none; }
+  .example label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    font-family: "DIN Next W01 Medium", sans-serif; }
+
 .modal-open {
   overflow: hidden; }
 
@@ -6522,7 +6565,7 @@ ul.no-bullet {
 .purple-box {
   color: #FFF;
   background: #6f29d3;
-  border: 1em #f4eefc solid; }
+  border: 1em #a87ce6 solid; }
 
 .green-under-line, .eye-brow {
   font-family: "DIN Next W01 Medium", sans-serif;
