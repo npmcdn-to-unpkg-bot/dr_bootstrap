@@ -158,28 +158,28 @@ class MethodController{
 				<div class="dr-example dr-example-type" data-example-id="simple-headings">
 					<p><code>POST</code> <code>api.digitalriver.com/shoppers/me/addresses/delete/{id}.xml</code></p>
 				</div>
-				<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><?xml version="1.0" encoding="UTF-8" ?>
-	<glossary>
-		<title>example glossary</title>
-		<GlossDiv>
-			<title>S</title>
-			<GlossList>
-				<GlossEntry>
-					<ID>SGML</ID>
-					<SortAs>SGML</SortAs>
-					<GlossTerm>Standard Generalized Markup Language</GlossTerm>
-					<Acronym>SGML</Acronym>
-					<Abbrev>ISO 8879:1986</Abbrev>
-					<GlossDef>
-						<para>A meta-markup language</para>
-						<GlossSeeAlso>GML</GlossSeeAlso>
-						<GlossSeeAlso>XML</GlossSeeAlso>
-					</GlossDef>
-					<GlossSee>markup</GlossSee>
-				</GlossEntry>
-			</GlossList>
-		</GlossDiv>
-	</glossary>
+				<figure class="highlight"><pre><code class="language-xml" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+	&lt;glossary&gt;
+		&lt;title&gt;example glossary</title&gt;
+		&lt;GlossDiv&gt;
+			&lt;title&gt;S&lt;/title&gt;
+			&lt;GlossList>
+				&lt;GlossEntry&gt;
+					&lt;ID&gt;SGML&lt;/ID&gt;
+					&lt;SortAs&gt;SGML&lt;/SortAs&gt;
+					&lt;GlossTerm&gt;Standard Generalized Markup Language&lt;/GlossTerm&gt;
+					&lt;Acronym&gt;SGML&lt;/Acronym&gt;
+					&lt;Abbrev&gt;ISO 8879:1986&lt;/Abbrev&gt;
+					&lt;GlossDef&gt;
+						&lt;para>A meta-markup language&lt;/para&gt;
+						&lt;GlossSeeAlso>GML&lt;/GlossSeeAlso&gt;
+						&lt;GlossSeeAlso>XML&lt;/GlossSeeAlso&gt;
+					&lt;/GlossDef&gt;
+					&lt;GlossSee>markup&lt;/GlossSee&gt;
+				&lt;/GlossEntry&gt;
+			&lt;/GlossList&gt;
+		&lt;/GlossDiv&gt;
+	&lt;/glossary&gt;
 	
 
 </code></pre></figure>

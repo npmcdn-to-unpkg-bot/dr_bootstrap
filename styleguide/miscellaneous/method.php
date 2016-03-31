@@ -18,8 +18,10 @@
 <body>
 <?php 
 
-include("../classes/ExampleController.class.php"); ?>
-<?php include("../classes/MethodController.class.php"); ?>
+include("../classes/ExampleController.class.php");
+include("../classes/MethodController.class.php");
+
+?>
 
 <?php //include("../header.php"); ?>
 <!-- style="padding:30px 0 0;" -->
@@ -40,8 +42,7 @@ include("../classes/ExampleController.class.php"); ?>
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-2 hidden-sm hidden-xs"></div>
-		<div class="col-md-2">
+		<div class="col-md-2 col-md-offset-2">
 			<?php
 				$exampleController->displaySidebarNav();
 			?>
