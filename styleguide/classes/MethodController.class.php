@@ -21,9 +21,13 @@ class MethodController{
 		?>
 
 		   <h2 class="subhead light" id="<?php echo $id; ?>"><?php echo $header; ?></h2>
-   			<?php foreach($description as $paragraph): ?>
+   			<?php
+   			if(isset($description)):
+   			foreach($description as $paragraph): ?>
    				<p><?php echo $paragraph; ?></p>
-   			<?php endforeach; ?>
+   			<?php endforeach; 
+   			endif;
+   			?>
 
    <?php
 	}

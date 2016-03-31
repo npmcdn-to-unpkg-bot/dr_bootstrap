@@ -16,7 +16,9 @@
 
 </head>
 <body>
-<?php include("../classes/ExampleController.class.php"); ?>
+<?php 
+
+include("../classes/ExampleController.class.php"); ?>
 <?php include("../classes/MethodController.class.php"); ?>
 
 <?php //include("../header.php"); ?>
