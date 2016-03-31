@@ -39,6 +39,9 @@
 			<div class="dr-docs-section"><?php $cssController->displayPanels(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayTabs(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayColors(); ?></div>
+			<div class="dr-docs-section"><?php $cssController->displayExample(); ?></div>
+
+			
 			
 
 		</div>

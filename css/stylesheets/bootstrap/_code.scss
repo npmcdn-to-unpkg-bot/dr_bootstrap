@@ -62,6 +62,31 @@ pre {
   }
 }
 
+
+.highlight{
+  background:$black;
+
+  pre{
+    code{
+      color:$white;
+    
+      &.language-html{
+
+        .nt{
+          color:$lightBlue;
+        }
+
+        .na{
+          color:$lightGreen;
+        }
+        .s{
+          color:$lightOrange; 
+        }
+      }
+    }
+  }
+}
+
 // Enable scrollable blocks of code
 .pre-scrollable {
   max-height: $pre-scrollable-max-height;

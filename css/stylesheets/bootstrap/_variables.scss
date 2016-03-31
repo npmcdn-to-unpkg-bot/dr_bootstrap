@@ -22,10 +22,6 @@ $gray-dark:              lighten($gray-base, 20%) !default;   // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
-$green: #a8c628;
-$darkGreen: #81b315;
-$darkBlue: #007eb5;
-$lightBlue: #25d4ff;
 $black: #343438;
 $white: #FFF;
 $whiteLight: #FFF;
@@ -37,21 +33,58 @@ $nineGray: #999999;
 $medGray: #646464;
 $darkGray: #343434;
 $red: #ea0f43;
-$purple: #6f29d3;
-$purple-light: lighten($purple, 46.7%) !default;
-$green: #a8c628;
-$green-light: lighten($green, 46.7%) !default;
+
+
 $neon-blue: #25d4ff;
-$blue: #00a7e1;
-$blue-light: lighten($blue, 46.7%) !default;
-$darkPurple: #6810ba;
 $orange: #ff5b00;
 $hotPink: #FF245E;
+
+
+$gray10: darken(#fff, 10%);
+$gray20: darken(#fff, 20%);
+$gray30: darken(#fff, 30%);
+$gray40: darken(#fff, 40%);
+$gray50: darken(#fff, 50%);
+$gray60: darken(#fff, 60%);
+$gray70: darken(#fff, 70%);
+$gray80: darken(#fff, 80%);
+$gray90: darken(#fff, 90%);
+
+
+
+$blue: #00a7e1;
+$lightBlue: #25d4ff;
+$darkBlue: #007eb5;
+
+$blue-light: lighten($blue, 46.7%) !default;
+
+
+$green: #a8c628;
+$lightGreen:#b2d23c;
+$darkGreen: #81b315;
+
+$green-light: lighten($green, 46.7%) !default;
+
+
+$purple: #6f29d3;
+$lightPurple: #933d91;
+$darkPurple: #6810ba;
+
+$purple-light: lighten($purple, 20%) !default;
+
+
+$lightOrange: #f07822;
+
+$lightYellow: #fff021;
+
+
 $brand-primary:         $blue !default;
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          $red !default;
+
+
 
 
 @mixin grayscale_element($value) {

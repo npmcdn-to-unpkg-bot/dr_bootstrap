@@ -4072,6 +4072,142 @@ function displayColors(){
 <?php
 }
 
+
+function displayExample()
+{
+	$this->displayHeader(
+		'examples',
+		'Examples'
+	);
+	?>
+   <div class="section-body">
+	<?php	
+	$this->displaySubHeader(
+		"basic-example",
+		"Basic Example"
+	);
+	?>
+
+
+		<div class="example">
+			<div class="top">
+				<label>Request</label>
+				<p><code>POST</code> <code>api.digitalriver.com/shoppers/me/addresses/delete/{id}.json</code></p>
+			</div>
+			<figure class="highlight"><label>Response</label><pre><code class="language-json" data-lang="json">{
+   "glossary": {
+       "title": "example glossary",
+       "GlossDiv": {
+          "title": "S",
+          "GlossList": {
+             "GlossEntry": {              
+                "ID": "SGML",
+                "SortAs": "SGML",
+                "GlossTerm": "Standard Generalized Markup Language",
+                "Acronym": "SGML",
+                "Abbrev": "ISO 8879:1986",
+                "GlossDef": {
+                   "para": "A meta-markup language",
+                   "GlossSeeAlso": ["GML", "XML"]
+                },
+                "GlossSee": "markup"
+            }
+         }
+      }
+   }
+}
+</code></pre></figure>
+		</div>
+
+	<?php	
+	$this->displaySubHeader(
+		"advanced-example",
+		"Advanced Example"
+	);
+	?>
+
+
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#json">JSON</a></li>
+			<li><a data-toggle="tab" href="#xml">XML</a></li>
+		</ul>
+		<div class="tab-content">
+			<div id="json" class="tab-pane active">
+				<div class="example">
+					<div class="top">
+						<label>Request</label>
+						<p><code>POST</code> <code>api.digitalriver.com/shoppers/me/addresses/delete/{id}.json</code></p>
+					</div>
+					<figure class="highlight"><label>Response</label><pre><code class="language-json" data-lang="json">{
+		   "glossary": {
+		       "title": "example glossary",
+		       "GlossDiv": {
+		          "title": "S",
+		          "GlossList": {
+		             "GlossEntry": {              
+		                "ID": "SGML",
+		                "SortAs": "SGML",
+		                "GlossTerm": "Standard Generalized Markup Language",
+		                "Acronym": "SGML",
+		                "Abbrev": "ISO 8879:1986",
+		                "GlossDef": {
+		                   "para": "A meta-markup language",
+		                   "GlossSeeAlso": ["GML", "XML"]
+		                },
+		                "GlossSee": "markup"
+		            }
+		         }
+		      }
+		   }
+		}
+		</code></pre></figure>
+				</div>
+			</div>
+		<div id="xml" class="tab-pane">
+				<div class="example">
+					<div class="top">
+						<label>Request</label>
+						<p><code>POST</code> <code>api.digitalriver.com/shoppers/me/addresses/delete/{id}.xml</code></p>
+					</div>
+				<figure class="highlight"><label>Response</label><pre><code class="language-xml" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;glossary&gt;
+	&lt;title&gt;example glossary&lt;/title&gt;
+	&lt;GlossDiv&gt;
+		&lt;title&gt;S&lt;/title&gt;
+		&lt;GlossList&gt;
+			&lt;GlossEntry&gt;
+				&lt;ID&gt;SGML&lt;/ID&gt;
+				&lt;SortAs&gt;SGML&lt;/SortAs&gt;
+				&lt;GlossTerm&gt;Standard Generalized Markup Language&lt;/GlossTerm&gt;
+				&lt;Acronym&gt;SGML&lt;/Acronym&gt;
+				&lt;Abbrev&gt;ISO 8879:1986&lt;/Abbrev&gt;
+				&lt;GlossDef&gt;
+					&lt;para&gt;A meta-markup language&lt;/para&gt;
+					&lt;GlossSeeAlso>GML&lt;/GlossSeeAlso&gt;
+					&lt;GlossSeeAlso>XML&lt;/GlossSeeAlso&gt;
+				&lt;/GlossDef&gt;
+				&lt;GlossSee&gt;markup&lt;/GlossSee&gt;
+			&lt;/GlossEntry&gt;
+		&lt;/GlossList&gt;
+	&lt;/GlossDiv&gt;
+&lt;/glossary&gt;
+</code></pre></figure>
+</div>
+</div>
+</div>
+		
+
+
+
+		<!-- <figure class="highlight"><pre><code class="language-html" data-lang="html">
+
+		</figure></pre></code>
+ -->
+
+   </div>
+	<?php
+}
+
 }
 
 

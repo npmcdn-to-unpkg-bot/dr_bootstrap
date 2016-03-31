@@ -46,6 +46,12 @@ thead{
         vertical-align: top;
         border-top: 1px solid $table-border-color;
       }
+
+      &:first-child{
+        td{
+          border-top:none;
+        }
+      }
     }
   }
   // Bottom align for column headings
