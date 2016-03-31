@@ -4,13 +4,14 @@
 ********/
 body {
   position: relative;
-  background: #f0f0f0 !important; }
+  background: #EDEEF2 !important;
+  /*light gray will a hint of blue*/ }
 
 .dr-docs-container {
   margin-top: 20px;
   margin-bottom: 80px; }
   .dr-docs-container .dr-docs-section {
-    border: solid 1px #E0E0E0;
+    border: solid 1px #cccccc;
     background: #fff; }
     .dr-docs-container .dr-docs-section .header {
       padding: 15px; }
@@ -35,7 +36,7 @@ body {
     padding: 0 2px;
     font-size: 16px;
     font-weight: 500;
-    color: #646464; }
+    color: #666666; }
     #dr-docs-sidebar .nav > li a:hover, #dr-docs-sidebar .nav > li a:focus {
       background-color: transparent; }
     #dr-docs-sidebar .nav > li a:hover {
@@ -53,14 +54,14 @@ body {
         border-left: 3px solid #a8c628;
         left: -1px; }
         #dr-docs-sidebar .nav > li > .nav > li.active ~ li {
-          border-left: 1px solid #E0E0E0; }
+          border-left: 1px solid #cccccc; }
         #dr-docs-sidebar .nav > li > .nav > li.active > a {
           font-weight: normal; }
       #dr-docs-sidebar .nav > li > .nav > li a {
         font-size: 13px;
         border-bottom: none; }
   #dr-docs-sidebar .nav > li.border-fix > .nav > li {
-    border-left: 1px solid #E0E0E0; }
+    border-left: 1px solid #cccccc; }
   #dr-docs-sidebar .nav > li.active > .nav {
     display: block; }
   #dr-docs-sidebar .nav > li.active > a {
@@ -92,14 +93,14 @@ body {
     font-weight: bold;
     text-shadow: 0 0 10px #fff; }
   #splash h2 {
-    background-color: #343434;
+    background-color: #4d4d4d;
     color: #fff;
     padding: 5px 10px;
     display: inline-block;
     line-height: 1; }
 
 #world-map {
-  fill: #E0E0E0;
+  fill: #cccccc;
   animation-name: blur;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
@@ -120,11 +121,116 @@ body {
     opacity: 1; } }
 footer {
   padding: 40px 20px;
-  background: #f0f0f0;
+  background: #e6e6e6;
   text-align: center;
-  border-top: solid 1px #E0E0E0; }
+  border-top: solid 1px #cccccc; }
   footer a {
     margin: 0 10px;
     color: #c1c1c1; }
+
+.bg-green {
+  background-color: #a8c628; }
+
+.bg-darkGreen {
+  background-color: #81b315; }
+
+.bg-blue {
+  background-color: #00a7e1; }
+
+.bg-darkBlue {
+  background-color: #007eb5; }
+
+.bg-purple {
+  background-color: #6f29d3; }
+
+.bg-black {
+  background-color: #343438; }
+
+.bg-white {
+  background-color: #fff; }
+
+.bg-gray10 {
+  background-color: #e6e6e6; }
+
+.bg-gray20 {
+  background-color: #cccccc; }
+
+.bg-gray30 {
+  background-color: #b3b3b3; }
+
+.bg-gray40 {
+  background-color: #999999; }
+
+.bg-gray50 {
+  background-color: gray; }
+
+.bg-gray60 {
+  background-color: #666666; }
+
+.bg-gray70 {
+  background-color: #4d4d4d; }
+
+.bg-gray80 {
+  background-color: #333333; }
+
+.bg-gray90 {
+  background-color: #1a1a1a; }
+
+.txt-green {
+  color: #a8c628; }
+
+.txt-darkGreen {
+  color: #81b315; }
+
+.txt-blue {
+  color: #00a7e1; }
+
+.txt-darkBlue {
+  color: #007eb5; }
+
+.txt-purple {
+  color: #6f29d3; }
+
+.txt-black {
+  color: #343438; }
+
+.txt-white {
+  color: #fff; }
+
+.txt-gray10 {
+  color: #e6e6e6; }
+
+.txt-gray20 {
+  color: #cccccc; }
+
+.txt-gray30 {
+  color: #b3b3b3; }
+
+.txt-gray40 {
+  color: #999999; }
+
+.txt-gray50 {
+  color: gray; }
+
+.txt-gray60 {
+  color: #666666; }
+
+.txt-gray70 {
+  color: #4d4d4d; }
+
+.txt-gray80 {
+  color: #333333; }
+
+.txt-gray90 {
+  color: #1a1a1a; }
+
+#dr-docs-colors [class^="bg-"] {
+  height: 50px;
+  margin: 5px 0 20px 0;
+  text-align: center; }
+  #dr-docs-colors [class^="bg-"] .color {
+    line-height: 50px;
+    font-size: 21px;
+    opacity: 0.3; }
 
 /*# sourceMappingURL=docs.css.map */

@@ -72,7 +72,7 @@
 	            <li><a href="#alerts-callout">Callout alerts</a></li>
 	        </ul>
 	    </li>
-	    <li> <a href="#panels">Panels</a>
+	    <li><a href="#panels">Panels</a>
 	        <ul class="nav">
 	            <li><a href="#panels-basic">Basic example</a></li>
 	            <li><a href="#panels-heading">Panel with heading</a></li>
@@ -80,6 +80,15 @@
 	            <li><a href="#panels-alternatives">Contextual alternatives</a></li>
 	            <li><a href="#panels-tables">With tables</a> </li>
 	            <li><a href="#panels-list-group">With list groups</a> </li>
+	        </ul>
+	    </li>
+	    <li><a href="#tabs">Tabs</a></li>
+	    <li><a href="#colors">Colors</a>
+	    	<ul class="nav">
+	            <li><a href="#colors-brand">Brand</a></li>
+	            <li><a href="#colors-text">Text</a></li>
+	            <li><a href="#colors-links">Links</a></li>
+	            <li><a href="#colors-social">Social Media</a></li>
 	        </ul>
 	    </li>
 	</ul>
