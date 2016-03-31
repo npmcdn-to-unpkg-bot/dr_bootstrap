@@ -55,12 +55,13 @@ body {
 }
 
 #dr-docs-sidebar {
+    max-width:250px;
     &.affix {
         position:fixed;
         top:20px;
     }
     &.affix-bottom {
-        position:relative;
+        position:absolute;
     }
     & > .nav > li {
         margin-bottom:5px;
@@ -232,8 +233,13 @@ footer {
             //              -1px 1px 0 $gray60,
             //              1px -1px 0 $gray60,
             //               1px 1px 0 $gray60;
-            text-shadow:0 0 2px #000;
+            //text-shadow:0 0 2px #000;
                         
         }
     }
+}
+
+.tab-content .dr-example {
+    border-radius:0;
+    border-top:0;
 }

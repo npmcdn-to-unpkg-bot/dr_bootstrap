@@ -38,7 +38,7 @@
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-2 col-offset-2">
+		<div class="col-md-2 col-md-offset-2">
 			<?php
 				$exampleController->displaySidebarNav();
 			?>

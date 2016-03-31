@@ -4013,17 +4013,17 @@ function displayColors(){
         	<div class="col-xs-6 col-md-4">
         		<span>White</span>
         		<code>$white</code>
-        		<div class="bg-white"><span class="color" style="text-shadow:none; color:#808080;"></span></div>
+        		<div class="bg-white"><span class="color" style="color:#808080;"></span></div>
         	</div>
         	<div class="col-xs-6 col-md-4">
         		<span>10% Gray</span>
         		<code>$gray10</code>
-        		<div class="bg-gray10"><span class="color"></span></div>
+        		<div class="bg-gray10"><span class="color" style="color:#808080;"></span></div>
         	</div>
         	<div class="col-xs-6 col-md-4">
         		<span>20% Gray</span>
         		<code>$gray20</code>
-        		<div class="bg-gray20"><span class="color"></span></div>
+        		<div class="bg-gray20"><span class="color" style="color:#808080;"></span></div>
         	</div>
         	<div class="col-xs-6 col-md-4">
         		<span>30% Gray</span>

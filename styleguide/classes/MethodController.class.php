@@ -71,7 +71,7 @@ class MethodController{
 		  <li class="active">Addresses Resource</li>
 		</ol> -->
 
-		<h1>DELETE shoppers/me/addresses/{id}</h1>
+		<h1 id="delete">DELETE shoppers/me/addresses/{id}</h1>
 		<p>Deletes the shopper address associated with the specified id. Specify the id of the address in the {id} uri path parameter. If the last address linked to the shopper is deleted, there is no warning message.</p>
 
 		<?php
@@ -79,7 +79,7 @@ class MethodController{
 
 	function displayParameters(){
 
-		$this->displaySubHeader("parameters","Parameters");
+		$this->displaySubHeader("delete-parameters","Parameters");
 	?>
 	  	<table class="table">
 			<td class="col-md-3">
@@ -118,7 +118,7 @@ class MethodController{
 	
 	function displayExample(){
 
-		$this->displaySubHeader("example","Example");
+		$this->displaySubHeader("delete-example","Example");
 
 		?>
 		<ul class="nav nav-tabs">
@@ -158,30 +158,29 @@ class MethodController{
 				<div class="dr-example dr-example-type" data-example-id="simple-headings">
 					<p><code>POST</code> <code>api.digitalriver.com/shoppers/me/addresses/delete/{id}.xml</code></p>
 				</div>
-				<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><xml version="1.0" encoding="UTF-8" >
-	<glossary>
-		<title>example glossary</title>
-		<GlossDiv>
-			<title>S</title>
-			<GlossList>
-				<GlossEntry>
-					<ID>SGML</ID>
-					<SortAs>SGML</SortAs>
-					<GlossTerm>Standard Generalized Markup Language</GlossTerm>
-					<Acronym>SGML</Acronym>
-					<Abbrev>ISO 8879:1986</Abbrev>
-					<GlossDef>
-						<para>A meta-markup language</para>
-						<GlossSeeAlso>GML</GlossSeeAlso>
-						<GlossSeeAlso>XML</GlossSeeAlso>
-					</GlossDef>
-					<GlossSee>markup</GlossSee>
-				</GlossEntry>
-			</GlossList>
-		</GlossDiv>
-	</glossary>
-	
 
+				<figure class="highlight"><pre><code class="language-xml" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+	&lt;glossary&gt;
+		&lt;title&gt;example glossary</title&gt;
+		&lt;GlossDiv&gt;
+			&lt;title&gt;S&lt;/title&gt;
+			&lt;GlossList>
+				&lt;GlossEntry&gt;
+					&lt;ID&gt;SGML&lt;/ID&gt;
+					&lt;SortAs&gt;SGML&lt;/SortAs&gt;
+					&lt;GlossTerm&gt;Standard Generalized Markup Language&lt;/GlossTerm&gt;
+					&lt;Acronym&gt;SGML&lt;/Acronym&gt;
+					&lt;Abbrev&gt;ISO 8879:1986&lt;/Abbrev&gt;
+					&lt;GlossDef&gt;
+						&lt;para>A meta-markup language&lt;/para&gt;
+						&lt;GlossSeeAlso>GML&lt;/GlossSeeAlso&gt;
+						&lt;GlossSeeAlso>XML&lt;/GlossSeeAlso&gt;
+					&lt;/GlossDef&gt;
+					&lt;GlossSee>markup&lt;/GlossSee&gt;
+				&lt;/GlossEntry&gt;
+			&lt;/GlossList&gt;
+		&lt;/GlossDiv&gt;
+	&lt;/glossary&gt;
 </code></pre></figure>
 </div>
 </div>
@@ -193,88 +192,12 @@ class MethodController{
 
 	function displaySidebarNav(){
 		?>
-<nav id="dr-docs-sidebar" class="affix">
+<nav id="dr-docs-sidebar">
 	<ul class="nav dr-docs-sidenav">
-	    <li class="active"><a href="#type">Typography</a>
+	    <li class="active"><a href="#delete">DELETE shoppers/me/addresses/{id}</a>
 	        <ul class="nav">
-	            <li class="active"><a href="#type-headings">Headings</a></li>
-	            <li><a href="#type-body-copy">Body copy</a></li>
-	            <li><a href="#type-inline-text">Inline text elements</a></li>
-	            <li><a href="#type-alignment">Alignment classes</a></li>
-	            <li><a href="#type-transformation">Transformation classes</a></li>
-	            <li><a href="#type-abbreviations">Abbreviations</a></li>
-	            <li><a href="#type-addresses">Addresses</a></li>
-	            <li><a href="#type-blockquotes">Blockquotes</a></li>
-	            <li><a href="#type-lists">Lists</a></li>
-	        </ul>
-	    </li>
-	    <li><a href="#code">Code</a>
-	        <ul class="nav">
-	            <li><a href="#code-inline">Inline</a></li>
-	            <li><a href="#code-user-input">User input</a></li>
-	            <li><a href="#code-block">Basic block</a></li>
-	            <li><a href="#code-variables">Variables</a></li>
-	            <li><a href="#code-sample-output">Sample output</a></li>
-	        </ul>
-	    </li>
-	    <li><a href="#tables">Tables</a>
-	        <ul class="nav">
-	            <li><a href="#tables-example">Basic example</a></li>
-	            <li><a href="#tables-striped">Striped rows</a></li>
-	            <li><a href="#tables-bordered">Bordered table</a></li>
-	            <li><a href="#tables-hover-rows">Hover rows</a></li>
-	            <li><a href="#tables-condensed">Condensed table</a></li>
-	            <li><a href="#tables-contextual-classes">Contextual classes</a></li>
-	            <li><a href="#tables-responsive">Responsive tables</a></li>
-	        </ul>
-	    </li>
-<!-- 	    <li><a href="#forms">Forms</a>
-	        <ul class="nav">
-	            <li><a href="#forms-example">Basic example</a></li>
-	            <li><a href="#forms-inline">Inline form</a></li>
-	            <li><a href="#forms-horizontal">Horizontal form</a></li>
-	            <li><a href="#forms-controls">Supported controls</a></li>
-	            <li><a href="#forms-controls-static">Static control</a></li>
-	            <li><a href="#forms-control-focus">Focus state</a></li>
-	            <li><a href="#forms-control-disabled">Disabled state</a></li>
-	            <li><a href="#forms-control-readonly">Readonly state</a></li>
-	            <li><a href="#forms-help-text">Help text</a></li>
-	            <li><a href="#forms-control-validation">Validation states</a></li>
-	            <li><a href="#forms-control-sizes">Control sizing</a></li>
-	        </ul>
-	    </li> -->
-	    <li><a href="#buttons">Buttons</a>
-	        <ul class="nav">
-	            <li><a href="#buttons-tags">Button tags</a></li>
-	            <li><a href="#buttons-options">Options</a></li>
-	            <li><a href="#buttons-sizes">Sizes</a></li>
-	            <li><a href="#buttons-active">Active state</a></li>
-	            <li><a href="#buttons-disabled">Disabled state</a></li>
-	        </ul>
-	    </li>
-	    <li><a href="#breadcrumbs">Breadcrumbs</a></li>
-	    <li><a href="#pagination">Pagination</a>
-	        <ul class="nav">
-	            <li><a href="#pagination-default">Default pagination</a></li>
-	            <li><a href="#pagination-pager">Pager</a></li>
-	        </ul>
-	    </li>
-	    <li><a href="#alerts">Alerts</a>
-	        <ul class="nav">
-	            <li><a href="#alerts-examples">Examples</a></li>
-	            <li><a href="#alerts-dismissible">Dismissible alerts</a></li>
-	            <li><a href="#alerts-links">Links in alerts</a></li>
-	            <li><a href="#alerts-callout">Callout alerts</a></li>
-	        </ul>
-	    </li>
-	    <li> <a href="#panels">Panels</a>
-	        <ul class="nav">
-	            <li><a href="#panels-basic">Basic example</a></li>
-	            <li><a href="#panels-heading">Panel with heading</a></li>
-	            <li><a href="#panels-footer">Panel with footer</a></li>
-	            <li><a href="#panels-alternatives">Contextual alternatives</a></li>
-	            <li><a href="#panels-tables">With tables</a> </li>
-	            <li><a href="#panels-list-group">With list groups</a> </li>
+	            <li class="active"><a href="#delete-parameters">Parameters</a></li>
+	            <li><a href="#delete-example">Example</a></li>
 	        </ul>
 	    </li>
 	</ul>
