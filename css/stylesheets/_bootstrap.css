@@ -5091,6 +5091,37 @@ a.thumbnail.active {
   .alert-danger .alert-link {
     color: #ba0c35; }
 
+.dr-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #e6e6e6;
+  border-left-width: 5px;
+  border-radius: 3px; }
+  .dr-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px; }
+  .dr-callout p:last-child {
+    margin-bottom: 0; }
+  .dr-callout code {
+    border-radius: 3px; }
+  .dr-callout + .dr-callout {
+    margin-top: -5px; }
+
+.dr-callout-danger {
+  border-left-color: #ea0f43; }
+  .dr-callout-danger h4 {
+    color: #bd0a33; }
+
+.dr-callout-warning {
+  border-left-color: #be9500; }
+  .dr-callout-warning h4 {
+    color: #be9500; }
+
+.dr-callout-info {
+  border-left-color: #00a7e1; }
+  .dr-callout-info h4 {
+    color: #007eb5; }
+
 @-webkit-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
@@ -5764,6 +5795,9 @@ button.close {
     left: 10px;
     z-index: 1;
     font-family: "DIN Next W01 Medium", sans-serif; }
+
+.tab-content .top {
+  border-top: 0; }
 
 .modal-open {
   overflow: hidden; }

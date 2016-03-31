@@ -32,7 +32,6 @@ $medMedGray: #CCC;
 $nineGray: #999999;
 $medGray: #646464;
 $darkGray: #343434;
-$red: #ea0f43;
 
 
 $neon-blue: #25d4ff;
@@ -73,10 +72,20 @@ $darkPurple: #6810ba;
 $purple-light: lighten($purple, 20%) !default;
 
 
+$orange:#ff5b00;
 $lightOrange: #f07822;
+$darkOrange:#e24024;
 
+
+$yellow: #f9d316;
 $lightYellow: #fff021;
+$darkYellow: #f1bd00;
+$webYellow: darken($darkYellow, 10%);
 
+
+$red: #ea0f43;
+$lightRed:#ff245e;
+$darkRed:#bd0a33;
 
 $brand-primary:         $blue !default;
 $brand-success:         #5cb85c !default;

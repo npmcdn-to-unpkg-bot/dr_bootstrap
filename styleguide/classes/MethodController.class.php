@@ -74,6 +74,17 @@ class MethodController{
 		<h1 id="delete">DELETE shoppers/me/addresses/{id}</h1>
 		<p>Deletes the shopper address associated with the specified id. Specify the id of the address in the {id} uri path parameter. If the last address linked to the shopper is deleted, there is no warning message.</p>
 
+		<div class="dr-callout dr-callout-warning">
+    		<h4>This headline should be a warning</h4>
+    		<p>This is an example warning. Users should feel warned after reading this alert.</p>
+		</div>
+
+		<div class="dr-callout dr-callout-danger">
+    		<h4>This headline should be a alert</h4>
+    		<p>This is an example alert. Users should feel alerted after reading this alert.</p>
+		</div>
+		
+
 		<?php
 	}
 
@@ -109,62 +120,43 @@ class MethodController{
 		</ul>
 		<div class="tab-content">
 			<div id="json" class="tab-pane active">
-
-				<div class="dr-example dr-example-type" data-example-id="simple-headings">
-					<p><code>POST</code> <code>api.digitalriver.com/shoppers/me/addresses/delete/{id}.json</code></p>
+				<div class="example">
+					<div class="top">
+						<label>Request</label>
+						<p><code>POST</code> <code>api.digitalriver.com/shoppers/me/addresses/delete/{id}.json</code></p>
+					</div>
+					<figure class="highlight"><label>Response</label><pre><code class="language-json" data-lang="json">{
+		   "glossary": {
+		       "title": "example glossary",
+		       "GlossDiv": {
+		          "title": "S",
+		          "GlossList": {
+		             "GlossEntry": {              
+		                "ID": "SGML",
+		                "SortAs": "SGML",
+		                "GlossTerm": "Standard Generalized Markup Language",
+		                "Acronym": "SGML",
+		                "Abbrev": "ISO 8879:1986",
+		                "GlossDef": {
+		                   "para": "A meta-markup language",
+		                   "GlossSeeAlso": ["GML", "XML"]
+		                },
+		                "GlossSee": "markup"
+		            }
+		         }
+		      }
+		   }
+		}
+		</code></pre></figure>
 				</div>
-				<figure class="highlight"><pre><code class="language-json" data-lang="json">{
-   "glossary": {
-       "title": "example glossary",
-       "GlossDiv": {
-          "title": "S",
-          "GlossList": {
-             "GlossEntry": {              
-                "ID": "SGML",
-                "SortAs": "SGML",
-                "GlossTerm": "Standard Generalized Markup Language",
-                "Acronym": "SGML",
-                "Abbrev": "ISO 8879:1986",
-                "GlossDef": {
-                   "para": "A meta-markup language",
-                   "GlossSeeAlso": ["GML", "XML"]
-                },
-                "GlossSee": "markup"
-            }
-         }
-      }
-   }
-}
-</code></pre></figure>
-</div>
-<div id="xml" class="tab-pane">
-				<div class="dr-example dr-example-type" data-example-id="simple-headings">
-					<p><code>POST</code> <code>api.digitalriver.com/shoppers/me/addresses/delete/{id}.xml</code></p>
-				</div>
-
-				<figure class="highlight"><pre><code class="language-xml" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
-
-	&lt;glossary&gt;
-		&lt;title&gt;example glossary&lt;/title&gt;
-		&lt;GlossDiv&gt;
-			&lt;title&gt;S&lt;/title&gt;
-			&lt;GlossList>
-				&lt;GlossEntry&gt;
-					&lt;ID&gt;SGML&lt;/ID&gt;
-					&lt;SortAs&gt;SGML&lt;/SortAs&gt;
-					&lt;GlossTerm&gt;Standard Generalized Markup Language&lt;/GlossTerm&gt;
-					&lt;Acronym&gt;SGML&lt;/Acronym&gt;
-					&lt;Abbrev&gt;ISO 8879:1986&lt;/Abbrev&gt;
-					&lt;GlossDef&gt;
-						&lt;para>A meta-markup language&lt;/para&gt;
-						&lt;GlossSeeAlso>GML&lt;/GlossSeeAlso&gt;
-						&lt;GlossSeeAlso>XML&lt;/GlossSeeAlso&gt;
-					&lt;/GlossDef&gt;
-					&lt;GlossSee>markup&lt;/GlossSee&gt;
-				&lt;/GlossEntry&gt;
-			&lt;/GlossList&gt;
-		&lt;/GlossDiv&gt;
-	&lt;/glossary&gt;
+			</div>
+		<div id="xml" class="tab-pane">
+				<div class="example">
+					<div class="top">
+						<label>Request</label>
+						<p><code>POST</code> <code>api.digitalriver.com/shoppers/me/addresses/delete/{id}.xml</code></p>
+					</div>
+				<figure class="highlight"><label>Response</label><pre><code class="language-xml" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 &lt;glossary&gt;
 	&lt;title&gt;example glossary&lt;/title&gt;
 	&lt;GlossDiv&gt;
@@ -189,7 +181,7 @@ class MethodController{
 </code></pre></figure>
 </div>
 </div>
-		
+</div>
 
 		<?php
 	}
