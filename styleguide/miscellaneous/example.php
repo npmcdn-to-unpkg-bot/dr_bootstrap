@@ -35,25 +35,27 @@
 		</div>
 	</div>
 </div>
-<div class="lgray-bg" style="position: relative; z-index: -2; overflow: hidden;">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<?php
-					$exampleController->displaySidebarNav();
-				?>
-			</div>
-			<div class="col-md-9">
-				<div class="white-bg" style="z-index:-1; position: absolute; left: 0px; width: 125%; height: 100%; top: 0px;"></div>
 
-				<?php
-					$exampleController->displayOverview();
-					$exampleController->displayMethods();
-					$exampleController->displayFields();
-				?>
-			</div>
-
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2 hidden-sm hidden-xs"></div>
+		<div class="col-md-2">
+			<?php
+				$exampleController->displaySidebarNav();
+			?>
 		</div>
+		<div class="col-md-8 white-bg">
+			<div class="row">
+				<div class="col-md-9">
+					<?php
+						$exampleController->displayOverview();
+						$exampleController->displayMethods();
+						$exampleController->displayFields();
+					?>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </div>
 

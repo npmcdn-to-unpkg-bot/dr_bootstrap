@@ -4,14 +4,10 @@
 ********/
 body {
   position: relative;
-<<<<<<< HEAD
   background: #EDEEF2 !important;
   /*light gray will a hint of blue*/ }
-=======
-  background: #f0f0f0 !important; }
   body.white-bg {
     background: #fff !important; }
->>>>>>> 3ca1d72e0635285bf4b344cf86e2c97521ba42f5
 
 .dr-docs-container {
   margin-top: 20px;
@@ -233,10 +229,14 @@ footer {
 #dr-docs-colors [class^="bg-"] {
   height: 50px;
   margin: 5px 0 20px 0;
-  text-align: center; }
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
   #dr-docs-colors [class^="bg-"] .color {
     line-height: 50px;
     font-size: 21px;
-    opacity: 0.3; }
+    opacity: 0.3;
+    color: #fff;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 2px #000; }
 
 /*# sourceMappingURL=docs.css.map */

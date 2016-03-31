@@ -54,23 +54,21 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
 <script src="../docs.js"></script>
 <script>
-$.each($('#dr-docs-colors .color'), function(){
-	var color = $(this).parent().css('background-color');
-	$(this).text(rgb2hex(color));
-});
-
 var hexDigits = new Array
         ("0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"); 
-
 //Function to convert hex format to a rgb color
 function rgb2hex(rgb) {
  rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
  return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
 }
-
 function hex(x) {
   return isNaN(x) ? "00" : hexDigits[(x - x % 16) / 16] + hexDigits[x % 16];
  }
+
+ $.each($('#dr-docs-colors .color'), function(){
+	var color = $(this).parent().css('background-color');
+	$(this).text(rgb2hex(color));
+});
 </script>
 </body>
 </html>

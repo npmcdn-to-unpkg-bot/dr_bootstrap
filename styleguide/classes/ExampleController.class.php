@@ -69,7 +69,11 @@ class ExampleController{
 
 		<h1>Addresses Resource</h1>
 		<p>The Addresses resource provides access to addresses configured for a shopper.</p>
-		<p>Note:  All methods in this resource require a full access token. For more information, see initiating an authenticated session in the Authenticated Shopper Workflows.</p>
+		<div class="dr-callout dr-callout-info">
+    		<h4>Note:</h4>
+    		<p>All methods in this resource require a full access token. For more information, see initiating an authenticated session in the Authenticated Shopper Workflows.</p>
+		</div>
+		
 		<p>An address in the context of a shopper has a default and nickname; for example, "Home" and "Work" nicknames for addresses, with the "Home" address set as the default address.</p>
 		<p>Use the Address resource to:</p>
 		<ul class="bullet-list">
@@ -78,7 +82,10 @@ class ExampleController{
     		<li>Create or update an address for a shopper</li>
     		<li>Delete an address for a shopper</li>
     	</ul>
-		<p>Note: If you need to access or update a billing or shipping address, use the appropriate methods available in the Carts resource.</p>
+    	<div class="dr-callout dr-callout-info">
+    		<h4>Note:</h4>
+    		<p>If you need to access or update a billing or shipping address, use the appropriate methods available in the Carts resource.</p>
+		</div>
 
 		<?php
 	}
