@@ -13,7 +13,6 @@
   @include clearfix;
   font-family:$med;
 
-
   > li {
     position: relative;
     display: block;
@@ -69,6 +68,7 @@
     max-width: none;
   }
 }
+
 
 
 // Tabs
@@ -139,6 +139,45 @@
     }
   }
 }
+
+
+.blue-bg{
+  .nav {
+
+    > li {
+
+      span{
+        padding:2px;
+      }
+
+      &:hover,
+      &:focus {
+        
+        > a {
+          background-color: transparent;
+
+          span{
+            border-bottom:solid 2px $darkBlue;
+          }
+        }
+      }
+
+      &.active > a{
+        font-weight: bold;
+        padding: 10px 15px;
+
+        span{
+          border-bottom:solid 2px $darkBlue;
+        }
+      }
+
+      > a {
+        color:$white;
+      }
+    }
+  }
+}
+
 
 
 // Stacked pills

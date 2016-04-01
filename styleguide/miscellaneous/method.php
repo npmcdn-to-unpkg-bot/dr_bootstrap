@@ -33,8 +33,8 @@ include("../classes/MethodController.class.php");
 				 * @todo Colors, Fonts, Icons
 				 *
 				 */
-				$methodController = new methodController();
-				$methodController->displayMenu();
+				$exampleController = new ExampleController();
+				$exampleController->displayMenu();
 			?>
 		</div>
 	</div>
@@ -42,9 +42,10 @@ include("../classes/MethodController.class.php");
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-2 col-md-offset-2">
+		<div class="col-md-3 col-md-offset-1">
 			<?php
-				$methodController->displaySidebarNav();
+
+				$exampleController->displaySidebarMenu(true);
 			?>
 		</div>
 		<div class="col-md-8 white-bg">

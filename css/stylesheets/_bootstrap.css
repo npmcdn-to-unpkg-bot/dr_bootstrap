@@ -1164,7 +1164,7 @@ hr {
   font-family: "DIN 1451 W01 Engschrift", sans-serif !important; }
 
 .light {
-  font-family: "DIN Next W01 Light", sans-serif; }
+  font-family: "DIN Next W01 Light", sans-serif !important; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -4165,6 +4165,20 @@ tbody.collapse.in {
   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
     background-color: #00a7e1; }
+
+.blue-bg .nav > li span {
+  padding: 2px; }
+.blue-bg .nav > li:hover > a, .blue-bg .nav > li:focus > a {
+  background-color: transparent; }
+  .blue-bg .nav > li:hover > a span, .blue-bg .nav > li:focus > a span {
+    border-bottom: solid 2px #007eb5; }
+.blue-bg .nav > li.active > a {
+  font-weight: bold;
+  padding: 10px 15px; }
+  .blue-bg .nav > li.active > a span {
+    border-bottom: solid 2px #007eb5; }
+.blue-bg .nav > li > a {
+  color: #FFF; }
 
 .nav-stacked > li {
   float: none; }

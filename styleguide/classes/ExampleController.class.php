@@ -26,6 +26,43 @@ class ExampleController{
    <?php
 	}
 
+	function displaySidebarMenu($method = false){
+		?>
+		<nav id="dr-docs-sidebar" class="">
+			<ul class="nav dr-docs-sidenav">
+			    <li><a href="#">Account Resource</a>
+			        <ul class="nav">
+			            <li><a href="#">GET shoppers/me/account</a></li>
+			        </ul>
+			    </li>
+			    <li class="active"><a href="#">Addresses Resource</a>
+			        <ul class="nav">
+			            <li class="<?php echo ($method == true)?" active ":false; ?>"><a href="#">DELETE shoppers/me/addresses/{id}</a></li>
+			            <li><a href="#">GET shoppers/me/addresses</a></li>
+			            <li><a href="#">GET shoppers/me/addresses/{id}</a></li>
+			            <li><a href="#">POST shoppers/me/addresses</a></li>
+			        </ul>
+			    </li>
+			    <li><a href="#">Apply Shipping Option Resource</a>
+			        <ul class="nav">
+			            <li><a href="#">POST shoppers/me/carts/active/apply-shipping-option</a></li>
+			        </ul>
+			    </li>
+			    <li><a href="#">Carts Resource</a>
+			        <ul class="nav">
+			            <li><a href="#">GET shoppers/me/carts/active</a></li>
+			            <li><a href="#">GET shoppers/me/carts/active/billing-address</a></li>
+			            <li><a href="#">GET shoppers/me/carts/active/shipping-address</a></li>
+			            <li><a href="#">POST shoppers/me/carts/active</a></li>
+			            <li><a href="#">PUT shoppers/me/carts/active/billing-address</a></li>
+			            <li><a href="#">PUT shoppers/me/carts/active/shipping-address</a></li>
+			        </ul>
+			    </li>
+			</ul>
+		</nav>
+		<?php
+	}
+
 	function displayMenu(){
 		?>
 
@@ -38,10 +75,10 @@ class ExampleController{
 			</div>
 			<div class="col-md-9">
 				<ul class="nav nav-pills pull-right">
-					<li role="presentation" class="active"><a href="#">REST APIs</a></li>
-					<li role="presentation"><a href="#">Sample Apps</a></li>
-					<li role="presentation"><a href="#">Classic APIs</a></li>
-					<li role="presentation"><a href="#">Support</a></li>
+					<li role="presentation" class="active"><a href="#"><span>REST APIs</span></a></li>
+					<li role="presentation"><a href="#"><span>Sample Apps</span></a></li>
+					<li role="presentation"><a href="#"><span>Classic APIs</span></a></li>
+					<li role="presentation"><a href="#"><span>Support</span></a></li>
 				</ul>
 			</div>
 

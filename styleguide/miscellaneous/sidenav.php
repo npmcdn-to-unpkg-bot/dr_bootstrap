@@ -91,6 +91,11 @@
 	            <li><a href="#colors-social">Social Media</a></li>
 	        </ul>
 	    </li>
+	    <li><a href="#code-examples">Code Examples</a>
+	    	<ul class="nav">
+	            <li><a href="#code-examples-simple">Simple</a></li>
+	            <li><a href="#code-examples-tabbed">Tabbed</a></li>
+	        </ul>
+	    </li>
 	</ul>
-	<a class="back-to-top" href="#global_header"> Back to top </a>
 </nav>

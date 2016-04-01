@@ -31,7 +31,6 @@
 			<div class="dr-docs-section"><?php $cssController->displayTypography(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayCode(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayTables(); ?></div>
-			<!-- <div class="dr-docs-section"><?php $cssController->displayForms(); ?></div> -->
 			<div class="dr-docs-section"><?php $cssController->displayButtons(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayBreadcrumbs(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayPagination(); ?></div>

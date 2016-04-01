@@ -71,7 +71,7 @@ class MethodController{
 		  <li class="active">Addresses Resource</li>
 		</ol> -->
 
-		<h1 id="delete">DELETE shoppers/me/addresses/{id}</h1>
+		<h1 class="h2" id="delete">DELETE shoppers/me/addresses/{id}</h1>
 		<p>Deletes the shopper address associated with the specified id. Specify the id of the address in the {id} uri path parameter. If the last address linked to the shopper is deleted, there is no warning message.</p>
 
 		<div class="dr-callout dr-callout-warning">
@@ -96,7 +96,7 @@ class MethodController{
 	?>
 	  	<table class="table">
 			<td class="col-md-3">
-				<h3 class="option no-margin">id<br><small>required</small></h3>
+				<h3 class="h4 option no-margin">id<br><small>required</small></h3>
 			</td>
 			<td>
 				<p>The numerical ID of the desired address.</p>
@@ -126,27 +126,27 @@ class MethodController{
 						<p><code>POST</code> <code>api.digitalriver.com/shoppers/me/addresses/delete/{id}.json</code></p>
 					</div>
 					<figure class="highlight"><label>Response</label><pre><code class="language-json" data-lang="json">{
-		   "glossary": {
-		       "title": "example glossary",
-		       "GlossDiv": {
-		          "title": "S",
-		          "GlossList": {
-		             "GlossEntry": {              
-		                "ID": "SGML",
-		                "SortAs": "SGML",
-		                "GlossTerm": "Standard Generalized Markup Language",
-		                "Acronym": "SGML",
-		                "Abbrev": "ISO 8879:1986",
-		                "GlossDef": {
-		                   "para": "A meta-markup language",
-		                   "GlossSeeAlso": ["GML", "XML"]
-		                },
-		                "GlossSee": "markup"
-		            }
-		         }
-		      }
-		   }
-		}
+  "glossary": {
+     "title": "example glossary",
+     "GlossDiv": {
+        "title": "S",
+        "GlossList": {
+           "GlossEntry": {              
+              "ID": "SGML",
+              "SortAs": "SGML",
+              "GlossTerm": "Standard Generalized Markup Language",
+              "Acronym": "SGML",
+              "Abbrev": "ISO 8879:1986",
+              "GlossDef": {
+                 "para": "A meta-markup language",
+                 "GlossSeeAlso": ["GML", "XML"]
+              },
+              "GlossSee": "markup"
+          }
+       }
+    }
+  }
+}
 		</code></pre></figure>
 				</div>
 			</div>
