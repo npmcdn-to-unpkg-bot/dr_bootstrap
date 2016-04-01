@@ -95,12 +95,22 @@ class MethodController{
 
 	?>
 	  	<table class="table">
-			<td class="col-md-3">
-				<h3 class="h4 option no-margin">id<br><small>required</small></h3>
-			</td>
-			<td>
-				<p>The numerical ID of the desired address.</p>
-			</td>
+	  		<tr>
+				<td class="col-md-3">
+					<h3 class="h4 option no-margin">id<br><small>required</small></h3>
+				</td>
+				<td>
+					<p>The numerical ID of the desired address.</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="col-md-3">
+					<h3 class="h4 option no-margin">Param 2<br><small>optional</small></h3>
+				</td>
+				<td>
+					<p>This is an example of another parameter. This parameter does nothing.</p>
+				</td>
+			</tr>
 		</table>
 		<?php
 	}

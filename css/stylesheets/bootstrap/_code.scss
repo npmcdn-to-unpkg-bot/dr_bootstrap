@@ -69,6 +69,9 @@ pre {
   pre{
     code{
       color:$white;
+      overflow: auto;
+      word-wrap: normal;
+      white-space: pre;
     
       &.language-html{
 

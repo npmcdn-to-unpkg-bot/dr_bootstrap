@@ -1627,7 +1627,10 @@ pre {
 .highlight {
   background: #343438; }
   .highlight pre code {
-    color: #FFF; }
+    color: #FFF;
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre; }
     .highlight pre code.language-html .nt {
       color: #25d4ff; }
     .highlight pre code.language-html .na {
