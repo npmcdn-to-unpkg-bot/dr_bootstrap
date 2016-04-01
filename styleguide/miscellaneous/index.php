@@ -29,16 +29,16 @@
 		?>
 			<?php $cssController = new CssController(); ?>
 			<div class="dr-docs-section"><?php $cssController->displayTypography(); ?></div>
+			<div class="dr-docs-section"><?php $cssController->displayColors(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayCode(); ?></div>
+			<div class="dr-docs-section"><?php $cssController->displayExample(); ?></div>
+			<div class="dr-docs-section"><?php $cssController->displayAlerts(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayTables(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayButtons(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayBreadcrumbs(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayPagination(); ?></div>
-			<div class="dr-docs-section"><?php $cssController->displayAlerts(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayPanels(); ?></div>
 			<div class="dr-docs-section"><?php $cssController->displayTabs(); ?></div>
-			<div class="dr-docs-section"><?php $cssController->displayColors(); ?></div>
-			<div class="dr-docs-section"><?php $cssController->displayExample(); ?></div>
 
 			
 			

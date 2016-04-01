@@ -8,6 +8,12 @@ p{
 ul, li {
     list-style: none;
 }
+ol li{
+  list-style:num;
+}
+ol{
+  padding-left: 1.2em;    
+}
 ul.bullet-list {
     padding-left: 1.2em;    
     

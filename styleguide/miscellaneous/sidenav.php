@@ -2,6 +2,7 @@
 	<ul class="nav dr-docs-sidenav">
 	    <li><a href="#type">Typography</a>
 	        <ul class="nav">
+	            <li><a href="#type-font-family">Font Family</a></li>
 	            <li><a href="#type-headings">Headings</a></li>
 	            <li><a href="#type-body-copy">Body copy</a></li>
 	            <li><a href="#type-inline-text">Inline text elements</a></li>
@@ -13,6 +14,14 @@
 	            <li><a href="#type-lists">Lists</a></li>
 	        </ul>
 	    </li>
+	    <li><a href="#colors">Colors</a>
+	    	<ul class="nav">
+	            <li><a href="#colors-brand">Brand</a></li>
+	            <li><a href="#colors-text">Text</a></li>
+	            <li><a href="#colors-links">Links</a></li>
+	            <li><a href="#colors-social">Social Media</a></li>
+	        </ul>
+	    </li>
 	    <li><a href="#code">Code</a>
 	        <ul class="nav">
 	            <li><a href="#code-inline">Inline</a></li>
@@ -20,6 +29,20 @@
 	            <li><a href="#code-block">Basic block</a></li>
 	            <li><a href="#code-variables">Variables</a></li>
 	            <li><a href="#code-sample-output">Sample output</a></li>
+	        </ul>
+	    </li>
+	    <li><a href="#code-examples">Code Examples</a>
+	    	<ul class="nav">
+	            <li><a href="#code-examples-simple">Simple</a></li>
+	            <li><a href="#code-examples-tabbed">Tabbed</a></li>
+	        </ul>
+	    </li>
+	    <li><a href="#alerts">Alerts</a>
+	        <ul class="nav">
+<!-- 	            <li><a href="#alerts-examples">Examples</a></li>
+	            <li><a href="#alerts-dismissible">Dismissible alerts</a></li>
+	            <li><a href="#alerts-links">Links in alerts</a></li> -->
+	            <li><a href="#alerts-callout">Callout alerts</a></li>
 	        </ul>
 	    </li>
 	    <li><a href="#tables">Tables</a>
@@ -64,14 +87,6 @@
 	            <li><a href="#pagination-pager">Pager</a></li>
 	        </ul>
 	    </li>
-	    <li><a href="#alerts">Alerts</a>
-	        <ul class="nav">
-	            <li><a href="#alerts-examples">Examples</a></li>
-	            <li><a href="#alerts-dismissible">Dismissible alerts</a></li>
-	            <li><a href="#alerts-links">Links in alerts</a></li>
-	            <li><a href="#alerts-callout">Callout alerts</a></li>
-	        </ul>
-	    </li>
 	    <li><a href="#panels">Panels</a>
 	        <ul class="nav">
 	            <li><a href="#panels-basic">Basic example</a></li>
@@ -83,19 +98,5 @@
 	        </ul>
 	    </li>
 	    <li><a href="#tabs">Tabs</a></li>
-	    <li><a href="#colors">Colors</a>
-	    	<ul class="nav">
-	            <li><a href="#colors-brand">Brand</a></li>
-	            <li><a href="#colors-text">Text</a></li>
-	            <li><a href="#colors-links">Links</a></li>
-	            <li><a href="#colors-social">Social Media</a></li>
-	        </ul>
-	    </li>
-	    <li><a href="#code-examples">Code Examples</a>
-	    	<ul class="nav">
-	            <li><a href="#code-examples-simple">Simple</a></li>
-	            <li><a href="#code-examples-tabbed">Tabbed</a></li>
-	        </ul>
-	    </li>
 	</ul>
 </nav>

@@ -2,6 +2,11 @@
 *********/
 /* Fonts
 ********/
+.style-logo {
+  width: 275px;
+  margin-right: 15px;
+  float: left; }
+
 body {
   position: relative;
   background: #EDEEF2 !important;
@@ -10,7 +15,6 @@ body {
     background: #fff !important; }
 
 .dr-docs-container {
-  margin-top: 20px;
   margin-bottom: 80px; }
   .dr-docs-container .dr-docs-section {
     border: solid 1px #cccccc;

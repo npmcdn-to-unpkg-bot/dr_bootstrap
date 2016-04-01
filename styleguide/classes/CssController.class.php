@@ -759,12 +759,65 @@ function displayTypography(){
 
 <?php
 			$this->displaySubHeader(
+				'type-font-family',
+				'Font Family',
+				array('Digital River\'s offical web fonts are DIN Engschrift, DIN Medium, DIN Light, Arial.')
+				);
+        ?>
+
+		<div class="dr-callout dr-callout-warning">
+		    <h4> Heading Font Family </h4>
+		    <p>DIN Engschrift, DIN Medium, DIN Light should only be used in headings.</p>
+		</div>
+
+		<div class="dr-callout dr-callout-warning">
+		    <h4> Paragraph Font Family </h4>
+		    <p>Arial should only be used in paragraphs. </p>
+		</div>
+
+<div class="example">
+	<div class="top">
+		<label>Example</label>
+		<table class="table">
+            <tbody>
+                <tr>
+					<td><h1 class="eng">DIN Engschrift Heading</h1></td>
+				</tr>
+                <tr>
+					<td><h1 class="med">DIN Medium Heading</h1></td>
+				</tr>
+                <tr>	
+					<td><h1 class="light">DIN Light Heading</h1></td>
+				</tr>
+                <tr>
+					<td><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac nunc nec turpis suscipit cursus eget quis nibh. Aenean id nibh odio. Aliquam erat volutpat. In maximus tincidunt urna sit amet tincidunt. Aliquam nec mauris rhoncus, iaculis erat sed, blandit turpis. Sed sed diam accumsan, bibendum ex in, mattis nulla. Sed blandit pharetra dolor, a tempor felis suscipit aliquam. Praesent placerat efficitur dolor, ornare mattis tortor pellentesque non.</p></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"eng"</span><span class="nt">&gt;</span></span>DIN Engschrift Heading<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"med"</span><span class="nt">&gt;</span></span>DIN Medium Heading<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span></span>DIN Light Heading<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
+	</code></pre></figure>
+
+</div>
+		
+
+<?php
+			$this->displaySubHeader(
 				'type-headings',
 				'Headings',
 				array('All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.')
 				);
         ?>
-		
+
+		<div class="dr-callout dr-callout-info">
+		    <h4>Visual Hierarchy</h4>
+		    <p>To ensure visual hierarchy, use <code>.h1</code> through <code>.h6</code> classes to adjust the size of headings when needed.</p>
+		</div>
+
+
 <div class="example">
 			<div class="top">
 				<label>Example</label>
@@ -1140,26 +1193,16 @@ function displayTypography(){
 		        <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <ul>
-		                <li>Lorem ipsum dolor sit amet</li>
-		                <li>Consectetur adipiscing elit</li>
-		                <li>Integer molestie lorem at massa</li>
-		                <li>Facilisis in pretium nisl aliquet</li>
-		                <li>Nulla volutpat aliquam velit
-		                    <ul>
+						<label>Example</label>
+		                    <ul class="bullet-list">
 		                        <li>Phasellus iaculis neque</li>
 		                        <li>Purus sodales ultricies</li>
 		                        <li>Vestibulum laoreet porttitor sem</li>
 		                        <li>Ac tristique libero volutpat at</li>
 		                    </ul>
-		                </li>
-		                <li>Faucibus porta lacus fringilla vel</li>
-		                <li>Aenean sit amet erat nunc</li>
-		                <li>Eget porttitor lorem</li>
-		            </ul>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul <span class="na">class=</span><span class="s">"bullet-list"</span><span class="nt">&gt;</span></span>
   <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 </div>
@@ -1169,7 +1212,8 @@ function displayTypography(){
 		        <p>A list of items in which the order <em>does</em> explicitly matter.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <ol>
+						<label>Example</label>
+					<ol>
 		                <li>Lorem ipsum dolor sit amet</li>
 		                <li>Consectetur adipiscing elit</li>
 		                <li>Integer molestie lorem at massa</li>
@@ -3752,7 +3796,7 @@ $this->displayHeader(
    <div class="section-body">
 
 
-		        <h2 id="alerts-examples"><a class="anchorjs-link " href="#alerts-examples" aria-label="Anchor link for: alerts examples" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Examples</h2>
+		    <!--     <h2 id="alerts-examples"><a class="anchorjs-link " href="#alerts-examples" aria-label="Anchor link for: alerts examples" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Examples</h2>
 		        <p>Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual classes (e.g., <code>.alert-success</code>) for basic alert messages.</p>
 		        <div class="dr-callout dr-callout-info" id="callout-alerts-no-default">
 		            <h4>No default class</h4>
@@ -3816,7 +3860,7 @@ $this->displayHeader(
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 </div>
-
+ -->
 
 
 	        <h2 id="alerts-callout"><a class="anchorjs-link " href="#alerts-callout" aria-label="Anchor link for: alerts callout" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Callout Alerts</h2>
