@@ -24,6 +24,13 @@ $med: 'DIN Next W01 Medium', sans-serif;
 $light: 'DIN Next W01 Light', sans-serif;
 $arial: 'Arial', sans-serif;
 
+
+.style-logo{
+    width:275px;
+    margin-right: 15px;
+    float:left;
+}
+
 body {
   position:relative;
   background:#EDEEF2 !important; /*light gray will a hint of blue*/
@@ -33,7 +40,6 @@ body {
   }
 }
 .dr-docs-container {
-    margin-top:20px;
     margin-bottom:80px;
     .dr-docs-section{
         border:solid 1px $gray20;

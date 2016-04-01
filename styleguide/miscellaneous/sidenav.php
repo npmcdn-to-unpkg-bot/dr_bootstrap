@@ -2,6 +2,7 @@
 	<ul class="nav dr-docs-sidenav">
 	    <li><a href="#type">Typography</a>
 	        <ul class="nav">
+	            <li><a href="#type-font-family">Font Family</a></li>
 	            <li><a href="#type-headings">Headings</a></li>
 	            <li><a href="#type-body-copy">Body copy</a></li>
 	            <li><a href="#type-inline-text">Inline text elements</a></li>
@@ -66,9 +67,9 @@
 	    </li>
 	    <li><a href="#alerts">Alerts</a>
 	        <ul class="nav">
-	            <li><a href="#alerts-examples">Examples</a></li>
+<!-- 	            <li><a href="#alerts-examples">Examples</a></li>
 	            <li><a href="#alerts-dismissible">Dismissible alerts</a></li>
-	            <li><a href="#alerts-links">Links in alerts</a></li>
+	            <li><a href="#alerts-links">Links in alerts</a></li> -->
 	            <li><a href="#alerts-callout">Callout alerts</a></li>
 	        </ul>
 	    </li>
