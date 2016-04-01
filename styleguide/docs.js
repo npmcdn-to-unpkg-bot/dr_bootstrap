@@ -40,3 +40,11 @@ $(window).scroll(function() {
     }  
   }, 0); // Timeout 0 assures scroll has stopped
 });
+$(function() {
+    var $activeParent = $('#dr-docs-sidebar .dr-docs-sidenav .active');
+    if ($activeParent.find('.nav li.active').length > 0) {
+      $activeParent.removeClass('border-fix');
+    } else {
+      $activeParent.addClass('border-fix');
+    }
+});

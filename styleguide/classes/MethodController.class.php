@@ -105,7 +105,7 @@ class MethodController{
 			</tr>
 			<tr>
 				<td class="col-md-3">
-					<h3 class="h4 option no-margin">Param 2<br><small>optional</small></h3>
+					<h3 class="h4 option no-margin">param 2<br><small>optional</small></h3>
 				</td>
 				<td>
 					<p>This is an example of another parameter. This parameter does nothing.</p>

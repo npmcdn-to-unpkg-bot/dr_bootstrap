@@ -25,7 +25,7 @@ body {
         margin: 50px 0 10px; }
 
 #dr-docs-sidebar {
-  max-width: 250px; }
+  max-width: 420px; }
   #dr-docs-sidebar.affix {
     position: fixed;
     top: 20px; }

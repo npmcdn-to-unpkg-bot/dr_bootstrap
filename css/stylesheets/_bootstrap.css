@@ -1631,12 +1631,16 @@ pre {
     overflow: auto;
     word-wrap: normal;
     white-space: pre; }
-    .highlight pre code.language-html .nt {
+    .highlight pre code .nt {
       color: #25d4ff; }
-    .highlight pre code.language-html .na {
+    .highlight pre code .na {
       color: #b2d23c; }
-    .highlight pre code.language-html .s {
+    .highlight pre code .s {
       color: #f07822; }
+    .highlight pre code .k {
+      color: #FF2493; }
+    .highlight pre code .cp {
+      color: #e6e6e6; }
 
 .pre-scrollable {
   max-height: 340px;
@@ -7612,7 +7616,7 @@ a.button:hover {
   font-size: 4em; }
 
 .four-up-sliders .marketing-expanded .service {
-  border-top: solid 5px #FF245E; }
+  border-top: solid 5px #FF2493; }
 .four-up-sliders .marketing-expanded .service-content {
   width: 847px;
   float: right;
@@ -7647,7 +7651,7 @@ a.button:hover {
   z-index: 0; }
 
 .marketing-expanded {
-  border-top: solid 5px #FF245E; }
+  border-top: solid 5px #FF2493; }
 
 .experience-expanded {
   border-top: solid 5px #a8c628;
