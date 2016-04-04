@@ -2,19 +2,29 @@
 
 class SlidesPostType{
 
+	public static $slideTypes = array(
+		"masterheader" => "Masterheader"
+	);
+
+	public static $post_type_name = 'slides';
+
 	function __construct()
 	{
 
-	    if( ! post_type_exists( $this->post_type_name ) )
+	    if( ! post_type_exists( self::$post_type_name ) )
 	    {
-	        add_action( 'init', array( &$this, 'register_post_type' ) );
-	        add_action( 'admin_init', array( &$this, 'add_slide_type_metabox' ) );
+        	add_action( 'init', array( &$this, 'register_post_type' ) );
+	  		add_action( 'add_meta_boxes', array( &$this, 'add_slide_type_metabox' ) );
+			add_action( 'save_post', array( &$this, 'save_slide_type_value' ) );
+			add_filter('acf/location/rule_match/slide', array( &$this, 'acf_location_rules_match_slide') , 10, 3);
+			add_filter('acf/location/rule_types', array( &$this,'acf_location_rules_types') );
+			add_filter('acf/location/rule_values/slide', array( &$this, 'acf_location_rules_values_slide') );
 	    }
 
 	}
 
 
-	function register_post_type()
+	public function register_post_type()
     {
 
 		  $labels = array(
@@ -62,62 +72,42 @@ class SlidesPostType{
 		    'publicly_queryable'    => true,
 		    'capability_type'       => 'page',
 		  );
-		  register_post_type( 'slides', $args );
+		  register_post_type( self::$post_type_name, $args );
+
     }
 
 
     /**
 	 * Adds a box to the main column on the Post and Page edit screens.
 	 */
-	function add_slide_type_metabox() {
+	public function add_slide_type_metabox()
+	{
 
-			add_meta_box(
-				'slide_type',
-				'Slide Type',
-				'render_slide_type_metabox',
-				'slides',
-				'side'
-			);
-			
+		add_meta_box(
+			'slide_type',
+			'Slide Type',
+			array( __CLASS__, 'render_slide_type_metabox'),
+			self::$post_type_name,
+			'side'
+		);
+
 	}
-	add_action( 'add_meta_boxes', 'slide_type_add_meta_box' );
+
+
 
 	/**
 	 * Prints the box content.
 	 * 
 	 * @param WP_Post $post The object for the current post/page.
 	 */
-	function render_slide_type_metabox( $post ) {
+	public function render_slide_type_metabox( $post ) {
 
 		// Add a nonce field so we can check for it later.
 		wp_nonce_field( 'save_slide_type_value', 'save_slide_type_meta_box_nonce' );
 
-		/*
-		 * Use get_post_meta() to retrieve an existing value
-		 * from the database and use the value for the form.
-		 */
-		$value = get_post_meta( $post->ID, '_slide_type', true );
-
-		$slideTypes = array(
-			"header" => "Header",
-			"overview" => "Overview",
-			"why" => "Why Attend?",
-			"register" => "Register",
-			"schedule" => "Schedule",
-			"speakers" => "Speakers",
-			"networking" => "Networking",
-			"slider" => "Slider",
-			"sponsor" => "Sponsor",
-			"location" => "Location",
-			"map" => "Map",
-			"banner" => "Banner",
-			"footer" => "Footer"
-		);
-
-
 		$selectedPostMeta = get_post_meta( $post->ID, '_slide_type_value', true );
 
-		foreach ($slideTypes as $slideId => $slideType) :
+		foreach (self::$slideTypes as $slideId => $slideType) :
 			echo "<input ";
 			echo $slideId == $selectedPostMeta ? "checked" : "";
 			echo " type='radio' name='slide_type_value' value='".$slideId."' />";
@@ -128,6 +118,100 @@ class SlidesPostType{
 	}
 
 
+	public function save_slide_type_value( $post_id )
+	{
 
+		if ( ! isset( $_POST['save_slide_type_meta_box_nonce'] ) ) {
+			return;
+		}
+
+		if ( ! wp_verify_nonce( $_POST['save_slide_type_meta_box_nonce'], 'save_slide_type_value' ) ) {
+			return;
+		}
+
+		// If this is an autosave, our form has not been submitted, so we don't want to do anything.
+		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+			return;
+		}
+
+		// Check the user's permissions.
+		if ( isset( $_POST['post_type'] ) && 'page' == $_POST['post_type'] ) {
+
+			if ( ! current_user_can( 'edit_page', $post_id ) ) {
+				return;
+			}
+
+		} else {
+
+			if ( ! current_user_can( 'edit_post', $post_id ) ) {
+				return;
+			}
+		}
+
+		// Make sure that it is set.
+		if ( ! isset( $_POST['slide_type_value'] ) ) {
+			return;
+		}
+
+		// Sanitize user input.
+		$my_data = sanitize_text_field( $_POST['slide_type_value'] );
+
+		// Update the meta field in the database.
+		update_post_meta( $post_id, '_slide_type_value', $my_data );
+
+	}
+
+
+
+	/**
+	 *	Triggers correct ACF fields to show up when a slide type is chosen
+	 *
+	 */
+	public function acf_location_rules_match_slide( $match, $rule, $options )
+	{
+	    
+		global $post;
+
+	    $selected_slide_type = $rule['value'];
+		$slide_type = get_post_meta($post->ID, '_slide_type_value', true);
+
+	    if($rule['operator'] == "=="){
+	    
+	    	$match = ( $slide_type == $selected_slide_type );
+	    
+	    }elseif($rule['operator'] == "!="){
+	    
+	    	$match = ( $slide_type != $selected_slide_type );
+	    
+	    }
+
+	    return $match;
+
+	}
+
+
+	/**
+	 *	Adds Slides as an option in post types selector
+	 *
+	 */
+	public function acf_location_rules_types( $choices )
+	{
+
+	    $choices['Basic']['slide'] = 'Slide';
+	    return $choices;
+
+	}
+
+
+	/**
+	 *	Adds each slide type as an option for ACF functionality
+	 *
+	 */
+	public function acf_location_rules_values_slide( $choices )
+	{
+		    
+	    return self::$slideTypes;
+
+	}
 
 }

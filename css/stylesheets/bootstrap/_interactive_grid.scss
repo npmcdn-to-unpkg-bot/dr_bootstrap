@@ -24,8 +24,8 @@
     background-size: 140%;
 
 	@media (min-width:$screen-md){
-		background-size:100%;
-		background-position: left 0px bottom 0px;
+		background-size: 1650px;
+		background-position: center bottom;
 	}
 
 	.box{
@@ -123,6 +123,7 @@
 .interactive-grid-wrapper{
 	@include container-fixed($interactive-grid-gutter-width);
 	position: relative;
+	overflow: hidden;
 
 	&.container{
 

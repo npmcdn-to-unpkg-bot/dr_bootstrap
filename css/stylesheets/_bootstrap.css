@@ -4,6 +4,9 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+#global_footer {
+  overflow: hidden; }
+
 .clear {
   clear: both;
   display: none; }
@@ -2472,8 +2475,8 @@ pre {
   background-size: 140%; }
   @media (min-width: 992px) {
     .global {
-      background-size: 100%;
-      background-position: left 0px bottom 0px; } }
+      background-size: 1650px;
+      background-position: center bottom; } }
   .global .box {
     color: #FFF; }
     .global .box .inner-box {
@@ -2537,7 +2540,8 @@ pre {
   margin-left: auto;
   padding-left: 8px;
   padding-right: 8px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .interactive-grid-wrapper:before, .interactive-grid-wrapper:after {
     content: " ";
     display: table; }
