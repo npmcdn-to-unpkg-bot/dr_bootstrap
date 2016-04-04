@@ -108,12 +108,61 @@
 		</div>
 	</div>
 
-	<div class="gray-bg map-bg slide">
+
+	<?php
+		$logos = array(
+				array("src" => "Alipay_logo.png", "alt" => "Alipay Logo"),
+				array("src" => "AmericanExpress_logo.png", "alt" => "American Express Logo"),
+				array("src" => "Boleto_logo.png", "alt" => "Boleto Logo"),
+				array("src" => "Bpay_logo.png", "alt" => "BPay Logo"),
+				array("src" => "CCAvenue_logo.png", "alt" => "CC Avenue Logo"),
+				array("src" => "DinersClub_logo.png", "alt" => "Diners Club Logo"),
+				array("src" => "Discover_logo.png", "alt" => "Discover Logo"),
+				array("src" => "DK_logo.png", "alt" => "DK Logo"),
+				array("src" => "dotpay_logo.png", "alt" => "dotpay Logo"),
+				array("src" => "Elo_logo.png", "alt" => "Elo Logo"),
+				array("src" => "giropay_logo.png", "alt" => "giropay Logo"),
+				array("src" => "Hipercard_logo.png", "alt" => "Hipercard Logo"),
+				array("src" => "HyperPay_logo.png", "alt" => "HyperPay Logo"),
+				array("src" => "ideal_logo.png", "alt" => "ideal Logo"),
+				array("src" => "JCB_logo.png", "alt" => "JCB Logo"),
+				array("src" => "Klarna_logo.png", "alt" => "Klarna Logo"),
+				array("src" => "Mastercard_logo.png", "alt" => "Mastercard Logo"),
+				array("src" => "Nordea_logo.png", "alt" => "Nordea Logo"),
+				array("src" => "PayPal_logo.png", "alt" => "PayPal Logo"),
+				array("src" => "Sepa_logo.png", "alt" => "Sepa Logo"),
+				array("src" => "Sofort_logo.png", "alt" => "Sofort Logo"),
+				array("src" => "Swedbank_logo.png", "alt" => "Swedbank Logo"),
+				array("src" => "UnionPay_logo.png", "alt" => "UnionPay Logo"),
+				array("src" => "Visa_logo.png", "alt" => "Visa Logo")
+			);
+
+		
+	?>
+
+	<style>
+		.logo-section{
+			background-color: rgba(255,255,255,.5);
+			padding:15px 35px;
+		}
+		.logo-wrapper{margin:10px 0;}	
+	</style>
+
+	<div class=" blue-bg global slide">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1 text-center">
+				<div class="col-md-12 text-center">
 					<h2><?php _e( 'Global Payment Processing', 'digital-river' ); ?></h2>
 					<p class="white"><?php _e( 'Providing local payment options is necessary to enter in global markets—and to create the right local shopping experience to be successful. Digital River can provide more payment options in more countries than any other company. We support 175+ currencies, 200+ payment methods, and have relationships with 35+ global card acquiring banks.', 'digital-river' ); ?></p>
+					<p>
+						<div class="logo-section">
+							<div class="row">
+								<?php foreach($logos as $logo): ?>
+									<div class="logo-wrapper col-md-2 col-sm-3 col-xs-4 col-xxs-6"><img class="img-responsive" alt="<?php echo $logo['alt']; ?>" src="<?php echo get_template_directory_uri()."/img/payments/payment_logos/".$logo['src']; ?>" /></div>
+								<?php endforeach; ?>
+							</div>
+						</div>	
+					</p>
 					<p>
 					<a href="/solutions/payments/drwp-global-payment-processing/" class="btn btn-opposite text-center"><?php _e( 'View our global payment methods', 'digital-river' ); ?></a>
 					<p>

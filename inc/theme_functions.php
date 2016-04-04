@@ -1,55 +1,4 @@
 <?php
-function slides() {
-
-  $labels = array(
-    'name'                  => _x( 'Post Types', 'Post Type General Name', 'text_domain' ),
-    'singular_name'         => _x( 'Slide', 'Post Type Singular Name', 'text_domain' ),
-    'menu_name'             => __( 'Slides', 'text_domain' ),
-    'name_admin_bar'        => __( 'Slides', 'text_domain' ),
-    'archives'              => __( 'Slide Archives', 'text_domain' ),
-    'parent_item_colon'     => __( 'Parent Slide:', 'text_domain' ),
-    'all_items'             => __( 'All Slide', 'text_domain' ),
-    'add_new_item'          => __( 'Add New Slide', 'text_domain' ),
-    'add_new'               => __( 'Add New Slide', 'text_domain' ),
-    'new_item'              => __( 'New Slide', 'text_domain' ),
-    'edit_item'             => __( 'Edit Slide', 'text_domain' ),
-    'update_item'           => __( 'Update Slide', 'text_domain' ),
-    'view_item'             => __( 'View Slide', 'text_domain' ),
-    'search_items'          => __( 'Search Slide', 'text_domain' ),
-    'not_found'             => __( 'Not found', 'text_domain' ),
-    'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
-    'featured_image'        => __( 'Featured Image', 'text_domain' ),
-    'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
-    'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
-    'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
-    'insert_into_item'      => __( 'Insert into slide', 'text_domain' ),
-    'uploaded_to_this_item' => __( 'Uploaded to this slide', 'text_domain' ),
-    'items_list'            => __( 'Items slide', 'text_domain' ),
-    'items_list_navigation' => __( 'Items slide navigation', 'text_domain' ),
-    'filter_items_list'     => __( 'Filter slide list', 'text_domain' ),
-  );
-  $args = array(
-    'label'                 => __( 'Slide', 'text_domain' ),
-    'description'           => __( 'This post type is used to create slides for pages', 'text_domain' ),
-    'labels'                => $labels,
-    'supports'              => array( 'title', ),
-    'hierarchical'          => false,
-    'public'                => true,
-    'show_ui'               => true,
-    'show_in_menu'          => true,
-    'menu_position'         => 5,
-    'show_in_admin_bar'     => true,
-    'show_in_nav_menus'     => true,
-    'can_export'            => true,
-    'has_archive'           => true,    
-    'exclude_from_search'   => true,
-    'publicly_queryable'    => true,
-    'capability_type'       => 'page',
-  );
-  register_post_type( 'slides', $args );
-
-}
-add_action( 'init', 'slides', 0 );
 
 
 
@@ -546,10 +495,14 @@ function create_grid($headline, $grid){
       var $this = $(this);
 
       var $this_grid = $this.parents(".interactive-grid");
+
+
+      $this.parents(".interactive-grid-wrapper").addClass("active");
+
       if($this_grid.find(".grid-item-wrapper.active").length > 0){
           close_grid_item($this_grid.find(".grid-item-wrapper.active"));
+          $this.parents(".interactive-grid-wrapper").addClass("active");
       }
-
 
       $(".grid-item-wrapper").not(this).each(function(){
           if($(this).hasClass("active")){
@@ -565,6 +518,8 @@ function create_grid($headline, $grid){
   });
 
   var close_grid_item = function($this_grid_item){
+
+      $this_grid_item.parents(".interactive-grid-wrapper").removeClass("active");
 
       var left = $(".interactive-grid").find(".placeholder").css("left");
       var top = $(".interactive-grid").find(".placeholder").css("top");
@@ -601,36 +556,41 @@ function create_grid($headline, $grid){
 
     echo '<div class="slide">';
         slide_header('black', $headline);
-        echo '<div class="container interactive-grid">';
-            echo '<div class="row">';
-            foreach ($grid as $key => $grid_item):
-                echo '<div class=" active-md ' . $grid_item['width'] . ' interact grid-item-wrapper" >';
-                    echo '<div class="grid-item option ' . $grid_item['height'] . ' ">';
-                        if($grid_item['icon']):
-                            echo '<div class="expand hide-on-expand"><i class="'.$grid_item['icon'].'"></i></div>';
-                        endif;
+        echo '<div class="interactive-grid-wrapper container">';
+            echo '<div class=" interactive-grid">';
+                echo '<div class="row">';
+                foreach ($grid as $key => $grid_item):
+                    echo '<div class=" ';
+                    echo ($grid_item['video'])? ' active-video ':' active-md ';
+                    echo $grid_item['width'] . ' interact grid-item-wrapper" >';
+                        echo '<div class="grid-item option ' . $grid_item['height'];
+                        echo ($grid_item['video'])? ' embed-responsive embed-responsive-16by9 ':'';
+                        echo ' ">';
+                            if($grid_item['icon']):
+                                echo '<div class="expand hide-on-expand"><i class="'.$grid_item['icon'].'"></i></div>';
+                            endif;
 
-                        echo '<div class="background-image" style="background-image:url('.$grid_item['background_image'].');"></div>';
-                        echo '<div class="close"><i class="fa fa-times"></i></div>';
+                            echo '<div class="background-image" style="background-image:url('.$grid_item['background_image'].');"></div>';
+                            echo '<div class="close"><i class="fa fa-times"></i></div>';
 
 
-                        if($grid_item['video']){
-                              echo '<i class="video-play dr-player x15"></i>';
-
-                              echo '<iframe class="video" style="width: 100%; height: 100%;" id="'.$grid_item['video_pretty_id'].'" src="https://player.vimeo.com/video/'.$grid_item['video_id'].'?api=1&amp;player_id='.$grid_item['video_pretty_id'].'" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'; 
-                        }else{
-                              echo "<div class='headline-wrapper'>";
-                                  echo "<div class='headline'>";
-                                      echo $grid_item['title'];
+                            if($grid_item['video']){
+                                  echo '<i class="video-play dr-player x15"></i>';
+                                  echo '<iframe class="video embed-responsive-item" style="width: 100%; height: 100%;" id="'.$grid_item['video_pretty_id'].'" src="https://player.vimeo.com/video/'.$grid_item['video_id'].'?api=1&amp;player_id='.$grid_item['video_pretty_id'].'" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'; 
+                            }else{
+                                  echo "<div class='headline-wrapper'>";
+                                      echo "<div class='headline'>";
+                                          echo $grid_item['title'];
+                                      echo "</div>";
                                   echo "</div>";
-                              echo "</div>";
-                              echo "<div class='description'>";
-                                  echo $grid_item['description'];
-                              echo "</div>";
-                        }
+                                  echo "<div class='description'>";
+                                      echo $grid_item['description'];
+                                  echo "</div>";
+                            }
+                        echo '</div>';
                     echo '</div>';
+                endforeach;
                 echo '</div>';
-            endforeach;
             echo '</div>';
         echo '</div>';
     echo '</div>';
