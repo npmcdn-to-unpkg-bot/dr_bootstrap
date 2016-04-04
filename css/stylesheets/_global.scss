@@ -8,6 +8,12 @@ p{
 ul, li {
     list-style: none;
 }
+ol li{
+  list-style:num;
+}
+ol{
+  padding-left: 1.2em;    
+}
 ul.bullet-list {
     padding-left: 1.2em;    
     
@@ -82,13 +88,23 @@ ul.no-bullet {
     background-color: $blue;
     color: $white;
 }
+
+.lblue-bg{
+    background-color: $lightBlue;
+    color: $white;
+}
 .orange-bg, .orange-bg p {
     background-color: $orange;
     color: $white;
 }
 .green-bg {
-background-color: $green;
+    background-color: $green;
 }
+
+.lgreen-bg {
+    background-color: $green-light;
+}
+
 .gray-bg {
 background-color: $medGray;    
 color:$white;
@@ -96,6 +112,8 @@ color:$white;
 .lgray-bg {
     background-color: $lightGray;
 }
+
+
 
 .white-bg{
   background:$white;
@@ -111,6 +129,10 @@ color:$white;
 
 .white {
   color: $white;
+}
+
+.green {
+  color:$green;
 }
 
 .section_heading {

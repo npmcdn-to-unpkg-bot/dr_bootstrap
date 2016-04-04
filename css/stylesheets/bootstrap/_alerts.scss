@@ -71,3 +71,53 @@
 .alert-danger {
   @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
 }
+
+
+
+.dr-callout {
+  padding:20px;
+  margin:20px 0;
+  border:1px solid $gray10;
+  border-left-width:5px;
+  border-radius:3px;
+  
+  h4 {
+    margin-top:0;
+    margin-bottom:5px;
+  }
+  
+  p:last-child {
+    margin-bottom:0;
+  }
+  
+  code {
+    border-radius:3px;
+  }
+
+  &+.dr-callout {
+    margin-top:-5px;
+  }
+}
+  
+.dr-callout-danger {
+  border-left-color:$red;
+  
+  h4 {
+    color:$darkRed;
+  }
+}
+
+.dr-callout-warning {
+  border-left-color:$webYellow;
+  
+  h4 {
+    color:$webYellow;
+  }
+}
+
+.dr-callout-info {
+    border-left-color:$blue;
+    h4 {
+      color:$darkBlue;
+    }
+}

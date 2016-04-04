@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAS;EACR,IAAI,EAAC,IAAI",
+"sources": ["resources_style.scss"],
+"names": [],
+"file": "resources_style.css"
+}

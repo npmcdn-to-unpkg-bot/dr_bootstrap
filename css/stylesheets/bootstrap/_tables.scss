@@ -16,6 +16,17 @@ th {
   text-align: left;
 }
 
+thead{
+  background:$green;
+  color:$white;
+
+  > tr{
+
+    > th{
+    }
+
+  }
+}
 
 // Baseline styles
 
@@ -35,6 +46,12 @@ th {
         vertical-align: top;
         border-top: 1px solid $table-border-color;
       }
+
+      &:first-child{
+        td{
+          border-top:none;
+        }
+      }
     }
   }
   // Bottom align for column headings
@@ -49,7 +66,6 @@ th {
     > tr:first-child {
       > th,
       > td {
-        border-top: 0;
       }
     }
   }
@@ -100,7 +116,8 @@ th {
   > thead > tr {
     > th,
     > td {
-      border-bottom-width: 2px;
+      border-bottom-width: 1px;
+      border-color: $table-header_border-color;
     }
   }
 }

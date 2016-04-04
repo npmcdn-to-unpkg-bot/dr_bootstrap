@@ -1,0 +1,47 @@
+.example{
+  margin-right: 0;
+  margin-left: 0;
+  background-color: $white;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+
+  .top{
+    position:relative;
+    padding:40px 10px 10px;
+  }
+
+  figure{
+    position:relative;
+    border-radius:0;
+
+    label{
+      color:$white;
+    }
+
+    pre{
+      padding-top:40px;
+      top:0px;
+      position:relative;
+    }
+  }
+
+  .top{
+    border:solid 1px $gray20;
+    border-bottom:none;
+  }
+
+  label{
+    position:absolute;
+    top:10px;
+    left:10px;
+    z-index: 1;
+    font-family:$med;
+  }
+}
+
+
+.tab-content{
+  .top{
+    border-top:0;
+  }
+}
