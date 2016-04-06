@@ -824,32 +824,50 @@ function displayTypography(){
 				 <table class="table">
 		                <tbody>
 		                    <tr>
-		                        <td><h1>h1. Bootstrap heading</h1></td>
+		                        <td><h1>h1 Heading</h1></td>
+		                        <td class="text-right" style="vertical-align:bottom">
+		                        	<h1 class="h6">h1 Heading <small>with h6 class</small></h1>
+		                        </td>
 		                    </tr>
 		                    <tr>
-		                        <td><h2>h2. Bootstrap heading</h2></td>
+		                        <td><h2>h2 Heading</h2></td>
+		                        <td class="text-right" style="vertical-align:bottom">
+		                        	<h2 class="h5">h2 Heading <small>with h5 class</small></h2>
+		                        </td>
 		                    </tr>
 		                    <tr>
-		                        <td><h3>h3. Bootstrap heading</h3></td>
+		                        <td><h3>h3 Heading</h3></td>
+		                        <td class="text-right" style="vertical-align:bottom">
+		                        	<h3 class="h4">h3 Heading <small>with h4 class</small></h3>
+		                        </td>
 		                    </tr>
 		                    <tr>
-		                        <td><h4>h4. Bootstrap heading</h4></td>
+		                        <td><h4>h4 Heading</h4></td>
+		                        <td class="text-right" style="vertical-align:bottom">
+		                        	<h4 class="h3">h4 Heading <small>with h3 class</small></h4>
+		                        </td>
 		                    </tr>
 		                    <tr>
-		                        <td><h5>h5. Bootstrap heading</h5></td>
+		                        <td><h5>h5 Heading</h5></td>
+		                        <td class="text-right" style="vertical-align:bottom">
+		                        	<h5 class="h2">h5 Heading <small>with h2 class</small></h5>
+		                        </td>
 		                    </tr>
 		                    <tr>
-		                        <td><h6>h6. Bootstrap heading</h6></td>
+		                        <td><h6>h6 Heading</h6></td>
+		                        <td class="text-right" style="vertical-align:bottom">
+		                        	<h6 class="h1">h6 Heading <small>with h1 class</small></h6>
+		                        </td>
 		                    </tr>
 		                </tbody>
 		            </table>
 			</div>
-			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1. Bootstrap heading<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;</span>h2. Bootstrap heading<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;</span>h3. Bootstrap heading<span class="nt">&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;</span>h4. Bootstrap heading<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;</span>h5. Bootstrap heading<span class="nt">&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;</span>h6. Bootstrap heading<span class="nt">&lt;/h6&gt;</span>
+			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1 Heading<span class="nt">&lt;/h1&gt;</span>    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>h1 Heading <span class="nt">&lt;small&gt;</span>with h6 class<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2 Heading<span class="nt">&lt;/h2&gt;</span>    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>h2 Heading <span class="nt">&lt;small&gt;</span>with h5 class<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3 Heading<span class="nt">&lt;/h3&gt;</span>    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>h3 Heading <span class="nt">&lt;small&gt;</span>with h4 class<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4 Heading<span class="nt">&lt;/h4&gt;</span>    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"h3"</span><span class="nt">&gt;</span>h4 Heading <span class="nt">&lt;small&gt;</span>with h3 class<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5 Heading<span class="nt">&lt;/h5&gt;</span>    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"h2"</span><span class="nt">&gt;</span>h5 Heading <span class="nt">&lt;small&gt;</span>with h2 class<span class="nt">&lt;/small&gt;&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6 Heading<span class="nt">&lt;/h6&gt;</span>    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"h1"</span><span class="nt">&gt;</span>h6 Heading <span class="nt">&lt;small&gt;</span>with h1 class<span class="nt">&lt;/small&gt;&lt;/h6&gt;</span>
 </code></pre></figure>
 		</div>
 
@@ -862,37 +880,37 @@ function displayTypography(){
 		                <tbody>
 		                    <tr>
 		                        <td>
-		                            <h1>h1. Bootstrap heading <small>Secondary text</small></h1></td>
+		                            <h1>h1 Heading <small>Secondary text</small></h1></td>
 		                    </tr>
 		                    <tr>
 		                        <td>
-		                            <h2>h2. Bootstrap heading <small>Secondary text</small></h2></td>
+		                            <h2>h2 Heading <small>Secondary text</small></h2></td>
 		                    </tr>
 		                    <tr>
 		                        <td>
-		                            <h3>h3. Bootstrap heading <small>Secondary text</small></h3></td>
+		                            <h3>h3 Heading <small>Secondary text</small></h3></td>
 		                    </tr>
 		                    <tr>
 		                        <td>
-		                            <h4>h4. Bootstrap heading <small>Secondary text</small></h4></td>
+		                            <h4>h4 Heading <small>Secondary text</small></h4></td>
 		                    </tr>
 		                    <tr>
 		                        <td>
-		                            <h5>h5. Bootstrap heading <small>Secondary text</small></h5></td>
+		                            <h5>h5 Heading <small>Secondary text</small></h5></td>
 		                    </tr>
 		                    <tr>
 		                        <td>
-		                            <h6>h6. Bootstrap heading <small>Secondary text</small></h6></td>
+		                            <h6>h6 Heading <small>Secondary text</small></h6></td>
 		                    </tr>
 		                </tbody>
 		            </table>
 			</div>
-			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;</span>h2. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;</span>h3. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;</span>h4. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;</span>h5. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;</span>h6. Bootstrap heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h6&gt;</span>
+			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h6&gt;</span>
 </code></pre></figure>
 		</div>
 
@@ -937,7 +955,7 @@ function displayTypography(){
 		        -->
 		       <?php
 			$this->displaySubHeader(
-				'"type-inline-text',
+				'type-inline-text',
 				'Inline text elements'
 				);
         ?>
@@ -4393,7 +4411,12 @@ function displayColors(){
 
 	?>
 <div class="section-body" id="dr-docs-colors">
-	<h2 id="colors-brand">Brand Colors</h2>
+	<?php
+				$this->displaySubHeader(
+					'colors-brand',
+					'Brand Colors'
+					);
+	        ?>
     <p>Below are brand colors, as well as some lighter and darker variations. Though there are no specific limitations on where these fills may be used, it's important to take into account the context and previous usages when using these fills as part of your design.</p>
 
     <h3>Primary Colors</h3>
@@ -4508,7 +4531,12 @@ function displayColors(){
 	    		<div class="bg-darkYellow"><span class="color"></span></div>
 	    	</div>
 	    </div>
-	    <h2 id="colors-helper">Helper Colors</h2>
+	    <?php
+				$this->displaySubHeader(
+					'colors-helper',
+					'Helper Colors'
+					);
+	        ?>
 		<p>Below are helper colors that are not specific to the brand, but are commonly used in custom applications. Though there are no specific limitations on where these fills may be used, it's important to take into account the context and previous usages when using these fills as part of your design.</p>
 	    <div class="row">
 	    	<div class="col-xs-6 col-md-4">
@@ -4576,7 +4604,7 @@ function displayColors(){
 
 	<?php
 				$this->displaySubHeader(
-					'type-color',
+					'colors-classes',
 					'Contextual classes'
 					);
 	        ?>

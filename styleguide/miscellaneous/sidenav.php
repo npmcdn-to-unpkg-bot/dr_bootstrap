@@ -8,7 +8,6 @@
 	            <li><a href="#type-inline-text">Inline text elements</a></li>
 	            <li><a href="#type-alignment">Alignment classes</a></li>
 	            <li><a href="#type-transformation">Transformation classes</a></li>
-	            <li><a href="#type-color">Color classes</a></li>
 	            <li><a href="#type-abbreviations">Abbreviations</a></li>
 	            <li><a href="#type-addresses">Addresses</a></li>
 	            <li><a href="#type-blockquotes">Blockquotes</a></li>
@@ -19,6 +18,7 @@
 	    	<ul class="nav">
 	            <li><a href="#colors-brand">Brand</a></li>
 	            <li><a href="#colors-helper">Helpers</a></li>
+	            <li><a href="#colors-classes">Color classes</a></li>
 	            <!-- <li><a href="#colors-text">Text</a></li>
 	            <li><a href="#colors-links">Links</a></li>
 	            <li><a href="#colors-social">Social Media</a></li> -->
@@ -35,7 +35,7 @@
 	    </li>
 	    <li><a href="#code-examples">Code Examples</a>
 	    	<ul class="nav">
-	            <li><a href="#code-examples-simple">Simple</a></li>
+	            <li><a href="#code-examples-basic">Basic</a></li>
 	            <li><a href="#code-examples-tabbed">Tabbed</a></li>
 	        </ul>
 	    </li>
@@ -54,7 +54,7 @@
 	            <li><a href="#tables-striped">Striped rows</a></li>
 	            <li><a href="#tables-bordered">Bordered table</a></li>
 	            <li><a href="#tables-hover-rows">Hover rows</a></li>
-	            <li><a href="#tables-condensed">Condensed table</a></li>
+	            <!-- <li><a href="#tables-condensed">Condensed table</a></li> -->
 	            <li><a href="#tables-contextual-classes">Contextual classes</a></li>
 	            <li><a href="#tables-responsive">Responsive tables</a></li>
 	        </ul>
@@ -87,7 +87,7 @@
 	    <li><a href="#pagination">Pagination</a>
 	        <ul class="nav">
 	            <li><a href="#pagination-default">Default pagination</a></li>
-	            <li><a href="#pagination-pager">Pager</a></li>
+	            <!-- <li><a href="#pagination-pager">Pager</a></li> -->
 	        </ul>
 	    </li>
 	    <li><a href="#panels">Panels</a>
