@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * For displaying custom bricks
+ *
+ */
+class General implements Brick
+{
+	private $html;
+
+	function __construct($html)
+	{
+		$this->$html = $html;
+	}
+
+	public function display()
+	{
+		echo $html;
+	}
+}

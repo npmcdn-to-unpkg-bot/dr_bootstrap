@@ -18,15 +18,28 @@
 
 
 .global{
-	background-image:url("../../img/grid/globe.jpg");
 	background-repeat:no-repeat;
     background-position: left 45% bottom 0px;
     background-size: 140%;
+
 
 	@media (min-width:$screen-md){
 		background-size: 1650px;
 		background-position: center bottom;
 	}
+
+	@media (min-width:$screen-xs){
+		
+		background-image:url("../../img/grid/globe.jpg");
+
+		&.expanded{
+			background-image:url("../../img/grid/globe_expanded.jpg");
+		}
+	}
+
+	
+
+
 
 	.box{
 		color:$white;
@@ -44,6 +57,7 @@
 		}
 	}
 }
+
 
 #clients_slider{
 	.owl-item{

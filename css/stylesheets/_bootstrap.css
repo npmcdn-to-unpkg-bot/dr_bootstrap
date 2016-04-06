@@ -2490,7 +2490,6 @@ pre {
     margin-left: 10px; } }
 
 .global {
-  background-image: url("../../img/grid/globe.jpg");
   background-repeat: no-repeat;
   background-position: left 45% bottom 0px;
   background-size: 140%; }
@@ -2498,6 +2497,11 @@ pre {
     .global {
       background-size: 1650px;
       background-position: center bottom; } }
+  @media (min-width: 600px) {
+    .global {
+      background-image: url("../../img/grid/globe.jpg"); }
+      .global.expanded {
+        background-image: url("../../img/grid/globe_expanded.jpg"); } }
   .global .box {
     color: #FFF; }
     .global .box .inner-box {
@@ -3531,6 +3535,8 @@ a.btn, button, input[type="button"] {
     border-width: 1px; }
   .btn.option.margin-bottom {
     margin-bottom: 20px; }
+  .btn.option.margin-top {
+    margin-top: 20px; }
   .btn.option.wrap {
     white-space: normal; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
