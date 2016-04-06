@@ -766,12 +766,12 @@ function displayTypography(){
         ?>
 
 		<div class="dr-callout dr-callout-warning">
-		    <h4>Heading Font Family</h4>
+		    <h4> Heading Font Family </h4>
 		    <p>DIN Engschrift, DIN Medium, DIN Light should only be used in headings.</p>
 		</div>
 
 		<div class="dr-callout dr-callout-warning">
-		    <h4>Body Font Family</h4>
+		    <h4> Paragraph Font Family </h4>
 		    <p>Arial should only be used in paragraphs. </p>
 		</div>
 
@@ -917,7 +917,7 @@ function displayTypography(){
 </code></pre></figure>
 		</div>
 
-<!-- 		        <h3 id="lead-body-copy"><a class="anchorjs-link " href="#lead-body-copy" aria-label="Anchor link for: lead body copy" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Lead body copy</h3>
+		        <h3 id="lead-body-copy"><a class="anchorjs-link " href="#lead-body-copy" aria-label="Anchor link for: lead body copy" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Lead body copy</h3>
 		        <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
 
 
@@ -928,19 +928,11 @@ function displayTypography(){
 			</div>
 			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 		</div>
- -->
-		        
 
+		        
 		        <h3 id="built-with-less"><a class="anchorjs-link " href="#built-with-less" aria-label="Anchor link for: built with less" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Built with Less</h3>
 		        <p>The typographic scale is based on two Less variables in <strong>variables.less</strong>: <code>@font-size-base</code> and <code>@line-height-base</code>. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.</p>
-		       
-		       <?php
-			$this->displaySubHeader(
-				'"type-inline-text',
-				'Inline text elements'
-				);
-        ?>
-		       
+		        <h2 id="type-inline-text"><a class="anchorjs-link " href="#type-inline-text" aria-label="Anchor link for: type inline text" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Inline text elements</h2>
 		        <h3 id="marked-text"><a class="anchorjs-link " href="#marked-text" aria-label="Anchor link for: marked text" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Marked text</h3>
 		        <p>For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark&gt;</code> tag.</p>
 		       
@@ -953,32 +945,54 @@ function displayTypography(){
 			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html">You can use the mark tag to <span class="nt">&lt;mark&gt;</span>highlight<span class="nt">&lt;/mark&gt;</span> text.</code></pre></figure>
 		</div>
 
-		        <h3 id="deleted-text"><a class="anchorjs-link " href="#deleted-text" aria-label="Anchor link for: deleted text" data-anchorjs-icon="" ></a>Deleted and Strikethrough text</h3>
-		        <p>The <code>&lt;del&gt;</code> tag is for indicating blocks of text that have been deleted, and the <code>&lt;s&gt;</code> tag is for indicating blocks of text that are no longer relevant use.</p>
+		        <h3 id="deleted-text"><a class="anchorjs-link " href="#deleted-text" aria-label="Anchor link for: deleted text" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Deleted text</h3>
+		        <p>For indicating blocks of text that have been deleted use the <code>&lt;del&gt;</code> tag.</p>
 
 		       <div class="example">
 					<div class="top">
 						<label>Example</label>
 		            	<p><del>This line of text is meant to be treated as deleted text.</del></p>
-		            	<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
 					</div>
-					<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;del&gt;</span>This line of text is meant to be treated as deleted text.<span class="nt">&lt;/del&gt;</span>
-<span class="nt">&lt;s&gt;</span>This line of text is meant to be treated as no longer accurate.<span class="nt">&lt;/s&gt;</span></code></pre></figure>
+					<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;del&gt;</span>This line of text is meant to be treated as deleted text.<span class="nt">&lt;/del&gt;</span></code></pre></figure>
 				</div>
 
-		        <h3 id="inserted-text"><a class="anchorjs-link " href="#inserted-text" aria-label="Anchor link for: inserted text" data-anchorjs-icon="" ></a>Inserted text and Underlined text</h3>
-		        <p>Use the <code>&lt;ins&gt;</code> tag to indicate additions to the document. Use the <code>&lt;u&gt;</code> tag to underline text </p>
+		        <h3 id="strikethrough-text"><a class="anchorjs-link " href="#strikethrough-text" aria-label="Anchor link for: strikethrough text" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Strikethrough text</h3>
+		        <p>For indicating blocks of text that are no longer relevant use the <code>&lt;s&gt;</code> tag.</p>
+		       
+
+
+		       <div class="example">
+					<div class="top">
+						<label>Example</label>
+		            	<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+					</div>
+					<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;s&gt;</span>This line of text is meant to be treated as no longer accurate.<span class="nt">&lt;/s&gt;</span></code></pre></figure>
+				</div>
+
+		        <h3 id="inserted-text"><a class="anchorjs-link " href="#inserted-text" aria-label="Anchor link for: inserted text" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Inserted text</h3>
+		        <p>For indicating additions to the document use the <code>&lt;ins&gt;</code> tag.</p>
 
    				<div class="example">
 					<div class="top">
 						<label>Example</label>
 		            	<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-		            	<p><u>This line of text will render as underlined</u></p>
 					</div>
-					<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ins&gt;</span>This line of text is meant to be treated as an addition to the document.<span class="nt">&lt;/ins&gt;</span>
-<span class="nt">&lt;u&gt;</span>This line of text will render as underlined<span class="nt">&lt;/u&gt;</span></code></pre></figure>
+					<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ins&gt;</span>This line of text is meant to be treated as an addition to the document.<span class="nt">&lt;/ins&gt;</span></code></pre></figure>
 				</div>
 
+
+		        <h3 id="underlined-text"><a class="anchorjs-link " href="#underlined-text" aria-label="Anchor link for: underlined text" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Underlined text</h3>
+		        <p>To underline text use the <code>&lt;u&gt;</code> tag.</p>
+
+   				<div class="example">
+					<div class="top">
+						<label>Example</label>
+		            	<p><u>This line of text will render as underlined</u></p>
+					</div>
+					<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;u&gt;</span>This line of text will render as underlined<span class="nt">&lt;/u&gt;</span></code></pre></figure>
+				</div>
+
+		        <p>Make use of HTML's default emphasis tags with lightweight styles.</p>
 		        <h3 id="small-text"><a class="anchorjs-link " href="#small-text" aria-label="Anchor link for: small text" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Small text</h3>
 		        <p>For de-emphasizing inline or blocks of text, use the <code>&lt;small&gt;</code> tag to set text at 85% the size of the parent. Heading elements receive their own <code>font-size</code> for nested <code>&lt;small&gt;</code> elements.</p>
 		        <p>You may alternatively use an inline element with <code>.small</code> in place of any <code>&lt;small&gt;</code>.</p>
@@ -1216,7 +1230,7 @@ function displayTypography(){
 <span class="nt">&lt;/ol&gt;</span></code></pre></figure>
 </div>
 
-<!-- 
+
 		        <h3 id="unstyled"><a class="anchorjs-link " href="#unstyled" aria-label="Anchor link for: unstyled" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Unstyled</h3>
 		        <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
    				<div class="example">
@@ -1243,7 +1257,7 @@ function displayTypography(){
 <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
-</div> -->
+</div>
 
 
 		        <h3 id="inline"><a class="anchorjs-link " href="#inline" aria-label="Anchor link for: inline" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Inline</h3>
