@@ -1,0 +1,47 @@
+{
+    "key": "group_5702e7c94f37e",
+    "title": "General",
+    "fields": [
+        {
+            "key": "field_5702e7dad77af",
+            "label": "HTML",
+            "name": "html",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "slides"
+            },
+            {
+                "param": "slide",
+                "operator": "==",
+                "value": "general"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1459808229
+}

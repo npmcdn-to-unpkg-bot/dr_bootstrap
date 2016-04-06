@@ -1,6 +1,6 @@
 // Smooth Scrolling
 $(function() {
-  $('#dr-docs-sidebar a[href*="#"]:not([href="#"])').click(function() {
+  $('a[href*="#"]:not([href="#"]):not(.example a[href*="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -39,4 +39,12 @@ $(window).scroll(function() {
       $activeParent.addClass('border-fix');
     }  
   }, 0); // Timeout 0 assures scroll has stopped
+});
+$(function() {
+    var $activeParent = $('#dr-docs-sidebar .dr-docs-sidenav .active');
+    if ($activeParent.find('.nav li.active').length > 0) {
+      $activeParent.removeClass('border-fix');
+    } else {
+      $activeParent.addClass('border-fix');
+    }
 });

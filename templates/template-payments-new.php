@@ -6,6 +6,10 @@
 <?php get_header(); ?>
 
 
+<style>
+	.resources-wrapper{overflow: hidden;}
+</style>
+
 <div class="payments-wrapper">
 	<div class="top custom custom-payments slide">
 		<div class="container">
@@ -95,28 +99,74 @@
 			<p><?php _e("To offer online and mobile shoppers a fast, secure, and seamless purchasing experience, we offer powerful integration methods and convenient features:", "digital-river"); ?></p>
 			<div class="row">
 				<div class="col-md-4">
-					<h4 class="inline no-margin option"><?php echo _e("Full-Feautured API", "digital-river"); ?></h4><?php _e(": Direct access to all payment features with one simple API.", "digital-river"); ?>
-					<h4 class="inline no-margin option"><?php echo _e("Tokenization API", "digital-river"); ?></h4><?php _e(": An easy-to-integrate solution that will support alternative payment methods in future releases.", "digital-river"); ?>
+					<h4 class="inline no-margin option"><?php echo _e("Full-Featured API", "digital-river"); ?></h4><?php _e(": Take full control of your payment experience with one simple API integration that gives you direct access to all our convenient payment features.", "digital-river"); ?>
 				</div>
 				<div class="col-md-4">
-					<h4 class="inline no-margin option"><?php echo _e("Account Updater", "digital-river"); ?></h4><?php echo __(": A valuable feature for recurring and subscription billing, the Account Updater prevents payment disruptions when changes are made to card holder accounts. Account Updater is currently used in select markets—please ", "digital-river")."<a href='/contact-us'>".__("contact us","digital-river")."</a>".__(" to inquire about availability in your part of the world.", "digital-river"); ?>
+					<h4 class="inline no-margin option"><?php echo _e("Hosted Payment Page", "digital-river"); ?></h4><?php echo __(": With our customizable, ready-made payment page templates, we completely manage sensitive card data for different countries. Our payment pages come ready with the alternative payment methods and language that local consumers prefer.", "digital-river"); ?>
 				</div>
 				<div class="col-md-4">
-					<h4 class="inline no-margin option"><?php echo _e("Hosted Payment Page", "digital-river"); ?></h4><?php _e(": With our customizable, ready-made payment page templates, we completely manage sensitive card data for different countries. Our payment pages come ready with locally preferred alternative payment types.", "digital-river"); ?>
+					<h4 class="inline no-margin option"><?php echo _e("Notifications", "digital-river"); ?></h4><?php _e(": Proactive ‘push’ notification services provide real-time responses for payments and allow subsequent order information to be sent separately. This is especially useful for alternative payment methods with delayed responses.", "digital-river"); ?>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="gray-bg map-bg slide">
+
+	<?php
+		$logos = array(
+				array("src" => "Alipay_logo.png", "alt" => "Alipay Logo"),
+				array("src" => "AmericanExpress_logo.png", "alt" => "American Express Logo"),
+				array("src" => "Boleto_logo.png", "alt" => "Boleto Logo"),
+				array("src" => "Bpay_logo.png", "alt" => "BPay Logo"),
+				array("src" => "CCAvenue_logo.png", "alt" => "CC Avenue Logo"),
+				array("src" => "HyperPay_logo.png", "alt" => "HyperPay Logo"),
+				array("src" => "DinersClub_logo.png", "alt" => "Diners Club Logo"),
+				array("src" => "Discover_logo.png", "alt" => "Discover Logo"),
+				array("src" => "DK_logo.png", "alt" => "DK Logo"),
+				array("src" => "dotpay_logo.png", "alt" => "dotpay Logo"),
+				array("src" => "Elo_logo.png", "alt" => "Elo Logo"),
+				array("src" => "giropay_logo.png", "alt" => "giropay Logo"),
+				array("src" => "Hipercard_logo.png", "alt" => "Hipercard Logo"),
+				array("src" => "ideal_logo.png", "alt" => "ideal Logo"),
+				array("src" => "JCB_logo.png", "alt" => "JCB Logo"),
+				array("src" => "Klarna_logo.png", "alt" => "Klarna Logo"),
+				array("src" => "Mastercard_logo.png", "alt" => "Mastercard Logo"),
+				array("src" => "Nordea_logo.png", "alt" => "Nordea Logo"),
+				array("src" => "PayPal_logo.png", "alt" => "PayPal Logo"),
+				array("src" => "Sepa_logo.png", "alt" => "Sepa Logo"),
+				array("src" => "Sofort_logo.png", "alt" => "Sofort Logo"),
+				array("src" => "Swedbank_logo.png", "alt" => "Swedbank Logo"),
+				array("src" => "UnionPay_logo.png", "alt" => "UnionPay Logo"),
+				array("src" => "Visa_logo.png", "alt" => "Visa Logo")
+			);
+	?>
+
+	<style>
+		.logo-section{
+			background-color: rgba(255,255,255,.5);
+			padding:15px 35px;
+		}
+		.logo-wrapper{margin:10px 0;}	
+	</style>
+
+	<div class=" blue-bg global expanded slide">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1 text-center">
+				<div class="col-md-12 text-center">
 					<h2><?php _e( 'Global Payment Processing', 'digital-river' ); ?></h2>
 					<p class="white"><?php _e( 'Providing local payment options is necessary to enter in global markets—and to create the right local shopping experience to be successful. Digital River can provide more payment options in more countries than any other company. We support 175+ currencies, 200+ payment methods, and have relationships with 35+ global card acquiring banks.', 'digital-river' ); ?></p>
 					<p>
-					<a href="/solutions/payments/drwp-global-payment-processing/" class="btn btn-opposite text-center"><?php _e( 'View our global payment methods', 'digital-river' ); ?></a>
+						<div class="logo-section">
+							<div class="row">
+								<?php foreach($logos as $logo): ?>
+									<div class="logo-wrapper col-md-2 col-sm-3 col-xs-4 col-xxs-6"><img class="img-responsive" alt="<?php echo $logo['alt']; ?>" src="<?php echo get_template_directory_uri()."/img/payments/payment_logos/".$logo['src']; ?>" /></div>
+								<?php endforeach; ?>
+							</div>
+						</div>	
+					</p>
 					<p>
+					<a href="/solutions/payments/drwp-global-payment-processing/" class="btn btn-opposite option margin-top text-center"><?php _e( 'View our global payment methods', 'digital-river' ); ?></a>
+					</p>
 				</div>
 			</div>
 		</div>

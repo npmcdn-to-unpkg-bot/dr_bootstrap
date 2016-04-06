@@ -27,6 +27,9 @@ define('TRANSIENT_KEY_STORE_ID', 'transient_key_store');
 /* -----------------------------------------------------------------------------
   Don't Edit Below This Line
 ----------------------------------------------------------------------------- */
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
 
 // Load required files
 require_once 'library/digitalriver.php';
@@ -55,6 +58,36 @@ require_once 'classes/DetailedList.php';
 require_once 'php/action_hooks.php';
 require_once 'inc/theme_functions.php';
 require_once 'inc/theme_hooks.php';
+
+
+require_once 'inc/setup/Admin/Admin.class.php';
+
+// require_once 'inc/setup/AcfImporter.class.php';
+require_once 'inc/setup/Initialize/Initialize.class.php';
+require_once 'inc/setup/Initialize/GeneralInitialize.class.php';
+require_once 'inc/setup/Initialize/MasterheaderInitialize.class.php';
+require_once 'inc/setup/Initialize/ClientsInitialize.class.php';
+require_once 'inc/setup/Slides.class.php';
+require_once 'inc/setup/Bricks/Brick.class.php';
+require_once 'inc/setup/Bricks/General.class.php';
+require_once 'inc/setup/Bricks/Masterheader.class.php';
+
+$GeneralInitialize = new GeneralInit();
+$MasterheadInitialize = new MasterheaderInit();
+$ClientsInitialize = new ClientsInit();
+$slides = new SlidesPostType();
+
+
+
+add_filter('acf/settings/save_json', 'my_acf_json_save_point');
+
+function my_acf_json_save_point( $path ) {
+
+    $path = get_stylesheet_directory() . '/json_test';
+    
+    return $path;
+        
+}
 
 
 /**

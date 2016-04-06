@@ -1057,6 +1057,27 @@ function displayTypography(){
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-capitalize"</span><span class="nt">&gt;</span>Capitalized text.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 </div>
 
+<?php
+			$this->displaySubHeader(
+				'type-color',
+				'Color classes',
+				array('Color text in components with branded and common text colors. Text color classes are prefixed with <code>.txt-</code> followed by the color of your choice. See the <a href="#colors">Colors section</a> below for the list of branded and helper colors available.')
+				);
+        ?>
+
+   				<div class="example">
+					<div class="top">
+						<label>Example</label>
+						<p class="txt-blue">Blue text.</p>
+		            	<p class="txt-darkGreen">Dark Green text.</p>
+		            	<p class="txt-purple">Purple text.</p>
+		        </div>
+		        
+<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"txt-blue"</span><span class="nt">&gt;</span>Blue text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"txt-darkGreen"</span><span class="nt">&gt;</span>Dark green text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"txt-purple"</span><span class="nt">&gt;</span>Purple text.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+</div>
+
 
 <?php
 			$this->displaySubHeader(
@@ -1989,7 +2010,7 @@ function displayForms(){
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
+</div>
 		        <div class="dr-callout dr-callout-warning" id="callout-formgroup-inputgroup">
 		            <h4>Don't mix form groups with input groups</h4>
 		            <p>Do not mix form groups directly with <a href="/components/#input-groups">input groups</a>. Instead, nest the input group inside of the form group.</p>
@@ -2028,7 +2049,7 @@ function displayForms(){
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Send invitation<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
+</div>
    				<div class="example">
 					<div class="top">
 						<label>Example</label>		            <form class="form-inline">
@@ -2062,7 +2083,7 @@ function displayForms(){
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
+</div>
    				<div class="example">
 					<div class="top">
 						<label>Example</label>		            <form class="form-inline">
@@ -2089,7 +2110,7 @@ function displayForms(){
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Transfer cash<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
+</div>
 		<?php
 			$this->displaySubHeader(
 				'forms-horizontal',
@@ -2154,7 +2175,7 @@ function displayForms(){
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
+</div>
 		<?php
 			$this->displaySubHeader(
 				'forms-controls',
@@ -2175,7 +2196,7 @@ function displayForms(){
 		        </div>
 		        
 <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Text input"</span><span class="nt">&gt;</span></code></pre></figure>
-
+</div>
 		        <div class="dr-callout dr-callout-info" id="callout-xref-input-group">
 		            <h4>Input groups</h4>
 		            <p>To add integrated text or buttons before and/or after any text-based <code>&lt;input&gt;</code>, <a href="../components/#input-groups">check out the input group component</a>.</p>
@@ -2190,7 +2211,7 @@ function displayForms(){
 		        </div>
 		        
 <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">rows=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span></code></pre></figure>
-
+</div>
 		        <h3 id="checkboxes-and-radios"><a class="anchorjs-link " href="#checkboxes-and-radios" aria-label="Anchor link for: checkboxes and radios" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Checkboxes and radios</h3>
 		        <p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
 		        <p>Disabled checkboxes and radios are supported, but to provide a "not-allowed" cursor on hover of the parent <code>&lt;label&gt;</code>, you'll need to add the <code>.disabled</code> class to the parent <code>.radio</code>, <code>.radio-inline</code>, <code>.checkbox</code>, or <code>.checkbox-inline</code>.</p>
@@ -2253,7 +2274,7 @@ function displayForms(){
     Option three is disabled
   <span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
+</div>
 		        <h4 id="inline-checkboxes-and-radios"><a class="anchorjs-link " href="#inline-checkboxes-and-radios" aria-label="Anchor link for: inline checkboxes and radios" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Inline checkboxes and radios</h4>
 		        <p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code> classes on a series of checkboxes or radios for controls that appear on the same line.</p>
    				<div class="example">
@@ -2296,7 +2317,7 @@ function displayForms(){
 <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"radio-inline"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"inlineRadioOptions"</span> <span class="na">id=</span><span class="s">"inlineRadio3"</span> <span class="na">value=</span><span class="s">"option3"</span><span class="nt">&gt;</span> 3
 <span class="nt">&lt;/label&gt;</span></code></pre></figure>
-
+</div>
 		        <h4 id="checkboxes-and-radios-without-la"><a class="anchorjs-link " href="#checkboxes-and-radios-without-la" aria-label="Anchor link for: checkboxes and radios without la" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Checkboxes and radios without label text</h4>
 		        <p>Should you have no text within the <code>&lt;label&gt;</code>, the input is positioned as you'd expect. <strong>Currently only works on non-inline checkboxes and radios.</strong> Remember to still provide some form of label for assistive technologies (for instance, using <code>aria-label</code>).</p>
    				<div class="example">
@@ -2323,7 +2344,7 @@ function displayForms(){
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"blankRadio"</span> <span class="na">id=</span><span class="s">"blankRadio1"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
+</div>
 		        <h3 id="selects"><a class="anchorjs-link " href="#selects" aria-label="Anchor link for: selects" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Selects</h3>
 		        <p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties.</p>
    				<div class="example">
@@ -2346,7 +2367,7 @@ function displayForms(){
   <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
   <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
 <span class="nt">&lt;/select&gt;</span></code></pre></figure>
-
+</div>
 		        <p>For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute, multiple options are shown by default.</p>
    				<div class="example">
 					<div class="top">
@@ -2368,7 +2389,7 @@ function displayForms(){
   <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
   <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
 <span class="nt">&lt;/select&gt;</span></code></pre></figure>
-
+</div>
 
 		<?php
 			$this->displaySubHeader(
@@ -2408,7 +2429,7 @@ function displayForms(){
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
+</div>
    				<div class="example">
 					<div class="top">
 						<label>Example</label>		            <form class="form-inline">
@@ -2434,7 +2455,7 @@ function displayForms(){
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Confirm identity<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
+</div>
 
 		<?php
 			$this->displaySubHeader(
@@ -2447,7 +2468,7 @@ function displayForms(){
 					<div class="top">
 						<label>Example</label>		            <form lpformnum="9">
 		                <input class="form-control" id="focusedInput" type="text" value="Demonstrative focus state"> </form>
-		        </div>
+		        </div></div>
 		        <div class="dr-callout dr-callout-info" id="callout-focus-demo">
 		            <h4>Demo <code>:focus</code> state</h4>
 		            <p>The above example input uses custom styles in our documentation to demonstrate the <code>:focus</code> state on a <code>.form-control</code>.</p>
@@ -2461,7 +2482,7 @@ function displayForms(){
 		        </div>
 		        
 <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"disabledInput"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Disabled input here..."</span> <span class="na">disabled</span><span class="nt">&gt;</span></code></pre></figure>
-
+</div>
 		        <h3 id="forms-disabled-fieldsets"><a class="anchorjs-link " href="#forms-disabled-fieldsets" aria-label="Anchor link for: forms disabled fieldsets" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Disabled fieldsets</h3>
 		        <p>Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within the <code>&lt;fieldset&gt;</code> at once.</p>
 		        <div class="dr-callout dr-callout-warning" id="callout-fieldset-disabled-pointer-events">
@@ -2514,7 +2535,7 @@ function displayForms(){
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/fieldset&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
+</div>
 
 
 		<?php
@@ -2531,7 +2552,7 @@ function displayForms(){
 		        </div>
 		        
 <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Readonly input here…"</span> <span class="na">readonly</span><span class="nt">&gt;</span></code></pre></figure>
-
+</div>
 
 		<?php
 			$this->displaySubHeader(
@@ -2556,7 +2577,7 @@ function displayForms(){
 <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"inputHelpBlock"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-describedby=</span><span class="s">"helpBlock"</span><span class="nt">&gt;</span>
 ...
 <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"helpBlock"</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>A block of help text that breaks onto a new line and may extend beyond one line.<span class="nt">&lt;/span&gt;</span></code></pre></figure>
-
+</div>
 
 
 		<?php
@@ -2641,7 +2662,7 @@ function displayForms(){
     <span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
+</div>
 		    <h3>With optional icons</h3>
 		    <p>You can also add optional feedback icons with the addition of <code>.has-feedback</code> and the right icon.</p>
 		    <p><strong class="text-danger">Feedback icons only work with textual <code>&lt;input class="form-control"&gt;</code> elements.</strong></p>
@@ -2700,7 +2721,7 @@ function displayForms(){
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok form-control-feedback"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"inputGroupSuccess1Status"</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>(success)<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
+</div>
 		    <h4>Optional icons in horizontal and inline forms</h4>
    				<div class="example">
 					<div class="top">
@@ -2740,7 +2761,7 @@ function displayForms(){
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
+</div>
    				<div class="example">
 					<div class="top">
 						<label>Example</label>		        <form class="form-inline">
@@ -2776,7 +2797,7 @@ function displayForms(){
     <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"inputGroupSuccess3Status"</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>(success)<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
+</div>
 		    <h4>Optional icons with hidden <code>.sr-only</code> labels</h4>
 		    <p>If you use the <code>.sr-only</code> class to hide a form control's <code>&lt;label&gt;</code> (rather than using other labelling options, such as the <code>aria-label</code> attribute), Bootstrap will automatically adjust the position of the icon once it's been added.</p>
    				<div class="example">
@@ -2805,7 +2826,7 @@ function displayForms(){
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok form-control-feedback"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"inputGroupSuccess4Status"</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>(success)<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
+</div>
 
 		<?php
 			$this->displaySubHeader(
@@ -2816,7 +2837,9 @@ function displayForms(){
 		    <p>Set heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.</p>
 		    <h3>Height sizing</h3>
 		    <p>Create taller or shorter form controls that match button sizes.</p>
-		    <div class="dr-example dr-example-control-sizing" data-example-id="form-control-height-sizes">
+		    <div class="example">
+					<div class="top">
+						<label>Example</label>
 		        <form lpformnum="16">
 		            <div class="controls">
 		                <input class="form-control input-lg" type="text" placeholder=".input-lg" >
@@ -2842,7 +2865,7 @@ function displayForms(){
 <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control input-lg"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/select&gt;</span>
 <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/select&gt;</span>
 <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control input-sm"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/select&gt;</span></code></pre></figure>
-
+</div>
 		    <h3>Horizontal form group sizes</h3>
 		    <p>Quickly size labels and form controls within <code>.form-horizontal</code> by adding <code>.form-group-lg</code> or <code>.form-group-sm</code>.</p>
    				<div class="example">
@@ -2875,12 +2898,13 @@ function displayForms(){
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
-
+</div>
 		    <h3>Column sizing</h3>
 		    <p>Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		        <form lpformnum="17">
+						<label>Example</label>
+						<form lpformnum="17">
 		            <div class="row">
 		                <div class="col-xs-2">
 		                    <input type="text" class="form-control" placeholder=".col-xs-2" > </div>
@@ -2903,7 +2927,7 @@ function displayForms(){
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">".col-xs-4"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
+</div>
 
 
 </div>
@@ -2927,7 +2951,8 @@ function displayHelperClasses(){
 		        <p>Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+						<label>Example</label>
+					<p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
 		            <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 		            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
 		            <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
@@ -2941,7 +2966,7 @@ function displayHelperClasses(){
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-info"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-warning"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-danger"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
-
+</div>
 		        <div class="dr-callout dr-callout-info" id="callout-helper-context-color-specificity">
 		            <h4>Dealing with specificity</h4>
 		            <p>Sometimes emphasis classes cannot be applied due to the specificity of another selector. In most cases, a sufficient workaround is to wrap your text in a <code>&lt;span&gt;</code> with the class.</p>
@@ -2984,14 +3009,14 @@ function displayHelperClasses(){
 		        </div>
 		        
 <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span></code></pre></figure>
-
+</div>
 		        <h3 id="helper-classes-carets"><a class="anchorjs-link " href="#helper-classes-carets" aria-label="Anchor link for: helper classes carets" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Carets</h3>
 		        <p>Use carets to indicate dropdown functionality and direction. Note that the default caret will reverse automatically in <a href="../components/#btn-dropdowns-dropup">dropup menus</a>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		        
+						<label>Example</label></div>		        
 <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></figure>
-
+</div>
 		        <h3 id="helper-classes-floats"><a class="anchorjs-link " href="#helper-classes-floats" aria-label="Anchor link for: helper classes floats" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Quick floats</h3>
 		        <p>Float an element to the left or right with a class. <code>!important</code> is included to avoid specificity issues. Classes can also be used as mixins.</p>
 		        
@@ -3186,7 +3211,7 @@ function displayButtons(){
 		            <button class="btn btn-default" type="submit">Button</button>
 		            <input class="btn btn-default" type="button" value="Input">
 		            <input class="btn btn-default" type="submit" value="Submit">
-		        </div>
+		        	</div>
 		        
 <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
@@ -4171,23 +4196,23 @@ function displayTabs(){
 
 	</div>
 	<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#tab1"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
-	<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#tab2"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
-	<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#tab3"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#tab1"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#tab2"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#tab3"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"tab1"</span> <span class="na">class=</span><span class="s">"tab-pane active"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h3&gt;</span> ... <span class="nt">&lt;/h3&gt;</span>
-		<span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"tab2"</span> <span class="na">class=</span><span class="s">"tab-pane"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h3&gt;</span> ... <span class="nt">&lt;/h3&gt;</span>
-		<span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
-	<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"tab3"</span> <span class="na">class=</span><span class="s">"tab-pane"</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;h3&gt;</span> ... <span class="nt">&lt;/h3&gt;</span>
-		<span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
-	<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"tab1"</span> <span class="na">class=</span><span class="s">"tab-pane active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span> ... <span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"tab2"</span> <span class="na">class=</span><span class="s">"tab-pane"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span> ... <span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"tab3"</span> <span class="na">class=</span><span class="s">"tab-pane"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span> ... <span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 </div>
 </div>
@@ -4206,91 +4231,180 @@ function displayColors(){
 <div class="section-body" id="dr-docs-colors">
 	<h2 id="colors-brand">Brand Colors</h2>
     <p>Below are brand colors, as well as some lighter and darker variations. Though there are no specific limitations on where these fills may be used, it's important to take into account the context and previous usages when using these fills as part of your design.</p>
-					    <div class="row">
-        	<div class="col-xs-6 col-md-4">
-        		<span>Green</span>
-        		<code>$green</code>
-        		<div class="bg-green"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>Dark Green</span>
-        		<code>$darkGreen</code>
-        		<div class="bg-darkGreen"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>Blue</span>
-        		<code>$blue</code>
-        		<div class="bg-blue"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>Dark Blue</span>
-        		<code>$darkBlue</code>
-        		<div class="bg-darkBlue"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>Purple</span>
-        		<code>$purple</code>
-        		<div class="bg-purple"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>Black</span>
-        		<code>$black</code>
-        		<div class="bg-black"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>White</span>
-        		<code>$white</code>
-        		<div class="bg-white"><span class="color" style="color:#808080;"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>10% Gray</span>
-        		<code>$gray10</code>
-        		<div class="bg-gray10"><span class="color" style="color:#808080;"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>20% Gray</span>
-        		<code>$gray20</code>
-        		<div class="bg-gray20"><span class="color" style="color:#808080;"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>30% Gray</span>
-        		<code>$gray30</code>
-        		<div class="bg-gray30"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>40% Gray</span>
-        		<code>$gray40</code>
-        		<div class="bg-gray40"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>50% Gray</span>
-        		<code>$gray50</code>
-        		<div class="bg-gray50"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>60% Gray</span>
-        		<code>$gray60</code>
-        		<div class="bg-gray60"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>70% Gray</span>
-        		<code>$gray70</code>
-        		<div class="bg-gray70"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>80% Gray</span>
-        		<code>$gray80</code>
-        		<div class="bg-gray80"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>90% Gray</span>
-        		<code>$gray90</code>
-        		<div class="bg-gray90"><span class="color"></span></div>
-        	</div>
-        </div>
-    <h2 id="colors-text">Text Colors</h2>
+	<div class="row">	
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Blue</span>
+    		<code>$lightBlue</code>
+    		<div class="bg-lightBlue"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Blue</span>
+    		<code>$blue</code>
+    		<div class="bg-blue"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Blue</span>
+    		<code>$darkBlue</code>
+    		<div class="bg-darkBlue"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Green</span>
+    		<code>$lightGreen</code>
+    		<div class="bg-lightGreen"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Green</span>
+    		<code>$green</code>
+    		<div class="bg-green"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Green</span>
+    		<code>$darkGreen</code>
+    		<div class="bg-darkGreen"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Gray</span>
+    		<code>$lightGray</code>
+    		<div class="bg-lightGray"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Gray</span>
+    		<code>$gray</code>
+    		<div class="bg-gray"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Gray</span>
+    		<code>$darkGray</code>
+    		<div class="bg-darkGray"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Orange</span>
+    		<code>$lightOrange</code>
+    		<div class="bg-lightOrange"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Orange</span>
+    		<code>$orange</code>
+    		<div class="bg-orange"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Orange</span>
+    		<code>$darkOrange</code>
+    		<div class="bg-darkOrange"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Red</span>
+    		<code>$lightRed</code>
+    		<div class="bg-lightRed"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Red</span>
+    		<code>$red</code>
+    		<div class="bg-red"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Red</span>
+    		<code>$darkRed</code>
+    		<div class="bg-darkRed"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Purple</span>
+    		<code>$lightPurple</code>
+    		<div class="bg-lightPurple"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Purple</span>
+    		<code>$purple</code>
+    		<div class="bg-purple"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Purple</span>
+    		<code>$darkPurple</code>
+    		<div class="bg-darkPurple"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Yellow</span>
+    		<code>$lightYellow</code>
+    		<div class="bg-lightYellow"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Yellow</span>
+    		<code>$Yellow</code>
+    		<div class="bg-yellow"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Yellow</span>
+    		<code>$darkYellow</code>
+    		<div class="bg-darkYellow"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    </div>
+    <h2 id="colors-helper">Helper Colors</h2>
+	<p>Below are helper colors that are not specific to the brand, but are commonly used in custom applications. Though there are no specific limitations on where these fills may be used, it's important to take into account the context and previous usages when using these fills as part of your design.</p>
+    <div class="row">
+    	<div class="col-xs-6 col-md-4">
+    		<span>Black</span>
+    		<code>$black</code>
+    		<div class="bg-black"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>White</span>
+    		<code>$white</code>
+    		<div class="bg-white"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Off White</span>
+    		<code>$whiteOff</code>
+    		<div class="bg-offWhite"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>10% Gray</span>
+    		<code>$gray10</code>
+    		<div class="bg-gray10"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>20% Gray</span>
+    		<code>$gray20</code>
+    		<div class="bg-gray20"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>30% Gray</span>
+    		<code>$gray30</code>
+    		<div class="bg-gray30"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>40% Gray</span>
+    		<code>$gray40</code>
+    		<div class="bg-gray40"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>50% Gray</span>
+    		<code>$gray50</code>
+    		<div class="bg-gray50"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>60% Gray</span>
+    		<code>$gray60</code>
+    		<div class="bg-gray60"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>70% Gray</span>
+    		<code>$gray70</code>
+    		<div class="bg-gray70"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>80% Gray</span>
+    		<code>$gray80</code>
+    		<div class="bg-gray80"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>90% Gray</span>
+    		<code>$gray90</code>
+    		<div class="bg-gray90"><span class="color"></span></div>
+    	</div>
+    </div>
+    <!-- <h2 id="colors-text">Text Colors</h2>
     <h2 id="colors-links">Links Colors</h2>
-    <h2 id="colors-social">Social Colors</h2>
+    <h2 id="colors-social">Social Colors</h2> -->
 </div>
 
 
@@ -4326,18 +4440,18 @@ function displayExample()
 			<figure class="highlight"><label>Code</label><pre><code class="language-json" data-lang="json"> ... </code></pre></figure>
 		</div>
 		</div>
-		<figure class="highlight"><label>HTML</label><pre><code class="language-json" data-lang="json">&lt;div class="example"&gt;
-   &lt;div class="top"&gt;
-      &lt;label&gt;Result&lt;/label&gt;
+		<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label&gt;</span>Result<span class="nt">&lt;/label&gt;</span>
       ...
-   &lt;/div&gt;
-   &lt;figure class="highlight"&gt;
-      &lt;label>Code&lt;/label&gt;
-      &lt;pre&gt;
-         &lt;code&gt; ... &lt;/code&gt;
-      &lt;/pre&gt;
-   &lt;/figure&gt;
-&lt;/div&gt;</code></pre></figure>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"highlight"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label&gt;</span>Code<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;pre&gt;</span>
+         <span class="nt">&lt;code&gt;</span> ... <span class="nt">&lt;/code&gt;</span>
+      <span class="nt">&lt;/pre&gt;</span>
+   <span class="nt">&lt;/figure&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 		</div>
 
 	<?php	
@@ -4365,51 +4479,51 @@ function displayExample()
 					<figure class="highlight"><label>Response</label><pre><code class="language-json" data-lang="json"> {} </code></pre></figure>
 				</div>
 			</div>
-		<div id="xml" class="tab-pane">
+			<div id="xml" class="tab-pane">
 				<div class="example">
 					<div class="top">
 						<label>Request</label>
 						<p> XML Request Here </p>
 					</div>
-				<figure class="highlight"><label>Response</label><pre><code class="language-xml" data-lang="xml">&lt;?xml version="1.0" ?&gt;
-&lt;metadata&gt;
-&lt;/metadata&gt;</code></pre></figure>
+				<figure class="highlight"><label>Response</label><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;?xml</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="nt">?&gt;</span>
+<span class="nt">&lt;metadata&gt;</span>
+<span class="nt">&lt;/metadata&gt;</span></code></pre></figure>
 		</div>
 </div>
 </div>
 </div>
-		<figure class="highlight"><label>HTML</label><pre><code class="language-json" data-lang="json">&lt;ul class="nav nav-tabs"&gt;
-   &lt;li class="active"&gt;&lt;a data-toggle="tab" href="#json"&gt;JSON&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a data-toggle="tab" href="#xml"&gt;XML&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id="json" class="tab-pane"&gt;
-   &lt;div class="example"&gt;
-      &lt;div class="top"&gt;
-         &lt;label&gt;Request&lt;/label&gt;
+		<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#json"</span><span class="nt">&gt;</span>JSON<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+   <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#xml"</span><span class="nt">&gt;</span>XML<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"json"</span> <span class="na">class=</span><span class="s">"tab-pane"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;label&gt;</span>Request<span class="nt">&lt;/label&gt;</span>
          ...
-      &lt;/div&gt;
-      &lt;figure class="highlight"&gt;
-         &lt;label>Response&lt;/label&gt;
-         &lt;pre&gt;
-            &lt;code&gt; ... &lt;/code&gt;
-         &lt;/pre&gt;
-      &lt;/figure&gt;
-   &lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="xml" class="tab-pane"&gt;
-   &lt;div class="example"&gt;
-      &lt;div class="top"&gt;
-         &lt;label&gt;Request&lt;/label&gt;
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"highlight"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;label&gt;</span>Response<span class="nt">&lt;/label&gt;</span>
+         <span class="nt">&lt;pre&gt;</span>
+            <span class="nt">&lt;code&gt;</span> ... <span class="nt">&lt;/code&gt;</span>
+         <span class="nt">&lt;/pre&gt;</span>
+      <span class="nt">&lt;/figure&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"xml"</span> <span class="na">class=</span><span class="s">"tab-pane"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"top"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;label&gt;</span>Request<span class="nt">&lt;/label&gt;</span>
          ...
-      &lt;/div&gt;
-      &lt;figure class="highlight"&gt;
-         &lt;label>Response&lt;/label&gt;
-         &lt;pre&gt;
-            &lt;code&gt; ... &lt;/code&gt;
-         &lt;/pre&gt;
-      &lt;/figure&gt;
-   &lt;/div&gt;
-&lt;/div&gt;</code></pre></figure>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"highlight"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;label&gt;</span>Response<span class="nt">&lt;/label&gt;</span>
+         <span class="nt">&lt;pre&gt;</span>
+            <span class="nt">&lt;code&gt;</span> ... <span class="nt">&lt;/code&gt;</span>
+         <span class="nt">&lt;/pre&gt;</span>
+      <span class="nt">&lt;/figure&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 </div>
 		
 

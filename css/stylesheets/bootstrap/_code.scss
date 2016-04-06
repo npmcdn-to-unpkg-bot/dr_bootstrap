@@ -72,20 +72,23 @@ pre {
       overflow: auto;
       word-wrap: normal;
       white-space: pre;
-    
-      &.language-html{
-
-        .nt{
-          color:$lightBlue;
-        }
-
-        .na{
-          color:$lightGreen;
-        }
-        .s{
-          color:$lightOrange; 
-        }
+  
+      .nt{
+        color:$lightBlue;
       }
+      .na{
+        color:$lightGreen;
+      }
+      .s{
+        color:$lightOrange; 
+      }
+      .k{
+        color:$hotPink;
+      }
+      .cp{
+        color:$gray10;
+      }
+
     }
   }
 }
