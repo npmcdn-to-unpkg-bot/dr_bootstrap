@@ -8,6 +8,7 @@
 	            <li><a href="#type-inline-text">Inline text elements</a></li>
 	            <li><a href="#type-alignment">Alignment classes</a></li>
 	            <li><a href="#type-transformation">Transformation classes</a></li>
+	            <li><a href="#type-color">Color classes</a></li>
 	            <li><a href="#type-abbreviations">Abbreviations</a></li>
 	            <li><a href="#type-addresses">Addresses</a></li>
 	            <li><a href="#type-blockquotes">Blockquotes</a></li>
@@ -17,9 +18,10 @@
 	    <li><a href="#colors">Colors</a>
 	    	<ul class="nav">
 	            <li><a href="#colors-brand">Brand</a></li>
-	            <li><a href="#colors-text">Text</a></li>
+	            <li><a href="#colors-helper">Helpers</a></li>
+	            <!-- <li><a href="#colors-text">Text</a></li>
 	            <li><a href="#colors-links">Links</a></li>
-	            <li><a href="#colors-social">Social Media</a></li>
+	            <li><a href="#colors-social">Social Media</a></li> -->
 	        </ul>
 	    </li>
 	    <li><a href="#code">Code</a>

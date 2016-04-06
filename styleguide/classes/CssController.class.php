@@ -1071,6 +1071,27 @@ function displayTypography(){
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-capitalize"</span><span class="nt">&gt;</span>Capitalized text.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 </div>
 
+<?php
+			$this->displaySubHeader(
+				'type-color',
+				'Color classes',
+				array('Color text in components with branded and common text colors. Text color classes are prefixed with <code>.txt-</code> followed by the color of your choice. See the <a href="#colors">Colors section</a> below for the list of branded and helper colors available.')
+				);
+        ?>
+
+   				<div class="example">
+					<div class="top">
+						<label>Example</label>
+						<p class="txt-blue">Blue text.</p>
+		            	<p class="txt-darkGreen">Dark Green text.</p>
+		            	<p class="txt-purple">Purple text.</p>
+		        </div>
+		        
+<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"txt-blue"</span><span class="nt">&gt;</span>Blue text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"txt-darkGreen"</span><span class="nt">&gt;</span>Dark green text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"txt-purple"</span><span class="nt">&gt;</span>Purple text.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+</div>
+
 
 <?php
 			$this->displaySubHeader(
@@ -4224,91 +4245,180 @@ function displayColors(){
 <div class="section-body" id="dr-docs-colors">
 	<h2 id="colors-brand">Brand Colors</h2>
     <p>Below are brand colors, as well as some lighter and darker variations. Though there are no specific limitations on where these fills may be used, it's important to take into account the context and previous usages when using these fills as part of your design.</p>
-					    <div class="row">
-        	<div class="col-xs-6 col-md-4">
-        		<span>Green</span>
-        		<code>$green</code>
-        		<div class="bg-green"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>Dark Green</span>
-        		<code>$darkGreen</code>
-        		<div class="bg-darkGreen"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>Blue</span>
-        		<code>$blue</code>
-        		<div class="bg-blue"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>Dark Blue</span>
-        		<code>$darkBlue</code>
-        		<div class="bg-darkBlue"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>Purple</span>
-        		<code>$purple</code>
-        		<div class="bg-purple"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>Black</span>
-        		<code>$black</code>
-        		<div class="bg-black"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>White</span>
-        		<code>$white</code>
-        		<div class="bg-white"><span class="color" style="color:#808080;"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>10% Gray</span>
-        		<code>$gray10</code>
-        		<div class="bg-gray10"><span class="color" style="color:#808080;"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>20% Gray</span>
-        		<code>$gray20</code>
-        		<div class="bg-gray20"><span class="color" style="color:#808080;"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>30% Gray</span>
-        		<code>$gray30</code>
-        		<div class="bg-gray30"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>40% Gray</span>
-        		<code>$gray40</code>
-        		<div class="bg-gray40"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>50% Gray</span>
-        		<code>$gray50</code>
-        		<div class="bg-gray50"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>60% Gray</span>
-        		<code>$gray60</code>
-        		<div class="bg-gray60"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>70% Gray</span>
-        		<code>$gray70</code>
-        		<div class="bg-gray70"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>80% Gray</span>
-        		<code>$gray80</code>
-        		<div class="bg-gray80"><span class="color"></span></div>
-        	</div>
-        	<div class="col-xs-6 col-md-4">
-        		<span>90% Gray</span>
-        		<code>$gray90</code>
-        		<div class="bg-gray90"><span class="color"></span></div>
-        	</div>
-        </div>
-    <h2 id="colors-text">Text Colors</h2>
+	<div class="row">	
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Blue</span>
+    		<code>$lightBlue</code>
+    		<div class="bg-lightBlue"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Blue</span>
+    		<code>$blue</code>
+    		<div class="bg-blue"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Blue</span>
+    		<code>$darkBlue</code>
+    		<div class="bg-darkBlue"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Green</span>
+    		<code>$lightGreen</code>
+    		<div class="bg-lightGreen"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Green</span>
+    		<code>$green</code>
+    		<div class="bg-green"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Green</span>
+    		<code>$darkGreen</code>
+    		<div class="bg-darkGreen"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Gray</span>
+    		<code>$lightGray</code>
+    		<div class="bg-lightGray"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Gray</span>
+    		<code>$gray</code>
+    		<div class="bg-gray"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Gray</span>
+    		<code>$darkGray</code>
+    		<div class="bg-darkGray"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Orange</span>
+    		<code>$lightOrange</code>
+    		<div class="bg-lightOrange"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Orange</span>
+    		<code>$orange</code>
+    		<div class="bg-orange"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Orange</span>
+    		<code>$darkOrange</code>
+    		<div class="bg-darkOrange"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Red</span>
+    		<code>$lightRed</code>
+    		<div class="bg-lightRed"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Red</span>
+    		<code>$red</code>
+    		<div class="bg-red"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Red</span>
+    		<code>$darkRed</code>
+    		<div class="bg-darkRed"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Purple</span>
+    		<code>$lightPurple</code>
+    		<div class="bg-lightPurple"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Purple</span>
+    		<code>$purple</code>
+    		<div class="bg-purple"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Purple</span>
+    		<code>$darkPurple</code>
+    		<div class="bg-darkPurple"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Light Yellow</span>
+    		<code>$lightYellow</code>
+    		<div class="bg-lightYellow"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Yellow</span>
+    		<code>$Yellow</code>
+    		<div class="bg-yellow"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Dark Yellow</span>
+    		<code>$darkYellow</code>
+    		<div class="bg-darkYellow"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    </div>
+    <h2 id="colors-helper">Helper Colors</h2>
+	<p>Below are helper colors that are not specific to the brand, but are commonly used in custom applications. Though there are no specific limitations on where these fills may be used, it's important to take into account the context and previous usages when using these fills as part of your design.</p>
+    <div class="row">
+    	<div class="col-xs-6 col-md-4">
+    		<span>Black</span>
+    		<code>$black</code>
+    		<div class="bg-black"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>White</span>
+    		<code>$white</code>
+    		<div class="bg-white"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>Off White</span>
+    		<code>$whiteOff</code>
+    		<div class="bg-offWhite"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>10% Gray</span>
+    		<code>$gray10</code>
+    		<div class="bg-gray10"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>20% Gray</span>
+    		<code>$gray20</code>
+    		<div class="bg-gray20"><span class="color" style="color:#808080;"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>30% Gray</span>
+    		<code>$gray30</code>
+    		<div class="bg-gray30"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>40% Gray</span>
+    		<code>$gray40</code>
+    		<div class="bg-gray40"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>50% Gray</span>
+    		<code>$gray50</code>
+    		<div class="bg-gray50"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>60% Gray</span>
+    		<code>$gray60</code>
+    		<div class="bg-gray60"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>70% Gray</span>
+    		<code>$gray70</code>
+    		<div class="bg-gray70"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>80% Gray</span>
+    		<code>$gray80</code>
+    		<div class="bg-gray80"><span class="color"></span></div>
+    	</div>
+    	<div class="col-xs-6 col-md-4">
+    		<span>90% Gray</span>
+    		<code>$gray90</code>
+    		<div class="bg-gray90"><span class="color"></span></div>
+    	</div>
+    </div>
+    <!-- <h2 id="colors-text">Text Colors</h2>
     <h2 id="colors-links">Links Colors</h2>
-    <h2 id="colors-social">Social Colors</h2>
+    <h2 id="colors-social">Social Colors</h2> -->
 </div>
 
 
