@@ -766,12 +766,12 @@ function displayTypography(){
         ?>
 
 		<div class="dr-callout dr-callout-warning">
-		    <h4>Heading Font Family</h4>
+		    <h4><i class="fa fa-exclamation-triangle"></i> Heading Font Family</h4>
 		    <p>DIN Engschrift, DIN Medium, DIN Light should only be used in headings.</p>
 		</div>
 
 		<div class="dr-callout dr-callout-warning">
-		    <h4>Body Font Family</h4>
+		    <h4><i class="fa fa-exclamation-triangle"></i> Body Font Family</h4>
 		    <p>Arial should only be used in paragraphs. </p>
 		</div>
 
@@ -813,7 +813,7 @@ function displayTypography(){
         ?>
 
 		<div class="dr-callout dr-callout-info">
-		    <h4>Visual Hierarchy</h4>
+		    <h4><i class="fa fa-info-circle"></i> Visual Hierarchy</h4>
 		    <p>To ensure visual hierarchy, use <code>.h1</code> through <code>.h6</code> classes to adjust the size of headings when needed.</p>
 		</div>
 
@@ -902,16 +902,17 @@ function displayTypography(){
 			$this->displaySubHeader(
 				'type-body-copy',
 				'Body copy',
-				array('Bootstrap\'s global default <code>font-size</code> is <strong>14px</strong>, with a <code>line-height</code> of <strong>1.428</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).')
+				array()
 				);
         ?>
-
+			<div class="dr-callout dr-callout-info">
+            	<h4><i class="fa fa-info-circle"></i> For Your Information</h4>
+        		<p>Bootstrap's global default <code>font-size</code> is <strong>14px</strong>, with a <code>line-height</code> of <strong>1.428</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>
+        	</div>
         <div class="example">
 			<div class="top">
 				<label>Example</label>
 		            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-		            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-		            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 			</div>
 			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
 </code></pre></figure>
@@ -930,10 +931,10 @@ function displayTypography(){
 		</div>
  -->
 		        
-
+<!-- 
 		        <h3 id="built-with-less"><a class="anchorjs-link " href="#built-with-less" aria-label="Anchor link for: built with less" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Built with Less</h3>
 		        <p>The typographic scale is based on two Less variables in <strong>variables.less</strong>: <code>@font-size-base</code> and <code>@line-height-base</code>. The first is the base font-size used throughout and the second is the base line-height. We use those variables and some simple math to create the margins, paddings, and line-heights of all our type and more. Customize them and Bootstrap adapts.</p>
-		       
+		        -->
 		       <?php
 			$this->displaySubHeader(
 				'"type-inline-text',
@@ -1016,7 +1017,7 @@ function displayTypography(){
 
 
 		        <div class="dr-callout dr-callout-info" id="callout-type-b-i-elems">
-		            <h4>Alternate elements</h4>
+		            <h4><i class="fa fa-info-circle"></i> Alternate elements</h4>
 		            <p>Feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
 		        </div>
 		        <h2 id="type-alignment"><a class="anchorjs-link " href="#type-alignment" aria-label="Anchor link for: type alignment" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Alignment classes</h2>
@@ -1027,14 +1028,14 @@ function displayTypography(){
 		            <p class="text-center">Center aligned text.</p>
 		            <p class="text-right">Right aligned text.</p>
 		            <p class="text-justify">Justified text.</p>
-		            <p class="text-nowrap">No wrap text.</p>
+		            <p class="text-nowrap">Ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh!</p>
 		        </div>
 		        
 <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>Left aligned text.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>Center aligned text.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Right aligned text.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-justify"</span><span class="nt">&gt;</span>Justified text.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-nowrap"</span><span class="nt">&gt;</span>No wrap text.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-nowrap"</span><span class="nt">&gt;</span>Ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh!<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 </div>
 
 <?php
@@ -1260,7 +1261,7 @@ function displayTypography(){
   <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 </div>
-
+<!-- 
 
 		        <h3 id="description"><a class="anchorjs-link " href="#description" aria-label="Anchor link for: description" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Description</h3>
 		        <p>A list of terms with their associated descriptions.</p>
@@ -1302,9 +1303,9 @@ function displayTypography(){
 
 
 		        <div class="dr-callout dr-callout-info" id="callout-type-dl-truncate">
-		            <h4>Auto-truncating</h4>
+		            <h4><i class="fa fa-info-circle"></i> Auto-truncating</h4>
 		            <p>Horizontal description lists will truncate terms that are too long to fit in the left column with <code>text-overflow</code>. In narrower viewports, they will change to the default stacked layout.</p>
-		        </div>
+		        </div> -->
 
 </div>
 <?php
@@ -1376,12 +1377,12 @@ To edit settings, press <span class="nt">&lt;kbd&gt;</span>ctrl<span class="nt">
 		       
 
 <?php
-			$this->displaySubHeader(
-				'code-variables',
-				'Variables'
-				);
+			// $this->displaySubHeader(
+			// 	'code-variables',
+			// 	'Variables'
+			// 	);
         ?>
-		        <p>For indicating variables use the <code>&lt;var&gt;</code> tag.</p>
+<!-- 		        <p>For indicating variables use the <code>&lt;var&gt;</code> tag.</p>
    				<div class="example">
 					<div class="top">
 						<label>Example</label>		            <p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
@@ -1389,7 +1390,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;</span>ctrl<span class="nt">
 		        
 <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;var&gt;</span>y<span class="nt">&lt;/var&gt;</span> = <span class="nt">&lt;var&gt;</span>m<span class="nt">&lt;/var&gt;&lt;var&gt;</span>x<span class="nt">&lt;/var&gt;</span> + <span class="nt">&lt;var&gt;</span>b<span class="nt">&lt;/var&gt;</span></code></pre></figure>
 </div>
-
+ -->
 
 <?php
 			$this->displaySubHeader(
@@ -1482,6 +1483,24 @@ function displayTables(){
    				<div class="example">
 					<div class="top">
 						<label>Example</label>		        
+						<table class="table">
+		                <thead>
+		                    <tr>
+		                        <th>#</th>
+		                        <th>First Name</th>
+		                        <th>Last Name</th>
+		                        <th>Username</th>
+		                    </tr>
+		                </thead>
+		                <tbody>
+		                    <tr>
+		                        <th scope="row">1</th>
+		                        <td>Mark</td>
+		                        <td>Otto</td>
+		                        <td>@mdo</td>
+		                    </tr>
+		                </tbody>
+		            </table>
 						<table class="table ">
 		                <thead class="bg-red">
 		                    <tr>
@@ -1500,10 +1519,72 @@ function displayTables(){
 		                    </tr>
 		                </tbody>
 		            </table>
+
+					<table class="table ">
+		                <thead class="bg-blue">
+		                    <tr>
+		                        <th>#</th>
+		                        <th>First Name</th>
+		                        <th>Last Name</th>
+		                        <th>Username</th>
+		                    </tr>
+		                </thead>
+		                <tbody>
+		                    <tr>
+		                        <th scope="row">1</th>
+		                        <td>Mark</td>
+		                        <td>Otto</td>
+		                        <td>@mdo</td>
+		                    </tr>
+		                </tbody>
+		            </table>
+
+					<table class="table ">
+		                <thead class="bg-gray">
+		                    <tr>
+		                        <th>#</th>
+		                        <th>First Name</th>
+		                        <th>Last Name</th>
+		                        <th>Username</th>
+		                    </tr>
+		                </thead>
+		                <tbody>
+		                    <tr>
+		                        <th scope="row">1</th>
+		                        <td>Mark</td>
+		                        <td>Otto</td>
+		                        <td>@mdo</td>
+		                    </tr>
+		                </tbody>
+		            </table>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-striped"</span><span class="nt">&gt;</span>
-  ...
+<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;thead&gt;</span>
+      ...
+   <span class="nt">&lt;/thead&gt;</span>
+   ... 
+<span class="nt">&lt;/table&gt;</span>
+
+<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;thead</span> <span class="na">class=</span><span class="s">"bd-red"</span><span class="nt">&gt;</span>
+      ...
+   <span class="nt">&lt;/thead&gt;</span>
+   ... 
+<span class="nt">&lt;/table&gt;</span>
+
+<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;thead</span> <span class="na">class=</span><span class="s">"bd-blue"</span><span class="nt">&gt;</span>
+      ...
+   <span class="nt">&lt;/thead&gt;</span>
+   ... 
+<span class="nt">&lt;/table&gt;</span>
+
+<span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;thead</span> <span class="na">class=</span><span class="s">"bd-gray"</span><span class="nt">&gt;</span>
+      ...
+   <span class="nt">&lt;/thead&gt;</span>
+   ... 
 <span class="nt">&lt;/table&gt;</span></code></pre></figure>
 </div>
 
@@ -1515,7 +1596,7 @@ function displayTables(){
 				);
         ?>
 		        <div class="dr-callout dr-callout-danger" id="callout-tables-striped-ie8">
-		            <h4>Cross-browser compatibility</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Cross-browser compatibility</h4>
 		            <p>Striped tables are styled via the <code>:nth-child</code> CSS selector, which is not available in Internet Explorer 8.</p>
 		        </div>
    				<div class="example">
@@ -1832,7 +1913,7 @@ function displayTables(){
 
 
 		        <div class="dr-callout dr-callout-warning" id="callout-tables-context-accessibility">
-		            <h4>Conveying meaning to assistive technologies</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Conveying meaning to assistive technologies</h4>
 		            <p>Using color to add meaning to a table row or individual cell only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text in the relevant table row/cell), or is included through alternative means, such as additional text hidden with the <code>.sr-only</code> class.</p>
 		        </div>
 
@@ -1845,11 +1926,11 @@ function displayTables(){
 	?>
 		        <p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
 		        <div class="dr-callout dr-callout-warning" id="callout-tables-responsive-overflow">
-		            <h4>Vertical clipping/truncation</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Vertical clipping/truncation</h4>
 		            <p>Responsive tables make use of <code>overflow-y: hidden</code>, which clips off any content that goes beyond the bottom or top edges of the table. In particular, this can clip off dropdown menus and other third-party widgets.</p>
 		        </div>
 		        <div class="dr-callout dr-callout-warning" id="callout-tables-responsive-ff-fieldset">
-		            <h4>Firefox and fieldsets</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Firefox and fieldsets</h4>
 		            <p>Firefox has some awkward fieldset styling involving <code>width</code> that interferes with the responsive table. This cannot be overriden without a Firefox-specific hack that we <strong>don't</strong> provide in Bootstrap:</p>
 		            
 <figure class="highlight"><label>HTML</label><pre><code class="language-css" data-lang="css"><span class="k">@-moz-document</span> <span class="n">url-prefix</span><span class="p">()</span> <span class="p">{</span>
@@ -2030,17 +2111,17 @@ function displayForms(){
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
 </div>
 		        <div class="dr-callout dr-callout-warning" id="callout-formgroup-inputgroup">
-		            <h4>Don't mix form groups with input groups</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Don't mix form groups with input groups</h4>
 		            <p>Do not mix form groups directly with <a href="/components/#input-groups">input groups</a>. Instead, nest the input group inside of the form group.</p>
 		        </div>
 		        <h2 id="forms-inline"><a class="anchorjs-link " href="#forms-inline" aria-label="Anchor link for: forms inline" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Inline form</h2>
 		        <p>Add <code>.form-inline</code> to your form (which doesn't have to be a <code>&lt;form&gt;</code>) for left-aligned and inline-block controls. <strong>This only applies to forms within viewports that are at least 768px wide.</strong></p>
 		        <div class="dr-callout dr-callout-danger" id="callout-inline-form-width">
-		            <h4>May require custom widths</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> May require custom widths</h4>
 		            <p>Inputs and selects have <code>width: 100%;</code> applied by default in Bootstrap. Within inline forms, we reset that to <code>width: auto;</code> so multiple controls can reside on the same line. Depending on your layout, additional custom widths may be required.</p>
 		        </div>
 		        <div class="dr-callout dr-callout-warning" id="callout-inline-form-labels">
-		            <h4>Always add labels</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Always add labels</h4>
 		            <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only</code> class. There are further alternative methods of providing a label for assistive technologies, such as the <code>aria-label</code>, <code>aria-labelledby</code> or <code>title</code> attribute. If none of these is present, screen readers may resort to using the <code>placeholder</code> attribute, if present, but note that use of <code>placeholder</code> as a replacement for other labelling methods is not advised.</p>
 		        </div>
    				<div class="example">
@@ -2204,7 +2285,7 @@ function displayForms(){
 		        <h3 id="inputs"><a class="anchorjs-link " href="#inputs" aria-label="Anchor link for: inputs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Inputs</h3>
 		        <p>Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
 		        <div class="dr-callout dr-callout-danger" id="callout-input-needs-type">
-		            <h4>Type declaration required</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Type declaration required</h4>
 		            <p>Inputs will only be fully styled if their <code>type</code> is properly declared.</p>
 		        </div>
    				<div class="example">
@@ -2216,7 +2297,7 @@ function displayForms(){
 <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Text input"</span><span class="nt">&gt;</span></code></pre></figure>
 </div>
 		        <div class="dr-callout dr-callout-info" id="callout-xref-input-group">
-		            <h4>Input groups</h4>
+		            <h4><i class="fa fa-info-circle"></i> Input groups</h4>
 		            <p>To add integrated text or buttons before and/or after any text-based <code>&lt;input&gt;</code>, <a href="../components/#input-groups">check out the input group component</a>.</p>
 		        </div>
 		        <h3 id="textarea"><a class="anchorjs-link " href="#textarea" aria-label="Anchor link for: textarea" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Textarea</h3>
@@ -2488,7 +2569,7 @@ function displayForms(){
 		                <input class="form-control" id="focusedInput" type="text" value="Demonstrative focus state"> </form>
 		        </div></div>
 		        <div class="dr-callout dr-callout-info" id="callout-focus-demo">
-		            <h4>Demo <code>:focus</code> state</h4>
+		            <h4><i class="fa fa-info-circle"></i> Demo <code>:focus</code> state</h4>
 		            <p>The above example input uses custom styles in our documentation to demonstrate the <code>:focus</code> state on a <code>.form-control</code>.</p>
 		        </div>
 		        <h2 id="forms-control-disabled"><a class="anchorjs-link " href="#forms-control-disabled" aria-label="Anchor link for: forms control disabled" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Disabled state</h2>
@@ -2504,11 +2585,11 @@ function displayForms(){
 		        <h3 id="forms-disabled-fieldsets"><a class="anchorjs-link " href="#forms-disabled-fieldsets" aria-label="Anchor link for: forms disabled fieldsets" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Disabled fieldsets</h3>
 		        <p>Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within the <code>&lt;fieldset&gt;</code> at once.</p>
 		        <div class="dr-callout dr-callout-warning" id="callout-fieldset-disabled-pointer-events">
-		            <h4>Caveat about link functionality of <code>&lt;a&gt;</code></h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Caveat about link functionality of <code>&lt;a&gt;</code></h4>
 		            <p>By default, browsers will treat all native form controls (<code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;button&gt;</code> elements) inside a <code>&lt;fieldset disabled&gt;</code> as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes <code>&lt;a ... class="btn btn-*"&gt;</code> elements, these will only be given a style of <code>pointer-events: none</code>. As noted in the section about <a href="#buttons-disabled">disabled state for buttons</a> (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11, and won't prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.</p>
 		        </div>
 		        <div class="dr-callout dr-callout-danger" id="callout-fieldset-disabled-ie">
-		            <h4>Cross-browser compatibility</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Cross-browser compatibility</h4>
 		            <p>While Bootstrap will apply these styles in all browsers, Internet Explorer 11 and below don't fully support the <code>disabled</code> attribute on a <code>&lt;fieldset&gt;</code>. Use custom JavaScript to disable the fieldset in these browsers.</p>
 		        </div>
    				<div class="example">
@@ -2580,7 +2661,7 @@ function displayForms(){
         ?>
 		        <p>Block level help text for form controls.</p>
 		        <div class="dr-callout dr-callout-info" id="callout-help-text-accessibility">
-		            <h4>Associating help text with form controls</h4>
+		            <h4><i class="fa fa-info-circle"></i> Associating help text with form controls</h4>
 		            <p>Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby</code> attribute. This will ensure that assistive technologies – such as screen readers – will announce this help text when the user focuses or enters the control.</p>
 		        </div>
    				<div class="example">
@@ -2606,7 +2687,7 @@ function displayForms(){
         ?>
 		    <p>Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add <code>.has-warning</code>, <code>.has-error</code>, or <code>.has-success</code> to the parent element. Any <code>.control-label</code>, <code>.form-control</code>, and <code>.help-block</code> within that element will receive the validation styles.</p>
 		    <div class="dr-callout dr-callout-warning" id="callout-form-validation-state-accessibility">
-		        <h4>Conveying validation state to assistive technologies and colorblind users</h4>
+		        <h4><i class="fa fa-exclamation-triangle"></i> Conveying validation state to assistive technologies and colorblind users</h4>
 		        <p>Using these validation styles to denote the state of a form control only provides a visual, color-based indication, which will not be conveyed to users of assistive technologies - such as screen readers - or to colorblind users.</p>
 		        <p>Ensure that an alternative indication of state is also provided. For instance, you can include a hint about state in the form control's <code>&lt;label&gt;</code> text itself (as is the case in the following code example), include a <a href="../components/#glyphicons">Glyphicon</a> (with appropriate alternative text using the <code>.sr-only</code> class - see the <a href="../components/#glyphicons-examples">Glyphicon examples</a>), or by providing an additional <a href="#forms-help-text">help text</a> block. Specifically for assistive technologies, invalid form controls can also be assigned an <code>aria-invalid="true"</code> attribute.</p>
 		    </div>
@@ -2685,11 +2766,11 @@ function displayForms(){
 		    <p>You can also add optional feedback icons with the addition of <code>.has-feedback</code> and the right icon.</p>
 		    <p><strong class="text-danger">Feedback icons only work with textual <code>&lt;input class="form-control"&gt;</code> elements.</strong></p>
 		    <div class="dr-callout dr-callout-warning" id="callout-has-feedback-icon-positioning">
-		        <h4>Icons, labels, and input groups</h4>
+		        <h4><i class="fa fa-exclamation-triangle"></i> Icons, labels, and input groups</h4>
 		        <p>Manual positioning of feedback icons is required for inputs without a label and for <a href="../components#input-groups">input groups</a> with an add-on on the right. You are strongly encouraged to provide labels for all inputs for accessibility reasons. If you wish to prevent labels from being displayed, hide them with the <code>.sr-only</code> class. If you must do without labels, adjust the <code>top</code> value of the feedback icon. For input groups, adjust the <code>right</code> value to an appropriate pixel value depending on the width of your addon.</p>
 		    </div>
 		    <div class="dr-callout dr-callout-warning" id="callout-has-feedback-icon-accessibility">
-		        <h4>Conveying the icon's meaning to assistive technologies</h4>
+		        <h4><i class="fa fa-exclamation-triangle"></i> Conveying the icon's meaning to assistive technologies</h4>
 		        <p>To ensure that assistive technologies – such as screen readers – correctly convey the meaning of an icon, additional hidden text should be included with the <code>.sr-only</code> class and explicitly associated with the form control it relates to using <code>aria-describedby</code>. Alternatively, ensure that the meaning (for instance, the fact that there is a warning for a particular text entry field) is conveyed in some other form, such as changing the text of the actual <code>&lt;label&gt;</code> associated with the form control.</p>
 		        <p>Although the following examples already mention the validation state of their respective form controls in the <code>&lt;label&gt;</code> text itself, the above technique (using <code>.sr-only</code> text and <code>aria-describedby</code>) has been included for illustrative purposes.</p>
 		    </div>
@@ -2986,11 +3067,11 @@ function displayHelperClasses(){
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-danger"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 </div>
 		        <div class="dr-callout dr-callout-info" id="callout-helper-context-color-specificity">
-		            <h4>Dealing with specificity</h4>
+		            <h4><i class="fa fa-info-circle"></i> Dealing with specificity</h4>
 		            <p>Sometimes emphasis classes cannot be applied due to the specificity of another selector. In most cases, a sufficient workaround is to wrap your text in a <code>&lt;span&gt;</code> with the class.</p>
 		        </div>
 		        <div class="dr-callout dr-callout-warning" id="callout-helper-context-color-accessibility">
-		            <h4>Conveying meaning to assistive technologies</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Conveying meaning to assistive technologies</h4>
 		            <p>Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the contextual colors are only used to reinforce meaning that is already present in the text/markup), or is included through alternative means, such as additional text hidden with the <code>.sr-only</code> class.</p>
 		        </div>
 		        <h3 id="helper-classes-backgrounds"><a class="anchorjs-link " href="#helper-classes-backgrounds" aria-label="Anchor link for: helper classes backgrounds" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Contextual backgrounds</h3>
@@ -3059,7 +3140,7 @@ function displayHelperClasses(){
 <span class="p">}</span></code></pre></figure>
 
 		        <div class="dr-callout dr-callout-warning" id="callout-helper-pull-navbar">
-		            <h4>Not for use in navbars</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Not for use in navbars</h4>
 		            <p>To align components in navbars with utility classes, use <code>.navbar-left</code> or <code>.navbar-right</code> instead. <a href="../components/#navbar-component-alignment">See the navbar docs</a> for details.</p>
 		        </div>
 		        <h3 id="helper-classes-center"><a class="anchorjs-link " href="#helper-classes-center" aria-label="Anchor link for: helper classes center" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Center content blocks</h3>
@@ -3180,7 +3261,7 @@ function displayImages(){
 		        <p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code>, <code>height: auto;</code> and <code>display: block;</code> to the image so that it scales nicely to the parent element.</p>
 		        <p>To center images which use the <code>.img-responsive</code> class, use <code>.center-block</code> instead of <code>.text-center</code>. <a href="../css/#helper-classes-center">See the helper classes section</a> for more details about <code>.center-block</code> usage.</p>
 		        <div class="dr-callout dr-callout-warning" id="callout-images-ie-svg">
-		            <h4>SVG images and IE 8-10</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> SVG images and IE 8-10</h4>
 		            <p>In Internet Explorer 8-10, SVG images with <code>.img-responsive</code> are disproportionately sized. To fix this, add <code>width: 100% \9;</code> where necessary. Bootstrap doesn't apply this automatically as it causes complications to other image formats.</p>
 		        </div>
 		        
@@ -3189,7 +3270,7 @@ function displayImages(){
 		        <h2 id="images-shapes"><a class="anchorjs-link " href="#images-shapes" aria-label="Anchor link for: images shapes" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Image shapes</h2>
 		        <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
 		        <div class="dr-callout dr-callout-danger" id="callout-images-ie-rounded-corners">
-		            <h4>Cross-browser compatibility</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Cross-browser compatibility</h4>
 		            <p>Keep in mind that Internet Explorer 8 lacks support for rounded corners.</p>
 		        </div>
 		        <div class="dr-example dr-example-images" data-example-id="image-shapes"> <img data-src="holder.js/140x140" class="img-rounded" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTM1MmJlYTNkMCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MzUyYmVhM2QwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="width: 140px; height: 140px;"> <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTM1MmJlZWIwYSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MzUyYmVlYjBhIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="width: 140px; height: 140px;"> <img data-src="holder.js/140x140" class="img-thumbnail" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTM1MmJlYzc0MyB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MzUyYmVjNzQzIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="width: 140px; height: 140px;"> </div>
@@ -3238,15 +3319,15 @@ function displayButtons(){
 </div>
 
 		        <div class="dr-callout dr-callout-warning" id="callout-buttons-context-usage">
-		            <h4>Context-specific usage</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Context-specific usage</h4>
 		            <p>While button classes can be used on <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements, only <code>&lt;button&gt;</code> elements are supported within our nav and navbar components.</p>
 		        </div>
 		        <div class="dr-callout dr-callout-warning" id="callout-buttons-anchor-accessibility">
-		            <h4>Links acting as buttons</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Links acting as buttons</h4>
 		            <p>If the <code>&lt;a&gt;</code> elements are used to act as buttons – triggering in-page functionality, rather than navigating to another document or section within the current page – they should also be given an appropriate <code>role="button"</code>.</p>
 		        </div>
 		        <div class="dr-callout dr-callout-warning" id="callout-buttons-ff-height">
-		            <h4>Cross-browser rendering</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Cross-browser rendering</h4>
 		            <p>As a best practice, <strong>we highly recommend using the <code>&lt;button&gt;</code> element whenever possible</strong> to ensure matching cross-browser rendering.</p>
 		            <p>Among other things, there's <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=697451">a bug in Firefox &lt;30</a> that prevents us from setting the <code>line-height</code> of <code>&lt;input&gt;</code>-based buttons, causing them to not exactly match the height of other buttons on Firefox.</p>
 		        </div>
@@ -3260,8 +3341,32 @@ function displayButtons(){
    				<div class="example">
 					<div class="top">
 						<label>Example</label>
-						<button type="button" class="btn btn-default">Default</button>
-		           		<button type="button" class="btn btn-primary">Primary</button>
+						<p>
+							<button type="button" class="btn btn-default">Default</button>
+		           			<button type="button" class="btn btn-primary">Primary</button>
+		           		</p>
+		           		<div class="row text-center">
+			           		<div class="col-md-3" >
+			           			<div class="bg-blue">
+			           				<button type="button" class="btn btn-opposite option margin-top margin-bottom">Opposite</button>
+			           			</div>
+			           		</div>
+			           		<div class="col-md-3" >
+			           			<div class="bg-darkGreen">
+			           				<button type="button" class="btn btn-opposite option margin-top margin-bottom">Opposite</button>
+			           			</div>
+			           		</div>
+			           		<div class="col-md-3" >
+			           			<div class="bg-yellow">
+			           				<button type="button" class="btn btn-opposite option margin-top margin-bottom">Opposite</button>
+			           			</div>
+			           		</div>
+			           		<div class="col-md-3" >
+			           			<div class="bg-gray">
+			           				<button type="button" class="btn btn-opposite option margin-top margin-bottom">Opposite</button>
+			           			</div>
+			           		</div>
+		           		</div>
 <!-- 		            <button type="button" class="btn btn-success">Success</button>
 		            <button type="button" class="btn btn-info">Info</button>
 		            <button type="button" class="btn btn-warning">Warning</button>
@@ -3275,6 +3380,21 @@ function displayButtons(){
 <span class="c">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
 
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-blue"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-opposite"</span><span class="nt">&gt;</span>Opposite<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-darkGreen"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-opposite"</span><span class="nt">&gt;</span>Opposite<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div&gt;</span> 
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-yellow"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-opposite"</span><span class="nt">&gt;</span>Opposite<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div&gt;</span> 
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-gray"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-opposite"</span><span class="nt">&gt;</span>Opposite<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div&gt;</span> 
 <!-- <span class="c">&lt;!-- Indicates a successful or positive action --&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
 
@@ -3292,7 +3412,7 @@ function displayButtons(){
 </div>
 
 		        <div class="dr-callout dr-callout-warning" id="callout-buttons-color-accessibility">
-		            <h4>Conveying meaning to assistive technologies</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Conveying meaning to assistive technologies</h4>
 		            <p>Using color to add meaning to a button only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text of the button), or is included through alternative means, such as additional text hidden with the <code>.sr-only</code> class.</p>
 		        </div>
 		        <h2 id="buttons-sizes"><a class="anchorjs-link " href="#buttons-sizes" aria-label="Anchor link for: buttons sizes" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Sizes</h2>
@@ -3393,12 +3513,12 @@ function displayButtons(){
 </div>
 
 		        <div class="dr-callout dr-callout-danger" id="callout-buttons-ie-disabled">
-		            <h4>Cross-browser compatibility</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Cross-browser compatibility</h4>
 		            <p>If you add the <code>disabled</code> attribute to a <code>&lt;button&gt;</code>, Internet Explorer 9 and below will render text gray with a nasty text-shadow that we cannot fix.</p>
 		        </div>
 
 		        <div class="dr-callout dr-callout-warning" id="callout-buttons-disabled-anchor">
-		            <h4>Link functionality caveat</h4>
+		            <h4><i class="fa fa-exclamation-triangle"></i> Link functionality caveat</h4>
 		            <p>This class uses <code>pointer-events: none</code> to try to disable the link functionality of <code>&lt;a&gt;</code>s, but that CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11. In addition, even in browsers that do support <code>pointer-events: none</code>, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, use custom JavaScript to disable such links.</p>
 		        </div>
 
@@ -3821,9 +3941,7 @@ $this->displayHeader(
 
 
 ?>
-
    <div class="section-body">
-
 
 		    <!--     <h2 id="alerts-examples"><a class="anchorjs-link " href="#alerts-examples" aria-label="Anchor link for: alerts examples" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Examples</h2>
 		        <p>Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual classes (e.g., <code>.alert-success</code>) for basic alert messages.</p>
@@ -3891,23 +4009,35 @@ $this->displayHeader(
 </div>
  -->
 
-
-	        <h2 id="alerts-callout"><a class="anchorjs-link " href="#alerts-callout" aria-label="Anchor link for: alerts callout" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Callout Alerts</h2>
+ 				<?php
+				$this->displaySubHeader(
+					'alerts-callout',
+					'Callout Alerts'
+				);
+		        ?>
 	        <p>Callout alerts are for this identifying important (and not so important) notes related to a given topic. Choose from success, info, warning, or danger.</p>
+	  	      <div class="dr-callout dr-callout-warning">
+		            <h4><i class="fa fa-exclamation-triangle"></i> Icons</h4>
+		            <p><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank" rel="nofollow">Font Awesome</a> is required if you want to include icons along with the alerts.</p>
+		        </div>
 
    				<div class="example">
 					<div class="top">
 						<label>Example</label>    	        
 						<div class="dr-callout dr-callout-info">
 			            	<h4><i class="fa fa-info-circle"></i> Info class</h4>
-			            	<p>Use the info class when there is any information that might be helpfull to a developer. For example, embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a> for more information.</p>
+			            	<p>Use the info class when there is any information that might be helpful to a developer. For example, embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a> for more information.</p>
+			        	</div>
+						<div class="dr-callout dr-callout-success">
+			            	<h4><i class="fa fa-check"></i> Success class</h4>
+			            	<p>Use the success class when there is any information that shows a success or a good way to do something.</p>
 			        	</div>
 				        <div class="dr-callout dr-callout-warning">
 				            <h4><i class="fa fa-exclamation-triangle"></i> Warning Class</h4>
 				            <p>Use the warning class when there are known (possible) issues with a component. For example, invoking <code>$(...).popover('show')</code> when the target element is <code>display: none;</code> will cause the popover to be incorrectly positioned for this hypothetical component.</p>
 				        </div>
 				        <div class="dr-callout dr-callout-danger">
-				            <h4><i class="fa fa-exclamation"></i> Danger Class</h4>
+				            <h4><i class="fa fa-exclamation-triangle"></i> Danger Class</h4>
 				            <p>Use the danger class when a component is in danger of failing if certain circumstances are not met. For example, a <code>&lt;a href="#home"&gt;home&lt;/a&gt;</code> must correspond to something in the DOM like <code>&lt;div id="home"&gt;&lt;/div&gt;</code> or this hypothetical component will fail.</p>
 				        </div>
 	        		</div>
@@ -3939,7 +4069,7 @@ function displayPanels(){
    <div class="section-body">
 
 	
-		        <h2 id="panels-basic"><a class="anchorjs-link " href="#panels-basic" aria-label="Anchor link for: panels basic" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Basic example</h2>
+<!-- 		        <h2 id="panels-basic"><a class="anchorjs-link " href="#panels-basic" aria-label="Anchor link for: panels basic" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Basic example</h2>
 		        <p>By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
    				<div class="example">
 					<div class="top">
@@ -3953,8 +4083,13 @@ function displayPanels(){
     Basic panel example
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
-</div>
-		        <h2 id="panels-heading"><a class="anchorjs-link " href="#panels-heading" aria-label="Anchor link for: panels heading" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Panel with heading</h2>
+</div> -->
+ 				<?php
+				$this->displaySubHeader(
+					'panels-heading',
+					'Panel with heading'
+				);
+		        ?>
 		        <p>Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> with a <code>.panel-title</code> class to add a pre-styled heading. However, the font sizes of <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> are overridden by <code>.panel-heading</code>.</p>
 		        <p>For proper link coloring, be sure to place links in headings within <code>.panel-title</code>.</p>
    				<div class="example">
@@ -4017,26 +4152,6 @@ function displayPanels(){
 		                    <h3 class="panel-title">Panel title</h3> </div>
 		                <div class="panel-body"> Panel content </div>
 		            </div>
-		            <div class="panel panel-success">
-		                <div class="panel-heading">
-		                    <h3 class="panel-title"><i class="fa fa-check"></i> Panel title</h3> </div>
-		                <div class="panel-body"> Panel content </div>
-		            </div>
-		            <div class="panel panel-info">
-		                <div class="panel-heading">
-		                    <h3 class="panel-title"><i class="fa fa-info-circle"></i> Panel title</h3> </div>
-		                <div class="panel-body"> Panel content </div>
-		            </div>
-		            <div class="panel panel-warning">
-		                <div class="panel-heading">
-		                    <h3 class="panel-title"><i class="fa fa-exclamation-triangle"></i> Panel title</h3> </div>
-		                <div class="panel-body"> Panel content </div>
-		            </div>
-		            <div class="panel panel-danger">
-		                <div class="panel-heading">
-		                    <h3 class="panel-title"><i class="fa fa-exclamation"></i> Panel title</h3> </div>
-		                <div class="panel-body"> Panel content </div>
-		            </div>
 		            <div class="panel panel-default">
 		                <div class="panel-heading">
 		                    <h3 class="panel-title">Panel title</h3> </div>
@@ -4045,10 +4160,6 @@ function displayPanels(){
 		        </div>
 		        
         <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-primary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-success"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-info"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-warning"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-danger"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
@@ -4216,7 +4327,14 @@ function displayTabs(){
 	);
 
 	?>
+
+
 <div class="section-body">
+
+    <div class="dr-callout dr-callout-danger" id="callout-buttons-disabled-anchor">
+        <h4><i class="fa fa-exclamation-triangle"></i> Bootstrap.js Required</h4>
+        <p>Bootstrap's jQuery File is required when using tabs.</p>
+    </div>
 
    				<div class="example">
 					<div class="top">
@@ -4516,7 +4634,7 @@ function displayColors(){
 	</div>
 
 	<div class="dr-callout dr-callout-warning" id="callout-type-dl-truncate">
-        <h4>No Funny Business</h4>
+        <h4><i class="fa fa-exclamation-triangle"></i> No Funny Business</h4>
         <p>When possible, do not use color backgrounds with color text. For instance, stay away from these examples:</p>
 		<div class="background-colors">
 	        <div class="bg-blue">

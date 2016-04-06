@@ -50,6 +50,7 @@
 	    <li><a href="#tables">Tables</a>
 	        <ul class="nav">
 	            <li><a href="#tables-example">Basic example</a></li>
+	            <li><a href="#tables-header-color">Header Color Options</a></li>
 	            <li><a href="#tables-striped">Striped rows</a></li>
 	            <li><a href="#tables-bordered">Bordered table</a></li>
 	            <li><a href="#tables-hover-rows">Hover rows</a></li>
@@ -82,7 +83,7 @@
 	            <li><a href="#buttons-disabled">Disabled state</a></li>
 	        </ul>
 	    </li>
-	    <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+	    <!-- <li><a href="#breadcrumbs">Breadcrumbs</a></li> -->
 	    <li><a href="#pagination">Pagination</a>
 	        <ul class="nav">
 	            <li><a href="#pagination-default">Default pagination</a></li>
