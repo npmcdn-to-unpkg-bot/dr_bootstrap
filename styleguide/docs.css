@@ -136,18 +136,19 @@ footer {
     margin: 0 10px;
     color: #c1c1c1; }
 
-#dr-docs-colors [class^="bg-"] {
+.color-options [class^="bg-"] {
   height: 50px;
   margin: 5px 0 20px 0;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1); }
-  #dr-docs-colors [class^="bg-"] .color {
+  .color-options [class^="bg-"] .color {
     line-height: 50px;
     font-size: 21px;
-    opacity: 0.3;
-    color: #fff;
     letter-spacing: 0.5px;
     text-shadow: 0 0 0 #000; }
+
+.background-colors [class^="bg-"] {
+  padding: 20px; }
 
 .tab-content .dr-example {
   border-radius: 0;

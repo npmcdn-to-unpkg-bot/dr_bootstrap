@@ -42,6 +42,7 @@ a.btn, button, input[type="button"]{
   white-space: nowrap;
   padding: 8px 0.9em 4px;
   font-size: 14px;
+  line-height:1.5;
   @include user-select(none);
 
   &.option{
