@@ -29,7 +29,7 @@
 	            <li><a href="#code-inline">Inline</a></li>
 	            <li><a href="#code-user-input">User input</a></li>
 	            <li><a href="#code-block">Basic block</a></li>
-	            <li><a href="#code-variables">Variables</a></li>
+	            <!-- <li><a href="#code-variables">Variables</a></li> -->
 	            <li><a href="#code-sample-output">Sample output</a></li>
 	        </ul>
 	    </li>
@@ -92,12 +92,12 @@
 	    </li>
 	    <li><a href="#panels">Panels</a>
 	        <ul class="nav">
-	            <li><a href="#panels-basic">Basic example</a></li>
+	            <!-- <li><a href="#panels-basic">Basic example</a></li> -->
 	            <li><a href="#panels-heading">Panel with heading</a></li>
 	            <li><a href="#panels-footer">Panel with footer</a></li>
 	            <li><a href="#panels-alternatives">Contextual alternatives</a></li>
-	            <li><a href="#panels-tables">With tables</a> </li>
-	            <li><a href="#panels-list-group">With list groups</a> </li>
+	            <!-- <li><a href="#panels-tables">With tables</a></li>
+	            <li><a href="#panels-list-group">With list groups</a></li> -->
 	        </ul>
 	    </li>
 	    <li><a href="#tabs">Tabs</a></li>

@@ -81,6 +81,16 @@
   border-left-width:5px;
   border-radius:3px;
   
+  &.icon h4:before {
+    display:inline-block;
+    margin-right:5px;
+    font:normal normal normal 14px/1 FontAwesome;
+    font-size:inherit;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+
   h4 {
     margin-top:0;
     margin-bottom:5px;
@@ -101,6 +111,10 @@
   
 .dr-callout-success {
   border-left-color:$green;
+
+  &.icon h4:before {
+    content: "\f00c";
+  }
   
   h4 {
     color:$darkGreen;
@@ -109,6 +123,10 @@
 
 .dr-callout-danger {
   border-left-color:$red;
+
+  &.icon h4:before {
+    content:"\f071";
+  }
   
   h4 {
     color:$darkRed;
@@ -117,6 +135,10 @@
 
 .dr-callout-warning {
   border-left-color:$webYellow;
+
+  &.icon h4:before {
+    content:"\f071";
+  }
   
   h4 {
     color:$webYellow;
@@ -125,6 +147,11 @@
 
 .dr-callout-info {
     border-left-color:$blue;
+
+    &.icon h4:before {
+      content:"\f05a";
+    }
+
     h4 {
       color:$darkBlue;
     }

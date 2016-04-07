@@ -5384,6 +5384,14 @@ a.thumbnail.active {
   border: 1px solid #e6e6e6;
   border-left-width: 5px;
   border-radius: 3px; }
+  .dr-callout.icon h4:before {
+    display: inline-block;
+    margin-right: 5px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
   .dr-callout h4 {
     margin-top: 0;
     margin-bottom: 5px; }
@@ -5396,21 +5404,29 @@ a.thumbnail.active {
 
 .dr-callout-success {
   border-left-color: #a8c628; }
+  .dr-callout-success.icon h4:before {
+    content: "\f00c"; }
   .dr-callout-success h4 {
     color: #81b315; }
 
 .dr-callout-danger {
   border-left-color: #ea0f43; }
+  .dr-callout-danger.icon h4:before {
+    content: "\f071"; }
   .dr-callout-danger h4 {
     color: #bd0a33; }
 
 .dr-callout-warning {
   border-left-color: #be9500; }
+  .dr-callout-warning.icon h4:before {
+    content: "\f071"; }
   .dr-callout-warning h4 {
     color: #be9500; }
 
 .dr-callout-info {
   border-left-color: #00a7e1; }
+  .dr-callout-info.icon h4:before {
+    content: "\f05a"; }
   .dr-callout-info h4 {
     color: #007eb5; }
 
@@ -6852,7 +6868,7 @@ ul, li {
   list-style: none; }
 
 ol li {
-  list-style: num; }
+  list-style: decimal; }
 
 ol {
   padding-left: 1.2em; }
