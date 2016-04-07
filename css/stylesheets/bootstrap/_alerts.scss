@@ -99,6 +99,14 @@
   }
 }
   
+.dr-callout-success {
+  border-left-color:$green;
+  
+  h4 {
+    color:$darkGreen;
+  }
+}
+
 .dr-callout-danger {
   border-left-color:$red;
   

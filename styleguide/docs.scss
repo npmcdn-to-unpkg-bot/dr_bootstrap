@@ -189,7 +189,7 @@ footer {
 
 
 
-#dr-docs-colors {
+.color-options{
     [class^="bg-"] {
         height:50px;
         margin:5px 0 20px 0;
@@ -198,8 +198,6 @@ footer {
         .color {
             line-height:50px;
             font-size:21px;
-            opacity:0.3;
-            color:#fff;
             letter-spacing:0.5px;
             // text-shadow:-1px -1px 0 $gray60,
             //              -1px 1px 0 $gray60,
@@ -209,6 +207,12 @@ footer {
             text-shadow:0 0 0 #000;
                         
         }
+    }
+}
+
+.background-colors{
+    [class^="bg-"] {
+        padding:20px;    
     }
 }
 
