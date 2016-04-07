@@ -85,4 +85,5 @@ class ResourcesInit implements Initialize
 	    }
 	    return $template_path;
 	}
+
 }
