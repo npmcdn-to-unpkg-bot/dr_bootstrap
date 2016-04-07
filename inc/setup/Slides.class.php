@@ -4,7 +4,9 @@ class SlidesPostType{
 
 	public static $slideTypes = array(
 		"general" => "General",
-		"masterheader" => "Masterheader"
+		"masterheader" => "Masterheader",
+		"clients" => "Clients",
+		"interactive-grid" => "Interactive Grid"
 	);
 
 	public static $post_type_name = 'slides';
@@ -100,30 +102,6 @@ class SlidesPostType{
 		wp_nonce_field( 'save_slide_type_value', 'save_slide_type_meta_box_nonce' );
 
 		$selectedPostMeta = get_post_meta( $post->ID, '_slide_type_value', true );
-
-
-		$args = array(
-			'posts_per_page'   => -1,
-			'post_type'        => 'clients',
-			'post_status'      => 'publish',
-		);
-		$clients = get_posts( $args );
-
-		echo "<pre>";
-		print_r($clients);
-		echo "</pre>";
-
-		$clients = array_map(
-			function($client){
-				return array($client->ID => $client->post_title);
-			},
-			$clients
-		);
-
-		echo "<pre>";
-		print_r($clients);
-		echo "</pre>";
-
 
 		foreach (self::$slideTypes as $slideId => $slideType) :
 			echo "<input ";
