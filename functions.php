@@ -67,6 +67,7 @@ require_once 'inc/setup/Initialize/Initialize.class.php';
 require_once 'inc/setup/Initialize/GeneralInitialize.class.php';
 require_once 'inc/setup/Initialize/MasterheaderInitialize.class.php';
 require_once 'inc/setup/Initialize/ClientsInitialize.class.php';
+require_once 'inc/setup/Initialize/ResourcesInitialize.class.php';
 require_once 'inc/setup/Slides.class.php';
 require_once 'inc/setup/Bricks/Brick.class.php';
 require_once 'inc/setup/Bricks/General.class.php';
@@ -75,19 +76,31 @@ require_once 'inc/setup/Bricks/Masterheader.class.php';
 $GeneralInitialize = new GeneralInit();
 $MasterheadInitialize = new MasterheaderInit();
 $ClientsInitialize = new ClientsInit();
+$ResourcesInitialize = new ResourcesInit();
 $slides = new SlidesPostType();
 
 
 
 add_filter('acf/settings/save_json', 'my_acf_json_save_point');
 
-function my_acf_json_save_point( $path ) {
-
+function my_acf_json_save_point( $path )
+{
     $path = get_stylesheet_directory() . '/json_test';
     
     return $path;
-        
 }
+
+add_filter('acf/settings/load_json', 'my_acf_json_load_point');
+
+function my_acf_json_load_point( $paths )
+{
+    unset($paths[0]);
+
+    $paths[] = get_stylesheet_directory() . '/json_test';
+    
+    return $paths;
+}
+
 
 
 /**

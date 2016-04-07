@@ -25,7 +25,7 @@
                     "key": "field_570426a1236d1",
                     "label": "Client",
                     "name": "client",
-                    "type": "select",
+                    "type": "post_object",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -34,15 +34,14 @@
                         "class": "",
                         "id": ""
                     },
-                    "choices": [],
-                    "default_value": [],
+                    "post_type": [
+                        "clients"
+                    ],
+                    "taxonomy": [],
                     "allow_null": 0,
                     "multiple": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "placeholder": "",
-                    "disabled": 0,
-                    "readonly": 0
+                    "return_format": "object",
+                    "ui": 1
                 }
             ]
         }
@@ -53,6 +52,11 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "slides"
+            },
+            {
+                "param": "slide",
+                "operator": "==",
+                "value": "clients"
             }
         ]
     ],
@@ -64,5 +68,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1459890305
+    "modified": 1460036167
 }

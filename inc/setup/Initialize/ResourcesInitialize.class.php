@@ -4,15 +4,18 @@
  *	Class for initializing the set up for dr.com
  *
  */
-class ClientsInit implements Initialize
+class ResourcesInit implements Initialize
 {
-	public static $post_type_name = 'clients';
-	public static $post_type_singular = 'Client';
-	public static $post_type_plural = 'Clients';
+	public static $post_type_name = 'marketing_material';
+	public static $post_type_singular = 'Resource';
+	public static $post_type_plural = 'Resource';
 
 	function __construct()
 	{
     	add_action( 'init', array( &$this, 'register_post_type' ) );
+		add_action('admin_head', array(&$this, 'remove_unused_meta_boxes'), 99);
+
+		// add_filter('template_include', array(&$this, 'get_marketing_material_template'));
 	}
 
 	public function register_post_type()
@@ -61,4 +64,25 @@ class ClientsInit implements Initialize
 		register_post_type( self::$post_type_name, $args );
     }
 
+
+	function remove_unused_meta_boxes()
+	{
+		remove_meta_box('wpseo_meta', self::$post_type_name, 'normal');
+		remove_meta_box('icl_div_config', self::$post_type_name, 'normal');
+	}
+
+
+	function get_marketing_material_template( $template_path )
+	{
+	    if ( get_post_type() == self::$post_type_name ) {
+	        if ( is_single() ) {
+	            if ( $theme_file = locate_template( array ( 'single-marketing_material.php' ) ) ) {
+	                $template_path = $theme_file;
+	            } else {
+	                $template_path = plugin_dir_path( __FILE__ ) . '/single-marketing_material.php';
+	            }
+	        }
+	    }
+	    return $template_path;
+	}
 }
