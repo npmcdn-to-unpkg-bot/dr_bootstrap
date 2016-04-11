@@ -7,11 +7,11 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>Digital River Online Style Guide</title>
 <link rel="shortcut icon" href="../../favicon.png">
-<link rel='stylesheet' id='fonts-css' href='../../fonts/font.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='fonts-css'  href='/wp-content/themes/digital-river-translated/css/fonts/fonts.css?ver=1' type='text/css' media='all' />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./bs-docs.min.css">
-<link rel='stylesheet' id='bootstrap-css-css' href='../docs.css' type='text/css' media='all' />
-<link rel='stylesheet' id='dr-docs-css' href='../../css/stylesheets/_bootstrap.css?ver=3.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css-css' href='./docs.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dr-docs-css' href='./_bootstrap.css?ver=3.0.1' type='text/css' media='all' />
 <style>
 #logo svg { fill: #FFF; }
 </style>
@@ -66,7 +66,7 @@ include("./classes/MethodController.class.php");
 </div>
 
 			
-<?php include("./footer.php"); ?>
+<?php //include("./footer.php"); ?>
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
 <script src="./docs.js"></script>

@@ -756,54 +756,6 @@ function displayTypography(){
 
    <div class="section-body">
 
-
-<?php
-			$this->displaySubHeader(
-				'type-font-family',
-				'Font Family',
-				array('Digital River\'s offical web fonts are DIN Engschrift, DIN Medium, DIN Light, Arial.')
-				);
-        ?>
-
-		<div class="dr-callout dr-callout-warning icon">
-		    <h4>Heading Font Family</h4>
-		    <p>DIN Engschrift, DIN Medium, DIN Light should only be used in headings.</p>
-		</div>
-
-		<div class="dr-callout dr-callout-warning icon">
-		    <h4>Body Font Family</h4>
-		    <p>Arial should only be used in paragraphs. </p>
-		</div>
-
-<div class="example">
-	<div class="top">
-		<label>Example</label>
-		<table class="table">
-            <tbody>
-                <tr>
-					<td><h1 class="eng">DIN Engschrift Heading</h1></td>
-				</tr>
-                <tr>
-					<td><h1 class="med">DIN Medium Heading</h1></td>
-				</tr>
-                <tr>	
-					<td><h1 class="light">DIN Light Heading</h1></td>
-				</tr>
-                <tr>
-					<td><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac nunc nec turpis suscipit cursus eget quis nibh. Aenean id nibh odio. Aliquam erat volutpat. In maximus tincidunt urna sit amet tincidunt. Aliquam nec mauris rhoncus, iaculis erat sed, blandit turpis. Sed sed diam accumsan, bibendum ex in, mattis nulla. Sed blandit pharetra dolor, a tempor felis suscipit aliquam. Praesent placerat efficitur dolor, ornare mattis tortor pellentesque non.</p></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"eng"</span><span class="nt">&gt;</span></span>DIN Engschrift Heading<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"med"</span><span class="nt">&gt;</span></span>DIN Medium Heading<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span></span>DIN Light Heading<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
-	</code></pre></figure>
-
-</div>
-		
-
 <?php
 			$this->displaySubHeader(
 				'type-headings',
@@ -817,7 +769,7 @@ function displayTypography(){
 		    <p>To ensure visual hierarchy, use <code>.h1</code> through <code>.h6</code> classes to adjust the size of headings when needed.</p>
 		</div>
 
-
+<h3>Heading Tags</h3>
 <div class="example">
 			<div class="top">
 				<label>Example</label>
@@ -871,8 +823,37 @@ function displayTypography(){
 </code></pre></figure>
 		</div>
 
-		        <p>Create lighter, secondary text in any heading with a generic <code>&lt;small&gt;</code> tag or the <code>.small</code> class.</p>
-		    
+<h3>Heading Font Family</h3>
+<p>DIN Engschrift, DIN Medium, DIN Light should only be used in headings.</p>
+
+<div class="example">
+	<div class="top">
+		<label>Example</label>
+		<table class="table">
+            <tbody>
+                <tr>
+					<td><h1 class="eng">DIN Engschrift Heading</h1></td>
+				</tr>
+                <tr>
+					<td><h1 class="med">DIN Medium Heading</h1></td>
+				</tr>
+                <tr>	
+					<td><h1 class="light">DIN Light Heading</h1></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"eng"</span><span class="nt">&gt;</span></span>DIN Engschrift Heading<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"med"</span><span class="nt">&gt;</span></span>DIN Medium Heading<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span></span>DIN Light Heading<span class="nt">&lt;/h1&gt;</span>
+	</code></pre></figure>
+
+</div>
+
+
+<h3>Secondary Text in Headings</h3>
+<p>Create lighter, secondary text in any heading with a generic <code>&lt;small&gt;</code> tag or the <code>.small</code> class.</p>
+	    
 <div class="example">
 			<div class="top">
 				<label>Example</label>
@@ -886,31 +867,11 @@ function displayTypography(){
 		                        <td>
 		                            <h2>h2 Heading <small>Secondary text</small></h2></td>
 		                    </tr>
-		                    <tr>
-		                        <td>
-		                            <h3>h3 Heading <small>Secondary text</small></h3></td>
-		                    </tr>
-		                    <tr>
-		                        <td>
-		                            <h4>h4 Heading <small>Secondary text</small></h4></td>
-		                    </tr>
-		                    <tr>
-		                        <td>
-		                            <h5>h5 Heading <small>Secondary text</small></h5></td>
-		                    </tr>
-		                    <tr>
-		                        <td>
-		                            <h6>h6 Heading <small>Secondary text</small></h6></td>
-		                    </tr>
 		                </tbody>
 		            </table>
 			</div>
 			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
 <span class="nt">&lt;h2&gt;</span>h2 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;</span>h3 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;</span>h4 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;</span>h5 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;</span>h6 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h6&gt;</span>
 </code></pre></figure>
 		</div>
 
@@ -923,6 +884,11 @@ function displayTypography(){
 				array()
 				);
         ?>
+
+		<div class="dr-callout dr-callout-info icon">
+		    <h4>Body Font Family</h4>
+		    <p>Arial should only be used in paragraphs.</p>
+		</div>
 			<div class="dr-callout dr-callout-info icon">
             	<h4>For Your Information</h4>
         		<p>Bootstrap's global default <code>font-size</code> is <strong>14px</strong>, with a <code>line-height</code> of <strong>1.428</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>
@@ -1118,10 +1084,10 @@ function displayTypography(){
 					<div class="top">
 						<label>Example</label>
 						<address>
-						  <strong>Twitter, Inc.</strong><br>
-						  1355 Market Street, Suite 900<br>
-						  San Francisco, CA 94103<br>
-						  <abbr title="Phone">P:</abbr> (123) 456-7890
+						  <strong>Digital River</strong><br>
+						  10380 Bren Rd W.<br>
+						  Minnetonka, MN 55343<br>
+						  <abbr title="Phone">P:</abbr> (952) 253-1234
 						</address>
 
 						<address>
@@ -1130,10 +1096,10 @@ function displayTypography(){
 						</address>	
 					</div>        
 <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;address&gt;</span>
-  <span class="nt">&lt;strong&gt;</span>Twitter, Inc.<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
-  1355 Market Street, Suite 900<span class="nt">&lt;br&gt;</span>
-  San Francisco, CA 94103<span class="nt">&lt;br&gt;</span>
-  <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Phone"</span><span class="nt">&gt;</span>P:<span class="nt">&lt;/abbr&gt;</span> (123) 456-7890
+  <span class="nt">&lt;strong&gt;</span>Digital River<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
+  10380 Bren Rd W.<span class="nt">&lt;br&gt;</span>
+  Minnetonka, MN 55343<span class="nt">&lt;br&gt;</span>
+  <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Phone"</span><span class="nt">&gt;</span>P:<span class="nt">&lt;/abbr&gt;</span> (952) 253-1234
 <span class="nt">&lt;/address&gt;</span>
 
 <span class="nt">&lt;address&gt;</span>
@@ -3341,7 +3307,7 @@ function displayButtons(){
    				<div class="example">
 					<div class="top">
 						<label>Example</label>	
-		        	<a class="btn btn-default" href="#" role="button">Link</a>
+		        	<a class="btn btn-default" href="#buttons-tags" role="button">Link</a>
 		            <button class="btn btn-default" type="submit">Button</button>
 		            <input class="btn btn-default" type="button" value="Input">
 		            <input class="btn btn-default" type="submit" value="Submit">
@@ -3373,6 +3339,8 @@ function displayButtons(){
 					);
 		        ?>
 		        <p>Use any of the available button classes to quickly create a styled button.</p>
+
+		        <h3>Primary Buttons</h3>
    				<div class="example">
 					<div class="top">
 						<label>Example</label>
@@ -3380,6 +3348,27 @@ function displayButtons(){
 							<button type="button" class="btn btn-default">Default</button>
 		           			<button type="button" class="btn btn-primary">Primary</button>
 		           		</p>
+
+<!-- 		            <button type="button" class="btn btn-success">Success</button>
+		            <button type="button" class="btn btn-info">Info</button>
+		            <button type="button" class="btn btn-warning">Warning</button>
+		            <button type="button" class="btn btn-danger">Danger</button>
+		            <button type="button" class="btn btn-link">Link</button> -->
+		        </div>
+		        
+<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Standard button --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+
+<span class="c">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+</code></pre></figure>
+</div>
+
+		        <h3>Secondary Buttons</h3>
+
+   				<div class="example">
+					<div class="top">
+						<label>Example</label>
 		           		<div class="row text-center">
 			           		<div class="col-md-3" >
 			           			<div class="bg-blue">
@@ -3402,6 +3391,7 @@ function displayButtons(){
 			           			</div>
 			           		</div>
 		           		</div>
+
 <!-- 		            <button type="button" class="btn btn-success">Success</button>
 		            <button type="button" class="btn btn-info">Info</button>
 		            <button type="button" class="btn btn-warning">Warning</button>
@@ -3409,13 +3399,7 @@ function displayButtons(){
 		            <button type="button" class="btn btn-link">Link</button> -->
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Standard button --&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
-
-<span class="c">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-blue"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-blue"</span><span class="nt">&gt;</span>
    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-opposite"</span><span class="nt">&gt;</span>Opposite<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;div&gt;</span>
 
@@ -3445,6 +3429,9 @@ function displayButtons(){
 <span class="c">&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span> --></code></pre></figure>
 </div>
+
+
+
 
 		        <div class="dr-callout dr-callout-warning icon" id="callout-buttons-color-accessibility">
 		            <h4>Conveying meaning to assistive technologies</h4>
@@ -4094,12 +4081,7 @@ $this->displayHeader(
 </div>
 
 			<h3>Optional Icons</h3>
-			<p>Visualize you callout alerts with icons by adding the <code>.icon</code> class to your callout alert.</p>
-
-			<div class="dr-callout dr-callout-warning icon">
-	            <h4>Icons</h4>
-	            <p><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank" rel="nofollow">Font Awesome</a> is required if you want to include icons along with the alerts.</p>
-	        </div>
+			<p>Visualize you callout alerts with icons by adding the <code>.icon</code> class to your callout alert. <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank" rel="nofollow">Font Awesome</a> is required if you want to include icons along with the alerts.</p>
    				<div class="example">
 					<div class="top">
 						<label>Example</label>    	        
@@ -4614,11 +4596,11 @@ function displayColors(){
 	    </div>
 	    <?php
 				$this->displaySubHeader(
-					'colors-helper',
-					'Helper Colors'
+					'colors-neutral',
+					'Neutral Colors'
 					);
 	        ?>
-		<p>Below are helper colors that are not specific to the brand, but are commonly used in custom applications. Though there are no specific limitations on where these fills may be used, it's important to take into account the context and previous usages when using these fills as part of your design.</p>
+		<p>Below are neutral helper colors that are not specific to the brand, but are commonly used in custom applications. Though there are no specific limitations on where these fills may be used, it's important to take into account the context and previous usages when using these fills as part of your design.</p>
 	    <div class="row">
 	    	<div class="col-xs-6 col-md-4">
 	    		<span>Black</span>
@@ -4742,21 +4724,105 @@ function displayColors(){
 		</div>
 	</div>
 
-	<div class="dr-callout dr-callout-warning icon" id="callout-type-dl-truncate">
-        <h4>No Funny Business</h4>
-        <p>When possible, do not use color backgrounds with color text. For instance, stay away from these examples:</p>
-		<div class="background-colors">
-	        <div class="bg-blue">
-	        	<h1 class="txt-orange">Don't do this.</h1>
-	        </div>
-	        <div class="bg-red">
-	        	<h1 class="txt-green">Don't do this.</h1>
-	        </div>
-	        <div class="bg-darkGreen">
-	        	<h1 class="txt-blue">Don't do this.</h1>
-	        </div>
-        </div>
-    </div>
+<!-- 
+	<div class="color-combo-wrap">
+		<h3>Color Combinations</h3>
+		<p>When using color text with color backgrounds, ensure that there is a high enough contrast between the two colors. To test color combination contrast, use the tool below.</p>  
+	</div>
+	<div class="color-combo-select">
+
+		<div class="row">
+
+			<div class="col-md-4">
+				<select id="color-text">
+					<option value="FFFFFF">White</option>
+					<option value="000000">Black</option>
+					<optgroup label="Blue">
+						<option value="25d4ff">Light Blue</option>
+						<option value="00a7e1">Blue</option>
+						<option value="007eb5">Dark Blue</option>
+					</optgroup>
+					<optgroup label="Green">
+						<option value="b2d23c">Light Green</option>
+						<option value="a8c628">Green</option>
+						<option value="81b315">Dark Green</option>
+					</optgroup>
+					<optgroup label="Gray">
+						<option value="f0f0f0">Light Gray</option>
+						<option value="555555">Gray</option>
+						<option value="343434">Dark Gray</option>
+					</optgroup>
+					<optgroup label="Orange">
+						<option value="f07822">Light Orange</option>
+						<option value="ff5b00">Orange</option>
+						<option value="e24024">Dark Orange</option>
+					</optgroup>
+					<optgroup label="Red">
+						<option value="ff245e">Light Red</option>
+						<option value="ea0f43">Red</option>
+						<option value="bd0a33">Dark Red</option>
+					</optgroup>
+					<optgroup label="Purple">
+						<option value="933d91">Light Purple</option>
+						<option value="6f29d3">Purple</option>
+						<option value="6810ba">Dark Purple</option>
+					</optgroup>
+					<optgroup label="Yellow">
+						<option value="fff021">Light Yellow</option>
+						<option value="f9d316">Yellow</option>
+						<option value="f1bd00">Dark Yellow</option>
+					</optgroup>
+				</select>
+			</div>
+			<div class="col-md-4">
+
+				<select id="color-background">
+					<option value="FFFFFF">White</option>
+					<option value="000000">Black</option>
+					<optgroup label="Blue">
+						<option value="25d4ff">Light Blue</option>
+						<option value="00a7e1">Blue</option>
+						<option value="007eb5">Dark Blue</option>
+					</optgroup>
+					<optgroup label="Green">
+						<option value="b2d23c">Light Green</option>
+						<option value="a8c628">Green</option>
+						<option value="81b315">Dark Green</option>
+					</optgroup>
+					<optgroup label="Gray">
+						<option value="f0f0f0">Light Gray</option>
+						<option value="555555">Gray</option>
+						<option value="343434">Dark Gray</option>
+					</optgroup>
+					<optgroup label="Orange">
+						<option value="f07822">Light Orange</option>
+						<option value="ff5b00">Orange</option>
+						<option value="e24024">Dark Orange</option>
+					</optgroup>
+					<optgroup label="Red">
+						<option value="ff245e">Light Red</option>
+						<option value="ea0f43">Red</option>
+						<option value="bd0a33">Dark Red</option>
+					</optgroup>
+					<optgroup label="Purple">
+						<option value="933d91">Light Purple</option>
+						<option value="6f29d3">Purple</option>
+						<option value="6810ba">Dark Purple</option>
+					</optgroup>
+					<optgroup label="Yellow">
+						<option value="fff021">Light Yellow</option>
+						<option value="f9d316">Yellow</option>
+						<option value="f1bd00">Dark Yellow</option>
+					</optgroup>
+				</select>
+			</div>
+			<div class="col-md-4">
+				<a target="_blank" id="combo-link" class="btn btn-default" href="http://jxnblk.com/colorable/demos/text/?background=%23FFFFFF&foreground=%23000000">Check Color Combination</a>
+			</div>
+		</div>
+
+	</div> -->
+
 </div>
 
 

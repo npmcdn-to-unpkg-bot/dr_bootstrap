@@ -35,9 +35,9 @@ class ExampleController{
 			            <li><a href="#">GET shoppers/me/account</a></li>
 			        </ul>
 			    </li>
-			    <li class="active"><a href="#">Addresses Resource</a>
+			    <li class="active"><a href="example.php">Addresses Resource</a>
 			        <ul class="nav">
-			            <li class="<?php echo ($method == true)?" active ":false; ?>"><a href="#">DELETE shoppers/me/addresses/{id}</a></li>
+			            <li class="<?php echo ($method == true)?" active ":false; ?>"><a href="method.php">DELETE shoppers/me/addresses/{id}</a></li>
 			            <li><a href="#">GET shoppers/me/addresses</a></li>
 			            <li><a href="#">GET shoppers/me/addresses/{id}</a></li>
 			            <li><a href="#">POST shoppers/me/addresses</a></li>
@@ -104,7 +104,7 @@ class ExampleController{
 
 		<h1 id="address">Addresses Resource</h1>
 		<p>The Addresses resource provides access to addresses configured for a shopper.</p>
-		<div class="dr-callout dr-callout-info">
+		<div class="dr-callout dr-callout-info icon">
     		<h4>Note:</h4>
     		<p>All methods in this resource require a full access token. For more information, see initiating an authenticated session in the Authenticated Shopper Workflows.</p>
 		</div>
@@ -117,7 +117,7 @@ class ExampleController{
     		<li>Create or update an address for a shopper</li>
     		<li>Delete an address for a shopper</li>
     	</ul>
-    	<div class="dr-callout dr-callout-info">
+    	<div class="dr-callout dr-callout-info icon">
     		<h4>Note:</h4>
     		<p>If you need to access or update a billing or shipping address, use the appropriate methods available in the Carts resource.</p>
 		</div>
@@ -140,7 +140,7 @@ class ExampleController{
 			</thead>
 			<tbody>
 				<tr>
-					<td class="col-md-5"><a href="#">DELETE shoppers/me/addresses/{id} </a></td>
+					<td class="col-md-5"><a href="method.php">DELETE shoppers/me/addresses/{id} </a></td>
 					<td><p>Deletes the shopper address associated with the specified id. Specify the id of the address in the {id} uri path parameter.</p></td>
 				</tr>
 				<tr>
