@@ -1,12 +1,12 @@
 {
-    "key": "group_5702e7c94f37e",
-    "title": "General",
+    "key": "group_570817e981e97",
+    "title": "Contact Us Form",
     "fields": [
         {
-            "key": "field_5702e7dad77af",
-            "label": "HTML",
-            "name": "html",
-            "type": "wysiwyg",
+            "key": "field_570817f124d11",
+            "label": "Marketo Form ID",
+            "name": "marketo_form_id",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,9 +16,12 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
         }
     ],
     "location": [
@@ -31,7 +34,7 @@
             {
                 "param": "slide",
                 "operator": "==",
-                "value": "general"
+                "value": "contact-us-form"
             }
         ]
     ],
@@ -41,7 +44,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 0,
+    "active": 1,
     "description": "",
-    "modified": 1459808229
+    "modified": 1460466242
 }

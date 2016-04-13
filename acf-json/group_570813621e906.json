@@ -1,0 +1,77 @@
+{
+    "key": "group_570813621e906",
+    "title": "General",
+    "fields": [
+        {
+            "key": "field_57081366414ce",
+            "label": "HTML",
+            "name": "html",
+            "type": "code",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "language": "html",
+            "theme": "github"
+        },
+        {
+            "key": "field_57081375414cf",
+            "label": "CSS",
+            "name": "css",
+            "type": "code",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "language": "css",
+            "theme": "github"
+        },
+        {
+            "key": "field_5708138d414d0",
+            "label": "Javascript",
+            "name": "javascript",
+            "type": "code",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "language": "javascript",
+            "theme": "github"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "slides"
+            },
+            {
+                "param": "slide",
+                "operator": "==",
+                "value": "general"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1460147145
+}

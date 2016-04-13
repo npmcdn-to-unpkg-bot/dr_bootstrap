@@ -204,7 +204,7 @@
      		}else if(regionId == "southAmerica"){
      			var selectedCountry = "South America";
      		}else if(regionId == "apac"){
-     			var selectedCountry = "Austria and Oceania";
+     			var selectedCountry = "Australia and Oceania";
      		}
 
 

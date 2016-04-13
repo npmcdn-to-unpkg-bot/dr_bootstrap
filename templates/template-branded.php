@@ -159,7 +159,6 @@ $grid[] = array(
 						<li>Foreign exchange <a target="_blank" href="http://www.digitalriver.com/solutions/commerce/commerce-business-infrastructure-foreign-exchange-value-brief/">Learn More</a></li>
 						<li>Legal compliance</li>
 						<li>Global payment processing <a target="_blank" href="http://www.digitalriver.com/marketing_material/global-commerce-payment-capabilities-infographic/">Learn More</a></li>
-
 				</ul>',
 				"title" => 'Order Management<br> &amp; Fulfillment',
 				"background_image" => get_template_directory_uri()."/img/grid/global_fulfillment.jpg",

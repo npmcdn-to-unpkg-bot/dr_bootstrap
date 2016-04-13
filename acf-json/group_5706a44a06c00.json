@@ -22,13 +22,43 @@
             "button_label": "Add Resource",
             "sub_fields": [
                 {
+                    "key": "field_5707f25e9bd67",
+                    "label": "Resources or HTML?",
+                    "name": "resources_or_html",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "resources": "Resources",
+                        "html": "HTML"
+                    },
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical"
+                },
+                {
                     "key": "field_5706a4a892743",
                     "label": "Resource",
                     "name": "resource",
                     "type": "post_object",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5707f25e9bd67",
+                                "operator": "==",
+                                "value": "resources"
+                            }
+                        ]
+                    ],
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -42,6 +72,213 @@
                     "multiple": 0,
                     "return_format": "object",
                     "ui": 1
+                },
+                {
+                    "key": "field_57080ea76017f",
+                    "label": "HTML",
+                    "name": "html",
+                    "type": "code",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5707f25e9bd67",
+                                "operator": "==",
+                                "value": "html"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "language": "html",
+                    "theme": "chrome"
+                },
+                {
+                    "key": "field_5708075c884e8",
+                    "label": "Headline",
+                    "name": "headline",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "wpautop",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5707ce1a697bd",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": [],
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_5707ce42697be",
+                    "label": "Height",
+                    "name": "height",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "normal": "Normal",
+                        "double": "Double Height"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_5707d0a0697c0",
+                    "label": "Width",
+                    "name": "width",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "third": "Third",
+                        "half": "Half",
+                        "two-thirds": "Two Thirds",
+                        "full": "Full"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_5707eae484e69",
+                    "label": "Custom Background Image?",
+                    "name": "custom_background_image",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "true": "Custom"
+                    },
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0
+                },
+                {
+                    "key": "field_5707ce7a697bf",
+                    "label": "Background Options",
+                    "name": "background_options",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5707eae484e69",
+                                "operator": "!=",
+                                "value": "true"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "working_on_laptop": "<div class=\"background-option\"><img src=\"http:\/\/localhost\/project_digital_river\/digital_river\/wp-content\/themes\/digital-river-translated\/img\/grid\/working_on_a_laptop.jpg\" \/><\/div>",
+                        "meeting": "<div class=\"background-option\"><img src=\"http:\/\/localhost\/project_digital_river\/digital_river\/wp-content\/themes\/digital-river-translated\/img\/grid\/meeting.jpg\" \/><\/div>",
+                        "global_fulfillment": "<div class=\"background-option\"><img src=\"http:\/\/localhost\/project_digital_river\/digital_river\/wp-content\/themes\/digital-river-translated\/img\/grid\/global_fulfillment.jpg\" \/><\/div>",
+                        "collaboration": "<div class=\"background-option\"><img src=\"http:\/\/localhost\/project_digital_river\/digital_river\/wp-content\/themes\/digital-river-translated\/img\/grid\/working_together.jpg\" \/><\/div>",
+                        "tablet": "<div class=\"background-option\"><img src=\"http:\/\/localhost\/project_digital_river\/digital_river\/wp-content\/themes\/digital-river-translated\/img\/grid\/tablet.jpg\" \/><\/div>",
+                        "working": "<div class=\"background-option\"><img src=\"http:\/\/localhost\/project_digital_river\/digital_river\/wp-content\/themes\/digital-river-translated\/img\/grid\/working.jpg\" \/><\/div>",
+                        "meeting_2": "<div class=\"background-option\"><img src=\"http:\/\/localhost\/project_digital_river\/digital_river\/wp-content\/themes\/digital-river-translated\/img\/grid\/meeting_2.jpg\" \/><\/div>",
+                        "meeting_3": "<div class=\"background-option\"><img src=\"http:\/\/localhost\/project_digital_river\/digital_river\/wp-content\/themes\/digital-river-translated\/img\/grid\/meeting_3.jpg\" \/><\/div>",
+                        "working_2": "<div class=\"background-option\"><img src=\"http:\/\/localhost\/project_digital_river\/digital_river\/wp-content\/themes\/digital-river-translated\/img\/grid\/working_2.jpg\" \/><\/div>",
+                        "thinking": "<div class=\"background-option\"><img src=\"http:\/\/localhost\/project_digital_river\/digital_river\/wp-content\/themes\/digital-river-translated\/img\/grid\/thinking.jpg\" \/><\/div>"
+                    },
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "default_value": "",
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_5707eb7084e6a",
+                    "label": "Custom Background Image",
+                    "name": "custom_background_image",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5707eae484e69",
+                                "operator": "==",
+                                "value": "true"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
         }
@@ -68,5 +305,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1460053241
+    "modified": 1460146880
 }

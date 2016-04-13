@@ -10,10 +10,15 @@ class ResourcesInit implements Initialize
 	public static $post_type_singular = 'Resource';
 	public static $post_type_plural = 'Resource';
 
+	protected static $background_options_key = "field_5707ce7a697bf";
+
+
 	function __construct()
 	{
     	add_action( 'init', array( &$this, 'register_post_type' ) );
 		add_action('admin_head', array(&$this, 'remove_unused_meta_boxes'), 99);
+
+		add_filter('acf/load_field/key='.self::$background_options_key, array(&$this, 'acf_load_background_options') );
 
 		// add_filter('template_include', array(&$this, 'get_marketing_material_template'));
 	}
@@ -63,6 +68,50 @@ class ResourcesInit implements Initialize
 		);
 		register_post_type( self::$post_type_name, $args );
     }
+
+	function custom_css()
+	{
+		?>
+		<style>
+			.background-option{
+				width:200px;
+				height:150px;
+				overflow: hidden;
+				border:solid 1px #333;
+				padding:5px;
+				margin: 0 0 20px;
+			}
+
+			.background-option img{
+				width:100%;
+			}
+
+			input:checked + .background-option{
+				border-color:#00a7e1;
+				background: #EEE;
+			}
+
+			.acf-field-radio[data-name="background_options"] input{
+				display:none;
+			}
+		</style>
+		<?php
+	}
+
+	/**
+	 *	Addeds all background options to the admin screen for Interactive Grid slides 
+	 */
+	function acf_load_background_options($field)
+	{
+		$this->custom_css();
+
+		$field['choices'] = array();
+		foreach(InteractiveGrid::get_background_options() as $key => $choice ){
+			$field['choices'][ $key ] = $choice;
+		}
+
+		return $field;
+	}
 
 
 	function remove_unused_meta_boxes()

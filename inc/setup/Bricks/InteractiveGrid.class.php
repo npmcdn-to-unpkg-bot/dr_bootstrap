@@ -4,15 +4,44 @@
  * For displaying custom bricks
  *
  */
-class InteractiveGridInit implements Brick
+class InteractiveGrid implements Brick
 {
-	private $headline
+	private $headline;
 	private $grid;
+
+	public static $backgroundImageDir = "/wp-content/themes/digital-river-translated/img/grid/";
+	public static $domain = "http://localhost/project_digital_river/digital_river";
+
+	public static $background_option_pre_html = '<div class="background-option"><img src="';
+	public static $background_option_post_html = '" /></div>';
+
+	public static $backgroundOptions = array(
+		'working_on_laptop' => 'working_on_a_laptop.jpg',
+		'meeting' => 'meeting.jpg',
+		'global_fulfillment' => 'global_fulfillment.jpg',
+		'collaboration' => 'working_together.jpg',
+		'tablet' => 'tablet.jpg',
+		'working' => 'working.jpg',
+		'meeting_2' => 'meeting_2.jpg',
+		'meeting_3' => 'meeting_3.jpg',
+		'working_2' => 'working_2.jpg',
+		'thinking' => 'thinking.jpg',
+	);
 
 	function __construct($html)
 	{
 		$this->headline = $headline;
 		$this->grid = $grid;
+	}
+
+	public static function get_background_options()
+	{
+		$backgroundOptions = array();
+		foreach (self::$backgroundOptions as $key => $value) {
+			$backgroundOptions[$key] = self::$background_option_pre_html.self::$domain.self::$backgroundImageDir.$value.self::$background_option_post_html;
+		}
+
+		return $backgroundOptions;
 	}
 
 	public function display()

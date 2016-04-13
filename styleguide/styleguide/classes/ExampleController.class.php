@@ -35,9 +35,9 @@ class ExampleController{
 			            <li><a href="#">GET shoppers/me/account</a></li>
 			        </ul>
 			    </li>
-			    <li class="active"><a href="#">Addresses Resource</a>
+			    <li class="active"><a href="example.php">Addresses Resource</a>
 			        <ul class="nav">
-			            <li class="<?php echo ($method == true)?" active ":false; ?>"><a href="#">DELETE shoppers/me/addresses/{id}</a></li>
+			            <li class="<?php echo ($method == true)?" active ":false; ?>"><a href="method.php">DELETE shoppers/me/addresses/{id}</a></li>
 			            <li><a href="#">GET shoppers/me/addresses</a></li>
 			            <li><a href="#">GET shoppers/me/addresses/{id}</a></li>
 			            <li><a href="#">POST shoppers/me/addresses</a></li>
@@ -140,7 +140,7 @@ class ExampleController{
 			</thead>
 			<tbody>
 				<tr>
-					<td class="col-md-5"><a href="#">DELETE shoppers/me/addresses/{id} </a></td>
+					<td class="col-md-5"><a href="method.php">DELETE shoppers/me/addresses/{id} </a></td>
 					<td><p>Deletes the shopper address associated with the specified id. Specify the id of the address in the {id} uri path parameter.</p></td>
 				</tr>
 				<tr>

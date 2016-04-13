@@ -68,15 +68,18 @@ require_once 'inc/setup/Initialize/GeneralInitialize.class.php';
 require_once 'inc/setup/Initialize/MasterheaderInitialize.class.php';
 require_once 'inc/setup/Initialize/ClientsInitialize.class.php';
 require_once 'inc/setup/Initialize/ResourcesInitialize.class.php';
+require_once 'inc/setup/Initialize/ContactUsInitialize.class.php';
 require_once 'inc/setup/Slides.class.php';
 require_once 'inc/setup/Bricks/Brick.class.php';
 require_once 'inc/setup/Bricks/General.class.php';
 require_once 'inc/setup/Bricks/Masterheader.class.php';
+require_once 'inc/setup/Bricks/InteractiveGrid.class.php';
 
 $GeneralInitialize = new GeneralInit();
 $MasterheadInitialize = new MasterheaderInit();
 $ClientsInitialize = new ClientsInit();
 $ResourcesInitialize = new ResourcesInit();
+$ContactUsInitialize = new ContactUsInit();
 $slides = new SlidesPostType();
 
 
@@ -203,10 +206,12 @@ add_action('wp_enqueue_scripts', 'theme_styles');
 
 
 
-    add_action( 'admin_enqueue_scripts', 'load_admin_style' );
-    function load_admin_style() {
-        wp_enqueue_style( 'admin_css', get_template_directory_uri() . '/css/custom-admin-style.css', false, '1.0.0' );
-    }
+add_action( 'admin_enqueue_scripts', 'load_admin_style' );
+function load_admin_style() {
+    wp_enqueue_style( 'admin_css', get_template_directory_uri() . '/css/custom-admin-style.css', false, '1.0.0' );
+    wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/css/stylesheets/_bootstrap.css', array(), '3.0.1', 'all' );
+    wp_enqueue_style( 'bootstrap-css' );
+}
 
 
 /**

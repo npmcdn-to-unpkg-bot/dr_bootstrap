@@ -6,7 +6,9 @@ class SlidesPostType{
 		"general" => "General",
 		"masterheader" => "Masterheader",
 		"clients" => "Clients",
-		"interactive-grid" => "Interactive Grid"
+		"interactive-grid" => "Interactive Grid",
+		"contact-us" => "Contact Us",
+		"contact-us-form" => "Contact Us Form",
 	);
 
 	public static $post_type_name = 'slides';
