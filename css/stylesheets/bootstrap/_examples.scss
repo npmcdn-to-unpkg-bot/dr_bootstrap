@@ -14,7 +14,7 @@
     position:relative;
     border-radius:0;
 
-    label{
+    label.example-label{
       color:$white;
     }
 
@@ -30,7 +30,7 @@
     border-bottom:none;
   }
 
-  label{
+  label.example-label{
     position:absolute;
     top:10px;
     left:10px;

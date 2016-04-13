@@ -777,7 +777,7 @@ function displayTypography(){
 
 <div class="example">
 	<div class="top">
-		<label>Example</label>
+		<label class="example-label">Example</label>
 		<table class="table">
             <tbody>
                 <tr>
@@ -795,7 +795,7 @@ function displayTypography(){
 			</tbody>
 		</table>
 	</div>
-	<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"eng"</span><span class="nt">&gt;</span></span>DIN Engschrift Heading<span class="nt">&lt;/h1&gt;</span>
+	<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"eng"</span><span class="nt">&gt;</span></span>DIN Engschrift Heading<span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"med"</span><span class="nt">&gt;</span></span>DIN Medium Heading<span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"light"</span><span class="nt">&gt;</span></span>DIN Light Heading<span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
@@ -820,7 +820,7 @@ function displayTypography(){
 
 <div class="example">
 			<div class="top">
-				<label>Example</label>
+				<label class="example-label">Example</label>
 				 <table class="table">
 		                <tbody>
 		                    <tr>
@@ -862,7 +862,7 @@ function displayTypography(){
 		                </tbody>
 		            </table>
 			</div>
-			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1 Heading<span class="nt">&lt;/h1&gt;</span>    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>h1 Heading <span class="nt">&lt;small&gt;</span>with h6 class<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+			<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1 Heading<span class="nt">&lt;/h1&gt;</span>    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>h1 Heading <span class="nt">&lt;small&gt;</span>with h6 class<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
 <span class="nt">&lt;h2&gt;</span>h2 Heading<span class="nt">&lt;/h2&gt;</span>    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>h2 Heading <span class="nt">&lt;small&gt;</span>with h5 class<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span>
 <span class="nt">&lt;h3&gt;</span>h3 Heading<span class="nt">&lt;/h3&gt;</span>    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>h3 Heading <span class="nt">&lt;small&gt;</span>with h4 class<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
 <span class="nt">&lt;h4&gt;</span>h4 Heading<span class="nt">&lt;/h4&gt;</span>    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"h3"</span><span class="nt">&gt;</span>h4 Heading <span class="nt">&lt;small&gt;</span>with h3 class<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
@@ -875,7 +875,7 @@ function displayTypography(){
 		    
 <div class="example">
 			<div class="top">
-				<label>Example</label>
+				<label class="example-label">Example</label>
 		            <table class="table">
 		                <tbody>
 		                    <tr>
@@ -905,7 +905,7 @@ function displayTypography(){
 		                </tbody>
 		            </table>
 			</div>
-			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
+			<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>h1 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h1&gt;</span>
 <span class="nt">&lt;h2&gt;</span>h2 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h2&gt;</span>
 <span class="nt">&lt;h3&gt;</span>h3 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h3&gt;</span>
 <span class="nt">&lt;h4&gt;</span>h4 Heading <span class="nt">&lt;small&gt;</span>Secondary text<span class="nt">&lt;/small&gt;&lt;/h4&gt;</span>
@@ -929,10 +929,10 @@ function displayTypography(){
         	</div>
         <div class="example">
 			<div class="top">
-				<label>Example</label>
+				<label class="example-label">Example</label>
 		            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
 			</div>
-			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+			<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
 </code></pre></figure>
 		</div>
 
@@ -942,10 +942,10 @@ function displayTypography(){
 
         <div class="example">
 			<div class="top">
-				<label>Example</label>
+				<label class="example-label">Example</label>
 	            <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
 			</div>
-			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+			<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 		</div>
  -->
 		        
@@ -965,11 +965,11 @@ function displayTypography(){
 		       
         <div class="example">
 			<div class="top">
-				<label>Example</label>
+				<label class="example-label">Example</label>
 	            <p>You can use the mark tag to
 		                <mark>highlight</mark> text.</p>
 			</div>
-			<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html">You can use the mark tag to <span class="nt">&lt;mark&gt;</span>highlight<span class="nt">&lt;/mark&gt;</span> text.</code></pre></figure>
+			<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html">You can use the mark tag to <span class="nt">&lt;mark&gt;</span>highlight<span class="nt">&lt;/mark&gt;</span> text.</code></pre></figure>
 		</div>
 
 		        <h3 id="deleted-text"><a class="anchorjs-link " href="#deleted-text" aria-label="Anchor link for: deleted text" data-anchorjs-icon="" ></a>Deleted and Strikethrough text</h3>
@@ -977,11 +977,11 @@ function displayTypography(){
 
 		       <div class="example">
 					<div class="top">
-						<label>Example</label>
+						<label class="example-label">Example</label>
 		            	<p><del>This line of text is meant to be treated as deleted text.</del></p>
 		            	<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
 					</div>
-					<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;del&gt;</span>This line of text is meant to be treated as deleted text.<span class="nt">&lt;/del&gt;</span>
+					<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;del&gt;</span>This line of text is meant to be treated as deleted text.<span class="nt">&lt;/del&gt;</span>
 <span class="nt">&lt;s&gt;</span>This line of text is meant to be treated as no longer accurate.<span class="nt">&lt;/s&gt;</span></code></pre></figure>
 				</div>
 
@@ -990,11 +990,11 @@ function displayTypography(){
 
    				<div class="example">
 					<div class="top">
-						<label>Example</label>
+						<label class="example-label">Example</label>
 		            	<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
 		            	<p><u>This line of text will render as underlined</u></p>
 					</div>
-					<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ins&gt;</span>This line of text is meant to be treated as an addition to the document.<span class="nt">&lt;/ins&gt;</span>
+					<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ins&gt;</span>This line of text is meant to be treated as an addition to the document.<span class="nt">&lt;/ins&gt;</span>
 <span class="nt">&lt;u&gt;</span>This line of text will render as underlined<span class="nt">&lt;/u&gt;</span></code></pre></figure>
 				</div>
 
@@ -1003,12 +1003,12 @@ function displayTypography(){
 		        <p>You may alternatively use an inline element with <code>.small</code> in place of any <code>&lt;small&gt;</code>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>
+						<label class="example-label">Example</label>
 		            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac nunc nec turpis suscipit cursus eget quis nibh. Aenean id nibh odio. Aliquam erat volutpat. In maximus tincidunt urna sit amet tincidunt. Aliquam nec mauris rhoncus, iaculis erat sed, blandit turpis. Sed sed diam accumsan, bibendum ex in, mattis nulla. Sed blandit pharetra dolor, a tempor felis suscipit aliquam. Praesent placerat efficitur dolor, ornare mattis tortor pellentesque non.</p>
 		            	<p><small>* This line of text is meant to be treated as fine print.</small></p>
 		            </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;small&gt;</span>* This line of text is meant to be treated as fine print.<span class="nt">&lt;/small&gt;</span></code></pre></figure>
 
 </div>
@@ -1018,10 +1018,10 @@ function displayTypography(){
 		        <p>For emphasizing a snippet of text with a heavier font-weight.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+						<label class="example-label">Example</label>		            <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html">The following snippet of text is <span class="nt">&lt;strong&gt;</span>rendered as bold text<span class="nt">&lt;/strong&gt;</span>.</code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html">The following snippet of text is <span class="nt">&lt;strong&gt;</span>rendered as bold text<span class="nt">&lt;/strong&gt;</span>.</code></pre></figure>
 </div>
 
 
@@ -1029,10 +1029,10 @@ function displayTypography(){
 		        <p>For emphasizing a snippet of text with italics.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+						<label class="example-label">Example</label>		            <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html">The following snippet of text is <span class="nt">&lt;em&gt;</span>rendered as italicized text<span class="nt">&lt;/em&gt;</span>.</code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html">The following snippet of text is <span class="nt">&lt;em&gt;</span>rendered as italicized text<span class="nt">&lt;/em&gt;</span>.</code></pre></figure>
 </div>
 
 
@@ -1044,14 +1044,14 @@ function displayTypography(){
 		        <p>Easily realign text to components with text alignment classes.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <p class="text-left">Left aligned text.</p>
+						<label class="example-label">Example</label>		            <p class="text-left">Left aligned text.</p>
 		            <p class="text-center">Center aligned text.</p>
 		            <p class="text-right">Right aligned text.</p>
 		            <p class="text-justify">Justified text.</p>
 		            <p class="text-nowrap">Ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh!</p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>Left aligned text.<span class="nt">&lt;/p&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>Left aligned text.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>Center aligned text.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Right aligned text.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-justify"</span><span class="nt">&gt;</span>Justified text.<span class="nt">&lt;/p&gt;</span>
@@ -1068,12 +1068,12 @@ function displayTypography(){
 
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <p class="text-lowercase">Lowercased text.</p>
+						<label class="example-label">Example</label>		            <p class="text-lowercase">Lowercased text.</p>
 		            <p class="text-uppercase">Uppercased text.</p>
 		            <p class="text-capitalize">Capitalized text.</p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lowercase"</span><span class="nt">&gt;</span>Lowercased text.<span class="nt">&lt;/p&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lowercase"</span><span class="nt">&gt;</span>Lowercased text.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-uppercase"</span><span class="nt">&gt;</span>Uppercased text.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-capitalize"</span><span class="nt">&gt;</span>Capitalized text.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 </div>
@@ -1089,20 +1089,20 @@ function displayTypography(){
 		        <h3 id="basic-abbreviation"><a class="anchorjs-link " href="#basic-abbreviation" aria-label="Anchor link for: basic abbreviation" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Basic abbreviation</h3>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+						<label class="example-label">Example</label>		            <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html">An abbreviation of the word attribute is <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"attribute"</span><span class="nt">&gt;</span>attr<span class="nt">&lt;/abbr&gt;</span>.</code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html">An abbreviation of the word attribute is <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"attribute"</span><span class="nt">&gt;</span>attr<span class="nt">&lt;/abbr&gt;</span>.</code></pre></figure>
 </div>
 
 		        <h3 id="initialism"><a class="anchorjs-link " href="#initialism" aria-label="Anchor link for: initialism" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Initialism</h3>
 		        <p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+						<label class="example-label">Example</label>		            <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"HyperText Markup Language"</span> <span class="na">class=</span><span class="s">"initialism"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;</span> is the best thing since sliced bread.</code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"HyperText Markup Language"</span> <span class="na">class=</span><span class="s">"initialism"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;</span> is the best thing since sliced bread.</code></pre></figure>
 </div>
 
 
@@ -1116,7 +1116,7 @@ function displayTypography(){
 
    				<div class="example">
 					<div class="top">
-						<label>Example</label>
+						<label class="example-label">Example</label>
 						<address>
 						  <strong>Twitter, Inc.</strong><br>
 						  1355 Market Street, Suite 900<br>
@@ -1129,7 +1129,7 @@ function displayTypography(){
 						  <a href="mailto:#">first.last@example.com</a>
 						</address>	
 					</div>        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;address&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;address&gt;</span>
   <span class="nt">&lt;strong&gt;</span>Twitter, Inc.<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
   1355 Market Street, Suite 900<span class="nt">&lt;br&gt;</span>
   San Francisco, CA 94103<span class="nt">&lt;br&gt;</span>
@@ -1154,12 +1154,12 @@ function displayTypography(){
 		        <p>Wrap <code>&lt;blockquote&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote. For straight quotes, we recommend a <code>&lt;p&gt;</code>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <blockquote>
+						<label class="example-label">Example</label>		            <blockquote>
 		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 		            </blockquote>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote&gt;</span>
   <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/blockquote&gt;</span></code></pre></figure>
 </div>
@@ -1171,13 +1171,13 @@ function displayTypography(){
 		        <p>Add a <code>&lt;footer&gt;</code> for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <blockquote>
+						<label class="example-label">Example</label>		            <blockquote>
 		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 		                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
 		            </blockquote>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote&gt;</span>
   <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;footer&gt;</span>Someone famous in <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>Source Title<span class="nt">&lt;/cite&gt;&lt;/footer&gt;</span>
 <span class="nt">&lt;/blockquote&gt;</span></code></pre></figure>
@@ -1188,13 +1188,13 @@ function displayTypography(){
 		        <p>Add <code>.blockquote-reverse</code> for a blockquote with right-aligned content.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <blockquote class="blockquote-reverse">
+						<label class="example-label">Example</label>		            <blockquote class="blockquote-reverse">
 		                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 		                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
 		            </blockquote>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote-reverse"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote-reverse"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/blockquote&gt;</span></code></pre></figure>
 </div>
@@ -1210,7 +1210,7 @@ function displayTypography(){
 		        <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>
+						<label class="example-label">Example</label>
 		                    <ul class="bullet-list">
 		                        <li>Phasellus iaculis neque</li>
 		                        <li>Purus sodales ultricies</li>
@@ -1219,7 +1219,7 @@ function displayTypography(){
 		                    </ul>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul <span class="na">class=</span><span class="s">"bullet-list"</span><span class="nt">&gt;</span></span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul <span class="na">class=</span><span class="s">"bullet-list"</span><span class="nt">&gt;</span></span>
   <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 </div>
@@ -1229,7 +1229,7 @@ function displayTypography(){
 		        <p>A list of items in which the order <em>does</em> explicitly matter.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>
+						<label class="example-label">Example</label>
 					<ol>
 		                <li>Lorem ipsum dolor sit amet</li>
 		                <li>Consectetur adipiscing elit</li>
@@ -1242,7 +1242,7 @@ function displayTypography(){
 		            </ol>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol&gt;</span>
   <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ol&gt;</span></code></pre></figure>
 </div>
@@ -1252,7 +1252,7 @@ function displayTypography(){
 		        <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <ul class="list-unstyled">
+						<label class="example-label">Example</label>		            <ul class="list-unstyled">
 		                <li>Lorem ipsum dolor sit amet</li>
 		                <li>Consectetur adipiscing elit</li>
 		                <li>Integer molestie lorem at massa</li>
@@ -1271,7 +1271,7 @@ function displayTypography(){
 		            </ul>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 </div> -->
@@ -1281,14 +1281,14 @@ function displayTypography(){
 		        <p>Place all list items on a single line with <code>display: inline-block;</code> and some light padding.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <ul class="list-inline">
+						<label class="example-label">Example</label>		            <ul class="list-inline">
 		                <li>Lorem ipsum</li>
 		                <li>Phasellus iaculis</li>
 		                <li>Nulla volutpat</li>
 		            </ul>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-inline"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-inline"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 </div>
@@ -1298,7 +1298,7 @@ function displayTypography(){
 		        <p>A list of terms with their associated descriptions.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <dl> <dt>Description lists</dt>
+						<label class="example-label">Example</label>		            <dl> <dt>Description lists</dt>
 		                <dd>A description list is perfect for defining terms.</dd> <dt>Euismod</dt>
 		                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
 		                <dd>Donec id elit non mi porta gravida at eget metus.</dd> <dt>Malesuada porta</dt>
@@ -1306,7 +1306,7 @@ function displayTypography(){
 		            </dl>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl&gt;</span>
   <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
   <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>
 <span class="nt">&lt;/dl&gt;</span></code></pre></figure>
@@ -1317,7 +1317,7 @@ function displayTypography(){
 		        <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>&lt;dl&gt;</code>s, but when the navbar expands, so do these.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <dl class="dl-horizontal"> <dt>Description lists</dt>
+						<label class="example-label">Example</label>		            <dl class="dl-horizontal"> <dt>Description lists</dt>
 		                <dd>A description list is perfect for defining terms.</dd> <dt>Euismod</dt>
 		                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
 		                <dd>Donec id elit non mi porta gravida at eget metus.</dd> <dt>Malesuada porta</dt>
@@ -1326,7 +1326,7 @@ function displayTypography(){
 		            </dl>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"dl-horizontal"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"dl-horizontal"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
   <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>
 <span class="nt">&lt;/dl&gt;</span></code></pre></figure>
@@ -1363,10 +1363,10 @@ function displayCode(){
 		        <p>Wrap inline snippets of code with <code>&lt;code&gt;</code> tags. Within <code>&lt;code&gt;</code> tags, use HTML entities.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>	
+						<label class="example-label">Example</label>	
 						<p>This <code>&lt;section&gt;</code> tag is displayed as inline code, and was written with HTML entities.</p>
 					</div>	        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html">This <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>section<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> tag is displayed as inline code, and was written with HTML entities.</code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html">This <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>section<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> tag is displayed as inline code, and was written with HTML entities.</code></pre></figure>
 </div>
 
 
@@ -1380,12 +1380,12 @@ function displayCode(){
 		        <p>Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>
+						<label class="example-label">Example</label>
 						<p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
 						To edit settings, press <kbd>ctrl</kbd> + <kbd>,</kbd></p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html">To switch directories, type <span class="nt">&lt;kbd&gt;</span>cd<span class="nt">&lt;/kbd&gt;</span> followed by the name of the directory.<span class="nt">&lt;br&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html">To switch directories, type <span class="nt">&lt;kbd&gt;</span>cd<span class="nt">&lt;/kbd&gt;</span> followed by the name of the directory.<span class="nt">&lt;br&gt;</span>
 To edit settings, press <span class="nt">&lt;kbd&gt;</span>ctrl<span class="nt">&lt;/kbd&gt;</span> + <span class="nt">&lt;kbd&gt;</span>,<span class="nt">&lt;/kbd&gt;</span></code></pre></figure>
 </div>
 
@@ -1401,10 +1401,10 @@ To edit settings, press <span class="nt">&lt;kbd&gt;</span>ctrl<span class="nt">
 		        <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>
+						<label class="example-label">Example</label>
 						<p>&lt;p&gt;Sample text here...&lt;/p&gt;</p>
 					</div>	        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;pre&gt;</span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Sample text here...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span><span class="nt">&lt;/pre&gt;</span></code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;pre&gt;</span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Sample text here...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span><span class="nt">&lt;/pre&gt;</span></code></pre></figure>
 </div>
 
 
@@ -1420,10 +1420,10 @@ To edit settings, press <span class="nt">&lt;kbd&gt;</span>ctrl<span class="nt">
 <!-- 		        <p>For indicating variables use the <code>&lt;var&gt;</code> tag.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
+						<label class="example-label">Example</label>		            <p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;var&gt;</span>y<span class="nt">&lt;/var&gt;</span> = <span class="nt">&lt;var&gt;</span>m<span class="nt">&lt;/var&gt;&lt;var&gt;</span>x<span class="nt">&lt;/var&gt;</span> + <span class="nt">&lt;var&gt;</span>b<span class="nt">&lt;/var&gt;</span></code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;var&gt;</span>y<span class="nt">&lt;/var&gt;</span> = <span class="nt">&lt;var&gt;</span>m<span class="nt">&lt;/var&gt;&lt;var&gt;</span>x<span class="nt">&lt;/var&gt;</span> + <span class="nt">&lt;var&gt;</span>b<span class="nt">&lt;/var&gt;</span></code></pre></figure>
 </div>
  -->
 
@@ -1436,10 +1436,10 @@ To edit settings, press <span class="nt">&lt;kbd&gt;</span>ctrl<span class="nt">
 		        <p>For indicating blocks sample output from a program use the <code>&lt;samp&gt;</code> tag.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
+						<label class="example-label">Example</label>		            <p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;samp&gt;</span>This text is meant to be treated as sample output from a computer program.<span class="nt">&lt;/samp&gt;</span></code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;samp&gt;</span>This text is meant to be treated as sample output from a computer program.<span class="nt">&lt;/samp&gt;</span></code></pre></figure>
 </div>
 
 
@@ -1470,7 +1470,7 @@ function displayTables(){
 		        <p>For basic styling—light padding and only horizontal dividers—add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <table class="table">
+						<label class="example-label">Example</label>		            <table class="table">
 		                <caption>Optional table caption.</caption>
 		                <thead>
 		                    <tr>
@@ -1503,7 +1503,7 @@ function displayTables(){
 		            </table>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/table&gt;</span></code></pre></figure>
 </div>
@@ -1517,7 +1517,7 @@ function displayTables(){
 
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		        
+						<label class="example-label">Example</label>		        
 						<table class="table">
 		                <thead>
 		                    <tr>
@@ -1594,7 +1594,7 @@ function displayTables(){
 		            </table>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
    <span class="nt">&lt;thead&gt;</span>
       ...
    <span class="nt">&lt;/thead&gt;</span>
@@ -1636,7 +1636,7 @@ function displayTables(){
 		        </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <table class="table table-striped">
+						<label class="example-label">Example</label>		            <table class="table table-striped">
 		                <thead>
 		                    <tr>
 		                        <th>#</th>
@@ -1668,7 +1668,7 @@ function displayTables(){
 		            </table>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-striped"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-striped"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/table&gt;</span></code></pre></figure>
 </div>
@@ -1683,7 +1683,7 @@ function displayTables(){
 		        <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <table class="table table-bordered">
+						<label class="example-label">Example</label>		            <table class="table table-bordered">
 		                <thead>
 		                    <tr>
 		                        <th>#</th>
@@ -1715,7 +1715,7 @@ function displayTables(){
 		            </table>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-bordered"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-bordered"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/table&gt;</span></code></pre></figure>
 </div>
@@ -1730,7 +1730,7 @@ function displayTables(){
 		        <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <table class="table table-hover">
+						<label class="example-label">Example</label>		            <table class="table table-hover">
 		                <thead>
 		                    <tr>
 		                        <th>#</th>
@@ -1762,7 +1762,7 @@ function displayTables(){
 		            </table>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-hover"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-hover"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/table&gt;</span></code></pre></figure>
 </div>
@@ -1778,7 +1778,7 @@ function displayTables(){
 <!-- 		        <p>Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <table class="table table-condensed">
+						<label class="example-label">Example</label>		            <table class="table table-condensed">
 		                <thead>
 		                    <tr>
 		                        <th>#</th>
@@ -1809,7 +1809,7 @@ function displayTables(){
 		            </table>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-condensed"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-condensed"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/table&gt;</span></code></pre></figure>
 </div>
@@ -1861,7 +1861,7 @@ function displayTables(){
 		        </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <table class="table">
+						<label class="example-label">Example</label>		            <table class="table">
 		                <thead>
 		                    <tr>
 		                        <th>#</th>
@@ -1929,7 +1929,7 @@ function displayTables(){
 		            </table>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- On rows --&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- On rows --&gt;</span>
 <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
 <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"success"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
 <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"warning"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/tr&gt;</span>
@@ -1968,7 +1968,7 @@ function displayTables(){
 		            <h4>Firefox and fieldsets</h4>
 		            <p>Firefox has some awkward fieldset styling involving <code>width</code> that interferes with the responsive table. This cannot be overriden without a Firefox-specific hack that we <strong>don't</strong> provide in Bootstrap:</p>
 		            
-<figure class="highlight"><label>HTML</label><pre><code class="language-css" data-lang="css"><span class="k">@-moz-document</span> <span class="n">url-prefix</span><span class="p">()</span> <span class="p">{</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-css" data-lang="css"><span class="k">@-moz-document</span> <span class="n">url-prefix</span><span class="p">()</span> <span class="p">{</span>
   <span class="nt">fieldset</span> <span class="p">{</span> <span class="nl">display</span><span class="p">:</span> <span class="nb">table-cell</span><span class="p">;</span> <span class="p">}</span>
 <span class="p">}</span></code></pre></figure>
 
@@ -1977,7 +1977,7 @@ function displayTables(){
 		        </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <div class="table-responsive">
+						<label class="example-label">Example</label>		            <div class="table-responsive">
 		                <table class="table">
 		                    <thead>
 		                        <tr>
@@ -2067,7 +2067,7 @@ function displayTables(){
 		            </div>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
     ...
   <span class="nt">&lt;/table&gt;</span>
@@ -2103,27 +2103,31 @@ function displayForms(){
 		        <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form lpformnum="1">
-		                <div class="form-group">
-		                    <label for="exampleInputEmail1">Email address</label>
-		                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" autocomplete="off" > </div>
-		                <div class="form-group">
-		                    <label for="exampleInputPassword1">Password</label>
-		                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off" > </div>
-		                <div class="form-group">
-		                    <label for="exampleInputFile">File input</label>
-		                    <input type="file" id="exampleInputFile">
-		                    <p class="help-block">Example block-level help text here.</p>
-		                </div>
-		                <div class="checkbox">
-		                    <label>
-		                        <input type="checkbox"> Check me out </label>
-		                </div>
-		                <button type="submit" class="btn btn-default">Submit</button>
-		            </form>
+						<label class="example-label">Example</label>		           
+
+						<form lpformnum="1">
+			                <div class="form-group">
+			                    <label for="exampleInputEmail1">Email address</label>
+			                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" autocomplete="off" >
+			                </div>
+			                <div class="form-group">
+			                    <label for="exampleInputPassword1">Password</label>
+			                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off" >
+			                </div>
+			                <div class="form-group">
+			                    <label for="exampleInputFile">File input</label>
+			                    <input type="file" id="exampleInputFile">
+			                    <p class="help-block">Example block-level help text here.</p>
+			                </div>
+			                <div class="checkbox">
+			                    <label>
+			                        <input type="checkbox"> Check me out </label>
+			                </div>
+			                <button type="submit" class="btn btn-default">Submit</button>
+			            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail1"</span> <span class="na">placeholder=</span><span class="s">"Email"</span><span class="nt">&gt;</span>
@@ -2161,7 +2165,7 @@ function displayForms(){
 		        </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form class="form-inline">
+						<label class="example-label">Example</label>		            <form class="form-inline">
 		                <div class="form-group">
 		                    <label for="exampleInputName2">Name</label>
 		                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"> </div>
@@ -2172,7 +2176,7 @@ function displayForms(){
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputName2"</span><span class="nt">&gt;</span>Name<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputName2"</span> <span class="na">placeholder=</span><span class="s">"Jane Doe"</span><span class="nt">&gt;</span>
@@ -2186,7 +2190,7 @@ function displayForms(){
 </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form class="form-inline">
+						<label class="example-label">Example</label>		            <form class="form-inline">
 		                <div class="form-group">
 		                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
 		                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email"> </div>
@@ -2201,7 +2205,7 @@ function displayForms(){
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"exampleInputEmail3"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail3"</span> <span class="na">placeholder=</span><span class="s">"Email"</span><span class="nt">&gt;</span>
@@ -2220,7 +2224,7 @@ function displayForms(){
 </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form class="form-inline">
+						<label class="example-label">Example</label>		            <form class="form-inline">
 		                <div class="form-group">
 		                    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
 		                    <div class="input-group">
@@ -2233,7 +2237,7 @@ function displayForms(){
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"exampleInputAmount"</span><span class="nt">&gt;</span>Amount (in dollars)<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
@@ -2254,7 +2258,7 @@ function displayForms(){
 		        <p>Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form (which doesn't have to be a <code>&lt;form&gt;</code>). Doing so changes <code>.form-group</code>s to behave as grid rows, so no need for <code>.row</code>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form class="form-horizontal">
+						<label class="example-label">Example</label>		            <form class="form-horizontal">
 		                <div class="form-group">
 		                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 		                    <div class="col-sm-10">
@@ -2281,7 +2285,7 @@ function displayForms(){
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputEmail3"</span> <span class="na">class=</span><span class="s">"col-sm-2 control-label"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
@@ -2325,11 +2329,11 @@ function displayForms(){
 		        </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form lpformnum="2">
+						<label class="example-label">Example</label>		            <form lpformnum="2">
 		                <input type="text" class="form-control" placeholder="Text input"> </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Text input"</span><span class="nt">&gt;</span></code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Text input"</span><span class="nt">&gt;</span></code></pre></figure>
 </div>
 		        <div class="dr-callout dr-callout-info icon" id="callout-xref-input-group">
 		            <h4>Input groups</h4>
@@ -2339,12 +2343,12 @@ function displayForms(){
 		        <p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form lpformnum="3">
+						<label class="example-label">Example</label>		            <form lpformnum="3">
 		                <textarea class="form-control" rows="3" placeholder="Textarea"></textarea>
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">rows=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span></code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">rows=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span></code></pre></figure>
 </div>
 		        <h3 id="checkboxes-and-radios"><a class="anchorjs-link " href="#checkboxes-and-radios" aria-label="Anchor link for: checkboxes and radios" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Checkboxes and radios</h3>
 		        <p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
@@ -2352,7 +2356,7 @@ function displayForms(){
 		        <h4 id="default-stacked"><a class="anchorjs-link " href="#default-stacked" aria-label="Anchor link for: default stacked" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Default (stacked)</h4>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form lpformnum="4">
+						<label class="example-label">Example</label>		            <form lpformnum="4">
 		                <div class="checkbox">
 		                    <label>
 		                        <input type="checkbox" value=""> Option one is this and that—be sure to include why it's great </label>
@@ -2377,7 +2381,7 @@ function displayForms(){
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>
     Option one is this and that<span class="ni">&amp;mdash;</span>be sure to include why it's great
@@ -2413,7 +2417,7 @@ function displayForms(){
 		        <p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code> classes on a series of checkboxes or radios for controls that appear on the same line.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form lpformnum="5">
+						<label class="example-label">Example</label>		            <form lpformnum="5">
 		                <label class="checkbox-inline">
 		                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1 </label>
 		                <label class="checkbox-inline">
@@ -2432,7 +2436,7 @@ function displayForms(){
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"inlineCheckbox1"</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span> 1
 <span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"checkbox-inline"</span><span class="nt">&gt;</span>
@@ -2456,7 +2460,7 @@ function displayForms(){
 		        <p>Should you have no text within the <code>&lt;label&gt;</code>, the input is positioned as you'd expect. <strong>Currently only works on non-inline checkboxes and radios.</strong> Remember to still provide some form of label for assistive technologies (for instance, using <code>aria-label</code>).</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form lpformnum="7">
+						<label class="example-label">Example</label>		            <form lpformnum="7">
 		                <div class="checkbox">
 		                    <label>
 		                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="Checkbox without label text"> </label>
@@ -2468,7 +2472,7 @@ function displayForms(){
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"blankCheckbox"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/label&gt;</span>
@@ -2483,7 +2487,7 @@ function displayForms(){
 		        <p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form lpformnum="8">
+						<label class="example-label">Example</label>		            <form lpformnum="8">
 		                <select class="form-control">
 		                    <option>1</option>
 		                    <option>2</option>
@@ -2494,7 +2498,7 @@ function displayForms(){
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
   <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
   <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
@@ -2505,7 +2509,7 @@ function displayForms(){
 		        <p>For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute, multiple options are shown by default.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form>
+						<label class="example-label">Example</label>		            <form>
 		                <select multiple="multiple" class="form-control">
 		                    <option>1</option>
 		                    <option>2</option>
@@ -2516,7 +2520,7 @@ function displayForms(){
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;select</span> <span class="na">multiple</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;select</span> <span class="na">multiple</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
   <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
   <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
@@ -2534,7 +2538,7 @@ function displayForms(){
 		        <p>When you need to place plain text next to a form label within a form, use the <code>.form-control-static</code> class on a <code>&lt;p&gt;</code>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form class="form-horizontal">
+						<label class="example-label">Example</label>		            <form class="form-horizontal">
 		                <div class="form-group">
 		                    <label class="col-sm-2 control-label">Email</label>
 		                    <div class="col-sm-10">
@@ -2549,7 +2553,7 @@ function displayForms(){
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"col-sm-2 control-label"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
@@ -2566,7 +2570,7 @@ function displayForms(){
 </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form class="form-inline">
+						<label class="example-label">Example</label>		            <form class="form-inline">
 		                <div class="form-group">
 		                    <label class="sr-only">Email</label>
 		                    <p class="form-control-static">email@example.com</p>
@@ -2578,7 +2582,7 @@ function displayForms(){
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-control-static"</span><span class="nt">&gt;</span>email@example.com<span class="nt">&lt;/p&gt;</span>
@@ -2600,7 +2604,7 @@ function displayForms(){
 		        <p>We remove the default <code>outline</code> styles on some form controls and apply a <code>box-shadow</code> in its place for <code>:focus</code>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form lpformnum="9">
+						<label class="example-label">Example</label>		            <form lpformnum="9">
 		                <input class="form-control" id="focusedInput" type="text" value="Demonstrative focus state"> </form>
 		        </div></div>
 		        <div class="dr-callout dr-callout-info icon" id="callout-focus-demo">
@@ -2611,11 +2615,11 @@ function displayForms(){
 		        <p>Add the <code>disabled</code> boolean attribute on an input to prevent user interactions. Disabled inputs appear lighter and add a <code>not-allowed</code> cursor.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form lpformnum="10">
+						<label class="example-label">Example</label>		            <form lpformnum="10">
 		                <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="disabled"> </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"disabledInput"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Disabled input here..."</span> <span class="na">disabled</span><span class="nt">&gt;</span></code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"disabledInput"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Disabled input here..."</span> <span class="na">disabled</span><span class="nt">&gt;</span></code></pre></figure>
 </div>
 		        <h3 id="forms-disabled-fieldsets"><a class="anchorjs-link " href="#forms-disabled-fieldsets" aria-label="Anchor link for: forms disabled fieldsets" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Disabled fieldsets</h3>
 		        <p>Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within the <code>&lt;fieldset&gt;</code> at once.</p>
@@ -2629,7 +2633,7 @@ function displayForms(){
 		        </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form lpformnum="11">
+						<label class="example-label">Example</label>		            <form lpformnum="11">
 		                <fieldset disabled="disabled">
 		                    <div class="form-group">
 		                        <label for="disabledTextInput">Disabled input</label>
@@ -2649,7 +2653,7 @@ function displayForms(){
 		            </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
   <span class="nt">&lt;fieldset</span> <span class="na">disabled</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabledTextInput"</span><span class="nt">&gt;</span>Disabled input<span class="nt">&lt;/label&gt;</span>
@@ -2681,11 +2685,11 @@ function displayForms(){
 		        <p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form lpformnum="12">
+						<label class="example-label">Example</label>		            <form lpformnum="12">
 		                <input class="form-control" type="text" placeholder="Readonly input here…" readonly="readonly"> </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Readonly input here…"</span> <span class="na">readonly</span><span class="nt">&gt;</span></code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Readonly input here…"</span> <span class="na">readonly</span><span class="nt">&gt;</span></code></pre></figure>
 </div>
 
 		<?php
@@ -2701,13 +2705,13 @@ function displayForms(){
 		        </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <form lpformnum="13">
+						<label class="example-label">Example</label>		            <form lpformnum="13">
 		                <div class="form-group">
 		                    <label for="inputHelpBlock">Input with help text</label>
 		                    <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"> </div> <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span> </form>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"inputHelpBlock"</span><span class="nt">&gt;</span>Input with help text<span class="nt">&lt;/label&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"inputHelpBlock"</span><span class="nt">&gt;</span>Input with help text<span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"inputHelpBlock"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-describedby=</span><span class="s">"helpBlock"</span><span class="nt">&gt;</span>
 ...
 <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"helpBlock"</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>A block of help text that breaks onto a new line and may extend beyond one line.<span class="nt">&lt;/span&gt;</span></code></pre></figure>
@@ -2728,7 +2732,7 @@ function displayForms(){
 		    </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		        <form lpformnum="14">
+						<label class="example-label">Example</label>		        <form lpformnum="14">
 		            <div class="form-group has-success">
 		                <label class="control-label" for="inputSuccess1">Input with success</label>
 		                <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2" > <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span> </div>
@@ -2759,7 +2763,7 @@ function displayForms(){
 		        </form>
 		    </div>
 		    
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputSuccess1"</span><span class="nt">&gt;</span>Input with success<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputSuccess1"</span> <span class="na">aria-describedby=</span><span class="s">"helpBlock2"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"helpBlock2"</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>A block of help text that breaks onto a new line and may extend beyond one line.<span class="nt">&lt;/span&gt;</span>
@@ -2811,7 +2815,7 @@ function displayForms(){
 		    </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		        <form lpformnum="15">
+						<label class="example-label">Example</label>		        <form lpformnum="15">
 		            <div class="form-group has-success has-feedback">
 		                <label class="control-label" for="inputSuccess2">Input with success</label>
 		                <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" > <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span id="inputSuccess2Status" class="sr-only">(success)</span> </div>
@@ -2828,7 +2832,7 @@ function displayForms(){
 		        </form>
 		    </div>
 		    
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success has-feedback"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success has-feedback"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputSuccess2"</span><span class="nt">&gt;</span>Input with success<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputSuccess2"</span> <span class="na">aria-describedby=</span><span class="s">"inputSuccess2Status"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok form-control-feedback"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
@@ -2859,7 +2863,7 @@ function displayForms(){
 		    <h4>Optional icons in horizontal and inline forms</h4>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		        <form class="form-horizontal">
+						<label class="example-label">Example</label>		        <form class="form-horizontal">
 		            <div class="form-group has-success has-feedback">
 		                <label class="control-label col-sm-3" for="inputSuccess3">Input with success</label>
 		                <div class="col-sm-9">
@@ -2874,7 +2878,7 @@ function displayForms(){
 		        </form>
 		    </div>
 		    
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success has-feedback"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label col-sm-3"</span> <span class="na">for=</span><span class="s">"inputSuccess3"</span><span class="nt">&gt;</span>Input with success<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>
@@ -2898,7 +2902,7 @@ function displayForms(){
 </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		        <form class="form-inline">
+						<label class="example-label">Example</label>		        <form class="form-inline">
 		            <div class="form-group has-success has-feedback">
 		                <label class="control-label" for="inputSuccess4">Input with success</label>
 		                <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status"> <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span id="inputSuccess4Status" class="sr-only">(success)</span> </div>
@@ -2912,7 +2916,7 @@ function displayForms(){
 		        </form>
 		    </div>
 		    
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success has-feedback"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label"</span> <span class="na">for=</span><span class="s">"inputSuccess4"</span><span class="nt">&gt;</span>Input with success<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputSuccess4"</span> <span class="na">aria-describedby=</span><span class="s">"inputSuccess4Status"</span><span class="nt">&gt;</span>
@@ -2936,7 +2940,7 @@ function displayForms(){
 		    <p>If you use the <code>.sr-only</code> class to hide a form control's <code>&lt;label&gt;</code> (rather than using other labelling options, such as the <code>aria-label</code> attribute), Bootstrap will automatically adjust the position of the icon once it's been added.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		        <div class="form-group has-success has-feedback">
+						<label class="example-label">Example</label>		        <div class="form-group has-success has-feedback">
 		            <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
 		            <input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status"> <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span id="inputSuccess5Status" class="sr-only">(success)</span> </div>
 		        <div class="form-group has-success has-feedback">
@@ -2945,7 +2949,7 @@ function displayForms(){
 		                <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status"> </div> <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span id="inputGroupSuccess4Status" class="sr-only">(success)</span> </div>
 		    </div>
 		    
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success has-feedback"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success has-feedback"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"control-label sr-only"</span> <span class="na">for=</span><span class="s">"inputSuccess5"</span><span class="nt">&gt;</span>Hidden label<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputSuccess5"</span> <span class="na">aria-describedby=</span><span class="s">"inputSuccess5Status"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-ok form-control-feedback"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
@@ -2973,7 +2977,7 @@ function displayForms(){
 		    <p>Create taller or shorter form controls that match button sizes.</p>
 		    <div class="example">
 					<div class="top">
-						<label>Example</label>
+						<label class="example-label">Example</label>
 		        <form lpformnum="16">
 		            <div class="controls">
 		                <input class="form-control input-lg" type="text" placeholder=".input-lg" >
@@ -2992,7 +2996,7 @@ function displayForms(){
 		        </form>
 		    </div>
 		    
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control input-lg"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">".input-lg"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control input-lg"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">".input-lg"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Default input"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control input-sm"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">".input-sm"</span><span class="nt">&gt;</span>
 
@@ -3004,7 +3008,7 @@ function displayForms(){
 		    <p>Quickly size labels and form controls within <code>.form-horizontal</code> by adding <code>.form-group-lg</code> or <code>.form-group-sm</code>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		        <form class="form-horizontal">
+						<label class="example-label">Example</label>		        <form class="form-horizontal">
 		            <div class="form-group form-group-lg">
 		                <label class="col-sm-2 control-label" for="formGroupInputLarge">Large label</label>
 		                <div class="col-sm-10">
@@ -3018,7 +3022,7 @@ function displayForms(){
 		        </form>
 		    </div>
 		    
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-horizontal"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-group-lg"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"col-sm-2 control-label"</span> <span class="na">for=</span><span class="s">"formGroupInputLarge"</span><span class="nt">&gt;</span>Large label<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
@@ -3037,7 +3041,7 @@ function displayForms(){
 		    <p>Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>
+						<label class="example-label">Example</label>
 						<form lpformnum="17">
 		            <div class="row">
 		                <div class="col-xs-2">
@@ -3050,7 +3054,7 @@ function displayForms(){
 		        </form>
 		    </div>
 		    
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-2"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">".col-xs-2"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -3085,7 +3089,7 @@ function displayHelperClasses(){
 		        <p>Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>
+						<label class="example-label">Example</label>
 					<p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
 		            <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 		            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
@@ -3094,7 +3098,7 @@ function displayHelperClasses(){
 		            <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-primary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-success"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-info"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
@@ -3119,7 +3123,7 @@ function displayHelperClasses(){
 		            <p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bg-primary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bg-primary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bg-success"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bg-info"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bg-warning"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
@@ -3137,28 +3141,28 @@ function displayHelperClasses(){
 		        <p>Use the generic close icon for dismissing content like modals and alerts.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <p>
+						<label class="example-label">Example</label>		            <p>
 		                <button type="button" class="close" aria-label="Close"><span aria-hidden="true">×</span></button>
 		            </p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span></code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span></code></pre></figure>
 </div>
 		        <h3 id="helper-classes-carets"><a class="anchorjs-link " href="#helper-classes-carets" aria-label="Anchor link for: helper classes carets" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Carets</h3>
 		        <p>Use carets to indicate dropdown functionality and direction. Note that the default caret will reverse automatically in <a href="../components/#btn-dropdowns-dropup">dropup menus</a>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label></div>		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></figure>
+						<label class="example-label">Example</label></div>		        
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></figure>
 </div>
 		        <h3 id="helper-classes-floats"><a class="anchorjs-link " href="#helper-classes-floats" aria-label="Anchor link for: helper classes floats" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Quick floats</h3>
 		        <p>Float an element to the left or right with a class. <code>!important</code> is included to avoid specificity issues. Classes can also be used as mixins.</p>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pull-left"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pull-left"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pull-right"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-scss" data-lang="scss"><span class="c1">// Classes</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-scss" data-lang="scss"><span class="c1">// Classes</span>
 <span class="nc">.pull-left</span> <span class="p">{</span>
   <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
 <span class="p">}</span>
@@ -3181,10 +3185,10 @@ function displayHelperClasses(){
 		        <h3 id="helper-classes-center"><a class="anchorjs-link " href="#helper-classes-center" aria-label="Anchor link for: helper classes center" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Center content blocks</h3>
 		        <p>Set an element to <code>display: block</code> and center via <code>margin</code>. Available as a mixin and class.</p>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"center-block"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"center-block"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-scss" data-lang="scss"><span class="c1">// Class</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-scss" data-lang="scss"><span class="c1">// Class</span>
 <span class="nc">.center-block</span> <span class="p">{</span>
   <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
   <span class="nl">margin-left</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
@@ -3199,11 +3203,11 @@ function displayHelperClasses(){
 		        <h3 id="helper-classes-clearfix"><a class="anchorjs-link " href="#helper-classes-clearfix" aria-label="Anchor link for: helper classes clearfix" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Clearfix</h3>
 		        <p>Easily clear <code>float</code>s by adding <code>.clearfix</code> <strong>to the parent element</strong>. Utilizes <a href="http://nicolasgallagher.com/micro-clearfix-hack/">the micro clearfix</a> as popularized by Nicolas Gallagher. Can also be used as a mixin.</p>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Usage as a class --&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Usage as a class --&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-scss" data-lang="scss"><span class="c1">// Mixin itself</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-scss" data-lang="scss"><span class="c1">// Mixin itself</span>
 <span class="nc">.clearfix</span><span class="o">()</span> <span class="p">{</span>
   <span class="k">&amp;</span><span class="nd">:before</span><span class="o">,</span>
   <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
@@ -3225,11 +3229,11 @@ function displayHelperClasses(){
 		        <p><code>.hide</code> is available, but it does not always affect screen readers and is <strong>deprecated</strong> as of v3.0.1. Use <code>.hidden</code> or <code>.sr-only</code> instead.</p>
 		        <p>Furthermore, <code>.invisible</code> can be used to toggle only the visibility of an element, meaning its <code>display</code> is not modified and the element can still affect the flow of the document.</p>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"show"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"show"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hidden"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-scss" data-lang="scss"><span class="c1">// Classes</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-scss" data-lang="scss"><span class="c1">// Classes</span>
 <span class="nc">.show</span> <span class="p">{</span>
   <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
 <span class="p">}</span>
@@ -3251,10 +3255,10 @@ function displayHelperClasses(){
 		        <h3 id="helper-classes-screen-readers"><a class="anchorjs-link " href="#helper-classes-screen-readers" aria-label="Anchor link for: helper classes screen readers" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Screen reader and keyboard navigation content</h3>
 		        <p>Hide an element to all devices <strong>except screen readers</strong> with <code>.sr-only</code>. Combine <code>.sr-only</code> with <code>.sr-only-focusable</code> to show the element again when it's focused (e.g. by a keyboard-only user). Necessary for following <a href="../getting-started/#accessibility">accessibility best practices</a>. Can also be used as mixins.</p>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span> <span class="na">href=</span><span class="s">"#content"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span> <span class="na">href=</span><span class="s">"#content"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span></code></pre></figure>
 
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-scss" data-lang="scss"><span class="c1">// Usage as a mixin</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-scss" data-lang="scss"><span class="c1">// Usage as a mixin</span>
 <span class="nc">.skip-navigation</span> <span class="p">{</span>
   <span class="nc">.sr-only</span><span class="o">()</span><span class="p">;</span>
   <span class="nc">.sr-only-focusable</span><span class="o">()</span><span class="p">;</span>
@@ -3263,10 +3267,10 @@ function displayHelperClasses(){
 		        <h3 id="helper-classes-image-replacement"><a class="anchorjs-link " href="#helper-classes-image-replacement" aria-label="Anchor link for: helper classes image replacement" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Image replacement</h3>
 		        <p>Utilize the <code>.text-hide</code> class or mixin to help replace an element's text content with a background image.</p>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-hide"</span><span class="nt">&gt;</span>Custom heading<span class="nt">&lt;/h1&gt;</span></code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-hide"</span><span class="nt">&gt;</span>Custom heading<span class="nt">&lt;/h1&gt;</span></code></pre></figure>
 
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-scss" data-lang="scss"><span class="c1">// Usage as a mixin</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-scss" data-lang="scss"><span class="c1">// Usage as a mixin</span>
 <span class="nc">.heading</span> <span class="p">{</span>
   <span class="nc">.text-hide</span><span class="o">()</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure>
@@ -3300,7 +3304,7 @@ function displayImages(){
 		            <p>In Internet Explorer 8-10, SVG images with <code>.img-responsive</code> are disproportionately sized. To fix this, add <code>width: 100% \9;</code> where necessary. Bootstrap doesn't apply this automatically as it causes complications to other image formats.</p>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-responsive"</span> <span class="na">alt=</span><span class="s">"Responsive image"</span><span class="nt">&gt;</span></code></pre></figure>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-responsive"</span> <span class="na">alt=</span><span class="s">"Responsive image"</span><span class="nt">&gt;</span></code></pre></figure>
 
 		        <h2 id="images-shapes"><a class="anchorjs-link " href="#images-shapes" aria-label="Anchor link for: images shapes" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Image shapes</h2>
 		        <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
@@ -3310,7 +3314,7 @@ function displayImages(){
 		        </div>
 		        <div class="dr-example dr-example-images" data-example-id="image-shapes"> <img data-src="holder.js/140x140" class="img-rounded" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTM1MmJlYTNkMCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MzUyYmVhM2QwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="width: 140px; height: 140px;"> <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTM1MmJlZWIwYSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MzUyYmVlYjBhIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="width: 140px; height: 140px;"> <img data-src="holder.js/140x140" class="img-thumbnail" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTM1MmJlYzc0MyB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MzUyYmVjNzQzIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="width: 140px; height: 140px;"> </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-rounded"</span><span class="nt">&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-rounded"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-circle"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-thumbnail"</span><span class="nt">&gt;</span></code></pre></figure>
 
@@ -3340,14 +3344,14 @@ function displayButtons(){
 		        <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>	
+						<label class="example-label">Example</label>	
 		        	<a class="btn btn-default" href="#" role="button">Link</a>
 		            <button class="btn btn-default" type="submit">Button</button>
 		            <input class="btn btn-default" type="button" value="Input">
 		            <input class="btn btn-default" type="submit" value="Submit">
 		        	</div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"Input"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span></code></pre></figure>
@@ -3375,7 +3379,7 @@ function displayButtons(){
 		        <p>Use any of the available button classes to quickly create a styled button.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>
+						<label class="example-label">Example</label>
 						<p>
 							<button type="button" class="btn btn-default">Default</button>
 		           			<button type="button" class="btn btn-primary">Primary</button>
@@ -3409,7 +3413,7 @@ function displayButtons(){
 		            <button type="button" class="btn btn-link">Link</button> -->
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Standard button --&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Standard button --&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
 
 <span class="c">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</span>
@@ -3454,7 +3458,7 @@ function displayButtons(){
 		        <p>Add <code>.btn-lg</code> for a larger button.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <p>
+						<label class="example-label">Example</label>		            <p>
 		                <button type="button" class="btn btn-primary btn-lg">Large button</button>
 		                <button type="button" class="btn btn-default btn-lg">Large button</button>
 		            </p>
@@ -3469,7 +3473,7 @@ function displayButtons(){
 		            </p> -->
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-lg"</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/p&gt;</span>
@@ -3487,13 +3491,13 @@ function displayButtons(){
 		        <p>Create block level buttons—those that span the full width of a parent— by adding <code>.btn-block</code>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <div class="well center-block" style="max-width:400px">
+						<label class="example-label">Example</label>		            <div class="well center-block" style="max-width:400px">
 		                <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
 		                <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
 		            </div>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg btn-block"</span><span class="nt">&gt;</span>Block level button<span class="nt">&lt;/button&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg btn-block"</span><span class="nt">&gt;</span>Block level button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-lg btn-block"</span><span class="nt">&gt;</span>Block level button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 </div>
 
@@ -3509,7 +3513,7 @@ function displayButtons(){
 		        <p>No need to add <code>:active</code> as it's a pseudo-class, but if you need to force the same appearance, go ahead and add <code>.active</code>. You can also add the <code>.active</code> class to <code>&lt;a&gt;</code> buttons.</p>
 		       <div class="example">
 					<div class="top">
-						<label>Example</label>	
+						<label class="example-label">Example</label>	
 		            <button type="button" class="btn btn-primary btn-lg active">Primary button</button>
 		            <button type="button" class="btn btn-default btn-lg active">Button</button>
 		        	<a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
@@ -3517,7 +3521,7 @@ function displayButtons(){
 
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg active"</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg active"</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-lg active"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg active"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Primary link<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-lg active"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span></code></pre></figure>
@@ -3534,14 +3538,14 @@ function displayButtons(){
 		        <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons. Also, you can add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
 		       		       		       <div class="example">
 					<div class="top">
-						<label>Example</label>	
+						<label class="example-label">Example</label>	
 		            <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary button</button>
 		            <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
 		            <a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
 		            <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a>
 		        </div>
 		        
-<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-primary"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-primary"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-lg"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg disabled"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Primary link<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-default btn-lg disabled"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span></code></pre></figure>
@@ -3854,7 +3858,7 @@ function displayBreadcrumbs(){
 		        <p>Separators are automatically added in CSS through <code>:before</code> and <code>content</code>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <ol class="breadcrumb">
+						<label class="example-label">Example</label>		            <ol class="breadcrumb">
 		                <li class="active">Home</li>
 		            </ol>
 		            <ol class="breadcrumb">
@@ -3868,7 +3872,7 @@ function displayBreadcrumbs(){
 		            </ol>
 		        </div>
 		        
-        <figure class="highlight"><label>HTML</label><pre>
+        <figure class="highlight"><label class="example-label">HTML</label><pre>
 <code class="language-html" data-lang="html"><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -3898,7 +3902,7 @@ $this->displayHeader(
 		        <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <nav>
+						<label class="example-label">Example</label>		            <nav>
 		                <ul class="pagination">
 		                    <li>
 		                        <a href="#" aria-label="Previous"> <span aria-hidden="true">«</span> </a>
@@ -3915,7 +3919,7 @@ $this->displayHeader(
 		            </nav>
 		        </div>
 		        
-        <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
+        <figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"Previous"</span><span class="nt">&gt;</span>
@@ -3939,7 +3943,7 @@ $this->displayHeader(
 		        <p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <nav>
+						<label class="example-label">Example</label>		            <nav>
 		                <ul class="pagination">
 		                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
 		                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
@@ -3951,7 +3955,7 @@ $this->displayHeader(
 		                </ul>
 		            </nav>
 		        </div>
-    <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
+    <figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
   <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">aria-label=</span><span class="s">"Previous"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;laquo;</span><span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
     <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>(current)<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
@@ -3986,13 +3990,13 @@ $this->displayHeader(
 		        </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <div class="alert alert-success" role="alert"> <strong>Well done!</strong> You successfully read this important alert message. </div>
+						<label class="example-label">Example</label>		            <div class="alert alert-success" role="alert"> <strong>Well done!</strong> You successfully read this important alert message. </div>
 		            <div class="alert alert-info" role="alert"> <strong>Heads up!</strong> This alert needs your attention, but it's not super important. </div>
 		            <div class="alert alert-warning" role="alert"> <strong>Warning!</strong> Better check yourself, you're not looking too good. </div>
 		            <div class="alert alert-danger" role="alert"> <strong>Oh snap!</strong> Change a few things up and try submitting again. </div>
 		        </div>
 		        
-        <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+        <figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -4006,11 +4010,11 @@ $this->displayHeader(
 		        </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <div class="alert alert-warning alert-dismissible" role="alert">
+						<label class="example-label">Example</label>		            <div class="alert alert-warning alert-dismissible" role="alert">
 		                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <strong>Warning!</strong> Better check yourself, you're not looking too good. </div>
 		        </div>
 		        
-        <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning alert-dismissible"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+        <figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning alert-dismissible"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"alert"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
   <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span> Better check yourself, you're not looking too good.
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
@@ -4023,13 +4027,13 @@ $this->displayHeader(
 		        <p>Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <div class="alert alert-success" role="alert"> <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>. </div>
+						<label class="example-label">Example</label>		            <div class="alert alert-success" role="alert"> <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>. </div>
 		            <div class="alert alert-info" role="alert"> <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important. </div>
 		            <div class="alert alert-warning" role="alert"> <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>. </div>
 		            <div class="alert alert-danger" role="alert"> <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again. </div>
 		        </div>
 		        
-        <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+        <figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
@@ -4054,7 +4058,7 @@ $this->displayHeader(
 
    				<div class="example">
 					<div class="top">
-						<label>Example</label>    	        
+						<label class="example-label">Example</label>    	        
 						<div class="dr-callout dr-callout-info">
 			            	<h4>Info class</h4>
 			            	<p>Use the info class when there is any information that might be helpful to a developer. For example, embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a> for more information.</p>
@@ -4073,7 +4077,7 @@ $this->displayHeader(
 				        </div>
 	        		</div>
 
-	          <figure class="highlight"><label>HTML</label>
+	          <figure class="highlight"><label class="example-label">HTML</label>
 	          	<pre>
 	          		<code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dr-callout dr-callout-info"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;h4&gt;</span> ... <span class="nt">&lt;/h4&gt;</span>
@@ -4102,7 +4106,7 @@ $this->displayHeader(
 	        </div>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>    	        
+						<label class="example-label">Example</label>    	        
 						<div class="dr-callout dr-callout-info icon">
 			            	<h4>Info class with icon</h4>
 			            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
@@ -4121,7 +4125,7 @@ $this->displayHeader(
 				        </div>
 	        		</div>
 
-	          <figure class="highlight"><label>HTML</label>
+	          <figure class="highlight"><label class="example-label">HTML</label>
 	          	<pre>
 	          		<code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dr-callout dr-callout-info icon"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;h4&gt;</span> ... <span class="nt">&lt;/h4&gt;</span>
@@ -4169,12 +4173,12 @@ function displayPanels(){
 		        <p>By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <div class="panel panel-default">
+						<label class="example-label">Example</label>		            <div class="panel panel-default">
 		                <div class="panel-body"> Basic panel example </div>
 		            </div>
 		        </div>
 		        
-        <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+        <figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
     Basic panel example
   <span class="nt">&lt;/div&gt;</span>
@@ -4190,7 +4194,7 @@ function displayPanels(){
 		        <p>For proper link coloring, be sure to place links in headings within <code>.panel-title</code>.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <div class="panel panel-default">
+						<label class="example-label">Example</label>		            <div class="panel panel-default">
 		                <div class="panel-heading">Panel heading without title</div>
 		                <div class="panel-body"> Panel content </div>
 		            </div>
@@ -4201,7 +4205,7 @@ function displayPanels(){
 		            </div>
 		        </div>
 		        
-        <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+        <figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>Panel heading without title<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
     Panel content
@@ -4221,13 +4225,13 @@ function displayPanels(){
 		        <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note that panel footers <strong>do not</strong> inherit colors and borders when using contextual variations as they are not meant to be in the foreground.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <div class="panel panel-default">
+						<label class="example-label">Example</label>		            <div class="panel panel-default">
 		                <div class="panel-body"> Panel content </div>
 		                <div class="panel-footer">Panel footer</div>
 		            </div>
 		        </div>
 		        
-        <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+        <figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
     Panel content
   <span class="nt">&lt;/div&gt;</span>
@@ -4243,7 +4247,7 @@ function displayPanels(){
 		        <p>Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <div class="panel panel-primary">
+						<label class="example-label">Example</label>		            <div class="panel panel-primary">
 		                <div class="panel-heading">
 		                    <h3 class="panel-title">Panel title</h3> </div>
 		                <div class="panel-body"> Panel content </div>
@@ -4255,7 +4259,7 @@ function displayPanels(){
 		            </div>
 		        </div>
 		        
-        <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-primary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+        <figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-primary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
@@ -4269,7 +4273,7 @@ function displayPanels(){
 	<!-- 	        <p>Add any non-bordered <code>.table</code> within a panel for a seamless design. If there is a <code>.panel-body</code>, we add an extra border to the top of the table for separation.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <div class="panel panel-default">
+						<label class="example-label">Example</label>		            <div class="panel panel-default">
 		                <div class="panel-heading">Panel heading</div>
 		                <div class="panel-body">
 		                    <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -4307,7 +4311,7 @@ function displayPanels(){
 		            </div>
 		        </div>
 		        
-        <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+        <figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
   <span class="c">&lt;!-- Default panel contents --&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>Panel heading<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
@@ -4323,7 +4327,7 @@ function displayPanels(){
 		        <p>If there is no panel body, the component moves from panel header to table without interruption.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <div class="panel panel-default">
+						<label class="example-label">Example</label>		            <div class="panel panel-default">
 		                <div class="panel-heading">Panel heading</div>
 		                <table class="table">
 		                    <thead>
@@ -4358,7 +4362,7 @@ function displayPanels(){
 		            </div>
 		        </div>
 		        
-        <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+        <figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
   <span class="c">&lt;!-- Default panel contents --&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>Panel heading<span class="nt">&lt;/div&gt;</span>
 
@@ -4377,7 +4381,7 @@ function displayPanels(){
 <!-- 		        <p>Easily include full-width <a href="#list-group">list groups</a> within any panel.</p>
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		            <div class="panel panel-default">
+						<label class="example-label">Example</label>		            <div class="panel panel-default">
 		                <div class="panel-heading">Panel heading</div>
 		                <div class="panel-body">
 		                    <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -4392,7 +4396,7 @@ function displayPanels(){
 		            </div>
 		        </div>
 		        
-        <figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
+        <figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel panel-default"</span><span class="nt">&gt;</span>
   <span class="c">&lt;!-- Default panel contents --&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-heading"</span><span class="nt">&gt;</span>Panel heading<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
@@ -4434,7 +4438,7 @@ function displayTabs(){
 
    				<div class="example">
 					<div class="top">
-						<label>Example</label>		<ul class="nav nav-tabs">
+						<label class="example-label">Example</label>		<ul class="nav nav-tabs">
 		    <li class="active"><a data-toggle="tab" href="#tab1">Tab 1</a></li>
 		    <li class=""><a data-toggle="tab" href="#tab2">Tab 2</a></li>
 		    <li class=""><a data-toggle="tab" href="#tab3">Tab 3</a></li>
@@ -4455,7 +4459,7 @@ function displayTabs(){
 		</div>
 
 	</div>
-	<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+	<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#tab1"</span><span class="nt">&gt;</span>Tab 1<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#tab2"</span><span class="nt">&gt;</span>Tab 2<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#tab3"</span><span class="nt">&gt;</span>Tab 3<span class="nt">&lt;/a&gt;</span><span class="nt">&lt;/li&gt;</span>
@@ -4694,13 +4698,13 @@ function displayColors(){
 
 	   				<div class="example">
 						<div class="top">
-							<label>Example</label>
+							<label class="example-label">Example</label>
 							<h1 class="txt-blue">Blue text.</h1>
 			            	<p class="txt-darkGreen">Dark Green text.</p>
 			            	<p class="txt-purple">Purple text.</p>
 			        </div>
 			        
-	<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"txt-blue"</span><span class="nt">&gt;</span>Blue text.<span class="nt">&lt;/h1&gt;</span>
+	<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"txt-blue"</span><span class="nt">&gt;</span>Blue text.<span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"txt-darkGreen"</span><span class="nt">&gt;</span>Dark green text.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"txt-purple"</span><span class="nt">&gt;</span>Purple text.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 	</div>
@@ -4712,7 +4716,7 @@ function displayColors(){
 
 			<div class="example">
 				<div class="top">
-					<label>Example</label>
+					<label class="example-label">Example</label>
 					<div class="bg-blue">
 						<h1>Blue background.</h1>
 						<p>Example paragraph text</p>
@@ -4727,7 +4731,7 @@ function displayColors(){
 					</div>
 		   		</div>
 		        
-		<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-blue"</span><span class="nt">&gt;</span>
+		<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-blue"</span><span class="nt">&gt;</span>
    <span class="nt">&lt;h1&gt;</span>Blue background.<span class="nt">&lt;/h1&gt;</span>
    <span class="nt">&lt;p&gt;</span>Example paragraph text<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -4781,19 +4785,20 @@ function displayExample()
 	);
 	?>
 
+
 		<div class="example">
 			<div class="top">
-				<label>Example</label>
+				<label class="example-label">Example</label>
 
 		<div class="example">
 			<div class="top">
 				<label>Result</label>
 				<p> ... </p>
 			</div>
-			<figure class="highlight"><label>Code</label><pre><code class="language-json" data-lang="json"> ... </code></pre></figure>
+			<figure class="highlight"><label class="example-label">Code</label><pre><code class="language-json" data-lang="json"> ... </code></pre></figure>
 		</div>
 		</div>
-		<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+		<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"top"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;label&gt;</span>Result<span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;p&gt;</span> ... <span class="nt">&lt;/p&gt;</span>
@@ -4817,7 +4822,7 @@ function displayExample()
 
 		<div class="example">
 			<div class="top">
-				<label>Example</label>
+				<label class="example-label">Example</label>
 
 		<ul class="nav nav-tabs">
 			<li class="active"><a data-toggle="tab" href="#json">JSON</a></li>
@@ -4830,7 +4835,7 @@ function displayExample()
 						<label>Request</label>
 						<p> Json Request Here </p>
 					</div>
-					<figure class="highlight"><label>Response</label><pre><code class="language-json" data-lang="json"> {} </code></pre></figure>
+					<figure class="highlight"><label class="example-label">Response</label><pre><code class="language-json" data-lang="json"> {} </code></pre></figure>
 				</div>
 			</div>
 			<div id="xml" class="tab-pane">
@@ -4839,14 +4844,14 @@ function displayExample()
 						<label>Request</label>
 						<p> XML Request Here </p>
 					</div>
-				<figure class="highlight"><label>Response</label><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;?xml</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="nt">?&gt;</span>
+				<figure class="highlight"><label class="example-label">Response</label><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;?xml</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="nt">?&gt;</span>
 <span class="nt">&lt;metadata&gt;</span>
 <span class="nt">&lt;/metadata&gt;</span></code></pre></figure>
 		</div>
 </div>
 </div>
 </div>
-		<figure class="highlight"><label>HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+		<figure class="highlight"><label class="example-label">HTML</label><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#json"</span><span class="nt">&gt;</span>JSON<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#xml"</span><span class="nt">&gt;</span>XML<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>

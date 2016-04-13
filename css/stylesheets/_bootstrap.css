@@ -6088,7 +6088,7 @@ button.close {
   .example figure {
     position: relative;
     border-radius: 0; }
-    .example figure label {
+    .example figure label.example-label {
       color: #FFF; }
     .example figure pre {
       padding-top: 40px;
@@ -6097,7 +6097,7 @@ button.close {
   .example .top {
     border: solid 1px #cccccc;
     border-bottom: none; }
-  .example label {
+  .example label.example-label {
     position: absolute;
     top: 10px;
     left: 10px;
