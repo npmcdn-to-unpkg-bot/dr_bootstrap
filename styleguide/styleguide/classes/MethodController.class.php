@@ -74,12 +74,12 @@ class MethodController{
 		<h1 class="h2" id="delete">DELETE shoppers/me/addresses/{id}</h1>
 		<p>Deletes the shopper address associated with the specified id. Specify the id of the address in the {id} uri path parameter. If the last address linked to the shopper is deleted, there is no warning message.</p>
 
-		<div class="dr-callout dr-callout-warning">
+		<div class="dr-callout dr-callout-warning icon">
     		<h4>This headline should be a warning</h4>
     		<p>This is an example warning. Users should feel warned after reading this alert.</p>
 		</div>
 
-		<div class="dr-callout dr-callout-danger">
+		<div class="dr-callout dr-callout-danger icon">
     		<h4>This headline should be a alert</h4>
     		<p>This is an example alert. Users should feel alerted after reading this alert.</p>
 		</div>

@@ -104,7 +104,7 @@ class ExampleController{
 
 		<h1 id="address">Addresses Resource</h1>
 		<p>The Addresses resource provides access to addresses configured for a shopper.</p>
-		<div class="dr-callout dr-callout-info">
+		<div class="dr-callout dr-callout-info icon">
     		<h4>Note:</h4>
     		<p>All methods in this resource require a full access token. For more information, see initiating an authenticated session in the Authenticated Shopper Workflows.</p>
 		</div>
@@ -117,7 +117,7 @@ class ExampleController{
     		<li>Create or update an address for a shopper</li>
     		<li>Delete an address for a shopper</li>
     	</ul>
-    	<div class="dr-callout dr-callout-info">
+    	<div class="dr-callout dr-callout-info icon">
     		<h4>Note:</h4>
     		<p>If you need to access or update a billing or shipping address, use the appropriate methods available in the Carts resource.</p>
 		</div>

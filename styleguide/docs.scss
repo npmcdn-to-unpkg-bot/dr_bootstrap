@@ -27,7 +27,7 @@ $arial: 'Arial', sans-serif;
 
 .style-logo{
     width:275px;
-    margin-right: 15px;
+    margin-right: 45px;
     float:left;
 }
 
@@ -219,4 +219,15 @@ footer {
 .tab-content .dr-example {
     border-radius:0;
     border-top:0;
+}
+
+.color-combo-wrap{
+    padding:15px;
+}
+.color-combo-select{
+    padding:15px;
+    select{
+        width:100%;
+        padding:10px;
+    }
 }

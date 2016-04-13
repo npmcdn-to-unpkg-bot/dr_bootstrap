@@ -17,9 +17,11 @@
 	    <li><a href="#colors">Colors</a>
 	    	<ul class="nav">
 	            <li><a href="#colors-brand">Brand</a></li>
-	            <li><a href="#colors-text">Text</a></li>
+	            <li><a href="#colors-neutral">Neutral</a></li>
+	            <li><a href="#colors-classes">Color classes</a></li>
+	            <!-- <li><a href="#colors-text">Text</a></li>
 	            <li><a href="#colors-links">Links</a></li>
-	            <li><a href="#colors-social">Social Media</a></li>
+	            <li><a href="#colors-social">Social Media</a></li> -->
 	        </ul>
 	    </li>
 	    <li><a href="#code">Code</a>
@@ -27,13 +29,13 @@
 	            <li><a href="#code-inline">Inline</a></li>
 	            <li><a href="#code-user-input">User input</a></li>
 	            <li><a href="#code-block">Basic block</a></li>
-	            <li><a href="#code-variables">Variables</a></li>
+	            <!-- <li><a href="#code-variables">Variables</a></li> -->
 	            <li><a href="#code-sample-output">Sample output</a></li>
 	        </ul>
 	    </li>
 	    <li><a href="#code-examples">Code Examples</a>
 	    	<ul class="nav">
-	            <li><a href="#code-examples-simple">Simple</a></li>
+	            <li><a href="#code-examples-basic">Basic</a></li>
 	            <li><a href="#code-examples-tabbed">Tabbed</a></li>
 	        </ul>
 	    </li>
@@ -48,10 +50,11 @@
 	    <li><a href="#tables">Tables</a>
 	        <ul class="nav">
 	            <li><a href="#tables-example">Basic example</a></li>
+	            <li><a href="#tables-header-color">Header Color Options</a></li>
 	            <li><a href="#tables-striped">Striped rows</a></li>
 	            <li><a href="#tables-bordered">Bordered table</a></li>
 	            <li><a href="#tables-hover-rows">Hover rows</a></li>
-	            <li><a href="#tables-condensed">Condensed table</a></li>
+	            <!-- <li><a href="#tables-condensed">Condensed table</a></li> -->
 	            <li><a href="#tables-contextual-classes">Contextual classes</a></li>
 	            <li><a href="#tables-responsive">Responsive tables</a></li>
 	        </ul>
@@ -80,21 +83,21 @@
 	            <li><a href="#buttons-disabled">Disabled state</a></li>
 	        </ul>
 	    </li>
-	    <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+	    <!-- <li><a href="#breadcrumbs">Breadcrumbs</a></li> -->
 	    <li><a href="#pagination">Pagination</a>
 	        <ul class="nav">
 	            <li><a href="#pagination-default">Default pagination</a></li>
-	            <li><a href="#pagination-pager">Pager</a></li>
+	            <!-- <li><a href="#pagination-pager">Pager</a></li> -->
 	        </ul>
 	    </li>
 	    <li><a href="#panels">Panels</a>
 	        <ul class="nav">
-	            <li><a href="#panels-basic">Basic example</a></li>
+	            <!-- <li><a href="#panels-basic">Basic example</a></li> -->
 	            <li><a href="#panels-heading">Panel with heading</a></li>
 	            <li><a href="#panels-footer">Panel with footer</a></li>
 	            <li><a href="#panels-alternatives">Contextual alternatives</a></li>
-	            <li><a href="#panels-tables">With tables</a> </li>
-	            <li><a href="#panels-list-group">With list groups</a> </li>
+	            <!-- <li><a href="#panels-tables">With tables</a></li>
+	            <li><a href="#panels-list-group">With list groups</a></li> -->
 	        </ul>
 	    </li>
 	    <li><a href="#tabs">Tabs</a></li>

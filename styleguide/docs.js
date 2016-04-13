@@ -48,3 +48,16 @@ $(function() {
       $activeParent.addClass('border-fix');
     }
 });
+
+
+var compileContrastLink = function(){
+    var text = $("#color-text").val();
+    var background = $("#color-background").val();
+
+    $("#combo-link").attr("href", "http://jxnblk.com/colorable/demos/text/?background=%23"+background+"&foreground=%23"+text);
+
+    $(".color-combo-wrap").css({color:"#"+text, backgroundColor:"#"+background});
+}
+
+$("#color-background").on("change", compileContrastLink);
+$("#color-text").on("change", compileContrastLink);
