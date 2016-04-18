@@ -2,6 +2,7 @@
 interface Brick
 {
 
-	public function display();
+	// public function display();
+	// public static function display();
 
 }

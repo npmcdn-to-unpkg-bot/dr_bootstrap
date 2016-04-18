@@ -27,8 +27,8 @@ define('TRANSIENT_KEY_STORE_ID', 'transient_key_store');
 /* -----------------------------------------------------------------------------
   Don't Edit Below This Line
 ----------------------------------------------------------------------------- */
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
+// error_reporting(E_ALL);
+// ini_set("display_errors", 1);
 
 
 // Load required files
@@ -63,6 +63,7 @@ require_once 'inc/theme_hooks.php';
 require_once 'inc/setup/Admin/Admin.class.php';
 
 // require_once 'inc/setup/AcfImporter.class.php';
+require_once 'inc/setup/BrickChooser.class.php';
 require_once 'inc/setup/Initialize/Initialize.class.php';
 require_once 'inc/setup/Initialize/GeneralInitialize.class.php';
 require_once 'inc/setup/Initialize/MasterheaderInitialize.class.php';
@@ -73,6 +74,7 @@ require_once 'inc/setup/Slides.class.php';
 require_once 'inc/setup/Bricks/Brick.class.php';
 require_once 'inc/setup/Bricks/General.class.php';
 require_once 'inc/setup/Bricks/Masterheader.class.php';
+require_once 'inc/setup/Bricks/Clients.class.php';
 require_once 'inc/setup/Bricks/InteractiveGrid.class.php';
 
 $GeneralInitialize = new GeneralInit();
@@ -112,6 +114,7 @@ function theme_styles() {
     $newTemplateSidebar = is_page_template("templates/template-sidebar.php");
     $caasTemplate = is_page_template("templates/caas-template.php");
     $gamingTemplate = is_page_template("templates/template-gaming.php");
+    $bricksTemplate = is_page_template("templates/template-bricks.php");
 
 
 /**

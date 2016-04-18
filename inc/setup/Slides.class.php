@@ -3,13 +3,15 @@
 class SlidesPostType{
 
 	public static $slideTypes = array(
-		"general" => "General",
-		"masterheader" => "Masterheader",
-		"clients" => "Clients",
-		"interactive-grid" => "Interactive Grid",
-		"contact-us" => "Contact Us",
-		"contact-us-form" => "Contact Us Form",
+		"General" => "General",
+		"Masterheader" => "Masterheader",
+		"Clients" => "Clients",
+		"InteractiveGrid" => "Interactive Grid",
+		"Contact" => "Contact Us",
+		"ContactForm" => "Contact Us Form",
 	);
+
+	public static $brick_type_key = '_brick_type';
 
 	public static $post_type_name = 'slides';
 
@@ -103,12 +105,12 @@ class SlidesPostType{
 	{
 		wp_nonce_field( 'save_slide_type_value', 'save_slide_type_meta_box_nonce' );
 
-		$selectedPostMeta = get_post_meta( $post->ID, '_slide_type_value', true );
+		$selectedPostMeta = get_post_meta( $post->ID, self::$brick_type_key, true );
 
 		foreach (self::$slideTypes as $slideId => $slideType) :
 			echo "<input ";
 			echo $slideId == $selectedPostMeta ? "checked" : "";
-			echo " type='radio' name='slide_type_value' value='".$slideId."' />";
+			echo " type='radio' name='" . self::$brick_type_key . "' value='".$slideId."' />";
 			echo "<label>".$slideType."</label>";
 			echo "<br>";
 		endforeach;
@@ -145,11 +147,11 @@ class SlidesPostType{
 		}
 
 		// Make sure that it is set.
-		if ( ! isset( $_POST['slide_type_value'] ) ) {
+		if ( ! isset( $_POST[self::$brick_type_key] ) ) {
 			return;
 		}
 
-		update_post_meta( $post_id, '_slide_type_value', sanitize_text_field( $_POST['slide_type_value'] ) );
+		update_post_meta( $post_id, self::$brick_type_key, sanitize_text_field( $_POST[self::$brick_type_key] ) );
 	}
 
 
@@ -163,7 +165,7 @@ class SlidesPostType{
 		global $post;
 
 	    $selected_slide_type = $rule['value'];
-		$slide_type = get_post_meta($post->ID, '_slide_type_value', true);
+		$slide_type = get_post_meta($post->ID, self::$brick_type_key, true);
 
 	    if($rule['operator'] == "=="){
 	    	$match = ( $slide_type == $selected_slide_type );
@@ -195,6 +197,7 @@ class SlidesPostType{
 	public function acf_location_rules_values_slide( $choices )
 	{
 	    return self::$slideTypes;
+	    // return array("test" => "Testing");
 	}
 
 }

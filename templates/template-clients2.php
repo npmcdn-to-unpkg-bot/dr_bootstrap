@@ -1,6 +1,6 @@
 	<?php
 /**
- * Template Name: Template Clients New
+ * Template Name: Template Clients New2
  */
 ?>
 <?php get_header(); ?>

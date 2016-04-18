@@ -15,7 +15,29 @@
                 "class": "",
                 "id": ""
             },
-            "choices": [],
+            "choices": {
+                "bg-lightBlue": "<div class=\"background-option\"><div class=\"inner-background bg-lightBlue \"><\/div><\/div>",
+                "bg-blue": "<div class=\"background-option\"><div class=\"inner-background bg-blue \"><\/div><\/div>",
+                "bg-darkBlue": "<div class=\"background-option\"><div class=\"inner-background bg-darkBlue \"><\/div><\/div>",
+                "bg-lightGreen": "<div class=\"background-option\"><div class=\"inner-background bg-lightGreen \"><\/div><\/div>",
+                "bg-green": "<div class=\"background-option\"><div class=\"inner-background bg-green \"><\/div><\/div>",
+                "bg-darkGreen": "<div class=\"background-option\"><div class=\"inner-background bg-darkGreen \"><\/div><\/div>",
+                "bg-lightGray": "<div class=\"background-option\"><div class=\"inner-background bg-lightGray \"><\/div><\/div>",
+                "bg-gray": "<div class=\"background-option\"><div class=\"inner-background bg-gray \"><\/div><\/div>",
+                "bg-darkGray": "<div class=\"background-option\"><div class=\"inner-background bg-darkGray \"><\/div><\/div>",
+                "bg-lightOrange": "<div class=\"background-option\"><div class=\"inner-background bg-lightOrange \"><\/div><\/div>",
+                "bg-orange": "<div class=\"background-option\"><div class=\"inner-background bg-orange \"><\/div><\/div>",
+                "bg-darkOrange": "<div class=\"background-option\"><div class=\"inner-background bg-darkOrange \"><\/div><\/div>",
+                "bg-lightRed": "<div class=\"background-option\"><div class=\"inner-background bg-lightRed \"><\/div><\/div>",
+                "bg-red": "<div class=\"background-option\"><div class=\"inner-background bg-red \"><\/div><\/div>",
+                "bg-darkRed": "<div class=\"background-option\"><div class=\"inner-background bg-darkRed \"><\/div><\/div>",
+                "bg-lightPurple": "<div class=\"background-option\"><div class=\"inner-background bg-lightPurple \"><\/div><\/div>",
+                "bg-purple": "<div class=\"background-option\"><div class=\"inner-background bg-purple \"><\/div><\/div>",
+                "bg-darkPurple": "<div class=\"background-option\"><div class=\"inner-background bg-darkPurple \"><\/div><\/div>",
+                "bg-lightYellow": "<div class=\"background-option\"><div class=\"inner-background bg-lightYellow \"><\/div><\/div>",
+                "bg-yellow": "<div class=\"background-option\"><div class=\"inner-background bg-yellow \"><\/div><\/div>",
+                "bg-darkYellow": "<div class=\"background-option\"><div class=\"inner-background bg-darkYellow \"><\/div><\/div>"
+            },
             "other_choice": 0,
             "save_other_choice": 0,
             "default_value": "",
@@ -158,7 +180,7 @@
             {
                 "param": "slide",
                 "operator": "==",
-                "value": "contact-us"
+                "value": "Contact"
             }
         ]
     ],
@@ -170,5 +192,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1460466543
+    "modified": 1460659079
 }

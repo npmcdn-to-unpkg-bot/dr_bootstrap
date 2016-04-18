@@ -1,11 +1,11 @@
 {
-    "key": "group_5704235313bfe",
-    "title": "Clients Selector",
+    "key": "group_570fae5029b0f",
+    "title": "Brick Selector",
     "fields": [
         {
-            "key": "field_570423ad236d0",
-            "label": "Clients",
-            "name": "clients",
+            "key": "field_570fae6038da7",
+            "label": "Bricks",
+            "name": "bricks",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -22,9 +22,9 @@
             "button_label": "Add Row",
             "sub_fields": [
                 {
-                    "key": "field_570426a1236d1",
-                    "label": "Client",
-                    "name": "client",
+                    "key": "field_570fae7638da8",
+                    "label": "Brick",
+                    "name": "brick",
                     "type": "post_object",
                     "instructions": "",
                     "required": 0,
@@ -35,7 +35,7 @@
                         "id": ""
                     },
                     "post_type": [
-                        "clients"
+                        "slides"
                     ],
                     "taxonomy": [],
                     "allow_null": 0,
@@ -51,12 +51,12 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "slides"
+                "value": "page"
             },
             {
-                "param": "slide",
+                "param": "page_template",
                 "operator": "==",
-                "value": "Clients"
+                "value": "templates\/template-bricks.php"
             }
         ]
     ],
@@ -68,5 +68,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1460661264
+    "modified": 1460645537
 }

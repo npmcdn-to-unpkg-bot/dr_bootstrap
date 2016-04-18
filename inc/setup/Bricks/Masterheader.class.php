@@ -7,23 +7,10 @@
 class Masterheader implements Brick
 {
 	public static $backgroundOptions = array(
-		'man_using_tablet' => 'Man Using Tablet'
+		'man_on_tablet' => 'Man On Tablet'
 	);
 
-	private $eyebrow;
-	private $headline;
-	private $subhead;
-	private $background;
-
-	function __construct($options = array())
-	{
-		extract($options);
-
-		$this->eyebrow = $eyebrow;
-		$this->headline = $headline;
-		$this->subhead = $subhead;
-		$this->background = $background;
-	}
+	function __construct() {}
 
 	/**
 	 * Prints the box content.
@@ -46,18 +33,21 @@ class Masterheader implements Brick
 
 	}
 
-	public function display()
+		
+	public static function display($brick_info)
 	{
 		echo '<div class="top slide ';
-		echo ($background) ? ' custom '.$background.' ' : ' masthead ';
+		echo ($brick_info['background_options']) ? ' custom '.$brick_info['background_options'].' ' : ' masthead ';
 		echo ' ">';
 			echo '<div class="container">';
 				echo '<div class="row">';
 				    echo '<div class="col-md-6 col-sm-8">';
-				      echo '<h1 class="eyebrow option no-margin">'.$this->eyebrow.'</h1>';
-				      echo '<h2>'. $this->headline .'</h2>';
-				      if($supporting_copy):
-				        echo '<p>' . $subhead .'</p>';
+				      if($brick_info['eyebrow'] != ""):
+				      	echo '<h1 class="eyebrow option no-margin">'.$brick_info['eyebrow'].'</h1>';
+				      endif;
+				      echo '<h2>'. $brick_info['headline'] .'</h2>';
+				      if($brick_info['subhead']):
+				        echo '<p>' . $brick_info['subhead'] .'</p>';
 				      endif;
 				    echo '</div>';
 				    echo '<div class="clear"></div>';

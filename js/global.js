@@ -30,7 +30,110 @@ jQuery(document).ready(function ($) {
     */
 
 
+    var init_clients_slider = function($clientsSlider){
 
+        $clientsSlider.owlCarousel({
+            autoplayTimeout:3000,
+            autoplay:true,
+            items : 5,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                350:{
+                    items:2
+                },
+                550:{
+                    items:3
+                },
+                800:{
+                    items:5
+                }
+            },
+            pagination:false,
+            loop:true,
+            lazyLoad: true,
+            callbacks: true,
+        });
+
+    }
+
+    $(".clients-slider").each(function(){
+        init_clients_slider($(this));
+    });
+
+
+
+
+              var $grid;
+              jQuery(document).ready(function($){
+                $grid = $('.interactive-grid .row');
+                $grid.packery({
+                  itemSelector: '.interact',
+                  gutter: 0
+              });
+
+              $(document).on("click", ".interact", function(){
+                  var $this = $(this);
+
+                  var $this_grid = $this.parents(".interactive-grid");
+
+
+                  $this.parents(".interactive-grid-wrapper").addClass("active");
+
+                  if($this_grid.find(".grid-item-wrapper.active").length > 0){
+                      close_grid_item($this_grid.find(".grid-item-wrapper.active"));
+                      $this.parents(".interactive-grid-wrapper").addClass("active");
+                  }
+
+                  $(".grid-item-wrapper").not(this).each(function(){
+                      if($(this).hasClass("active")){
+                          $(this).removeClass("active");
+                      }
+                  });
+                  $this.clone().insertAfter($this).addClass("placeholder").find(".grid-item").empty();
+                  
+                  $this.addClass("active");
+                  $this.toggleClass("interact");
+
+                  $grid.packery('reloadItems');
+              });
+
+              var close_grid_item = function($this_grid_item){
+
+                  $this_grid_item.parents(".interactive-grid-wrapper").removeClass("active");
+
+                  var left = $(".interactive-grid").find(".placeholder").css("left");
+                  var top = $(".interactive-grid").find(".placeholder").css("top");
+
+                  $this_grid_item.css({left:left, top:top});
+                  $this_grid_item.removeClass("active");
+                  $this_grid_item.addClass("interact");
+
+                  $("iframe.video").each(function(){
+                    $("#"+$(this).attr("id")).vimeo("pause");
+                  });
+
+                  $(".interactive-grid").find(".placeholder").remove();
+                  $grid.packery('reloadItems');
+
+              }
+              $(document).on("click",".interactive-grid .active .close", function(){
+                  close_grid_item($(this).parents(".grid-item-wrapper"));
+              });
+
+              var resizeTimer;
+              $(window).on('resize', function(e) {
+
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function() {
+                  $grid.packery("layout");
+                }, 250);
+
+              });
+
+            });
 
 
 

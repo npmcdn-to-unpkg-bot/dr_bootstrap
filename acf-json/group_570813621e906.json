@@ -61,7 +61,7 @@
             {
                 "param": "slide",
                 "operator": "==",
-                "value": "general"
+                "value": "General"
             }
         ]
     ],
@@ -73,5 +73,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1460147145
+    "modified": 1460655947
 }
