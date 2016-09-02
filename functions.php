@@ -228,7 +228,7 @@ function theme_scripts() {
     wp_enqueue_script('jquery-effects-slide');
     
 
-    wp_enqueue_script('packery', 'https://npmcdn.com/packery@2.0/dist/packery.pkgd.min.js', array(), 1, false);
+    wp_enqueue_script('packery', 'https://unpkg.com/packery@2.0/dist/packery.pkgd.min.js', array(), 1, false);
     wp_enqueue_script('modernizer', get_stylesheet_directory_uri() . '/js/modernizer.js', array(), 1, false);
     wp_enqueue_script('console', get_stylesheet_directory_uri() . '/js/console-log.js', array(), 1, false);
     wp_enqueue_script('excanvas', get_stylesheet_directory_uri() . '/js/excanvas_src-min.js', array(), 1, false);

@@ -673,6 +673,6 @@ $grid["marketing"][] = array(
 
 </script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
-<script type='text/javascript' src='https://npmcdn.com/packery@2.0/dist/packery.pkgd.min.js?ver=1'></script>
+<script type='text/javascript' src='https://unpkg.com/packery@2.0/dist/packery.pkgd.min.js?ver=1'></script>
 </body>
 </html>
